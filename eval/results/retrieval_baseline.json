@@ -1,0 +1,2185 @@
+{
+  "configuration": {
+    "backend": "lexical",
+    "candidates_path": "D:/gradual-policyagent/policy-agent/eval/retrieval_candidates.json",
+    "candidates_sha256": "25b5fdb561d3d2a338f450099dc4980eb9ba0bbb8e8fc0ae58c1d2b9844942cc",
+    "index_path": "D:/gradual-policyagent/policy-agent/cache/policy_index.json",
+    "index_sha256": "dc73a4725ff7361ebd0c28d5b9bef93a433ae6f2b6cd9a65723676e666e6ee82",
+    "embedding_provider": "local",
+    "embedding_model": "hashing-tfidf-v4",
+    "index_chunk_count": 655,
+    "ranking_depth": 655,
+    "display_top_k": 5,
+    "multi_turn_query_mode": "standalone_reference_only",
+    "unsupported_scoring": "excluded_from_hit_and_mrr",
+    "matching": "exact source_path; when non-empty, case-insensitive heading_contains substring in joined heading_path"
+  },
+  "summary": {
+    "overall_supported": {
+      "case_count": 25,
+      "hit_at_1": 0.4,
+      "hit_at_3": 0.68,
+      "hit_at_5": 0.68,
+      "mrr": 0.5569414867108528
+    },
+    "by_category": {
+      "direct": {
+        "case_count": 5,
+        "hit_at_1": 0.2,
+        "hit_at_3": 0.6,
+        "hit_at_5": 0.6,
+        "mrr": 0.4068965517241379
+      },
+      "semantic": {
+        "case_count": 7,
+        "hit_at_1": 0.2857142857142857,
+        "hit_at_3": 0.5714285714285714,
+        "hit_at_5": 0.5714285714285714,
+        "mrr": 0.45358933046902966
+      },
+      "broad": {
+        "case_count": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.5,
+        "mrr": 0.39276798825256976
+      },
+      "specific": {
+        "case_count": 5,
+        "hit_at_1": 0.8,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 0.9
+      },
+      "multi_turn_oracle": {
+        "case_count": 4,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.75,
+        "hit_at_5": 0.75,
+        "mrr": 0.6607142857142857
+      }
+    },
+    "multi_source_coverage": {
+      "case_count": 5,
+      "mean_coverage_at_3": 0.26666666666666666,
+      "mean_coverage_at_5": 0.26666666666666666,
+      "cases": [
+        {
+          "id": "ret_013",
+          "expected_source_count": 3,
+          "coverage_at_3": 0.3333333333333333,
+          "coverage_at_5": 0.3333333333333333
+        },
+        {
+          "id": "ret_015",
+          "expected_source_count": 2,
+          "coverage_at_3": 0.0,
+          "coverage_at_5": 0.0
+        },
+        {
+          "id": "ret_016",
+          "expected_source_count": 2,
+          "coverage_at_3": 0.0,
+          "coverage_at_5": 0.0
+        },
+        {
+          "id": "multi_002",
+          "expected_source_count": 2,
+          "coverage_at_3": 0.5,
+          "coverage_at_5": 0.5
+        },
+        {
+          "id": "multi_004",
+          "expected_source_count": 2,
+          "coverage_at_3": 0.5,
+          "coverage_at_5": 0.5
+        }
+      ]
+    },
+    "unsupported_case_count": 3,
+    "review_priority": {
+      "hit_at_5_zero": [
+        "ret_001",
+        "ret_003",
+        "ret_007",
+        "ret_009",
+        "ret_012",
+        "ret_015",
+        "ret_016",
+        "multi_001"
+      ],
+      "hit_at_1_zero_but_hit_at_5_one": [
+        "ret_004",
+        "ret_005",
+        "ret_006",
+        "ret_010",
+        "ret_014",
+        "ret_021",
+        "multi_003"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "ret_001",
+      "category": "direct",
+      "evaluation_group": "direct",
+      "query_used": "How old must someone be to have a GitHub account?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Terms of Service",
+          "heading_contains": "Account Requirements",
+          "source_path": "Policies/github-terms/github-terms-of-service.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.07803072088400655,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_a78978f647280d964ecc7d8d"
+        },
+        {
+          "rank": 2,
+          "score": 0.07795471482737804,
+          "title": "GitHub Community Guidelines",
+          "heading_path": [
+            "What happens if someone violates GitHub's policies?"
+          ],
+          "source_path": "Policies/github-terms/github-community-guidelines.md",
+          "chunk_id": "chunk_1a39aad0fc45cb27c5343d9e"
+        },
+        {
+          "rank": 3,
+          "score": 0.06445832314081339,
+          "title": "GitHub Sponsors Additional Terms",
+          "heading_path": [
+            "Terms For Sponsored Developer",
+            "1. Acceptable Use.",
+            "1.2. GitHub Sponsors Matching Fund",
+            "1.2.1. Matching Fund Terms."
+          ],
+          "source_path": "Policies/github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_f4e8b281f08b3c0e1a5c2392"
+        },
+        {
+          "rank": 4,
+          "score": 0.06395529653158896,
+          "title": "GitHub Community Guidelines",
+          "heading_path": [
+            "What if something or someone offends you?"
+          ],
+          "source_path": "Policies/github-terms/github-community-guidelines.md",
+          "chunk_id": "chunk_648a4d2bbb17b6b1207a8f13"
+        },
+        {
+          "rank": 5,
+          "score": 0.05219735787607695,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "J. Payment",
+            "3. Authorization"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_e75fc3be39895b81c29362bf"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 29,
+      "reciprocal_rank": 0.034482758620689655
+    },
+    {
+      "id": "ret_002",
+      "category": "direct",
+      "evaluation_group": "direct",
+      "query_used": "Does GitHub allow its platform to be used to deliver malware or run attack infrastructure?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Active Malware or Exploits",
+          "heading_contains": "",
+          "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.1458805083558044,
+          "title": "GitHub Active Malware or Exploits",
+          "heading_path": [],
+          "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b"
+        },
+        {
+          "rank": 2,
+          "score": 0.14345757154509528,
+          "title": "GitHub Acceptable Use Policies",
+          "heading_path": [
+            "5. Site Access and Safety"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+          "chunk_id": "chunk_d16788b425405e4d8b96f51b"
+        },
+        {
+          "rank": 3,
+          "score": 0.0799819938174627,
+          "title": "GitHub Subprocessors",
+          "heading_path": [
+            "Third Party Subprocessors"
+          ],
+          "source_path": "Policies/privacy-policies/github-subprocessors.md",
+          "chunk_id": "chunk_c02a39f96e1278228310e2a3"
+        },
+        {
+          "rank": 4,
+          "score": 0.049845029880008364,
+          "title": "GitHub Subprocessors",
+          "heading_path": [
+            "Third Party Subprocessors"
+          ],
+          "source_path": "Policies/privacy-policies/github-subprocessors.md",
+          "chunk_id": "chunk_b0e32279dde163be2d8c014f"
+        },
+        {
+          "rank": 5,
+          "score": 0.04767522218507849,
+          "title": "GitHub SIRT description RFC 2350",
+          "heading_path": [
+            "3. Charter",
+            "3.1 Mission Statement"
+          ],
+          "source_path": "Policies/security-policies/github-sirt-description-rfc-2350.md",
+          "chunk_id": "chunk_90d56b48480e5a24de61bfd8"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_003",
+      "category": "direct",
+      "evaluation_group": "direct",
+      "query_used": "What is an appeal under GitHub's Appeal and Reinstatement policy?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_contains": "What are Appeals and Reinstatements?",
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.4879301869532516,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "Transparency"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_83b547227c00555ec9176142"
+        },
+        {
+          "rank": 2,
+          "score": 0.42650604204572734,
+          "title": "GitHub Community Guidelines",
+          "heading_path": [
+            "Appeal and Reinstatement"
+          ],
+          "source_path": "Policies/github-terms/github-community-guidelines.md",
+          "chunk_id": "chunk_bd4c111b1d64dd00cac67c66"
+        },
+        {
+          "rank": 3,
+          "score": 0.3685381498380686,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "Appeal and Reinstatement"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_a3593c3652416f4582a78c12"
+        },
+        {
+          "rank": 4,
+          "score": 0.3606141999926484,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "How this works"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_5d1188bc9474b578388e2ddd"
+        },
+        {
+          "rank": 5,
+          "score": 0.35698846193329237,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "How this works",
+            "Reinstatements"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_6b52e8e296b1ffebdd560cf7"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 6,
+      "reciprocal_rank": 0.16666666666666666
+    },
+    {
+      "id": "ret_004",
+      "category": "direct",
+      "evaluation_group": "direct",
+      "query_used": "What account information does GitHub collect when a user opens an account?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub General Privacy Statement",
+          "heading_contains": "From You",
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.12064221955083022,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "From Third Parties"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_520112cf4d650b9c0ff2bfb9"
+        },
+        {
+          "rank": 2,
+          "score": 0.11468824096387883,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "From You"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_30303b4016563bd96f27e027"
+        },
+        {
+          "rank": 3,
+          "score": 0.0953768933208999,
+          "title": "GitHub Community Code of Conduct",
+          "heading_path": [
+            "Standards",
+            "_What is not Allowed_"
+          ],
+          "source_path": "Policies/github-terms/github-community-code-of-conduct.md",
+          "chunk_id": "chunk_0ce99a6078cf37abe73d8a85"
+        },
+        {
+          "rank": 4,
+          "score": 0.09223269690685243,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "2. Required Information"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_57eac38f2338f921da165cd3"
+        },
+        {
+          "rank": 5,
+          "score": 0.09029604671604823,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_781da9ec3c33897a8c48e53f"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "ret_005",
+      "category": "direct",
+      "evaluation_group": "direct",
+      "query_used": "What contact details must be included in a DMCA counter notice?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "heading_contains": "Your Counter Notice Must",
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.2615644124654155,
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "heading_path": [
+            "How to Submit Your Counter Notice"
+          ],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "chunk_id": "chunk_266d98caef0a483344635953"
+        },
+        {
+          "rank": 2,
+          "score": 0.2212953362904457,
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "heading_path": [],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "chunk_id": "chunk_6c0b3e8396e42e3f9a7ccf18"
+        },
+        {
+          "rank": 3,
+          "score": 0.21851465750907295,
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "heading_path": [
+            "Your Counter Notice Must..."
+          ],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "chunk_id": "chunk_9eff71948173867f562cf65f"
+        },
+        {
+          "rank": 4,
+          "score": 0.20298174179479503,
+          "title": "DMCA Takedown Policy",
+          "heading_path": [
+            "G. Submitting Notices"
+          ],
+          "source_path": "Policies/content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_cc76ca90d98f60feb3945968"
+        },
+        {
+          "rank": 5,
+          "score": 0.16674893621641035,
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "heading_path": [
+            "Before You Start"
+          ],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "chunk_id": "chunk_7858ac759f06d98823da5dbf"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 3,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "ret_006",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "Can someone target a person with degrading language because of their identity or background?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Hate Speech and Discrimination",
+          "heading_contains": "",
+          "source_path": "Policies/acceptable-use-policies/github-hate-speech-and-discrimination.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.060329139015280024,
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "heading_path": [
+            "Addenda",
+            "Canada Addendum"
+          ],
+          "source_path": "Policies/privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_ec175777b8f96d3c7543a7f3"
+        },
+        {
+          "rank": 2,
+          "score": 0.05774960681756166,
+          "title": "GitHub Hate Speech and Discrimination",
+          "heading_path": [],
+          "source_path": "Policies/acceptable-use-policies/github-hate-speech-and-discrimination.md",
+          "chunk_id": "chunk_3e0fd7bffac7dc4e4088efcf"
+        },
+        {
+          "rank": 3,
+          "score": 0.04652823586232765,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "Q. Release and Indemnification"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_89fd9506e6a3ecdfbe10d5cb"
+        },
+        {
+          "rank": 4,
+          "score": 0.04646505168322722,
+          "title": "GitHub Event Code of Conduct",
+          "heading_path": [
+            "Code of Conduct"
+          ],
+          "source_path": "Policies/github-terms/github-event-code-of-conduct.md",
+          "chunk_id": "chunk_6603d8df9b666afe3f73439e"
+        },
+        {
+          "rank": 5,
+          "score": 0.04603693881461748,
+          "title": "GitHub Terms of Service",
+          "heading_path": [],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_def1793c955922b5efbdab48"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "ret_007",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "May I publish another person's home address or banking details in a repository?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Doxxing and Invasion of Privacy",
+          "heading_contains": "",
+          "source_path": "Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.07932321470135294,
+          "title": "GitHub Acceptable Use Policies",
+          "heading_path": [
+            "3. Intellectual Property, Authenticity, and Private Information"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+          "chunk_id": "chunk_9bba3228987c04af2bbd72b5"
+        },
+        {
+          "rank": 2,
+          "score": 0.07719916683127212,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "What is Private Information?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567"
+        },
+        {
+          "rank": 3,
+          "score": 0.06428390999087076,
+          "title": "GitHub Impersonation",
+          "heading_path": [],
+          "source_path": "Policies/acceptable-use-policies/github-impersonation.md",
+          "chunk_id": "chunk_0d2d5abd2784cfcf630269b4"
+        },
+        {
+          "rank": 4,
+          "score": 0.060460195286647055,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [
+            "User data on GitHub.com"
+          ],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_479d01282d63ba9028b61fb4"
+        },
+        {
+          "rank": 5,
+          "score": 0.0579487772330782,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_8f7ea30ed2b0f19beac07dfc"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 42,
+      "reciprocal_rank": 0.023809523809523808
+    },
+    {
+      "id": "ret_008",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "Will GitHub report a researcher to law enforcement for an accidental, good-faith violation during authorized vulnerability research?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Bug Bounty Program Legal Safe Harbor",
+          "heading_contains": "Safe Harbor Terms",
+          "source_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.13314844892812328,
+          "title": "GitHub Bug Bounty Program Legal Safe Harbor",
+          "heading_path": [
+            "1. Safe Harbor Terms"
+          ],
+          "source_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_e0d354aeaa7beb50005833bb"
+        },
+        {
+          "rank": 2,
+          "score": 0.08106729320428184,
+          "title": "GitHub Research Program Terms",
+          "heading_path": [],
+          "source_path": "Policies/github-terms/github-research-program-terms.md",
+          "chunk_id": "chunk_12f75676b5930d7af6ffa96f"
+        },
+        {
+          "rank": 3,
+          "score": 0.08021219307688779,
+          "title": "GitHub Research Program Terms",
+          "heading_path": [
+            "C. Reservation of Rights"
+          ],
+          "source_path": "Policies/github-terms/github-research-program-terms.md",
+          "chunk_id": "chunk_3206d0b27789f91ae12f3e2e"
+        },
+        {
+          "rank": 4,
+          "score": 0.07883904036501922,
+          "title": "GitHub Research Program Terms",
+          "heading_path": [
+            "H. Miscellaneous",
+            "1. Governing Law"
+          ],
+          "source_path": "Policies/github-terms/github-research-program-terms.md",
+          "chunk_id": "chunk_0b6c4c7d1fedd27465515387"
+        },
+        {
+          "rank": 5,
+          "score": 0.0779722227381527,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [
+            "Requests from foreign law enforcement"
+          ],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_32e0b053fd01881e36edc91c"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_009",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "Can a company connected to a sanctioned region continue using private repositories and paid GitHub features?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub and Trade Controls",
+          "heading_contains": "How are organization accounts impacted?",
+          "source_path": "Policies/other-site-policies/github-and-trade-controls.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.1584754774555117,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "E. Private Repositories",
+            "1. Control of Private Repositories"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_8835cc82eee6640ac0a294c1"
+        },
+        {
+          "rank": 2,
+          "score": 0.1530927588743059,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Private repositories: GitHub Access"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_236cb152cc6d296c37be934f"
+        },
+        {
+          "rank": 3,
+          "score": 0.13308519114284975,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "E. Private Repositories"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_df11478eacd02631c457fd7b"
+        },
+        {
+          "rank": 4,
+          "score": 0.13231575750097024,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "E. Private Repositories",
+            "2. Confidentiality of Private Repositories"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_17ad06919c46fe410c2cfa55"
+        },
+        {
+          "rank": 5,
+          "score": 0.12928212864606387,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "E. Private Repositories",
+            "1. Control"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_dc03216a68a88fcbae59657e"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 8,
+      "reciprocal_rank": 0.125
+    },
+    {
+      "id": "ret_010",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "If I publish code in an open repository, am I directing GitHub to make it available to everyone online?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Terms of Service",
+          "heading_contains": "Public Repositories and Lawful Access",
+          "source_path": "Policies/github-terms/github-terms-of-service.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.08593310644220833,
+          "title": "DMCA Takedown Policy",
+          "heading_path": [
+            "D. What If I Inadvertently Missed the Window to Make Changes?"
+          ],
+          "source_path": "Policies/content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_380754137c9c5ef7332fa583"
+        },
+        {
+          "rank": 2,
+          "score": 0.08229462563794827,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "D. User-Generated Content",
+            "8. Public Repositories and Lawful Access"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_835c8f469f5c99a78af27fd8"
+        },
+        {
+          "rank": 3,
+          "score": 0.05441712952190194,
+          "title": "GitHub Community Code of Conduct",
+          "heading_path": [
+            "Pledge"
+          ],
+          "source_path": "Policies/github-terms/github-community-code-of-conduct.md",
+          "chunk_id": "chunk_1111aea2c6a1ee54669834e1"
+        },
+        {
+          "rank": 4,
+          "score": 0.045840396627969786,
+          "title": "GitHub and Trade Controls",
+          "heading_path": [
+            "Frequently asked questions",
+            "What is available and not available?"
+          ],
+          "source_path": "Policies/other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_672be43c925d3ed6d1adb2c2"
+        },
+        {
+          "rank": 5,
+          "score": 0.041573526299776814,
+          "title": "GitHub Open Source Applications Terms and Conditions",
+          "heading_path": [],
+          "source_path": "Policies/github-terms/github-open-source-applications-terms-and-conditions.md",
+          "chunk_id": "chunk_857a3166741a114aca6f6bf0"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "ret_011",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "Will GitHub warn an account owner before handing their information to investigators?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_contains": "notify any affected account owners",
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.07470171732875888,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [
+            "We will notify any affected account owners"
+          ],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_35fd87021964946f76efbd5f"
+        },
+        {
+          "rank": 2,
+          "score": 0.06299128848702748,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [
+            "Disclosure of non-public information"
+          ],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_e38e8b117bf75ca2426fb8a0"
+        },
+        {
+          "rank": 3,
+          "score": 0.05180170400196579,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "M. Cancellation and Termination",
+            "2. Upon Cancellation"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_fa3e909880a39b8c8873e1a2"
+        },
+        {
+          "rank": 4,
+          "score": 0.04904451832370405,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "1. Account Controls"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_3224fb18dd570640812d90f0"
+        },
+        {
+          "rank": 5,
+          "score": 0.0445491884122309,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "2. Required Information"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_57eac38f2338f921da165cd3"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_012",
+      "category": "semantic",
+      "evaluation_group": "semantic",
+      "query_used": "Is code used to study vulnerabilities automatically removed just because it could also be misused?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Active Malware or Exploits",
+          "heading_contains": "",
+          "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.08267638305415538,
+          "title": "Coordinated Disclosure of Security Vulnerabilities",
+          "heading_path": [],
+          "source_path": "Policies/security-policies/coordinated-disclosure-of-security-vulnerabilities.md",
+          "chunk_id": "chunk_50b780473c99540e8f1ecd1a"
+        },
+        {
+          "rank": 2,
+          "score": 0.059358118170388156,
+          "title": "Coordinated Disclosure of Security Vulnerabilities",
+          "heading_path": [
+            "Bounty Program"
+          ],
+          "source_path": "Policies/security-policies/coordinated-disclosure-of-security-vulnerabilities.md",
+          "chunk_id": "chunk_364b5397f0f3435d7cc10a8f"
+        },
+        {
+          "rank": 3,
+          "score": 0.053042906024773843,
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "heading_path": [
+            "Before You Start"
+          ],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "chunk_id": "chunk_dfcbf6c0856007fb39268709"
+        },
+        {
+          "rank": 4,
+          "score": 0.05250514360364074,
+          "title": "GitHub Pre-release License Terms",
+          "heading_path": [
+            "9. No Warranties."
+          ],
+          "source_path": "Policies/github-terms/github-pre-release-license-terms.md",
+          "chunk_id": "chunk_5f09108b8e389fd226234ac0"
+        },
+        {
+          "rank": 5,
+          "score": 0.046851259648404815,
+          "title": "Guide to Submitting a DMCA Takedown Notice",
+          "heading_path": [
+            "Before You Start"
+          ],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice.md",
+          "chunk_id": "chunk_b3a75390d468384fcf4e9ecf"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 38,
+      "reciprocal_rank": 0.02631578947368421
+    },
+    {
+      "id": "ret_013",
+      "category": "broad",
+      "evaluation_group": "broad",
+      "query_used": "When can GitHub restrict or shut down an account?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Terms of Service",
+          "heading_contains": "GitHub May Terminate",
+          "source_path": "Policies/github-terms/github-terms-of-service.md"
+        },
+        {
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_contains": "What are Appeals and Reinstatements?",
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md"
+        },
+        {
+          "title": "GitHub Community Guidelines",
+          "heading_contains": "What happens if someone violates GitHub's policies?",
+          "source_path": "Policies/github-terms/github-community-guidelines.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.062031459711748844,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "What are Appeals and Reinstatements?"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c"
+        },
+        {
+          "rank": 2,
+          "score": 0.049878352492070496,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_a78978f647280d964ecc7d8d"
+        },
+        {
+          "rank": 3,
+          "score": 0.044968749272923186,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "3. Account Security"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_e406a833a17e9030cdd73c0a"
+        },
+        {
+          "rank": 4,
+          "score": 0.04077199306652102,
+          "title": "GitHub Account Recovery Policy",
+          "heading_path": [
+            "How can I retrieve my email from a locked account?"
+          ],
+          "source_path": "Policies/other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_afe8515691ef0f4aba60b2ea"
+        },
+        {
+          "rank": 5,
+          "score": 0.03981081102263645,
+          "title": "GitHub Account Recovery Policy",
+          "heading_path": [
+            "How can I remove a payment method from a locked account?"
+          ],
+          "source_path": "Policies/other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_622ebac4ddfacd9aae059dbe"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "source_coverage_at_3": 0.3333333333333333,
+      "source_coverage_at_5": 0.3333333333333333
+    },
+    {
+      "id": "ret_014",
+      "category": "broad",
+      "evaluation_group": "broad",
+      "query_used": "What information does GitHub gather about people who use its services?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub General Privacy Statement",
+          "heading_contains": "Personal Data We Collect",
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.09060394473354405,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Information for Minors"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_511c0f9e602145913700e9b1"
+        },
+        {
+          "rank": 2,
+          "score": 0.0670500860825113,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "Automatically"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_2cec2cf86cb897094258e286"
+        },
+        {
+          "rank": 3,
+          "score": 0.05809918421276428,
+          "title": "GitHub Acceptable Use Policies",
+          "heading_path": [
+            "8. Privacy"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+          "chunk_id": "chunk_f9f27089a4f14eff065f88c7"
+        },
+        {
+          "rank": 4,
+          "score": 0.05735418497266932,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "T. Miscellaneous",
+            "7. Publicity"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_d37c28ee1a7e663c3e069148"
+        },
+        {
+          "rank": 5,
+          "score": 0.04618642487477418,
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "heading_path": [
+            "Overview",
+            "Use of Cookies and Web Beacons"
+          ],
+          "source_path": "Policies/privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_11e28f3378704f15c2a0ba73"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "ret_015",
+      "category": "broad",
+      "evaluation_group": "broad",
+      "query_used": "What kinds of behavior or material are not allowed on GitHub?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Acceptable Use Policies",
+          "heading_contains": "User Safety",
+          "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md"
+        },
+        {
+          "title": "GitHub Acceptable Use Policies",
+          "heading_contains": "Site Access and Safety",
+          "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.10995956631659444,
+          "title": "GitHub Community Code of Conduct",
+          "heading_path": [
+            "Standards",
+            "_What is not Allowed_"
+          ],
+          "source_path": "Policies/github-terms/github-community-code-of-conduct.md",
+          "chunk_id": "chunk_0ce99a6078cf37abe73d8a85"
+        },
+        {
+          "rank": 2,
+          "score": 0.06774273445603503,
+          "title": "GitHub Event Code of Conduct",
+          "heading_path": [
+            "Code of Conduct"
+          ],
+          "source_path": "Policies/github-terms/github-event-code-of-conduct.md",
+          "chunk_id": "chunk_6603d8df9b666afe3f73439e"
+        },
+        {
+          "rank": 3,
+          "score": 0.06409943576380206,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "K. Term; Termination; Suspension",
+            "3. Termination for Material Breach"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_f6ae7ef6d7485049f68345cc"
+        },
+        {
+          "rank": 4,
+          "score": 0.061533791659401184,
+          "title": "GitHub Copilot Extension Developer Policy",
+          "heading_path": [
+            "10. Export Control"
+          ],
+          "source_path": "Policies/github-terms/github-copilot-extension-developer-policy.md",
+          "chunk_id": "chunk_df73e16c166ad721ad8a1801"
+        },
+        {
+          "rank": 5,
+          "score": 0.059567240275888354,
+          "title": "GitHub Community Code of Conduct",
+          "heading_path": [
+            "Enforcement",
+            "_What GitHub Community Participants Can Do_"
+          ],
+          "source_path": "Policies/github-terms/github-community-code-of-conduct.md",
+          "chunk_id": "chunk_0875d93e84a41c2c732a4508"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 227,
+      "reciprocal_rank": 0.004405286343612335,
+      "source_coverage_at_3": 0.0,
+      "source_coverage_at_5": 0.0
+    },
+    {
+      "id": "ret_016",
+      "category": "broad",
+      "evaluation_group": "broad",
+      "query_used": "How does GitHub respond when a government or law-enforcement body asks it to remove content or disclose user data?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Government Takedown Policy",
+          "heading_contains": "complete takedown request from a government",
+          "source_path": "Policies/other-site-policies/github-government-takedown-policy.md"
+        },
+        {
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_contains": "Disclosure of non-public information",
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.14456218992365538,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "D. User-Generated Content",
+            "2. GitHub May Remove Content"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_f368edf5e327b890156ab130"
+        },
+        {
+          "rank": 2,
+          "score": 0.10828959101319331,
+          "title": "GitHub Government Takedown Policy",
+          "heading_path": [
+            "What is this?"
+          ],
+          "source_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+          "chunk_id": "chunk_649633341615e86787cb09b5"
+        },
+        {
+          "rank": 3,
+          "score": 0.08860530863241428,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [
+            "Questions"
+          ],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_a83a67121d143ab56baacad5"
+        },
+        {
+          "rank": 4,
+          "score": 0.08575983425372348,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_848e7ed07babd1137a0b93ae"
+        },
+        {
+          "rank": 5,
+          "score": 0.08353078924042545,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "D. User-Generated Content",
+            "3. Ownership and License Grants"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_3bdb34e3b60284bdeb7a8e09"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 15,
+      "reciprocal_rank": 0.06666666666666667,
+      "source_coverage_at_3": 0.0,
+      "source_coverage_at_5": 0.0
+    },
+    {
+      "id": "ret_017",
+      "category": "specific",
+      "evaluation_group": "specific",
+      "query_used": "If a parent repository is disabled for exposing private information, are all of its forks disabled automatically?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Private Information Removal Policy",
+          "heading_contains": "What About Forks?",
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.1713067788017187,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "How Does This Actually Work?",
+            "What About Forks? (or What's a Fork?)"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_161463875a51eb1c46ff33f3"
+        },
+        {
+          "rank": 2,
+          "score": 0.13290606716896575,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "What is Private Information?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567"
+        },
+        {
+          "rank": 3,
+          "score": 0.12583838949668985,
+          "title": "DMCA Takedown Policy",
+          "heading_path": [
+            "B. What About Forks? (or What's a Fork?)"
+          ],
+          "source_path": "Policies/content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_a3ddf75464adab828d3d811f"
+        },
+        {
+          "rank": 4,
+          "score": 0.12299117932826824,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_8f7ea30ed2b0f19beac07dfc"
+        },
+        {
+          "rank": 5,
+          "score": 0.09796143646654125,
+          "title": "Guide to Submitting a DMCA Takedown Notice",
+          "heading_path": [
+            "Your Complaint Must ..."
+          ],
+          "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice.md",
+          "chunk_id": "chunk_ce4e78bb644577b70b81f4e9"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_018",
+      "category": "specific",
+      "evaluation_group": "specific",
+      "query_used": "How can a user disable non-essential cookies on GitHub pages?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub General Privacy Statement",
+          "heading_contains": "cookie choices and controls",
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.18515923426185935,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Our use of cookies and tracking technologies",
+            "Cookies and tracking technologies",
+            "What are your cookie choices and controls?"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_bb614830477725e908ff5d23"
+        },
+        {
+          "rank": 2,
+          "score": 0.17357324000361976,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Our use of cookies and tracking technologies",
+            "Cookies and tracking technologies"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_62ada47ad210626b43b4c10d"
+        },
+        {
+          "rank": 3,
+          "score": 0.12554542918350944,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Our use of cookies and tracking technologies",
+            "Cookies and tracking technologies",
+            "How do we and our partners use cookies and similar technologies?"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_aed5daae41b2300a164398e8"
+        },
+        {
+          "rank": 4,
+          "score": 0.11781904156071815,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "Automatically"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_2cec2cf86cb897094258e286"
+        },
+        {
+          "rank": 5,
+          "score": 0.1175186780546203,
+          "title": "GitHub Cookies",
+          "heading_path": [
+            "Cookies"
+          ],
+          "source_path": "Policies/privacy-policies/github-cookies.md",
+          "chunk_id": "chunk_7e8835106fdfbbef2c11bce7"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_019",
+      "category": "specific",
+      "evaluation_group": "specific",
+      "query_used": "What details should an authorized person provide when asking GitHub to handle a deceased user's account?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Deceased User Policy",
+          "heading_contains": "",
+          "source_path": "Policies/other-site-policies/github-deceased-user-policy.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.14669474251365727,
+          "title": "GitHub Deceased User Policy",
+          "heading_path": [],
+          "source_path": "Policies/other-site-policies/github-deceased-user-policy.md",
+          "chunk_id": "chunk_cdfe12024cbad23056ef4218"
+        },
+        {
+          "rank": 2,
+          "score": 0.07041212527659368,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "K. Term; Termination; Suspension",
+            "2. Termination for Convenience; Account Cancellation"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_430ff1a4ccffd44ef3ea83bf"
+        },
+        {
+          "rank": 3,
+          "score": 0.061449927685672874,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "From You"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_30303b4016563bd96f27e027"
+        },
+        {
+          "rank": 4,
+          "score": 0.059534816790228304,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "2. Account Requirements"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_a08f09af28e1083cbe816df7"
+        },
+        {
+          "rank": 5,
+          "score": 0.05933772900876716,
+          "title": "GitHub Impersonation",
+          "heading_path": [],
+          "source_path": "Policies/acceptable-use-policies/github-impersonation.md",
+          "chunk_id": "chunk_0d2d5abd2784cfcf630269b4"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_020",
+      "category": "specific",
+      "evaluation_group": "specific",
+      "query_used": "How can someone remove a payment method after being locked out of their GitHub account?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Account Recovery Policy",
+          "heading_contains": "remove a payment method from a locked account",
+          "source_path": "Policies/other-site-policies/github-account-recovery-policy.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.44318382273265855,
+          "title": "GitHub Account Recovery Policy",
+          "heading_path": [
+            "How can I remove a payment method from a locked account?"
+          ],
+          "source_path": "Policies/other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_622ebac4ddfacd9aae059dbe"
+        },
+        {
+          "rank": 2,
+          "score": 0.17678562765110337,
+          "title": "GitHub Sponsors Additional Terms",
+          "heading_path": [
+            "Terms For Sponsored Developer",
+            "3. Financial Terms.",
+            "3.4. Payment Method."
+          ],
+          "source_path": "Policies/github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_27b11a113fece3bf111a56cb"
+        },
+        {
+          "rank": 3,
+          "score": 0.12270177506194564,
+          "title": "GitHub Account Recovery Policy",
+          "heading_path": [
+            "How can I retrieve my email from a locked account?"
+          ],
+          "source_path": "Policies/other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_afe8515691ef0f4aba60b2ea"
+        },
+        {
+          "rank": 4,
+          "score": 0.08283055026841499,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "L. Payment",
+            "4. Authorization"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_cdfe3ca362642a8d43a89a35"
+        },
+        {
+          "rank": 5,
+          "score": 0.08013063959885267,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "J. Payment",
+            "3. Authorization"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_e75fc3be39895b81c29362bf"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "ret_021",
+      "category": "specific",
+      "evaluation_group": "specific",
+      "query_used": "Which registration and confusion details are required in a GitHub trademark complaint?",
+      "query_source": "question",
+      "expected_sources": [
+        {
+          "title": "GitHub Trademark Policy",
+          "heading_contains": "Information is Required When Reporting Trademark Policy Violations",
+          "source_path": "Policies/content-removal-policies/github-trademark-policy.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.1419600584246048,
+          "title": "GitHub Username Policy",
+          "heading_path": [
+            "Trademark Policy"
+          ],
+          "source_path": "Policies/other-site-policies/github-username-policy.md",
+          "chunk_id": "chunk_d3da9ce046c8ea901e71a245"
+        },
+        {
+          "rank": 2,
+          "score": 0.14093305709262854,
+          "title": "GitHub Trademark Policy",
+          "heading_path": [
+            "What Information is Required When Reporting Trademark Policy Violations?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_029abeb4a7b0d31dfe0744a5"
+        },
+        {
+          "rank": 3,
+          "score": 0.120072484194035,
+          "title": "GitHub Trademark Policy",
+          "heading_path": [
+            "What is a GitHub Trademark Policy Violation?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_e21d5efa444988a6ee52dc30"
+        },
+        {
+          "rank": 4,
+          "score": 0.1180798666038039,
+          "title": "GitHub Trademark Policy",
+          "heading_path": [
+            "How Does GitHub Respond To Reported Trademark Policy Violations?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_f7c393d8c6398f15f8c9a7d1"
+        },
+        {
+          "rank": 5,
+          "score": 0.11558149355660721,
+          "title": "GitHub Sponsors Additional Terms",
+          "heading_path": [
+            "Terms For Sponsored Developer",
+            "2. Sponsored Developer Obligations.",
+            "2.2. Registration."
+          ],
+          "source_path": "Policies/github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_21a189618fd4ce0b4468d6a9"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "ret_022",
+      "category": "unsupported",
+      "evaluation_group": "unsupported",
+      "query_used": "What uptime percentage does GitHub guarantee for free personal accounts?",
+      "query_source": "question",
+      "expected_sources": [],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.23386061971412728,
+          "title": "GitHub Pre-release License Terms",
+          "heading_path": [
+            "11. No Uptime Guarantees."
+          ],
+          "source_path": "Policies/github-terms/github-pre-release-license-terms.md",
+          "chunk_id": "chunk_87ea91db9ddecefae97629ef"
+        },
+        {
+          "rank": 2,
+          "score": 0.08237065792579779,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_a78978f647280d964ecc7d8d"
+        },
+        {
+          "rank": 3,
+          "score": 0.06768843652120332,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "3. Account Requirements"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_85867a0b6a0b9d17cba279d7"
+        },
+        {
+          "rank": 4,
+          "score": 0.05794534575197636,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Data Privacy Framework (DPF)"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_f84c8c34345cd1bc6b6cde3f"
+        },
+        {
+          "rank": 5,
+          "score": 0.056998930823006756,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "6. Enterprise Cloud Service Level Agreement"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_79100cb7c9a280bb850fd5d1"
+        }
+      ],
+      "supported": false,
+      "hit_at_1": null,
+      "hit_at_3": null,
+      "hit_at_5": null,
+      "first_relevant_rank": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "ret_023",
+      "category": "unsupported",
+      "evaluation_group": "unsupported",
+      "query_used": "In which exact physical data center is my specific repository stored?",
+      "query_source": "question",
+      "expected_sources": [],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.0702358386236166,
+          "title": "GitHub Secret Scanning Partner Program Agreement",
+          "heading_path": [
+            "4. Purpose Limitation on Match Data",
+            "4.3 Private Repository Data"
+          ],
+          "source_path": "Policies/github-terms/github-secret-scanning-partner-program-agreement.md",
+          "chunk_id": "chunk_3ca704012d5e438e929b402b"
+        },
+        {
+          "rank": 2,
+          "score": 0.05798916773672142,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "Transparency"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_83b547227c00555ec9176142"
+        },
+        {
+          "rank": 3,
+          "score": 0.05722034988322983,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "What is Private Information?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567"
+        },
+        {
+          "rank": 4,
+          "score": 0.055215907619549635,
+          "title": "GitHub Account Recovery Policy",
+          "heading_path": [
+            "How can I retrieve my email from a locked account?"
+          ],
+          "source_path": "Policies/other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_afe8515691ef0f4aba60b2ea"
+        },
+        {
+          "rank": 5,
+          "score": 0.052242534817418196,
+          "title": "Guidelines for Legal Requests of User Data",
+          "heading_path": [
+            "GitHub terminology"
+          ],
+          "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "chunk_id": "chunk_6bc363aa4e3f40702deda958"
+        }
+      ],
+      "supported": false,
+      "hit_at_1": null,
+      "hit_at_3": null,
+      "hit_at_5": null,
+      "first_relevant_rank": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "ret_024",
+      "category": "unsupported",
+      "evaluation_group": "unsupported",
+      "query_used": "What is the maximum number of days GitHub will take to decide every account-suspension appeal?",
+      "query_source": "question",
+      "expected_sources": [],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.10515044559294369,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "Transparency"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_83b547227c00555ec9176142"
+        },
+        {
+          "rank": 2,
+          "score": 0.09377210636469943,
+          "title": "GitHub Community Guidelines",
+          "heading_path": [
+            "Appeal and Reinstatement"
+          ],
+          "source_path": "Policies/github-terms/github-community-guidelines.md",
+          "chunk_id": "chunk_bd4c111b1d64dd00cac67c66"
+        },
+        {
+          "rank": 3,
+          "score": 0.08451428247235555,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "Appeal and Reinstatement"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_a3593c3652416f4582a78c12"
+        },
+        {
+          "rank": 4,
+          "score": 0.08233697937495944,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "What are Appeals and Reinstatements?"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c"
+        },
+        {
+          "rank": 5,
+          "score": 0.08075490777332198,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "How this works"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_5d1188bc9474b578388e2ddd"
+        }
+      ],
+      "supported": false,
+      "hit_at_1": null,
+      "hit_at_3": null,
+      "hit_at_5": null,
+      "first_relevant_rank": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "multi_001",
+      "category": "multi_turn",
+      "evaluation_group": "multi_turn_oracle",
+      "query_used": "What happens to forks when a parent repository is disabled under GitHub's Private Information Removal Policy?",
+      "query_source": "standalone_reference",
+      "expected_sources": [
+        {
+          "title": "GitHub Private Information Removal Policy",
+          "heading_contains": "What About Forks?",
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.3040422072438812,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_8f7ea30ed2b0f19beac07dfc"
+        },
+        {
+          "rank": 2,
+          "score": 0.28732566026408807,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "Disputes"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_91f13713d48889c198ab0f18"
+        },
+        {
+          "rank": 3,
+          "score": 0.2693685009647869,
+          "title": "Submitting content removal requests",
+          "heading_path": [
+            "GitHub Private Information Removal Policy"
+          ],
+          "source_path": "Policies/content-removal-policies/submitting-content-removal-requests.md",
+          "chunk_id": "chunk_0ef6386af9657bbfb48bef55"
+        },
+        {
+          "rank": 4,
+          "score": 0.26401419603304516,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "What is Private Information?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567"
+        },
+        {
+          "rank": 5,
+          "score": 0.2550614617533112,
+          "title": "GitHub Private Information Removal Policy",
+          "heading_path": [
+            "Sending A Private Information Removal Request"
+          ],
+          "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_a241a064615d0fdcc343c6bf"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "first_relevant_rank": 7,
+      "reciprocal_rank": 0.14285714285714285
+    },
+    {
+      "id": "multi_002",
+      "category": "multi_turn",
+      "evaluation_group": "multi_turn_oracle",
+      "query_used": "Can a user appeal GitHub's decision to restrict content or disable an account for an alleged policy violation?",
+      "query_source": "standalone_reference",
+      "expected_sources": [
+        {
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_contains": "Appeals",
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md"
+        },
+        {
+          "title": "GitHub Community Guidelines",
+          "heading_contains": "Appeal and Reinstatement",
+          "source_path": "Policies/github-terms/github-community-guidelines.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.19328104668929227,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "What are Appeals and Reinstatements?"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c"
+        },
+        {
+          "rank": 2,
+          "score": 0.1510448530543536,
+          "title": "GitHub Trademark Policy",
+          "heading_path": [
+            "What is a GitHub Trademark Policy Violation?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_e21d5efa444988a6ee52dc30"
+        },
+        {
+          "rank": 3,
+          "score": 0.14423875195576163,
+          "title": "GitHub Trademark Policy",
+          "heading_path": [
+            "What is not a GitHub Trademark Policy Violation?"
+          ],
+          "source_path": "Policies/content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_19600b091f62ca0ede3450a2"
+        },
+        {
+          "rank": 4,
+          "score": 0.13791498195679303,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "How this works",
+            "Appeals"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_56264636771e77075a782b6d"
+        },
+        {
+          "rank": 5,
+          "score": 0.13575782080380747,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "How this works",
+            "Reinstatements"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_6b52e8e296b1ffebdd560cf7"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "source_coverage_at_3": 0.5,
+      "source_coverage_at_5": 0.5
+    },
+    {
+      "id": "multi_003",
+      "category": "multi_turn",
+      "evaluation_group": "multi_turn_oracle",
+      "query_used": "What personal data does GitHub collect automatically from a user's device or use of the services?",
+      "query_source": "standalone_reference",
+      "expected_sources": [
+        {
+          "title": "GitHub General Privacy Statement",
+          "heading_contains": "Automatically",
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.24114255391181402,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_781da9ec3c33897a8c48e53f"
+        },
+        {
+          "rank": 2,
+          "score": 0.21876464316979355,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "Automatically"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_2cec2cf86cb897094258e286"
+        },
+        {
+          "rank": 3,
+          "score": 0.11664279557158164,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "From Third Parties"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_520112cf4d650b9c0ff2bfb9"
+        },
+        {
+          "rank": 4,
+          "score": 0.11088926664891315,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect",
+            "From You"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_30303b4016563bd96f27e027"
+        },
+        {
+          "rank": 5,
+          "score": 0.09069785229346822,
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "heading_path": [
+            "Addenda",
+            "Canada Addendum"
+          ],
+          "source_path": "Policies/privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_ec175777b8f96d3c7543a7f3"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "multi_004",
+      "category": "multi_turn",
+      "evaluation_group": "multi_turn_oracle",
+      "query_used": "Does GitHub allow dual-use vulnerability, malware, or exploit content when it is posted for security research?",
+      "query_source": "standalone_reference",
+      "expected_sources": [
+        {
+          "title": "GitHub Active Malware or Exploits",
+          "heading_contains": "",
+          "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md"
+        },
+        {
+          "title": "GitHub Acceptable Use Policies",
+          "heading_contains": "Site Access and Safety",
+          "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md"
+        }
+      ],
+      "top_5": [
+        {
+          "rank": 1,
+          "score": 0.16772321052300496,
+          "title": "GitHub Active Malware or Exploits",
+          "heading_path": [],
+          "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b"
+        },
+        {
+          "rank": 2,
+          "score": 0.09516359858466174,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "4. Account Security"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_b9e18e1cfc72d3d1c39e85a1"
+        },
+        {
+          "rank": 3,
+          "score": 0.09389917022350294,
+          "title": "GitHub Bug Bounty Program Legal Safe Harbor",
+          "heading_path": [
+            "1. Safe Harbor Terms"
+          ],
+          "source_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_e0d354aeaa7beb50005833bb"
+        },
+        {
+          "rank": 4,
+          "score": 0.09144706428647079,
+          "title": "Coordinated Disclosure of Security Vulnerabilities",
+          "heading_path": [],
+          "source_path": "Policies/security-policies/coordinated-disclosure-of-security-vulnerabilities.md",
+          "chunk_id": "chunk_50b780473c99540e8f1ecd1a"
+        },
+        {
+          "rank": 5,
+          "score": 0.08103335044382609,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Security"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_102b8554ca47e0995d7f1699"
+        }
+      ],
+      "supported": true,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "source_coverage_at_3": 0.5,
+      "source_coverage_at_5": 0.5
+    }
+  ]
+}

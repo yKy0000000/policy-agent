@@ -1,0 +1,31 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editors, operating systems, logs, and transient files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.part
+*~
+
+# Upstream content is fetched separately and retains its own Git history.
+data/site-policy/
+
+# Generated local artifacts belong here later, but are not source files.
+cache/*
+!cache/.gitkeep
+DEMO.md

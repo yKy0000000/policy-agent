@@ -1,0 +1,450 @@
+[
+  {
+    "id": "ret_001",
+    "category": "direct",
+    "question": "How old must someone be to have a GitHub account?",
+    "expected_sources": [
+      {
+        "title": "GitHub Terms of Service",
+        "heading_contains": "Account Requirements",
+        "source_path": "Policies/github-terms/github-terms-of-service.md"
+      }
+    ],
+    "supporting_snippet": "You must be age 13 or older.",
+    "notes": "Basic direct lookup for an explicit account requirement."
+  },
+  {
+    "id": "ret_002",
+    "category": "direct",
+    "question": "Does GitHub allow its platform to be used to deliver malware or run attack infrastructure?",
+    "expected_sources": [
+      {
+        "title": "GitHub Active Malware or Exploits",
+        "heading_contains": "",
+        "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md"
+      }
+    ],
+    "supporting_snippet": "We do not allow anyone to use our platform in direct support of unlawful attacks that cause technical harms, such as using GitHub as a means to deliver malicious executables or as attack infrastructure, for example by organizing denial of service attacks or managing command and control servers.",
+    "notes": "The source document has no Markdown headings, so heading_contains is empty."
+  },
+  {
+    "id": "ret_003",
+    "category": "direct",
+    "question": "What is an appeal under GitHub's Appeal and Reinstatement policy?",
+    "expected_sources": [
+      {
+        "title": "GitHub Appeal and Reinstatement",
+        "heading_contains": "What are Appeals and Reinstatements?",
+        "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md"
+      }
+    ],
+    "supporting_snippet": "An “Appeal” is where a user disputes that a violation has occurred and can provide additional information to show that a different decision should have been reached.",
+    "notes": "Direct definition lookup."
+  },
+  {
+    "id": "ret_004",
+    "category": "direct",
+    "question": "What account information does GitHub collect when a user opens an account?",
+    "expected_sources": [
+      {
+        "title": "GitHub General Privacy Statement",
+        "heading_contains": "From You",
+        "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+      }
+    ],
+    "supporting_snippet": "We collect certain information when you open an account such as your GitHub handle, name, email address, password, payment information and transaction information.",
+    "notes": "Direct privacy-policy terminology and a narrow collection channel."
+  },
+  {
+    "id": "ret_005",
+    "category": "direct",
+    "question": "What contact details must be included in a DMCA counter notice?",
+    "expected_sources": [
+      {
+        "title": "Guide to Submitting a DMCA Counter Notice",
+        "heading_contains": "Your Counter Notice Must",
+        "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+      }
+    ],
+    "supporting_snippet": "Include your email address, name, telephone number, and physical address.",
+    "notes": "Direct procedural lookup in a content-removal guide."
+  },
+  {
+    "id": "ret_006",
+    "category": "semantic",
+    "question": "Can someone target a person with degrading language because of their identity or background?",
+    "expected_sources": [
+      {
+        "title": "GitHub Hate Speech and Discrimination",
+        "heading_contains": "",
+        "source_path": "Policies/acceptable-use-policies/github-hate-speech-and-discrimination.md"
+      }
+    ],
+    "supporting_snippet": "GitHub does not tolerate speech that attacks or promotes hate toward an individual or group of people on the basis of who they are, including age, body size, ability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, sexual identity, or sexual orientation.",
+    "notes": "Paraphrases hate-speech rules without using the document title in the question."
+  },
+  {
+    "id": "ret_007",
+    "category": "semantic",
+    "question": "May I publish another person's home address or banking details in a repository?",
+    "expected_sources": [
+      {
+        "title": "GitHub Doxxing and Invasion of Privacy",
+        "heading_contains": "",
+        "source_path": "Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+      }
+    ],
+    "supporting_snippet": "Don't post other people's personal information.",
+    "notes": "Uses concrete examples instead of the policy terms 'doxxing' or 'invasion of privacy.'"
+  },
+  {
+    "id": "ret_008",
+    "category": "semantic",
+    "question": "Will GitHub report a researcher to law enforcement for an accidental, good-faith violation during authorized vulnerability research?",
+    "expected_sources": [
+      {
+        "title": "GitHub Bug Bounty Program Legal Safe Harbor",
+        "heading_contains": "Safe Harbor Terms",
+        "source_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md"
+      }
+    ],
+    "supporting_snippet": "To encourage research and coordinated disclosure of security vulnerabilities, we will not pursue civil or criminal action, or send notice to law enforcement for accidental or good faith violations of this policy.",
+    "notes": "Tests paraphrased retrieval of the security-research safe harbor."
+  },
+  {
+    "id": "ret_009",
+    "category": "semantic",
+    "question": "Can a company connected to a sanctioned region continue using private repositories and paid GitHub features?",
+    "expected_sources": [
+      {
+        "title": "GitHub and Trade Controls",
+        "heading_contains": "How are organization accounts impacted?",
+        "source_path": "Policies/other-site-policies/github-and-trade-controls.md"
+      }
+    ],
+    "supporting_snippet": "The restriction suspends access to private repository services and paid services, such as availability of free or paid private repositories, secret gists, paid Action minutes, Sponsors, and GitHub Marketplace services.",
+    "notes": "Paraphrases organization restrictions under trade controls."
+  },
+  {
+    "id": "ret_010",
+    "category": "semantic",
+    "question": "If I publish code in an open repository, am I directing GitHub to make it available to everyone online?",
+    "expected_sources": [
+      {
+        "title": "GitHub Terms of Service",
+        "heading_contains": "Public Repositories and Lawful Access",
+        "source_path": "Policies/github-terms/github-terms-of-service.md"
+      }
+    ],
+    "supporting_snippet": "By choosing to contribute Content to a public repository, you are choosing to and directing us to make such Content accessible to everyone on the internet.",
+    "notes": "Uses ordinary wording for public-repository accessibility."
+  },
+  {
+    "id": "ret_011",
+    "category": "semantic",
+    "question": "Will GitHub warn an account owner before handing their information to investigators?",
+    "expected_sources": [
+      {
+        "title": "Guidelines for Legal Requests of User Data",
+        "heading_contains": "notify any affected account owners",
+        "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+      }
+    ],
+    "supporting_snippet": "It is our policy to notify users about any pending requests regarding their accounts or repositories, unless we are prohibited by law or court order from doing so.",
+    "notes": "Paraphrases notification before disclosure and leaves the exception to the source."
+  },
+  {
+    "id": "ret_012",
+    "category": "semantic",
+    "question": "Is code used to study vulnerabilities automatically removed just because it could also be misused?",
+    "expected_sources": [
+      {
+        "title": "GitHub Active Malware or Exploits",
+        "heading_contains": "",
+        "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md"
+      }
+    ],
+    "supporting_snippet": "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community.",
+    "notes": "Tests the distinction between dual-use research and active abuse."
+  },
+  {
+    "id": "ret_013",
+    "category": "broad",
+    "question": "When can GitHub restrict or shut down an account?",
+    "expected_sources": [
+      {
+        "title": "GitHub Terms of Service",
+        "heading_contains": "GitHub May Terminate",
+        "source_path": "Policies/github-terms/github-terms-of-service.md"
+      },
+      {
+        "title": "GitHub Appeal and Reinstatement",
+        "heading_contains": "What are Appeals and Reinstatements?",
+        "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md"
+      },
+      {
+        "title": "GitHub Community Guidelines",
+        "heading_contains": "What happens if someone violates GitHub's policies?",
+        "source_path": "Policies/github-terms/github-community-guidelines.md"
+      }
+    ],
+    "supporting_snippet": "GitHub has the right to suspend or terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately.",
+    "notes": "Intentionally broad: termination authority, enforcement context, and appealability are all potentially relevant."
+  },
+  {
+    "id": "ret_014",
+    "category": "broad",
+    "question": "What information does GitHub gather about people who use its services?",
+    "expected_sources": [
+      {
+        "title": "GitHub General Privacy Statement",
+        "heading_contains": "Personal Data We Collect",
+        "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+      }
+    ],
+    "supporting_snippet": "Personal Data is collected from you directly, automatically from your device, and also from third parties.",
+    "notes": "Broad privacy query spanning several nested collection subsections."
+  },
+  {
+    "id": "ret_015",
+    "category": "broad",
+    "question": "What kinds of behavior or material are not allowed on GitHub?",
+    "expected_sources": [
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "heading_contains": "User Safety",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md"
+      },
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "heading_contains": "Site Access and Safety",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md"
+      }
+    ],
+    "supporting_snippet": "is unlawful or promotes unlawful activities;",
+    "notes": "Deliberately broad and expected to surface several acceptable-use sections rather than one exhaustive chunk."
+  },
+  {
+    "id": "ret_016",
+    "category": "broad",
+    "question": "How does GitHub respond when a government or law-enforcement body asks it to remove content or disclose user data?",
+    "expected_sources": [
+      {
+        "title": "GitHub Government Takedown Policy",
+        "heading_contains": "complete takedown request from a government",
+        "source_path": "Policies/other-site-policies/github-government-takedown-policy.md"
+      },
+      {
+        "title": "Guidelines for Legal Requests of User Data",
+        "heading_contains": "Disclosure of non-public information",
+        "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+      }
+    ],
+    "supporting_snippet": "limit the geographic scope of the takedown when possible and include that as part of the notification",
+    "notes": "Combines two distinct legal-request workflows and therefore has multiple valid sources."
+  },
+  {
+    "id": "ret_017",
+    "category": "specific",
+    "question": "If a parent repository is disabled for exposing private information, are all of its forks disabled automatically?",
+    "expected_sources": [
+      {
+        "title": "GitHub Private Information Removal Policy",
+        "heading_contains": "What About Forks?",
+        "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md"
+      }
+    ],
+    "supporting_snippet": "GitHub will not automatically disable forks when disabling a parent repository.",
+    "notes": "Tests subsection precision because a similarly named forks section also exists in the DMCA policy."
+  },
+  {
+    "id": "ret_018",
+    "category": "specific",
+    "question": "How can a user disable non-essential cookies on GitHub pages?",
+    "expected_sources": [
+      {
+        "title": "GitHub General Privacy Statement",
+        "heading_contains": "cookie choices and controls",
+        "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+      }
+    ],
+    "supporting_snippet": "You have several options to disable non-essential cookies:",
+    "notes": "Requires retrieval of a deeply nested privacy subsection."
+  },
+  {
+    "id": "ret_019",
+    "category": "specific",
+    "question": "What details should an authorized person provide when asking GitHub to handle a deceased user's account?",
+    "expected_sources": [
+      {
+        "title": "GitHub Deceased User Policy",
+        "heading_contains": "",
+        "source_path": "Policies/other-site-policies/github-deceased-user-policy.md"
+      }
+    ],
+    "supporting_snippet": "In the event that a GitHub user passes away, we can work with an authorized individual to determine what happens to the account's content.",
+    "notes": "Narrow request in an unheaded representative site policy."
+  },
+  {
+    "id": "ret_020",
+    "category": "specific",
+    "question": "How can someone remove a payment method after being locked out of their GitHub account?",
+    "expected_sources": [
+      {
+        "title": "GitHub Account Recovery Policy",
+        "heading_contains": "remove a payment method from a locked account",
+        "source_path": "Policies/other-site-policies/github-account-recovery-policy.md"
+      }
+    ],
+    "supporting_snippet": "Please contact Support to request removal of a payment method from a locked out account.",
+    "notes": "Tests exact subsection retrieval within account recovery."
+  },
+  {
+    "id": "ret_021",
+    "category": "specific",
+    "question": "Which registration and confusion details are required in a GitHub trademark complaint?",
+    "expected_sources": [
+      {
+        "title": "GitHub Trademark Policy",
+        "heading_contains": "Information is Required When Reporting Trademark Policy Violations",
+        "source_path": "Policies/content-removal-policies/github-trademark-policy.md"
+      }
+    ],
+    "supporting_snippet": "In order to investigate trademark policy violations, please provide all of the following information:",
+    "notes": "Targets the reporting-information subsection rather than the general trademark definition."
+  },
+  {
+    "id": "ret_022",
+    "category": "unsupported",
+    "question": "What uptime percentage does GitHub guarantee for free personal accounts?",
+    "expected_sources": [],
+    "supporting_snippet": "",
+    "notes": "The loaded corpus does not clearly provide an uptime SLA for free personal accounts; the corporate terms mention an Enterprise Cloud SLA in a different context."
+  },
+  {
+    "id": "ret_023",
+    "category": "unsupported",
+    "question": "In which exact physical data center is my specific repository stored?",
+    "expected_sources": [],
+    "supporting_snippet": "",
+    "notes": "The privacy policies discuss international transfers and processing locations, but do not identify the physical data center for an individual repository."
+  },
+  {
+    "id": "ret_024",
+    "category": "unsupported",
+    "question": "What is the maximum number of days GitHub will take to decide every account-suspension appeal?",
+    "expected_sources": [],
+    "supporting_snippet": "",
+    "notes": "The Appeal and Reinstatement policy describes review and final decisions but does not clearly promise a universal maximum response time."
+  },
+  {
+    "id": "multi_001",
+    "category": "multi_turn",
+    "history": [
+      {
+        "role": "user",
+        "content": "How does GitHub handle requests to remove private information from a repository?"
+      },
+      {
+        "role": "assistant",
+        "content": "GitHub's Private Information Removal Policy describes how it reviews reports and may disable qualifying content."
+      }
+    ],
+    "question": "What happens to the forks?",
+    "standalone_reference": "What happens to forks when a parent repository is disabled under GitHub's Private Information Removal Policy?",
+    "expected_sources": [
+      {
+        "title": "GitHub Private Information Removal Policy",
+        "heading_contains": "What About Forks?",
+        "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md"
+      }
+    ],
+    "supporting_snippet": "GitHub will not automatically disable forks when disabling a parent repository.",
+    "notes": "The follow-up is ambiguous without the private-information-removal context; the DMCA policy has a competing forks section."
+  },
+  {
+    "id": "multi_002",
+    "category": "multi_turn",
+    "history": [
+      {
+        "role": "user",
+        "content": "What can GitHub do if it decides that my content or account violates a policy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Depending on the circumstances, GitHub may restrict content or disable access to an account or service."
+      }
+    ],
+    "question": "Can I challenge that decision?",
+    "standalone_reference": "Can a user appeal GitHub's decision to restrict content or disable an account for an alleged policy violation?",
+    "expected_sources": [
+      {
+        "title": "GitHub Appeal and Reinstatement",
+        "heading_contains": "Appeals",
+        "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md"
+      },
+      {
+        "title": "GitHub Community Guidelines",
+        "heading_contains": "Appeal and Reinstatement",
+        "source_path": "Policies/github-terms/github-community-guidelines.md"
+      }
+    ],
+    "supporting_snippet": "Where a user seeks to dispute a decision, they can use the form to explain their basis for disputing the decision and to provide any additional information regarding the alleged violation that they believe should have led to a different decision.",
+    "notes": "The referent of 'that decision' is supplied only by the history."
+  },
+  {
+    "id": "multi_003",
+    "category": "multi_turn",
+    "history": [
+      {
+        "role": "user",
+        "content": "What personal data does GitHub collect from users?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Privacy Statement separates data provided directly, collected automatically, and received from third parties."
+      }
+    ],
+    "question": "What does it gather automatically?",
+    "standalone_reference": "What personal data does GitHub collect automatically from a user's device or use of the services?",
+    "expected_sources": [
+      {
+        "title": "GitHub General Privacy Statement",
+        "heading_contains": "Automatically",
+        "source_path": "Policies/privacy-policies/github-general-privacy-statement.md"
+      }
+    ],
+    "supporting_snippet": "Service Usage Information: We collect data about your interactions with the Services, such as IP address, device information, session details, date and time of requests, device type and ID, operating system and application version, information related to your contributions to repositories, and performance of specific features or Services.",
+    "notes": "The object of 'it' and the collection topic both depend on history."
+  },
+  {
+    "id": "multi_004",
+    "category": "multi_turn",
+    "history": [
+      {
+        "role": "user",
+        "content": "Does GitHub prohibit repositories that support malware or exploit campaigns?"
+      },
+      {
+        "role": "assistant",
+        "content": "GitHub prohibits using the platform in direct support of unlawful attacks that cause technical harm."
+      }
+    ],
+    "question": "What if it is for security research?",
+    "standalone_reference": "Does GitHub allow dual-use vulnerability, malware, or exploit content when it is posted for security research?",
+    "expected_sources": [
+      {
+        "title": "GitHub Active Malware or Exploits",
+        "heading_contains": "",
+        "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md"
+      },
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "heading_contains": "Site Access and Safety",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md"
+      }
+    ],
+    "supporting_snippet": "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community.",
+    "notes": "The follow-up needs the malware-policy context to resolve what 'it' means."
+  }
+]

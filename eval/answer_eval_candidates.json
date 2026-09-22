@@ -1,0 +1,377 @@
+[
+  {
+    "id": "ans_001",
+    "source_case_id": "ret_002",
+    "category": "direct",
+    "question": "Does GitHub allow its platform to be used to deliver malware or run attack infrastructure?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub prohibits using its platform in direct support of unlawful attacks that cause technical harm, including delivering malicious executables or operating attack infrastructure.",
+      "The prohibition should not be broadened into a categorical ban on legitimate dual-use vulnerability, malware, or exploit research."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Active Malware or Exploits",
+        "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+        "heading_contains": ""
+      },
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+        "heading_contains": "Site Access and Safety"
+      }
+    ],
+    "forbidden_claims": [
+      "GitHub prohibits all vulnerability, malware, or exploit research regardless of purpose."
+    ],
+    "supporting_snippets": [
+      "We do not allow anyone to use our platform in direct support of unlawful attacks that cause technical harms, such as using GitHub as a means to deliver malicious executables or as attack infrastructure, for example by organizing denial of service attacks or managing command and control servers.",
+      "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community."
+    ],
+    "notes": "The answer should distinguish active harmful use from legitimate dual-use security research rather than state a blanket malware-related ban."
+  },
+  {
+    "id": "ans_002",
+    "source_case_id": "ret_005",
+    "category": "direct",
+    "question": "What contact details must be included in a DMCA counter notice?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "A DMCA counter notice must include the submitter's email address, name, telephone number, and physical address."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "Guide to Submitting a DMCA Counter Notice",
+        "source_path": "Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+        "heading_contains": "Your Counter Notice Must"
+      }
+    ],
+    "forbidden_claims": [],
+    "supporting_snippets": [
+      "Include your email address, name, telephone number, and physical address."
+    ],
+    "notes": "A precise procedural case. Equivalent wording is acceptable, but all four contact details should be present."
+  },
+  {
+    "id": "ans_003",
+    "source_case_id": "ret_017",
+    "category": "specific",
+    "question": "If a parent repository is disabled for exposing private information, are all of its forks disabled automatically?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub does not automatically disable forks when it disables a parent repository under the Private Information Removal Policy.",
+      "A requester is expected to investigate forks and expressly include forks believed to contain the private information."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Private Information Removal Policy",
+        "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+        "heading_contains": "What About Forks?"
+      }
+    ],
+    "forbidden_claims": [
+      "All forks are automatically disabled when the parent repository is disabled."
+    ],
+    "supporting_snippets": [
+      "GitHub will not automatically disable forks when disabling a parent repository. This is because forks belong to different users and may have been altered in significant ways. GitHub does not conduct any independent investigation into forks. We expect those sending private information removal requests to conduct that investigation and, if they believe that the forks also contain private information, expressly include forks in their request."
+    ],
+    "notes": "Section precision matters because GitHub's DMCA materials also discuss forks under a different removal process."
+  },
+  {
+    "id": "ans_004",
+    "source_case_id": "ret_007",
+    "category": "semantic",
+    "question": "May I publish another person's home address or banking details in a repository?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub's policy says not to post another person's personal information.",
+      "Physical addresses and bank account or credit card information are listed as covered examples."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Doxxing and Invasion of Privacy",
+        "source_path": "Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+        "heading_contains": ""
+      },
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+        "heading_contains": "Intellectual Property, Authenticity, and Private Information"
+      }
+    ],
+    "forbidden_claims": [],
+    "supporting_snippets": [
+      "Don't post other people's personal information. This includes:\n\n* Personal, private email addresses\n* Phone numbers\n* Physical addresses or other private location information\n* Bank account information or credit card numbers"
+    ],
+    "notes": "The question uses concrete examples rather than the policy labels doxxing or invasion of privacy."
+  },
+  {
+    "id": "ans_005",
+    "source_case_id": "ret_011",
+    "category": "semantic",
+    "question": "Will GitHub warn an account owner before handing their information to investigators?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub's policy is to notify affected users about pending requests concerning their accounts or repositories before disclosure.",
+      "Notification may be withheld when prohibited by law or court order, and may be delayed in rare exigent or ongoing-investigation circumstances."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "Guidelines for Legal Requests of User Data",
+        "source_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+        "heading_contains": "notify any affected account owners"
+      }
+    ],
+    "forbidden_claims": [
+      "GitHub always notifies an account owner before every disclosure without exception."
+    ],
+    "supporting_snippets": [
+      "It is our policy to notify users about any pending requests regarding their accounts or repositories, unless we are prohibited by law or court order from doing so. Before disclosing user information, we will make a reasonable effort to notify any affected account owner(s) by sending a message to their verified email address providing them with a copy of the subpoena, court order, or warrant so that they can have an opportunity to challenge the legal process if they wish. In (rare) exigent circumstances, we may delay notification if we determine delay is necessary to prevent death or serious harm or due to an ongoing investigation."
+    ],
+    "notes": "The answer must preserve the legal-prohibition and delayed-notification exceptions."
+  },
+  {
+    "id": "ans_006",
+    "source_case_id": "ret_012",
+    "category": "semantic",
+    "question": "Is code used to study vulnerabilities automatically removed just because it could also be misused?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub permits dual-use content used for legitimate vulnerability, malware, or exploit research.",
+      "The possibility of misuse alone does not mean the content is automatically removed.",
+      "In rare cases of widespread actual abuse, GitHub may restrict a specific instance to disrupt an ongoing unlawful attack or malware campaign."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Active Malware or Exploits",
+        "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+        "heading_contains": ""
+      },
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+        "heading_contains": "Site Access and Safety"
+      }
+    ],
+    "forbidden_claims": [
+      "GitHub automatically removes code solely because it could be misused.",
+      "GitHub never restricts dual-use content even when it is being widely abused in an ongoing attack."
+    ],
+    "supporting_snippets": [
+      "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community.",
+      "In rare cases of very widespread abuse of dual-use content, we may restrict access to that specific instance of the content to disrupt an ongoing unlawful attack or malware campaign that is leveraging the GitHub platform as an exploit or malware CDN."
+    ],
+    "notes": "This case tests the distinction between legitimate dual-use research, mere potential misuse, and actual widespread abuse."
+  },
+  {
+    "id": "ans_007",
+    "source_case_id": "ret_013",
+    "category": "broad",
+    "question": "When can GitHub restrict or shut down an account?",
+    "history": [],
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub's Terms of Service reserve a broad right to suspend or terminate access to all or part of the website, with or without cause or notice.",
+      "Policy enforcement may include suspending a user account or organization, and affected users may have an appeal or reinstatement process."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Terms of Service",
+        "source_path": "Policies/github-terms/github-terms-of-service.md",
+        "heading_contains": "GitHub May Terminate"
+      },
+      {
+        "title": "GitHub Appeal and Reinstatement",
+        "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+        "heading_contains": "What are Appeals and Reinstatements?"
+      },
+      {
+        "title": "GitHub Community Guidelines",
+        "source_path": "Policies/github-terms/github-community-guidelines.md",
+        "heading_contains": "What happens if someone violates GitHub's policies?"
+      }
+    ],
+    "forbidden_claims": [
+      "The listed examples are an exhaustive statement of every circumstance in which GitHub can restrict or terminate an account."
+    ],
+    "supporting_snippets": [
+      "GitHub has the right to suspend or terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. GitHub reserves the right to refuse service to anyone for any reason at any time.",
+      "GitHub provides an internal complaint-handling process where users can submit requests for reinstatement or provide additional information to appeal a moderation decision.",
+      "Where we have decided that moderation action is warranted, these are some of the ways we may respond:"
+    ],
+    "notes": "This is intentionally broad. A good answer may summarize supported examples but should not claim that its list is exhaustively complete."
+  },
+  {
+    "id": "ans_multi_001",
+    "source_case_id": "multi_001",
+    "category": "multi_turn",
+    "history": [
+      {
+        "role": "user",
+        "content": "How does GitHub handle requests to remove private information from a repository?"
+      },
+      {
+        "role": "assistant",
+        "content": "GitHub's Private Information Removal Policy describes how it reviews reports and may disable qualifying content."
+      }
+    ],
+    "question": "What happens to the forks?",
+    "reference_query": "What happens to forks when a parent repository is disabled under GitHub's Private Information Removal Policy?",
+    "expected_behavior": "answer",
+    "required_points": [
+      "Forks are not automatically disabled when GitHub disables a parent repository under the Private Information Removal Policy.",
+      "The requester is expected to investigate and expressly include forks believed to contain the private information."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Private Information Removal Policy",
+        "source_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+        "heading_contains": "What About Forks?"
+      }
+    ],
+    "forbidden_claims": [
+      "All forks are automatically disabled together with the parent repository."
+    ],
+    "supporting_snippets": [
+      "GitHub will not automatically disable forks when disabling a parent repository. This is because forks belong to different users and may have been altered in significant ways. GitHub does not conduct any independent investigation into forks. We expect those sending private information removal requests to conduct that investigation and, if they believe that the forks also contain private information, expressly include forks in their request."
+    ],
+    "notes": "The answer eval input must use this history plus the latest question. reference_query is inspection-only and must not replace the real multi-turn input."
+  },
+  {
+    "id": "ans_multi_002",
+    "source_case_id": "multi_004",
+    "category": "multi_turn",
+    "history": [
+      {
+        "role": "user",
+        "content": "Does GitHub prohibit repositories that support malware or exploit campaigns?"
+      },
+      {
+        "role": "assistant",
+        "content": "GitHub prohibits using the platform in direct support of unlawful attacks that cause technical harm."
+      }
+    ],
+    "question": "What if it is for security research?",
+    "reference_query": "Does GitHub allow dual-use vulnerability, malware, or exploit content when it is posted for security research?",
+    "expected_behavior": "answer",
+    "required_points": [
+      "GitHub allows dual-use vulnerability, malware, or exploit content used for legitimate security research because it can have educational and security-community value.",
+      "The allowance does not protect use of GitHub in direct support of unlawful attacks that cause technical harm."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Active Malware or Exploits",
+        "source_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+        "heading_contains": ""
+      },
+      {
+        "title": "GitHub Acceptable Use Policies",
+        "source_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+        "heading_contains": "Site Access and Safety"
+      }
+    ],
+    "forbidden_claims": [
+      "All security research involving malware or exploits is prohibited.",
+      "Labeling content as security research makes active attack infrastructure permissible."
+    ],
+    "supporting_snippets": [
+      "We do not allow anyone to use our platform in direct support of unlawful attacks that cause technical harms, such as using GitHub as a means to deliver malicious executables or as attack infrastructure, for example by organizing denial of service attacks or managing command and control servers.",
+      "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community."
+    ],
+    "notes": "The answer eval input must preserve the history because the latest question does not identify what 'it' refers to."
+  },
+  {
+    "id": "ans_unsup_001",
+    "source_case_id": "ret_022",
+    "category": "unsupported",
+    "question": "What uptime percentage does GitHub guarantee for free personal accounts?",
+    "history": [],
+    "expected_behavior": "abstain",
+    "required_points": [
+      "The provided published policies do not specify an uptime percentage guarantee for free personal accounts.",
+      "The no-uptime-guarantee provision in the relevant evidence applies to pre-release software, not free personal accounts generally."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Pre-release License Terms",
+        "source_path": "Policies/github-terms/github-pre-release-license-terms.md",
+        "heading_contains": "No Uptime Guarantees"
+      }
+    ],
+    "forbidden_claims": [
+      "GitHub guarantees 99.9% uptime for free personal accounts.",
+      "GitHub guarantees 99.99% uptime for free personal accounts.",
+      "The pre-release software uptime provision is an uptime SLA for free personal accounts."
+    ],
+    "supporting_snippets": [
+      "The pre-release software is not subject to an uptime guarantee or similar service level agreement. The software may be unavailable or stop working entirely at any time for any reason."
+    ],
+    "notes": "The snippet supplies nearby uptime context but does not establish an SLA for free personal accounts. The answer must not invent a percentage."
+  },
+  {
+    "id": "ans_unsup_002",
+    "source_case_id": "ret_023",
+    "category": "unsupported",
+    "question": "In which exact physical data center is my specific repository stored?",
+    "history": [],
+    "expected_behavior": "abstain",
+    "required_points": [
+      "The provided published policies do not identify the exact physical data center storing a specific repository.",
+      "The privacy statement describes Personal Data being stored and processed across broad regions and countries, not a repository-specific facility."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub General Privacy Statement",
+        "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+        "heading_contains": "International data transfers"
+      }
+    ],
+    "forbidden_claims": [
+      "The repository is stored in a United States data center.",
+      "The repository is stored in Virginia.",
+      "The repository is stored in Seattle.",
+      "The user's region determines the exact data center containing the repository."
+    ],
+    "supporting_snippets": [
+      "GitHub stores and processes Personal Data in a variety of locations, including your local region, the United States, and other countries where GitHub, its affiliates, subsidiaries, or subprocessors have operations."
+    ],
+    "notes": "The snippet discusses broad Personal Data processing locations. It must not be converted into a claim about the exact facility holding a particular repository."
+  },
+  {
+    "id": "ans_unsup_003",
+    "source_case_id": "ret_024",
+    "category": "unsupported",
+    "question": "What is the maximum number of days GitHub will take to decide every account-suspension appeal?",
+    "history": [],
+    "expected_behavior": "abstain",
+    "required_points": [
+      "The published policies do not specify a universal maximum decision time for every account-suspension appeal.",
+      "The six-month period is a window for submitting an appeal after a moderation decision, not a guaranteed appeal decision deadline."
+    ],
+    "acceptable_sources": [
+      {
+        "title": "GitHub Appeal and Reinstatement",
+        "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+        "heading_contains": "How this works"
+      }
+    ],
+    "forbidden_claims": [
+      "GitHub guarantees a decision within 30 days.",
+      "GitHub guarantees a decision within 60 days.",
+      "GitHub guarantees a decision within 90 days.",
+      "GitHub guarantees a decision within six months.",
+      "Six months is the appeal decision deadline."
+    ],
+    "supporting_snippets": [
+      "You may Appeal a moderation decision for up to six months following the decision. GitHub may, in its discretion, refuse to consider any Appeals submitted more than six months after the decision.",
+      "GitHub staff will review the information provided in the form to determine whether there is sufficient information to warrant Reinstatement or granting of an Appeal."
+    ],
+    "notes": "This case specifically guards against confusing the six-month submission window with a decision-time guarantee."
+  }
+]

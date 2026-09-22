@@ -1,0 +1,418 @@
+{
+  "configuration": {
+    "candidates_sha256": "25b5fdb561d3d2a338f450099dc4980eb9ba0bbb8e8fc0ae58c1d2b9844942cc",
+    "chunk_count": 655,
+    "lexical_model": "hashing-tfidf-v4",
+    "semantic_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "multi_turn_query_mode": "standalone_reference_only"
+  },
+  "overall": {
+    "case_count": 25,
+    "hit_at_1": {
+      "lexical": 0.4,
+      "semantic": 0.48,
+      "delta": 0.07999999999999996
+    },
+    "hit_at_3": {
+      "lexical": 0.68,
+      "semantic": 0.72,
+      "delta": 0.039999999999999925
+    },
+    "hit_at_5": {
+      "lexical": 0.68,
+      "semantic": 0.76,
+      "delta": 0.07999999999999996
+    },
+    "mrr": {
+      "lexical": 0.5569414867108528,
+      "semantic": 0.6162967770772648,
+      "delta": 0.05935529036641207
+    }
+  },
+  "by_category": {
+    "direct": {
+      "case_count": 5,
+      "hit_at_1": {
+        "lexical": 0.2,
+        "semantic": 0.2,
+        "delta": 0.0
+      },
+      "hit_at_3": {
+        "lexical": 0.6,
+        "semantic": 0.6,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "lexical": 0.6,
+        "semantic": 0.8,
+        "delta": 0.20000000000000007
+      },
+      "mrr": {
+        "lexical": 0.4068965517241379,
+        "semantic": 0.4288888888888889,
+        "delta": 0.021992337164750964
+      }
+    },
+    "semantic": {
+      "case_count": 7,
+      "hit_at_1": {
+        "lexical": 0.2857142857142857,
+        "semantic": 0.42857142857142855,
+        "delta": 0.14285714285714285
+      },
+      "hit_at_3": {
+        "lexical": 0.5714285714285714,
+        "semantic": 0.5714285714285714,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "lexical": 0.5714285714285714,
+        "semantic": 0.5714285714285714,
+        "delta": 0.0
+      },
+      "mrr": {
+        "lexical": 0.45358933046902966,
+        "semantic": 0.5152291894452173,
+        "delta": 0.06163985897618768
+      }
+    },
+    "broad": {
+      "case_count": 4,
+      "hit_at_1": {
+        "lexical": 0.25,
+        "semantic": 0.25,
+        "delta": 0.0
+      },
+      "hit_at_3": {
+        "lexical": 0.5,
+        "semantic": 0.75,
+        "delta": 0.25
+      },
+      "hit_at_5": {
+        "lexical": 0.5,
+        "semantic": 0.75,
+        "delta": 0.25
+      },
+      "mrr": {
+        "lexical": 0.39276798825256976,
+        "semantic": 0.5357142857142857,
+        "delta": 0.14294629746171594
+      }
+    },
+    "specific": {
+      "case_count": 5,
+      "hit_at_1": {
+        "lexical": 0.8,
+        "semantic": 1.0,
+        "delta": 0.19999999999999996
+      },
+      "hit_at_3": {
+        "lexical": 1.0,
+        "semantic": 1.0,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "lexical": 1.0,
+        "semantic": 1.0,
+        "delta": 0.0
+      },
+      "mrr": {
+        "lexical": 0.9,
+        "semantic": 1.0,
+        "delta": 0.09999999999999998
+      }
+    },
+    "multi_turn_oracle": {
+      "case_count": 4,
+      "hit_at_1": {
+        "lexical": 0.5,
+        "semantic": 0.5,
+        "delta": 0.0
+      },
+      "hit_at_3": {
+        "lexical": 0.75,
+        "semantic": 0.75,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "lexical": 0.75,
+        "semantic": 0.75,
+        "delta": 0.0
+      },
+      "mrr": {
+        "lexical": 0.6607142857142857,
+        "semantic": 0.6283783783783784,
+        "delta": -0.0323359073359073
+      }
+    }
+  },
+  "multi_source_coverage": {
+    "lexical_mean_coverage_at_3": 0.26666666666666666,
+    "semantic_mean_coverage_at_3": 0.4666666666666667,
+    "delta_coverage_at_3": 0.2,
+    "lexical_mean_coverage_at_5": 0.26666666666666666,
+    "semantic_mean_coverage_at_5": 0.5666666666666667,
+    "delta_coverage_at_5": 0.3,
+    "cases": [
+      {
+        "id": "ret_013",
+        "lexical_coverage_at_3": 0.3333333333333333,
+        "semantic_coverage_at_3": 0.3333333333333333,
+        "lexical_coverage_at_5": 0.3333333333333333,
+        "semantic_coverage_at_5": 0.3333333333333333
+      },
+      {
+        "id": "ret_015",
+        "lexical_coverage_at_3": 0.0,
+        "semantic_coverage_at_3": 0.0,
+        "lexical_coverage_at_5": 0.0,
+        "semantic_coverage_at_5": 0.0
+      },
+      {
+        "id": "ret_016",
+        "lexical_coverage_at_3": 0.0,
+        "semantic_coverage_at_3": 0.5,
+        "lexical_coverage_at_5": 0.0,
+        "semantic_coverage_at_5": 0.5
+      },
+      {
+        "id": "multi_002",
+        "lexical_coverage_at_3": 0.5,
+        "semantic_coverage_at_3": 1.0,
+        "lexical_coverage_at_5": 0.5,
+        "semantic_coverage_at_5": 1.0
+      },
+      {
+        "id": "multi_004",
+        "lexical_coverage_at_3": 0.5,
+        "semantic_coverage_at_3": 0.5,
+        "lexical_coverage_at_5": 0.5,
+        "semantic_coverage_at_5": 1.0
+      }
+    ]
+  },
+  "tracked_failure_rank_movements": [
+    {
+      "id": "ret_001",
+      "lexical_rank": 29,
+      "semantic_rank": 2
+    },
+    {
+      "id": "ret_003",
+      "lexical_rank": 6,
+      "semantic_rank": 3
+    },
+    {
+      "id": "ret_007",
+      "lexical_rank": 42,
+      "semantic_rank": 13
+    },
+    {
+      "id": "ret_009",
+      "lexical_rank": 8,
+      "semantic_rank": 2
+    },
+    {
+      "id": "ret_012",
+      "lexical_rank": 38,
+      "semantic_rank": 1
+    },
+    {
+      "id": "ret_015",
+      "lexical_rank": 227,
+      "semantic_rank": 7
+    },
+    {
+      "id": "ret_016",
+      "lexical_rank": 15,
+      "semantic_rank": 2
+    },
+    {
+      "id": "multi_001",
+      "lexical_rank": 7,
+      "semantic_rank": 1
+    }
+  ],
+  "semantic_hit_at_5_failures": [
+    "ret_004",
+    "ret_007",
+    "ret_008",
+    "ret_011",
+    "ret_015",
+    "multi_003"
+  ],
+  "unsupported_semantic_top_5": [
+    {
+      "id": "ret_022",
+      "query_used": "What uptime percentage does GitHub guarantee for free personal accounts?",
+      "semantic_top_5": [
+        {
+          "rank": 1,
+          "score": 0.6583134531974792,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_a78978f647280d964ecc7d8d"
+        },
+        {
+          "rank": 2,
+          "score": 0.6297729015350342,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "L. Payment",
+            "2. Upgrades, Downgrades, and Changes"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_0a1db346a93041e55556607d"
+        },
+        {
+          "rank": 3,
+          "score": 0.6270937919616699,
+          "title": "GitHub Terms of Service",
+          "heading_path": [
+            "B. Account Terms",
+            "3. Account Requirements"
+          ],
+          "source_path": "Policies/github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_85867a0b6a0b9d17cba279d7"
+        },
+        {
+          "rank": 4,
+          "score": 0.6232103109359741,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "S. Support"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_9386ac91d22205a605927f81"
+        },
+        {
+          "rank": 5,
+          "score": 0.6195156574249268,
+          "title": "GitHub Pre-release License Terms",
+          "heading_path": [
+            "11. No Uptime Guarantees."
+          ],
+          "source_path": "Policies/github-terms/github-pre-release-license-terms.md",
+          "chunk_id": "chunk_87ea91db9ddecefae97629ef"
+        }
+      ]
+    },
+    {
+      "id": "ret_023",
+      "query_used": "In which exact physical data center is my specific repository stored?",
+      "semantic_top_5": [
+        {
+          "rank": 1,
+          "score": 0.3478219211101532,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "E. Private Repositories",
+            "1. Control"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_dc03216a68a88fcbae59657e"
+        },
+        {
+          "rank": 2,
+          "score": 0.3248507082462311,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Private repositories: GitHub Access"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_236cb152cc6d296c37be934f"
+        },
+        {
+          "rank": 3,
+          "score": 0.32063624262809753,
+          "title": "GitHub Subprocessors",
+          "heading_path": [],
+          "source_path": "Policies/privacy-policies/github-subprocessors.md",
+          "chunk_id": "chunk_1cb42138938eed82045675df"
+        },
+        {
+          "rank": 4,
+          "score": 0.31640687584877014,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "E. Private Repositories",
+            "2. Confidentiality"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_0c6c9cd631898ba7b071136b"
+        },
+        {
+          "rank": 5,
+          "score": 0.31119927763938904,
+          "title": "GitHub General Privacy Statement",
+          "heading_path": [
+            "Personal Data We Collect"
+          ],
+          "source_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_781da9ec3c33897a8c48e53f"
+        }
+      ]
+    },
+    {
+      "id": "ret_024",
+      "query_used": "What is the maximum number of days GitHub will take to decide every account-suspension appeal?",
+      "semantic_top_5": [
+        {
+          "rank": 1,
+          "score": 0.6705672144889832,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "How this works"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_5d1188bc9474b578388e2ddd"
+        },
+        {
+          "rank": 2,
+          "score": 0.665824294090271,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "K. Term; Termination; Suspension",
+            "3. Termination for Material Breach"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_f6ae7ef6d7485049f68345cc"
+        },
+        {
+          "rank": 3,
+          "score": 0.6302824020385742,
+          "title": "GitHub Community Guidelines",
+          "heading_path": [
+            "Appeal and Reinstatement"
+          ],
+          "source_path": "Policies/github-terms/github-community-guidelines.md",
+          "chunk_id": "chunk_bd4c111b1d64dd00cac67c66"
+        },
+        {
+          "rank": 4,
+          "score": 0.6287103891372681,
+          "title": "GitHub Corporate Terms of Service",
+          "heading_path": [
+            "K. Term; Termination; Suspension",
+            "5. Suspension"
+          ],
+          "source_path": "Policies/github-terms/github-corporate-terms-of-service.md",
+          "chunk_id": "chunk_a382de462211ada96107dc58"
+        },
+        {
+          "rank": 5,
+          "score": 0.6227632164955139,
+          "title": "GitHub Appeal and Reinstatement",
+          "heading_path": [
+            "What are Appeals and Reinstatements?"
+          ],
+          "source_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c"
+        }
+      ]
+    }
+  ]
+}
