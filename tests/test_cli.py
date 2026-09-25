@@ -4,7 +4,7 @@ import unittest
 from unittest.mock import patch
 
 from src.agent import AgentPipelineError, AgentResult
-from src.cli import main, run_chat
+from src.cli import ASSISTANT_LABEL, SEPARATOR, main, run_chat
 from src.reranked_retriever import RerankedRetrievalResult
 
 
@@ -128,6 +128,32 @@ class CliTests(unittest.TestCase):
         self.assertEqual(agent.calls[1], ("Next question", []))
         self.assertIn("Error [retrieval]", "\n".join(output))
 
+    def test_assistant_answer_is_bounded_and_excluded_from_history(self) -> None:
+        answer = "GitHub may reinstate content after a valid counter notice [S1]."
+        agent = FakeAgent([make_result(answer), make_result("Second answer [S1].")])
+        output = []
+
+        run_chat(
+            agent,
+            input_fn=ScriptedInput(["First question", "Follow-up", "quit"]),
+            output_fn=output.append,
+        )
+
+        label_index = output.index(ASSISTANT_LABEL)
+        opening_separator = output.index(SEPARATOR, label_index)
+        answer_index = output.index(answer, opening_separator)
+        closing_separator = output.index(SEPARATOR, answer_index)
+        self.assertLess(label_index, opening_separator)
+        self.assertLess(opening_separator, answer_index)
+        self.assertLess(answer_index, closing_separator)
+
+        history = agent.calls[1][1]
+        self.assertEqual(history[0]["content"], "First question")
+        self.assertEqual(history[1]["content"], answer)
+        for message in history:
+            self.assertNotIn(ASSISTANT_LABEL, message["content"])
+            self.assertNotIn(SEPARATOR, message["content"])
+
     def test_supported_abstention_is_recorded_as_a_successful_turn(self) -> None:
         abstention = "The provided published policies do not specify that detail [S1]."
         agent = FakeAgent(
@@ -173,10 +199,19 @@ class CliTests(unittest.TestCase):
         )
 
         self.assertNotIn("Rewritten query", "\n".join(normal_output))
+        self.assertNotIn("Debug:", normal_output)
+        self.assertIn(ASSISTANT_LABEL, normal_output)
+        self.assertIn(SEPARATOR, normal_output)
+
         rendered_debug = "\n".join(debug_output)
         self.assertIn("Rewritten query: standalone rewritten query", rendered_debug)
         self.assertIn("score=4.2500", rendered_debug)
         self.assertIn("Rewrite source: cache", rendered_debug)
+        debug_label_index = debug_output.index(ASSISTANT_LABEL)
+        debug_separator_index = debug_output.index(SEPARATOR, debug_label_index)
+        debug_answer_index = debug_output.index("Answer [S1].", debug_separator_index)
+        self.assertLess(debug_label_index, debug_separator_index)
+        self.assertLess(debug_separator_index, debug_answer_index)
 
 
 if __name__ == "__main__":

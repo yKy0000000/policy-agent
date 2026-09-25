@@ -12,6 +12,9 @@ from .agent import AgentPipelineError, AgentResult, PolicySupportAgent
 
 EXIT_COMMANDS = {"exit", "quit"}
 
+ASSISTANT_LABEL = "Assistant"
+SEPARATOR = "─" * 40
+
 
 def format_citations(citations: Sequence[Mapping[str, Any]]) -> str:
     """Render only the structured citation metadata returned by the agent."""
@@ -45,6 +48,7 @@ def format_debug(result: AgentResult) -> str:
         f"- Rewritten query: {result.rewritten_query}",
         f"- Rewrite source: {result.rewrite_response_source}",
         f"- Generation source: {result.generation_response_source}",
+        f"- Evidence budget: {result.trace.to_dict()['evidence_budget'] if result.trace else None}",
         "- Reranked evidence:",
     ]
     for rank, item in enumerate(result.evidence, start=1):
@@ -54,6 +58,24 @@ def format_debug(result: AgentResult) -> str:
             f"{item.title} | {heading} | {item.source_path}"
         )
     return "\n".join(lines)
+
+
+def render_assistant_answer(
+    answer: str,
+    *,
+    output_fn: Callable[[str], None] = print,
+) -> None:
+    """Print the model answer between fixed visual boundaries.
+
+    The boundaries are presentation-only: the answer string is written
+    verbatim and never altered or echoed back into conversation history.
+    """
+
+    output_fn("")
+    output_fn(ASSISTANT_LABEL)
+    output_fn(SEPARATOR)
+    output_fn(answer)
+    output_fn(SEPARATOR)
 
 
 def run_chat(
@@ -71,7 +93,7 @@ def run_chat(
 
     while True:
         try:
-            raw_question = input_fn("You: ")
+            raw_question = input_fn("You > ")
         except (EOFError, KeyboardInterrupt):
             output_fn("\nGoodbye.")
             return 0
@@ -92,10 +114,11 @@ def run_chat(
             output_fn("\nGoodbye.")
             return 0
 
-        output_fn(f"\nAssistant: {result.answer}")
-        output_fn(format_citations(result.citations))
         if debug:
             output_fn(format_debug(result))
+
+        render_assistant_answer(result.answer, output_fn=output_fn)
+        output_fn(format_citations(result.citations))
 
         history.extend(
             (
@@ -112,10 +135,25 @@ def main(argv: Sequence[str] | None = None) -> int:
         action="store_true",
         help="show rewritten query, reranked evidence, and cache sources",
     )
+    parser.add_argument(
+        "--adaptive-evidence",
+        action="store_true",
+        help="select a bounded adaptive evidence prefix from the existing reranked Top20",
+    )
+    parser.add_argument("--evidence-mode", choices=("fixed_top5", "adaptive_prefix_v1", "coverage_selector_v2"),
+                        help="evidence selection mode; --adaptive-evidence is an alias for adaptive_prefix_v1")
     args = parser.parse_args(argv)
 
+    if args.adaptive_evidence and args.evidence_mode not in (None, "adaptive_prefix_v1"):
+        parser.error("--adaptive-evidence requires adaptive_prefix_v1 when --evidence-mode is set")
+
     try:
-        agent = PolicySupportAgent.from_project(device="cpu")
+        options = {"device": "cpu"}
+        if args.adaptive_evidence:
+            options["adaptive_evidence"] = True
+        if args.evidence_mode:
+            options["evidence_mode"] = args.evidence_mode
+        agent = PolicySupportAgent.from_project(**options)
     except KeyboardInterrupt:
         print("\nInitialization cancelled.", file=sys.stderr)
         return 130

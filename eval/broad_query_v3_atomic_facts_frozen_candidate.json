@@ -1,0 +1,2018 @@
+{
+  "name": "Broad Query V3 human-reviewed atomic fact frozen candidate",
+  "status": "human-reviewed frozen candidate — not universal ground truth",
+  "source_sha256": {
+    "atomic_draft": "6b8cc7c1b4a1b2010645b85400ed122d888a6a4f0b065b375db04defb280ae5e",
+    "corpus_chunks": "672f4231d914272da061524e34b845e0d60711ccb335be531cf0df117f2580a1"
+  },
+  "scope": "Evidence entailment only; no retrieval, policy scoring, or new coverage metrics",
+  "ready_to_freeze": true,
+  "summary": {
+    "case_count": 16,
+    "total_facts": 97,
+    "required_facts": 92,
+    "optional_facts": 5,
+    "total_proposed_mappings": 102,
+    "direct_mappings": 98,
+    "partial_mappings": 3,
+    "invalid_mappings": 1,
+    "required_facts_with_direct_support": 92,
+    "required_facts_without_direct_support": [],
+    "required_facts_with_only_partial_support": [],
+    "required_facts_with_no_valid_support": []
+  },
+  "facts": [
+    {
+      "case_id": "V3-01",
+      "core_requirement_id": "copyright_route",
+      "fact_id": "V3-01-F01",
+      "source_fact_ids": [
+        "V3-01-F01"
+      ],
+      "fact": "A claim about copied copyrighted work belongs on the DMCA route.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_3fe67c4153c058347f190445",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "The DMCA notice and takedown process should be used only for complaints about copyright infringement. Notices sent through our DMCA process must identify copyrighted work or works that are allegedly being infringed. The process cannot be used for other complaints, such as complaints about alleged [trademark infringement](/site-policy/content-removal-policies/github-trademark-policy) or [sensitive data](/site-policy/content-removal-policies/github-private-information-removal-policy);"
+        },
+        {
+          "doc": "github-terms/github-terms-of-service.md",
+          "chunk_id": "chunk_0f3f0cf36cdafa0884c35a34",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you believe that content on our website violates your copyright, please contact us in accordance with our [Digital Millennium Copyright Act Policy](/site-policy/content-removal-policies/dmca-takedown-policy). If you are a copyright owner and you believe that content on GitHub violates your rights, please contact us via [our convenient DMCA form](https://github.com/contact/dmca) or by emailing [copyright@github.com](mailto:copyright@github.com)."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-01",
+      "core_requirement_id": "trademark_route",
+      "fact_id": "V3-01-F02",
+      "source_fact_ids": [
+        "V3-01-F02"
+      ],
+      "fact": "Use the trademark route when a protected name, logo or mark may confuse people about affiliation.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_e21d5efa444988a6ee52dc30",
+          "entailment": "partial",
+          "reason": "This paragraph defines potentially confusing trademark use as a possible violation, but does not itself instruct the reader to use the trademark reporting route.",
+          "supporting_excerpt": "Using a company or business name, logo, or other trademark-protected materials in a manner that may mislead or confuse others with regard to its brand or business affiliation may be considered a trademark policy violation."
+        },
+        {
+          "doc": "content-removal-policies/submitting-content-removal-requests.md",
+          "chunk_id": "chunk_c05a222b5013b1f82b468408",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "The [GitHub Trademark Policy](/site-policy/content-removal-policies/github-trademark-policy) can be used to report content that appears to use your company or business name, logo, or other trademark-protected materials in a manner that may mislead or confuse others about brand or business affiliation."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-01",
+      "core_requirement_id": "private_information_route",
+      "fact_id": "V3-01-F03",
+      "source_fact_ids": [
+        "V3-01-F03"
+      ],
+      "fact": "Private-information removal requires information that should have stayed confidential.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "For the purposes of this document, “private information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or your organization."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-01",
+      "core_requirement_id": "private_information_route",
+      "fact_id": "V3-01-F04",
+      "source_fact_ids": [
+        "V3-01-F04"
+      ],
+      "fact": "Its public availability must create a specific or targeted security risk.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "For the purposes of this document, “private information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or your organization."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "notice_and_initial_action",
+      "fact_id": "V3-02-F01",
+      "source_fact_ids": [
+        "V3-02-F01"
+      ],
+      "fact": "GitHub forwards a sufficiently detailed copyright notice to the affected user.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **Copyright Owner Sends A Notice.** After conducting an investigation, a copyright owner prepares and sends a [takedown notice](/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice) to GitHub. Assuming the takedown notice is sufficiently detailed according to the statutory requirements (as explained in the [how-to guide](/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice)), we will [post the notice](#e-transparency) to our [public repository](https://github.com/github/dmca) and pass the link along to the affected user."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "notice_and_initial_action",
+      "fact_id": "V3-02-F02",
+      "source_fact_ids": [
+        "V3-02-F02"
+      ],
+      "fact": "An entire-repository or package claim can lead to expeditious disablement without the ordinary change window.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **GitHub Asks User to Make Changes.** If the notice alleges that the entire contents of a repository infringe, or a package infringes, we will skip to Step 6 and disable the entire repository or package expeditiously. Otherwise, because GitHub cannot disable access to specific files within a repository, we will contact the user who created the repository and give them approximately 1 business day to delete or modify the content specified in the notice. We'll notify the copyright owner if and when we give the user a chance to make changes. Because packages are immutable, if only part of a pa"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "notice_and_initial_action",
+      "fact_id": "V3-02-F03",
+      "source_fact_ids": [
+        "V3-02-F03"
+      ],
+      "fact": "A partial-repository claim normally gives the owner an opportunity to delete or modify identified content.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **GitHub Asks User to Make Changes.** If the notice alleges that the entire contents of a repository infringe, or a package infringes, we will skip to Step 6 and disable the entire repository or package expeditiously. Otherwise, because GitHub cannot disable access to specific files within a repository, we will contact the user who created the repository and give them approximately 1 business day to delete or modify the content specified in the notice. We'll notify the copyright owner if and when we give the user a chance to make changes. Because packages are immutable, if only part of a pa"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "change_window",
+      "fact_id": "V3-02-F04",
+      "source_fact_ids": [
+        "V3-02-F04"
+      ],
+      "fact": "The normal partial-repository change window is approximately one business day.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **User Notifies GitHub of Changes.** If the user chooses to make the specified changes, they _must_ tell us so within the window of approximately 1 business day. If they don't, we will disable the repository (as described in Step 6). If the user notifies us that they made changes, we will verify that the changes have been made and then notify the copyright owner."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "disabling_conditions",
+      "fact_id": "V3-02-F05",
+      "source_fact_ids": [
+        "V3-02-F05"
+      ],
+      "fact": "No timely changes after an opportunity to make them can lead to disablement.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_621bbabad1d6f0cff7038c2c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **GitHub May Disable Access to the Content.** GitHub will disable a user's content if: (i) the copyright owner has alleged copyright over the user's entire repository or package (as noted in Step 3); (ii) the user has not made any changes after being given an opportunity to do so (as noted in Step 4); or (iii) the copyright owner has renewed their takedown notice after the user had a chance to make changes. If the copyright owner chooses instead to _revise_ the notice, we will go back to Step 2 and repeat the process as if the revised notice were a new notice."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "disabling_conditions",
+      "fact_id": "V3-02-F06",
+      "source_fact_ids": [
+        "V3-02-F06"
+      ],
+      "fact": "A copyright owner renewing the notice after changes can lead to disablement.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_621bbabad1d6f0cff7038c2c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **GitHub May Disable Access to the Content.** GitHub will disable a user's content if: (i) the copyright owner has alleged copyright over the user's entire repository or package (as noted in Step 3); (ii) the user has not made any changes after being given an opportunity to do so (as noted in Step 4); or (iii) the copyright owner has renewed their takedown notice after the user had a chance to make changes. If the copyright owner chooses instead to _revise_ the notice, we will go back to Step 2 and repeat the process as if the revised notice were a new notice."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "counter_notice_and_restoration",
+      "fact_id": "V3-02-F07",
+      "source_fact_ids": [
+        "V3-02-F07"
+      ],
+      "fact": "A user who believes disablement was a mistake or misidentification may send a counter notice.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_621bbabad1d6f0cff7038c2c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **User May Send A Counter Notice.** We encourage users who have had content disabled to consult with a lawyer about their options. If a user believes that their content was disabled as a result of a mistake or misidentification, they may send us a [counter notice](/site-policy/content-removal-policies/guide-to-submitting-a-dmca-counter-notice). As with the original notice, we will make sure that the counter notice is sufficiently detailed (as explained in the [how-to guide](/site-policy/content-removal-policies/guide-to-submitting-a-dmca-counter-notice)). If it is, we will [post it](#e-tran"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-02",
+      "core_requirement_id": "counter_notice_and_restoration",
+      "fact_id": "V3-02-F08",
+      "source_fact_ids": [
+        "V3-02-F08"
+      ],
+      "fact": "GitHub re-enables disabled content after 10–14 days absent notice of qualifying court action.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/dmca-takedown-policy.md",
+          "chunk_id": "chunk_621bbabad1d6f0cff7038c2c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **Copyright Owner May File a Legal Action.** If a copyright owner wishes to keep the content disabled after receiving a counter notice, they will need to initiate a legal action seeking a court order to restrain the user from engaging in infringing activity relating to the content on GitHub. In other words, you might get sued. If the copyright owner does not give GitHub notice within 10-14 days, by sending a copy of a valid legal complaint filed in a court of competent jurisdiction, GitHub will re-enable the disabled content."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "security_risk_eligibility",
+      "fact_id": "V3-03-F01",
+      "source_fact_ids": [
+        "V3-03-F01"
+      ],
+      "fact": "Eligible private information must be confidential.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "For the purposes of this document, “private information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or your organization."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "security_risk_eligibility",
+      "fact_id": "V3-03-F02",
+      "source_fact_ids": [
+        "V3-03-F02"
+      ],
+      "fact": "Public availability must pose a specific or targeted security risk.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_fd1a8855ee650c1195777567",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "For the purposes of this document, “private information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or your organization."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "request_specificity",
+      "fact_id": "V3-03-F03",
+      "source_fact_ids": [
+        "V3-03-F03"
+      ],
+      "fact": "The request must give a working clickable link for each affected file.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_0cc6709199187f11f4436f08",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. A working, clickable link to each file containing private information. (Note that we're not able to work from search results, examples, or screenshots.) 1. Specific line numbers within each file containing the private information. 1. A brief description of how each item you've identified poses a security risk to you or your organization. ***It is important that you provide an explanation of how the data poses a security risk beyond merely stating that it does.*** <!-- markdownlint-disable-line emphasis-style --> 1. If you are a third party acting as an agent for an organization facing a sec"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "request_specificity",
+      "fact_id": "V3-03-F04",
+      "source_fact_ids": [
+        "V3-03-F04"
+      ],
+      "fact": "The request must identify specific line numbers within each file.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_0cc6709199187f11f4436f08",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. A working, clickable link to each file containing private information. (Note that we're not able to work from search results, examples, or screenshots.) 1. Specific line numbers within each file containing the private information. 1. A brief description of how each item you've identified poses a security risk to you or your organization. ***It is important that you provide an explanation of how the data poses a security risk beyond merely stating that it does.*** <!-- markdownlint-disable-line emphasis-style --> 1. If you are a third party acting as an agent for an organization facing a sec"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "request_specificity",
+      "fact_id": "V3-03-F05",
+      "source_fact_ids": [
+        "V3-03-F05"
+      ],
+      "fact": "The requester must explain the concrete security risk for each item.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_0cc6709199187f11f4436f08",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. A working, clickable link to each file containing private information. (Note that we're not able to work from search results, examples, or screenshots.) 1. Specific line numbers within each file containing the private information. 1. A brief description of how each item you've identified poses a security risk to you or your organization. ***It is important that you provide an explanation of how the data poses a security risk beyond merely stating that it does.*** <!-- markdownlint-disable-line emphasis-style --> 1. If you are a third party acting as an agent for an organization facing a sec"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "owner_change_or_dispute",
+      "fact_id": "V3-03-F06",
+      "source_fact_ids": [
+        "V3-03-F06"
+      ],
+      "fact": "GitHub normally gives the repository owner an opportunity to delete or modify the information.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_d47c7ab9c53cc480c3c2c069",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **GitHub Asks User to Make Changes.** In most cases, we will contact the user who created the repository and give them an opportunity to delete or modify the private information specified in the request or to dispute the claim."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "owner_change_or_dispute",
+      "fact_id": "V3-03-F07",
+      "source_fact_ids": [
+        "V3-03-F07"
+      ],
+      "fact": "The owner may dispute that the information qualifies under the policy.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_d47c7ab9c53cc480c3c2c069",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "will contact the user who created the repository and give them an opportunity to delete or modify the private information specified in the request or to dispute the claim."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "possible_disablement",
+      "fact_id": "V3-03-F08",
+      "source_fact_ids": [
+        "V3-03-F08"
+      ],
+      "fact": "Failure to make and report changes within the allowed window can lead to repository disablement.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_d47c7ab9c53cc480c3c2c069",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **User Notifies GitHub of Changes.** If the user chooses to make the specified changes, they must tell us so within the window of time they've been allowed. If they don't, we will disable the repository. If the user notifies us that they made changes, we will verify that the changes have been made and notify the complainant."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-03",
+      "core_requirement_id": "possible_disablement",
+      "fact_id": "V3-03-F09",
+      "source_fact_ids": [
+        "V3-03-F09"
+      ],
+      "fact": "If changes are insufficient, GitHub may disable the repository or allow another chance.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-private-information-removal-policy.md",
+          "chunk_id": "chunk_d47c7ab9c53cc480c3c2c069",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "1. **Complainant Reviews Changes.** If the user makes changes, the complainant must review them. If the changes are insufficient, the complainant must provide GitHub with details explaining why. GitHub may disable the repository or give the user an additional chance to make the changes."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-04",
+      "core_requirement_id": "violation_threshold",
+      "fact_id": "V3-04-F01",
+      "source_fact_ids": [
+        "V3-04-F01"
+      ],
+      "fact": "Sharing a registered trademark as a username is not by itself necessarily a violation.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_19600b091f62ca0ede3450a2",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Using another's trademark in a way that has nothing to do with the product or service for which the trademark was granted is not a trademark policy violation. GitHub user names are available on a first come, first served basis and may not be reserved. A GitHub account with a user name that happens to be the same as a registered trademark is not, by itself, necessarily a violation of our trademark policy."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-04",
+      "core_requirement_id": "violation_threshold",
+      "fact_id": "V3-04-F02",
+      "source_fact_ids": [
+        "V3-04-F02"
+      ],
+      "fact": "Misleading or confusing affiliation through use of a protected mark may be a violation.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_e21d5efa444988a6ee52dc30",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Using a company or business name, logo, or other trademark-protected materials in a manner that may mislead or confuse others with regard to its brand or business affiliation may be considered a trademark policy violation."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-04",
+      "core_requirement_id": "response_by_intent",
+      "fact_id": "V3-04-F03",
+      "source_fact_ids": [
+        "V3-04-F03"
+      ],
+      "fact": "Clear intent to mislead through unauthorized mark use can lead to account suspension.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_f7c393d8c6398f15f8c9a7d1",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* When there is a clear intent to mislead others through the unauthorized use of a trademark, GitHub will suspend the account and notify the account holder. * When we determine that an account appears to be confusing users, but is not purposefully passing itself off as the trademarked good or service, we give the account holder an opportunity to clear up any potential confusion. We may also release a username for the trademark holder's active use."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-04",
+      "core_requirement_id": "response_by_intent",
+      "fact_id": "V3-04-F04",
+      "source_fact_ids": [
+        "V3-04-F04"
+      ],
+      "fact": "Confusing use without purposeful passing off can receive an opportunity to clarify.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_f7c393d8c6398f15f8c9a7d1",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* When there is a clear intent to mislead others through the unauthorized use of a trademark, GitHub will suspend the account and notify the account holder. * When we determine that an account appears to be confusing users, but is not purposefully passing itself off as the trademarked good or service, we give the account holder an opportunity to clear up any potential confusion. We may also release a username for the trademark holder's active use."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-04",
+      "core_requirement_id": "response_by_intent",
+      "fact_id": "V3-04-F05",
+      "source_fact_ids": [
+        "V3-04-F05"
+      ],
+      "fact": "GitHub may also release the username for the trademark holder's active use.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "content-removal-policies/github-trademark-policy.md",
+          "chunk_id": "chunk_f7c393d8c6398f15f8c9a7d1",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* When there is a clear intent to mislead others through the unauthorized use of a trademark, GitHub will suspend the account and notify the account holder. * When we determine that an account appears to be confusing users, but is not purposefully passing itself off as the trademarked good or service, we give the account holder an opportunity to clear up any potential confusion. We may also release a username for the trademark holder's active use."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-05",
+      "core_requirement_id": "account_access_recovery_limit",
+      "fact_id": "V3-05-F01",
+      "source_fact_ids": [
+        "V3-05-F01"
+      ],
+      "fact": "The user may try GitHub's provided account recovery methods.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_3df7f54d26cf237301a9df85",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub provides [a number of account recovery methods](/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials) including an [automated recovery process](/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials#authenticating-with-a-verified-device-ssh-token-or-personal-access-token) if you have lost access to your GitHub.com account. **If you cannot use any of the provided recovery methods, you have permanently lost access to your account.**"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-05",
+      "core_requirement_id": "account_access_recovery_limit",
+      "fact_id": "V3-05-F02",
+      "source_fact_ids": [
+        "V3-05-F02"
+      ],
+      "fact": "Support will not bypass lost two-factor credentials or recovery methods to restore access.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_7221a62496e0f5c6e3701c52",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "For security reasons, **GitHub Support will not restore access to accounts with two-factor authentication enabled if you lose your two-factor authentication credentials or lose access to your account recovery methods.** You must use existing [account recovery methods](/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials)."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-05",
+      "core_requirement_id": "email_and_billing_options",
+      "fact_id": "V3-05-F03",
+      "source_fact_ids": [
+        "V3-05-F03"
+      ],
+      "fact": "The user can unlink an email address from a locked account.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_3df7f54d26cf237301a9df85",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "You can, however, [unlink email addresses](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/unlinking-your-email-address-from-a-locked-account) from a locked account in order to create a new account or use the email on another existing account."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-05",
+      "core_requirement_id": "email_and_billing_options",
+      "fact_id": "V3-05-F04",
+      "source_fact_ids": [
+        "V3-05-F04"
+      ],
+      "fact": "Support can be asked to remove a payment method from a locked account.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_622ebac4ddfacd9aae059dbe",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Please contact Support to request removal of a payment method from a locked out account. Remember, **GitHub Support will not restore your account** if you lose access to your account recovery methods."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-05",
+      "core_requirement_id": "public_content_options",
+      "fact_id": "V3-05-F05",
+      "source_fact_ids": [
+        "V3-05-F05"
+      ],
+      "fact": "Public account content can be cloned or forked despite loss of account access.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_7c2b4448e58ed33afa39afee",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you have lost access to a user account, you may [clone](/repositories/creating-and-managing-repositories/cloning-a-repository) or [fork](/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) any content that is public."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-05",
+      "core_requirement_id": "public_content_options",
+      "fact_id": "V3-05-F06",
+      "source_fact_ids": [
+        "V3-05-F06"
+      ],
+      "fact": "Support will not recover inaccessible account contents.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-account-recovery-policy.md",
+          "chunk_id": "chunk_7c2b4448e58ed33afa39afee",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub Support will not recover the contents of a user or organization account that is locked."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-06",
+      "core_requirement_id": "inactivity_not_transfer_ground",
+      "fact_id": "V3-06-F01",
+      "source_fact_ids": [
+        "V3-06-F01"
+      ],
+      "fact": "A name appearing inactive or unused is not grounds to release or transfer it.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-username-policy.md",
+          "chunk_id": "chunk_c9cb832f94130c5f887c161c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "We do not accept requests to release, transfer, or reclaim usernames on the basis that they appear inactive or unused. If the username you want has already been claimed, you will need to select a different available name unless you are submitting a trademark complaint as described below."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-06",
+      "core_requirement_id": "trademark_exception",
+      "fact_id": "V3-06-F02",
+      "source_fact_ids": [
+        "V3-06-F02"
+      ],
+      "fact": "Only valid trademark-related complaints are reviewed for possible release of a claimed name.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-username-policy.md",
+          "chunk_id": "chunk_d3da9ce046c8ea901e71a245",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you believe someone's account is violating your trademark rights, you can find more information about making a trademark complaint on our [AUTOTITLE](/site-policy/content-removal-policies/github-trademark-policy) page. Valid trademark-related complaints are the only requests we review for possible release of a username that is already claimed."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-06",
+      "core_requirement_id": "squatting_enforcement",
+      "fact_id": "V3-06-F03",
+      "source_fact_ids": [
+        "V3-06-F03"
+      ],
+      "fact": "Reserving or inactively holding a name for future use is prohibited squatting.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-username-policy.md",
+          "chunk_id": "chunk_eb0ca1690551fc1186f03a4b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub prohibits account name squatting, and account names may not be reserved or inactively held for future use. Accounts violating this name squatting policy may be removed or renamed without notice. Attempts to sell, buy, or solicit other forms of payment in exchange for account names are prohibited and may result in permanent account suspension."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-06",
+      "core_requirement_id": "squatting_enforcement",
+      "fact_id": "V3-06-F04",
+      "source_fact_ids": [
+        "V3-06-F04"
+      ],
+      "fact": "Squatting can lead to account removal or renaming.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-username-policy.md",
+          "chunk_id": "chunk_eb0ca1690551fc1186f03a4b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub prohibits account name squatting, and account names may not be reserved or inactively held for future use. Accounts violating this name squatting policy may be removed or renamed without notice. Attempts to sell, buy, or solicit other forms of payment in exchange for account names are prohibited and may result in permanent account suspension."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-06",
+      "core_requirement_id": "squatting_enforcement",
+      "fact_id": "V3-06-F05",
+      "source_fact_ids": [
+        "V3-06-F05"
+      ],
+      "fact": "Buying or selling an account name is prohibited and can lead to suspension.",
+      "required": false,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-username-policy.md",
+          "chunk_id": "chunk_eb0ca1690551fc1186f03a4b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub prohibits account name squatting, and account names may not be reserved or inactively held for future use. Accounts violating this name squatting policy may be removed or renamed without notice. Attempts to sell, buy, or solicit other forms of payment in exchange for account names are prohibited and may result in permanent account suspension."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-07",
+      "core_requirement_id": "active_attack_prohibition",
+      "fact_id": "V3-07-F01",
+      "source_fact_ids": [
+        "V3-07-F01"
+      ],
+      "fact": "Direct platform support of unlawful attacks causing technical harm is prohibited.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Being part of a community includes not taking advantage of other members of the community. We do not allow anyone to use our platform in direct support of unlawful attacks that cause technical harms, such as using GitHub as a means to deliver malicious executables or as attack infrastructure, for example by organizing denial of service attacks or managing command and control servers. Technical harms means overconsumption of resources, physical damage, downtime, denial of service, or data loss, with no implicit or explicit dual-use purpose prior to the abuse occurring."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-07",
+      "core_requirement_id": "dual_use_allowed",
+      "fact_id": "V3-07-F02",
+      "source_fact_ids": [
+        "V3-07-F02"
+      ],
+      "fact": "Dual-use vulnerability, malware or exploit research is ordinarily allowed.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community. We assume positive intention and use of these projects to promote and drive improvements across the ecosystem."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-07",
+      "core_requirement_id": "rare_abuse_restriction",
+      "fact_id": "V3-07-F03",
+      "source_fact_ids": [
+        "V3-07-F03"
+      ],
+      "fact": "Very widespread abuse in an ongoing unlawful attack may justify restricting the specific content instance.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "In rare cases of very widespread abuse of dual-use content, we may restrict access to that specific instance of the content to disrupt an ongoing unlawful attack or malware campaign that is leveraging the GitHub platform as an exploit or malware CDN. In most of these instances, restriction takes the form of putting the content behind authentication, but may, as an option of last resort, involve disabling access or full removal where this is not possible (e.g. when posted as a gist). We will also contact the project owners about restrictions put in place where possible."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-07",
+      "core_requirement_id": "rare_abuse_restriction",
+      "fact_id": "V3-07-F04",
+      "source_fact_ids": [
+        "V3-07-F04"
+      ],
+      "fact": "The usual restriction is to put content behind authentication.",
+      "required": false,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "In rare cases of very widespread abuse of dual-use content, we may restrict access to that specific instance of the content to disrupt an ongoing unlawful attack or malware campaign that is leveraging the GitHub platform as an exploit or malware CDN. In most of these instances, restriction takes the form of putting the content behind authentication, but may, as an option of last resort, involve disabling access or full removal where this is not possible (e.g. when posted as a gist). We will also contact the project owners about restrictions put in place where possible."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-07",
+      "core_requirement_id": "rare_abuse_restriction",
+      "fact_id": "V3-07-F05",
+      "source_fact_ids": [
+        "V3-07-F05"
+      ],
+      "fact": "Disabling or removing content is a last-resort option where authentication restriction is impossible.",
+      "required": false,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-active-malware-or-exploits.md",
+          "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "In rare cases of very widespread abuse of dual-use content, we may restrict access to that specific instance of the content to disrupt an ongoing unlawful attack or malware campaign that is leveraging the GitHub platform as an exploit or malware CDN. In most of these instances, restriction takes the form of putting the content behind authentication, but may, as an option of last resort, involve disabling access or full removal where this is not possible (e.g. when posted as a gist). We will also contact the project owners about restrictions put in place where possible."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-08",
+      "core_requirement_id": "good_faith_safe_harbor",
+      "fact_id": "V3-08-F01",
+      "source_fact_ids": [
+        "V3-08-F01"
+      ],
+      "fact": "GitHub will not pursue legal action or notify law enforcement for accidental or good-faith policy violations within the program.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_e0d354aeaa7beb50005833bb",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "To encourage research and coordinated disclosure of security vulnerabilities, we will not pursue civil or criminal action, or send notice to law enforcement for accidental or good faith violations of this policy. We consider security research and vulnerability disclosure activities conducted consistent with this policy to be “authorized” conduct under the Computer Fraud and Abuse Act, the DMCA, and other applicable computer use laws such as Cal. Penal Code 502(c). We waive any potential DMCA claim against you for circumventing the technological measures we have used to protect the applications"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-08",
+      "core_requirement_id": "good_faith_safe_harbor",
+      "fact_id": "V3-08-F02",
+      "source_fact_ids": [
+        "V3-08-F02"
+      ],
+      "fact": "GitHub gives a limited site-policy waiver for research consistent with the bug bounty program.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_d5357e5db301e01f2d4c408f",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "To the extent that your security research activities are inconsistent with certain restrictions in our [relevant site policies](/site-policy) but consistent with the terms of our bug bounty program, we waive those restrictions for the sole and limited purpose of permitting your security research under this bug bounty program. Just like above, if in doubt, ask us first!"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-08",
+      "core_requirement_id": "third_party_limit",
+      "fact_id": "V3-08-F03",
+      "source_fact_ids": [
+        "V3-08-F03",
+        "V3-08-F04"
+      ],
+      "fact": "GitHub cannot authorize or bind an affected third party, so that third party may still pursue legal or law-enforcement action.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_e0d354aeaa7beb50005833bb",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Please understand that if your security research involves the networks, systems, information, applications, products, or services of a third party (which is not us), we cannot bind that third party, and they may pursue legal action or law enforcement notice. We cannot and do not authorize security research in the name of other entities, and cannot in any way offer to defend, indemnify, or otherwise protect you from any third party action based on your actions."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-08",
+      "core_requirement_id": "report_sharing",
+      "fact_id": "V3-08-F05a",
+      "source_fact_ids": [
+        "V3-08-F05"
+      ],
+      "fact": "GitHub must notify the researcher before sharing non-identifying report substance with an affected third party.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_943f62cca2ec5fdcf5f38e8c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "limit what we share with any affected third party. We may share non-identifying content from your report with an affected third party, but only after notifying you that we intend to do so and getting the third party's written commitment that they will not pursue legal action against you or initiate contact with law enforcement based on your report. We will not share your identifying information with any affected third party without first getting your written permission to do so."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-08",
+      "core_requirement_id": "report_sharing",
+      "fact_id": "V3-08-F05b",
+      "source_fact_ids": [
+        "V3-08-F05"
+      ],
+      "fact": "GitHub must receive the affected third party's written non-pursuit commitment before such sharing.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_943f62cca2ec5fdcf5f38e8c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "non-identifying content from your report with an affected third party, but only after notifying you that we intend to do so and getting the third party's written commitment that they will not pursue legal action against you or initiate contact with law enforcement based on your report. We will not share your identifying information with any affected third party without first getting your written permission to do so."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-08",
+      "core_requirement_id": "report_sharing",
+      "fact_id": "V3-08-F06",
+      "source_fact_ids": [
+        "V3-08-F06"
+      ],
+      "fact": "Sharing the researcher's identifying information requires the researcher's prior written permission.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+          "chunk_id": "chunk_943f62cca2ec5fdcf5f38e8c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "written commitment that they will not pursue legal action against you or initiate contact with law enforcement based on your report. We will not share your identifying information with any affected third party without first getting your written permission to do so."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-09",
+      "core_requirement_id": "organization_controller",
+      "fact_id": "V3-09-F01",
+      "source_fact_ids": [
+        "V3-09-F01"
+      ],
+      "fact": "A school or employer supplying the account controls most personal data used in the services.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_35b87cb78ec2d01ccd369905",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "When a school or employer supplies your GitHub account, they assume the role of Data Controller for most Personal Data used in our Services. This enables them to:"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-09",
+      "core_requirement_id": "organization_controller",
+      "fact_id": "V3-09-F02",
+      "source_fact_ids": [
+        "V3-09-F02"
+      ],
+      "fact": "That controller may administer the supplied account and access its usage or content.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_35b87cb78ec2d01ccd369905",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* Manage and administer your GitHub account, including adjusting privacy settings. * Access and utilize your Personal Data, which includes details on how you use the Services, as well as your content and files."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-09",
+      "core_requirement_id": "github_processor",
+      "fact_id": "V3-09-F03",
+      "source_fact_ids": [
+        "V3-09-F03"
+      ],
+      "fact": "For organization-controlled processing GitHub acts as processor under the organization's instructions.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_35b87cb78ec2d01ccd369905",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Should you access a GitHub Service through an account provided by an organization, such as your employer or school, the organization becomes the Data Controller, and this Privacy Statement's direct applicability to you changes. Even so, GitHub remains dedicated to preserving your privacy rights. In such circumstances, GitHub functions as a Data Processor, adhering to the Data Controller's instructions regarding your Personal Data's processing. A Data Protection Agreement governs the relationship between GitHub and the Data Controller. For further details regarding their privacy practices, plea"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-09",
+      "core_requirement_id": "github_processor",
+      "fact_id": "V3-09-F04",
+      "source_fact_ids": [
+        "V3-09-F04"
+      ],
+      "fact": "The organization's privacy notice generally governs its processing.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_35b87cb78ec2d01ccd369905",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Should you access a GitHub Service through an account provided by an organization, such as your employer or school, the organization becomes the Data Controller, and this Privacy Statement's direct applicability to you changes. Even so, GitHub remains dedicated to preserving your privacy rights. In such circumstances, GitHub functions as a Data Processor, adhering to the Data Controller's instructions regarding your Personal Data's processing. A Data Protection Agreement governs the relationship between GitHub and the Data Controller. For further details regarding their privacy practices, plea"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-09",
+      "core_requirement_id": "github_limited_controller_role",
+      "fact_id": "V3-09-F05",
+      "source_fact_ids": [
+        "V3-09-F05"
+      ],
+      "fact": "GitHub is controller for certain processing purposes agreed with the organization.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_35b87cb78ec2d01ccd369905",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "In cases where your organization grants access to GitHub products, GitHub acts as the Data Controller solely for specific processing activities. These activities are clearly defined in a contractual agreement with your organization, known as a Data Protection Agreement. You can review our standard Data Protection Agreement at [GitHub Data Protection Agreement](https://github.com/customer-terms/github-data-protection-agreement). For those limited purposes, this Statement governs the handling of your Personal Data. For all other aspects of GitHub product usage, your organization's policies apply"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-09",
+      "core_requirement_id": "github_limited_controller_role",
+      "fact_id": "V3-09-F06",
+      "source_fact_ids": [
+        "V3-09-F06"
+      ],
+      "fact": "GitHub's privacy statement applies to those GitHub-controlled purposes.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_35b87cb78ec2d01ccd369905",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "In cases where your organization grants access to GitHub products, GitHub acts as the Data Controller solely for specific processing activities. These activities are clearly defined in a contractual agreement with your organization, known as a Data Protection Agreement. You can review our standard Data Protection Agreement at [GitHub Data Protection Agreement](https://github.com/customer-terms/github-data-protection-agreement). For those limited purposes, this Statement governs the handling of your Personal Data. For all other aspects of GitHub product usage, your organization's policies apply"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-10",
+      "core_requirement_id": "rights_depend_on_location",
+      "fact_id": "V3-10-F01",
+      "source_fact_ids": [
+        "V3-10-F01"
+      ],
+      "fact": "Available personal-data rights depend on the person's residence location.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_77592b7c86e3de6eab2c3623",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Depending on your residence location, you may have specific legal rights regarding your Personal Data:"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-10",
+      "core_requirement_id": "rights_depend_on_location",
+      "fact_id": "V3-10-F02",
+      "source_fact_ids": [
+        "V3-10-F02"
+      ],
+      "fact": "Those rights may include access, correction, erasure or restriction.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_77592b7c86e3de6eab2c3623",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Depending on your residence location, you may have specific legal rights regarding your Personal Data:"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-10",
+      "core_requirement_id": "request_and_verification",
+      "fact_id": "V3-10-F03",
+      "source_fact_ids": [
+        "V3-10-F03"
+      ],
+      "fact": "The person can request data rights through GitHub's privacy contact.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_77592b7c86e3de6eab2c3623",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "To exercise these rights, please send an email to privacy[at]github[dot]com and follow the instructions provided. To verify your identity for security, we may request extra information before addressing your data-related request. Please contact our Data Protection Officer at dpo[at]github[dot]com for any feedback or concerns. Depending on your region, you have the right to complain to your local Data Protection Authority. European users can find authority contacts on the European Data Protection Board website, and UK users on the Information Commissioner’s Office website."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-10",
+      "core_requirement_id": "request_and_verification",
+      "fact_id": "V3-10-F04",
+      "source_fact_ids": [
+        "V3-10-F04"
+      ],
+      "fact": "GitHub may request identity verification before handling the request.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_77592b7c86e3de6eab2c3623",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "To exercise these rights, please send an email to privacy[at]github[dot]com and follow the instructions provided. To verify your identity for security, we may request extra information before addressing your data-related request. Please contact our Data Protection Officer at dpo[at]github[dot]com for any feedback or concerns. Depending on your region, you have the right to complain to your local Data Protection Authority. European users can find authority contacts on the European Data Protection Board website, and UK users on the Information Commissioner’s Office website."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-10",
+      "core_requirement_id": "retention_limit",
+      "fact_id": "V3-10-F05",
+      "source_fact_ids": [
+        "V3-10-F05"
+      ],
+      "fact": "GitHub may retain data despite erasure when legal obligations require it.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_77592b7c86e3de6eab2c3623",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "We aim to promptly respond to requests in compliance with legal requirements. Please note that we may retain certain data as necessary for legal obligations or for establishing, exercising, or defending legal claims."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-10",
+      "core_requirement_id": "retention_limit",
+      "fact_id": "V3-10-F06",
+      "source_fact_ids": [
+        "V3-10-F06"
+      ],
+      "fact": "GitHub may retain data for establishing, exercising or defending legal claims.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-general-privacy-statement.md",
+          "chunk_id": "chunk_77592b7c86e3de6eab2c3623",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "We aim to promptly respond to requests in compliance with legal requirements. Please note that we may retain certain data as necessary for legal obligations or for establishing, exercising, or defending legal claims."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-11",
+      "core_requirement_id": "account_owner_actions",
+      "fact_id": "V3-11-F01",
+      "source_fact_ids": [
+        "V3-11-F01"
+      ],
+      "fact": "The integrated account owner is responsible for product actions performed through that account.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-marketplace-terms-of-service.md",
+          "chunk_id": "chunk_6045d6263a01dde26e679d81",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "you purchase and/or set up a Developer Product on your account, or you are an owner of an account with an integrated Developer Product, then you will be responsible for the Developer Product's actions that are performed on or through your account."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-11",
+      "core_requirement_id": "provider_product_responsibility",
+      "fact_id": "V3-11-F02",
+      "source_fact_ids": [
+        "V3-11-F02"
+      ],
+      "fact": "The Product Provider, rather than GitHub, provides use rights for a non-GitHub Developer Product.",
+      "required": false,
+      "evidence": [
+        {
+          "doc": "github-terms/github-marketplace-terms-of-service.md",
+          "chunk_id": "chunk_362f093ce9734935c1d4ea6c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you install and/or purchase a Developer Product, then you are purchasing the Developer Products from GitHub and you are required to make the related payments directly to GitHub. However, you are receiving access to and the rights to use that Developer Product from a Product Provider, not from GitHub (unless it's a GitHub-owned Developer Product). The Product Provider is solely responsible for the Developer Product it provides, the content therein, and any claims that you or any other party may have relating to that Developer Product or your use of that Developer Product."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-11",
+      "core_requirement_id": "provider_product_responsibility",
+      "fact_id": "V3-11-F03",
+      "source_fact_ids": [
+        "V3-11-F03"
+      ],
+      "fact": "The Product Provider is responsible for the product, its contents and claims about it.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-marketplace-terms-of-service.md",
+          "chunk_id": "chunk_362f093ce9734935c1d4ea6c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you install and/or purchase a Developer Product, then you are purchasing the Developer Products from GitHub and you are required to make the related payments directly to GitHub. However, you are receiving access to and the rights to use that Developer Product from a Product Provider, not from GitHub (unless it's a GitHub-owned Developer Product). The Product Provider is solely responsible for the Developer Product it provides, the content therein, and any claims that you or any other party may have relating to that Developer Product or your use of that Developer Product."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-11",
+      "core_requirement_id": "post_revocation_data_handling",
+      "fact_id": "V3-11-F04",
+      "source_fact_ids": [
+        "V3-11-F04"
+      ],
+      "fact": "Revoking product access stops the provider's future access to the GitHub account.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-marketplace-terms-of-service.md",
+          "chunk_id": "chunk_65d9607208f5f96afca0d68c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you cease using the Developer Product and revoke access through your account settings, the Product Provider will no longer be able to access your account. The Product Provider is responsible for deleting your Personal Information from its systems within its defined window. Please contact the Product Provider to ensure that your account has been properly terminated."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-11",
+      "core_requirement_id": "post_revocation_data_handling",
+      "fact_id": "V3-11-F05",
+      "source_fact_ids": [
+        "V3-11-F05"
+      ],
+      "fact": "The provider remains responsible for deleting personal information it already holds within its defined window.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-marketplace-terms-of-service.md",
+          "chunk_id": "chunk_65d9607208f5f96afca0d68c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you cease using the Developer Product and revoke access through your account settings, the Product Provider will no longer be able to access your account. The Product Provider is responsible for deleting your Personal Information from its systems within its defined window. Please contact the Product Provider to ensure that your account has been properly terminated."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "licensed_iran_cuba_cloud",
+      "fact_id": "V3-12-F01",
+      "source_fact_ids": [
+        "V3-12-F01"
+      ],
+      "fact": "Iranian developers and organizations can use GitHub cloud public and private services, free and paid, under the stated OFAC license.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_08c852b3afe02f64cb67825e",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub now has a license from OFAC to provide cloud services to developers located or otherwise resident in Iran. This includes all public and private services for individuals and organizations, both free and paid."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "licensed_iran_cuba_cloud",
+      "fact_id": "V3-12-F02",
+      "source_fact_ids": [
+        "V3-12-F02"
+      ],
+      "fact": "GitHub cloud services are generally available in Cuba, both free and paid.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_08c852b3afe02f64cb67825e",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub cloud services, both free and paid, are also generally available to developers located in Cuba."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "restricted_region_public_limits",
+      "fact_id": "V3-12-F03",
+      "source_fact_ids": [
+        "V3-12-F03"
+      ],
+      "fact": "Crimea and separatist Donetsk/Luhansk users retain limited free public services for personal noncommercial communication.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_672be43c925d3ed6d1adb2c2",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub is committed to continuing to offer free public repository services to developers with individual and organizational accounts in Crimea and the separatist areas of Donetsk and Luhansk. This includes limited access to free services, such as public repositories for open source projects (and associated public Pages), public gists, and allotted free Action minutes, for personal communications only, and not for commercial purposes."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "restricted_region_public_limits",
+      "fact_id": "V3-12-F04",
+      "source_fact_ids": [
+        "V3-12-F04"
+      ],
+      "fact": "For organization accounts restricted under the trade-controls policy, access to private-repository and paid services is suspended.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_2899720d6a0761800653e2d4",
+          "entailment": "direct",
+          "reason": "The organization-accounts FAQ explicitly says affected organization accounts are restricted and that the restriction suspends private-repository and paid-service access. The narrowed fact no longer generalizes this rule to individual developers.",
+          "supporting_excerpt": "The restriction suspends access to private repository services and paid services, such as availability of free or paid private repositories, secret gists, paid Action minutes, Sponsors, and GitHub Marketplace services. For paid organizational accounts associated with such sanctioned regions, users may have limited access to their public repositories, which have been downgraded to archived read-only repositories. For free"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "organization_difference",
+      "fact_id": "V3-12-F05",
+      "source_fact_ids": [
+        "V3-12-F05"
+      ],
+      "fact": "Paid organizations in those regions may have public repositories downgraded to archived read-only.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_672be43c925d3ed6d1adb2c2",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "For paid organizational accounts in these sanctioned regions, users may have limited access to their public repositories, which have been downgraded to archived read-only repositories. For free organizational accounts in these sanctioned regions, however, users will continue to have full access to free public repositories for open source projects (and associated public Pages), public gists, and allotted free Action minutes."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "organization_difference",
+      "fact_id": "V3-12-F06",
+      "source_fact_ids": [
+        "V3-12-F06"
+      ],
+      "fact": "Free organizations there retain qualifying public-service access.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_672be43c925d3ed6d1adb2c2",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "in these sanctioned regions, users may have limited access to their public repositories, which have been downgraded to archived read-only repositories. For free organizational accounts in these sanctioned regions, however, users will continue to have full access to free public repositories for open source projects (and associated public Pages), public gists, and allotted free Action minutes."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "blocked_party_override",
+      "fact_id": "V3-12-F07",
+      "source_fact_ids": [
+        "V3-12-F07"
+      ],
+      "fact": "Blocked parties and certain officials may be restricted regardless of location.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_08c852b3afe02f64cb67825e",
+          "entailment": "partial",
+          "reason": "This GitHub.com paragraph says blocked parties may be restricted, but does not expressly state the location-independent scope required by the fact.",
+          "supporting_excerpt": "Specially Designated Nationals (SDNs), other denied or blocked parties under U.S. and other applicable law, and certain government officials, may be restricted from accessing or using GitHub.com. Additionally, users may not use GitHub.com for or on behalf of such parties, generally including the Governments of sanctioned countries. Furthermore, GitHub.com may not be used for purposes prohibited under applicable export control laws, including prohibited end uses described in [15 CFR 744](https://www.ecfr.gov/cgi-bin/text-idx?SID=ad384e1f1e017076f8c0136f322f0a4c&mc=true&node=pt15.2.744&rgn=div5)"
+        },
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_672be43c925d3ed6d1adb2c2",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Specially Designated Nationals (SDNs), other denied or blocked parties under U.S. and other applicable law, and certain government officials may be restricted from accessing or using GitHub, wherever located. Users may not use GitHub.com for or on behalf of such parties, generally including the governments of sanctioned countries."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-12",
+      "core_requirement_id": "blocked_party_override",
+      "fact_id": "V3-12-F08",
+      "source_fact_ids": [
+        "V3-12-F08"
+      ],
+      "fact": "A user flagged in error can appeal with verification information.",
+      "required": false,
+      "evidence": [
+        {
+          "doc": "other-site-policies/github-and-trade-controls.md",
+          "chunk_id": "chunk_88854c0d88a888f9e14ed636",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If an individual user or organization owner believes that they have been flagged in error, then that user has the opportunity to appeal the flag by providing verification information to GitHub. If GitHub receives sufficient information to verify that the user or organization is not affiliated with a U.S.-sanctioned jurisdiction for which we do not have a license or otherwise restricted by U.S. economic sanctions, then the flag will be removed. Please contact [Support](https://support.github.com/request) for assistance."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-13",
+      "core_requirement_id": "commercial_hosting_limit",
+      "fact_id": "V3-13-F01",
+      "source_fact_ids": [
+        "V3-13-F01"
+      ],
+      "fact": "Pages cannot be used as free hosting for a primarily commercial online business, ecommerce site or SaaS service.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-terms-for-additional-products-and-features.md",
+          "chunk_id": "chunk_d02a7447e4292bfc39247815",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub Pages is not intended for or allowed to be used as a free web hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions or providing commercial software as a service (SaaS). Some monetization efforts are permitted on Pages, such as donation buttons and crowdfunding links."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-13",
+      "core_requirement_id": "donation_exception",
+      "fact_id": "V3-13-F02",
+      "source_fact_ids": [
+        "V3-13-F02"
+      ],
+      "fact": "Donation buttons and crowdfunding links are permitted forms of Pages monetization.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-terms-for-additional-products-and-features.md",
+          "chunk_id": "chunk_d02a7447e4292bfc39247815",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "GitHub Pages is not intended for or allowed to be used as a free web hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions or providing commercial software as a service (SaaS). Some monetization efforts are permitted on Pages, such as donation buttons and crowdfunding links."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "moderation_scope",
+      "fact_id": "V3-14-F01",
+      "source_fact_ids": [
+        "V3-14-F01"
+      ],
+      "fact": "Appeals and reinstatements can address limits on content or account access, services or monetization.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Both Appeals and Reinstatements may arise in relation to decisions to disable or limit access to content or an account, including decisions whether or not to:"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "appeal_vs_reinstatement",
+      "fact_id": "V3-14-F02",
+      "source_fact_ids": [
+        "V3-14-F02"
+      ],
+      "fact": "An appeal disputes a violation or moderation decision and supplies reasons for a different decision.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "An “Appeal” is where a user disputes that a violation has occurred and can provide additional information to show that a different decision should have been reached."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "appeal_vs_reinstatement",
+      "fact_id": "V3-14-F03",
+      "source_fact_ids": [
+        "V3-14-F03"
+      ],
+      "fact": "Reinstatement seeks restored access by fixing the violation and agreeing to future compliance.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_58bec9b85435c584edbfba8c",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "A “Reinstatement” is where a user wishes to regain access to their account or content and is willing to make any necessary changes to address the violation and agrees not to violate our terms going forward."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "submission_and_window",
+      "fact_id": "V3-14-F04",
+      "source_fact_ids": [
+        "V3-14-F04"
+      ],
+      "fact": "The user submits an appeal or reinstatement through the designated form.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_5d1188bc9474b578388e2ddd",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you seek Reinstatement or wish to Appeal an enforcement action, please fill out our [Appeal and Reinstatement form](https://support.github.com/contact/reinstatement). You may Appeal a moderation decision for up to six months following the decision. GitHub may, in its discretion, refuse to consider any Appeals submitted more than six months after the decision."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "submission_and_window",
+      "fact_id": "V3-14-F05",
+      "source_fact_ids": [
+        "V3-14-F05"
+      ],
+      "fact": "An appeal normally has a six-month window after the decision; later review is discretionary.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_5d1188bc9474b578388e2ddd",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If you seek Reinstatement or wish to Appeal an enforcement action, please fill out our [Appeal and Reinstatement form](https://support.github.com/contact/reinstatement). You may Appeal a moderation decision for up to six months following the decision. GitHub may, in its discretion, refuse to consider any Appeals submitted more than six months after the decision."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "human_review_outcome",
+      "fact_id": "V3-14-F06",
+      "source_fact_ids": [
+        "V3-14-F06"
+      ],
+      "fact": "A human makes the final appeal decision.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_56264636771e77075a782b6d",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "All decisions on Appeal are made by humans and not by any automated means. If the GitHub Staff reviewer on the Appeal is the same person who made the initial determination and that staff member believes their initial conclusion was correct (and thus would be inclined to deny the Appeal), a different member of GitHub’s staff will independently review the Appeal."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "human_review_outcome",
+      "fact_id": "V3-14-F07a",
+      "source_fact_ids": [
+        "V3-14-F07"
+      ],
+      "fact": "GitHub can reverse or modify a moderation decision when an appeal warrants it.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_56264636771e77075a782b6d",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "If the information provided demonstrates that a different conclusion should have been reached, we may be able to grant an Appeal. GitHub will reverse or modify its decision when the Appeal contains sufficient grounds for us to determine that (i) our decision to act or not to act was mistaken; (ii) that the content or conduct was not illegal and not incompatible with our Terms; or (iii) that the content or conduct warrants a lesser severity of action than the measure taken."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-14",
+      "core_requirement_id": "human_review_outcome",
+      "fact_id": "V3-14-F07b",
+      "source_fact_ids": [
+        "V3-14-F07"
+      ],
+      "fact": "GitHub can restore access when reinstatement is warranted.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_56264636771e77075a782b6d",
+          "entailment": "invalid",
+          "reason": "This Appeals section supports reversing or modifying an appeal decision; it does not state the Reinstatement outcome.",
+          "supporting_excerpt": "If the information provided demonstrates that a different conclusion should have been reached, we may be able to grant an Appeal. GitHub will reverse or modify its decision when the Appeal contains sufficient grounds for us to determine that (i) our decision to act or not to act was mistaken; (ii) that the content or conduct was not illegal and not incompatible with our Terms; or (iii) that the content or conduct warrants a lesser severity of action than the measure taken."
+        },
+        {
+          "doc": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+          "chunk_id": "chunk_6b52e8e296b1ffebdd560cf7",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "user can agree to abide by our Acceptable Use Policies moving forward and has made the changes necessary to address the violation(s), we may choose to reinstate their account or content depending on the circumstances and severity of the initial violation."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "candidate_supplied_data",
+      "fact_id": "V3-15-F01",
+      "source_fact_ids": [
+        "V3-15-F01"
+      ],
+      "fact": "Candidate data may include name and contact details.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "**Name and contact data**. Your first and last name, employee identification number, email address, mailing address, phone number, photo, beneficiary and emergency contact details, and other similar contact data. Additionally, you may opt to provide GitHub with additional contact information such as personal email address(es) and/or cell phone number(s)."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "candidate_supplied_data",
+      "fact_id": "V3-15-F02",
+      "source_fact_ids": [
+        "V3-15-F02"
+      ],
+      "fact": "Candidate data may include education, qualifications or CV and background details.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "**Background information**. Your academic and professional qualifications, education, CV/Resume, credit history and criminal records data."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "candidate_supplied_data",
+      "fact_id": "V3-15-F03",
+      "source_fact_ids": [
+        "V3-15-F03"
+      ],
+      "fact": "Candidate data may include demographic or sensitive-category information.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "**Demographic data**. Your date of birth and gender as well as more sensitive personal data (also known as special category data) including information relating to racial and ethnic origin, religious, political or philosophical beliefs, trade union membership or information about your health, disabilities, sexual orientation, gender identity, and transgender status. We may also ask about your parental status and military status."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "outside_sources",
+      "fact_id": "V3-15-F04",
+      "source_fact_ids": [
+        "V3-15-F04"
+      ],
+      "fact": "GitHub may obtain references from current or former employers.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* Inference data that we generate or derive about you from personal data we process about you. * References provided by or about you, including from former and current employers. * Third parties or public sources (e.g. information from public professional networking sources, such as your LinkedIn profile, for recruitment purposes). * Our vendors and other providers, such as when we conduct lawful background screenings, to the extent permitted by law, through a third-party vendor who provides us information about your past education, employment, credit and/or criminal history."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "outside_sources",
+      "fact_id": "V3-15-F05",
+      "source_fact_ids": [
+        "V3-15-F05"
+      ],
+      "fact": "GitHub may obtain public professional-networking information.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* Inference data that we generate or derive about you from personal data we process about you. * References provided by or about you, including from former and current employers. * Third parties or public sources (e.g. information from public professional networking sources, such as your LinkedIn profile, for recruitment purposes). * Our vendors and other providers, such as when we conduct lawful background screenings, to the extent permitted by law, through a third-party vendor who provides us information about your past education, employment, credit and/or criminal history."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "outside_sources",
+      "fact_id": "V3-15-F06",
+      "source_fact_ids": [
+        "V3-15-F06"
+      ],
+      "fact": "GitHub may obtain lawful background-screening data from vendors.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "Third parties or public sources (e.g. information from public professional networking sources, such as your LinkedIn profile, for recruitment purposes). * Our vendors and other providers, such as when we conduct lawful background screenings, to the extent permitted by law, through a third-party vendor who provides us information about your past education, employment, credit and/or criminal history."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "recruitment_use",
+      "fact_id": "V3-15-F07",
+      "source_fact_ids": [
+        "V3-15-F07"
+      ],
+      "fact": "GitHub uses candidate data to engage about opportunities and consider applications.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_f358f8d5e53e3590e8d0262e",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "**Recruitment and Hiring**. For our recruitment and hiring purposes, including engaging with you concerning job opportunities at GitHub, considering your application for employment to specific roles, candidate screening, interview scheduling and management, lawful vetting and background screening, and preparing an offer letter."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-15",
+      "core_requirement_id": "recruitment_use",
+      "fact_id": "V3-15-F08",
+      "source_fact_ids": [
+        "V3-15-F08"
+      ],
+      "fact": "GitHub uses candidate data for screening, scheduling, lawful vetting and possible onboarding.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_f358f8d5e53e3590e8d0262e",
+          "entailment": "partial",
+          "reason": "The Recruitment and Hiring paragraph supports screening, scheduling and lawful vetting, but mentions offer preparation rather than onboarding.",
+          "supporting_excerpt": "and hiring purposes, including engaging with you concerning job opportunities at GitHub, considering your application for employment to specific roles, candidate screening, interview scheduling and management, lawful vetting and background screening, and preparing an offer letter."
+        },
+        {
+          "doc": "privacy-policies/github-candidate-privacy-policy.md",
+          "chunk_id": "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "we need to engage with you about GitHub career opportunities, consideration of your application for employment to specific roles at GitHub, including candidate screening, interview scheduling and management, lawful background screening, and to on-board you at GitHub if you receive and accept an offer of employment with us."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-16",
+      "core_requirement_id": "payout_timing",
+      "fact_id": "V3-16-F01",
+      "source_fact_ids": [
+        "V3-16-F01"
+      ],
+      "fact": "Ordinary payments are remitted within 30 days after the month of receipt closes.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_6f76733abb0c83220da27ef8",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "During the term, Stripe will process and remit to you via your Stripe Connect Account all Sponsored Developer Payments received in a given month within 30 days after the close of that month, subject to the variables below. Payouts are sent through Stripe Connect to the bank account you provided when you applied for GitHub Sponsors. Neither GitHub nor Stripe is responsible for delay or misapplication of any Sponsored Developer Payment because of incorrect or incomplete information supplied by you or a bank, or for failure of a bank to credit your account. GitHub is not responsible for any delay"
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-16",
+      "core_requirement_id": "timing_and_threshold_conditions",
+      "fact_id": "V3-16-F02",
+      "source_fact_ids": [
+        "V3-16-F02"
+      ],
+      "fact": "A first sponsorship payment has a 60-day initial processing period.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_6f76733abb0c83220da27ef8",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* For first payments, Stripe will process and remit to you via Stripe Connect all Sponsored Developer Payments 60 days after the first sponsorship is initiated, subject to the variables below. This probation period is applied to all Sponsored Developer Accounts and helps ensure the integrity of the program. Payments thereafter will be remitted within 30 days of the close of that month, in accordance with this section."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-16",
+      "core_requirement_id": "timing_and_threshold_conditions",
+      "fact_id": "V3-16-F03",
+      "source_fact_ids": [
+        "V3-16-F03"
+      ],
+      "fact": "ACH or wire payouts follow a monthly third-Thursday schedule.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_6f76733abb0c83220da27ef8",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* If you are paid through ACH transfer or wire transfer, you will receive payouts on the third Thursday of the month. Stripe will issue a payout to you for any month that your balance reaches $100 USD. Contributions from the GitHub Sponsors Matching Fund do not count towards this threshold. If your balance is below $100 at the end of the month, the balance will accrue until the next time your balance is above the threshold at the end of the month. If you leave GitHub Sponsors, Stripe will issue a payout for your remaining balance even if the balance is below $100."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-16",
+      "core_requirement_id": "timing_and_threshold_conditions",
+      "fact_id": "V3-16-F04",
+      "source_fact_ids": [
+        "V3-16-F04"
+      ],
+      "fact": "ACH or wire payouts normally require a balance of at least 100 USD; a smaller balance carries forward.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_6f76733abb0c83220da27ef8",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "* If you are paid through ACH transfer or wire transfer, you will receive payouts on the third Thursday of the month. Stripe will issue a payout to you for any month that your balance reaches $100 USD. Contributions from the GitHub Sponsors Matching Fund do not count towards this threshold. If your balance is below $100 at the end of the month, the balance will accrue until the next time your balance is above the threshold at the end of the month. If you leave GitHub Sponsors, Stripe will issue a payout for your remaining balance even if the balance is below $100."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-16",
+      "core_requirement_id": "suspension_or_withholding",
+      "fact_id": "V3-16-F05",
+      "source_fact_ids": [
+        "V3-16-F05"
+      ],
+      "fact": "Missing tax documentation can suspend payments.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_b3dc666b9ae32e6406dafcdc",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "for complying with any third-party payment processor's terms and conditions regarding tax withholding and reporting, if applicable. Furthermore, GitHub reserves the right to suspend payments to your account until you provide GitHub with adequate documentation or information required under applicable laws for GitHub to determine any applicable tax withholding or reporting obligations that apply to the payments under these Additional Terms or Agreement."
+        }
+      ],
+      "review_status": "accepted"
+    },
+    {
+      "case_id": "V3-16",
+      "core_requirement_id": "suspension_or_withholding",
+      "fact_id": "V3-16-F06",
+      "source_fact_ids": [
+        "V3-16-F06"
+      ],
+      "fact": "Suspected or confirmed breach can cause payment withholding pending investigation.",
+      "required": true,
+      "evidence": [
+        {
+          "doc": "github-terms/github-sponsors-additional-terms.md",
+          "chunk_id": "chunk_a8aa16cd3581c6a8bcd82f74",
+          "entailment": "direct",
+          "reason": "The chunk explicitly states the fact's actor, action, relevant condition, scope, and modal strength.",
+          "supporting_excerpt": "In the event of a Sponsored Developer's breach, or suspected breach, of these Additional Terms or the Agreement, GitHub reserves the right to withhold payment to the Sponsored Developer under these Additional Terms or otherwise, pending GitHub's reasonable investigation of the same. If GitHub determines, in its sole discretion, that a Sponsored Developer is in breach of these Additional Terms or the Agreement, GitHub may permanently withhold any amounts due to the Sponsored Developer and the Sponsor can choose to reallocate those funds to another Sponsored Developer."
+        }
+      ],
+      "review_status": "accepted"
+    }
+  ],
+  "frozen_at_utc": "2026-09-25T01:15:32+00:00",
+  "source_candidate_sha256": "b8ec8c5d76a60a6d6a6a3122eda97f4d656e3290897d9ef842114595e8a53f19",
+  "freeze_rule": "Required facts and evidence mappings are fixed for subsequent policy experiments; do not revise them in response to strategy performance.",
+  "human_adjudication_changes": [
+    {
+      "fact_id": "V3-12-F04",
+      "decision": "narrow_to_organization_scope",
+      "old_fact": "Private and paid service access in those restricted regions is limited.",
+      "new_fact": "For organization accounts restricted under the trade-controls policy, access to private-repository and paid services is suspended.",
+      "mapping_chunk_id": "chunk_2899720d6a0761800653e2d4",
+      "mapping_change": "partial_to_direct_after_scope_narrowing",
+      "reason": "Existing policy text states the private/paid suspension for restricted organization accounts, but does not directly establish the same combined rule for all individual developers. This was an entailment scope correction before final scoring, not a performance-based change.",
+      "independence_from_other_facts": "F04 covers private-repository and paid-service suspension for restricted organizations. F05 covers possible archived read-only public repositories for paid organizations. F06 covers qualifying free public-service access for free organizations."
+    }
+  ],
+  "post_scoring_mapping_amendment_history": "The pre-review draft added V3-01-F01/F02 alternate chunks after first-pass scoring. The entailment review independently accepted the two alternates as direct, while judging the original V3-01-F02 trademark-policy chunk partial. This historical leakage risk is disclosed and no further performance-driven changes are permitted after this freeze."
+}

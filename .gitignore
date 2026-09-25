@@ -29,3 +29,6 @@ data/site-policy/
 cache/*
 !cache/.gitkeep
 DEMO.md
+
+# Local code-analysis artifacts
+.ua/

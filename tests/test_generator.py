@@ -147,6 +147,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(generated["sources"][0]["chunk_id"], "two")
         self.assertTrue(generated["validation"]["valid"])
 
+    def test_optional_output_budget_is_forwarded_and_cache_is_separate(self) -> None:
+        client = FixedClient(output="Grounded answer [S1].")
+        source = [result("one")]
+        default = generate_grounded_answer("question", [], source, client, model="model")
+        expanded = generate_grounded_answer("question", [], source, client, model="model", max_tokens=1024)
+        self.assertEqual([call[1] for call in client.calls], [512, 1024])
+        self.assertNotEqual(default["cache_key"], expanded["cache_key"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -66,3 +66,8 @@ class CrossEncoderReranker:
             convert_to_numpy=True,
         )
         return [float(score) for score in scores.reshape(-1)]
+
+    def count_tokens(self, text: str) -> int:
+        """Estimate evidence size with the already loaded reranker tokenizer."""
+
+        return len(self._model.tokenizer.encode(text, add_special_tokens=False))

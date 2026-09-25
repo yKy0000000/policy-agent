@@ -1,0 +1,1160 @@
+{
+  "schema_version": "3.0-draft",
+  "name": "model-curated Broad Query V3 draft",
+  "status": "human_adjudicated",
+  "corpus_root": "data/site-policy/Policies",
+  "corpus_file_count": 57,
+  "corpus_sha256": "823248c6ced6491950280599c5de0047d361817c4061187c73ba65f96fed8802",
+  "evidence_policy": "Corpus source anchors only; no retrieval/reranker/generation outputs used for selection or annotation.",
+  "case_count": 16,
+  "cases": [
+    {
+      "case_id": "V3-01",
+      "candidate_id": "V3C01",
+      "query": "Someone posted material from my company on GitHub without permission. How should I figure out which removal route applies?",
+      "broad_type": "multi-category",
+      "secondary_broad_types": [
+        "multi-source"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "copyright_route",
+          "information_need": "Use the DMCA route for allegedly infringing copyrighted work.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/submitting-content-removal-requests.md",
+              "section": "DMCA Takedown Policy",
+              "line": 21,
+              "passage": "…Takedown Policy](/site-policy/content-removal-policies/dmca-takedown-policy) can be used to report content that you believe infringes a copyright owned by you or your organization. Once you have reviewed the policy, you may also want to…"
+            },
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "DMCA Notices In a Nutshell",
+              "line": 40,
+              "passage": "The DMCA notice and takedown process should be used only for complaints about copyright infringement. Notices sent through our DMCA process must identify copyrighted work or works that are allegedly being infringed. The process cannot be…"
+            }
+          ],
+          "source_justification": "DMCA is for alleged copyright infringement."
+        },
+        {
+          "aspect_id": "trademark_route",
+          "information_need": "Use the trademark route for potentially confusing use of a protected name, logo, or mark.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/submitting-content-removal-requests.md",
+              "section": "GitHub Trademark Policy",
+              "line": 25,
+              "passage": "…business name, logo, or other trademark-protected materials in a manner that may mislead or confuse others about brand or business affiliation."
+            },
+            {
+              "document": "content-removal-policies/github-trademark-policy.md",
+              "section": "What is a GitHub Trademark Policy Violation?",
+              "line": 13,
+              "passage": "Using a company or business name, logo, or other trademark-protected materials in a manner that may mislead or confuse others with regard to its brand or business affiliation may be considered a trademark policy violation."
+            }
+          ],
+          "source_justification": "Trademark reporting turns on possible brand confusion."
+        },
+        {
+          "aspect_id": "private_information_route",
+          "information_need": "Use private-information removal for confidential material posing a specific security risk.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "What is Private Information?",
+              "line": 17,
+              "passage": "For the purposes of this document, “private information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or your organization."
+            }
+          ],
+          "source_justification": "This exceptional route requires confidentiality and a targeted security risk."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Incomplete reports need revision; GitHub will not select the policy for the reporter."
+      ],
+      "why_broad": "The user must choose among three different policy routes with distinct qualifying harms, not merely learn that removal requests exist.",
+      "source_documents": [
+        "content-removal-policies/submitting-content-removal-requests.md",
+        "content-removal-policies/dmca-takedown-policy.md",
+        "content-removal-policies/github-trademark-policy.md",
+        "content-removal-policies/github-private-information-removal-policy.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": "The scenario does not identify the material; the answer should give routing criteria rather than choose one route."
+    },
+    {
+      "case_id": "V3-02",
+      "candidate_id": "V3C02",
+      "query": "A copyright complaint was filed against my repository. What can happen before and after GitHub disables it?",
+      "broad_type": "lifecycle-process",
+      "secondary_broad_types": [
+        "multi-source",
+        "rule-exception"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "notice_and_initial_action",
+          "information_need": "GitHub forwards a complete notice; full-repository or package claims can trigger immediate disablement, otherwise the owner normally gets a change window.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "A. How Does This Actually Work?",
+              "line": 53,
+              "passage": "1. **GitHub Asks User to Make Changes.** If the notice alleges that the entire contents of a repository infringe, or a package infringes, we will skip to Step 6 and disable the entire repository or package expeditiously. Otherwise, because GitHub cannot disable access to specific files…"
+            },
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "A. How Does This Actually Work?",
+              "line": 51,
+              "passage": "…notice](/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice) to GitHub. Assuming the takedown notice is sufficiently detailed according to the statutory requirements (as explained in the [how-to…"
+            }
+          ],
+          "source_justification": "Full-repository/package claims differ from partial claims."
+        },
+        {
+          "aspect_id": "change_window",
+          "information_need": "For a partial repository claim, the owner normally has about one business day to change content and notify GitHub.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "A. How Does This Actually Work?",
+              "line": 53,
+              "passage": "…repository, we will contact the user who created the repository and give them approximately 1 business day to delete or modify the content specified in the notice. We'll notify the copyright owner if and when we give the user a chance to make changes. Because packages are immutable, if…"
+            }
+          ],
+          "source_justification": "An owner can avoid disablement by timely changes and notice."
+        },
+        {
+          "aspect_id": "disabling_conditions",
+          "information_need": "No timely change or a renewed claim can lead GitHub to disable content.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "A. How Does This Actually Work?",
+              "line": 59,
+              "passage": "1. **GitHub May Disable Access to the Content.** GitHub will disable a user's content if: (i) the copyright owner has alleged copyright over the user's entire repository or package (as noted in Step 3); (ii) the user has not made any changes after being given an opportunity to do so (as…"
+            }
+          ],
+          "source_justification": "The policy lists circumstances leading to disablement."
+        },
+        {
+          "aspect_id": "counter_notice_and_restoration",
+          "information_need": "After mistaken disablement, the owner may counter-notice; GitHub restores after 10–14 days unless the claimant files qualifying legal action.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "A. How Does This Actually Work?",
+              "line": 63,
+              "passage": "…relating to the content on GitHub. In other words, you might get sued. If the copyright owner does not give GitHub notice within 10-14 days, by sending a copy of a valid legal complaint filed in a court of competent jurisdiction, GitHub will re-enable the disabled content."
+            },
+            {
+              "document": "content-removal-policies/dmca-takedown-policy.md",
+              "section": "A. How Does This Actually Work?",
+              "line": 61,
+              "passage": "…have had content disabled to consult with a lawyer about their options. If a user believes that their content was disabled as a result of a mistake or misidentification, they may send us a [counter notice](/site-policy/content-removal-policies/guide-to-submitting-a-dmca-counter-notice).…"
+            }
+          ],
+          "source_justification": "The counter-notice branch has a legal-action deadline and restoration consequence."
+        }
+      ],
+      "important_supporting_aspects": [
+        "An owner who missed the initial window may get one additional approximately one-business-day chance."
+      ],
+      "why_broad": "A notice can lead to an opportunity to change, immediate disablement, a counter notice, or restoration depending on stage and scope.",
+      "source_documents": [
+        "content-removal-policies/dmca-takedown-policy.md",
+        "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "Reviewer should decide whether the one-time extra change window belongs in Core for this wording."
+    },
+    {
+      "case_id": "V3-03",
+      "candidate_id": "V3C03",
+      "query": "A repository exposes a secret belonging to my team. How does GitHub handle a request to remove it?",
+      "broad_type": "lifecycle-process",
+      "secondary_broad_types": [
+        "condition-consequence"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "security_risk_eligibility",
+          "information_need": "The secret must be confidential and its public availability must pose a specific or targeted security risk.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "What is Private Information?",
+              "line": 17,
+              "passage": "For the purposes of this document, “private information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or your organization."
+            }
+          ],
+          "source_justification": "The route is reserved for high-risk private information."
+        },
+        {
+          "aspect_id": "request_specificity",
+          "information_need": "The requester must identify file links and lines and explain the particular security risk.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "Your Request Must Include:",
+              "line": 82,
+              "passage": "1. A working, clickable link to each file containing private information. (Note that we're not able to work from search results, examples, or screenshots.)"
+            },
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "Your Request Must Include:",
+              "line": 83,
+              "passage": "1. Specific line numbers within each file containing the private information."
+            },
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "Your Request Must Include:",
+              "line": 84,
+              "passage": "1. A brief description of how each item you've identified poses a security risk to you or your organization. ***It is important that you provide an explanation of how the data poses a security risk beyond merely stating that it does.*** <!-- markdownlint-disable-line emphasis-style -->"
+            }
+          ],
+          "source_justification": "GitHub requires locations and a concrete risk explanation."
+        },
+        {
+          "aspect_id": "owner_change_or_dispute",
+          "information_need": "GitHub generally gives the repository owner a chance to remove or modify the information or dispute the claim.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "How Does This Actually Work?",
+              "line": 54,
+              "passage": "1. **GitHub Asks User to Make Changes.** In most cases, we will contact the user who created the repository and give them an opportunity to delete or modify the private information specified in the request or to dispute the claim."
+            },
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "How Does This Actually Work?",
+              "line": 60,
+              "passage": "1. **User May Dispute the Request.** If a user believes the content in question is not private information subject to this Policy, they may dispute it. If they do, we will generally leave it up to the complainant to contact the user and work things out with them directly, within reason."
+            }
+          ],
+          "source_justification": "The owner has response paths before disposition."
+        },
+        {
+          "aspect_id": "possible_disablement",
+          "information_need": "Failure to make and report the changes can lead to repository disablement; GitHub can also act if changes are insufficient.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "How Does This Actually Work?",
+              "line": 56,
+              "passage": "…changes, they must tell us so within the window of time they've been allowed. If they don't, we will disable the repository. If the user notifies us that they made changes, we will verify that the changes have been made and notify the complainant."
+            },
+            {
+              "document": "content-removal-policies/github-private-information-removal-policy.md",
+              "section": "How Does This Actually Work?",
+              "line": 62,
+              "passage": "1. **Complainant Reviews Changes.** If the user makes changes, the complainant must review them. If the changes are insufficient, the complainant must provide GitHub with details explaining why. GitHub may disable the repository or give the user an additional chance to make the changes."
+            }
+          ],
+          "source_justification": "The process has a possible disablement consequence."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Requesters should investigate first; forks are not automatically disabled with the parent."
+      ],
+      "why_broad": "Eligibility, the requester's evidence, the repository owner's response, and GitHub's possible action are all needed to explain the process.",
+      "source_documents": [
+        "content-removal-policies/github-private-information-removal-policy.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "A reviewer may treat fork handling as Core if 'a repository' is intended to include its fork network."
+    },
+    {
+      "case_id": "V3-04",
+      "candidate_id": "V3C04",
+      "query": "A GitHub account uses our brand name. When will GitHub treat that as a trademark problem, and what can it do?",
+      "broad_type": "rule-exception",
+      "secondary_broad_types": [
+        "easy-broad-control"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "violation_threshold",
+          "information_need": "A shared username or mark alone is not necessarily a violation; misleading or confusing brand affiliation is the relevant threshold.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-trademark-policy.md",
+              "section": "What is not a GitHub Trademark Policy Violation?",
+              "line": 17,
+              "passage": "…with a user name that happens to be the same as a registered trademark is not, by itself, necessarily a violation of our trademark policy."
+            },
+            {
+              "document": "content-removal-policies/github-trademark-policy.md",
+              "section": "What is a GitHub Trademark Policy Violation?",
+              "line": 13,
+              "passage": "Using a company or business name, logo, or other trademark-protected materials in a manner that may mislead or confuse others with regard to its brand or business affiliation may be considered a trademark policy violation."
+            }
+          ],
+          "source_justification": "A name match differs from confusing brand use."
+        },
+        {
+          "aspect_id": "response_by_intent",
+          "information_need": "Clear intent to mislead can lead to suspension, while apparent confusion without purposeful passing off may lead to a chance to clarify and possibly username release.",
+          "source_anchors": [
+            {
+              "document": "content-removal-policies/github-trademark-policy.md",
+              "section": "How Does GitHub Respond To Reported Trademark Policy Violations?",
+              "line": 23,
+              "passage": "* When there is a clear intent to mislead others through the unauthorized use of a trademark, GitHub will suspend the account and notify the account holder."
+            },
+            {
+              "document": "content-removal-policies/github-trademark-policy.md",
+              "section": "How Does GitHub Respond To Reported Trademark Policy Violations?",
+              "line": 24,
+              "passage": "* When we determine that an account appears to be confusing users, but is not purposefully passing itself off as the trademarked good or service, we give the account holder an opportunity to clear up any potential confusion. We may also…"
+            }
+          ],
+          "source_justification": "The response differs between intentional deception and confusion."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Registered trademark holders may submit a report with registration and confusion details."
+      ],
+      "why_broad": "A matching name alone is insufficient, and GitHub's response depends on how the mark is used and whether deception appears intentional.",
+      "source_documents": [
+        "content-removal-policies/github-trademark-policy.md",
+        "other-site-policies/github-username-policy.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-05",
+      "candidate_id": "V3C06",
+      "query": "I lost access to my two-factor-authenticated account. What can GitHub do for me, and what can I still recover?",
+      "broad_type": "rule-exception",
+      "secondary_broad_types": [
+        "easy-broad-control"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "account_access_recovery_limit",
+          "information_need": "The user must rely on GitHub's existing account recovery methods; if those methods are unavailable, GitHub Support will not bypass two-factor authentication to restore account access.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-account-recovery-policy.md",
+              "section": "Document introduction",
+              "line": 9,
+              "passage": "…process](/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials#authenticating-with-a-verified-device-ssh-token-or-personal-access-token) if you have lost access to…"
+            },
+            {
+              "document": "other-site-policies/github-account-recovery-policy.md",
+              "section": "Can I open a support ticket to recover my account?",
+              "line": 15,
+              "passage": "For security reasons, **GitHub Support will not restore access to accounts with two-factor authentication enabled if you lose your two-factor authentication credentials or lose access to your account recovery methods.** You must use…"
+            }
+          ],
+          "source_justification": "Account recovery is limited to existing recovery methods; Support does not provide a separate bypass."
+        },
+        {
+          "aspect_id": "email_and_billing_options",
+          "information_need": "The user can unlink email from the locked account and ask Support to remove a payment method.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-account-recovery-policy.md",
+              "section": "How can I remove a payment method from a locked account?",
+              "line": 25,
+              "passage": "Please contact Support to request removal of a payment method from a locked out account. Remember, **GitHub Support will not restore your account** if you lose access to your account recovery methods."
+            },
+            {
+              "document": "other-site-policies/github-account-recovery-policy.md",
+              "section": "Document introduction",
+              "line": 11,
+              "passage": "You can, however, [unlink email addresses](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/unlinking-your-email-address-from-a-locked-account) from a locked account in order to…"
+            }
+          ],
+          "source_justification": "Limited email and payment actions remain possible."
+        },
+        {
+          "aspect_id": "public_content_options",
+          "information_need": "Public user or organization content can be cloned or forked; Support will not recover locked account contents.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-account-recovery-policy.md",
+              "section": "Can I recover the contents of a user or organization account I lost access to?",
+              "line": 29,
+              "passage": "If you have lost access to a user account, you may [clone](/repositories/creating-and-managing-repositories/cloning-a-repository) or [fork](/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) any content that is…"
+            }
+          ],
+          "source_justification": "Public material remains copyable even when account contents cannot be restored."
+        }
+      ],
+      "important_supporting_aspects": [
+        "An organization may ask remaining members to clone or fork private content they can access."
+      ],
+      "why_broad": "The answer must separate the limits of account-access recovery from the limited ways to reuse email, manage billing, or retrieve public content.",
+      "source_documents": [
+        "other-site-policies/github-account-recovery-policy.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-06",
+      "candidate_id": "V3C07",
+      "query": "A username we want looks abandoned. Can we get it, and what happens if someone is squatting on it?",
+      "broad_type": "rule-exception",
+      "secondary_broad_types": [
+        "easy-broad-control"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "inactivity_not_transfer_ground",
+          "information_need": "No visible activity does not prove inactivity, and GitHub does not release a claimed name merely for appearing unused.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-username-policy.md",
+              "section": "What if the username I want is already taken?",
+              "line": 20,
+              "passage": "We do not accept requests to release, transfer, or reclaim usernames on the basis that they appear inactive or unused. If the username you want has already been claimed, you will need to select a different available name unless you are…"
+            }
+          ],
+          "source_justification": "Apparent abandonment does not justify reassignment."
+        },
+        {
+          "aspect_id": "trademark_exception",
+          "information_need": "A valid trademark-related complaint is the exception GitHub reviews for possible release of an already claimed name.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-username-policy.md",
+              "section": "Trademark Policy",
+              "line": 26,
+              "passage": "…[AUTOTITLE](/site-policy/content-removal-policies/github-trademark-policy) page. Valid trademark-related complaints are the only requests we review for possible release of a username that is already claimed."
+            }
+          ],
+          "source_justification": "Trademark rights provide a limited review path."
+        },
+        {
+          "aspect_id": "squatting_enforcement",
+          "information_need": "Name squatting and name trading are prohibited and can result in renaming, removal, or suspension.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-username-policy.md",
+              "section": "Name Squatting Policy",
+              "line": 30,
+              "passage": "…and account names may not be reserved or inactively held for future use. Accounts violating this name squatting policy may be removed or renamed without notice. Attempts to sell, buy, or solicit other forms of payment in exchange for…"
+            }
+          ],
+          "source_justification": "Squatting can trigger enforcement, without promising the name to the requester."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Usernames are first-come, first-served and intended for immediate active use.",
+        "Choosing a variation is suggested when a name is already claimed."
+      ],
+      "why_broad": "A desirable inactive-looking username, a trademark claim, and squatting are governed by different conditions.",
+      "source_documents": [
+        "other-site-policies/github-username-policy.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-07",
+      "candidate_id": "V3C08",
+      "query": "My repository contains exploit research that is being misused. How does GitHub decide whether to restrict it?",
+      "broad_type": "rule-exception",
+      "secondary_broad_types": [
+        "condition-consequence"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "active_attack_prohibition",
+          "information_need": "Direct use of GitHub to support unlawful attacks causing technical harm is prohibited.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-active-malware-or-exploits.md",
+              "section": "Document introduction",
+              "line": 13,
+              "passage": "…members of the community. We do not allow anyone to use our platform in direct support of unlawful attacks that cause technical harms, such as using GitHub as a means to deliver malicious executables or as attack infrastructure, for example by organizing denial of service attacks or…"
+            }
+          ],
+          "source_justification": "Active attack infrastructure is disallowed."
+        },
+        {
+          "aspect_id": "dual_use_allowed",
+          "information_need": "Dual-use vulnerability, malware, and exploit research is ordinarily allowed for educational value.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-active-malware-or-exploits.md",
+              "section": "Document introduction",
+              "line": 15,
+              "passage": "Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, or exploits, as the publication and distribution of such content has educational value and provides a net benefit to the security community. We assume…"
+            }
+          ],
+          "source_justification": "Research use changes the policy assessment."
+        },
+        {
+          "aspect_id": "rare_abuse_restriction",
+          "information_need": "For widespread abuse of dual-use content, GitHub may temporarily restrict the specific instance, usually behind authentication and sometimes by disabling it.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-active-malware-or-exploits.md",
+              "section": "Document introduction",
+              "line": 17,
+              "passage": "In rare cases of very widespread abuse of dual-use content, we may restrict access to that specific instance of the content to disrupt an ongoing unlawful attack or malware campaign that is leveraging the GitHub platform as an exploit or malware CDN. In most of these instances,…"
+            },
+            {
+              "document": "acceptable-use-policies/github-active-malware-or-exploits.md",
+              "section": "Document introduction",
+              "line": 17,
+              "passage": "…GitHub platform as an exploit or malware CDN. In most of these instances, restriction takes the form of putting the content behind authentication, but may, as an option of last resort, involve disabling access or full removal where this is not possible (e.g. when posted as a gist). We…"
+            }
+          ],
+          "source_justification": "A narrower temporary restriction can apply despite general allowance."
+        }
+      ],
+      "important_supporting_aspects": [
+        "GitHub contacts project owners where possible and offers an appeals process; maintainers are encouraged to add a disclaimer and contact path."
+      ],
+      "why_broad": "The policy distinguishes directly harmful active attacks from dual-use research and provides a narrower intervention for rare abuse.",
+      "source_documents": [
+        "acceptable-use-policies/github-active-malware-or-exploits.md",
+        "acceptable-use-policies/github-appeal-and-reinstatement.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "The policy does not provide a mechanical threshold for 'very widespread abuse'; reviewer should confirm that owner notice and appeal remain Supporting."
+    },
+    {
+      "case_id": "V3-08",
+      "candidate_id": "V3C09",
+      "query": "If I report a GitHub vulnerability through its bug bounty program, what protection do I have if a third party is affected?",
+      "broad_type": "actor-scope",
+      "secondary_broad_types": [
+        "multi-source"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "good_faith_safe_harbor",
+          "information_need": "GitHub promises not to pursue legal action for accidental or good-faith violations within the program and offers a limited policy waiver.",
+          "source_anchors": [
+            {
+              "document": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "section": "1. Safe Harbor Terms",
+              "line": 19,
+              "passage": "…encourage research and coordinated disclosure of security vulnerabilities, we will not pursue civil or criminal action, or send notice to law enforcement for accidental or good faith violations of this policy. We consider security research and vulnerability disclosure activities conducted…"
+            },
+            {
+              "document": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "section": "3. Limited Waiver of Other Site Policies",
+              "line": 37,
+              "passage": "…policies](/site-policy) but consistent with the terms of our bug bounty program, we waive those restrictions for the sole and limited purpose of permitting your security research under this bug bounty program. Just like above, if in doubt, ask us first!"
+            }
+          ],
+          "source_justification": "GitHub's promise covers qualifying research under its program."
+        },
+        {
+          "aspect_id": "third_party_limit",
+          "information_need": "GitHub cannot authorize testing of or bind a third party, so the third party can still pursue action.",
+          "source_anchors": [
+            {
+              "document": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "section": "1. Safe Harbor Terms",
+              "line": 21,
+              "passage": "…applications, products, or services of a third party (which is not us), we cannot bind that third party, and they may pursue legal action or law enforcement notice. We cannot and do not authorize security research in the name of other entities, and cannot in any way offer to defend,…"
+            }
+          ],
+          "source_justification": "Third-party systems fall outside GitHub's protection."
+        },
+        {
+          "aspect_id": "report_sharing",
+          "information_need": "GitHub may share non-identifying report substance with an affected third party only after notice and a written non-pursuit commitment; identifying details require researcher permission.",
+          "source_anchors": [
+            {
+              "document": "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "section": "2. Third Party Safe Harbor",
+              "line": 29,
+              "passage": "…party service, we will limit what we share with any affected third party. We may share non-identifying content from your report with an affected third party, but only after notifying you that we intend to do so and getting the third party's written commitment that they will not pursue…"
+            }
+          ],
+          "source_justification": "Report substance and identity have separate sharing conditions."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Researchers should ask GitHub before uncertain actions and comply with applicable law."
+      ],
+      "why_broad": "GitHub's own safe harbor, third-party exposure, and treatment of report identity have different scopes.",
+      "source_documents": [
+        "security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+        "security-policies/coordinated-disclosure-of-security-vulnerabilities.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "The question's 'protection' could warrant separate treatment of GitHub's limited site-policy waiver as Core; it is combined with the safe-harbor aspect here."
+    },
+    {
+      "case_id": "V3-09",
+      "candidate_id": "V3C10",
+      "query": "My employer gave me a GitHub account. Who controls my personal data, and when does GitHub's privacy statement apply?",
+      "broad_type": "actor-scope",
+      "secondary_broad_types": [
+        "easy-broad-control"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "organization_controller",
+          "information_need": "For most data under an organization-provided account, the employer or school is the data controller and can administer the account and access usage/content.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-general-privacy-statement.md",
+              "section": "End User Notice: Organization-Provided GitHub Accounts",
+              "line": 29,
+              "passage": "When a school or employer supplies your GitHub account, they assume the role of Data Controller for most Personal Data used in our Services. This enables them to:"
+            }
+          ],
+          "source_justification": "The organization controls most account data processing."
+        },
+        {
+          "aspect_id": "github_processor",
+          "information_need": "For that processing, GitHub acts as a processor following the organization's instructions; the organization's privacy notice generally governs.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-general-privacy-statement.md",
+              "section": "End User Notice: Organization-Provided GitHub Accounts",
+              "line": 34,
+              "passage": "…remains dedicated to preserving your privacy rights. In such circumstances, GitHub functions as a Data Processor, adhering to the Data Controller's instructions regarding your Personal Data's processing. A Data Protection Agreement governs…"
+            }
+          ],
+          "source_justification": "GitHub generally acts on the organization's instructions."
+        },
+        {
+          "aspect_id": "github_limited_controller_role",
+          "information_need": "GitHub is controller for specific activities defined by its agreement with the organization, and its privacy statement applies to those purposes.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-general-privacy-statement.md",
+              "section": "End User Notice: Organization-Provided GitHub Accounts",
+              "line": 36,
+              "passage": "In cases where your organization grants access to GitHub products, GitHub acts as the Data Controller solely for specific processing activities. These activities are clearly defined in a contractual agreement with your organization, known…"
+            }
+          ],
+          "source_justification": "There is a limited direct-GitHub-controller carve-out."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Third-party integrations have their own privacy policies."
+      ],
+      "why_broad": "The policy assigns different data-controller roles to the organization and GitHub depending on the processing activity.",
+      "source_documents": [
+        "privacy-policies/github-general-privacy-statement.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-10",
+      "candidate_id": "V3C11",
+      "query": "How can I access, correct, or delete personal data GitHub holds about me, and are there limits?",
+      "broad_type": "enumeration",
+      "secondary_broad_types": [
+        "rule-exception"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "rights_depend_on_location",
+          "information_need": "Depending on location, the user may access, correct, or seek erasure or restriction of personal data.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-general-privacy-statement.md",
+              "section": "Your Privacy Rights",
+              "line": 123,
+              "passage": "Depending on your residence location, you may have specific legal rights regarding your Personal Data:"
+            }
+          ],
+          "source_justification": "The requested rights are location-dependent."
+        },
+        {
+          "aspect_id": "request_and_verification",
+          "information_need": "The user can request rights through GitHub's privacy contact, and GitHub may require identity verification.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-general-privacy-statement.md",
+              "section": "Your Privacy Rights",
+              "line": 133,
+              "passage": "To exercise these rights, please send an email to privacy[at]github[dot]com and follow the instructions provided. To verify your identity for security, we may request extra information before addressing your data-related request. Please contact our Data Protection Officer at…"
+            }
+          ],
+          "source_justification": "Requests follow a contact and verification process."
+        },
+        {
+          "aspect_id": "retention_limit",
+          "information_need": "GitHub may retain some data for legal obligations or legal claims despite an erasure request.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-general-privacy-statement.md",
+              "section": "Your Privacy Rights",
+              "line": 135,
+              "passage": "We aim to promptly respond to requests in compliance with legal requirements. Please note that we may retain certain data as necessary for legal obligations or for establishing, exercising, or defending legal claims."
+            }
+          ],
+          "source_justification": "Deletion rights are qualified by necessary retention."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Regional regulators may provide an additional complaint path."
+      ],
+      "why_broad": "The answer needs both the available rights and the request mechanism, plus qualifications on availability and deletion.",
+      "source_documents": [
+        "privacy-policies/github-general-privacy-statement.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "The broad rights list is jurisdiction-dependent; reviewer should confirm whether to enumerate every listed right or only the rights named by the query."
+    },
+    {
+      "case_id": "V3-11",
+      "candidate_id": "V3C12",
+      "query": "We installed a Marketplace app for our organization. Who is responsible for its behavior and our data if we stop using it?",
+      "broad_type": "actor-scope",
+      "secondary_broad_types": [
+        "condition-consequence"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "account_owner_actions",
+          "information_need": "The purchaser or integrated account owner is responsible for actions the product performs through the account.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-marketplace-terms-of-service.md",
+              "section": "A. GitHub.com's Terms of Service",
+              "line": 22,
+              "passage": "…are an owner of an account with an integrated Developer Product, then you will be responsible for the Developer Product's actions that are performed on or through your account."
+            }
+          ],
+          "source_justification": "The organization owner is accountable for app behavior on its account."
+        },
+        {
+          "aspect_id": "provider_product_responsibility",
+          "information_need": "The product provider supplies the use rights and is responsible for the product, its contents, and claims about it.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-marketplace-terms-of-service.md",
+              "section": "C. Developer Products and Product Providers",
+              "line": 32,
+              "passage": "…Provider, not from GitHub (unless it's a GitHub-owned Developer Product). The Product Provider is solely responsible for the Developer Product it provides, the content therein, and any claims that you or any other party may have relating to that Developer Product or your use of that…"
+            }
+          ],
+          "source_justification": "The provider bears product responsibility."
+        },
+        {
+          "aspect_id": "post_revocation_data_handling",
+          "information_need": "The provider can no longer access the GitHub account after access is revoked, while data it already holds remains subject to the provider's deletion responsibility.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-marketplace-terms-of-service.md",
+              "section": "E. Your Data and GitHub's Privacy Policy",
+              "line": 48,
+              "passage": "If you cease using the Developer Product and revoke access through your account settings, the Product Provider will no longer be able to access your account. The Product Provider is responsible for deleting your Personal Information from its systems within its defined window. Please…"
+            },
+            {
+              "document": "github-terms/github-marketplace-terms-of-service.md",
+              "section": "E. Your Data and GitHub's Privacy Policy",
+              "line": 46,
+              "passage": "**Privacy.** When you select or use a Developer Product, GitHub may share certain Personal Information (as defined in the [GitHub Privacy Statement](/site-policy/privacy-policies/github-privacy-statement)) with the Product Provider (if any such Personal Information is received from you)…"
+            }
+          ],
+          "source_justification": "Revoking access stops further account access, but deletion of Personal Information already held by the provider remains the provider's responsibility."
+        }
+      ],
+      "important_supporting_aspects": [
+        "The OAuth authorization screen shows the requested permission scope."
+      ],
+      "why_broad": "Account owners, the product provider, and GitHub each have different responsibilities before and after authorization is revoked.",
+      "source_documents": [
+        "github-terms/github-marketplace-terms-of-service.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-12",
+      "candidate_id": "V3C13",
+      "query": "How does GitHub.com access differ for developers and organizations in Iran, Cuba, Crimea, and the separatist areas of Donetsk and Luhansk, and how can blocked-party rules affect that access?",
+      "broad_type": "actor-scope",
+      "secondary_broad_types": [
+        "multi-category"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "licensed_iran_cuba_cloud",
+          "information_need": "The policy says GitHub cloud services are available in Iran under an OFAC license and generally available in Cuba, including free and paid services.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-and-trade-controls.md",
+              "section": "GitHub.com",
+              "line": 32,
+              "passage": "GitHub now has a license from OFAC to provide cloud services to developers located or otherwise resident in Iran. This includes all public and private services for individuals and organizations, both free and paid."
+            },
+            {
+              "document": "other-site-policies/github-and-trade-controls.md",
+              "section": "GitHub.com",
+              "line": 34,
+              "passage": "GitHub cloud services, both free and paid, are also generally available to developers located in Cuba."
+            }
+          ],
+          "source_justification": "The policy explicitly distinguishes licensed cloud access."
+        },
+        {
+          "aspect_id": "restricted_region_public_limits",
+          "information_need": "Some restricted regions retain limited free public services for personal, noncommercial communication while private and paid services are restricted.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-and-trade-controls.md",
+              "section": "What is available and not available?",
+              "line": 72,
+              "passage": "GitHub is committed to continuing to offer free public repository services to developers with individual and organizational accounts in Crimea and the separatist areas of Donetsk and Luhansk. This includes limited access to free services, such as public repositories for open source projects (and associated public Pages), public gists, and allotted free Action minutes, for personal communications only, and not for…"
+            }
+          ],
+          "source_justification": "Public and private/paid access have different treatment in certain regions."
+        },
+        {
+          "aspect_id": "organization_difference",
+          "information_need": "In affected regions, paid organizational public repositories may become archived read-only while free organizations retain qualifying public-service access.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-and-trade-controls.md",
+              "section": "What is available and not available?",
+              "line": 74,
+              "passage": "For paid organizational accounts in these sanctioned regions, users may have limited access to their public repositories, which have been downgraded to archived read-only repositories. For free organizational accounts in these sanctioned regions, however, users will continue to have full access to free public repositories for open source projects (and associated public Pages), public gists, and allotted free Action…"
+            }
+          ],
+          "source_justification": "Organization plan status changes public repository access."
+        },
+        {
+          "aspect_id": "blocked_party_override",
+          "information_need": "Blocked persons and certain officials may be restricted regardless of location; apparent erroneous flags have an appeal path.",
+          "source_anchors": [
+            {
+              "document": "other-site-policies/github-and-trade-controls.md",
+              "section": "GitHub.com",
+              "line": 36,
+              "passage": "Specially Designated Nationals (SDNs), other denied or blocked parties under U.S. and other applicable law, and certain government officials, may be restricted from accessing or using GitHub.com. Additionally, users may not use GitHub.com for or on behalf of such parties, generally including the Governments of sanctioned countries. Furthermore, GitHub.com may not be used for purposes prohibited under applicable…"
+            },
+            {
+              "document": "other-site-policies/github-and-trade-controls.md",
+              "section": "How is GitHub ensuring that folks not living in and/or having professional links to the sanctioned countries and territories still have access or ability to appeal?",
+              "line": 62,
+              "passage": "…believes that they have been flagged in error, then that user has the opportunity to appeal the flag by providing verification information to GitHub. If GitHub receives sufficient information to verify that the user or organization is not affiliated with a U.S.-sanctioned jurisdiction for which we do not have a license or otherwise restricted by U.S. economic sanctions, then the flag will be removed. Please contact…"
+            }
+          ],
+          "source_justification": "Sanctions status can override geographic service availability."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Enterprise Server and Copilot have distinct export rules; North Korea has no developer service access under the policy."
+      ],
+      "why_broad": "GitHub.com access differs by jurisdiction, account type, service level, and blocked-party status, so a complete answer requires several distinct access rules.",
+      "source_documents": [
+        "other-site-policies/github-and-trade-controls.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-13",
+      "candidate_id": "V3C14",
+      "query": "Can I use GitHub Pages for a business website that accepts donations or sells something?",
+      "broad_type": "rule-exception",
+      "secondary_broad_types": [
+        "easy-broad-control"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "commercial_hosting_limit",
+          "information_need": "Pages is a static project showcase and cannot be used as a free host for an online business, e-commerce site, or commercial SaaS site.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-terms-for-additional-products-and-features.md",
+              "section": "Pages",
+              "line": 123,
+              "passage": "GitHub Pages is not intended for or allowed to be used as a free web hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions or providing…"
+            }
+          ],
+          "source_justification": "The policy excludes primary commercial hosting use."
+        },
+        {
+          "aspect_id": "donation_exception",
+          "information_need": "Donation buttons and crowdfunding links are examples of permitted monetization.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-terms-for-additional-products-and-features.md",
+              "section": "Pages",
+              "line": 123,
+              "passage": "…commercial transactions or providing commercial software as a service (SaaS). Some monetization efforts are permitted on Pages, such as donation buttons and crowdfunding links."
+            }
+          ],
+          "source_justification": "Some funding mechanisms remain allowed."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Pages also has bandwidth and usage limits and remains subject to the acceptable-use policies."
+      ],
+      "why_broad": "The same business site may be allowed to solicit donations but not to use Pages as a free e-commerce or SaaS host.",
+      "source_documents": [
+        "github-terms/github-terms-for-additional-products-and-features.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    },
+    {
+      "case_id": "V3-14",
+      "candidate_id": "V3C15",
+      "query": "My GitHub content was moderated. What outcomes can I challenge, and what is the process for getting it restored?",
+      "broad_type": "lifecycle-process",
+      "secondary_broad_types": [
+        "multi-source"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "moderation_scope",
+          "information_need": "GitHub can remove, block, reduce visibility of content or suspend accounts; appeals and reinstatements can cover content, account, service, or monetization restrictions.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "What are Appeals and Reinstatements?",
+              "line": 16,
+              "passage": "Both Appeals and Reinstatements may arise in relation to decisions to disable or limit access to content or an account, including decisions whether or not to:"
+            },
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "What are Appeals and Reinstatements?",
+              "line": 18,
+              "passage": "* Remove, disable access to, or restrict visibility of content"
+            },
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "What are Appeals and Reinstatements?",
+              "line": 19,
+              "passage": "* Suspend or terminate access to an account"
+            }
+          ],
+          "source_justification": "The review mechanism applies to multiple moderation outcomes."
+        },
+        {
+          "aspect_id": "appeal_vs_reinstatement",
+          "information_need": "An appeal disputes the violation or decision; reinstatement seeks access after addressing the violation and promising compliance.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "What are Appeals and Reinstatements?",
+              "line": 23,
+              "passage": "A “Reinstatement” is where a user wishes to regain access to their account or content and is willing to make any necessary changes to address the violation and agrees not to violate our terms going forward."
+            },
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "What are Appeals and Reinstatements?",
+              "line": 25,
+              "passage": "An “Appeal” is where a user disputes that a violation has occurred and can provide additional information to show that a different decision should have been reached."
+            }
+          ],
+          "source_justification": "The two requests have different factual premises."
+        },
+        {
+          "aspect_id": "submission_and_window",
+          "information_need": "The user submits the form; appeals may be made up to six months after the decision, with late consideration discretionary.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "How this works",
+              "line": 29,
+              "passage": "…Reinstatement form](https://support.github.com/contact/reinstatement). You may Appeal a moderation decision for up to six months following the decision. GitHub may, in its discretion, refuse to consider any Appeals submitted more than six months after the decision."
+            }
+          ],
+          "source_justification": "The policy sets a process and appeal window."
+        },
+        {
+          "aspect_id": "human_review_outcome",
+          "information_need": "Staff review the request, may reinstate or reverse/modify a decision when warranted, and legitimate appeals receive a final human decision.",
+          "source_anchors": [
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "Appeals",
+              "line": 45,
+              "passage": "All decisions on Appeal are made by humans and not by any automated means. If the GitHub Staff reviewer on the Appeal is the same person who made the initial determination and that staff member believes their initial conclusion was correct (and thus would be inclined to deny the Appeal),…"
+            },
+            {
+              "document": "acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "section": "Appeals",
+              "line": 43,
+              "passage": "…conclusion should have been reached, we may be able to grant an Appeal. GitHub will reverse or modify its decision when the Appeal contains sufficient grounds for us to determine that (i) our decision to act or not to act was mistaken; (ii) that the content or conduct was not illegal and…"
+            }
+          ],
+          "source_justification": "A review may change the moderation decision."
+        }
+      ],
+      "important_supporting_aspects": [
+        "The policy mentions possible local-law review after a final appeal."
+      ],
+      "why_broad": "A moderation action can be challenged through two distinct routes, with a time window and human review criteria.",
+      "source_documents": [
+        "github-terms/github-community-guidelines.md",
+        "acceptable-use-policies/github-appeal-and-reinstatement.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "The query says 'restored'; reviewer should decide whether unsuccessful-appeal safeguards are Core or Supporting."
+    },
+    {
+      "case_id": "V3-15",
+      "candidate_id": "V3C17",
+      "query": "I'm applying for a job at GitHub. What personal data could it get about me, and why would it use it?",
+      "broad_type": "enumeration",
+      "secondary_broad_types": [
+        "actor-scope"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "candidate_supplied_data",
+          "information_need": "GitHub may process candidate-provided contact, background, demographic, and application information.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 67,
+              "passage": "The personal data we process can include, but is not limited to, the following:"
+            },
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 69,
+              "passage": "**Name and contact data**. Your first and last name, employee identification number, email address, mailing address, phone number, photo, beneficiary and emergency contact details, and other similar contact data. Additionally, you may opt to provide GitHub with additional contact…"
+            },
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 71,
+              "passage": "**Demographic data**. Your date of birth and gender as well as more sensitive personal data (also known as special category data) including information relating to racial and ethnic origin, religious, political or philosophical beliefs, trade union membership or information about your…"
+            },
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 79,
+              "passage": "**Background information**. Your academic and professional qualifications, education, CV/Resume, credit history and criminal records data."
+            }
+          ],
+          "source_justification": "The notice enumerates candidate data categories."
+        },
+        {
+          "aspect_id": "outside_sources",
+          "information_need": "GitHub may obtain references, public professional information, vendor background-screening results, and generated inferences.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 89,
+              "passage": "In addition to collecting personal data from you (directly or indirectly), we obtain personal data about you from data sources other than you, including:"
+            },
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 92,
+              "passage": "* References provided by or about you, including from former and current employers."
+            },
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Personal Data that We Process",
+              "line": 94,
+              "passage": "* Our vendors and other providers, such as when we conduct lawful background screenings, to the extent permitted by law, through a third-party vendor who provides us information about your past education, employment, credit and/or criminal history."
+            }
+          ],
+          "source_justification": "Candidate data need not originate with the applicant."
+        },
+        {
+          "aspect_id": "recruitment_use",
+          "information_need": "The data is used for opportunities, applications, screening, scheduling, lawful vetting, and offers or onboarding.",
+          "source_anchors": [
+            {
+              "document": "privacy-policies/github-candidate-privacy-policy.md",
+              "section": "Why We Process Personal Data",
+              "line": 100,
+              "passage": "**Recruitment and Hiring**. For our recruitment and hiring purposes, including engaging with you concerning job opportunities at GitHub, considering your application for employment to specific roles, candidate screening, interview scheduling and management, lawful vetting and background…"
+            }
+          ],
+          "source_justification": "The notice ties candidate data to hiring activities."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Additional regional addenda and retention provisions may apply."
+      ],
+      "why_broad": "Candidate information can come directly from the applicant, other people and vendors, and GitHub's own inferences; uses span hiring stages.",
+      "source_documents": [
+        "privacy-policies/github-candidate-privacy-policy.md"
+      ],
+      "annotation_confidence": "MEDIUM",
+      "ambiguity_notes": "The notice includes some employee-style data categories and post-offer purposes; reviewer should bound Core to the applicant-stage scenario."
+    },
+    {
+      "case_id": "V3-16",
+      "candidate_id": "V3C24",
+      "query": "I'm receiving sponsorships on GitHub. When should I expect payouts, and what conditions can delay or cause GitHub to withhold them?",
+      "broad_type": "condition-consequence",
+      "secondary_broad_types": [
+        "actor-scope"
+      ],
+      "core_aspects": [
+        {
+          "aspect_id": "payout_timing",
+          "information_need": "Ordinary sponsored-developer payments are generally remitted within 30 days after the end of the month received.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-sponsors-additional-terms.md",
+              "section": "3.3. Payment Timing.",
+              "line": 180,
+              "passage": "…Connect Account all Sponsored Developer Payments received in a given month within 30 days after the close of that month, subject to the variables below. Payouts are sent through Stripe Connect to the bank account you provided when you applied for GitHub Sponsors. Neither GitHub nor Stripe is responsible for delay or misapplication of any Sponsored Developer Payment because of incorrect or incomplete information…"
+            }
+          ],
+          "source_justification": "The policy states the general payout window."
+        },
+        {
+          "aspect_id": "timing_and_threshold_conditions",
+          "information_need": "First payments have a 60-day period; payout method and balance thresholds can also affect timing.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-sponsors-additional-terms.md",
+              "section": "3.3. Payment Timing.",
+              "line": 182,
+              "passage": "* For first payments, Stripe will process and remit to you via Stripe Connect all Sponsored Developer Payments 60 days after the first sponsorship is initiated, subject to the variables below. This probation period is applied to all Sponsored Developer Accounts and helps ensure the integrity of the program. Payments thereafter will be remitted within 30 days of the close of that month, in accordance with this…"
+            },
+            {
+              "document": "github-terms/github-sponsors-additional-terms.md",
+              "section": "3.3. Payment Timing.",
+              "line": 186,
+              "passage": "* If you are paid through ACH transfer or wire transfer, you will receive payouts on the third Thursday of the month. Stripe will issue a payout to you for any month that your balance reaches $100 USD. Contributions from the GitHub Sponsors Matching Fund do not count towards this threshold. If your balance is below $100 at the end of the month, the balance will accrue until the next time your balance is above the…"
+            }
+          ],
+          "source_justification": "The normal window has material timing exceptions."
+        },
+        {
+          "aspect_id": "suspension_or_withholding",
+          "information_need": "Tax documentation or suspected/confirmed term breaches can lead to suspended or withheld payments.",
+          "source_anchors": [
+            {
+              "document": "github-terms/github-sponsors-additional-terms.md",
+              "section": "3.2.3. Withholding of Sponsored Developer Payment for Breach.",
+              "line": 176,
+              "passage": "In the event of a Sponsored Developer's breach, or suspected breach, of these Additional Terms or the Agreement, GitHub reserves the right to withhold payment to the Sponsored Developer under these Additional Terms or otherwise, pending GitHub's reasonable investigation of the same. If GitHub determines, in its sole discretion, that a Sponsored Developer is in breach of these Additional Terms or the Agreement,…"
+            },
+            {
+              "document": "github-terms/github-sponsors-additional-terms.md",
+              "section": "3.2.2. Taxes.",
+              "line": 172,
+              "passage": "…regarding tax withholding and reporting, if applicable. Furthermore, GitHub reserves the right to suspend payments to your account until you provide GitHub with adequate documentation or information required under applicable laws for GitHub to determine any applicable tax withholding or reporting obligations that apply to the payments under these Additional Terms or Agreement."
+            }
+          ],
+          "source_justification": "Compliance and information conditions can delay or prevent payment."
+        }
+      ],
+      "important_supporting_aspects": [
+        "Stripe, not GitHub, processes and distributes payments; bank information errors and refund obligations have separate effects; amounts may exclude taxes and fees."
+      ],
+      "why_broad": "Ordinary payout timing, first-payment or method-specific exceptions, and withholding are distinct conditions for a sponsored developer.",
+      "source_documents": [
+        "github-terms/github-sponsors-additional-terms.md"
+      ],
+      "annotation_confidence": "HIGH",
+      "ambiguity_notes": ""
+    }
+  ]
+}

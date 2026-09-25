@@ -1,0 +1,1948 @@
+{
+  "schema_version": 1,
+  "name": "Broad Query V3 frozen atomic-fact evidence evaluation",
+  "oracle_warning": "offline upper bound using evaluation labels unavailable at inference time",
+  "source_sha256": {
+    "benchmark": "9e15b40cc5068aa4fc52ce3e7a5c154c90733156f66e5c92bc688c19a6b919e4",
+    "frozen_rubric": "616e0968038a26b27b7a4d8a90293b100d9a2287da0038caa9cbe3f258646534",
+    "frozen_top20": "a2106ab1b2a25c0600b89ca52c281705e2612914230b83ba5b31fe807ba2441e",
+    "strategy_outputs": "713d773c5e1fe9f59f0bd0e40e22fc649c945665d99a2d4a30f9d6e104f3ef4c"
+  },
+  "case_count": 16,
+  "required_fact_count": 92,
+  "candidate_pool": {
+    "covered_facts": 89,
+    "total_facts": 92,
+    "micro_recall": 0.967391304347826,
+    "macro_recall": 0.9704861111111112,
+    "fact_complete_cases": 14,
+    "ceiling_case_ids": [
+      "V3-03",
+      "V3-11"
+    ]
+  },
+  "policies": {
+    "fixed_top5": {
+      "fact_complete_cases": 7,
+      "macro_fact_coverage": 0.7485367063492063,
+      "micro_fact_coverage": 0.75,
+      "covered_facts": 69,
+      "total_evidence_tokens": 27274,
+      "avg_k": 5,
+      "post_completion_evidence_tokens": 6653,
+      "post_completion_share_of_tokens": 0.24393194984234068
+    },
+    "adaptive_prefix_v1": {
+      "fact_complete_cases": 12,
+      "macro_fact_coverage": 0.9303075396825397,
+      "micro_fact_coverage": 0.9347826086956522,
+      "covered_facts": 86,
+      "total_evidence_tokens": 50530,
+      "avg_k": 10.25,
+      "post_completion_evidence_tokens": 19013,
+      "post_completion_share_of_tokens": 0.3762715218681971
+    },
+    "coverage_selector_v2": {
+      "fact_complete_cases": 10,
+      "macro_fact_coverage": 0.873015873015873,
+      "micro_fact_coverage": 0.8804347826086957,
+      "covered_facts": 81,
+      "total_evidence_tokens": 41134,
+      "avg_k": 7.875,
+      "post_completion_evidence_tokens": 13371,
+      "post_completion_share_of_tokens": 0.3250595614333641
+    }
+  },
+  "oracle": {
+    "fact_complete_cases": 12,
+    "macro_fact_coverage": 0.9303075396825397,
+    "micro_fact_coverage": 0.9347826086956522,
+    "covered_facts": 86,
+    "total_evidence_tokens": 40073,
+    "avg_k": 8.25,
+    "token_savings_vs_v1": 10457,
+    "token_savings_fraction_vs_v1": 0.20694636849396397,
+    "unique_winners": {
+      "fixed_top5": 5,
+      "adaptive_prefix_v1": 4,
+      "coverage_selector_v2": 3
+    },
+    "exact_ties": {
+      "V3-03": [
+        "fixed_top5",
+        "adaptive_prefix_v1"
+      ],
+      "V3-07": [
+        "fixed_top5",
+        "adaptive_prefix_v1"
+      ],
+      "V3-09": [
+        "fixed_top5",
+        "adaptive_prefix_v1",
+        "coverage_selector_v2"
+      ],
+      "V3-13": [
+        "fixed_top5",
+        "adaptive_prefix_v1",
+        "coverage_selector_v2"
+      ]
+    }
+  },
+  "taxonomy_counts": {
+    "candidate_present_beyond_top20": 1,
+    "top5_complete": 7,
+    "candidate_retrieval_ceiling": 2,
+    "shallow_cutoff": 4,
+    "deep_ranking": 2
+  },
+  "cases": [
+    {
+      "case_id": "V3-01",
+      "required_fact_count": 4,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-01-F01",
+          "V3-01-F02",
+          "V3-01-F03",
+          "V3-01-F04"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 4,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 23,
+        "post_completion_evidence_tokens": 2021
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-01-F01",
+          "V3-01-F02"
+        ],
+        "missing_fact_ids": [
+          "V3-01-F03",
+          "V3-01-F04"
+        ],
+        "covered_count": 2,
+        "coverage": 0.5,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [],
+          "missing_fact_ids": [
+            "V3-01-F01",
+            "V3-01-F02",
+            "V3-01-F03",
+            "V3-01-F04"
+          ],
+          "covered_count": 0,
+          "coverage": 0.0,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1823
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-01-F01",
+            "V3-01-F02"
+          ],
+          "missing_fact_ids": [
+            "V3-01-F03",
+            "V3-01-F04"
+          ],
+          "covered_count": 2,
+          "coverage": 0.5,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 20,
+          "evidence_tokens": 5005
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-01-F02"
+          ],
+          "missing_fact_ids": [
+            "V3-01-F01",
+            "V3-01-F03",
+            "V3-01-F04"
+          ],
+          "covered_count": 1,
+          "coverage": 0.25,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 9,
+          "evidence_tokens": 3204
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-01-F01",
+          "V3-01-F02"
+        ],
+        "missing_fact_ids": [
+          "V3-01-F03",
+          "V3-01-F04"
+        ],
+        "covered_count": 2,
+        "coverage": 0.5,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null,
+        "selected_k": 20,
+        "evidence_tokens": 5005,
+        "selected_strategy": "adaptive_prefix_v1",
+        "co_optimal_strategies": [
+          "adaptive_prefix_v1"
+        ]
+      },
+      "taxonomy": "candidate_present_beyond_top20"
+    },
+    {
+      "case_id": "V3-02",
+      "required_fact_count": 8,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-02-F01",
+          "V3-02-F02",
+          "V3-02-F03",
+          "V3-02-F04",
+          "V3-02-F05",
+          "V3-02-F06",
+          "V3-02-F07",
+          "V3-02-F08"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 4,
+        "post_completion_evidence_tokens": 8495
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-02-F01",
+          "V3-02-F02",
+          "V3-02-F03",
+          "V3-02-F04",
+          "V3-02-F05",
+          "V3-02-F06",
+          "V3-02-F07",
+          "V3-02-F08"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 4,
+        "post_completion_evidence_tokens": 6619
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-02-F01",
+            "V3-02-F02",
+            "V3-02-F03",
+            "V3-02-F04",
+            "V3-02-F05",
+            "V3-02-F06",
+            "V3-02-F07",
+            "V3-02-F08"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 4,
+          "post_completion_evidence_tokens": 790,
+          "selected_k": 5,
+          "evidence_tokens": 3648
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-02-F01",
+            "V3-02-F02",
+            "V3-02-F03",
+            "V3-02-F04",
+            "V3-02-F05",
+            "V3-02-F06",
+            "V3-02-F07",
+            "V3-02-F08"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 4,
+          "post_completion_evidence_tokens": 2828,
+          "selected_k": 8,
+          "evidence_tokens": 5686
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-02-F01",
+            "V3-02-F02",
+            "V3-02-F03",
+            "V3-02-F04",
+            "V3-02-F05",
+            "V3-02-F06",
+            "V3-02-F07",
+            "V3-02-F08"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 4,
+          "post_completion_evidence_tokens": 3008,
+          "selected_k": 10,
+          "evidence_tokens": 5866
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-02-F01",
+          "V3-02-F02",
+          "V3-02-F03",
+          "V3-02-F04",
+          "V3-02-F05",
+          "V3-02-F06",
+          "V3-02-F07",
+          "V3-02-F08"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 4,
+        "post_completion_evidence_tokens": 790,
+        "selected_k": 5,
+        "evidence_tokens": 3648,
+        "selected_strategy": "fixed_top5",
+        "co_optimal_strategies": [
+          "fixed_top5"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-03",
+      "required_fact_count": 9,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-03-F03",
+          "V3-03-F04",
+          "V3-03-F05",
+          "V3-03-F06",
+          "V3-03-F07",
+          "V3-03-F08",
+          "V3-03-F09"
+        ],
+        "missing_fact_ids": [
+          "V3-03-F01",
+          "V3-03-F02"
+        ],
+        "covered_count": 7,
+        "coverage": 0.7777777777777778,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-03-F03",
+          "V3-03-F04",
+          "V3-03-F05",
+          "V3-03-F06",
+          "V3-03-F07",
+          "V3-03-F08",
+          "V3-03-F09"
+        ],
+        "missing_fact_ids": [
+          "V3-03-F01",
+          "V3-03-F02"
+        ],
+        "covered_count": 7,
+        "coverage": 0.7777777777777778,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-03-F03",
+            "V3-03-F04",
+            "V3-03-F05",
+            "V3-03-F06",
+            "V3-03-F07",
+            "V3-03-F08",
+            "V3-03-F09"
+          ],
+          "missing_fact_ids": [
+            "V3-03-F01",
+            "V3-03-F02"
+          ],
+          "covered_count": 7,
+          "coverage": 0.7777777777777778,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1671
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-03-F03",
+            "V3-03-F04",
+            "V3-03-F05",
+            "V3-03-F06",
+            "V3-03-F07",
+            "V3-03-F08",
+            "V3-03-F09"
+          ],
+          "missing_fact_ids": [
+            "V3-03-F01",
+            "V3-03-F02"
+          ],
+          "covered_count": 7,
+          "coverage": 0.7777777777777778,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1671
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-03-F03",
+            "V3-03-F04",
+            "V3-03-F05",
+            "V3-03-F06",
+            "V3-03-F07",
+            "V3-03-F08",
+            "V3-03-F09"
+          ],
+          "missing_fact_ids": [
+            "V3-03-F01",
+            "V3-03-F02"
+          ],
+          "covered_count": 7,
+          "coverage": 0.7777777777777778,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 10,
+          "evidence_tokens": 2736
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-03-F03",
+          "V3-03-F04",
+          "V3-03-F05",
+          "V3-03-F06",
+          "V3-03-F07",
+          "V3-03-F08",
+          "V3-03-F09"
+        ],
+        "missing_fact_ids": [
+          "V3-03-F01",
+          "V3-03-F02"
+        ],
+        "covered_count": 7,
+        "coverage": 0.7777777777777778,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null,
+        "selected_k": 5,
+        "evidence_tokens": 1671,
+        "selected_strategy": null,
+        "co_optimal_strategies": [
+          "fixed_top5",
+          "adaptive_prefix_v1"
+        ]
+      },
+      "taxonomy": "candidate_retrieval_ceiling"
+    },
+    {
+      "case_id": "V3-04",
+      "required_fact_count": 5,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-04-F01",
+          "V3-04-F02",
+          "V3-04-F03",
+          "V3-04-F04",
+          "V3-04-F05"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 5,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 4069
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-04-F01",
+          "V3-04-F02",
+          "V3-04-F03",
+          "V3-04-F04",
+          "V3-04-F05"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 5,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 2403
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-04-F01",
+            "V3-04-F03",
+            "V3-04-F04",
+            "V3-04-F05"
+          ],
+          "missing_fact_ids": [
+            "V3-04-F02"
+          ],
+          "covered_count": 4,
+          "coverage": 0.8,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 913
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-04-F01",
+            "V3-04-F02",
+            "V3-04-F03",
+            "V3-04-F04",
+            "V3-04-F05"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 5,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 6,
+          "post_completion_evidence_tokens": 2316,
+          "selected_k": 19,
+          "evidence_tokens": 3283
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-04-F01",
+            "V3-04-F02",
+            "V3-04-F03",
+            "V3-04-F04",
+            "V3-04-F05"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 5,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 11,
+          "post_completion_evidence_tokens": 0,
+          "selected_k": 11,
+          "evidence_tokens": 2064
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-04-F01",
+          "V3-04-F02",
+          "V3-04-F03",
+          "V3-04-F04",
+          "V3-04-F05"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 5,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 11,
+        "post_completion_evidence_tokens": 0,
+        "selected_k": 11,
+        "evidence_tokens": 2064,
+        "selected_strategy": "coverage_selector_v2",
+        "co_optimal_strategies": [
+          "coverage_selector_v2"
+        ]
+      },
+      "taxonomy": "shallow_cutoff"
+    },
+    {
+      "case_id": "V3-05",
+      "required_fact_count": 6,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-05-F01",
+          "V3-05-F02",
+          "V3-05-F03",
+          "V3-05-F04",
+          "V3-05-F05",
+          "V3-05-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 5,
+        "post_completion_evidence_tokens": 5205
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-05-F01",
+          "V3-05-F02",
+          "V3-05-F03",
+          "V3-05-F04",
+          "V3-05-F05",
+          "V3-05-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 5,
+        "post_completion_evidence_tokens": 2608
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-05-F01",
+            "V3-05-F02",
+            "V3-05-F03",
+            "V3-05-F04",
+            "V3-05-F05",
+            "V3-05-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 5,
+          "post_completion_evidence_tokens": 0,
+          "selected_k": 5,
+          "evidence_tokens": 794
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-05-F01",
+            "V3-05-F02",
+            "V3-05-F03",
+            "V3-05-F04",
+            "V3-05-F05",
+            "V3-05-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 5,
+          "post_completion_evidence_tokens": 651,
+          "selected_k": 8,
+          "evidence_tokens": 1445
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-05-F01",
+            "V3-05-F02",
+            "V3-05-F03",
+            "V3-05-F04",
+            "V3-05-F05",
+            "V3-05-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 5,
+          "post_completion_evidence_tokens": 742,
+          "selected_k": 8,
+          "evidence_tokens": 1536
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-05-F01",
+          "V3-05-F02",
+          "V3-05-F03",
+          "V3-05-F04",
+          "V3-05-F05",
+          "V3-05-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 5,
+        "post_completion_evidence_tokens": 0,
+        "selected_k": 5,
+        "evidence_tokens": 794,
+        "selected_strategy": "fixed_top5",
+        "co_optimal_strategies": [
+          "fixed_top5"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-06",
+      "required_fact_count": 4,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-06-F01",
+          "V3-06-F02",
+          "V3-06-F03",
+          "V3-06-F04"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 4,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 3,
+        "post_completion_evidence_tokens": 9756
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-06-F01",
+          "V3-06-F02",
+          "V3-06-F03",
+          "V3-06-F04"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 4,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 3,
+        "post_completion_evidence_tokens": 6139
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-06-F01",
+            "V3-06-F02",
+            "V3-06-F03",
+            "V3-06-F04"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 4,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 3,
+          "post_completion_evidence_tokens": 781,
+          "selected_k": 5,
+          "evidence_tokens": 1074
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-06-F01",
+            "V3-06-F02",
+            "V3-06-F03",
+            "V3-06-F04"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 4,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 3,
+          "post_completion_evidence_tokens": 2597,
+          "selected_k": 8,
+          "evidence_tokens": 2890
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-06-F01",
+            "V3-06-F02",
+            "V3-06-F03",
+            "V3-06-F04"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 4,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 3,
+          "post_completion_evidence_tokens": 1473,
+          "selected_k": 6,
+          "evidence_tokens": 1766
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-06-F01",
+          "V3-06-F02",
+          "V3-06-F03",
+          "V3-06-F04"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 4,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 3,
+        "post_completion_evidence_tokens": 781,
+        "selected_k": 5,
+        "evidence_tokens": 1074,
+        "selected_strategy": "fixed_top5",
+        "co_optimal_strategies": [
+          "fixed_top5"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-07",
+      "required_fact_count": 3,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-07-F01",
+          "V3-07-F02",
+          "V3-07-F03"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 3,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 6627
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-07-F01",
+          "V3-07-F02",
+          "V3-07-F03"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 3,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 4731
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-07-F01",
+            "V3-07-F02",
+            "V3-07-F03"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 3,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 1602,
+          "selected_k": 5,
+          "evidence_tokens": 2186
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-07-F01",
+            "V3-07-F02",
+            "V3-07-F03"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 3,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 1602,
+          "selected_k": 5,
+          "evidence_tokens": 2186
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-07-F01",
+            "V3-07-F02",
+            "V3-07-F03"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 3,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 3043,
+          "selected_k": 9,
+          "evidence_tokens": 3627
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-07-F01",
+          "V3-07-F02",
+          "V3-07-F03"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 3,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 1602,
+        "selected_k": 5,
+        "evidence_tokens": 2186,
+        "selected_strategy": null,
+        "co_optimal_strategies": [
+          "fixed_top5",
+          "adaptive_prefix_v1"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-08",
+      "required_fact_count": 6,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-08-F01",
+          "V3-08-F02",
+          "V3-08-F03",
+          "V3-08-F05a",
+          "V3-08-F05b",
+          "V3-08-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 8,
+        "post_completion_evidence_tokens": 5262
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-08-F01",
+          "V3-08-F02",
+          "V3-08-F03",
+          "V3-08-F05a",
+          "V3-08-F05b",
+          "V3-08-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 8,
+        "post_completion_evidence_tokens": 3486
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-08-F01",
+            "V3-08-F03",
+            "V3-08-F05a",
+            "V3-08-F05b",
+            "V3-08-F06"
+          ],
+          "missing_fact_ids": [
+            "V3-08-F02"
+          ],
+          "covered_count": 5,
+          "coverage": 0.8333333333333334,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1115
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-08-F01",
+            "V3-08-F02",
+            "V3-08-F03",
+            "V3-08-F05a",
+            "V3-08-F05b",
+            "V3-08-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 8,
+          "post_completion_evidence_tokens": 0,
+          "selected_k": 8,
+          "evidence_tokens": 1479
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-08-F01",
+            "V3-08-F03",
+            "V3-08-F05a",
+            "V3-08-F05b",
+            "V3-08-F06"
+          ],
+          "missing_fact_ids": [
+            "V3-08-F02"
+          ],
+          "covered_count": 5,
+          "coverage": 0.8333333333333334,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 6,
+          "evidence_tokens": 1176
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-08-F01",
+          "V3-08-F02",
+          "V3-08-F03",
+          "V3-08-F05a",
+          "V3-08-F05b",
+          "V3-08-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 8,
+        "post_completion_evidence_tokens": 0,
+        "selected_k": 8,
+        "evidence_tokens": 1479,
+        "selected_strategy": "adaptive_prefix_v1",
+        "co_optimal_strategies": [
+          "adaptive_prefix_v1"
+        ]
+      },
+      "taxonomy": "shallow_cutoff"
+    },
+    {
+      "case_id": "V3-09",
+      "required_fact_count": 6,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-09-F01",
+          "V3-09-F02",
+          "V3-09-F03",
+          "V3-09-F04",
+          "V3-09-F05",
+          "V3-09-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 4382
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-09-F01",
+          "V3-09-F02",
+          "V3-09-F03",
+          "V3-09-F04",
+          "V3-09-F05",
+          "V3-09-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 3382
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-09-F01",
+            "V3-09-F02",
+            "V3-09-F03",
+            "V3-09-F04",
+            "V3-09-F05",
+            "V3-09-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 956,
+          "selected_k": 5,
+          "evidence_tokens": 1294
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-09-F01",
+            "V3-09-F02",
+            "V3-09-F03",
+            "V3-09-F04",
+            "V3-09-F05",
+            "V3-09-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 956,
+          "selected_k": 5,
+          "evidence_tokens": 1294
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-09-F01",
+            "V3-09-F02",
+            "V3-09-F03",
+            "V3-09-F04",
+            "V3-09-F05",
+            "V3-09-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 956,
+          "selected_k": 5,
+          "evidence_tokens": 1294
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-09-F01",
+          "V3-09-F02",
+          "V3-09-F03",
+          "V3-09-F04",
+          "V3-09-F05",
+          "V3-09-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 956,
+        "selected_k": 5,
+        "evidence_tokens": 1294,
+        "selected_strategy": null,
+        "co_optimal_strategies": [
+          "fixed_top5",
+          "adaptive_prefix_v1",
+          "coverage_selector_v2"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-10",
+      "required_fact_count": 6,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-10-F01",
+          "V3-10-F02",
+          "V3-10-F03",
+          "V3-10-F04",
+          "V3-10-F05",
+          "V3-10-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 8833
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-10-F01",
+          "V3-10-F02",
+          "V3-10-F03",
+          "V3-10-F04",
+          "V3-10-F05",
+          "V3-10-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 6060
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [],
+          "missing_fact_ids": [
+            "V3-10-F01",
+            "V3-10-F02",
+            "V3-10-F03",
+            "V3-10-F04",
+            "V3-10-F05",
+            "V3-10-F06"
+          ],
+          "covered_count": 0,
+          "coverage": 0.0,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1156
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-10-F01",
+            "V3-10-F02",
+            "V3-10-F03",
+            "V3-10-F04",
+            "V3-10-F05",
+            "V3-10-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 6,
+          "post_completion_evidence_tokens": 1255,
+          "selected_k": 8,
+          "evidence_tokens": 2723
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-10-F01",
+            "V3-10-F02",
+            "V3-10-F03",
+            "V3-10-F04",
+            "V3-10-F05",
+            "V3-10-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 6,
+          "post_completion_evidence_tokens": 1253,
+          "selected_k": 8,
+          "evidence_tokens": 2721
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-10-F01",
+          "V3-10-F02",
+          "V3-10-F03",
+          "V3-10-F04",
+          "V3-10-F05",
+          "V3-10-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 1253,
+        "selected_k": 8,
+        "evidence_tokens": 2721,
+        "selected_strategy": "coverage_selector_v2",
+        "co_optimal_strategies": [
+          "coverage_selector_v2"
+        ]
+      },
+      "taxonomy": "shallow_cutoff"
+    },
+    {
+      "case_id": "V3-11",
+      "required_fact_count": 4,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-11-F03",
+          "V3-11-F04",
+          "V3-11-F05"
+        ],
+        "missing_fact_ids": [
+          "V3-11-F01"
+        ],
+        "covered_count": 3,
+        "coverage": 0.75,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-11-F03",
+          "V3-11-F04",
+          "V3-11-F05"
+        ],
+        "missing_fact_ids": [
+          "V3-11-F01"
+        ],
+        "covered_count": 3,
+        "coverage": 0.75,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-11-F04",
+            "V3-11-F05"
+          ],
+          "missing_fact_ids": [
+            "V3-11-F01",
+            "V3-11-F03"
+          ],
+          "covered_count": 2,
+          "coverage": 0.5,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 2964
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-11-F03",
+            "V3-11-F04",
+            "V3-11-F05"
+          ],
+          "missing_fact_ids": [
+            "V3-11-F01"
+          ],
+          "covered_count": 3,
+          "coverage": 0.75,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 14,
+          "evidence_tokens": 5751
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-11-F04",
+            "V3-11-F05"
+          ],
+          "missing_fact_ids": [
+            "V3-11-F01",
+            "V3-11-F03"
+          ],
+          "covered_count": 2,
+          "coverage": 0.5,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 8,
+          "evidence_tokens": 3583
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-11-F03",
+          "V3-11-F04",
+          "V3-11-F05"
+        ],
+        "missing_fact_ids": [
+          "V3-11-F01"
+        ],
+        "covered_count": 3,
+        "coverage": 0.75,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null,
+        "selected_k": 14,
+        "evidence_tokens": 5751,
+        "selected_strategy": "adaptive_prefix_v1",
+        "co_optimal_strategies": [
+          "adaptive_prefix_v1"
+        ]
+      },
+      "taxonomy": "candidate_retrieval_ceiling"
+    },
+    {
+      "case_id": "V3-12",
+      "required_fact_count": 7,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-12-F01",
+          "V3-12-F02",
+          "V3-12-F03",
+          "V3-12-F04",
+          "V3-12-F05",
+          "V3-12-F06",
+          "V3-12-F07"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 7,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 9,
+        "post_completion_evidence_tokens": 3930
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-12-F01",
+          "V3-12-F02",
+          "V3-12-F03",
+          "V3-12-F04",
+          "V3-12-F05",
+          "V3-12-F06",
+          "V3-12-F07"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 7,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 9,
+        "post_completion_evidence_tokens": 2304
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-12-F01",
+            "V3-12-F02",
+            "V3-12-F03",
+            "V3-12-F05",
+            "V3-12-F06",
+            "V3-12-F07"
+          ],
+          "missing_fact_ids": [
+            "V3-12-F04"
+          ],
+          "covered_count": 6,
+          "coverage": 0.8571428571428571,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1456
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-12-F01",
+            "V3-12-F02",
+            "V3-12-F03",
+            "V3-12-F05",
+            "V3-12-F06",
+            "V3-12-F07"
+          ],
+          "missing_fact_ids": [
+            "V3-12-F04"
+          ],
+          "covered_count": 6,
+          "coverage": 0.8571428571428571,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 8,
+          "evidence_tokens": 2092
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-12-F01",
+            "V3-12-F02",
+            "V3-12-F03",
+            "V3-12-F05",
+            "V3-12-F06",
+            "V3-12-F07"
+          ],
+          "missing_fact_ids": [
+            "V3-12-F04"
+          ],
+          "covered_count": 6,
+          "coverage": 0.8571428571428571,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 7,
+          "evidence_tokens": 1872
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-12-F01",
+          "V3-12-F02",
+          "V3-12-F03",
+          "V3-12-F05",
+          "V3-12-F06",
+          "V3-12-F07"
+        ],
+        "missing_fact_ids": [
+          "V3-12-F04"
+        ],
+        "covered_count": 6,
+        "coverage": 0.8571428571428571,
+        "fact_complete": false,
+        "first_complete_k": null,
+        "post_completion_evidence_tokens": null,
+        "selected_k": 5,
+        "evidence_tokens": 1456,
+        "selected_strategy": "fixed_top5",
+        "co_optimal_strategies": [
+          "fixed_top5"
+        ]
+      },
+      "taxonomy": "deep_ranking"
+    },
+    {
+      "case_id": "V3-13",
+      "required_fact_count": 2,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-13-F01",
+          "V3-13-F02"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 2,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 7612
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-13-F01",
+          "V3-13-F02"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 2,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 5811
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-13-F01",
+            "V3-13-F02"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 2,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 1484,
+          "selected_k": 5,
+          "evidence_tokens": 1936
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-13-F01",
+            "V3-13-F02"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 2,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 1484,
+          "selected_k": 5,
+          "evidence_tokens": 1936
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-13-F01",
+            "V3-13-F02"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 2,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 1,
+          "post_completion_evidence_tokens": 1484,
+          "selected_k": 5,
+          "evidence_tokens": 1936
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-13-F01",
+          "V3-13-F02"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 2,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 1,
+        "post_completion_evidence_tokens": 1484,
+        "selected_k": 5,
+        "evidence_tokens": 1936,
+        "selected_strategy": null,
+        "co_optimal_strategies": [
+          "fixed_top5",
+          "adaptive_prefix_v1",
+          "coverage_selector_v2"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-14",
+      "required_fact_count": 8,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-14-F01",
+          "V3-14-F02",
+          "V3-14-F03",
+          "V3-14-F04",
+          "V3-14-F05",
+          "V3-14-F06",
+          "V3-14-F07a",
+          "V3-14-F07b"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 18,
+        "post_completion_evidence_tokens": 4115
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-14-F01",
+          "V3-14-F02",
+          "V3-14-F03",
+          "V3-14-F04",
+          "V3-14-F05",
+          "V3-14-F06",
+          "V3-14-F07a",
+          "V3-14-F07b"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 18,
+        "post_completion_evidence_tokens": 189
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-14-F01",
+            "V3-14-F02",
+            "V3-14-F03"
+          ],
+          "missing_fact_ids": [
+            "V3-14-F04",
+            "V3-14-F05",
+            "V3-14-F06",
+            "V3-14-F07a",
+            "V3-14-F07b"
+          ],
+          "covered_count": 3,
+          "coverage": 0.375,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1395
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-14-F01",
+            "V3-14-F02",
+            "V3-14-F03",
+            "V3-14-F04",
+            "V3-14-F05",
+            "V3-14-F06",
+            "V3-14-F07a",
+            "V3-14-F07b"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 18,
+          "post_completion_evidence_tokens": 189,
+          "selected_k": 20,
+          "evidence_tokens": 4847
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-14-F01",
+            "V3-14-F02",
+            "V3-14-F03",
+            "V3-14-F06",
+            "V3-14-F07a",
+            "V3-14-F07b"
+          ],
+          "missing_fact_ids": [
+            "V3-14-F04",
+            "V3-14-F05"
+          ],
+          "covered_count": 6,
+          "coverage": 0.75,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 12,
+          "evidence_tokens": 3234
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-14-F01",
+          "V3-14-F02",
+          "V3-14-F03",
+          "V3-14-F04",
+          "V3-14-F05",
+          "V3-14-F06",
+          "V3-14-F07a",
+          "V3-14-F07b"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 18,
+        "post_completion_evidence_tokens": 189,
+        "selected_k": 20,
+        "evidence_tokens": 4847,
+        "selected_strategy": "adaptive_prefix_v1",
+        "co_optimal_strategies": [
+          "adaptive_prefix_v1"
+        ]
+      },
+      "taxonomy": "deep_ranking"
+    },
+    {
+      "case_id": "V3-15",
+      "required_fact_count": 8,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-15-F01",
+          "V3-15-F02",
+          "V3-15-F03",
+          "V3-15-F04",
+          "V3-15-F05",
+          "V3-15-F06",
+          "V3-15-F07",
+          "V3-15-F08"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 3,
+        "post_completion_evidence_tokens": 9671
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-15-F01",
+          "V3-15-F02",
+          "V3-15-F03",
+          "V3-15-F04",
+          "V3-15-F05",
+          "V3-15-F06",
+          "V3-15-F07",
+          "V3-15-F08"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 3,
+        "post_completion_evidence_tokens": 6900
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-15-F01",
+            "V3-15-F02",
+            "V3-15-F03",
+            "V3-15-F04",
+            "V3-15-F05",
+            "V3-15-F06",
+            "V3-15-F07",
+            "V3-15-F08"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 3,
+          "post_completion_evidence_tokens": 1040,
+          "selected_k": 5,
+          "evidence_tokens": 2443
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-15-F01",
+            "V3-15-F02",
+            "V3-15-F03",
+            "V3-15-F04",
+            "V3-15-F05",
+            "V3-15-F06",
+            "V3-15-F07",
+            "V3-15-F08"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 3,
+          "post_completion_evidence_tokens": 4389,
+          "selected_k": 15,
+          "evidence_tokens": 5792
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-15-F01",
+            "V3-15-F02",
+            "V3-15-F03",
+            "V3-15-F04",
+            "V3-15-F05",
+            "V3-15-F06",
+            "V3-15-F07",
+            "V3-15-F08"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 8,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 3,
+          "post_completion_evidence_tokens": 1412,
+          "selected_k": 6,
+          "evidence_tokens": 2815
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-15-F01",
+          "V3-15-F02",
+          "V3-15-F03",
+          "V3-15-F04",
+          "V3-15-F05",
+          "V3-15-F06",
+          "V3-15-F07",
+          "V3-15-F08"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 8,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 3,
+        "post_completion_evidence_tokens": 1040,
+        "selected_k": 5,
+        "evidence_tokens": 2443,
+        "selected_strategy": "fixed_top5",
+        "co_optimal_strategies": [
+          "fixed_top5"
+        ]
+      },
+      "taxonomy": "top5_complete"
+    },
+    {
+      "case_id": "V3-16",
+      "required_fact_count": 6,
+      "candidate_pool": {
+        "covered_fact_ids": [
+          "V3-16-F01",
+          "V3-16-F02",
+          "V3-16-F03",
+          "V3-16-F04",
+          "V3-16-F05",
+          "V3-16-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 4426
+      },
+      "top20": {
+        "covered_fact_ids": [
+          "V3-16-F01",
+          "V3-16-F02",
+          "V3-16-F03",
+          "V3-16-F04",
+          "V3-16-F05",
+          "V3-16-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 2489
+      },
+      "policies": {
+        "fixed_top5": {
+          "covered_fact_ids": [
+            "V3-16-F01",
+            "V3-16-F02",
+            "V3-16-F03",
+            "V3-16-F04",
+            "V3-16-F06"
+          ],
+          "missing_fact_ids": [
+            "V3-16-F05"
+          ],
+          "covered_count": 5,
+          "coverage": 0.8333333333333334,
+          "fact_complete": false,
+          "first_complete_k": null,
+          "post_completion_evidence_tokens": null,
+          "selected_k": 5,
+          "evidence_tokens": 1406
+        },
+        "adaptive_prefix_v1": {
+          "covered_fact_ids": [
+            "V3-16-F01",
+            "V3-16-F02",
+            "V3-16-F03",
+            "V3-16-F04",
+            "V3-16-F05",
+            "V3-16-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 6,
+          "post_completion_evidence_tokens": 746,
+          "selected_k": 8,
+          "evidence_tokens": 2450
+        },
+        "coverage_selector_v2": {
+          "covered_fact_ids": [
+            "V3-16-F01",
+            "V3-16-F02",
+            "V3-16-F03",
+            "V3-16-F04",
+            "V3-16-F05",
+            "V3-16-F06"
+          ],
+          "missing_fact_ids": [],
+          "covered_count": 6,
+          "coverage": 1.0,
+          "fact_complete": true,
+          "first_complete_k": 6,
+          "post_completion_evidence_tokens": 0,
+          "selected_k": 6,
+          "evidence_tokens": 1704
+        }
+      },
+      "oracle": {
+        "covered_fact_ids": [
+          "V3-16-F01",
+          "V3-16-F02",
+          "V3-16-F03",
+          "V3-16-F04",
+          "V3-16-F05",
+          "V3-16-F06"
+        ],
+        "missing_fact_ids": [],
+        "covered_count": 6,
+        "coverage": 1.0,
+        "fact_complete": true,
+        "first_complete_k": 6,
+        "post_completion_evidence_tokens": 0,
+        "selected_k": 6,
+        "evidence_tokens": 1704,
+        "selected_strategy": "coverage_selector_v2",
+        "co_optimal_strategies": [
+          "coverage_selector_v2"
+        ]
+      },
+      "taxonomy": "shallow_cutoff"
+    }
+  ]
+}

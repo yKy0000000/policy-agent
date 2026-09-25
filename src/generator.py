@@ -7,6 +7,7 @@ import json
 import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
+from time import perf_counter
 from typing import Any, Mapping, Protocol, Sequence
 
 from .conversation import DEFAULT_HISTORY_TURNS, select_recent_history
@@ -181,6 +182,7 @@ def generation_cache_key(
     sources: Sequence[EvidenceSource],
     prompt_version: str = GENERATION_PROMPT_VERSION,
     max_history_turns: int = DEFAULT_HISTORY_TURNS,
+    max_tokens: int = DEFAULT_GENERATION_MAX_TOKENS,
 ) -> str:
     """Bind cached output to the model, prompt, context, and evidence chunk IDs."""
 
@@ -192,6 +194,10 @@ def generation_cache_key(
         "evidence_chunk_ids": [source.chunk_id for source in sources],
         "max_history_turns": max_history_turns,
     }
+    # Preserve default-mode cache identities. A larger replay budget must not
+    # read a 512-token answer from cache or overwrite one under the same key.
+    if max_tokens != DEFAULT_GENERATION_MAX_TOKENS:
+        identity["max_tokens"] = max_tokens
     encoded = json.dumps(identity, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
 
@@ -237,16 +243,20 @@ def generate_grounded_answer(
     model: str,
     cache: GeneratedAnswerCache | None = None,
     max_history_turns: int = DEFAULT_HISTORY_TURNS,
+    max_tokens: int = DEFAULT_GENERATION_MAX_TOKENS,
 ) -> dict[str, Any]:
     """Generate from supplied evidence only, then validate and map citations."""
 
     sources = assign_evidence_sources(evidence)
+    if max_tokens <= 0:
+        raise ValueError("max_tokens must be positive")
     key = generation_cache_key(
         model=model,
         question=question,
         history=history,
         sources=sources,
         max_history_turns=max_history_turns,
+        max_tokens=max_tokens,
     )
     cached_answer = cache.get(key) if cache else None
     if cached_answer is not None:
@@ -262,7 +272,7 @@ def generate_grounded_answer(
         try:
             answer = client.complete(
                 messages,
-                max_tokens=DEFAULT_GENERATION_MAX_TOKENS,
+                max_tokens=max_tokens,
                 temperature=0.0,
             ).strip()
         except Exception as error:
@@ -273,7 +283,9 @@ def generate_grounded_answer(
             raise GroundedGenerationError("grounded generator returned an empty answer")
         response_source = "api"
 
+    validation_started = perf_counter()
     citation_result = validate_citations(answer, sources)
+    validation_seconds = perf_counter() - validation_started
     if (
         cache
         and cached_answer is None
@@ -286,6 +298,7 @@ def generate_grounded_answer(
                 "model": model,
                 "prompt_version": GENERATION_PROMPT_VERSION,
                 "evidence_chunk_ids": [source.chunk_id for source in sources],
+                "max_tokens": max_tokens,
             },
         )
     return {
@@ -295,4 +308,5 @@ def generate_grounded_answer(
         "validation": citation_result["validation"],
         "cache_key": key,
         "response_source": response_source,
+        "validation_seconds": validation_seconds,
     }

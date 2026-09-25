@@ -6,6 +6,8 @@ from dataclasses import asdict, dataclass
 from time import perf_counter
 from typing import Protocol, Sequence
 
+import numpy as np
+
 from .reranker import PairScorer
 from .retriever import RetrievalResult
 
@@ -119,6 +121,19 @@ class RerankedPolicyRetriever:
     @property
     def reranker_model(self) -> str:
         return self._reranker.model_name
+
+    def count_evidence_tokens(self, item: RerankedRetrievalResult) -> int:
+        """Use the existing reranker tokenizer when adaptive budgeting is enabled."""
+
+        counter = getattr(self._reranker, "count_tokens", None)
+        if callable(counter):
+            return counter(item.text)
+        # Small injected test scorers need not implement a tokenizer.
+        return len(item.text.split())
+
+    def evidence_vectors(self, chunk_ids: Sequence[str]) -> dict[str, np.ndarray]:
+        """Reuse the semantic retriever's indexed document embeddings."""
+        return self._semantic.evidence_vectors(chunk_ids)
 
     def candidates(self, query: str) -> list[Candidate]:
         """Build the fixed candidate pool without invoking the Cross-Encoder."""

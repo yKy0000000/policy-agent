@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "name": "Broad Query Validation V1",
+  "status": "frozen",
+  "role": "untouched_validation",
+  "frozen_at_utc": "2026-09-25T06:49:06+00:00",
+  "construction": {
+    "candidate_query_count": 98,
+    "accepted_case_count": 50,
+    "excluded_candidate_count": 48,
+    "exclusion_reasons": {
+      "core fact set overlaps V3 development": 19,
+      "redundant with a stronger selected information need": 14,
+      "too narrow or unstable required-fact boundary": 15
+    },
+    "source": "current local GitHub policy corpus only",
+    "development_overlap_review": "Manual semantic review against all 16 V3 queries and core aspects; no accepted case repeats a V3 core fact set.",
+    "overlapping_core_fact_sets": 0,
+    "retrieval_or_strategy_outputs_consulted": false,
+    "strategy_or_generation_runs_during_construction": false
+  },
+  "corpus": {
+    "root": "data/site-policy/Policies",
+    "file_count": 57,
+    "sha256": "cfc24f11467fdc40ccfa5186f14553436f3258fdad6c9b5427431572a286e4a1",
+    "hash_method": "SHA-256 of sorted relative UTF-8 path and file bytes, each length-prefixed"
+  },
+  "dataset": {
+    "queries_path": "eval/validation/broad_queries_validation_v1.json",
+    "queries_sha256": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+    "rubric_path": "eval/validation/broad_atomic_facts_validation_v1.json",
+    "rubric_sha256": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+    "case_count": 50,
+    "required_fact_count": 239,
+    "mean_facts_per_case": 4.78,
+    "min_facts_per_case": 4,
+    "max_facts_per_case": 6,
+    "policy_family_counts": {
+      "acceptable-use-policies": 8,
+      "content-removal-policies": 10,
+      "github-company-policies": 3,
+      "github-terms": 17,
+      "other-site-policies": 6,
+      "privacy-policies": 5,
+      "security-policies": 1
+    },
+    "single_document_cases": 47,
+    "multi_document_cases": 3,
+    "source_document_count": 38,
+    "query_type_counts": {
+      "comparison": 7,
+      "eligibility": 8,
+      "process": 14,
+      "rights": 3,
+      "scope": 18
+    },
+    "structural_difficulty_counts": {
+      "deep": 12,
+      "easy": 8,
+      "moderate": 30
+    },
+    "exception_heavy_cases": 25
+  },
+  "evidence_review": {
+    "required_facts_with_direct_support": 239,
+    "partial_only": 0,
+    "invalid_only": 0,
+    "unresolved": 0,
+    "support_policy": "A direct mapping uses the cited source excerpt together with its context excerpt when present; both are verbatim corpus spans."
+  },
+  "frozen_strategy": {
+    "config_path": "eval/adaptive_strategy_candidate.json",
+    "config_sha256": "e4863b1a0b0d27a396220d9eddc3fcef9cdada5e5e7dd41120152fa63dfdfe90",
+    "analysis_module_path": "eval/analyze_strategy.py",
+    "analysis_module_sha256": "40076bcd3be4b1b7e84487fd1c50aecc81a2dc8a51cff6821270914bbe7374eb",
+    "git_head_at_freeze": "b811e70bc6a2038ef2e89af4ea3318f3969685af",
+    "fixed_stop_min_top5_score": 2.5,
+    "route": "Top5 minimum reranker score >= 2.5: Fixed; otherwise V1",
+    "selected_on": "16-case V3 development set; no validation performance observed"
+  },
+  "preregistration": {
+    "primary_quality_gates": {
+      "grounded_micro_fact_coverage": {
+        "comparison": "frozen_adaptive versus always_V1",
+        "maximum_regret_absolute": 0.02
+      },
+      "grounded_fact_complete_cases": {
+        "comparison": "frozen_adaptive versus always_V1",
+        "maximum_case_deficit": 1
+      },
+      "unsupported_or_contradicted_claims": {
+        "comparison": "frozen_adaptive versus always_V1",
+        "maximum_total_claim_excess": 0,
+        "maximum_paired_worse_minus_better_cases": 0
+      }
+    },
+    "secondary_efficiency_after_quality_gates": {
+      "metric": "fractional evidence-token saving versus always_V1",
+      "interpretation": {
+        ">10%": "strong",
+        "5-10%": "effective but limited",
+        "0-5%": "conservative",
+        "<0%": "failure"
+      }
+    },
+    "contamination_rule": "If validation outcomes lead to a strategy, threshold, feature, routing, or rubric change, this set becomes development data and a new untouched validation set is required."
+  }
+}

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Protocol
+from typing import Sequence
 
 import numpy as np
 
@@ -78,3 +79,7 @@ class SemanticPolicyRetriever:
             RetrievalResult.from_chunk(float(scores[index]), self._index.chunks[index])
             for index in ranking[: min(top_k, len(ranking))]
         ]
+
+    def evidence_vectors(self, chunk_ids: Sequence[str]) -> dict[str, np.ndarray]:
+        lookup = {chunk.chunk_id: position for position, chunk in enumerate(self._index.chunks)}
+        return {chunk_id: self._index.vectors[lookup[chunk_id]] for chunk_id in chunk_ids}

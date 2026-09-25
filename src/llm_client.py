@@ -94,6 +94,19 @@ class OpenAIChatCompletionsClient:
         max_tokens: int = 96,
         temperature: float = 0.0,
     ) -> str:
+        answer, _ = self.complete_with_usage(
+            messages, max_tokens=max_tokens, temperature=temperature
+        )
+        return answer
+
+    def complete_with_usage(
+        self,
+        messages: Sequence[Mapping[str, str]],
+        *,
+        max_tokens: int = 96,
+        temperature: float = 0.0,
+    ) -> tuple[str, dict[str, int | None]]:
+        """Return the same answer plus provider-reported tokens, when present."""
         if not messages:
             raise ValueError("messages must not be empty")
         if max_tokens <= 0:
@@ -129,7 +142,20 @@ class OpenAIChatCompletionsClient:
             data = json.loads(body)
         except json.JSONDecodeError as error:
             raise LLMClientError("LLM API returned invalid JSON") from error
-        return parse_chat_completion(data)
+        answer = parse_chat_completion(data)
+        usage = data.get("usage")
+        usage = usage if isinstance(usage, Mapping) else {}
+
+        def token_count(name: str) -> int | None:
+            value = usage.get(name)
+            if isinstance(value, int) and not isinstance(value, bool) and value >= 0:
+                return value
+            return None
+
+        return answer, {
+            "input_tokens": token_count("prompt_tokens"),
+            "output_tokens": token_count("completion_tokens"),
+        }
 
 
 def parse_chat_completion(data: Mapping[str, Any]) -> str:

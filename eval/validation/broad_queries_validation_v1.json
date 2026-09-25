@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "name": "Broad Query Validation V1",
+  "status": "frozen",
+  "role": "untouched_validation",
+  "case_count": 50,
+  "cases": [
+    {
+      "case_id": "VAL-001-001",
+      "query": "My repository was taken down after a DMCA complaint. Before I challenge it, what am I asserting and what legal risks should I consider?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-002",
+      "query": "I think code in another repository copies my work. What checks should I make before sending GitHub a DMCA takedown notice?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "content-removal-policies/guide-to-submitting-a-dmca-takedown-notice.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-003",
+      "query": "A repository includes information about me. Which kinds of disclosure fall outside GitHub's private-information removal process, even if I dislike them?",
+      "policy_family": "content-removal-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "content-removal-policies/github-private-information-removal-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-004",
+      "query": "Our registered mark is being used in a misleading GitHub account. What information should our report give GitHub so it can investigate and understand the remedy we want?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "content-removal-policies/github-trademark-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-005",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-006",
+      "query": "I want to file a copyright takedown against part of a GitHub repository. What details make the complaint actionable, including what the owner could do to fix it?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "content-removal-policies/guide-to-submitting-a-dmca-takedown-notice.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-007",
+      "query": "Before asking GitHub to remove private information, how should I prepare the request and what may slow its review?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "content-removal-policies/github-private-information-removal-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-008",
+      "query": "I have a complete DMCA counter notice. How should I send it, and when does the waiting period begin if I use postal mail?",
+      "policy_family": "content-removal-policies",
+      "query_type": "process",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-009",
+      "query": "A GitHub project allegedly bypasses an access control on copyrighted work. What does a circumvention complaint need to establish?",
+      "policy_family": "content-removal-policies",
+      "query_type": "eligibility",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "content-removal-policies/guide-to-submitting-a-dmca-takedown-notice.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-010",
+      "query": "I'm reporting copied code and an exposed secret across a fork network. If GitHub disables the parent under either removal process, what happens to its forks?",
+      "policy_family": "content-removal-policies",
+      "query_type": "comparison",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "content-removal-policies/dmca-takedown-policy.md",
+        "content-removal-policies/github-private-information-removal-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-011",
+      "query": "A repository includes graphic depictions of violence for a documentary project. How does GitHub distinguish allowed context from prohibited violence, and can visibility be limited?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "acceptable-use-policies/github-threats-of-violence-and-gratuitously-violent-content.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-012",
+      "query": "A GitHub user I was close to has died. What can an authorized person ask GitHub to do with the account, and what proof might GitHub request?",
+      "policy_family": "other-site-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "other-site-policies/github-deceased-user-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-013",
+      "query": "I want to automate promotion and engagement on GitHub. What behavior would count as spam or inauthentic activity?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "acceptable-use-policies/github-acceptable-use-policies.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-014",
+      "query": "Can I use public GitHub information for research or archiving, and what restrictions apply regardless of whether I collect it by scraping or API?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "eligibility",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "acceptable-use-policies/github-acceptable-use-policies.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-015",
+      "query": "A disagreement in my repository has escalated. What conduct counts as harassment, and is every unwelcome comment treated that way?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "acceptable-use-policies/github-bullying-and-harassment.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-016",
+      "query": "Someone shared personal details and a photo of me on GitHub. How does the privacy rule treat public information, consent, and hostile context?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-017",
+      "query": "An account resembles someone else's identity. When is that impersonation, and when might a similar name or parody be allowed?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "acceptable-use-policies/github-impersonation.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-018",
+      "query": "A repository posts disputed claims about health and elections. How does GitHub distinguish harmful misinformation from opinion, parody, or contextualized discussion?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "acceptable-use-policies/github-misinformation-and-disinformation.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-019",
+      "query": "I'm building a generative-media project on GitHub. Which harmful uses are barred, and how does GitHub assess what a project is meant to enable?",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "acceptable-use-policies/github-synthetic-media-and-ai-tools.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-020",
+      "query": "What are GitHub's website cookies used for, and how should I treat the published cookie list over time?",
+      "policy_family": "privacy-policies",
+      "query_type": "scope",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "privacy-policies/github-cookies.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-021",
+      "query": "I explored a GitHub job opening and later became an employee. Can GitHub use the data it collected at the first stage for the next one?",
+      "policy_family": "privacy-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "privacy-policies/github-candidate-privacy-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-022",
+      "query": "During recruitment, with whom might GitHub share my application data, and what limits does its candidate privacy policy put on disclosure?",
+      "policy_family": "privacy-policies",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "privacy-policies/github-candidate-privacy-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-023",
+      "query": "As a GitHub job candidate using its site, how do cookies and web beacons work, and what control do I have over them?",
+      "policy_family": "privacy-policies",
+      "query_type": "rights",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "privacy-policies/github-candidate-privacy-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-024",
+      "query": "What information may GitHub collect automatically when I use its services or visit its site, and how do essential and optional cookies differ?",
+      "policy_family": "privacy-policies",
+      "query_type": "comparison",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "privacy-policies/github-general-privacy-statement.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-025",
+      "query": "I want to participate in GitHub Community discussions. Which rules apply there, and what moderation can I expect if content breaks them?",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-community-code-of-conduct.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-026",
+      "query": "I publish a GitHub Copilot Extension. What permission do I get to use the platform, what can GitHub do if I violate its policy, and can I appeal?",
+      "policy_family": "github-terms",
+      "query_type": "eligibility",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-copilot-extension-developer-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-027",
+      "query": "Our school participates in GitHub's Education Partner Program. What are our responsibilities for qualified users and their continued access?",
+      "policy_family": "github-terms",
+      "query_type": "eligibility",
+      "difficulty": "deep",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-educational-use-agreement.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-028",
+      "query": "I'm attending a GitHub event. What behavior is expected or prohibited under its conduct rules?",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-event-code-of-conduct.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-029",
+      "query": "I'm registering staff and sponsors for a GitHub event. Do the conduct rules cover them, what entry conditions apply, and what happens if someone ignores a warning?",
+      "policy_family": "github-terms",
+      "query_type": "eligibility",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-event-code-of-conduct.md",
+        "github-terms/github-event-terms.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-030",
+      "query": "We're considering a GitHub preview for important work. What risks and service commitments should we expect before it becomes generally available?",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-pre-release-license-terms.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-031",
+      "query": "Our procurement team wants to understand GitHub's modern-slavery and child-labor safeguards. How does it identify supplier risks and respond if it finds harm?",
+      "policy_family": "github-company-policies",
+      "query_type": "process",
+      "difficulty": "deep",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-company-policies/github-statement-against-modern-slavery-and-child-labor.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-032",
+      "query": "Can I use GitHub Actions as a general compute or delivery service, and what might GitHub do if my workflows misuse it?",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-terms-for-additional-products-and-features.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "query": "A discussion in my public repository is getting abusive. What moderation options can I use before asking GitHub for help?",
+      "policy_family": "github-terms",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-community-guidelines.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-034",
+      "query": "I'm developing a Copilot Extension that handles user data. What security and privacy boundaries does the developer policy impose?",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-copilot-extension-developer-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-035",
+      "query": "Our company uses GitHub organizations and individual employee accounts. Who retains administrative control over each under the corporate terms?",
+      "policy_family": "github-terms",
+      "query_type": "comparison",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-corporate-terms-of-service.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-036",
+      "query": "If harassment happens at a GitHub event, where should I report urgent and non-urgent problems, and what help can staff provide?",
+      "policy_family": "github-terms",
+      "query_type": "process",
+      "difficulty": "easy",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-event-code-of-conduct.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-037",
+      "query": "I'm listing an app in GitHub Marketplace. Who is responsible for the app and its user license, and what rights does GitHub get to show the listing?",
+      "policy_family": "github-terms",
+      "query_type": "rights",
+      "difficulty": "deep",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-marketplace-developer-agreement.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-038",
+      "query": "Our organization wants to use GitHub Marketplace. What account, age, agreement, and authority requirements apply?",
+      "policy_family": "github-terms",
+      "query_type": "eligibility",
+      "difficulty": "easy",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-marketplace-terms-of-service.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-039",
+      "query": "An application includes open-source components. Where are its licenses documented, and when could an open-source license override GitHub's Application Terms?",
+      "policy_family": "github-terms",
+      "query_type": "comparison",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-open-source-applications-terms-and-conditions.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-040",
+      "query": "A GitHub preview is listed as DPA-covered. Can we evaluate it inside our company, and does that allow production use with live customer data?",
+      "policy_family": "github-terms",
+      "query_type": "eligibility",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-dpa-previews.md",
+        "github-terms/github-pre-release-license-terms.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-041",
+      "query": "GitHub shared non-public research-program material with me. How may I use or disclose it, and what happens if disclosure is legally required?",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-terms/github-research-program-terms.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-042",
+      "query": "As a secret-scanning partner, what rights do I give GitHub over token patterns, including open-source distribution and after our agreement ends?",
+      "policy_family": "github-terms",
+      "query_type": "rights",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "github-terms/github-secret-scanning-partner-program-agreement.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-043",
+      "query": "A government asks GitHub to take down allegedly illegal content. Once GitHub gets a complete official request, what notice, appeal, geographic limits, and transparency steps follow?",
+      "policy_family": "other-site-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "other-site-policies/github-government-takedown-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-044",
+      "query": "Our organization is considering self-hosted GitHub Enterprise Server for export-controlled material. What does the policy permit and what export limits remain?",
+      "policy_family": "other-site-policies",
+      "query_type": "eligibility",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "other-site-policies/github-and-trade-controls.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-045",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "policy_family": "other-site-policies",
+      "query_type": "comparison",
+      "difficulty": "moderate",
+      "exception_heavy": false,
+      "source_documents": [
+        "other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-046",
+      "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "policy_family": "other-site-policies",
+      "query_type": "process",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-047",
+      "query": "What legal process does GitHub require before disclosing non-public user data, and how do subpoena requests differ from requests for access logs?",
+      "policy_family": "other-site-policies",
+      "query_type": "comparison",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-048",
+      "query": "If a security incident affects GitHub and its customers, what does GitHub's SIRT handle, and what must customers handle themselves?",
+      "policy_family": "security-policies",
+      "query_type": "scope",
+      "difficulty": "deep",
+      "exception_heavy": false,
+      "source_documents": [
+        "security-policies/github-sirt-description-rfc-2350.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-049",
+      "query": "A GitHub employee wants to offer a customer a sports ticket or dinner. How does the gifts policy separate acceptable hospitality from improper influence?",
+      "policy_family": "github-company-policies",
+      "query_type": "comparison",
+      "difficulty": "moderate",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-company-policies/github-gifts-and-entertainment-policy.md"
+      ]
+    },
+    {
+      "case_id": "VAL-001-050",
+      "query": "If a project violates GPLv2 and then fixes the issue, when does GitHub's GPL cooperation commitment provide provisional or permanent reinstatement?",
+      "policy_family": "github-company-policies",
+      "query_type": "process",
+      "difficulty": "deep",
+      "exception_heavy": true,
+      "source_documents": [
+        "github-company-policies/github-gpl-cooperation-commitment.md"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import tempfile
 import unittest
+import json
 from pathlib import Path
+from unittest.mock import patch
 
 from src.conversation import (
     RewriteCache,
@@ -11,7 +13,7 @@ from src.conversation import (
     rewrite_or_keep,
     select_recent_history,
 )
-from src.llm_client import LLMClientError, parse_chat_completion
+from src.llm_client import LLMClientError, LLMConfig, OpenAIChatCompletionsClient, parse_chat_completion
 
 
 class EchoClient:
@@ -25,6 +27,36 @@ class EchoClient:
 
 
 class ConversationTests(unittest.TestCase):
+    def test_provider_usage_is_reported_only_when_present(self) -> None:
+        class Response:
+            def __init__(self, data):
+                self.data = data
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_):
+                return None
+
+            def read(self):
+                return json.dumps(self.data).encode("utf-8")
+
+        client = OpenAIChatCompletionsClient(LLMConfig("key", "https://example.test", "model"))
+        messages = [{"role": "user", "content": "Question?"}]
+        with patch("src.llm_client.urlopen", return_value=Response({
+            "choices": [{"message": {"content": "Answer"}}],
+            "usage": {"prompt_tokens": 12, "completion_tokens": 3},
+        })):
+            answer, usage = client.complete_with_usage(messages)
+        self.assertEqual(answer, "Answer")
+        self.assertEqual(usage, {"input_tokens": 12, "output_tokens": 3})
+
+        with patch("src.llm_client.urlopen", return_value=Response({
+            "choices": [{"message": {"content": "Answer"}}],
+        })):
+            answer, usage = client.complete_with_usage(messages)
+        self.assertEqual(usage, {"input_tokens": None, "output_tokens": None})
+
     def test_history_window_keeps_only_two_recent_turns(self) -> None:
         history = [
             {"role": "user", "content": "u1"},

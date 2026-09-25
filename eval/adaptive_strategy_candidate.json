@@ -1,0 +1,16 @@
+{
+  "name": "high_confidence_fixed_stop_v1_fallback",
+  "version": 1,
+  "status": "frozen_for_untouched_validation_only",
+  "development_answer_eval_freeze_hash": "868ff4306361173e94e443e9be66468d9034402c5afd242322e2eb2c683d274b",
+  "feature": "minimum reranker score among frozen Top5 candidates",
+  "fixed_stop_min_top5_score": 2.5,
+  "if_stop": "fixed_top5",
+  "otherwise": "adaptive_prefix_v1",
+  "second_stage_v2_rule": null,
+  "constraints": [
+    "Use only reranker scores available before generation.",
+    "This rule was selected on the 16-case development set and has no generalization claim.",
+    "Do not deploy before untouched validation."
+  ]
+}
