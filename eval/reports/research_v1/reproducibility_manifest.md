@@ -1,6 +1,6 @@
 # Reproducibility Manifest
 
-Key frozen artifacts only. Full provenance chain lives under `eval/archive/` and in the dated `*_v1` artifacts in `eval/results/`.
+Key frozen artifacts only. Full provenance chain lives under `eval/legacy/archive/` and in the dated `*_v1` artifacts in `eval/results/`. The [legacy index](../../legacy/MANIFEST.md) explains the remaining compatibility paths. Hashes below describe frozen contents and, where stated, the historical snapshot.
 
 ## Benchmark / Human Truth
 
@@ -68,4 +68,4 @@ The current README and reader-facing figures were redesigned after this frozen r
 .\.venv\Scripts\python.exe -m eval.run_validation --report
 ```
 
-Archived provenance and process evidence: `eval/archive/` (see `eval/archive/MANIFEST.md`).
+Archived provenance and process evidence: `eval/legacy/archive/` (see `eval/legacy/archive/MANIFEST.md`).

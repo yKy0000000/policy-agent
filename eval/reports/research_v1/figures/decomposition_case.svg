@@ -35,5 +35,5 @@
 <text x="337" y="645.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start">0/4  →  4/4 required evidence coverage</text>
 <text x="54" y="687.9" fill="#AF483E" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">DEFAULT NOT ADOPTED</text>
 <text x="337" y="687.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">One clear representation case among 50; no default end-to-end gain measured.</text>
-<text x="54" y="721.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/final/a2_case_study.json</text>
+<text x="54" y="721.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/reports/research_v1/a2_case_study.json</text>
 </svg>

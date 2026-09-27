@@ -37,5 +37,5 @@
 <text x="827" y="594.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">means A3 does not start.</text>
 <line x1="54" y1="669" x2="1146" y2="669" stroke="#C9D3D9" stroke-width="1"/>
 <text x="54" y="696.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Counts are unique aspects, not per-arm totals; two representation aspects come from one case (VAL-001-046).</text>
-<text x="54" y="726.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/final/failure_analysis.json</text>
+<text x="54" y="726.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/reports/research_v1/failure_analysis.json</text>
 </svg>

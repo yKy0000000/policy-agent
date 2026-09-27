@@ -13,8 +13,8 @@ from xml.sax.saxutils import escape
 from PIL import Image, ImageDraw, ImageFont
 
 
-ROOT = Path(__file__).resolve().parents[2]
-FINAL = ROOT / "eval" / "final"
+ROOT = Path(__file__).resolve().parents[3]
+FINAL = ROOT / "eval" / "reports" / "research_v1"
 OUT = FINAL / "figures"
 OUT.mkdir(exist_ok=True)
 
@@ -126,7 +126,7 @@ def router_figure():
     f.text(823, 638, "1 vs 2 grounding issues", 18, INK)
     f.line(54, 689, 1146, 689, RULE)
     f.text(54, 702, "Dominance also requires no worse coverage, regressions or grounding; bar position alone is not the test.", 16, MUTED)
-    f.text(54, 726, "Source: eval/final/final_metrics.json · frozen A1 Pareto", 14, MUTED)
+    f.text(54, 726, "Source: eval/reports/research_v1/final_metrics.json · frozen A1 Pareto", 14, MUTED)
     f.save()
 
 
@@ -164,7 +164,7 @@ def failure_figure():
     f.text(827, 578, "means A3 does not start.", 18, INK)
     f.line(54, 669, 1146, 669, RULE)
     f.text(54, 681, "Counts are unique aspects, not per-arm totals; two representation aspects come from one case (VAL-001-046).", 16, MUTED)
-    f.text(54, 713, "Source: eval/final/failure_analysis.json", 14, MUTED)
+    f.text(54, 713, "Source: eval/reports/research_v1/failure_analysis.json", 14, MUTED)
     f.save()
 
 
@@ -202,7 +202,7 @@ def decomposition_figure():
     f.text(337, 626, "0/4  →  4/4 required evidence coverage", 21, INK, True)
     f.text(54, 671, "DEFAULT NOT ADOPTED", 18, RED, True)
     f.text(337, 671, "One clear representation case among 50; no default end-to-end gain measured.", 18, INK)
-    f.text(54, 708, "Source: eval/final/a2_case_study.json", 14, MUTED)
+    f.text(54, 708, "Source: eval/reports/research_v1/a2_case_study.json", 14, MUTED)
     f.save()
 
 

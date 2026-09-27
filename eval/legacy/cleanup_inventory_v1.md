@@ -1,6 +1,6 @@
 # Cleanup Inventory v1
 
-Snapshot after the A1–A3 research phase. **Nothing that the final result, a test, or a runner depends on was deleted.** Where provenance is not needed for daily use, it was either physically moved to `eval/archive/` (only truly orphaned files) or left in place and hidden behind this manifest (files still referenced by runners/tests).
+Snapshot after the A1–A3 research phase. **Nothing that the final result, a test, or a runner depends on was deleted.** Where provenance is not needed for daily use, it was either physically moved to `eval/legacy/archive/` (only truly orphaned files) or left in place and hidden behind this manifest (files still referenced by runners/tests).
 
 ## Method
 
@@ -13,8 +13,8 @@ Snapshot after the A1–A3 research phase. **Nothing that the final result, a te
 | Action | Count | Notes |
 |---|---:|---|
 | KEEP | most files | production code, tests, final artifacts, test/runtime-referenced artifacts |
-| CONSOLIDATE | 6 | final reader-facing artifacts in `eval/final/` built from the `*_v1` sources |
-| ARCHIVE (moved) | 6 | truly orphaned process files -> `eval/archive/` |
+| CONSOLIDATE | 6 | final reader-facing artifacts in `eval/reports/research_v1/` built from the `*_v1` sources |
+| ARCHIVE (moved) | 6 | truly orphaned process files -> `eval/legacy/archive/` |
 | DELETE | 0 | no artifact passed the "one-off AND unreferenced AND no provenance value" bar |
 
 ## A. Category 1 — Final artifacts (KEEP)
@@ -29,13 +29,13 @@ Snapshot after the A1–A3 research phase. **Nothing that the final result, a te
 | `eval/results/a1_failure_analysis_v1.json` | analysis | residual-failure taxonomy | yes | high | KEEP |
 | `eval/results/a2_minimal_mechanism_probe_v1.json` | probe | A2 mechanism probe | yes | high | KEEP |
 | `eval/results/a2_minimal_mechanism_probe_summary.md` | probe | A2 summary | yes | high | KEEP |
-| `eval/final/architecture_decision.md` | final | consolidated decisions | yes | high | CONSOLIDATE |
-| `eval/final/research_summary.md` | final | consolidated narrative | yes | high | CONSOLIDATE |
-| `eval/final/final_metrics.json` | final | validated metrics | yes | high | CONSOLIDATE |
-| `eval/final/failure_analysis.json` | final | consolidated taxonomy | yes | high | CONSOLIDATE |
-| `eval/final/a2_case_study.json` | final | consolidated A2 case | yes | high | CONSOLIDATE |
-| `eval/final/reproducibility_manifest.md` | final | hashes/manifest | yes | high | CONSOLIDATE |
-| `eval/final/figures/*` | figure | 4 figures | yes | medium | KEEP |
+| `eval/reports/research_v1/architecture_decision.md` | final | consolidated decisions | yes | high | CONSOLIDATE |
+| `eval/reports/research_v1/research_summary.md` | final | consolidated narrative | yes | high | CONSOLIDATE |
+| `eval/reports/research_v1/final_metrics.json` | final | validated metrics | yes | high | CONSOLIDATE |
+| `eval/reports/research_v1/failure_analysis.json` | final | consolidated taxonomy | yes | high | CONSOLIDATE |
+| `eval/reports/research_v1/a2_case_study.json` | final | consolidated A2 case | yes | high | CONSOLIDATE |
+| `eval/reports/research_v1/reproducibility_manifest.md` | final | hashes/manifest | yes | high | CONSOLIDATE |
+| `eval/reports/research_v1/figures/*` | figure | 4 figures | yes | medium | KEEP |
 | `eval/a2_minimal_probe_requirements_v1.json` | config | frozen query-derived requirements | yes | high | KEEP |
 
 ## B. Category 2 — Test / runtime dependencies (KEEP in place)
@@ -69,12 +69,12 @@ Truly orphaned process files (0 references from tests, runners, or README), not 
 
 | Path (new) | Origin | Reason |
 |---|---|---|
-| `eval/archive/exploratory/candidate_discovery_v1_reviewer_packet_VAL001039F02.md` | `eval/results/` | abandoned exploration review packet |
-| `eval/archive/exploratory/candidate_discovery_v1_reviewer_packet_VAL001050F01.md` | `eval/results/` | abandoned exploration review packet |
-| `eval/archive/exploratory/candidate_discovery_v1_reviewer_response_form.md` | `eval/results/` | abandoned exploration response form |
-| `eval/archive/human_truth/human_truth_review_assistant_v1.json` | `eval/results/` | Human Truth process input, superseded by frozen verdicts |
-| `eval/archive/human_truth/human_truth_review_assistant_summary.md` | `eval/results/` | Human Truth process summary |
-| `eval/archive/human_truth/human_truth_dual_review_summary.md` | `eval/results/` | dual-review process summary |
+| `eval/legacy/archive/exploratory/candidate_discovery_v1_reviewer_packet_VAL001039F02.md` | `eval/results/` | abandoned exploration review packet |
+| `eval/legacy/archive/exploratory/candidate_discovery_v1_reviewer_packet_VAL001050F01.md` | `eval/results/` | abandoned exploration review packet |
+| `eval/legacy/archive/exploratory/candidate_discovery_v1_reviewer_response_form.md` | `eval/results/` | abandoned exploration response form |
+| `eval/legacy/archive/human_truth/human_truth_review_assistant_v1.json` | `eval/results/` | Human Truth process input, superseded by frozen verdicts |
+| `eval/legacy/archive/human_truth/human_truth_review_assistant_summary.md` | `eval/results/` | Human Truth process summary |
+| `eval/legacy/archive/human_truth/human_truth_dual_review_summary.md` | `eval/results/` | dual-review process summary |
 
 ## E. Category 5 — Deleted
 

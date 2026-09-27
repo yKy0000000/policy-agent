@@ -45,5 +45,5 @@
 <text x="823" y="654.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">1 vs 2 grounding issues</text>
 <line x1="54" y1="689" x2="1146" y2="689" stroke="#C9D3D9" stroke-width="1"/>
 <text x="54" y="717.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Dominance also requires no worse coverage, regressions or grounding; bar position alone is not the test.</text>
-<text x="54" y="739.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/final/final_metrics.json · frozen A1 Pareto</text>
+<text x="54" y="739.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/reports/research_v1/final_metrics.json · frozen A1 Pareto</text>
 </svg>

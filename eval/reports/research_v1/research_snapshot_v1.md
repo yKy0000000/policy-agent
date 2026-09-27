@@ -2,6 +2,8 @@
 
 This records the completed research state immediately before the reusable evaluation-framework refactor. The snapshot was committed locally and tagged; no remote push was made.
 
+Current location: `eval/reports/research_v1/research_snapshot_v1.md`. Paths in the checksum table describe the tagged historical tree; the reader-facing files were subsequently moved from `eval/final/` to `eval/reports/research_v1/` without changing the preserved tag.
+
 - Branch at snapshot: `main`
 - Commit: `0c3afef3e46d64dda6dd2bd73183a72c86c68358`
 - Annotated tag: `research-complete-v1`

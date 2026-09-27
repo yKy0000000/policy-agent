@@ -1,6 +1,6 @@
 # Reader-facing figure redesign plan
 
-Three figures in the README, each answering one decision question. Source of numerical truth: `eval/final/final_metrics.json`, `eval/final/failure_analysis.json`, and `eval/final/a2_case_study.json`; the frozen underlying sources are named below. All new assets use the same typography, semantic palette, white canvas with dark text, direct labels, a source/scope footnote, and both PNG (high DPI) and SVG. Existing evidence files remain untouched.
+Three figures in the README, each answering one decision question. Source of numerical truth: `eval/reports/research_v1/final_metrics.json`, `eval/reports/research_v1/failure_analysis.json`, and `eval/reports/research_v1/a2_case_study.json`; the frozen underlying sources are named below. All new assets use the same typography, semantic palette, white canvas with dark text, direct labels, a source/scope footnote, and both PNG (high DPI) and SVG. Existing evidence files remain untouched.
 
 ## Audit of current figures
 
@@ -17,21 +17,21 @@ The old figures have a white raster background and are visible on GitHub dark mo
 
 - **Question:** did query classification earn its quality, regression, and provider-token cost?
 - **Form:** two aligned panels. Left: concise cost-versus-answer-complete positioning of fixed Top5, selector, router, and no-router adaptive. Right: paired selector/router rows for required coverage, completeness, regressions, grounding issues, and provider tokens/query. A visual connector and a one-sentence verdict identify strict dominance.
-- **Exact metrics:** fixed **43/50**, **196/208**, **0**, **2,533.1** tokens/query; selector **44/50**, **196/208**, **0**, **1** grounding issue, **3,281.1**; router **44/50**, **196/208**, **1**, **2** grounding issues, **3,667.7**; no-router adaptive **46/50**, **202/208**, **1**, **6,188.9**. Source: `eval/results/a1_final_pareto_v1.json` via `eval/final/final_metrics.json`.
+- **Exact metrics:** fixed **43/50**, **196/208**, **0**, **2,533.1** tokens/query; selector **44/50**, **196/208**, **0**, **1** grounding issue, **3,281.1**; router **44/50**, **196/208**, **1**, **2** grounding issues, **3,667.7**; no-router adaptive **46/50**, **202/208**, **1**, **6,188.9**. Source: `eval/results/a1_final_pareto_v1.json` via `eval/reports/research_v1/final_metrics.json`.
 - **Takeaway:** selector equals the router on required quality, costs fewer tokens, and has fewer regressions and grounding issues; fixed is the cost extreme, no-router adaptive the quality extreme. The chart states the full multi-metric dominance rule; 2-D position alone is insufficient to prove dominance.
 
 ## Figure 2 — Which failure layer deserves the next mechanism?
 
 - **Question:** what kind of residual miss remained after A1, and what does that imply for A2/A3?
 - **Form:** aligned horizontal bars ordered by layer: generation 6, selection/budget 6, ranking 2, representation candidate 2, confirmed fragmentation 0. A bracket visually groups the first two as **12/16**. Right-hand decision notes: improve use/allocation first; one representation case merits a minimal probe; no fragmentation trigger means A3 does not start.
-- **Exact metrics/scope:** **16 unique aspects** missing in at least one of four surviving arms, across **10 cases**, from **208 QUERY_REQUIRED** aspects. The two representation aspects share **one** clear case; fragmentation is **zero confirmed**, rather than an assertion that fragmentation is impossible. Source: `eval/results/a1_failure_analysis_v1.json` via `eval/final/failure_analysis.json`.
+- **Exact metrics/scope:** **16 unique aspects** missing in at least one of four surviving arms, across **10 cases**, from **208 QUERY_REQUIRED** aspects. The two representation aspects share **one** clear case; fragmentation is **zero confirmed**, rather than an assertion that fragmentation is impossible. Source: `eval/results/a1_failure_analysis_v1.json` via `eval/reports/research_v1/failure_analysis.json`.
 - **Takeaway:** roadmap follows observed failure layers rather than an attractive menu of RAG techniques.
 
 ## Figure 3 — What decomposition actually proved
 
 - **Question:** did requirement queries fix a representation failure that deeper retrieval and MMR could not?
 - **Form:** four labeled lanes with source visibility (absent / rank 79 of 91 / absent from pool / rank 2, selected) and required evidence coverage (0/4 / 0/4 / 0/4 / 4/4). Rank 2 and 79 share a deliberately simple rank axis; absence is written, not assigned a fake rank. One bottom line separates “mechanism confirmed” from “default not adopted: 1 clear case/50”.
-- **Exact metrics:** `VAL-001-046`; target support chunk absent under original, **79/91** under deeper retrieval, absent under MMR, **2** under requirement query; **0/4 → 4/4**. Source: `eval/results/a2_minimal_mechanism_probe_v1.json` via `eval/final/a2_case_study.json`.
+- **Exact metrics:** `VAL-001-046`; target support chunk absent under original, **79/91** under deeper retrieval, absent under MMR, **2** under requirement query; **0/4 → 4/4**. Source: `eval/results/a2_minimal_mechanism_probe_v1.json` via `eval/reports/research_v1/a2_case_study.json`.
 - **Takeaway:** the mechanism genuinely surfaces missing evidence in this case; the figure does not suggest end-to-end answer improvement or enough incidence for default deployment. This probe involved no answer generation.
 
 ## Omitted diagrams

@@ -1,8 +1,22 @@
-# Canonical evaluation framework
+# Evaluation workspace
 
-The completed A1–A3 research is preserved at local Git tag `research-complete-v1`; its identity and artifact hashes are in [`final/research_snapshot_v1.md`](final/research_snapshot_v1.md). Frozen files under `validation/`, `results/`, `final/`, and the legacy runners remain in place. New experiments use `eval/core/`, `eval/benchmarks/`, `eval/pipelines/`, and `eval/run_experiment.py`.
+## Active development
 
-## Run Validation V1
+| Path | Role |
+|---|---|
+| `core/` | Benchmark loader, pipeline interfaces, evaluators, runner, reporting |
+| `benchmarks/validation_v1/` | One canonical benchmark definition and its documentation |
+| `pipelines/` | Registered pipeline configurations |
+| `run_experiment.py` | Canonical experiment entry point |
+| `experiments/<experiment_id>/` | New run outputs; each run owns its config, results, metrics, and summary |
+| `reports/research_v1/` | Small, reader-facing consolidated result from the completed research |
+| `legacy/` | Index and preserved research process evidence |
+
+Future work follows **component → pipeline config → `run_experiment` → `experiments/<experiment_id>/`**. New experiments must not copy the historical `run_xxx.py` scripts. Those scripts are frozen research reproduction tools, unsupported as templates for development.
+
+The completed research is preserved at local Git tag `research-complete-v1`; its identity and artifact hashes are in [`reports/research_v1/research_snapshot_v1.md`](reports/research_v1/research_snapshot_v1.md). Start with the [architecture decision](reports/research_v1/architecture_decision.md) and [research summary](reports/research_v1/research_summary.md) to read results. See the [legacy index](legacy/MANIFEST.md) to reproduce or audit old work.
+
+## Run benchmark: Validation V1
 
 Offline historical replay makes **no model or judge calls**. It imports frozen candidate orders, selected contexts, answers, judgments, and per-arm provider usage into the same result schema used for future live pipelines:
 
@@ -30,7 +44,7 @@ Retrieval availability, context coverage, and answer coverage are different meas
 
 The saved regression references are [`historical_fixed_top5_v1/summary.md`](experiments/historical_fixed_top5_v1/summary.md) and [`historical_selector_v2_v1/summary.md`](experiments/historical_selector_v2_v1/summary.md). Both reproduce candidate availability **235/239** and BGE Top5 **224/239**. Fixed Top5 reproduces context **193/208, 46/50**, answer **196/208, 43/50**, and **2,533.12** provider tokens/query; selector reproduces context **195/208, 47/50**, answer **196/208, 44/50**, and **3,281.06** tokens/query. The final research table rounds those token means to one decimal.
 
-## Add a new pipeline
+## Add a pipeline
 
 1. Implement only the needed stage class in `eval/core/product_components.py` or another small module. The interfaces are in `eval/core/pipeline.py`: rewrite, optional requirement planner, retrieval, merge, rerank, context, generate, validate. A multi-requirement planner returns `Requirement` objects; `PipelineResult.retrieval_by_requirement` preserves each query's candidates, while merged `Evidence.query_ids` records shared chunks. The same result schema supports whole-query and requirement-query paths.
 2. Register its component ID in `build_live_pipeline` and add `eval/pipelines/<pipeline_id>.json`. No benchmark or evaluator code changes are needed. Keep product `src/` independent of gold labels.
@@ -39,6 +53,6 @@ The saved regression references are [`historical_fixed_top5_v1/summary.md`](expe
 
 The runner accepts any object with `pipeline_id` and `run(BenchmarkCase) -> PipelineResult`; tests can inject small component implementations without loading models. `Pipeline.run` passes components only query/history-derived data, never original rubric or Human Truth labels. Evaluators consume the result afterward. The framework is intentionally narrow: no workflow DSL or general plugin system.
 
-## Historical research boundary
+## Legacy policy and compatibility paths
 
-The old `eval/run_*`, `eval/results/*`, `eval/validation/*`, and `eval/archive/*` are research provenance and remain reproducible. The canonical loader references frozen source hashes rather than copying mutable labels. `FrozenReplayPipeline` reads historical rows and validates answer identity before reusing adjudicated blind judgments. New reports are separate artifacts under `eval/experiments/`; they do not rewrite a frozen A1/A2 decision or start A3.
+The old `eval/run_*`, `eval/results/*`, `eval/validation/*`, and historical files at `eval/` root are research provenance. They remain at their original paths because the regression suite, source hashes, and replay code refer to them. Their role and exceptions are listed in [`LEGACY_FILES.md`](LEGACY_FILES.md); the stage-oriented index is [`legacy/MANIFEST.md`](legacy/MANIFEST.md). Do not use them as new entry points. The canonical loader, `eval.core.load_benchmark("validation_v1")`, remains the sole entry to benchmark data for new work; it verifies frozen source hashes. `FrozenReplayPipeline` validates answer identity before reusing adjudicated blind judgments. New reports go under `eval/experiments/` and do not rewrite frozen A1/A2 decisions.

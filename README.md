@@ -30,9 +30,9 @@ One measurement correction mattered before judging those answers. The original 2
 
 Context replay gave a warning: selector and router both put **195/208** required aspects into selected context and made **47/50** contexts complete, while the router used more evidence tokens. Context can still be present and unused, so the decision waited for generated answers. The study evaluated **156 unique answers blind to arm and cost**, resolved the review queue, froze quality, and only then joined per-arm provider-token economics. [Context replay](eval/results/human_aware_context_v1_summary.md) · [Blind quality freeze](eval/results/a1_blind_answer_quality_frozen_summary.md) · [Final Pareto](eval/results/a1_final_pareto_v1.json)
 
-![Four A1 policies: selector matches router quality at lower cost and risk](eval/final/figures/router_decision.png)
+![Four A1 policies: selector matches router quality at lower cost and risk](eval/reports/research_v1/figures/router_decision.png)
 
-[Vector version](eval/final/figures/router_decision.svg)
+[Vector version](eval/reports/research_v1/figures/router_decision.svg)
 
 The decisive pair was `coverage_selector_v2` versus `query_router_v1`: both covered **196/208** required aspects and completed **44/50** answers. The selector used **3,281** versus **3,668** provider tokens/query, with **0 versus 1** confirmed complete-answer regressions and **1 versus 2** correctness/grounding issues. Under the frozen multi-metric rule, the selector **strictly dominated** the router. That verdict applies to this rule, benchmark, and model setup; it is not a universal claim about routing.
 
@@ -42,9 +42,9 @@ The selector was still not a clean default replacement. Against fixed Top5, it g
 
 After rejecting the router, aggregate quality still could not say which mechanism to try. A case-by-case postmortem examined **16 distinct QUERY_REQUIRED aspects** missing in at least one of the four surviving arms, across **10 cases**. It checked candidate presence, BGE order, selected context, and answer use. [Failure postmortem](eval/results/a1_failure_analysis_summary.md)
 
-![Residual failures: 12 of 16 aspects sit in generation or selection, with no confirmed fragmentation](eval/final/figures/failure_roadmap.png)
+![Residual failures: 12 of 16 aspects sit in generation or selection, with no confirmed fragmentation](eval/reports/research_v1/figures/failure_roadmap.png)
 
-[Vector version](eval/final/figures/failure_roadmap.svg)
+[Vector version](eval/reports/research_v1/figures/failure_roadmap.svg)
 
 **Six** misses occurred despite evidence being in context; **six** were selection/budget misses. Two reflected weak ranking. The final **two aspects shared one clear representation case**. There were **zero confirmed fragmentation cases**. That distribution made decomposition worth a *small mechanism probe* on the exceptional case, while giving hierarchical or parent expansion no observed trigger. Early geometry diagnostics had flagged possible structural shapes; the later query-required, answer-level review did not confirm fragmentation as the cause of a residual miss.
 
@@ -52,13 +52,13 @@ After rejecting the router, aggregate quality still could not say which mechanis
 
 `VAL-001-046` asks whether GitHub notifies someone before disclosing account data to investigators **and** when notice may be withheld or delayed. The supporting section for the missed requirements was absent from the original-query candidate union. A fixed-budget retrieval probe compared ways to expose it; the requirement queries were derived from the user's question, not from the policy answer. [Frozen requirements](eval/a2_minimal_probe_requirements_v1.json) · [Probe result](eval/results/a2_minimal_mechanism_probe_summary.md)
 
-![VAL-001-046: only requirement-query retrieval brings the missing evidence to rank 2](eval/final/figures/decomposition_case.png)
+![VAL-001-046: only requirement-query retrieval brings the missing evidence to rank 2](eval/reports/research_v1/figures/decomposition_case.png)
 
-[Vector version](eval/final/figures/decomposition_case.svg)
+[Vector version](eval/reports/research_v1/figures/decomposition_case.svg)
 
 Deeper original-query retrieval found the source only at **BGE rank 79 of 91**. MMR could not choose a source absent from its pool. Requirement-query retrieval moved it to **rank 2**, selected it in the same five-chunk budget, and changed *required evidence coverage* from **0/4 to 4/4**. This is a retrieval/context mechanism proof, **not a newly generated answer-quality result**.
 
-The clear representation failure appeared in **1/50** cases. That is enough to establish the mechanism for this case, but not enough to put a decomposition call on every query. Decomposition remains a dormant research option awaiting stronger incidence and net-benefit evidence. Parent/hierarchical retrieval was **not tested**: with zero confirmed fragmentation failures, its precondition was not met. [A2 case](eval/final/a2_case_study.json) · [Final architecture decision](eval/final/architecture_decision.md)
+The clear representation failure appeared in **1/50** cases. That is enough to establish the mechanism for this case, but not enough to put a decomposition call on every query. Decomposition remains a dormant research option awaiting stronger incidence and net-benefit evidence. Parent/hierarchical retrieval was **not tested**: with zero confirmed fragmentation failures, its precondition was not met. [A2 case](eval/reports/research_v1/a2_case_study.json) · [Final architecture decision](eval/reports/research_v1/architecture_decision.md)
 
 ## What runs, and what the research recommends
 
@@ -91,7 +91,7 @@ Use `python -m src.cli --debug` to inspect the rewritten query, selected evidenc
 
 ## Evidence and limits
 
-The A1 answer comparison used frozen Human Truth, blinded answer labels, review of disputed judgments, and quality frozen before economics. Provider total tokens/query is the primary cost measure; USD figures in the research files are uncached-equivalent estimates. [Metrics](eval/final/final_metrics.json) · [Reproducibility manifest and hashes](eval/final/reproducibility_manifest.md) · [Research summary](eval/final/research_summary.md)
+The A1 answer comparison used frozen Human Truth, blinded answer labels, review of disputed judgments, and quality frozen before economics. Provider total tokens/query is the primary cost measure; USD figures in the research files are uncached-equivalent estimates. [Metrics](eval/reports/research_v1/final_metrics.json) · [Reproducibility manifest and hashes](eval/reports/research_v1/reproducibility_manifest.md) · [Research summary](eval/reports/research_v1/research_summary.md)
 
 For the post-research, reusable benchmark runner and its separate retrieval/context/answer/economics reports, see [Evaluation framework](eval/README.md).
 

@@ -1,11 +1,11 @@
-# eval/archive — Provenance & Process Evidence
+# eval/legacy/archive — Provenance & Process Evidence
 
-This directory holds research **process evidence** that the final conclusions depend on but that a normal reader does not need. It is intentionally not part of the daily/research runnable surface.
+This directory holds research **process evidence** that the final conclusions depend on but that a normal reader does not need. It is intentionally outside the active evaluation workflow.
 
 ## Structure
 
 ```text
-eval/archive/
+eval/legacy/archive/
 ├── MANIFEST.md          # this file
 ├── stage0/              # (reserved) Stage 0 freeze pointers
 ├── human_truth/         # Human Truth process evidence
@@ -29,7 +29,7 @@ These had **zero references** from `tests/`, any runner, or `README.md`.
 
 ## Archived "in place" (manifest-only, not moved)
 
-Most research provenance is still referenced by runners imported in `tests/test_eval.py`, so moving it would break the suite. Those files stay in their original locations and are catalogued in `eval/cleanup_inventory_v1.md` (Category 3). Examples:
+Most research provenance is still referenced by runners imported in `tests/test_eval.py`, so those files stay at their original paths. The earlier cleanup inventory is preserved at `eval/legacy/cleanup_inventory_v1.md` (Category 3). Examples:
 
 - Human Truth process: `eval/results/human_truth_disagreements_v1.json`, `human_truth_reviewer1_v1.json`, `human_truth_reviewer2_v1.json`, `human_truth_stage0_worksheet.json`.
 - A1 process: `eval/results/a1_blind_answer_eval_v1.json`, `a1_blind_judge_cache_v1.json`, `a1_blind_answer_mapping_v1.json`, `a1_blind_human_resolution_v1.json`, `a1_failure_inventory_raw_v1.json`, `a1_representation_probe_v1.json`.
@@ -42,4 +42,4 @@ Most research provenance is still referenced by runners imported in `tests/test_
 
 ## Rule
 
-Archive, never delete, anything a final decision depended on (frozen experiment provenance, human review provenance, generation provenance). See `eval/cleanup_inventory_v1.md` §E: nothing was deleted this round.
+Preserve anything a final decision depended on (frozen experiment provenance, human review provenance, generation provenance). See `eval/legacy/cleanup_inventory_v1.md` §E for the earlier cleanup snapshot.
