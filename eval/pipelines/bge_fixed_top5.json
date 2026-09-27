@@ -1,0 +1,15 @@
+{
+  "pipeline_id": "bge_fixed_top5",
+  "description": "BGE research baseline; frozen A1 fixed Top5 replay by default",
+  "historical_arm": "fixed_top5",
+  "components": {
+    "rewriter": "single_turn_identity",
+    "planner": "whole_query",
+    "retriever": "hybrid_20_20",
+    "merger": "union_by_chunk_id",
+    "reranker": "bge",
+    "context_builder": "fixed_top5",
+    "generator": "grounded_policy_answer_v1",
+    "validator": "deterministic_v1"
+  }
+}

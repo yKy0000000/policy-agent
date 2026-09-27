@@ -93,6 +93,8 @@ Use `python -m src.cli --debug` to inspect the rewritten query, selected evidenc
 
 The A1 answer comparison used frozen Human Truth, blinded answer labels, review of disputed judgments, and quality frozen before economics. Provider total tokens/query is the primary cost measure; USD figures in the research files are uncached-equivalent estimates. [Metrics](eval/final/final_metrics.json) · [Reproducibility manifest and hashes](eval/final/reproducibility_manifest.md) · [Research summary](eval/final/research_summary.md)
 
+For the post-research, reusable benchmark runner and its separate retrieval/context/answer/economics reports, see [Evaluation framework](eval/README.md).
+
 The findings concern this GitHub policy snapshot, 50 Validation V1 queries, the frozen SIMPLE/BROAD rule, these context policies, and this model/retrieval setup. Validation V1 began untouched but was later inspected and used for diagnostics; this is not a fresh external generalization test. The 16-case Broad V3 set was development data. Citation validation checks IDs and source metadata, not semantic support for every claim. The A2 probe did not generate answers; no default decomposition benefit was measured. The agent offers source-grounded policy explanation, not legal advice.
 
 The result is a small runtime backed by explicit decisions about where complexity helped, where it lost, and where the evidence was too thin to add it.

@@ -1,0 +1,1948 @@
+{
+  "summary": {
+    "denominator": "original_rubric_facts",
+    "cases": 50,
+    "facts": 239,
+    "candidate_available": 235,
+    "candidate_recall": 0.9832635983263598,
+    "candidate_complete_cases": 49,
+    "ranked_top5": 224,
+    "ranked_top5_recall": 0.9372384937238494
+  },
+  "cases": [
+    {
+      "case_id": "VAL-001-001",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 0,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-001-F01",
+          "candidate_available": true,
+          "best_rank": 22,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-001-F02",
+          "candidate_available": true,
+          "best_rank": 22,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-001-F03",
+          "candidate_available": true,
+          "best_rank": 22,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-001-F04",
+          "candidate_available": true,
+          "best_rank": 22,
+          "top5": false
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-002",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-002-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-002-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-002-F03",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-002-F04",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-002-F05",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-003",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-003-F01",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-003-F02",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-003-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-003-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-004",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-004-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-004-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-004-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-004-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-004-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-004-F06",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-005",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-005-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-005-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-005-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-005-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-005-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-006",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 3,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-006-F01",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-006-F02",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-006-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-006-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-006-F05",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-007",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-007-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-007-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-007-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-007-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-008",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-008-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-008-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-008-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-008-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-009",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-009-F01",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-009-F02",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-009-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-009-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-009-F05",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-010",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-010-F01",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-010-F02",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-010-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-010-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-010-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-010-F06",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-011",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-011-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-011-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-011-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-011-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-011-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-012",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-012-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-012-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-012-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-012-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-012-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-012-F06",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-013",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-013-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-013-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-013-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-013-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-013-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-014",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-014-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-014-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-014-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-014-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-015",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-015-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-015-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-015-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-015-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-016",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-016-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-016-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-016-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-016-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-017",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-017-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-017-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-017-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-017-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-018",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-018-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-018-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-018-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-018-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-019",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-019-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-019-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-019-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-019-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-020",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-020-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-020-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-020-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-020-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-021",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-021-F01",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-021-F02",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-021-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-021-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-022",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-022-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-022-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-022-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-022-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-022-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-023",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-023-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-023-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-023-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-023-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-024",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-024-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-024-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-024-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-024-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-025",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-025-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-025-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-025-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-025-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-026",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-026-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-026-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-026-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-026-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-026-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-027",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-027-F01",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-027-F02",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-027-F03",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-027-F04",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-027-F05",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-027-F06",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-028",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-028-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-028-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-028-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-028-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-029",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-029-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-029-F02",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-029-F03",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-029-F04",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-029-F05",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-029-F06",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-030",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-030-F01",
+          "candidate_available": true,
+          "best_rank": 5,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-030-F02",
+          "candidate_available": true,
+          "best_rank": 5,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-030-F03",
+          "candidate_available": true,
+          "best_rank": 5,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-030-F04",
+          "candidate_available": true,
+          "best_rank": 5,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-031",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-031-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-031-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-031-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-031-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-031-F05",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-031-F06",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-032",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-032-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-032-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-032-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-032-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-032-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 0,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-033-F01",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-033-F02",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-033-F03",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-033-F04",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-033-F05",
+          "candidate_available": true,
+          "best_rank": 6,
+          "top5": false
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-034",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-034-F01",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-034-F02",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-034-F03",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-034-F04",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-034-F05",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-035",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-035-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-035-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-035-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-035-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-036",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-036-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-036-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-036-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-036-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-037",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-037-F01",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-037-F02",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-037-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-037-F04",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-037-F05",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-037-F06",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-038",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-038-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-038-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-038-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-038-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-038-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-039",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-039-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-039-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-039-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-039-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-040",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-040-F01",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-040-F02",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-040-F03",
+          "candidate_available": true,
+          "best_rank": 2,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-040-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-040-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-041",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-041-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-041-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-041-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-041-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-041-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-042",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-042-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-042-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-042-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-042-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-042-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-043",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-043-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-043-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-043-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-043-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-043-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-044",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-044-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-044-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-044-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-044-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-044-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-044-F06",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-045",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-045-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-045-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-045-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-045-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-045-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-045-F06",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-046",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 0,
+      "ranked_top5": 0,
+      "candidate_complete": false,
+      "facts": [
+        {
+          "fact_id": "VAL-001-046-F01",
+          "candidate_available": false,
+          "best_rank": null,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-046-F02",
+          "candidate_available": false,
+          "best_rank": null,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-046-F03",
+          "candidate_available": false,
+          "best_rank": null,
+          "top5": false
+        },
+        {
+          "fact_id": "VAL-001-046-F04",
+          "candidate_available": false,
+          "best_rank": null,
+          "top5": false
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-047",
+      "denominator": "original_rubric_facts",
+      "total": 4,
+      "candidate_available": 4,
+      "ranked_top5": 4,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-047-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-047-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-047-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-047-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-048",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-048-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-048-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-048-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-048-F04",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-048-F05",
+          "candidate_available": true,
+          "best_rank": 3,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-048-F06",
+          "candidate_available": true,
+          "best_rank": 5,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-049",
+      "denominator": "original_rubric_facts",
+      "total": 6,
+      "candidate_available": 6,
+      "ranked_top5": 6,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-049-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-049-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-049-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-049-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-049-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-049-F06",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-050",
+      "denominator": "original_rubric_facts",
+      "total": 5,
+      "candidate_available": 5,
+      "ranked_top5": 5,
+      "candidate_complete": true,
+      "facts": [
+        {
+          "fact_id": "VAL-001-050-F01",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-050-F02",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-050-F03",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-050-F04",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        },
+        {
+          "fact_id": "VAL-001-050-F05",
+          "candidate_available": true,
+          "best_rank": 1,
+          "top5": true
+        }
+      ]
+    }
+  ]
+}

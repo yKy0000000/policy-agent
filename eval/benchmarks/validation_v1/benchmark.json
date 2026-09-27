@@ -1,0 +1,11 @@
+{
+  "name": "validation_v1",
+  "version": "validation-v1-human-truth-v1",
+  "identity": {"cases": 50, "original_facts": 239, "query_required_aspects": 208},
+  "sources": {
+    "questions": {"path": "eval/validation/broad_queries_validation_v1.json", "sha256": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858"},
+    "original_rubric": {"path": "eval/validation/broad_atomic_facts_validation_v1.json", "sha256": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50"},
+    "human_truth": {"path": "eval/results/frozen_human_verdicts_v1.json", "sha256": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716"},
+    "support_chunk_mapping": {"path": "eval/results/evidence_geometry_analysis.json", "sha256": "3a5918595cf742bd083230c818055db664e61d20cd38ac7bed39cceb4a73cf2e"}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pipeline_id": "bge_coverage_selector_v2",
+  "description": "Frozen A1 evidence-side selector reference arm",
+  "historical_arm": "coverage_selector_v2",
+  "components": {
+    "rewriter": "single_turn_identity",
+    "planner": "whole_query",
+    "retriever": "hybrid_20_20",
+    "merger": "union_by_chunk_id",
+    "reranker": "bge",
+    "context_builder": "coverage_selector_v2",
+    "generator": "grounded_policy_answer_v1",
+    "validator": "deterministic_v1"
+  },
+  "execution": "frozen_replay",
+  "benchmark_name": "validation_v1",
+  "benchmark_version": "validation-v1-human-truth-v1",
+  "benchmark_source_hashes": {
+    "questions": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+    "original_rubric": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+    "human_truth": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716",
+    "support_chunk_mapping": "3a5918595cf742bd083230c818055db664e61d20cd38ac7bed39cceb4a73cf2e"
+  }
+}

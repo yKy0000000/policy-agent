@@ -1,0 +1,15 @@
+{
+  "pipeline_id": "bge_no_router_adaptive_v1",
+  "description": "Frozen A1 no-router adaptive quality ceiling",
+  "historical_arm": "no_router_adaptive_v1",
+  "components": {
+    "rewriter": "single_turn_identity",
+    "planner": "whole_query",
+    "retriever": "hybrid_20_20",
+    "merger": "union_by_chunk_id",
+    "reranker": "bge",
+    "context_builder": "no_router_adaptive_v1",
+    "generator": "grounded_policy_answer_v1",
+    "validator": "deterministic_v1"
+  }
+}

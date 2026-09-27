@@ -1,0 +1,15 @@
+{
+  "pipeline_id": "bge_coverage_selector_v2",
+  "description": "Frozen A1 evidence-side selector reference arm",
+  "historical_arm": "coverage_selector_v2",
+  "components": {
+    "rewriter": "single_turn_identity",
+    "planner": "whole_query",
+    "retriever": "hybrid_20_20",
+    "merger": "union_by_chunk_id",
+    "reranker": "bge",
+    "context_builder": "coverage_selector_v2",
+    "generator": "grounded_policy_answer_v1",
+    "validator": "deterministic_v1"
+  }
+}

@@ -1,0 +1,1202 @@
+{
+  "summary": {
+    "denominator": "QUERY_REQUIRED",
+    "cases": 50,
+    "required_aspects": 208,
+    "judged_cases": 50,
+    "required_covered": 196,
+    "required_missing": 12,
+    "query_required_complete_cases": 43,
+    "candidate_complete_regressions_vs_fixed": 0,
+    "confirmed_complete_regressions_vs_fixed": 0,
+    "confirmed_correctness_grounding_issues": 1,
+    "status": "complete"
+  },
+  "cases": [
+    {
+      "case_id": "VAL-001-001",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-001-F01",
+        "VAL-001-001-F03",
+        "VAL-001-001-F04"
+      ],
+      "missing_ids": [
+        "VAL-001-001-F02"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 18
+      },
+      "claim_citation_counts": {
+        "supported": 18
+      }
+    },
+    {
+      "case_id": "VAL-001-002",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-002-F01",
+        "VAL-001-002-F02",
+        "VAL-001-002-F03",
+        "VAL-001-002-F04",
+        "VAL-001-002-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 18
+      },
+      "claim_citation_counts": {
+        "supported": 18
+      }
+    },
+    {
+      "case_id": "VAL-001-003",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-003-F01",
+        "VAL-001-003-F02",
+        "VAL-001-003-F03"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 9
+      },
+      "claim_citation_counts": {
+        "supported": 9
+      }
+    },
+    {
+      "case_id": "VAL-001-004",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 6,
+      "required_covered": 6,
+      "covered_ids": [
+        "VAL-001-004-F01",
+        "VAL-001-004-F02",
+        "VAL-001-004-F03",
+        "VAL-001-004-F04",
+        "VAL-001-004-F05",
+        "VAL-001-004-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 7
+      },
+      "claim_citation_counts": {
+        "supported": 7
+      }
+    },
+    {
+      "case_id": "VAL-001-005",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-005-F01",
+        "VAL-001-005-F02",
+        "VAL-001-005-F03",
+        "VAL-001-005-F04",
+        "VAL-001-005-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 13
+      },
+      "claim_citation_counts": {
+        "supported": 13
+      }
+    },
+    {
+      "case_id": "VAL-001-006",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-006-F01",
+        "VAL-001-006-F03",
+        "VAL-001-006-F04",
+        "VAL-001-006-F05"
+      ],
+      "missing_ids": [
+        "VAL-001-006-F02"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 18
+      },
+      "claim_citation_counts": {
+        "supported": 18
+      }
+    },
+    {
+      "case_id": "VAL-001-007",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-007-F01",
+        "VAL-001-007-F03",
+        "VAL-001-007-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 17
+      },
+      "claim_citation_counts": {
+        "supported": 17
+      }
+    },
+    {
+      "case_id": "VAL-001-008",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-008-F01",
+        "VAL-001-008-F03",
+        "VAL-001-008-F04"
+      ],
+      "missing_ids": [
+        "VAL-001-008-F02"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 5
+      },
+      "claim_citation_counts": {
+        "supported": 5
+      }
+    },
+    {
+      "case_id": "VAL-001-009",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-009-F01",
+        "VAL-001-009-F03",
+        "VAL-001-009-F04",
+        "VAL-001-009-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 9
+      },
+      "claim_citation_counts": {
+        "supported": 9
+      }
+    },
+    {
+      "case_id": "VAL-001-010",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-010-F01",
+        "VAL-001-010-F03",
+        "VAL-001-010-F04",
+        "VAL-001-010-F05",
+        "VAL-001-010-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 9
+      },
+      "claim_citation_counts": {
+        "supported": 9
+      }
+    },
+    {
+      "case_id": "VAL-001-011",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-011-F02",
+        "VAL-001-011-F03",
+        "VAL-001-011-F05"
+      ],
+      "missing_ids": [
+        "VAL-001-011-F01"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 9
+      },
+      "claim_citation_counts": {
+        "supported": 8,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-012",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-012-F01",
+        "VAL-001-012-F04",
+        "VAL-001-012-F05",
+        "VAL-001-012-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 10
+      },
+      "claim_citation_counts": {
+        "supported": 10
+      }
+    },
+    {
+      "case_id": "VAL-001-013",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-013-F01",
+        "VAL-001-013-F02",
+        "VAL-001-013-F03",
+        "VAL-001-013-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 14
+      },
+      "claim_citation_counts": {
+        "supported": 13,
+        "unsupported": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-014",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-014-F01",
+        "VAL-001-014-F02",
+        "VAL-001-014-F03",
+        "VAL-001-014-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 6,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 6,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-015",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-015-F01",
+        "VAL-001-015-F02",
+        "VAL-001-015-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 14
+      },
+      "claim_citation_counts": {
+        "supported": 14
+      }
+    },
+    {
+      "case_id": "VAL-001-016",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-016-F01",
+        "VAL-001-016-F02",
+        "VAL-001-016-F03",
+        "VAL-001-016-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 6,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 6,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-017",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-017-F01",
+        "VAL-001-017-F02",
+        "VAL-001-017-F03",
+        "VAL-001-017-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 12,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 13
+      }
+    },
+    {
+      "case_id": "VAL-001-018",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-018-F01",
+        "VAL-001-018-F03",
+        "VAL-001-018-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 7
+      },
+      "claim_citation_counts": {
+        "supported": 7
+      }
+    },
+    {
+      "case_id": "VAL-001-019",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-019-F01",
+        "VAL-001-019-F02",
+        "VAL-001-019-F03",
+        "VAL-001-019-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 9,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 9,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-020",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-020-F01",
+        "VAL-001-020-F02",
+        "VAL-001-020-F03",
+        "VAL-001-020-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 6,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 7
+      }
+    },
+    {
+      "case_id": "VAL-001-021",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-021-F01",
+        "VAL-001-021-F02",
+        "VAL-001-021-F03",
+        "VAL-001-021-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 5
+      },
+      "claim_citation_counts": {
+        "supported": 5
+      }
+    },
+    {
+      "case_id": "VAL-001-022",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-022-F01",
+        "VAL-001-022-F02",
+        "VAL-001-022-F03",
+        "VAL-001-022-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 8
+      },
+      "claim_citation_counts": {
+        "supported": 8
+      }
+    },
+    {
+      "case_id": "VAL-001-023",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-023-F01",
+        "VAL-001-023-F02",
+        "VAL-001-023-F03",
+        "VAL-001-023-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 8,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 8,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-024",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-024-F01",
+        "VAL-001-024-F02",
+        "VAL-001-024-F03",
+        "VAL-001-024-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 10
+      },
+      "claim_citation_counts": {
+        "supported": 10
+      }
+    },
+    {
+      "case_id": "VAL-001-025",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-025-F02",
+        "VAL-001-025-F03",
+        "VAL-001-025-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 18
+      },
+      "claim_citation_counts": {
+        "supported": 17,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-026",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-026-F01",
+        "VAL-001-026-F04",
+        "VAL-001-026-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 8
+      },
+      "claim_citation_counts": {
+        "supported": 8
+      }
+    },
+    {
+      "case_id": "VAL-001-027",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-027-F01",
+        "VAL-001-027-F02",
+        "VAL-001-027-F03",
+        "VAL-001-027-F04",
+        "VAL-001-027-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 7,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 7,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-028",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-028-F01",
+        "VAL-001-028-F02",
+        "VAL-001-028-F03",
+        "VAL-001-028-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 21
+      },
+      "claim_citation_counts": {
+        "supported": 21
+      }
+    },
+    {
+      "case_id": "VAL-001-029",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 6,
+      "required_covered": 6,
+      "covered_ids": [
+        "VAL-001-029-F01",
+        "VAL-001-029-F02",
+        "VAL-001-029-F03",
+        "VAL-001-029-F04",
+        "VAL-001-029-F05",
+        "VAL-001-029-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 7,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 8
+      }
+    },
+    {
+      "case_id": "VAL-001-030",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-030-F02",
+        "VAL-001-030-F03",
+        "VAL-001-030-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 13
+      },
+      "claim_citation_counts": {
+        "supported": 12,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-031",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-031-F01",
+        "VAL-001-031-F02",
+        "VAL-001-031-F03",
+        "VAL-001-031-F05",
+        "VAL-001-031-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 12
+      },
+      "claim_citation_counts": {
+        "supported": 12
+      }
+    },
+    {
+      "case_id": "VAL-001-032",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-032-F02",
+        "VAL-001-032-F03",
+        "VAL-001-032-F04",
+        "VAL-001-032-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 13
+      },
+      "claim_citation_counts": {
+        "supported": 13
+      }
+    },
+    {
+      "case_id": "VAL-001-033",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 0,
+      "covered_ids": [],
+      "missing_ids": [
+        "VAL-001-033-F01",
+        "VAL-001-033-F02",
+        "VAL-001-033-F03",
+        "VAL-001-033-F04",
+        "VAL-001-033-F05"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 13
+      },
+      "claim_citation_counts": {
+        "supported": 13
+      }
+    },
+    {
+      "case_id": "VAL-001-034",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-034-F01",
+        "VAL-001-034-F02",
+        "VAL-001-034-F03",
+        "VAL-001-034-F04",
+        "VAL-001-034-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 28
+      },
+      "claim_citation_counts": {
+        "supported": 28
+      }
+    },
+    {
+      "case_id": "VAL-001-035",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-035-F01",
+        "VAL-001-035-F02",
+        "VAL-001-035-F03",
+        "VAL-001-035-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 6
+      },
+      "claim_citation_counts": {
+        "supported": 6
+      }
+    },
+    {
+      "case_id": "VAL-001-036",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-036-F01",
+        "VAL-001-036-F02",
+        "VAL-001-036-F03",
+        "VAL-001-036-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 4
+      },
+      "claim_citation_counts": {
+        "supported": 4
+      }
+    },
+    {
+      "case_id": "VAL-001-037",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-037-F02",
+        "VAL-001-037-F03",
+        "VAL-001-037-F04",
+        "VAL-001-037-F05",
+        "VAL-001-037-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 10
+      },
+      "claim_citation_counts": {
+        "supported": 10
+      }
+    },
+    {
+      "case_id": "VAL-001-038",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-038-F01",
+        "VAL-001-038-F02",
+        "VAL-001-038-F03",
+        "VAL-001-038-F04",
+        "VAL-001-038-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 9
+      },
+      "claim_citation_counts": {
+        "supported": 9
+      }
+    },
+    {
+      "case_id": "VAL-001-039",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-039-F01",
+        "VAL-001-039-F03",
+        "VAL-001-039-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 3
+      },
+      "claim_citation_counts": {
+        "supported": 3
+      }
+    },
+    {
+      "case_id": "VAL-001-040",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-040-F01",
+        "VAL-001-040-F02",
+        "VAL-001-040-F03"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 7
+      },
+      "claim_citation_counts": {
+        "missing": 1,
+        "supported": 6
+      }
+    },
+    {
+      "case_id": "VAL-001-041",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-041-F01",
+        "VAL-001-041-F02",
+        "VAL-001-041-F03",
+        "VAL-001-041-F04",
+        "VAL-001-041-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 8
+      },
+      "claim_citation_counts": {
+        "supported": 8
+      }
+    },
+    {
+      "case_id": "VAL-001-042",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 5,
+      "required_covered": 5,
+      "covered_ids": [
+        "VAL-001-042-F01",
+        "VAL-001-042-F02",
+        "VAL-001-042-F03",
+        "VAL-001-042-F04",
+        "VAL-001-042-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 8
+      },
+      "claim_citation_counts": {
+        "supported": 8
+      }
+    },
+    {
+      "case_id": "VAL-001-043",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-043-F02",
+        "VAL-001-043-F03",
+        "VAL-001-043-F04",
+        "VAL-001-043-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 6,
+        "uncertain": 1
+      },
+      "claim_citation_counts": {
+        "supported": 7
+      }
+    },
+    {
+      "case_id": "VAL-001-044",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-044-F02",
+        "VAL-001-044-F03",
+        "VAL-001-044-F05",
+        "VAL-001-044-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 13
+      },
+      "claim_citation_counts": {
+        "supported": 12,
+        "missing": 1
+      }
+    },
+    {
+      "case_id": "VAL-001-045",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 6,
+      "required_covered": 6,
+      "covered_ids": [
+        "VAL-001-045-F01",
+        "VAL-001-045-F02",
+        "VAL-001-045-F03",
+        "VAL-001-045-F04",
+        "VAL-001-045-F05",
+        "VAL-001-045-F06"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 18
+      },
+      "claim_citation_counts": {
+        "supported": 18
+      }
+    },
+    {
+      "case_id": "VAL-001-046",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 2,
+      "covered_ids": [
+        "VAL-001-046-F01",
+        "VAL-001-046-F02"
+      ],
+      "missing_ids": [
+        "VAL-001-046-F03",
+        "VAL-001-046-F04"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 3,
+        "partial": 1
+      },
+      "claim_citation_counts": {
+        "supported": 4
+      }
+    },
+    {
+      "case_id": "VAL-001-047",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 3,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-047-F01",
+        "VAL-001-047-F02",
+        "VAL-001-047-F04"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 10
+      },
+      "claim_citation_counts": {
+        "supported": 10
+      }
+    },
+    {
+      "case_id": "VAL-001-048",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-048-F01",
+        "VAL-001-048-F02",
+        "VAL-001-048-F03",
+        "VAL-001-048-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 7
+      },
+      "claim_citation_counts": {
+        "supported": 7
+      }
+    },
+    {
+      "case_id": "VAL-001-049",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 4,
+      "covered_ids": [
+        "VAL-001-049-F02",
+        "VAL-001-049-F03",
+        "VAL-001-049-F04",
+        "VAL-001-049-F05"
+      ],
+      "missing_ids": [],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": true,
+      "claim_counts": {
+        "supported": 13
+      },
+      "claim_citation_counts": {
+        "supported": 13
+      }
+    },
+    {
+      "case_id": "VAL-001-050",
+      "denominator": "QUERY_REQUIRED",
+      "status": "judged",
+      "required_total": 4,
+      "required_covered": 3,
+      "covered_ids": [
+        "VAL-001-050-F02",
+        "VAL-001-050-F03",
+        "VAL-001-050-F04"
+      ],
+      "missing_ids": [
+        "VAL-001-050-F01"
+      ],
+      "incorrect_ids": [],
+      "uncertain_ids": [],
+      "query_required_complete": false,
+      "claim_counts": {
+        "supported": 4
+      },
+      "claim_citation_counts": {
+        "supported": 4
+      }
+    }
+  ]
+}

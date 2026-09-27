@@ -1,0 +1,466 @@
+{
+  "summary": {
+    "cases": 50,
+    "provider_usage_rows": 50,
+    "provider_input_tokens": 147045,
+    "provider_output_tokens": 17008,
+    "provider_total_tokens": 164053,
+    "provider_tokens_per_query": 3281.06,
+    "evidence_tokens": 125648,
+    "estimated_cost_usd": 0.03226155,
+    "latency_mean_seconds": null,
+    "latency_rows": 0
+  },
+  "cases": [
+    {
+      "case_id": "VAL-001-001",
+      "provider_input_tokens": 4829,
+      "provider_output_tokens": 366,
+      "provider_total_tokens": 5195,
+      "evidence_tokens": 4469,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00094395
+    },
+    {
+      "case_id": "VAL-001-002",
+      "provider_input_tokens": 6287,
+      "provider_output_tokens": 942,
+      "provider_total_tokens": 7229,
+      "evidence_tokens": 5845,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00150825
+    },
+    {
+      "case_id": "VAL-001-003",
+      "provider_input_tokens": 2061,
+      "provider_output_tokens": 289,
+      "provider_total_tokens": 2350,
+      "evidence_tokens": 1705,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00048254999999999994
+    },
+    {
+      "case_id": "VAL-001-004",
+      "provider_input_tokens": 2209,
+      "provider_output_tokens": 489,
+      "provider_total_tokens": 2698,
+      "evidence_tokens": 1814,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00062475
+    },
+    {
+      "case_id": "VAL-001-005",
+      "provider_input_tokens": 5325,
+      "provider_output_tokens": 484,
+      "provider_total_tokens": 5809,
+      "evidence_tokens": 4865,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00108915
+    },
+    {
+      "case_id": "VAL-001-006",
+      "provider_input_tokens": 6387,
+      "provider_output_tokens": 846,
+      "provider_total_tokens": 7233,
+      "evidence_tokens": 5877,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0014656499999999998
+    },
+    {
+      "case_id": "VAL-001-007",
+      "provider_input_tokens": 3295,
+      "provider_output_tokens": 436,
+      "provider_total_tokens": 3731,
+      "evidence_tokens": 2805,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0007558499999999999
+    },
+    {
+      "case_id": "VAL-001-008",
+      "provider_input_tokens": 2690,
+      "provider_output_tokens": 127,
+      "provider_total_tokens": 2817,
+      "evidence_tokens": 2390,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0004797
+    },
+    {
+      "case_id": "VAL-001-009",
+      "provider_input_tokens": 2610,
+      "provider_output_tokens": 236,
+      "provider_total_tokens": 2846,
+      "evidence_tokens": 2184,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005331
+    },
+    {
+      "case_id": "VAL-001-010",
+      "provider_input_tokens": 2653,
+      "provider_output_tokens": 349,
+      "provider_total_tokens": 3002,
+      "evidence_tokens": 2270,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00060735
+    },
+    {
+      "case_id": "VAL-001-011",
+      "provider_input_tokens": 1835,
+      "provider_output_tokens": 268,
+      "provider_total_tokens": 2103,
+      "evidence_tokens": 1418,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00043604999999999995
+    },
+    {
+      "case_id": "VAL-001-012",
+      "provider_input_tokens": 1724,
+      "provider_output_tokens": 172,
+      "provider_total_tokens": 1896,
+      "evidence_tokens": 1377,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00036179999999999996
+    },
+    {
+      "case_id": "VAL-001-013",
+      "provider_input_tokens": 1877,
+      "provider_output_tokens": 379,
+      "provider_total_tokens": 2256,
+      "evidence_tokens": 1434,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005089500000000001
+    },
+    {
+      "case_id": "VAL-001-014",
+      "provider_input_tokens": 2587,
+      "provider_output_tokens": 241,
+      "provider_total_tokens": 2828,
+      "evidence_tokens": 2189,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00053265
+    },
+    {
+      "case_id": "VAL-001-015",
+      "provider_input_tokens": 2762,
+      "provider_output_tokens": 347,
+      "provider_total_tokens": 3109,
+      "evidence_tokens": 2398,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0006225
+    },
+    {
+      "case_id": "VAL-001-016",
+      "provider_input_tokens": 2383,
+      "provider_output_tokens": 266,
+      "provider_total_tokens": 2649,
+      "evidence_tokens": 2032,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005170499999999999
+    },
+    {
+      "case_id": "VAL-001-017",
+      "provider_input_tokens": 2590,
+      "provider_output_tokens": 286,
+      "provider_total_tokens": 2876,
+      "evidence_tokens": 2250,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005601
+    },
+    {
+      "case_id": "VAL-001-018",
+      "provider_input_tokens": 2970,
+      "provider_output_tokens": 241,
+      "provider_total_tokens": 3211,
+      "evidence_tokens": 2591,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005901
+    },
+    {
+      "case_id": "VAL-001-019",
+      "provider_input_tokens": 2568,
+      "provider_output_tokens": 235,
+      "provider_total_tokens": 2803,
+      "evidence_tokens": 2212,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005262
+    },
+    {
+      "case_id": "VAL-001-020",
+      "provider_input_tokens": 6268,
+      "provider_output_tokens": 229,
+      "provider_total_tokens": 6497,
+      "evidence_tokens": 5699,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0010776
+    },
+    {
+      "case_id": "VAL-001-021",
+      "provider_input_tokens": 2085,
+      "provider_output_tokens": 122,
+      "provider_total_tokens": 2207,
+      "evidence_tokens": 1760,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00038595
+    },
+    {
+      "case_id": "VAL-001-022",
+      "provider_input_tokens": 5603,
+      "provider_output_tokens": 307,
+      "provider_total_tokens": 5910,
+      "evidence_tokens": 5041,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0010246499999999998
+    },
+    {
+      "case_id": "VAL-001-023",
+      "provider_input_tokens": 4373,
+      "provider_output_tokens": 669,
+      "provider_total_tokens": 5042,
+      "evidence_tokens": 4004,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0010573499999999999
+    },
+    {
+      "case_id": "VAL-001-024",
+      "provider_input_tokens": 5017,
+      "provider_output_tokens": 466,
+      "provider_total_tokens": 5483,
+      "evidence_tokens": 4435,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00103215
+    },
+    {
+      "case_id": "VAL-001-025",
+      "provider_input_tokens": 2897,
+      "provider_output_tokens": 422,
+      "provider_total_tokens": 3319,
+      "evidence_tokens": 2533,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00068775
+    },
+    {
+      "case_id": "VAL-001-026",
+      "provider_input_tokens": 3570,
+      "provider_output_tokens": 291,
+      "provider_total_tokens": 3861,
+      "evidence_tokens": 2975,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0007101000000000001
+    },
+    {
+      "case_id": "VAL-001-027",
+      "provider_input_tokens": 1676,
+      "provider_output_tokens": 294,
+      "provider_total_tokens": 1970,
+      "evidence_tokens": 1275,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00042779999999999994
+    },
+    {
+      "case_id": "VAL-001-028",
+      "provider_input_tokens": 2364,
+      "provider_output_tokens": 385,
+      "provider_total_tokens": 2749,
+      "evidence_tokens": 1860,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005855999999999999
+    },
+    {
+      "case_id": "VAL-001-029",
+      "provider_input_tokens": 2041,
+      "provider_output_tokens": 252,
+      "provider_total_tokens": 2293,
+      "evidence_tokens": 1577,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00045735
+    },
+    {
+      "case_id": "VAL-001-030",
+      "provider_input_tokens": 2396,
+      "provider_output_tokens": 429,
+      "provider_total_tokens": 2825,
+      "evidence_tokens": 2005,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0006167999999999999
+    },
+    {
+      "case_id": "VAL-001-031",
+      "provider_input_tokens": 2182,
+      "provider_output_tokens": 361,
+      "provider_total_tokens": 2543,
+      "evidence_tokens": 1693,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005438999999999999
+    },
+    {
+      "case_id": "VAL-001-032",
+      "provider_input_tokens": 2812,
+      "provider_output_tokens": 198,
+      "provider_total_tokens": 3010,
+      "evidence_tokens": 2438,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005406
+    },
+    {
+      "case_id": "VAL-001-033",
+      "provider_input_tokens": 2775,
+      "provider_output_tokens": 306,
+      "provider_total_tokens": 3081,
+      "evidence_tokens": 2421,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00059985
+    },
+    {
+      "case_id": "VAL-001-034",
+      "provider_input_tokens": 2469,
+      "provider_output_tokens": 790,
+      "provider_total_tokens": 3259,
+      "evidence_tokens": 2027,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0008443499999999999
+    },
+    {
+      "case_id": "VAL-001-035",
+      "provider_input_tokens": 1745,
+      "provider_output_tokens": 139,
+      "provider_total_tokens": 1884,
+      "evidence_tokens": 1362,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00034514999999999996
+    },
+    {
+      "case_id": "VAL-001-036",
+      "provider_input_tokens": 1571,
+      "provider_output_tokens": 85,
+      "provider_total_tokens": 1656,
+      "evidence_tokens": 1140,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00028665
+    },
+    {
+      "case_id": "VAL-001-037",
+      "provider_input_tokens": 3181,
+      "provider_output_tokens": 282,
+      "provider_total_tokens": 3463,
+      "evidence_tokens": 2645,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00064635
+    },
+    {
+      "case_id": "VAL-001-038",
+      "provider_input_tokens": 2313,
+      "provider_output_tokens": 381,
+      "provider_total_tokens": 2694,
+      "evidence_tokens": 1948,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00057555
+    },
+    {
+      "case_id": "VAL-001-039",
+      "provider_input_tokens": 1274,
+      "provider_output_tokens": 128,
+      "provider_total_tokens": 1402,
+      "evidence_tokens": 910,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00026789999999999995
+    },
+    {
+      "case_id": "VAL-001-040",
+      "provider_input_tokens": 1795,
+      "provider_output_tokens": 255,
+      "provider_total_tokens": 2050,
+      "evidence_tokens": 1500,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00042225
+    },
+    {
+      "case_id": "VAL-001-041",
+      "provider_input_tokens": 4313,
+      "provider_output_tokens": 298,
+      "provider_total_tokens": 4611,
+      "evidence_tokens": 3826,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0008257499999999999
+    },
+    {
+      "case_id": "VAL-001-042",
+      "provider_input_tokens": 2746,
+      "provider_output_tokens": 339,
+      "provider_total_tokens": 3085,
+      "evidence_tokens": 2092,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0006152999999999999
+    },
+    {
+      "case_id": "VAL-001-043",
+      "provider_input_tokens": 1588,
+      "provider_output_tokens": 211,
+      "provider_total_tokens": 1799,
+      "evidence_tokens": 1182,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0003648
+    },
+    {
+      "case_id": "VAL-001-044",
+      "provider_input_tokens": 1965,
+      "provider_output_tokens": 414,
+      "provider_total_tokens": 2379,
+      "evidence_tokens": 1605,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00054315
+    },
+    {
+      "case_id": "VAL-001-045",
+      "provider_input_tokens": 3421,
+      "provider_output_tokens": 360,
+      "provider_total_tokens": 3781,
+      "evidence_tokens": 3056,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00072915
+    },
+    {
+      "case_id": "VAL-001-046",
+      "provider_input_tokens": 3606,
+      "provider_output_tokens": 138,
+      "provider_total_tokens": 3744,
+      "evidence_tokens": 3170,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0006236999999999999
+    },
+    {
+      "case_id": "VAL-001-047",
+      "provider_input_tokens": 3583,
+      "provider_output_tokens": 517,
+      "provider_total_tokens": 4100,
+      "evidence_tokens": 3124,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0008476499999999998
+    },
+    {
+      "case_id": "VAL-001-048",
+      "provider_input_tokens": 2134,
+      "provider_output_tokens": 334,
+      "provider_total_tokens": 2468,
+      "evidence_tokens": 1433,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.0005205
+    },
+    {
+      "case_id": "VAL-001-049",
+      "provider_input_tokens": 1987,
+      "provider_output_tokens": 434,
+      "provider_total_tokens": 2421,
+      "evidence_tokens": 1536,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00055845
+    },
+    {
+      "case_id": "VAL-001-050",
+      "provider_input_tokens": 1653,
+      "provider_output_tokens": 173,
+      "provider_total_tokens": 1826,
+      "evidence_tokens": 1251,
+      "latency_seconds": null,
+      "estimated_cost_usd": 0.00035175
+    }
+  ]
+}
