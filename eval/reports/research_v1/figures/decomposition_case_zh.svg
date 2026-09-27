@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="729" viewBox="0 0 1200 729">
+<rect width="1200" height="729" fill="#FFFFFF"/>
+<text x="54" y="42.1" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">A2 / VAL-001-046</text>
+<text x="54" y="93.0" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="34" font-weight="700" text-anchor="start">Requirement Query 找回原问题遗漏的证据</text>
+<text x="54" y="129.9" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="400" text-anchor="start">相同的 5 个 chunk 上下文预算；只验证 retrieval/context 机制，没有生成新答案。</text>
+<line x1="54" y1="152" x2="1146" y2="152" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="187.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">策略</text>
+<text x="386" y="187.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">目标来源在 BGE 排序中的位置（越靠前越好）</text>
+<text x="1129" y="187.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="end">必需证据</text>
+<line x1="385.0" y1="225" x2="385.0" y2="570" stroke="#C9D3D9" stroke-width="1"/>
+<text x="385.0" y="213.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="400" text-anchor="middle">1</text>
+<line x1="408.4666666666667" y1="225" x2="408.4666666666667" y2="570" stroke="#C9D3D9" stroke-width="1"/>
+<text x="408.4666666666667" y="213.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="400" text-anchor="middle">5</text>
+<line x1="672.4666666666667" y1="225" x2="672.4666666666667" y2="570" stroke="#C9D3D9" stroke-width="1"/>
+<text x="672.4666666666667" y="213.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="400" text-anchor="middle">50</text>
+<line x1="913.0" y1="225" x2="913.0" y2="570" stroke="#C9D3D9" stroke-width="1"/>
+<text x="913.0" y="213.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="400" text-anchor="middle">91</text>
+<text x="60" y="254.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">原始问题</text>
+<text x="385" y="251.9" fill="#AF483E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="start">候选池中缺失</text>
+<text x="1109" y="257.4" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" text-anchor="end">0/4</text>
+<text x="60" y="345.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">加深检索</text>
+<circle cx="842.6" cy="341" r="9" fill="#AF483E"/>
+<text x="827.6" y="339.9" fill="#AF483E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="end">第 79 / 91 名</text>
+<text x="1109" y="348.4" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" text-anchor="end">0/4</text>
+<text x="60" y="436.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">MMR / diversity</text>
+<text x="385" y="433.9" fill="#AF483E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="start">候选池中缺失</text>
+<text x="1109" y="439.4" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" text-anchor="end">0/4</text>
+<rect x="48" y="493" width="1095" height="69" rx="9" fill="#E3F3F0"/>
+<text x="60" y="527.7" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" font-weight="700" text-anchor="start">Requirement Query</text>
+<circle cx="390.8666666666667" cy="523" r="9" fill="#087F77"/>
+<text x="408.8666666666667" y="521.9" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">第 2 名 · 进入 Top5</text>
+<text x="1109" y="530.4" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" text-anchor="end">4/4</text>
+<line x1="54" y1="609" x2="1146" y2="609" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="643.9" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">机制得到验证</text>
+<text x="286" y="643.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">只有 Requirement Query 将缺失证据拉入 Top5 · 必需证据覆盖 0/4 → 4/4</text>
+<text x="54" y="687.9" fill="#AF483E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="start">不作为默认策略</text>
+<text x="286" y="687.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="400" text-anchor="start">明确表示问题仅 1/50；尚未测得默认路径的端到端收益。</text>
+<text x="54" y="721.2" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" font-weight="400" text-anchor="start">来源：eval/reports/research_v1/a2_case_study.json</text>
+</svg>

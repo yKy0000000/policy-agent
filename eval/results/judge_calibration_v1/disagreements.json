@@ -1,0 +1,138 @@
+{
+  "version": "judge-calibration-v1-disagreements",
+  "taxonomy": {
+    "scope": "human-grounded disagreements (model vs project-author human review)",
+    "pattern_counts": {
+      "partial semantic match": 1,
+      "scope mismatch": 1
+    },
+    "by_review_id": {
+      "JC-013": "partial semantic match",
+      "JC-053": "scope mismatch"
+    }
+  },
+  "items": [
+    {
+      "review_id": "JC-010",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02",
+      "required_aspect": "Email submissions should include a plain-text version in the email body even if attached.",
+      "human": "MISSING",
+      "historical": "MISSING",
+      "sol": "MISSING",
+      "human_grounded_disagreement": false,
+      "pattern": null,
+      "human_brief_reason": " Did not state that a plain-text copy should also appear in the email body when an attachment is used."
+    },
+    {
+      "review_id": "JC-013",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F01",
+      "required_aspect": "Next of kin, a designated successor, or another authorized person can request action on a deceased user's account.",
+      "human": "MISSING",
+      "historical": "COVERED",
+      "sol": "COVERED",
+      "human_grounded_disagreement": true,
+      "pattern": "partial semantic match",
+      "human_brief_reason": " \"Authorized individual\" is too generic and does not clearly identify next of kin / designated successor as eligible requester categories."
+    },
+    {
+      "review_id": "JC-053",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F01",
+      "required_aspect": "GitHub generally notifies users about pending account or repository requests.",
+      "human": "MISSING",
+      "historical": "COVERED",
+      "sol": "COVERED",
+      "human_grounded_disagreement": true,
+      "pattern": "scope mismatch",
+      "human_brief_reason": " Answer narrows the notification statement to account-information requests and does not clearly cover repository requests."
+    },
+    {
+      "review_id": "JC-055",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03",
+      "required_aspect": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+      "human": "MISSING",
+      "historical": "MISSING",
+      "sol": "MISSING",
+      "human_grounded_disagreement": false,
+      "pattern": null,
+      "human_brief_reason": " Only states that users are notified; omits the pre-disclosure verified-email notice, copy of legal process, and opportunity to challenge it."
+    },
+    {
+      "review_id": "JC-056",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04",
+      "required_aspect": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+      "human": "MISSING",
+      "historical": "MISSING",
+      "sol": "MISSING",
+      "human_grounded_disagreement": false,
+      "pattern": null,
+      "human_brief_reason": " Answer says specific delay circumstances are not provided, but the source explicitly lists preventing death/serious harm and an ongoing investigation."
+    }
+  ],
+  "human_missing_boundary": [
+    {
+      "review_id": "JC-010",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02",
+      "required_aspect": "Email submissions should include a plain-text version in the email body even if attached.",
+      "human": "MISSING",
+      "historical": "MISSING",
+      "sol": "MISSING",
+      "human_grounded_disagreement": false,
+      "pattern": null,
+      "human_brief_reason": " Did not state that a plain-text copy should also appear in the email body when an attachment is used."
+    },
+    {
+      "review_id": "JC-013",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F01",
+      "required_aspect": "Next of kin, a designated successor, or another authorized person can request action on a deceased user's account.",
+      "human": "MISSING",
+      "historical": "COVERED",
+      "sol": "COVERED",
+      "human_grounded_disagreement": true,
+      "pattern": "partial semantic match",
+      "human_brief_reason": " \"Authorized individual\" is too generic and does not clearly identify next of kin / designated successor as eligible requester categories."
+    },
+    {
+      "review_id": "JC-053",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F01",
+      "required_aspect": "GitHub generally notifies users about pending account or repository requests.",
+      "human": "MISSING",
+      "historical": "COVERED",
+      "sol": "COVERED",
+      "human_grounded_disagreement": true,
+      "pattern": "scope mismatch",
+      "human_brief_reason": " Answer narrows the notification statement to account-information requests and does not clearly cover repository requests."
+    },
+    {
+      "review_id": "JC-055",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03",
+      "required_aspect": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+      "human": "MISSING",
+      "historical": "MISSING",
+      "sol": "MISSING",
+      "human_grounded_disagreement": false,
+      "pattern": null,
+      "human_brief_reason": " Only states that users are notified; omits the pre-disclosure verified-email notice, copy of legal process, and opportunity to challenge it."
+    },
+    {
+      "review_id": "JC-056",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04",
+      "required_aspect": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+      "human": "MISSING",
+      "historical": "MISSING",
+      "sol": "MISSING",
+      "human_grounded_disagreement": false,
+      "pattern": null,
+      "human_brief_reason": " Answer says specific delay circumstances are not provided, but the source explicitly lists preventing death/serious harm and an ongoing investigation."
+    }
+  ]
+}

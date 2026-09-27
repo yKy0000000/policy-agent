@@ -1,0 +1,609 @@
+{
+  "version": "judge-calibration-v1",
+  "model": "gpt-5.6-sol",
+  "prompt_rules_sha256": "e24c1486a74efd85aa52fa7aa0c9a40184bac1b54ed93260acfdb2bda5bd3261",
+  "sample_sha256": "222ba9eb3858bacbdf6f53257154f7dd54079c8155f77ba1c6c005fabcd02230",
+  "status": "complete",
+  "judgments": [
+    {
+      "review_id": "JC-001",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer identifies the disabled content, its former location, and the URL or URLs to challenge.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-002",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F02",
+      "verdict": "COVERED",
+      "brief_reason": "It explicitly requires email address, name, telephone number, and physical address.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-003",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F03",
+      "verdict": "COVERED",
+      "brief_reason": "It includes the sworn, penalty-of-perjury statement of good-faith belief in mistake or misidentification.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-004",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F04",
+      "verdict": "COVERED",
+      "brief_reason": "It states the applicable federal jurisdiction rule and agreement to accept service of process.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-005",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F05",
+      "verdict": "COVERED",
+      "brief_reason": "It explicitly requires a physical or electronic signature.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-006",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F01",
+      "verdict": "COVERED",
+      "brief_reason": "It says contacting the user first is appreciated but not strictly required.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-007",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F03",
+      "verdict": "COVERED",
+      "brief_reason": "It limits the process to high-risk private information and says other removal requests cannot be processed simultaneously.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-008",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F04",
+      "verdict": "COVERED",
+      "brief_reason": "It explicitly warns that additional or multiple requests, including from additional contacts, may cause delays.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-009",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F01",
+      "verdict": "COVERED",
+      "brief_reason": "It identifies the contact form as the fastest submission option.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-010",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02",
+      "verdict": "MISSING",
+      "brief_reason": "It praises plain-text email but does not say an attached submission must also include plain text in the email body.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-011",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F03",
+      "verdict": "COVERED",
+      "brief_reason": "It says plain-text email is much faster than physical mail, adequately conveying that physical mail takes substantially longer.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-012",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F04",
+      "verdict": "COVERED",
+      "brief_reason": "It explicitly says the 10–14 day period begins when GitHub receives the notice, not when sent.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-013",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F01",
+      "verdict": "COVERED",
+      "brief_reason": "It states that an authorized individual may request action regarding the deceased user's account.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-014",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F04",
+      "verdict": "COVERED",
+      "brief_reason": "It requires providing the requester's relationship to the deceased, including successor status.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-015",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F05",
+      "verdict": "COVERED",
+      "brief_reason": "It requires stating the desired action and gives repository transfer and billing cancellation as examples.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-016",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F06",
+      "verdict": "COVERED",
+      "brief_reason": "It says GitHub may request photo identification, a death certificate, and documentation of authority.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-017",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F01",
+      "verdict": "COVERED",
+      "brief_reason": "It expressly says posting other people's personal information is prohibited.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-018",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F02",
+      "verdict": "COVERED",
+      "brief_reason": "It states nonconsensual photos or videos may invade privacy, especially when presenting safety risks.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-019",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F03",
+      "verdict": "COVERED",
+      "brief_reason": "It explicitly says GitHub considers whether reported content is publicly available elsewhere.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-020",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F04",
+      "verdict": "COVERED",
+      "brief_reason": "It states that publicly available information shared to harass or incite abuse may violate the bullying and harassment prohibition.",
+      "batch": 1,
+      "input_sha256": "4d75308899824bc0a4edbda64156f08aa45cf4b4dafb89685d27fb8514bfa204",
+      "response_sha256": "ab027bab740bbbdd969b403188dc623560ee094152f7958cca9be8404dbee3af"
+    },
+    {
+      "review_id": "JC-021",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly prohibits projects enabling sexual material involving minors or other child sexual abuse material.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-022",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly lists violent extremist propaganda and terrorist or violent extremist content among prohibited project uses.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-023",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly prohibits creating sexually explicit media of people without consent, including non-consensual intimate imagery.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-024",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer states GitHub examines project context and specifically identifies configuration, marketing, README, and other documentation.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-025",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says GitHub uses cookies to provide its websites.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-026",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says GitHub uses cookies to secure its websites.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-027",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says GitHub uses cookies to analyze website usage.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-028",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer states the cookie table may be updated because cookie numbers and names may change.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-029",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer states personal data is used only for the purposes for which it was collected, subject to the stated exception.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-030",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer requires reasonable need, a compatible purpose, and a legal basis for different further processing.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-031",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer says data provided while researching job openings may be processed for recruitment and subsequent employment purposes.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-032",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says that after applying and obtaining a role, the data may support entering an employment relationship.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-033",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer lists IP address, device information, and session details as automatically collected service usage information.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-034",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly lists the referring site, pages viewed, and links clicked as website usage data.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-035",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer states essential cookies provide functions including storing settings and recognizing users.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-036",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer says use of non-essential analytics cookies depends on jurisdiction and may require prior consent.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-037",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer describes a limited, compliance-conditioned license for extension development, testing, support, integration, and interoperability with Copilot.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-038",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly identifies extension removal, token revocation, and account or extension suspension as possible consequences.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-039",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F05",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says appeals may be submitted through GitHub's Appeal and Reinstatement Process.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-040",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly warns that pre-release software may malfunction and delete or corrupt data.",
+      "batch": 2,
+      "input_sha256": "0dca66a457b2652b0710730978a4c836585c3b710d3fcf7cf9e286273433ca4e",
+      "response_sha256": "8e6b3892a2bb07f0427d5af1203aaba095b4cea8a9e56ab3e5b0c9c601c327ad"
+    },
+    {
+      "review_id": "JC-041",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly states GitHub may change or discontinue previews at any time without notice.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-042",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly states GitHub has no obligation to provide maintenance, technical support, or updates.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-043",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says Actions may not be used for cryptomining.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-044",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer prohibits offering Actions or its elements as a standalone or integrated commercial product or service.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-045",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer prohibits disproportionate server burdens and specifically mentions CDN and serverless-application uses.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-046",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F05",
+      "verdict": "COVERED",
+      "brief_reason": "The answer lists job termination, use restrictions, repository disabling, and account suspension or termination as possible consequences.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-047",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer lists username under information displayed publicly by default.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-048",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer lists repositories the user has starred under information displayed publicly by default.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-049",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer lists real name as information users may optionally share publicly.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-050",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer identifies private email addresses as private account data GitHub may maintain.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-051",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F05",
+      "verdict": "COVERED",
+      "brief_reason": "The answer identifies payment details as private account data GitHub may maintain.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-052",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F06",
+      "verdict": "COVERED",
+      "brief_reason": "The answer identifies security access logs as private account data GitHub may maintain.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-053",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F01",
+      "verdict": "COVERED",
+      "brief_reason": "The answer states GitHub's policy is to notify affected users about requests for their account information.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-054",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly says notice may be withheld when prohibited by law or court order.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-055",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03",
+      "verdict": "MISSING",
+      "brief_reason": "The answer does not state that GitHub reasonably attempts pre-disclosure email notice with a copy of the legal process and an opportunity to challenge.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-056",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04",
+      "verdict": "MISSING",
+      "brief_reason": "The answer mentions exigent circumstances but expressly says their effect on notification timing is unspecified, omitting the stated grounds for delayed notice.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-057",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F02",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly states that even something small may be considered valuable when intended to improperly influence.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-058",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F03",
+      "verdict": "COVERED",
+      "brief_reason": "The answer identifies Disneyland, World Cup, and Olympics tickets as unacceptable gifts and characterizes premium major-event tickets as not allowed.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-059",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F04",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly identifies bleacher-type sporting-event tickets as acceptable customer hospitality.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    },
+    {
+      "review_id": "JC-060",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F05",
+      "verdict": "COVERED",
+      "brief_reason": "The answer explicitly identifies a reasonably priced dinner in town as acceptable customer hospitality.",
+      "batch": 3,
+      "input_sha256": "bcbf5eba811d4dd0c229ba765c2c7092e6aca633a711193a3f9ae6c5a4bfd685",
+      "response_sha256": "d0003045ed3803775669eff948cc779775da9dd2da4f082bf8e598bf92ed36c5"
+    }
+  ]
+}

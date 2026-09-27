@@ -1,0 +1,333 @@
+{
+  "version": "judge-calibration-v1",
+  "random_seed": 20260927,
+  "sampling": "15 of 50 case IDs, uniform without replacement; all QUERY_REQUIRED aspects",
+  "case_ids": [
+    "VAL-001-005",
+    "VAL-001-007",
+    "VAL-001-008",
+    "VAL-001-012",
+    "VAL-001-016",
+    "VAL-001-019",
+    "VAL-001-020",
+    "VAL-001-021",
+    "VAL-001-024",
+    "VAL-001-026",
+    "VAL-001-030",
+    "VAL-001-032",
+    "VAL-001-045",
+    "VAL-001-046",
+    "VAL-001-049"
+  ],
+  "sampled_cases": 15,
+  "sampled_judgments": 60,
+  "universe_cases": 50,
+  "universe_judgments": 208,
+  "source_sha256": {
+    "quality": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+    "generation": "1a0c2f0d873c93dcd58b1ff362e56001b99bf610c188671607aec3c6d81d2f11",
+    "labels": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716"
+  },
+  "items": [
+    {
+      "review_id": "JC-001",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F01"
+    },
+    {
+      "review_id": "JC-002",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F02"
+    },
+    {
+      "review_id": "JC-003",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F03"
+    },
+    {
+      "review_id": "JC-004",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F04"
+    },
+    {
+      "review_id": "JC-005",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F05"
+    },
+    {
+      "review_id": "JC-006",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F01"
+    },
+    {
+      "review_id": "JC-007",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F03"
+    },
+    {
+      "review_id": "JC-008",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F04"
+    },
+    {
+      "review_id": "JC-009",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F01"
+    },
+    {
+      "review_id": "JC-010",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02"
+    },
+    {
+      "review_id": "JC-011",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F03"
+    },
+    {
+      "review_id": "JC-012",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F04"
+    },
+    {
+      "review_id": "JC-013",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F01"
+    },
+    {
+      "review_id": "JC-014",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F04"
+    },
+    {
+      "review_id": "JC-015",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F05"
+    },
+    {
+      "review_id": "JC-016",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F06"
+    },
+    {
+      "review_id": "JC-017",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F01"
+    },
+    {
+      "review_id": "JC-018",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F02"
+    },
+    {
+      "review_id": "JC-019",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F03"
+    },
+    {
+      "review_id": "JC-020",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F04"
+    },
+    {
+      "review_id": "JC-021",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F01"
+    },
+    {
+      "review_id": "JC-022",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F02"
+    },
+    {
+      "review_id": "JC-023",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F03"
+    },
+    {
+      "review_id": "JC-024",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F04"
+    },
+    {
+      "review_id": "JC-025",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F01"
+    },
+    {
+      "review_id": "JC-026",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F02"
+    },
+    {
+      "review_id": "JC-027",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F03"
+    },
+    {
+      "review_id": "JC-028",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F04"
+    },
+    {
+      "review_id": "JC-029",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F01"
+    },
+    {
+      "review_id": "JC-030",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F02"
+    },
+    {
+      "review_id": "JC-031",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F03"
+    },
+    {
+      "review_id": "JC-032",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F04"
+    },
+    {
+      "review_id": "JC-033",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F01"
+    },
+    {
+      "review_id": "JC-034",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F02"
+    },
+    {
+      "review_id": "JC-035",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F03"
+    },
+    {
+      "review_id": "JC-036",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F04"
+    },
+    {
+      "review_id": "JC-037",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F01"
+    },
+    {
+      "review_id": "JC-038",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F04"
+    },
+    {
+      "review_id": "JC-039",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F05"
+    },
+    {
+      "review_id": "JC-040",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F02"
+    },
+    {
+      "review_id": "JC-041",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F03"
+    },
+    {
+      "review_id": "JC-042",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F04"
+    },
+    {
+      "review_id": "JC-043",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F02"
+    },
+    {
+      "review_id": "JC-044",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F03"
+    },
+    {
+      "review_id": "JC-045",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F04"
+    },
+    {
+      "review_id": "JC-046",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F05"
+    },
+    {
+      "review_id": "JC-047",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F01"
+    },
+    {
+      "review_id": "JC-048",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F02"
+    },
+    {
+      "review_id": "JC-049",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F03"
+    },
+    {
+      "review_id": "JC-050",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F04"
+    },
+    {
+      "review_id": "JC-051",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F05"
+    },
+    {
+      "review_id": "JC-052",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F06"
+    },
+    {
+      "review_id": "JC-053",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F01"
+    },
+    {
+      "review_id": "JC-054",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F02"
+    },
+    {
+      "review_id": "JC-055",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03"
+    },
+    {
+      "review_id": "JC-056",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04"
+    },
+    {
+      "review_id": "JC-057",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F02"
+    },
+    {
+      "review_id": "JC-058",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F03"
+    },
+    {
+      "review_id": "JC-059",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F04"
+    },
+    {
+      "review_id": "JC-060",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F05"
+    }
+  ]
+}

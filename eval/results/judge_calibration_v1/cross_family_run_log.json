@@ -1,0 +1,59 @@
+{
+  "version": "judge-calibration-v1-run-log",
+  "model": "gpt-5.6-sol",
+  "provider": "OpenAI via Codex CLI (ephemeral, read-only, --ignore-user-config --ignore-rules)",
+  "protocol": "eval/judge_calibration_v1_preregistration.md",
+  "status": "complete",
+  "completed_judgments": 60,
+  "pending_judgments": 0,
+  "frozen_hashes": {
+    "sample_sha256": "222ba9eb3858bacbdf6f53257154f7dd54079c8155f77ba1c6c005fabcd02230",
+    "judge_inputs_sha256": "e49e0880365631aa854868f44457b410b26e637b00b3f8b0fdaae37d30365e7b",
+    "cross_family_schema_sha256": "77d523f344b532425f41f44d9634845a42bda52419b92f231d47f007fd03b5ce",
+    "prompt_rules_sha256": "e24c1486a74efd85aa52fa7aa0c9a40184bac1b54ed93260acfdb2bda5bd3261"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "date_local": "2026-09-27",
+      "kind": "single-item codex exec before batching",
+      "outcome": "transport_timeout",
+      "verdicts_returned": 0,
+      "recorded_in": "eval/judge_calibration_v1_preregistration.md (Execution note)"
+    },
+    {
+      "attempt": 2,
+      "started_local": "2026-09-27T16:48+08:00",
+      "duration_seconds": 115.5,
+      "kind": "minimal codex exec probe (availability/transport check, no sample item)",
+      "outcome": "provider_usage_limit",
+      "verdicts_returned": 0,
+      "error_excerpt": "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 7:17 PM.",
+      "notes": "ChatGPT/Codex account-level quota window (retry window 2026-09-27T19:17+08:00). Account logged in via ChatGPT; gpt-5.6-sol is present in the local Codex model cache. No verdicts were generated, inferred, or substituted."
+    },
+    {
+      "attempt": 3,
+      "kind": "frozen 20-item batch 1 through gpt-5.6-sol",
+      "outcome": "provider_usage_limit",
+      "verdicts_returned": 0,
+      "notes": "No batch output was accepted or substituted."
+    },
+    {
+      "attempt": 4,
+      "kind": "resume frozen three-batch judging through gpt-5.6-sol",
+      "outcome": "complete",
+      "verdicts_returned": 60,
+      "notes": "Batch 1 retried with identical frozen inputs; batches 2 and 3 completed."
+    }
+  ],
+  "verdict_source": "gpt-5.6-sol cross-family judgments only",
+  "resume": {
+    "command": "& .venv\\Scripts\\python.exe eval/run_judge_calibration_v1.py judge",
+    "cwd": "policy-agent repository root",
+    "requirements": "gpt-5.6-sol reachable through Codex CLI; sample and prompt hashes unchanged; logical batches remain 20/20/20 in review-ID order"
+  },
+  "unresolved_technical_failures": [],
+  "output_artifact": "eval/results/judge_calibration_v1/cross_family_judgments.json",
+  "output_sha256": "041f895533117c39beb1d7fced50cc64f456c20b1f9b2884053ae1cd7069cc6f",
+  "completed_at_local": "2026-09-27T19:28:53+08:00"
+}

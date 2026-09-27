@@ -2,6 +2,8 @@
 
 The active workflow is `core/` + `benchmarks/` + `pipelines/` + `run_experiment.py` + `experiments/`. The files below remain at the `eval/` root or in their original directories for frozen research reproduction. They are not templates for new experiments.
 
+Historical `Human Truth` names mean **Frozen Adjudicated Labels V1** in current reporting. Across Validation V1 and Broad V3, two independent model agents initially agreed on 314/331 verdicts; the project author manually adjudicated the 17 disagreements. The legacy wording is preserved in frozen filenames and records, not a claim that 331 aspects received independent human annotation.
+
 ## Historical Python runners at `eval/` root
 
 These modules are imported by the existing regression suite, by other historical modules, or invoked through their old `python -m eval.<module>` path. Relocating them would change imports, root-relative paths, and replay commands across the frozen evidence chain.

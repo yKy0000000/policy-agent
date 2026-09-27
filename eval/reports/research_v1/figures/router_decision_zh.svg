@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="748" viewBox="0 0 1200 748">
+<rect width="1200" height="748" fill="#FFFFFF"/>
+<text x="54" y="42.1" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">A1 / 上下文分配</text>
+<text x="54" y="93.0" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="34" font-weight="700" text-anchor="start">为何删除 Router？</text>
+<text x="54" y="129.9" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="400" text-anchor="start">Selector 与 Router 答案质量相同，但前者成本更低、确认回归与 grounding 问题更少。</text>
+<line x1="54" y1="152" x2="1146" y2="152" stroke="#C9D3D9" stroke-width="1"/>
+<text x="55" y="188.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">策略</text>
+<text x="383" y="188.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">每题 Provider tokens</text>
+<text x="967" y="188.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="start">完整回答</text>
+<text x="1117" y="188.1" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" font-weight="700" text-anchor="end">定位</text>
+<text x="56" y="246.7" fill="#677783" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">Fixed Top5</text>
+<rect x="383" y="231" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="231" width="203.03770769230766" height="17" rx="8" fill="#677783"/>
+<text x="596.0377076923077" y="242.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">2,533</text>
+<text x="978" y="246.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">43/50</text>
+<text x="1131" y="244.0" fill="#677783" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" text-anchor="end">成本端点</text>
+<rect x="48" y="292" width="1090" height="57" rx="7" fill="#E3F3F0"/>
+<text x="56" y="321.7" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" font-weight="700" text-anchor="start">coverage_selector_v2</text>
+<rect x="383" y="307" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="307" width="262.9927846153846" height="17" rx="8" fill="#087F77"/>
+<text x="655.9927846153846" y="318.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">3,281</text>
+<text x="978" y="322.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">44/50</text>
+<text x="1131" y="320.0" fill="#087F77" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" text-anchor="end">主对比</text>
+<rect x="48" y="368" width="1090" height="57" rx="7" fill="#FAECE9"/>
+<text x="56" y="398.7" fill="#AF483E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">query_router_v1</text>
+<rect x="383" y="383" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="383" width="293.98026153846155" height="17" rx="8" fill="#AF483E"/>
+<text x="686.9802615384615" y="394.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">3,668</text>
+<text x="978" y="398.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">44/50</text>
+<text x="1131" y="396.0" fill="#AF483E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" text-anchor="end">淘汰</text>
+<text x="56" y="474.7" fill="#315F9C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">No-router adaptive</text>
+<rect x="383" y="459" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="459" width="496.06413846153845" height="17" rx="8" fill="#315F9C"/>
+<text x="889.0641384615385" y="470.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" font-weight="700" text-anchor="start">6,189</text>
+<text x="978" y="474.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">46/50</text>
+<text x="1131" y="472.0" fill="#315F9C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" text-anchor="end">质量端点</text>
+<line x1="54" y1="526" x2="1146" y2="526" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="564.7" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" font-weight="700" text-anchor="start">Selector 严格支配 Router</text>
+<text x="54" y="596.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="700" text-anchor="start">答案质量相同</text>
+<text x="54" y="624.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="400" text-anchor="start">完整回答 44/50 · 必需信息点 196/208</text>
+<text x="480" y="596.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="700" text-anchor="start">成本更低</text>
+<text x="480" y="624.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="400" text-anchor="start">3,281 vs 3,668 tokens/query</text>
+<text x="846" y="596.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="700" text-anchor="start">风险更少</text>
+<text x="846" y="624.9" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="400" text-anchor="start">确认回归 0 vs 1</text>
+<text x="846" y="653.0" fill="#15283A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="400" text-anchor="start">正确性/grounding 问题 1 vs 2</text>
+<line x1="54" y1="689" x2="1146" y2="689" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="717.0" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="400" text-anchor="start">严格支配同时依据答案覆盖、完整率、回归与 grounding；成本条形图不是唯一判据。</text>
+<text x="54" y="739.2" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" font-weight="400" text-anchor="start">来源：eval/reports/research_v1/final_metrics.json · 冻结 A1 Pareto</text>
+</svg>

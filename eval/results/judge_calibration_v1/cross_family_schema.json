@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "judgments": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "COVERED",
+              "MISSING",
+              "AMBIGUOUS"
+            ]
+          },
+          "brief_reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "verdict",
+          "brief_reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "judgments"
+  ],
+  "additionalProperties": false
+}

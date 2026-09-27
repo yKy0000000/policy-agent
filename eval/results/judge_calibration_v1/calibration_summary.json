@@ -1,0 +1,420 @@
+{
+  "version": "judge-calibration-v1-analysis",
+  "provenance": "AI-assisted blinded project-author review",
+  "seed": 20260927,
+  "sample": {
+    "cases": 15,
+    "aspects": 60,
+    "universe_aspects": 208,
+    "universe_cases": 50
+  },
+  "integrity": {
+    "sample_sha256": "222ba9eb3858bacbdf6f53257154f7dd54079c8155f77ba1c6c005fabcd02230",
+    "cross_family_sha256": "041f895533117c39beb1d7fced50cc64f456c20b1f9b2884053ae1cd7069cc6f",
+    "human_packet_sha256": "5a618029ad1ed295552f929e78b18d59d085dc1b5999841f174bbc1a9c36192a",
+    "judge_inputs_sha256": "e49e0880365631aa854868f44457b410b26e637b00b3f8b0fdaae37d30365e7b",
+    "source_sha256": {
+      "quality": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+      "generation": "1a0c2f0d873c93dcd58b1ff362e56001b99bf610c188671607aec3c6d81d2f11",
+      "labels": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716"
+    },
+    "jc_ids": "JC-001..JC-060 exactly once",
+    "human_pending": 0,
+    "cross_family_completed": 60
+  },
+  "verdict_totals": {
+    "human": {
+      "COVERED": 55,
+      "MISSING": 5
+    },
+    "historical": {
+      "COVERED": 57,
+      "MISSING": 3
+    },
+    "sol": {
+      "COVERED": 57,
+      "MISSING": 3
+    }
+  },
+  "historical_vs_human": {
+    "matrix": {
+      "COVERED": {
+        "COVERED": 55,
+        "MISSING": 0
+      },
+      "MISSING": {
+        "COVERED": 2,
+        "MISSING": 3
+      }
+    },
+    "comparable_ids": [
+      "JC-001",
+      "JC-002",
+      "JC-003",
+      "JC-004",
+      "JC-005",
+      "JC-006",
+      "JC-007",
+      "JC-008",
+      "JC-009",
+      "JC-010",
+      "JC-011",
+      "JC-012",
+      "JC-013",
+      "JC-014",
+      "JC-015",
+      "JC-016",
+      "JC-017",
+      "JC-018",
+      "JC-019",
+      "JC-020",
+      "JC-021",
+      "JC-022",
+      "JC-023",
+      "JC-024",
+      "JC-025",
+      "JC-026",
+      "JC-027",
+      "JC-028",
+      "JC-029",
+      "JC-030",
+      "JC-031",
+      "JC-032",
+      "JC-033",
+      "JC-034",
+      "JC-035",
+      "JC-036",
+      "JC-037",
+      "JC-038",
+      "JC-039",
+      "JC-040",
+      "JC-041",
+      "JC-042",
+      "JC-043",
+      "JC-044",
+      "JC-045",
+      "JC-046",
+      "JC-047",
+      "JC-048",
+      "JC-049",
+      "JC-050",
+      "JC-051",
+      "JC-052",
+      "JC-053",
+      "JC-054",
+      "JC-055",
+      "JC-056",
+      "JC-057",
+      "JC-058",
+      "JC-059",
+      "JC-060"
+    ],
+    "comparable": 60,
+    "agreement": 58,
+    "agreement_rate": 0.9666666666666667,
+    "wilson_95": [
+      0.886362257256914,
+      0.9908106807438021
+    ],
+    "false_positive_ids": [
+      "JC-013",
+      "JC-053"
+    ],
+    "false_positives": 2,
+    "false_negative_ids": [],
+    "false_negatives": 0
+  },
+  "sol_vs_human": {
+    "matrix": {
+      "COVERED": {
+        "COVERED": 55,
+        "MISSING": 0,
+        "AMBIGUOUS": 0
+      },
+      "MISSING": {
+        "COVERED": 2,
+        "MISSING": 3,
+        "AMBIGUOUS": 0
+      }
+    },
+    "comparable_ids": [
+      "JC-001",
+      "JC-002",
+      "JC-003",
+      "JC-004",
+      "JC-005",
+      "JC-006",
+      "JC-007",
+      "JC-008",
+      "JC-009",
+      "JC-010",
+      "JC-011",
+      "JC-012",
+      "JC-013",
+      "JC-014",
+      "JC-015",
+      "JC-016",
+      "JC-017",
+      "JC-018",
+      "JC-019",
+      "JC-020",
+      "JC-021",
+      "JC-022",
+      "JC-023",
+      "JC-024",
+      "JC-025",
+      "JC-026",
+      "JC-027",
+      "JC-028",
+      "JC-029",
+      "JC-030",
+      "JC-031",
+      "JC-032",
+      "JC-033",
+      "JC-034",
+      "JC-035",
+      "JC-036",
+      "JC-037",
+      "JC-038",
+      "JC-039",
+      "JC-040",
+      "JC-041",
+      "JC-042",
+      "JC-043",
+      "JC-044",
+      "JC-045",
+      "JC-046",
+      "JC-047",
+      "JC-048",
+      "JC-049",
+      "JC-050",
+      "JC-051",
+      "JC-052",
+      "JC-053",
+      "JC-054",
+      "JC-055",
+      "JC-056",
+      "JC-057",
+      "JC-058",
+      "JC-059",
+      "JC-060"
+    ],
+    "comparable": 60,
+    "agreement": 58,
+    "agreement_rate": 0.9666666666666667,
+    "wilson_95": [
+      0.886362257256914,
+      0.9908106807438021
+    ],
+    "false_positive_ids": [
+      "JC-013",
+      "JC-053"
+    ],
+    "false_positives": 2,
+    "false_negative_ids": [],
+    "false_negatives": 0
+  },
+  "historical_vs_sol": {
+    "matrix": {
+      "COVERED": {
+        "COVERED": 57,
+        "MISSING": 0,
+        "AMBIGUOUS": 0
+      },
+      "MISSING": {
+        "COVERED": 0,
+        "MISSING": 3,
+        "AMBIGUOUS": 0
+      }
+    },
+    "comparable_ids": [
+      "JC-001",
+      "JC-002",
+      "JC-003",
+      "JC-004",
+      "JC-005",
+      "JC-006",
+      "JC-007",
+      "JC-008",
+      "JC-009",
+      "JC-010",
+      "JC-011",
+      "JC-012",
+      "JC-013",
+      "JC-014",
+      "JC-015",
+      "JC-016",
+      "JC-017",
+      "JC-018",
+      "JC-019",
+      "JC-020",
+      "JC-021",
+      "JC-022",
+      "JC-023",
+      "JC-024",
+      "JC-025",
+      "JC-026",
+      "JC-027",
+      "JC-028",
+      "JC-029",
+      "JC-030",
+      "JC-031",
+      "JC-032",
+      "JC-033",
+      "JC-034",
+      "JC-035",
+      "JC-036",
+      "JC-037",
+      "JC-038",
+      "JC-039",
+      "JC-040",
+      "JC-041",
+      "JC-042",
+      "JC-043",
+      "JC-044",
+      "JC-045",
+      "JC-046",
+      "JC-047",
+      "JC-048",
+      "JC-049",
+      "JC-050",
+      "JC-051",
+      "JC-052",
+      "JC-053",
+      "JC-054",
+      "JC-055",
+      "JC-056",
+      "JC-057",
+      "JC-058",
+      "JC-059",
+      "JC-060"
+    ],
+    "comparable": 60,
+    "agreement": 60,
+    "agreement_rate": 1.0,
+    "wilson_95": [
+      0.93982814785791,
+      0.9999999999999998
+    ],
+    "false_positive_ids": [],
+    "false_positives": 0,
+    "false_negative_ids": [],
+    "false_negatives": 0,
+    "historical_covered_sol_missing": 0,
+    "historical_missing_sol_covered": 0,
+    "ambiguous_involvement": 0
+  },
+  "headline_sensitivity": {
+    "label": "illustrative sensitivity analysis — not a corrected benchmark score",
+    "historical_vs_human_disagreements": 2,
+    "n": 60,
+    "observed_disagreement_rate": 0.03333333333333333,
+    "observed_disagreement_rate_wilson_95": [
+      0.00918931925619787,
+      0.11363774274308597
+    ],
+    "false_positives": 2,
+    "false_negatives": 0
+  },
+  "taxonomy": {
+    "scope": "human-grounded disagreements (model vs project-author human review)",
+    "pattern_counts": {
+      "partial semantic match": 1,
+      "scope mismatch": 1
+    },
+    "by_review_id": {
+      "JC-013": "partial semantic match",
+      "JC-053": "scope mismatch"
+    }
+  },
+  "complete_case": {
+    "definition": "all sampled QUERY_REQUIRED aspects COVERED; any AMBIGUOUS makes the case indeterminate",
+    "historical": {
+      "counts": {
+        "Complete": 13,
+        "Incomplete": 2,
+        "Indeterminate": 0
+      },
+      "status": {
+        "VAL-001-005": "Complete",
+        "VAL-001-007": "Complete",
+        "VAL-001-008": "Incomplete",
+        "VAL-001-012": "Complete",
+        "VAL-001-016": "Complete",
+        "VAL-001-019": "Complete",
+        "VAL-001-020": "Complete",
+        "VAL-001-021": "Complete",
+        "VAL-001-024": "Complete",
+        "VAL-001-026": "Complete",
+        "VAL-001-030": "Complete",
+        "VAL-001-032": "Complete",
+        "VAL-001-045": "Complete",
+        "VAL-001-046": "Incomplete",
+        "VAL-001-049": "Complete"
+      },
+      "indeterminate": []
+    },
+    "sol": {
+      "counts": {
+        "Complete": 13,
+        "Incomplete": 2,
+        "Indeterminate": 0
+      },
+      "status": {
+        "VAL-001-005": "Complete",
+        "VAL-001-007": "Complete",
+        "VAL-001-008": "Incomplete",
+        "VAL-001-012": "Complete",
+        "VAL-001-016": "Complete",
+        "VAL-001-019": "Complete",
+        "VAL-001-020": "Complete",
+        "VAL-001-021": "Complete",
+        "VAL-001-024": "Complete",
+        "VAL-001-026": "Complete",
+        "VAL-001-030": "Complete",
+        "VAL-001-032": "Complete",
+        "VAL-001-045": "Complete",
+        "VAL-001-046": "Incomplete",
+        "VAL-001-049": "Complete"
+      },
+      "indeterminate": []
+    },
+    "human": {
+      "counts": {
+        "Complete": 12,
+        "Incomplete": 3,
+        "Indeterminate": 0
+      },
+      "status": {
+        "VAL-001-005": "Complete",
+        "VAL-001-007": "Complete",
+        "VAL-001-008": "Incomplete",
+        "VAL-001-012": "Incomplete",
+        "VAL-001-016": "Complete",
+        "VAL-001-019": "Complete",
+        "VAL-001-020": "Complete",
+        "VAL-001-021": "Complete",
+        "VAL-001-024": "Complete",
+        "VAL-001-026": "Complete",
+        "VAL-001-030": "Complete",
+        "VAL-001-032": "Complete",
+        "VAL-001-045": "Complete",
+        "VAL-001-046": "Incomplete",
+        "VAL-001-049": "Complete"
+      },
+      "indeterminate": []
+    },
+    "historical_vs_human_mismatch_case_ids": [
+      "VAL-001-012"
+    ],
+    "sol_vs_human_mismatch_case_ids": [
+      "VAL-001-012"
+    ]
+  },
+  "bias_direction": "observed over-credit tendency in the audited sample",
+  "notes": [
+    "inter-model agreement is not accuracy",
+    "aspect-level agreement does not replace case-level reliability",
+    "sample-level sensitivity only; not a corrected benchmark score"
+  ]
+}

@@ -1,0 +1,1901 @@
+{
+  "version": "judge-calibration-v1-inputs",
+  "items": [
+    {
+      "review_id": "JC-001",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F01",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "required_aspect": "A counter notice must identify the disabled content and its prior URL.",
+      "candidate_answer": "To submit a DMCA counter notice for disabled GitHub content, the notice must:\n\n**Identify the disabled content and its location.** You need to identify the content that was disabled and where it appeared; the disabled content should have been identified by URL in the takedown notice, and you simply copy the URL(s) you want to challenge [S1].\n\n**Provide your contact information.** This includes your email address, name, telephone number, and physical address [S1].\n\n**Include a good-faith belief statement under penalty of perjury.** Specifically: \"I swear, under penalty of perjury, that I have a good-faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled.\" You may also explain why you believe there was a mistake or misidentification [S1].\n\n**Include a consent-to-jurisdiction statement.** Specifically: \"I consent to the jurisdiction of Federal District Court for the judicial district in which my address is located (if in the United States, otherwise the Northern District of California where GitHub is located), and I will accept service of process from the person who provided the DMCA notification or an agent of such person\" [S1].\n\n**Include your physical or electronic signature** [S1].\n\n**Include the acknowledgment statement** (optional in effect): \"I have read and understand GitHub's Guide to Filing a DMCA Counter Notice.\" GitHub won't refuse to process an otherwise complete counter notice if you omit this, but it may ask you to go back and read the guidelines [S1].\n\n**Legal commitments you are making:**\n\n- A counter notice is a legal statement — not just to GitHub, but to the complaining party — which is why all fields must be filled out completely [S2].\n- You consent to being sued: if the complaining party wishes to keep the content disabled, they must initiate a legal action seeking a court order to restrain you from engaging in infringing activity, and you consent to that in the counter notice [S2].\n- Your statements are made under penalty of perjury [S2].\n- Your counter notice will be published: after redacting personal information, GitHub publishes all complete and actionable counter notices, and may provide a complete unredacted copy to any party whose rights would be affected [S2].\n- GitHub's role is limited: it exercises little discretion other than determining whether notices meet the minimum requirements of the DMCA; it is up to the parties (and their lawyers) to evaluate the merit of their claims [S2].\n\nNote that if you submit a counter notice, GitHub will wait 10–14 days and then re-enable your content unless the copyright owner initiates a legal action against you before then [S4].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "Your Counter Notice Must...",
+          "source_excerpt": "1. ***Identify the content that was disabled and the location where it appeared.*** <!-- markdownlint-disable-line emphasis-style --> The disabled content should have been identified by URL in the takedown notice. You simply need to copy the URL(s) that you want to challenge.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Your Counter Notice Must...",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Before You Start",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-002",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F02",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "required_aspect": "It must provide the submitter's email, name, phone, and physical address.",
+      "candidate_answer": "To submit a DMCA counter notice for disabled GitHub content, the notice must:\n\n**Identify the disabled content and its location.** You need to identify the content that was disabled and where it appeared; the disabled content should have been identified by URL in the takedown notice, and you simply copy the URL(s) you want to challenge [S1].\n\n**Provide your contact information.** This includes your email address, name, telephone number, and physical address [S1].\n\n**Include a good-faith belief statement under penalty of perjury.** Specifically: \"I swear, under penalty of perjury, that I have a good-faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled.\" You may also explain why you believe there was a mistake or misidentification [S1].\n\n**Include a consent-to-jurisdiction statement.** Specifically: \"I consent to the jurisdiction of Federal District Court for the judicial district in which my address is located (if in the United States, otherwise the Northern District of California where GitHub is located), and I will accept service of process from the person who provided the DMCA notification or an agent of such person\" [S1].\n\n**Include your physical or electronic signature** [S1].\n\n**Include the acknowledgment statement** (optional in effect): \"I have read and understand GitHub's Guide to Filing a DMCA Counter Notice.\" GitHub won't refuse to process an otherwise complete counter notice if you omit this, but it may ask you to go back and read the guidelines [S1].\n\n**Legal commitments you are making:**\n\n- A counter notice is a legal statement — not just to GitHub, but to the complaining party — which is why all fields must be filled out completely [S2].\n- You consent to being sued: if the complaining party wishes to keep the content disabled, they must initiate a legal action seeking a court order to restrain you from engaging in infringing activity, and you consent to that in the counter notice [S2].\n- Your statements are made under penalty of perjury [S2].\n- Your counter notice will be published: after redacting personal information, GitHub publishes all complete and actionable counter notices, and may provide a complete unredacted copy to any party whose rights would be affected [S2].\n- GitHub's role is limited: it exercises little discretion other than determining whether notices meet the minimum requirements of the DMCA; it is up to the parties (and their lawyers) to evaluate the merit of their claims [S2].\n\nNote that if you submit a counter notice, GitHub will wait 10–14 days and then re-enable your content unless the copyright owner initiates a legal action against you before then [S4].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "Your Counter Notice Must...",
+          "source_excerpt": "1. **Provide your contact information.** Include your email address, name, telephone number, and physical address.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Your Counter Notice Must...",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Before You Start",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-003",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F03",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "required_aspect": "It must include a sworn good-faith belief that removal was a mistake or misidentification.",
+      "candidate_answer": "To submit a DMCA counter notice for disabled GitHub content, the notice must:\n\n**Identify the disabled content and its location.** You need to identify the content that was disabled and where it appeared; the disabled content should have been identified by URL in the takedown notice, and you simply copy the URL(s) you want to challenge [S1].\n\n**Provide your contact information.** This includes your email address, name, telephone number, and physical address [S1].\n\n**Include a good-faith belief statement under penalty of perjury.** Specifically: \"I swear, under penalty of perjury, that I have a good-faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled.\" You may also explain why you believe there was a mistake or misidentification [S1].\n\n**Include a consent-to-jurisdiction statement.** Specifically: \"I consent to the jurisdiction of Federal District Court for the judicial district in which my address is located (if in the United States, otherwise the Northern District of California where GitHub is located), and I will accept service of process from the person who provided the DMCA notification or an agent of such person\" [S1].\n\n**Include your physical or electronic signature** [S1].\n\n**Include the acknowledgment statement** (optional in effect): \"I have read and understand GitHub's Guide to Filing a DMCA Counter Notice.\" GitHub won't refuse to process an otherwise complete counter notice if you omit this, but it may ask you to go back and read the guidelines [S1].\n\n**Legal commitments you are making:**\n\n- A counter notice is a legal statement — not just to GitHub, but to the complaining party — which is why all fields must be filled out completely [S2].\n- You consent to being sued: if the complaining party wishes to keep the content disabled, they must initiate a legal action seeking a court order to restrain you from engaging in infringing activity, and you consent to that in the counter notice [S2].\n- Your statements are made under penalty of perjury [S2].\n- Your counter notice will be published: after redacting personal information, GitHub publishes all complete and actionable counter notices, and may provide a complete unredacted copy to any party whose rights would be affected [S2].\n- GitHub's role is limited: it exercises little discretion other than determining whether notices meet the minimum requirements of the DMCA; it is up to the parties (and their lawyers) to evaluate the merit of their claims [S2].\n\nNote that if you submit a counter notice, GitHub will wait 10–14 days and then re-enable your content unless the copyright owner initiates a legal action against you before then [S4].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "Your Counter Notice Must...",
+          "source_excerpt": "1. ***Include the following statement: \"I swear, under penalty of perjury, that I have a good-faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled.\"*** <!-- markdownlint-disable-line emphasis-style --> You may also choose to communicate the reasons why you believe there was a mistake or misidentification. If you think of your counter notice as a \"note\" to the complaining party, this is a chance to explain why they should not take the next step and file a lawsuit in response. This is yet another reason to work with a lawyer when submitting a counter notice.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Your Counter Notice Must...",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Before You Start",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-004",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F04",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "required_aspect": "It must consent to the specified federal court's jurisdiction and accept service of process.",
+      "candidate_answer": "To submit a DMCA counter notice for disabled GitHub content, the notice must:\n\n**Identify the disabled content and its location.** You need to identify the content that was disabled and where it appeared; the disabled content should have been identified by URL in the takedown notice, and you simply copy the URL(s) you want to challenge [S1].\n\n**Provide your contact information.** This includes your email address, name, telephone number, and physical address [S1].\n\n**Include a good-faith belief statement under penalty of perjury.** Specifically: \"I swear, under penalty of perjury, that I have a good-faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled.\" You may also explain why you believe there was a mistake or misidentification [S1].\n\n**Include a consent-to-jurisdiction statement.** Specifically: \"I consent to the jurisdiction of Federal District Court for the judicial district in which my address is located (if in the United States, otherwise the Northern District of California where GitHub is located), and I will accept service of process from the person who provided the DMCA notification or an agent of such person\" [S1].\n\n**Include your physical or electronic signature** [S1].\n\n**Include the acknowledgment statement** (optional in effect): \"I have read and understand GitHub's Guide to Filing a DMCA Counter Notice.\" GitHub won't refuse to process an otherwise complete counter notice if you omit this, but it may ask you to go back and read the guidelines [S1].\n\n**Legal commitments you are making:**\n\n- A counter notice is a legal statement — not just to GitHub, but to the complaining party — which is why all fields must be filled out completely [S2].\n- You consent to being sued: if the complaining party wishes to keep the content disabled, they must initiate a legal action seeking a court order to restrain you from engaging in infringing activity, and you consent to that in the counter notice [S2].\n- Your statements are made under penalty of perjury [S2].\n- Your counter notice will be published: after redacting personal information, GitHub publishes all complete and actionable counter notices, and may provide a complete unredacted copy to any party whose rights would be affected [S2].\n- GitHub's role is limited: it exercises little discretion other than determining whether notices meet the minimum requirements of the DMCA; it is up to the parties (and their lawyers) to evaluate the merit of their claims [S2].\n\nNote that if you submit a counter notice, GitHub will wait 10–14 days and then re-enable your content unless the copyright owner initiates a legal action against you before then [S4].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "Your Counter Notice Must...",
+          "source_excerpt": "1. ***Include the following statement: \"I consent to the jurisdiction of Federal District Court for the judicial district in which my address is located (if in the United States, otherwise the Northern District of California where GitHub is located), and I will accept service of process from the person who provided the DMCA notification or an agent of such person.\"*** <!-- markdownlint-disable-line emphasis-style -->",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Your Counter Notice Must...",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Before You Start",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-005",
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F05",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "required_aspect": "It must include a physical or electronic signature.",
+      "candidate_answer": "To submit a DMCA counter notice for disabled GitHub content, the notice must:\n\n**Identify the disabled content and its location.** You need to identify the content that was disabled and where it appeared; the disabled content should have been identified by URL in the takedown notice, and you simply copy the URL(s) you want to challenge [S1].\n\n**Provide your contact information.** This includes your email address, name, telephone number, and physical address [S1].\n\n**Include a good-faith belief statement under penalty of perjury.** Specifically: \"I swear, under penalty of perjury, that I have a good-faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled.\" You may also explain why you believe there was a mistake or misidentification [S1].\n\n**Include a consent-to-jurisdiction statement.** Specifically: \"I consent to the jurisdiction of Federal District Court for the judicial district in which my address is located (if in the United States, otherwise the Northern District of California where GitHub is located), and I will accept service of process from the person who provided the DMCA notification or an agent of such person\" [S1].\n\n**Include your physical or electronic signature** [S1].\n\n**Include the acknowledgment statement** (optional in effect): \"I have read and understand GitHub's Guide to Filing a DMCA Counter Notice.\" GitHub won't refuse to process an otherwise complete counter notice if you omit this, but it may ask you to go back and read the guidelines [S1].\n\n**Legal commitments you are making:**\n\n- A counter notice is a legal statement — not just to GitHub, but to the complaining party — which is why all fields must be filled out completely [S2].\n- You consent to being sued: if the complaining party wishes to keep the content disabled, they must initiate a legal action seeking a court order to restrain you from engaging in infringing activity, and you consent to that in the counter notice [S2].\n- Your statements are made under penalty of perjury [S2].\n- Your counter notice will be published: after redacting personal information, GitHub publishes all complete and actionable counter notices, and may provide a complete unredacted copy to any party whose rights would be affected [S2].\n- GitHub's role is limited: it exercises little discretion other than determining whether notices meet the minimum requirements of the DMCA; it is up to the parties (and their lawyers) to evaluate the merit of their claims [S2].\n\nNote that if you submit a counter notice, GitHub will wait 10–14 days and then re-enable your content unless the copyright owner initiates a legal action against you before then [S4].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "Your Counter Notice Must...",
+          "source_excerpt": "1. **Include your physical or electronic signature.**",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Your Counter Notice Must...",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "Before You Start",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-006",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F01",
+      "query": "Before asking GitHub to remove private information, how should I prepare the request and what may slow its review?",
+      "required_aspect": "Contacting the user first is encouraged but is not required.",
+      "candidate_answer": "To prepare a private information removal request:\n\n- **Try contacting the user first.** This is not strictly required but is appreciated; you may find contact info on their profile, README, or Support file, or reach them via an issue or pull request [S1].\n- **Have a trained professional evaluate the facts.** Avoid automated bots or bulk complaints; these often lack sufficient explanations, require back-and-forth, and cause delays even when valid [S1].\n- **Send the correct type of request.** This process is only for high-risk private information, not for other content such as potentially infringing content, and other removal requests cannot be processed simultaneously [S1]. Send private information requests separately from infringement requests [S1].\n- **Investigate and provide required details yourself.** You must conduct your own investigation and provide the details GitHub requires, most importantly an explanation of how the data poses a security risk; GitHub will not search for or make initial determinations about private information on your behalf [S3].\n- **Be specific about location.** Complaints must be as specific as possible so GitHub can verify complete removal and know exactly where to look [S5].\n- **Submit via the contact form with plain text.** Include a plain-text version of your request in the message body; attachments may cause processing delays [S2].\n\nWhat may slow review:\n\n- **Volume of requests.** Due to request volume, review may take time [S1].\n- **Additional or multiple requests.** Additional requests, or multiple requests from additional points of contact, may result in delays [S1].\n- **Attachments.** Sending your request as an attachment may cause processing delays [S2].\n- **Insufficient detail.** If the request is not detailed enough to demonstrate the security risk and let GitHub locate the data, GitHub will reply asking for more information [S3].\n- **Requests covering entire files or repositories.** You must justify the security risk, and this may increase processing time [S4].\n- **Bot-submitted or bulk complaints.** These often lack sufficient explanations, requiring back-and-forth and causing delays [S1].\n\nNote: The provided policies do not specify a maximum or guaranteed review timeframe beyond stating that processing may take time due to volume [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/github-private-information-removal-policy.md",
+          "section": "Things to Know",
+          "source_excerpt": "**Ask Nicely First.** A great first step before sending us a request to remove data is to try contacting the user directly. They may have listed contact information on their public profile page or in the repository's README or Support file, or you could get in touch by creating an issue or pull request in the repository. This is not strictly required, but it is appreciated.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "Things to Know",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "How to Submit Your Request",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "How Does This Actually Work?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "What is Private Information? > Private information removal requests are _not_ appropriate for:",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "Sending A Private Information Removal Request",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-007",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F03",
+      "query": "Before asking GitHub to remove private information, how should I prepare the request and what may slow its review?",
+      "required_aspect": "The process is an exceptional service for high-risk content and cannot handle unrelated removal requests at the same time.",
+      "candidate_answer": "To prepare a private information removal request:\n\n- **Try contacting the user first.** This is not strictly required but is appreciated; you may find contact info on their profile, README, or Support file, or reach them via an issue or pull request [S1].\n- **Have a trained professional evaluate the facts.** Avoid automated bots or bulk complaints; these often lack sufficient explanations, require back-and-forth, and cause delays even when valid [S1].\n- **Send the correct type of request.** This process is only for high-risk private information, not for other content such as potentially infringing content, and other removal requests cannot be processed simultaneously [S1]. Send private information requests separately from infringement requests [S1].\n- **Investigate and provide required details yourself.** You must conduct your own investigation and provide the details GitHub requires, most importantly an explanation of how the data poses a security risk; GitHub will not search for or make initial determinations about private information on your behalf [S3].\n- **Be specific about location.** Complaints must be as specific as possible so GitHub can verify complete removal and know exactly where to look [S5].\n- **Submit via the contact form with plain text.** Include a plain-text version of your request in the message body; attachments may cause processing delays [S2].\n\nWhat may slow review:\n\n- **Volume of requests.** Due to request volume, review may take time [S1].\n- **Additional or multiple requests.** Additional requests, or multiple requests from additional points of contact, may result in delays [S1].\n- **Attachments.** Sending your request as an attachment may cause processing delays [S2].\n- **Insufficient detail.** If the request is not detailed enough to demonstrate the security risk and let GitHub locate the data, GitHub will reply asking for more information [S3].\n- **Requests covering entire files or repositories.** You must justify the security risk, and this may increase processing time [S4].\n- **Bot-submitted or bulk complaints.** These often lack sufficient explanations, requiring back-and-forth and causing delays [S1].\n\nNote: The provided policies do not specify a maximum or guaranteed review timeframe beyond stating that processing may take time due to volume [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/github-private-information-removal-policy.md",
+          "section": "Things to Know",
+          "source_excerpt": "**Send In The Correct Request.** As noted above, we offer this private information removal process as an exceptional service only for high-risk content. We are not able to use this process to remove other kinds of content, such as potentially infringing content, and we are not able to process any other kinds of removal requests simultaneously while processing private information removal requests. We will be able to help you more quickly if you send in your private information removal requests separately from any requests to remove potentially infringing content. If you are unsure whether your request involves only private information or also involves other legal matters, please consult legal counsel.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "Things to Know",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "How to Submit Your Request",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "How Does This Actually Work?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "What is Private Information? > Private information removal requests are _not_ appropriate for:",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "Sending A Private Information Removal Request",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-008",
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F04",
+      "query": "Before asking GitHub to remove private information, how should I prepare the request and what may slow its review?",
+      "required_aspect": "Multiple or additional requests can delay review.",
+      "candidate_answer": "To prepare a private information removal request:\n\n- **Try contacting the user first.** This is not strictly required but is appreciated; you may find contact info on their profile, README, or Support file, or reach them via an issue or pull request [S1].\n- **Have a trained professional evaluate the facts.** Avoid automated bots or bulk complaints; these often lack sufficient explanations, require back-and-forth, and cause delays even when valid [S1].\n- **Send the correct type of request.** This process is only for high-risk private information, not for other content such as potentially infringing content, and other removal requests cannot be processed simultaneously [S1]. Send private information requests separately from infringement requests [S1].\n- **Investigate and provide required details yourself.** You must conduct your own investigation and provide the details GitHub requires, most importantly an explanation of how the data poses a security risk; GitHub will not search for or make initial determinations about private information on your behalf [S3].\n- **Be specific about location.** Complaints must be as specific as possible so GitHub can verify complete removal and know exactly where to look [S5].\n- **Submit via the contact form with plain text.** Include a plain-text version of your request in the message body; attachments may cause processing delays [S2].\n\nWhat may slow review:\n\n- **Volume of requests.** Due to request volume, review may take time [S1].\n- **Additional or multiple requests.** Additional requests, or multiple requests from additional points of contact, may result in delays [S1].\n- **Attachments.** Sending your request as an attachment may cause processing delays [S2].\n- **Insufficient detail.** If the request is not detailed enough to demonstrate the security risk and let GitHub locate the data, GitHub will reply asking for more information [S3].\n- **Requests covering entire files or repositories.** You must justify the security risk, and this may increase processing time [S4].\n- **Bot-submitted or bulk complaints.** These often lack sufficient explanations, requiring back-and-forth and causing delays [S1].\n\nNote: The provided policies do not specify a maximum or guaranteed review timeframe beyond stating that processing may take time due to volume [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/github-private-information-removal-policy.md",
+          "section": "Things to Know",
+          "source_excerpt": "**Processing Time.** While we do process private information removal requests as quickly as possible, due to the volume of requests we process, it may take some time for your request to be reviewed. Additional requests, or multiple requests from additional points of contact, may result in delays.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "Things to Know",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "How to Submit Your Request",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "How Does This Actually Work?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "What is Private Information? > Private information removal requests are _not_ appropriate for:",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Private Information Removal Policy",
+          "section": "Sending A Private Information Removal Request",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/github-private-information-removal-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-009",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F01",
+      "query": "I have a complete DMCA counter notice. How should I send it, and when does the waiting period begin if I use postal mail?",
+      "required_aspect": "The online DMCA form is the fastest way to get a response.",
+      "candidate_answer": "You can submit your counter notice through GitHub's DMCA contact form, by email to copyright@github.com, or by physical mail [S1]. The fastest option is the contact form; plain-text email is also much faster than PDF attachments or physical mail [S1].\n\nIf you send it by physical mail, the 10–14 day waiting period starts from when GitHub **receives** your counter notice, not when you send it [S1]. The mailing address is GitHub, Inc, Attn: DMCA Agent, 88 Colin P Kelly Jr St, San Francisco, CA. 94107 [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "How to Submit Your Counter Notice",
+          "source_excerpt": "The fastest way to get a response is to enter your information and answer all the questions on our {% data variables.contact.contact_dmca %}.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "How to Submit Your Counter Notice",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-010",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02",
+      "query": "I have a complete DMCA counter notice. How should I send it, and when does the waiting period begin if I use postal mail?",
+      "required_aspect": "Email submissions should include a plain-text version in the email body even if attached.",
+      "candidate_answer": "You can submit your counter notice through GitHub's DMCA contact form, by email to copyright@github.com, or by physical mail [S1]. The fastest option is the contact form; plain-text email is also much faster than PDF attachments or physical mail [S1].\n\nIf you send it by physical mail, the 10–14 day waiting period starts from when GitHub **receives** your counter notice, not when you send it [S1]. The mailing address is GitHub, Inc, Attn: DMCA Agent, 88 Colin P Kelly Jr St, San Francisco, CA. 94107 [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "How to Submit Your Counter Notice",
+          "source_excerpt": "You can also send an email notification to <copyright@github.com>. You may include an attachment if you like, but please also include a plain-text version of your letter in the body of your message.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "How to Submit Your Counter Notice",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-011",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F03",
+      "query": "I have a complete DMCA counter notice. How should I send it, and when does the waiting period begin if I use postal mail?",
+      "required_aspect": "Physical mail takes substantially longer to receive and process.",
+      "candidate_answer": "You can submit your counter notice through GitHub's DMCA contact form, by email to copyright@github.com, or by physical mail [S1]. The fastest option is the contact form; plain-text email is also much faster than PDF attachments or physical mail [S1].\n\nIf you send it by physical mail, the 10–14 day waiting period starts from when GitHub **receives** your counter notice, not when you send it [S1]. The mailing address is GitHub, Inc, Attn: DMCA Agent, 88 Colin P Kelly Jr St, San Francisco, CA. 94107 [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "How to Submit Your Counter Notice",
+          "source_excerpt": "If you must send your notice by physical mail, you can do that too, but it will take _substantially_ longer for us to receive and respond to it—and the 10-14 day waiting period starts from when we _receive_ your counter notice. Notices we receive via plain-text email have a much faster turnaround than PDF attachments or physical mail. If you still wish to mail us your notice, our physical address is:",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "How to Submit Your Counter Notice",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-012",
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F04",
+      "query": "I have a complete DMCA counter notice. How should I send it, and when does the waiting period begin if I use postal mail?",
+      "required_aspect": "The 10–14 day waiting period begins when GitHub receives the counter notice.",
+      "candidate_answer": "You can submit your counter notice through GitHub's DMCA contact form, by email to copyright@github.com, or by physical mail [S1]. The fastest option is the contact form; plain-text email is also much faster than PDF attachments or physical mail [S1].\n\nIf you send it by physical mail, the 10–14 day waiting period starts from when GitHub **receives** your counter notice, not when you send it [S1]. The mailing address is GitHub, Inc, Attn: DMCA Agent, 88 Colin P Kelly Jr St, San Francisco, CA. 94107 [S1].",
+      "supporting_sources": [
+        {
+          "document": "content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md",
+          "section": "How to Submit Your Counter Notice",
+          "source_excerpt": "If you must send your notice by physical mail, you can do that too, but it will take _substantially_ longer for us to receive and respond to it—and the 10-14 day waiting period starts from when we _receive_ your counter notice. Notices we receive via plain-text email have a much faster turnaround than PDF attachments or physical mail. If you still wish to mail us your notice, our physical address is:",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guide to Submitting a DMCA Counter Notice",
+          "section": "How to Submit Your Counter Notice",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/content-removal-policies/guide-to-submitting-a-dmca-counter-notice.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-013",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F01",
+      "query": "A GitHub user I was close to has died. What can an authorized person ask GitHub to do with the account, and what proof might GitHub request?",
+      "required_aspect": "Next of kin, a designated successor, or another authorized person can request action on a deceased user's account.",
+      "candidate_answer": "An authorized individual can ask GitHub to determine what happens to the deceased user's account content, including actions such as transferring public repositories or canceling billing on the account [S1]. Requests should be made through the GitHub Support portal by clicking **Contact us**, providing: your name; contact information; the deceased account holder's name and GitHub username; your relationship to the deceased (including whether you were designated as account successor on GitHub.com); if designated as successor, your GitHub username; and the action you are seeking [S1].\n\nGitHub may follow up requesting additional information to verify authorization, such as a copy of your photo identification, a copy of the death certificate, and documentation confirming you are authorized to act in relation to the deceased user's account [S1].\n\nThe provided published policies do not specify any other particular proof GitHub might request beyond these examples.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/github-deceased-user-policy.md",
+          "section": "document body",
+          "source_excerpt": "If you are next of kin, a [pre-designated successor](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/maintaining-ownership-continuity-of-your-personal-accounts-repositories), or other authorized individual (which could include a collaborator or business partner) of a deceased user and would like to make a request regarding their account, you can reach out to us through the [GitHub Support portal](https://support.github.com/). In the portal, click **Contact us**, and provide the following information in your message:",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Deceased User Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/github-deceased-user-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-014",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F04",
+      "query": "A GitHub user I was close to has died. What can an authorized person ask GitHub to do with the account, and what proof might GitHub request?",
+      "required_aspect": "A request must explain the requester's relationship to the deceased user.",
+      "candidate_answer": "An authorized individual can ask GitHub to determine what happens to the deceased user's account content, including actions such as transferring public repositories or canceling billing on the account [S1]. Requests should be made through the GitHub Support portal by clicking **Contact us**, providing: your name; contact information; the deceased account holder's name and GitHub username; your relationship to the deceased (including whether you were designated as account successor on GitHub.com); if designated as successor, your GitHub username; and the action you are seeking [S1].\n\nGitHub may follow up requesting additional information to verify authorization, such as a copy of your photo identification, a copy of the death certificate, and documentation confirming you are authorized to act in relation to the deceased user's account [S1].\n\nThe provided published policies do not specify any other particular proof GitHub might request beyond these examples.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/github-deceased-user-policy.md",
+          "section": "document body",
+          "source_excerpt": "* Your relationship to the deceased account holder (please include whether you have been designated as the account successor on GitHub.com)",
+          "context_excerpt": "If you are next of kin, a [pre-designated successor](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/maintaining-ownership-continuity-of-your-personal-accounts-repositories), or other authorized individual (which could include a collaborator or business partner) of a deceased user and would like to make a request regarding their account, you can reach out to us through the [GitHub Support portal](https://support.github.com/). In the portal, click **Contact us**, and provide the following information in your message:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Deceased User Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/github-deceased-user-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-015",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F05",
+      "query": "A GitHub user I was close to has died. What can an authorized person ask GitHub to do with the account, and what proof might GitHub request?",
+      "required_aspect": "The requester must say what action is sought, such as transferring public repositories or canceling billing.",
+      "candidate_answer": "An authorized individual can ask GitHub to determine what happens to the deceased user's account content, including actions such as transferring public repositories or canceling billing on the account [S1]. Requests should be made through the GitHub Support portal by clicking **Contact us**, providing: your name; contact information; the deceased account holder's name and GitHub username; your relationship to the deceased (including whether you were designated as account successor on GitHub.com); if designated as successor, your GitHub username; and the action you are seeking [S1].\n\nGitHub may follow up requesting additional information to verify authorization, such as a copy of your photo identification, a copy of the death certificate, and documentation confirming you are authorized to act in relation to the deceased user's account [S1].\n\nThe provided published policies do not specify any other particular proof GitHub might request beyond these examples.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/github-deceased-user-policy.md",
+          "section": "document body",
+          "source_excerpt": "* What action you are seeking (e.g. transfer public repositories, cancel billing on account)",
+          "context_excerpt": "If you are next of kin, a [pre-designated successor](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/maintaining-ownership-continuity-of-your-personal-accounts-repositories), or other authorized individual (which could include a collaborator or business partner) of a deceased user and would like to make a request regarding their account, you can reach out to us through the [GitHub Support portal](https://support.github.com/). In the portal, click **Contact us**, and provide the following information in your message:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Deceased User Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/github-deceased-user-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-016",
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F06",
+      "query": "A GitHub user I was close to has died. What can an authorized person ask GitHub to do with the account, and what proof might GitHub request?",
+      "required_aspect": "GitHub may request identification, a death certificate, or evidence of authority before processing.",
+      "candidate_answer": "An authorized individual can ask GitHub to determine what happens to the deceased user's account content, including actions such as transferring public repositories or canceling billing on the account [S1]. Requests should be made through the GitHub Support portal by clicking **Contact us**, providing: your name; contact information; the deceased account holder's name and GitHub username; your relationship to the deceased (including whether you were designated as account successor on GitHub.com); if designated as successor, your GitHub username; and the action you are seeking [S1].\n\nGitHub may follow up requesting additional information to verify authorization, such as a copy of your photo identification, a copy of the death certificate, and documentation confirming you are authorized to act in relation to the deceased user's account [S1].\n\nThe provided published policies do not specify any other particular proof GitHub might request beyond these examples.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/github-deceased-user-policy.md",
+          "section": "document body",
+          "source_excerpt": "Once we have received your request, we may follow up with a request for additional information, such as a copy of your photo identification, copy of the death certificate, and documentation confirming you are authorized to act in relation to the deceased user’s account, to verify that we are properly authorized to process your request.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Deceased User Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/github-deceased-user-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-017",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F01",
+      "query": "Someone shared personal details and a photo of me on GitHub. How does the privacy rule treat public information, consent, and hostile context?",
+      "required_aspect": "Posting another person's personal information is prohibited.",
+      "candidate_answer": "Under GitHub's doxxing and invasion-of-privacy policy, posting other people's personal information is prohibited, including private email addresses, phone numbers, physical addresses or other private location information, and other private information that may pose a safety or security risk [S1].\n\nOn photos: GitHub may consider photos or videos taken or distributed without the subject's consent to be an invasion of privacy, especially when the material presents a safety risk to the subject, such as intimidation or harassment [S1].\n\nOn public availability and context: GitHub will take context into account, as well as whether the reported content is publicly available elsewhere [S1]. Sharing publicly available content may not itself violate the policy, but if the information is shared with the intent to harass or incite other abusive behavior, it may violate GitHub's prohibition against bullying and harassment [S1].\n\nOn hostile context specifically: the evidence addresses intent to harass or incite abuse as potentially triggering the bullying and harassment prohibition, and notes that safety risk (e.g., intimidation or harassment) weighs toward treating consent-less photos as an invasion of privacy [S1]. The provided policies do not specify further criteria for evaluating \"hostile context\" beyond these points.\n\nFor reporting or removal options, the policy points to GitHub's Private Information Removal Policy and abuse-reporting instructions [S1].",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+          "section": "document body",
+          "source_excerpt": "Don't post other people's personal information. This includes:",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Doxxing and Invasion of Privacy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-018",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F02",
+      "query": "Someone shared personal details and a photo of me on GitHub. How does the privacy rule treat public information, consent, and hostile context?",
+      "required_aspect": "Nonconsensual photos or videos may be an invasion of privacy, especially when they pose a safety risk.",
+      "candidate_answer": "Under GitHub's doxxing and invasion-of-privacy policy, posting other people's personal information is prohibited, including private email addresses, phone numbers, physical addresses or other private location information, and other private information that may pose a safety or security risk [S1].\n\nOn photos: GitHub may consider photos or videos taken or distributed without the subject's consent to be an invasion of privacy, especially when the material presents a safety risk to the subject, such as intimidation or harassment [S1].\n\nOn public availability and context: GitHub will take context into account, as well as whether the reported content is publicly available elsewhere [S1]. Sharing publicly available content may not itself violate the policy, but if the information is shared with the intent to harass or incite other abusive behavior, it may violate GitHub's prohibition against bullying and harassment [S1].\n\nOn hostile context specifically: the evidence addresses intent to harass or incite abuse as potentially triggering the bullying and harassment prohibition, and notes that safety risk (e.g., intimidation or harassment) weighs toward treating consent-less photos as an invasion of privacy [S1]. The provided policies do not specify further criteria for evaluating \"hostile context\" beyond these points.\n\nFor reporting or removal options, the policy points to GitHub's Private Information Removal Policy and abuse-reporting instructions [S1].",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+          "section": "document body",
+          "source_excerpt": "We may consider other information, such as photos or videos that were taken or distributed without the subject's consent, to be an invasion of privacy, especially when such material presents a safety risk to the subject, such as in the case of intimidation or harassment.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Doxxing and Invasion of Privacy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-019",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F03",
+      "query": "Someone shared personal details and a photo of me on GitHub. How does the privacy rule treat public information, consent, and hostile context?",
+      "required_aspect": "GitHub considers whether reported information is already publicly available elsewhere.",
+      "candidate_answer": "Under GitHub's doxxing and invasion-of-privacy policy, posting other people's personal information is prohibited, including private email addresses, phone numbers, physical addresses or other private location information, and other private information that may pose a safety or security risk [S1].\n\nOn photos: GitHub may consider photos or videos taken or distributed without the subject's consent to be an invasion of privacy, especially when the material presents a safety risk to the subject, such as intimidation or harassment [S1].\n\nOn public availability and context: GitHub will take context into account, as well as whether the reported content is publicly available elsewhere [S1]. Sharing publicly available content may not itself violate the policy, but if the information is shared with the intent to harass or incite other abusive behavior, it may violate GitHub's prohibition against bullying and harassment [S1].\n\nOn hostile context specifically: the evidence addresses intent to harass or incite abuse as potentially triggering the bullying and harassment prohibition, and notes that safety risk (e.g., intimidation or harassment) weighs toward treating consent-less photos as an invasion of privacy [S1]. The provided policies do not specify further criteria for evaluating \"hostile context\" beyond these points.\n\nFor reporting or removal options, the policy points to GitHub's Private Information Removal Policy and abuse-reporting instructions [S1].",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+          "section": "document body",
+          "source_excerpt": "GitHub will take context into account as well as whether the reported content is publicly available elsewhere. Please note, however, that while sharing publicly available content may not be a violation of this policy, if the information is shared with the intent to harass or incite other abusive behavior, it may violate our prohibition against [bullying and harassment](/site-policy/acceptable-use-policies/github-bullying-and-harassment).",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Doxxing and Invasion of Privacy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-020",
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F04",
+      "query": "Someone shared personal details and a photo of me on GitHub. How does the privacy rule treat public information, consent, and hostile context?",
+      "required_aspect": "Public information shared with intent to harass may violate the bullying and harassment policy.",
+      "candidate_answer": "Under GitHub's doxxing and invasion-of-privacy policy, posting other people's personal information is prohibited, including private email addresses, phone numbers, physical addresses or other private location information, and other private information that may pose a safety or security risk [S1].\n\nOn photos: GitHub may consider photos or videos taken or distributed without the subject's consent to be an invasion of privacy, especially when the material presents a safety risk to the subject, such as intimidation or harassment [S1].\n\nOn public availability and context: GitHub will take context into account, as well as whether the reported content is publicly available elsewhere [S1]. Sharing publicly available content may not itself violate the policy, but if the information is shared with the intent to harass or incite other abusive behavior, it may violate GitHub's prohibition against bullying and harassment [S1].\n\nOn hostile context specifically: the evidence addresses intent to harass or incite abuse as potentially triggering the bullying and harassment prohibition, and notes that safety risk (e.g., intimidation or harassment) weighs toward treating consent-less photos as an invasion of privacy [S1]. The provided policies do not specify further criteria for evaluating \"hostile context\" beyond these points.\n\nFor reporting or removal options, the policy points to GitHub's Private Information Removal Policy and abuse-reporting instructions [S1].",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+          "section": "document body",
+          "source_excerpt": "GitHub will take context into account as well as whether the reported content is publicly available elsewhere. Please note, however, that while sharing publicly available content may not be a violation of this policy, if the information is shared with the intent to harass or incite other abusive behavior, it may violate our prohibition against [bullying and harassment](/site-policy/acceptable-use-policies/github-bullying-and-harassment).",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Doxxing and Invasion of Privacy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-021",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F01",
+      "query": "I'm building a generative-media project on GitHub. Which harmful uses are barred, and how does GitHub assess what a project is meant to enable?",
+      "required_aspect": "Projects designed to facilitate synthetic child sexual abuse material are prohibited.",
+      "candidate_answer": "**Barred harmful uses (synthetic media/AI tools)**\n\nGitHub does not allow projects designed for, encouraging, promoting, supporting, or suggesting use of large language models or other synthetic/manipulated media tools to create [S1]:\n\n- Sexual material involving minors or other content constituting Child Sexual Abuse Material under GitHub policies [S1]\n- Violent extremist propaganda or other content constituting Terrorist or Violent Extremist Content under GitHub policies [S1]\n- Sexually explicit media of people without their consent or other content constituting Non-Consensual Intimate Imagery under GitHub policies [S1]\n\n**How GitHub assesses what a project is meant to enable**\n\nGitHub evaluates violations by examining a project in context, which may include factors such as [S1]:\n\n- How the project is configured\n- How it is marketed\n- Information in its README or other documentation\n- External sites or resources it links to\n- The nature of support provided by project maintainers\n- Any other relevant facts indicating a likelihood of furthering one of the prohibited uses [S1]\n\nThe provided published policies do not specify any additional assessment methodology beyond these contextual factors.",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-synthetic-media-and-ai-tools.md",
+          "section": "document body",
+          "source_excerpt": "* Sexual material involving minors or any other content that would constitute [Child Sexual Abuse Material](/site-policy/acceptable-use-policies/github-child-sexual-exploitation-or-abuse) under our policies",
+          "context_excerpt": "GitHub does not allow any projects that are designed for, encourage, promote, support, or suggest in any way the use of large language models or any other synthetic or manipulated media tools for the creation of:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Synthetic Media and AI Tools",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-022",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F02",
+      "query": "I'm building a generative-media project on GitHub. Which harmful uses are barred, and how does GitHub assess what a project is meant to enable?",
+      "required_aspect": "Projects designed to facilitate violent extremist propaganda are prohibited.",
+      "candidate_answer": "**Barred harmful uses (synthetic media/AI tools)**\n\nGitHub does not allow projects designed for, encouraging, promoting, supporting, or suggesting use of large language models or other synthetic/manipulated media tools to create [S1]:\n\n- Sexual material involving minors or other content constituting Child Sexual Abuse Material under GitHub policies [S1]\n- Violent extremist propaganda or other content constituting Terrorist or Violent Extremist Content under GitHub policies [S1]\n- Sexually explicit media of people without their consent or other content constituting Non-Consensual Intimate Imagery under GitHub policies [S1]\n\n**How GitHub assesses what a project is meant to enable**\n\nGitHub evaluates violations by examining a project in context, which may include factors such as [S1]:\n\n- How the project is configured\n- How it is marketed\n- Information in its README or other documentation\n- External sites or resources it links to\n- The nature of support provided by project maintainers\n- Any other relevant facts indicating a likelihood of furthering one of the prohibited uses [S1]\n\nThe provided published policies do not specify any additional assessment methodology beyond these contextual factors.",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-synthetic-media-and-ai-tools.md",
+          "section": "document body",
+          "source_excerpt": "* Violent extremist propaganda or any other content that would constitute [Terrorist or Violent Extremist Content](/site-policy/acceptable-use-policies/github-terrorism-and-violent-extremism) under our policies",
+          "context_excerpt": "GitHub does not allow any projects that are designed for, encourage, promote, support, or suggest in any way the use of large language models or any other synthetic or manipulated media tools for the creation of:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Synthetic Media and AI Tools",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-023",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F03",
+      "query": "I'm building a generative-media project on GitHub. Which harmful uses are barred, and how does GitHub assess what a project is meant to enable?",
+      "required_aspect": "Projects designed to facilitate nonconsensual sexually explicit media are prohibited.",
+      "candidate_answer": "**Barred harmful uses (synthetic media/AI tools)**\n\nGitHub does not allow projects designed for, encouraging, promoting, supporting, or suggesting use of large language models or other synthetic/manipulated media tools to create [S1]:\n\n- Sexual material involving minors or other content constituting Child Sexual Abuse Material under GitHub policies [S1]\n- Violent extremist propaganda or other content constituting Terrorist or Violent Extremist Content under GitHub policies [S1]\n- Sexually explicit media of people without their consent or other content constituting Non-Consensual Intimate Imagery under GitHub policies [S1]\n\n**How GitHub assesses what a project is meant to enable**\n\nGitHub evaluates violations by examining a project in context, which may include factors such as [S1]:\n\n- How the project is configured\n- How it is marketed\n- Information in its README or other documentation\n- External sites or resources it links to\n- The nature of support provided by project maintainers\n- Any other relevant facts indicating a likelihood of furthering one of the prohibited uses [S1]\n\nThe provided published policies do not specify any additional assessment methodology beyond these contextual factors.",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-synthetic-media-and-ai-tools.md",
+          "section": "document body",
+          "source_excerpt": "* Sexually explicit media of people without their consent or any other content that would constitute [Non-Consensual Intimate Imagery](/site-policy/acceptable-use-policies/github-non-consensual-intimate-imagery) under our policies",
+          "context_excerpt": "GitHub does not allow any projects that are designed for, encourage, promote, support, or suggest in any way the use of large language models or any other synthetic or manipulated media tools for the creation of:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Synthetic Media and AI Tools",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-024",
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F04",
+      "query": "I'm building a generative-media project on GitHub. Which harmful uses are barred, and how does GitHub assess what a project is meant to enable?",
+      "required_aspect": "GitHub examines project context, including configuration, marketing, and documentation, when assessing violations.",
+      "candidate_answer": "**Barred harmful uses (synthetic media/AI tools)**\n\nGitHub does not allow projects designed for, encouraging, promoting, supporting, or suggesting use of large language models or other synthetic/manipulated media tools to create [S1]:\n\n- Sexual material involving minors or other content constituting Child Sexual Abuse Material under GitHub policies [S1]\n- Violent extremist propaganda or other content constituting Terrorist or Violent Extremist Content under GitHub policies [S1]\n- Sexually explicit media of people without their consent or other content constituting Non-Consensual Intimate Imagery under GitHub policies [S1]\n\n**How GitHub assesses what a project is meant to enable**\n\nGitHub evaluates violations by examining a project in context, which may include factors such as [S1]:\n\n- How the project is configured\n- How it is marketed\n- Information in its README or other documentation\n- External sites or resources it links to\n- The nature of support provided by project maintainers\n- Any other relevant facts indicating a likelihood of furthering one of the prohibited uses [S1]\n\nThe provided published policies do not specify any additional assessment methodology beyond these contextual factors.",
+      "supporting_sources": [
+        {
+          "document": "acceptable-use-policies/github-synthetic-media-and-ai-tools.md",
+          "section": "document body",
+          "source_excerpt": "GitHub evaluates violations of this policy by examining a project in context. This could include an evaluation of many factors: how a project is configured; how it is marketed; the information provided in its README or other documentation; the external sites or resources it links to; the nature of support provided by the project maintainers; or any other relevant facts that indicate a likelihood of furthering one of the prohibited uses above.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Synthetic Media and AI Tools",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-025",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F01",
+      "query": "What are GitHub's website cookies used for, and how should I treat the published cookie list over time?",
+      "required_aspect": "GitHub uses cookies to provide its websites.",
+      "candidate_answer": "GitHub uses cookies to provide and secure its websites and to analyze website usage in order to offer a good user experience [S1]. More specifically, GitHub states it uses cookies to provide, secure, and improve the Service or develop new features, such as keeping you logged in, remembering your preferences, identifying your device for security and fraud purposes, compiling statistical reports, and providing information for future development [S5]. Cookies and similar technologies are also used to store preferences and settings, enable sign-in, analyze performance, track interactions with the Services, develop inferences, combat fraud, and fulfill other legitimate purposes [S2]. Some cookies are provided by third parties, including service providers and advertising partners, and may be used for purposes such as targeted advertising [S2]. For Enterprise Marketing Pages, GitHub may use non-essential cookies to gather information about enterprise users' interests and online activities to personalize experiences and to serve and measure targeted advertising and marketing [S5].\n\nAs for how to treat the published cookie list over time: GitHub states that since the number and names of cookies may change, the table may be updated from time to time, and it provides instructions for receiving notifications of updates to the list [S1]. The published policies do not specify any other guidance on how users should treat the list over time beyond noting it may change and offering update notifications [S1].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-cookies.md",
+          "section": "Cookies",
+          "source_excerpt": "GitHub uses cookies to provide and secure our websites, as well as to analyze the usage of our websites, in order to offer you a great user experience. Please take a look at our [Privacy Statement](/github/site-policy/github-privacy-statement#our-use-of-cookies-and-tracking-technologies) if you’d like more information about cookies, and on how and why we use them and cookie-related personal data. You can change your preference about non-essential cookies at any time by following [these instructions](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/managing-your-cookie-preferences-for-githubs-enterprise-marketing-pages).",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Cookies",
+          "section": "Cookies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-cookies.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-026",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F02",
+      "query": "What are GitHub's website cookies used for, and how should I treat the published cookie list over time?",
+      "required_aspect": "GitHub uses cookies to secure its websites.",
+      "candidate_answer": "GitHub uses cookies to provide and secure its websites and to analyze website usage in order to offer a good user experience [S1]. More specifically, GitHub states it uses cookies to provide, secure, and improve the Service or develop new features, such as keeping you logged in, remembering your preferences, identifying your device for security and fraud purposes, compiling statistical reports, and providing information for future development [S5]. Cookies and similar technologies are also used to store preferences and settings, enable sign-in, analyze performance, track interactions with the Services, develop inferences, combat fraud, and fulfill other legitimate purposes [S2]. Some cookies are provided by third parties, including service providers and advertising partners, and may be used for purposes such as targeted advertising [S2]. For Enterprise Marketing Pages, GitHub may use non-essential cookies to gather information about enterprise users' interests and online activities to personalize experiences and to serve and measure targeted advertising and marketing [S5].\n\nAs for how to treat the published cookie list over time: GitHub states that since the number and names of cookies may change, the table may be updated from time to time, and it provides instructions for receiving notifications of updates to the list [S1]. The published policies do not specify any other guidance on how users should treat the list over time beyond noting it may change and offering update notifications [S1].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-cookies.md",
+          "section": "Cookies",
+          "source_excerpt": "GitHub uses cookies to provide and secure our websites, as well as to analyze the usage of our websites, in order to offer you a great user experience. Please take a look at our [Privacy Statement](/github/site-policy/github-privacy-statement#our-use-of-cookies-and-tracking-technologies) if you’d like more information about cookies, and on how and why we use them and cookie-related personal data. You can change your preference about non-essential cookies at any time by following [these instructions](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/managing-your-cookie-preferences-for-githubs-enterprise-marketing-pages).",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Cookies",
+          "section": "Cookies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-cookies.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-027",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F03",
+      "query": "What are GitHub's website cookies used for, and how should I treat the published cookie list over time?",
+      "required_aspect": "GitHub uses cookies to analyze website usage.",
+      "candidate_answer": "GitHub uses cookies to provide and secure its websites and to analyze website usage in order to offer a good user experience [S1]. More specifically, GitHub states it uses cookies to provide, secure, and improve the Service or develop new features, such as keeping you logged in, remembering your preferences, identifying your device for security and fraud purposes, compiling statistical reports, and providing information for future development [S5]. Cookies and similar technologies are also used to store preferences and settings, enable sign-in, analyze performance, track interactions with the Services, develop inferences, combat fraud, and fulfill other legitimate purposes [S2]. Some cookies are provided by third parties, including service providers and advertising partners, and may be used for purposes such as targeted advertising [S2]. For Enterprise Marketing Pages, GitHub may use non-essential cookies to gather information about enterprise users' interests and online activities to personalize experiences and to serve and measure targeted advertising and marketing [S5].\n\nAs for how to treat the published cookie list over time: GitHub states that since the number and names of cookies may change, the table may be updated from time to time, and it provides instructions for receiving notifications of updates to the list [S1]. The published policies do not specify any other guidance on how users should treat the list over time beyond noting it may change and offering update notifications [S1].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-cookies.md",
+          "section": "Cookies",
+          "source_excerpt": "GitHub uses cookies to provide and secure our websites, as well as to analyze the usage of our websites, in order to offer you a great user experience. Please take a look at our [Privacy Statement](/github/site-policy/github-privacy-statement#our-use-of-cookies-and-tracking-technologies) if you’d like more information about cookies, and on how and why we use them and cookie-related personal data. You can change your preference about non-essential cookies at any time by following [these instructions](/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/managing-your-cookie-preferences-for-githubs-enterprise-marketing-pages).",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Cookies",
+          "section": "Cookies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-cookies.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-028",
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F04",
+      "query": "What are GitHub's website cookies used for, and how should I treat the published cookie list over time?",
+      "required_aspect": "The published cookie list may change as cookie names and numbers change.",
+      "candidate_answer": "GitHub uses cookies to provide and secure its websites and to analyze website usage in order to offer a good user experience [S1]. More specifically, GitHub states it uses cookies to provide, secure, and improve the Service or develop new features, such as keeping you logged in, remembering your preferences, identifying your device for security and fraud purposes, compiling statistical reports, and providing information for future development [S5]. Cookies and similar technologies are also used to store preferences and settings, enable sign-in, analyze performance, track interactions with the Services, develop inferences, combat fraud, and fulfill other legitimate purposes [S2]. Some cookies are provided by third parties, including service providers and advertising partners, and may be used for purposes such as targeted advertising [S2]. For Enterprise Marketing Pages, GitHub may use non-essential cookies to gather information about enterprise users' interests and online activities to personalize experiences and to serve and measure targeted advertising and marketing [S5].\n\nAs for how to treat the published cookie list over time: GitHub states that since the number and names of cookies may change, the table may be updated from time to time, and it provides instructions for receiving notifications of updates to the list [S1]. The published policies do not specify any other guidance on how users should treat the list over time beyond noting it may change and offering update notifications [S1].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-cookies.md",
+          "section": "Cookies",
+          "source_excerpt": "Since the number and names of cookies may change, the table below may be updated from time to time. To receive notifications of updates to this list, please follow the instructions provided in [About notifications](/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications).",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Cookies",
+          "section": "Cookies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-cookies.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-029",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F01",
+      "query": "I explored a GitHub job opening and later became an employee. Can GitHub use the data it collected at the first stage for the next one?",
+      "required_aspect": "Candidate personal data is normally used only for the purpose for which it was collected.",
+      "candidate_answer": "Yes. GitHub may use candidate data for a compatible employment purpose. Its candidate privacy notice states that personal data will be used only for the purposes for which it was collected unless GitHub reasonably needs it for another compatible purpose with a legal basis, and it gives the example that data provided while researching job openings may later be processed for the purpose of entering into an employment relationship once you apply for and obtain a role [S2]. The notice also describes processing candidate data to on-board you if you accept an offer [S1], and lists recruitment/hiring and payroll, benefits, and related employment purposes [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-candidate-privacy-policy.md",
+          "section": "Change of Purpose",
+          "source_excerpt": "We will use your personal data only for the purposes for which it was collected, unless we reasonably need it for another compatible purpose and there is a legal basis for further processing. For example, relying upon our legitimate interest in recruiting candidates for roles at GitHub, we may process the personal data you provided while researching job openings. However, once you apply for and are successful in obtaining a role, we may process your personal data for the purpose of entering into an employment relationship with you.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Personal Data that We Process",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Change of Purpose",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Why We Process Personal Data",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-030",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F02",
+      "query": "I explored a GitHub job opening and later became an employee. Can GitHub use the data it collected at the first stage for the next one?",
+      "required_aspect": "A different compatible use requires a reasonable need and legal basis for further processing.",
+      "candidate_answer": "Yes. GitHub may use candidate data for a compatible employment purpose. Its candidate privacy notice states that personal data will be used only for the purposes for which it was collected unless GitHub reasonably needs it for another compatible purpose with a legal basis, and it gives the example that data provided while researching job openings may later be processed for the purpose of entering into an employment relationship once you apply for and obtain a role [S2]. The notice also describes processing candidate data to on-board you if you accept an offer [S1], and lists recruitment/hiring and payroll, benefits, and related employment purposes [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-candidate-privacy-policy.md",
+          "section": "Change of Purpose",
+          "source_excerpt": "We will use your personal data only for the purposes for which it was collected, unless we reasonably need it for another compatible purpose and there is a legal basis for further processing. For example, relying upon our legitimate interest in recruiting candidates for roles at GitHub, we may process the personal data you provided while researching job openings. However, once you apply for and are successful in obtaining a role, we may process your personal data for the purpose of entering into an employment relationship with you.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Personal Data that We Process",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Change of Purpose",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Why We Process Personal Data",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-031",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F03",
+      "query": "I explored a GitHub job opening and later became an employee. Can GitHub use the data it collected at the first stage for the next one?",
+      "required_aspect": "Data from exploring job openings may be processed for recruiting.",
+      "candidate_answer": "Yes. GitHub may use candidate data for a compatible employment purpose. Its candidate privacy notice states that personal data will be used only for the purposes for which it was collected unless GitHub reasonably needs it for another compatible purpose with a legal basis, and it gives the example that data provided while researching job openings may later be processed for the purpose of entering into an employment relationship once you apply for and obtain a role [S2]. The notice also describes processing candidate data to on-board you if you accept an offer [S1], and lists recruitment/hiring and payroll, benefits, and related employment purposes [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-candidate-privacy-policy.md",
+          "section": "Change of Purpose",
+          "source_excerpt": "We will use your personal data only for the purposes for which it was collected, unless we reasonably need it for another compatible purpose and there is a legal basis for further processing. For example, relying upon our legitimate interest in recruiting candidates for roles at GitHub, we may process the personal data you provided while researching job openings. However, once you apply for and are successful in obtaining a role, we may process your personal data for the purpose of entering into an employment relationship with you.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Personal Data that We Process",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Change of Purpose",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Why We Process Personal Data",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-032",
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F04",
+      "query": "I explored a GitHub job opening and later became an employee. Can GitHub use the data it collected at the first stage for the next one?",
+      "required_aspect": "After successful application, candidate data may be processed to enter an employment relationship.",
+      "candidate_answer": "Yes. GitHub may use candidate data for a compatible employment purpose. Its candidate privacy notice states that personal data will be used only for the purposes for which it was collected unless GitHub reasonably needs it for another compatible purpose with a legal basis, and it gives the example that data provided while researching job openings may later be processed for the purpose of entering into an employment relationship once you apply for and obtain a role [S2]. The notice also describes processing candidate data to on-board you if you accept an offer [S1], and lists recruitment/hiring and payroll, benefits, and related employment purposes [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-candidate-privacy-policy.md",
+          "section": "Change of Purpose",
+          "source_excerpt": "We will use your personal data only for the purposes for which it was collected, unless we reasonably need it for another compatible purpose and there is a legal basis for further processing. For example, relying upon our legitimate interest in recruiting candidates for roles at GitHub, we may process the personal data you provided while researching job openings. However, once you apply for and are successful in obtaining a role, we may process your personal data for the purpose of entering into an employment relationship with you.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Personal Data that We Process",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Change of Purpose",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Global Data Privacy Notice for Candidates",
+          "section": "Overview > Why We Process Personal Data",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-candidate-privacy-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-033",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F01",
+      "query": "What information may GitHub collect automatically when I use its services or visit its site, and how do essential and optional cookies differ?",
+      "required_aspect": "Service usage collection includes IP address, device and session details.",
+      "candidate_answer": "GitHub collects the following information automatically when you use its services or visit its site:\n\n- **Service usage information:** IP address, device information, session details, date and time of requests, device type and ID, operating system and application version, information related to your repository contributions, and performance of specific features or services [S1].\n- **Website usage data:** referring site, date and time of visit, pages viewed, and links clicked [S1].\n- **Geolocation information:** regional geolocation data, depending on the service's functionality [S1].\n- **Email marketing interactions:** via web beacons, information on device type, email client, email reception, opens, and link clicks [S1].\n- **Data from third-party buttons, tools, and content:** engaging with these may automatically send certain browser information to those companies [S1].\n\n**Essential vs. optional cookies:**\n\n- **Essential cookies and similar tracking technologies** are used to provide essential functionality, such as storing settings and recognizing you while you use the services [S1]. GitHub's \"Required Cookies\" perform essential website functions—for example, logging you in, saving language preferences, providing a shopping cart experience, improving performance, routing traffic between web servers, detecting screen size, determining page load times, improving user experience, and audience measurement; these are necessary for the websites to work [S5].\n- **Non-essential cookies** include online analytics products used to analyze how de-identified users use the services and enhance your experience, as well as third-party cookies for interest-based advertising; in some jurisdictions, these are only used after obtaining your consent [S1]. Non-essential categories include **Analytics** (understanding how you use the websites, and in some cases providing personalized advertising), **Social Media** (showing ads and content based on social media profiles and activity), and **Advertising** (showing new ads based on ads already seen, and tracking ad clicks or purchases after clicking an ad) [S5]. GitHub places non-essential cookies on pages where it markets products and services to enterprise customers, such as resources.github.com [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-general-privacy-statement.md",
+          "section": "Automatically",
+          "source_excerpt": "* Service Usage Information: We collect data about your interactions with the Services, such as IP address, device information, session details, date and time of requests, device type and ID, operating system and application version, information related to your contributions to repositories, and performance of specific features or Services.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub General Privacy Statement",
+          "section": "Personal Data We Collect > Automatically",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-034",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F02",
+      "query": "What information may GitHub collect automatically when I use its services or visit its site, and how do essential and optional cookies differ?",
+      "required_aspect": "Website logs include the referring site, pages viewed, and links clicked.",
+      "candidate_answer": "GitHub collects the following information automatically when you use its services or visit its site:\n\n- **Service usage information:** IP address, device information, session details, date and time of requests, device type and ID, operating system and application version, information related to your repository contributions, and performance of specific features or services [S1].\n- **Website usage data:** referring site, date and time of visit, pages viewed, and links clicked [S1].\n- **Geolocation information:** regional geolocation data, depending on the service's functionality [S1].\n- **Email marketing interactions:** via web beacons, information on device type, email client, email reception, opens, and link clicks [S1].\n- **Data from third-party buttons, tools, and content:** engaging with these may automatically send certain browser information to those companies [S1].\n\n**Essential vs. optional cookies:**\n\n- **Essential cookies and similar tracking technologies** are used to provide essential functionality, such as storing settings and recognizing you while you use the services [S1]. GitHub's \"Required Cookies\" perform essential website functions—for example, logging you in, saving language preferences, providing a shopping cart experience, improving performance, routing traffic between web servers, detecting screen size, determining page load times, improving user experience, and audience measurement; these are necessary for the websites to work [S5].\n- **Non-essential cookies** include online analytics products used to analyze how de-identified users use the services and enhance your experience, as well as third-party cookies for interest-based advertising; in some jurisdictions, these are only used after obtaining your consent [S1]. Non-essential categories include **Analytics** (understanding how you use the websites, and in some cases providing personalized advertising), **Social Media** (showing ads and content based on social media profiles and activity), and **Advertising** (showing new ads based on ads already seen, and tracking ad clicks or purchases after clicking an ad) [S5]. GitHub places non-essential cookies on pages where it markets products and services to enterprise customers, such as resources.github.com [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-general-privacy-statement.md",
+          "section": "Automatically",
+          "source_excerpt": "* Website Usage Data: We automatically log data about your Website interactions, including the referring site, date and time of visit, pages viewed, and links clicked.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub General Privacy Statement",
+          "section": "Personal Data We Collect > Automatically",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-035",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F03",
+      "query": "What information may GitHub collect automatically when I use its services or visit its site, and how do essential and optional cookies differ?",
+      "required_aspect": "Essential cookies support functions such as stored settings and recognition.",
+      "candidate_answer": "GitHub collects the following information automatically when you use its services or visit its site:\n\n- **Service usage information:** IP address, device information, session details, date and time of requests, device type and ID, operating system and application version, information related to your repository contributions, and performance of specific features or services [S1].\n- **Website usage data:** referring site, date and time of visit, pages viewed, and links clicked [S1].\n- **Geolocation information:** regional geolocation data, depending on the service's functionality [S1].\n- **Email marketing interactions:** via web beacons, information on device type, email client, email reception, opens, and link clicks [S1].\n- **Data from third-party buttons, tools, and content:** engaging with these may automatically send certain browser information to those companies [S1].\n\n**Essential vs. optional cookies:**\n\n- **Essential cookies and similar tracking technologies** are used to provide essential functionality, such as storing settings and recognizing you while you use the services [S1]. GitHub's \"Required Cookies\" perform essential website functions—for example, logging you in, saving language preferences, providing a shopping cart experience, improving performance, routing traffic between web servers, detecting screen size, determining page load times, improving user experience, and audience measurement; these are necessary for the websites to work [S5].\n- **Non-essential cookies** include online analytics products used to analyze how de-identified users use the services and enhance your experience, as well as third-party cookies for interest-based advertising; in some jurisdictions, these are only used after obtaining your consent [S1]. Non-essential categories include **Analytics** (understanding how you use the websites, and in some cases providing personalized advertising), **Social Media** (showing ads and content based on social media profiles and activity), and **Advertising** (showing new ads based on ads already seen, and tracking ad clicks or purchases after clicking an ad) [S5]. GitHub places non-essential cookies on pages where it markets products and services to enterprise customers, such as resources.github.com [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-general-privacy-statement.md",
+          "section": "Automatically",
+          "source_excerpt": "* Essential Cookies and Similar Tracking Technologies: We use cookies and similar technologies to provide essential functionality like storing settings and recognizing you while using our Services.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub General Privacy Statement",
+          "section": "Personal Data We Collect > Automatically",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-036",
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F04",
+      "query": "What information may GitHub collect automatically when I use its services or visit its site, and how do essential and optional cookies differ?",
+      "required_aspect": "Non-essential analytics cookies may depend on jurisdiction and consent.",
+      "candidate_answer": "GitHub collects the following information automatically when you use its services or visit its site:\n\n- **Service usage information:** IP address, device information, session details, date and time of requests, device type and ID, operating system and application version, information related to your repository contributions, and performance of specific features or services [S1].\n- **Website usage data:** referring site, date and time of visit, pages viewed, and links clicked [S1].\n- **Geolocation information:** regional geolocation data, depending on the service's functionality [S1].\n- **Email marketing interactions:** via web beacons, information on device type, email client, email reception, opens, and link clicks [S1].\n- **Data from third-party buttons, tools, and content:** engaging with these may automatically send certain browser information to those companies [S1].\n\n**Essential vs. optional cookies:**\n\n- **Essential cookies and similar tracking technologies** are used to provide essential functionality, such as storing settings and recognizing you while you use the services [S1]. GitHub's \"Required Cookies\" perform essential website functions—for example, logging you in, saving language preferences, providing a shopping cart experience, improving performance, routing traffic between web servers, detecting screen size, determining page load times, improving user experience, and audience measurement; these are necessary for the websites to work [S5].\n- **Non-essential cookies** include online analytics products used to analyze how de-identified users use the services and enhance your experience, as well as third-party cookies for interest-based advertising; in some jurisdictions, these are only used after obtaining your consent [S1]. Non-essential categories include **Analytics** (understanding how you use the websites, and in some cases providing personalized advertising), **Social Media** (showing ads and content based on social media profiles and activity), and **Advertising** (showing new ads based on ads already seen, and tracking ad clicks or purchases after clicking an ad) [S5]. GitHub places non-essential cookies on pages where it markets products and services to enterprise customers, such as resources.github.com [S5].",
+      "supporting_sources": [
+        {
+          "document": "privacy-policies/github-general-privacy-statement.md",
+          "section": "Automatically",
+          "source_excerpt": "* Non-essential Cookies: Depending on your jurisdiction, we may use online analytics products that use cookies to help us analyze how de-identified users use our Services and to enhance your experience when you use the Services. We may also employ third-party Cookies to gather data for interest-based advertising. In some jurisdictions, we only use non-essential cookies after obtaining your consent. See [this](#what-are-your-cookie-choices-and-controls) section for more details and control options.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub General Privacy Statement",
+          "section": "Personal Data We Collect > Automatically",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub General Privacy Statement",
+          "section": "Our use of cookies and tracking technologies > Cookies and tracking technologies > How do we and our partners use cookies and similar technologies?",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/privacy-policies/github-general-privacy-statement.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-037",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F01",
+      "query": "I publish a GitHub Copilot Extension. What permission do I get to use the platform, what can GitHub do if I violate its policy, and can I appeal?",
+      "required_aspect": "The platform license is limited to compliant extension development and related interoperability purposes.",
+      "candidate_answer": "**Permission you get:** As long as you remain compliant with the Agreement and associated requirements, GitHub grants you a limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement to access and use the Platform for publishing, developing, demonstrating, testing, and supporting interoperability and integrations between your Extension and GitHub Copilot [S1]. No other rights or licenses to GitHub Copilot or other GitHub products/services are granted beyond those expressly given [S1].\n\n**What GitHub can do if you violate its policy:** Violations may result in removing the Extension from the Platform, token revocation, Account or Extension suspension, User notification, legal action, or any other action deemed necessary by GitHub [S1]. GitHub may or may not provide notice before taking action [S1]. GitHub also reserves the right to modify or discontinue your Platform access temporarily or permanently, with or without notice [S1], and may periodically audit Extensions and collect information about Users using your Extension [S1].\n\n**Appeals:** Yes—appeals may be submitted via the GitHub Appeal and Reinstatement Process [S1].\n\nOne note for context: the policy states that GitHub Copilot Extensions are being deprecated on November 10, 2025, in favor of the Model Context Protocol (MCP) [S5].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-copilot-extension-developer-policy.md",
+          "section": "1. Services",
+          "source_excerpt": "By using our Platform, you agree to adhere to this policy and all GitHub terms and policies incorporated by reference. You must also adhere to all technical specifications and requirements published by GitHub. GitHub may update this Agreement and any requirements at any time, and you should periodically review this Agreement and all technical specifications and requirements to ensure compliance with the most recent version. So long as you remain compliant with this Agreement and associated requirements within, we grant you a limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement to access and use the Platform for the purpose of publishing, developing, demonstrating, testing and supporting interoperability and integrations between Your Extension and GitHub Copilot.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Copilot Extension Developer Policy",
+          "section": "1. Services",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-copilot-extension-developer-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Copilot Extension Developer Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-copilot-extension-developer-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-038",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F04",
+      "query": "I publish a GitHub Copilot Extension. What permission do I get to use the platform, what can GitHub do if I violate its policy, and can I appeal?",
+      "required_aspect": "Violations may lead to extension removal, token revocation, or account or extension suspension.",
+      "candidate_answer": "**Permission you get:** As long as you remain compliant with the Agreement and associated requirements, GitHub grants you a limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement to access and use the Platform for publishing, developing, demonstrating, testing, and supporting interoperability and integrations between your Extension and GitHub Copilot [S1]. No other rights or licenses to GitHub Copilot or other GitHub products/services are granted beyond those expressly given [S1].\n\n**What GitHub can do if you violate its policy:** Violations may result in removing the Extension from the Platform, token revocation, Account or Extension suspension, User notification, legal action, or any other action deemed necessary by GitHub [S1]. GitHub may or may not provide notice before taking action [S1]. GitHub also reserves the right to modify or discontinue your Platform access temporarily or permanently, with or without notice [S1], and may periodically audit Extensions and collect information about Users using your Extension [S1].\n\n**Appeals:** Yes—appeals may be submitted via the GitHub Appeal and Reinstatement Process [S1].\n\nOne note for context: the policy states that GitHub Copilot Extensions are being deprecated on November 10, 2025, in favor of the Model Context Protocol (MCP) [S5].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-copilot-extension-developer-policy.md",
+          "section": "1. Services",
+          "source_excerpt": "Violations of this Agreement may result in removing the Extension from the Platform, token revocation, Account or Extension suspension, User notification, legal action or any other action deemed necessary by Us. If requested, You must provide us with proof of compliance with this Agreement. If You violate this Agreement we may or may not provide notice before taking action. Appeals may be submitted via the GitHub Appeal and Reinstatement Process. Please note that we may periodically audit Extensions and collect information about Users using Your Extension.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Copilot Extension Developer Policy",
+          "section": "1. Services",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-copilot-extension-developer-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Copilot Extension Developer Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-copilot-extension-developer-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-039",
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F05",
+      "query": "I publish a GitHub Copilot Extension. What permission do I get to use the platform, what can GitHub do if I violate its policy, and can I appeal?",
+      "required_aspect": "Appeals may be submitted through GitHub's appeal and reinstatement process.",
+      "candidate_answer": "**Permission you get:** As long as you remain compliant with the Agreement and associated requirements, GitHub grants you a limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement to access and use the Platform for publishing, developing, demonstrating, testing, and supporting interoperability and integrations between your Extension and GitHub Copilot [S1]. No other rights or licenses to GitHub Copilot or other GitHub products/services are granted beyond those expressly given [S1].\n\n**What GitHub can do if you violate its policy:** Violations may result in removing the Extension from the Platform, token revocation, Account or Extension suspension, User notification, legal action, or any other action deemed necessary by GitHub [S1]. GitHub may or may not provide notice before taking action [S1]. GitHub also reserves the right to modify or discontinue your Platform access temporarily or permanently, with or without notice [S1], and may periodically audit Extensions and collect information about Users using your Extension [S1].\n\n**Appeals:** Yes—appeals may be submitted via the GitHub Appeal and Reinstatement Process [S1].\n\nOne note for context: the policy states that GitHub Copilot Extensions are being deprecated on November 10, 2025, in favor of the Model Context Protocol (MCP) [S5].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-copilot-extension-developer-policy.md",
+          "section": "1. Services",
+          "source_excerpt": "Violations of this Agreement may result in removing the Extension from the Platform, token revocation, Account or Extension suspension, User notification, legal action or any other action deemed necessary by Us. If requested, You must provide us with proof of compliance with this Agreement. If You violate this Agreement we may or may not provide notice before taking action. Appeals may be submitted via the GitHub Appeal and Reinstatement Process. Please note that we may periodically audit Extensions and collect information about Users using Your Extension.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Copilot Extension Developer Policy",
+          "section": "1. Services",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-copilot-extension-developer-policy.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Copilot Extension Developer Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-copilot-extension-developer-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-040",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F02",
+      "query": "We're considering a GitHub preview for important work. What risks and service commitments should we expect before it becomes generally available?",
+      "required_aspect": "Pre-release software may fail or delete or corrupt data.",
+      "candidate_answer": "Based on the provided policies, here is what you should expect for a GitHub preview:\n\n**Service commitments (or lack thereof)**\n- Previews are provided \"AS-IS\", \"WITH ALL FAULTS\" and \"AS AVAILABLE\" [S2].\n- GitHub may change or discontinue Previews at any time without notice [S2]. Pre-release software may be changed for the final commercial version, or GitHub may not release a commercial version at all [S5].\n- GitHub is not obligated to provide maintenance, technical support, or updates [S5].\n- GitHub grants only a limited right to use a non-production instance of the Preview [S2].\n\n**Risks**\n- Pre-release software may not operate correctly, may delete or corrupt your data, or have other bugs, and may not work the way a final commercial version will [S5].\n- GitHub's maximum liability is limited to direct damages up to US $500 [S2].\n- GitHub has no obligation to defend, indemnify, or hold you harmless for third-party claims arising from your use of Previews [S2].\n\n**Confidentiality obligations**\n- Non-public information about a private Preview is considered GitHub's confidential information, regardless of whether it is marked as such [S2][S4].\n- You may use it only for the express purpose of testing and evaluating the Beta Preview, and must not disclose it to third parties (subject to stated exceptions) [S4]. Similar confidentiality obligations apply under the Research Program terms [S1].\n- If you provide comments or suggestions about a Preview, GitHub may use that feedback for any purpose without obligation of any kind [S2].\n\n**Not specified in the provided evidence**\n- The published policies do not specify any timeline, notice period, or commitment regarding when a preview will become generally available, nor any service-level commitments (such as uptime or support response times) for previews.",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-pre-release-license-terms.md",
+          "section": "1. Pre-Release Software.",
+          "source_excerpt": "Pre-release software may not operate correctly. It may delete your data, corrupt your data, or have other bugs. It also may not work the way a final commercial version of the software will.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Research Program Terms",
+          "section": "B. Confidentiality",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-research-program-terms.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Previews",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "GitHub Terms of Service",
+          "section": "K. Beta Previews > 2. Confidentiality",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-of-service.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Pre-release License Terms",
+          "section": "1. Pre-Release Software.",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-pre-release-license-terms.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-041",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F03",
+      "query": "We're considering a GitHub preview for important work. What risks and service commitments should we expect before it becomes generally available?",
+      "required_aspect": "GitHub may change or discontinue a pre-release product without notice.",
+      "candidate_answer": "Based on the provided policies, here is what you should expect for a GitHub preview:\n\n**Service commitments (or lack thereof)**\n- Previews are provided \"AS-IS\", \"WITH ALL FAULTS\" and \"AS AVAILABLE\" [S2].\n- GitHub may change or discontinue Previews at any time without notice [S2]. Pre-release software may be changed for the final commercial version, or GitHub may not release a commercial version at all [S5].\n- GitHub is not obligated to provide maintenance, technical support, or updates [S5].\n- GitHub grants only a limited right to use a non-production instance of the Preview [S2].\n\n**Risks**\n- Pre-release software may not operate correctly, may delete or corrupt your data, or have other bugs, and may not work the way a final commercial version will [S5].\n- GitHub's maximum liability is limited to direct damages up to US $500 [S2].\n- GitHub has no obligation to defend, indemnify, or hold you harmless for third-party claims arising from your use of Previews [S2].\n\n**Confidentiality obligations**\n- Non-public information about a private Preview is considered GitHub's confidential information, regardless of whether it is marked as such [S2][S4].\n- You may use it only for the express purpose of testing and evaluating the Beta Preview, and must not disclose it to third parties (subject to stated exceptions) [S4]. Similar confidentiality obligations apply under the Research Program terms [S1].\n- If you provide comments or suggestions about a Preview, GitHub may use that feedback for any purpose without obligation of any kind [S2].\n\n**Not specified in the provided evidence**\n- The published policies do not specify any timeline, notice period, or commitment regarding when a preview will become generally available, nor any service-level commitments (such as uptime or support response times) for previews.",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-pre-release-license-terms.md",
+          "section": "1. Pre-Release Software.",
+          "source_excerpt": "GitHub may change or discontinue pre-release software at any time, for any reason, without notice to you. GitHub may change the software for the final commercial version, or may not release a commercial version at all. GitHub is not obligated to provide to you any maintenance, technical support, or updates for the software.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Research Program Terms",
+          "section": "B. Confidentiality",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-research-program-terms.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Previews",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "GitHub Terms of Service",
+          "section": "K. Beta Previews > 2. Confidentiality",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-of-service.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Pre-release License Terms",
+          "section": "1. Pre-Release Software.",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-pre-release-license-terms.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-042",
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F04",
+      "query": "We're considering a GitHub preview for important work. What risks and service commitments should we expect before it becomes generally available?",
+      "required_aspect": "GitHub is not obligated to provide maintenance, support, or updates for the pre-release product.",
+      "candidate_answer": "Based on the provided policies, here is what you should expect for a GitHub preview:\n\n**Service commitments (or lack thereof)**\n- Previews are provided \"AS-IS\", \"WITH ALL FAULTS\" and \"AS AVAILABLE\" [S2].\n- GitHub may change or discontinue Previews at any time without notice [S2]. Pre-release software may be changed for the final commercial version, or GitHub may not release a commercial version at all [S5].\n- GitHub is not obligated to provide maintenance, technical support, or updates [S5].\n- GitHub grants only a limited right to use a non-production instance of the Preview [S2].\n\n**Risks**\n- Pre-release software may not operate correctly, may delete or corrupt your data, or have other bugs, and may not work the way a final commercial version will [S5].\n- GitHub's maximum liability is limited to direct damages up to US $500 [S2].\n- GitHub has no obligation to defend, indemnify, or hold you harmless for third-party claims arising from your use of Previews [S2].\n\n**Confidentiality obligations**\n- Non-public information about a private Preview is considered GitHub's confidential information, regardless of whether it is marked as such [S2][S4].\n- You may use it only for the express purpose of testing and evaluating the Beta Preview, and must not disclose it to third parties (subject to stated exceptions) [S4]. Similar confidentiality obligations apply under the Research Program terms [S1].\n- If you provide comments or suggestions about a Preview, GitHub may use that feedback for any purpose without obligation of any kind [S2].\n\n**Not specified in the provided evidence**\n- The published policies do not specify any timeline, notice period, or commitment regarding when a preview will become generally available, nor any service-level commitments (such as uptime or support response times) for previews.",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-pre-release-license-terms.md",
+          "section": "1. Pre-Release Software.",
+          "source_excerpt": "GitHub may change or discontinue pre-release software at any time, for any reason, without notice to you. GitHub may change the software for the final commercial version, or may not release a commercial version at all. GitHub is not obligated to provide to you any maintenance, technical support, or updates for the software.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Research Program Terms",
+          "section": "B. Confidentiality",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-research-program-terms.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Previews",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "GitHub Terms of Service",
+          "section": "K. Beta Previews > 2. Confidentiality",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-of-service.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Pre-release License Terms",
+          "section": "1. Pre-Release Software.",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-pre-release-license-terms.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-043",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F02",
+      "query": "Can I use GitHub Actions as a general compute or delivery service, and what might GitHub do if my workflows misuse it?",
+      "required_aspect": "Actions cannot be used for cryptomining.",
+      "candidate_answer": "You may not use GitHub Actions as a general compute or delivery service. The Terms state that Actions should not be used for any activity that places a disproportionate burden on GitHub's servers relative to user benefits—explicitly giving the example \"don't use Actions as a content delivery network or as part of a serverless application\" [S1]. Actions also may not be used for cryptomining, unauthorized access, offering Actions (or its elements) as a stand-alone or integrated commercial product/service, or—when using GitHub-hosted runners—any activity unrelated to producing, testing, deploying, or publishing the software project associated with the repository [S1]. Use is further limited to developing and testing your application(s) [S1].\n\nIf you misuse Actions, GitHub may monitor your use to prevent violations and abuse, and misuse may result in termination of jobs, restrictions on your ability to use Actions, disabling of repositories created to run Actions in violation of these Terms, or in some cases suspension or termination of your GitHub account [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-terms-for-additional-products-and-features.md",
+          "section": "Actions",
+          "source_excerpt": "* Cryptomining;",
+          "context_excerpt": "Actions and any elements of the Actions product or service may not be used in violation of the Agreement, the [GitHub Acceptable Use Policies](/site-policy/acceptable-use-policies/github-acceptable-use-policies), or the GitHub Actions service limitations set forth in the [Actions documentation](/actions/learn-github-actions/usage-limits-billing-and-administration). Additionally, regardless of whether an Action is using self-hosted runners, Actions should not be used for:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Actions",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-044",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F03",
+      "query": "Can I use GitHub Actions as a general compute or delivery service, and what might GitHub do if my workflows misuse it?",
+      "required_aspect": "Actions cannot be offered as a standalone or integrated commercial Actions service.",
+      "candidate_answer": "You may not use GitHub Actions as a general compute or delivery service. The Terms state that Actions should not be used for any activity that places a disproportionate burden on GitHub's servers relative to user benefits—explicitly giving the example \"don't use Actions as a content delivery network or as part of a serverless application\" [S1]. Actions also may not be used for cryptomining, unauthorized access, offering Actions (or its elements) as a stand-alone or integrated commercial product/service, or—when using GitHub-hosted runners—any activity unrelated to producing, testing, deploying, or publishing the software project associated with the repository [S1]. Use is further limited to developing and testing your application(s) [S1].\n\nIf you misuse Actions, GitHub may monitor your use to prevent violations and abuse, and misuse may result in termination of jobs, restrictions on your ability to use Actions, disabling of repositories created to run Actions in violation of these Terms, or in some cases suspension or termination of your GitHub account [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-terms-for-additional-products-and-features.md",
+          "section": "Actions",
+          "source_excerpt": "* The provision of a stand-alone or integrated application or service offering the Actions product or service, or any elements of the Actions product or service, for commercial purposes;",
+          "context_excerpt": "Actions and any elements of the Actions product or service may not be used in violation of the Agreement, the [GitHub Acceptable Use Policies](/site-policy/acceptable-use-policies/github-acceptable-use-policies), or the GitHub Actions service limitations set forth in the [Actions documentation](/actions/learn-github-actions/usage-limits-billing-and-administration). Additionally, regardless of whether an Action is using self-hosted runners, Actions should not be used for:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Actions",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-045",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F04",
+      "query": "Can I use GitHub Actions as a general compute or delivery service, and what might GitHub do if my workflows misuse it?",
+      "required_aspect": "Disproportionate server burden, such as using Actions as a CDN or serverless app, is prohibited.",
+      "candidate_answer": "You may not use GitHub Actions as a general compute or delivery service. The Terms state that Actions should not be used for any activity that places a disproportionate burden on GitHub's servers relative to user benefits—explicitly giving the example \"don't use Actions as a content delivery network or as part of a serverless application\" [S1]. Actions also may not be used for cryptomining, unauthorized access, offering Actions (or its elements) as a stand-alone or integrated commercial product/service, or—when using GitHub-hosted runners—any activity unrelated to producing, testing, deploying, or publishing the software project associated with the repository [S1]. Use is further limited to developing and testing your application(s) [S1].\n\nIf you misuse Actions, GitHub may monitor your use to prevent violations and abuse, and misuse may result in termination of jobs, restrictions on your ability to use Actions, disabling of repositories created to run Actions in violation of these Terms, or in some cases suspension or termination of your GitHub account [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-terms-for-additional-products-and-features.md",
+          "section": "Actions",
+          "source_excerpt": "* Any activity that places a burden on our servers, where that burden is disproportionate to the benefits provided to users (for example, don't use Actions as a content delivery network or as part of a serverless application, but a low benefit Action could be ok if it’s also low burden); or",
+          "context_excerpt": "Actions and any elements of the Actions product or service may not be used in violation of the Agreement, the [GitHub Acceptable Use Policies](/site-policy/acceptable-use-policies/github-acceptable-use-policies), or the GitHub Actions service limitations set forth in the [Actions documentation](/actions/learn-github-actions/usage-limits-billing-and-administration). Additionally, regardless of whether an Action is using self-hosted runners, Actions should not be used for:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Actions",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-046",
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F05",
+      "query": "Can I use GitHub Actions as a general compute or delivery service, and what might GitHub do if my workflows misuse it?",
+      "required_aspect": "Misuse can cause job termination, use restrictions, repository disabling, or account suspension.",
+      "candidate_answer": "You may not use GitHub Actions as a general compute or delivery service. The Terms state that Actions should not be used for any activity that places a disproportionate burden on GitHub's servers relative to user benefits—explicitly giving the example \"don't use Actions as a content delivery network or as part of a serverless application\" [S1]. Actions also may not be used for cryptomining, unauthorized access, offering Actions (or its elements) as a stand-alone or integrated commercial product/service, or—when using GitHub-hosted runners—any activity unrelated to producing, testing, deploying, or publishing the software project associated with the repository [S1]. Use is further limited to developing and testing your application(s) [S1].\n\nIf you misuse Actions, GitHub may monitor your use to prevent violations and abuse, and misuse may result in termination of jobs, restrictions on your ability to use Actions, disabling of repositories created to run Actions in violation of these Terms, or in some cases suspension or termination of your GitHub account [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-terms/github-terms-for-additional-products-and-features.md",
+          "section": "Actions",
+          "source_excerpt": "In order to prevent violations of these limitations and abuse of GitHub Actions, GitHub may monitor your use of GitHub Actions. Misuse of GitHub Actions may result in termination of jobs, restrictions in your ability to use GitHub Actions, disabling of repositories created to run Actions in a way that violates these Terms, or in some cases, suspension or termination of your GitHub account.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Terms for Additional Products and Features",
+          "section": "Actions",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-terms/github-terms-for-additional-products-and-features.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-047",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F01",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "required_aspect": "Public user profiles display a username.",
+      "candidate_answer": "Based on the provided policy evidence:\n\n**Public by default (all public profiles display):**\n- Username\n- Repositories the user has starred\n- Other GitHub users the user follows\n- Users who follow them [S1]\n\n**Optional for users to share publicly:**\n- Real name\n- Avatar\n- Affiliated company\n- Location\n- Public email address\n- Personal web page\n- Organizations the user is a member of (depending on the organizations' or users' preferences) [S1]\n\n**Maintained privately (private account data):**\n- Private email addresses\n- Payment details\n- Security access logs\n- Data about interactions with private repositories [S1]\n\nNote that the private account data list is described as something that \"may include\" those items, and the public/optional lists are described as non-exhaustive [S1]. The evidence also notes that some information is optional for users to provide, and in other cases GitHub may not have collected or retained it [S2].",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "User data on GitHub.com",
+          "source_excerpt": "* Username",
+          "context_excerpt": "* <a name=\"public-account-data\"></a> **Public account data:** There is a variety of information publicly available on GitHub about users and their repositories. User profiles can be found at a URL such as `https://github.com/username`. User profiles display information about when the user created their account as well their public activity on GitHub.com and social interactions. Public user profiles can also include additional information that a user may have chosen to share publicly. All user public profiles display:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "User data on GitHub.com",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-048",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F02",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "required_aspect": "Public user profiles display starred repositories.",
+      "candidate_answer": "Based on the provided policy evidence:\n\n**Public by default (all public profiles display):**\n- Username\n- Repositories the user has starred\n- Other GitHub users the user follows\n- Users who follow them [S1]\n\n**Optional for users to share publicly:**\n- Real name\n- Avatar\n- Affiliated company\n- Location\n- Public email address\n- Personal web page\n- Organizations the user is a member of (depending on the organizations' or users' preferences) [S1]\n\n**Maintained privately (private account data):**\n- Private email addresses\n- Payment details\n- Security access logs\n- Data about interactions with private repositories [S1]\n\nNote that the private account data list is described as something that \"may include\" those items, and the public/optional lists are described as non-exhaustive [S1]. The evidence also notes that some information is optional for users to provide, and in other cases GitHub may not have collected or retained it [S2].",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "User data on GitHub.com",
+          "source_excerpt": "* The repositories that the user has starred",
+          "context_excerpt": "* <a name=\"public-account-data\"></a> **Public account data:** There is a variety of information publicly available on GitHub about users and their repositories. User profiles can be found at a URL such as `https://github.com/username`. User profiles display information about when the user created their account as well their public activity on GitHub.com and social interactions. Public user profiles can also include additional information that a user may have chosen to share publicly. All user public profiles display:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "User data on GitHub.com",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-049",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F03",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "required_aspect": "Users may optionally publish their real name.",
+      "candidate_answer": "Based on the provided policy evidence:\n\n**Public by default (all public profiles display):**\n- Username\n- Repositories the user has starred\n- Other GitHub users the user follows\n- Users who follow them [S1]\n\n**Optional for users to share publicly:**\n- Real name\n- Avatar\n- Affiliated company\n- Location\n- Public email address\n- Personal web page\n- Organizations the user is a member of (depending on the organizations' or users' preferences) [S1]\n\n**Maintained privately (private account data):**\n- Private email addresses\n- Payment details\n- Security access logs\n- Data about interactions with private repositories [S1]\n\nNote that the private account data list is described as something that \"may include\" those items, and the public/optional lists are described as non-exhaustive [S1]. The evidence also notes that some information is optional for users to provide, and in other cases GitHub may not have collected or retained it [S2].",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "User data on GitHub.com",
+          "source_excerpt": "* Their real name",
+          "context_excerpt": "Optionally, a user may also choose to share the following information publicly:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "User data on GitHub.com",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-050",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F04",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "required_aspect": "GitHub may maintain private email addresses as private account data.",
+      "candidate_answer": "Based on the provided policy evidence:\n\n**Public by default (all public profiles display):**\n- Username\n- Repositories the user has starred\n- Other GitHub users the user follows\n- Users who follow them [S1]\n\n**Optional for users to share publicly:**\n- Real name\n- Avatar\n- Affiliated company\n- Location\n- Public email address\n- Personal web page\n- Organizations the user is a member of (depending on the organizations' or users' preferences) [S1]\n\n**Maintained privately (private account data):**\n- Private email addresses\n- Payment details\n- Security access logs\n- Data about interactions with private repositories [S1]\n\nNote that the private account data list is described as something that \"may include\" those items, and the public/optional lists are described as non-exhaustive [S1]. The evidence also notes that some information is optional for users to provide, and in other cases GitHub may not have collected or retained it [S2].",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "User data on GitHub.com",
+          "source_excerpt": "* Private email addresses",
+          "context_excerpt": "* <a name=\"private-account-data\"></a> **Private account data:** GitHub also collects and maintains certain private information about users as outlined in our [Privacy Policy](/site-policy/privacy-policies/github-privacy-statement). This may include:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "User data on GitHub.com",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-051",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F05",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "required_aspect": "GitHub may maintain payment details as private account data.",
+      "candidate_answer": "Based on the provided policy evidence:\n\n**Public by default (all public profiles display):**\n- Username\n- Repositories the user has starred\n- Other GitHub users the user follows\n- Users who follow them [S1]\n\n**Optional for users to share publicly:**\n- Real name\n- Avatar\n- Affiliated company\n- Location\n- Public email address\n- Personal web page\n- Organizations the user is a member of (depending on the organizations' or users' preferences) [S1]\n\n**Maintained privately (private account data):**\n- Private email addresses\n- Payment details\n- Security access logs\n- Data about interactions with private repositories [S1]\n\nNote that the private account data list is described as something that \"may include\" those items, and the public/optional lists are described as non-exhaustive [S1]. The evidence also notes that some information is optional for users to provide, and in other cases GitHub may not have collected or retained it [S2].",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "User data on GitHub.com",
+          "source_excerpt": "* Payment details",
+          "context_excerpt": "* <a name=\"private-account-data\"></a> **Private account data:** GitHub also collects and maintains certain private information about users as outlined in our [Privacy Policy](/site-policy/privacy-policies/github-privacy-statement). This may include:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "User data on GitHub.com",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-052",
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F06",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "required_aspect": "GitHub may maintain security access logs as private account data.",
+      "candidate_answer": "Based on the provided policy evidence:\n\n**Public by default (all public profiles display):**\n- Username\n- Repositories the user has starred\n- Other GitHub users the user follows\n- Users who follow them [S1]\n\n**Optional for users to share publicly:**\n- Real name\n- Avatar\n- Affiliated company\n- Location\n- Public email address\n- Personal web page\n- Organizations the user is a member of (depending on the organizations' or users' preferences) [S1]\n\n**Maintained privately (private account data):**\n- Private email addresses\n- Payment details\n- Security access logs\n- Data about interactions with private repositories [S1]\n\nNote that the private account data list is described as something that \"may include\" those items, and the public/optional lists are described as non-exhaustive [S1]. The evidence also notes that some information is optional for users to provide, and in other cases GitHub may not have collected or retained it [S2].",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "User data on GitHub.com",
+          "source_excerpt": "* Security access logs",
+          "context_excerpt": "* <a name=\"private-account-data\"></a> **Private account data:** GitHub also collects and maintains certain private information about users as outlined in our [Privacy Policy](/site-policy/privacy-policies/github-privacy-statement). This may include:"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "User data on GitHub.com",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-053",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F01",
+      "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "required_aspect": "GitHub generally notifies users about pending account or repository requests.",
+      "candidate_answer": "Based on the provided evidence, GitHub's stated policy is to notify affected users about requests for their account information, unless it is prohibited from doing so by law or court order [S2]. The published guidelines do not enumerate specific situations in which notice might be withheld or delayed beyond that general \"prohibited by law or court order\" exception [S2].\n\nThe evidence also notes that in certain exigent circumstances GitHub may share limited information corresponding to the nature of the circumstances, and would require legal process for anything beyond that [S4]. However, the provided sources do not specify whether or how such exigent circumstances affect user notification timing.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "We will notify any affected account owners",
+          "source_excerpt": "It is our policy to notify users about any pending requests regarding their accounts or repositories, unless we are prohibited by law or court order from doing so. Before disclosing user information, we will make a reasonable effort to notify any affected account owner(s) by sending a message to their verified email address providing them with a copy of the subpoena, court order, or warrant so that they can have an opportunity to challenge the legal process if they wish. In (rare) exigent circumstances, we may delay notification if we determine delay is necessary to prevent death or serious harm or due to an ongoing investigation.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-054",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F02",
+      "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "required_aspect": "Notice may be omitted when law or a court order prohibits it.",
+      "candidate_answer": "Based on the provided evidence, GitHub's stated policy is to notify affected users about requests for their account information, unless it is prohibited from doing so by law or court order [S2]. The published guidelines do not enumerate specific situations in which notice might be withheld or delayed beyond that general \"prohibited by law or court order\" exception [S2].\n\nThe evidence also notes that in certain exigent circumstances GitHub may share limited information corresponding to the nature of the circumstances, and would require legal process for anything beyond that [S4]. However, the provided sources do not specify whether or how such exigent circumstances affect user notification timing.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "We will notify any affected account owners",
+          "source_excerpt": "It is our policy to notify users about any pending requests regarding their accounts or repositories, unless we are prohibited by law or court order from doing so. Before disclosing user information, we will make a reasonable effort to notify any affected account owner(s) by sending a message to their verified email address providing them with a copy of the subpoena, court order, or warrant so that they can have an opportunity to challenge the legal process if they wish. In (rare) exigent circumstances, we may delay notification if we determine delay is necessary to prevent death or serious harm or due to an ongoing investigation.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-055",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03",
+      "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "required_aspect": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+      "candidate_answer": "Based on the provided evidence, GitHub's stated policy is to notify affected users about requests for their account information, unless it is prohibited from doing so by law or court order [S2]. The published guidelines do not enumerate specific situations in which notice might be withheld or delayed beyond that general \"prohibited by law or court order\" exception [S2].\n\nThe evidence also notes that in certain exigent circumstances GitHub may share limited information corresponding to the nature of the circumstances, and would require legal process for anything beyond that [S4]. However, the provided sources do not specify whether or how such exigent circumstances affect user notification timing.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "We will notify any affected account owners",
+          "source_excerpt": "It is our policy to notify users about any pending requests regarding their accounts or repositories, unless we are prohibited by law or court order from doing so. Before disclosing user information, we will make a reasonable effort to notify any affected account owner(s) by sending a message to their verified email address providing them with a copy of the subpoena, court order, or warrant so that they can have an opportunity to challenge the legal process if they wish. In (rare) exigent circumstances, we may delay notification if we determine delay is necessary to prevent death or serious harm or due to an ongoing investigation.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-056",
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04",
+      "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "required_aspect": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+      "candidate_answer": "Based on the provided evidence, GitHub's stated policy is to notify affected users about requests for their account information, unless it is prohibited from doing so by law or court order [S2]. The published guidelines do not enumerate specific situations in which notice might be withheld or delayed beyond that general \"prohibited by law or court order\" exception [S2].\n\nThe evidence also notes that in certain exigent circumstances GitHub may share limited information corresponding to the nature of the circumstances, and would require legal process for anything beyond that [S4]. However, the provided sources do not specify whether or how such exigent circumstances affect user notification timing.",
+      "supporting_sources": [
+        {
+          "document": "other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+          "section": "We will notify any affected account owners",
+          "source_excerpt": "It is our policy to notify users about any pending requests regarding their accounts or repositories, unless we are prohibited by law or court order from doing so. Before disclosing user information, we will make a reasonable effort to notify any affected account owner(s) by sending a message to their verified email address providing them with a copy of the subpoena, court order, or warrant so that they can have an opportunity to challenge the legal process if they wish. In (rare) exigent circumstances, we may delay notification if we determine delay is necessary to prevent death or serious harm or due to an ongoing investigation.",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S2",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        },
+        {
+          "citation_id": "S4",
+          "title": "Guidelines for Legal Requests of User Data",
+          "section": "Disclosure of non-public information",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-057",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F02",
+      "query": "A GitHub employee wants to offer a customer a sports ticket or dinner. How does the gifts policy separate acceptable hospitality from improper influence?",
+      "required_aspect": "Even a small benefit can be improper when intended to influence someone.",
+      "candidate_answer": "The policy separates acceptable hospitality from improper influence primarily by **intent** and by **what is given**, not just by dollar value.\n\n**Intent is the key dividing line.** The policy states that \"if the intention is to improperly influence, anything, however small, might be considered 'of value'\" [S1]. The Code of Ethics prohibits giving \"anything else of value\" to anyone \"in order to obtain or keep business, or secure any other improper advantage for GitHub or Microsoft\" [S2][S3]. GitHub's business relationships must not be used \"to create a special advantage or influence a deal\" [S5].\n\n**Examples of acceptable hospitality for customers/prospective customers** include swag, economy class airfare to GitHub offices for Executive Briefings, bleacher-type tickets to a sporting event, a reasonably priced dinner in town, and a small box of chocolates as an end-of-year thank you [S1].\n\n**Examples of unacceptable gifts** include first class airfare, winery tours, tickets to Disneyland/the World Cup/the Olympics, an autographed futbol, and charity contributions [S1].\n\n**Applying this to the employee's question:** A reasonably priced dinner in town is listed as acceptable, and bleacher-type tickets to a sporting event are acceptable [S1]. However, premium event tickets (e.g., World Cup, Olympics) are listed as not ok [S1]. So a sports ticket or dinner could fall on either side depending on its nature and, critically, the intent behind offering it [S1].\n\n**Special rule for government officials:** No gifts are acceptable for government officials (perhaps stickers), and employees should ask what their policies permit; many U.S. congresspeople will not allow you to take them out for dinner and pay [S1].\n\n**Note on thresholds:** The Anti-Bribery Statement references that the Gifts and Entertainment Policy \"includes clear monetary thresholds for gifts along with annual limitations, with limited exceptions for gifts approved by appropriate management\" [S3], but the specific threshold amounts are not provided in the supplied evidence. When in doubt, the policy advises running it by Legal [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-company-policies/github-gifts-and-entertainment-policy.md",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_excerpt": "As for other customers or prospective customers, certain things might seem trivial but have great value to someone else. For example, although it might not seem like a big deal to you to get your friend’s daughter hired as an intern, it might be of huge value to them. But if she is not qualified and you pull strings to make it happen, then it isn't ok. In addition, if the intention is to improperly influence, anything, however small, might be considered \"of value.\"",
+          "context_excerpt": ""
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Company policies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Anti-Bribery Statement",
+          "section": "GitHub policies prohibiting bribery",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-anti-bribery-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-058",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F03",
+      "query": "A GitHub employee wants to offer a customer a sports ticket or dinner. How does the gifts policy separate acceptable hospitality from improper influence?",
+      "required_aspect": "Tickets to major events are examples of unacceptable customer gifts.",
+      "candidate_answer": "The policy separates acceptable hospitality from improper influence primarily by **intent** and by **what is given**, not just by dollar value.\n\n**Intent is the key dividing line.** The policy states that \"if the intention is to improperly influence, anything, however small, might be considered 'of value'\" [S1]. The Code of Ethics prohibits giving \"anything else of value\" to anyone \"in order to obtain or keep business, or secure any other improper advantage for GitHub or Microsoft\" [S2][S3]. GitHub's business relationships must not be used \"to create a special advantage or influence a deal\" [S5].\n\n**Examples of acceptable hospitality for customers/prospective customers** include swag, economy class airfare to GitHub offices for Executive Briefings, bleacher-type tickets to a sporting event, a reasonably priced dinner in town, and a small box of chocolates as an end-of-year thank you [S1].\n\n**Examples of unacceptable gifts** include first class airfare, winery tours, tickets to Disneyland/the World Cup/the Olympics, an autographed futbol, and charity contributions [S1].\n\n**Applying this to the employee's question:** A reasonably priced dinner in town is listed as acceptable, and bleacher-type tickets to a sporting event are acceptable [S1]. However, premium event tickets (e.g., World Cup, Olympics) are listed as not ok [S1]. So a sports ticket or dinner could fall on either side depending on its nature and, critically, the intent behind offering it [S1].\n\n**Special rule for government officials:** No gifts are acceptable for government officials (perhaps stickers), and employees should ask what their policies permit; many U.S. congresspeople will not allow you to take them out for dinner and pay [S1].\n\n**Note on thresholds:** The Anti-Bribery Statement references that the Gifts and Entertainment Policy \"includes clear monetary thresholds for gifts along with annual limitations, with limited exceptions for gifts approved by appropriate management\" [S3], but the specific threshold amounts are not provided in the supplied evidence. When in doubt, the policy advises running it by Legal [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-company-policies/github-gifts-and-entertainment-policy.md",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_excerpt": "* Tickets to Disneyland 👸, the World Cup 🥅, the Olympics 🏅",
+          "context_excerpt": "🙅 _Here are some other things that aren't ok:_"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Company policies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Anti-Bribery Statement",
+          "section": "GitHub policies prohibiting bribery",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-anti-bribery-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-059",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F04",
+      "query": "A GitHub employee wants to offer a customer a sports ticket or dinner. How does the gifts policy separate acceptable hospitality from improper influence?",
+      "required_aspect": "Low-cost bleacher-type sports tickets are examples of acceptable customer hospitality.",
+      "candidate_answer": "The policy separates acceptable hospitality from improper influence primarily by **intent** and by **what is given**, not just by dollar value.\n\n**Intent is the key dividing line.** The policy states that \"if the intention is to improperly influence, anything, however small, might be considered 'of value'\" [S1]. The Code of Ethics prohibits giving \"anything else of value\" to anyone \"in order to obtain or keep business, or secure any other improper advantage for GitHub or Microsoft\" [S2][S3]. GitHub's business relationships must not be used \"to create a special advantage or influence a deal\" [S5].\n\n**Examples of acceptable hospitality for customers/prospective customers** include swag, economy class airfare to GitHub offices for Executive Briefings, bleacher-type tickets to a sporting event, a reasonably priced dinner in town, and a small box of chocolates as an end-of-year thank you [S1].\n\n**Examples of unacceptable gifts** include first class airfare, winery tours, tickets to Disneyland/the World Cup/the Olympics, an autographed futbol, and charity contributions [S1].\n\n**Applying this to the employee's question:** A reasonably priced dinner in town is listed as acceptable, and bleacher-type tickets to a sporting event are acceptable [S1]. However, premium event tickets (e.g., World Cup, Olympics) are listed as not ok [S1]. So a sports ticket or dinner could fall on either side depending on its nature and, critically, the intent behind offering it [S1].\n\n**Special rule for government officials:** No gifts are acceptable for government officials (perhaps stickers), and employees should ask what their policies permit; many U.S. congresspeople will not allow you to take them out for dinner and pay [S1].\n\n**Note on thresholds:** The Anti-Bribery Statement references that the Gifts and Entertainment Policy \"includes clear monetary thresholds for gifts along with annual limitations, with limited exceptions for gifts approved by appropriate management\" [S3], but the specific threshold amounts are not provided in the supplied evidence. When in doubt, the policy advises running it by Legal [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-company-policies/github-gifts-and-entertainment-policy.md",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_excerpt": "* Bleacher-type tickets to a sporting event ⚾️",
+          "context_excerpt": "🙆 _Here is some stuff that is actually ok for customers or prospective customers:_"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Company policies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Anti-Bribery Statement",
+          "section": "GitHub policies prohibiting bribery",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-anti-bribery-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        }
+      ]
+    },
+    {
+      "review_id": "JC-060",
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F05",
+      "query": "A GitHub employee wants to offer a customer a sports ticket or dinner. How does the gifts policy separate acceptable hospitality from improper influence?",
+      "required_aspect": "A reasonably priced dinner is an example of acceptable customer hospitality.",
+      "candidate_answer": "The policy separates acceptable hospitality from improper influence primarily by **intent** and by **what is given**, not just by dollar value.\n\n**Intent is the key dividing line.** The policy states that \"if the intention is to improperly influence, anything, however small, might be considered 'of value'\" [S1]. The Code of Ethics prohibits giving \"anything else of value\" to anyone \"in order to obtain or keep business, or secure any other improper advantage for GitHub or Microsoft\" [S2][S3]. GitHub's business relationships must not be used \"to create a special advantage or influence a deal\" [S5].\n\n**Examples of acceptable hospitality for customers/prospective customers** include swag, economy class airfare to GitHub offices for Executive Briefings, bleacher-type tickets to a sporting event, a reasonably priced dinner in town, and a small box of chocolates as an end-of-year thank you [S1].\n\n**Examples of unacceptable gifts** include first class airfare, winery tours, tickets to Disneyland/the World Cup/the Olympics, an autographed futbol, and charity contributions [S1].\n\n**Applying this to the employee's question:** A reasonably priced dinner in town is listed as acceptable, and bleacher-type tickets to a sporting event are acceptable [S1]. However, premium event tickets (e.g., World Cup, Olympics) are listed as not ok [S1]. So a sports ticket or dinner could fall on either side depending on its nature and, critically, the intent behind offering it [S1].\n\n**Special rule for government officials:** No gifts are acceptable for government officials (perhaps stickers), and employees should ask what their policies permit; many U.S. congresspeople will not allow you to take them out for dinner and pay [S1].\n\n**Note on thresholds:** The Anti-Bribery Statement references that the Gifts and Entertainment Policy \"includes clear monetary thresholds for gifts along with annual limitations, with limited exceptions for gifts approved by appropriate management\" [S3], but the specific threshold amounts are not provided in the supplied evidence. When in doubt, the policy advises running it by Legal [S1].",
+      "supporting_sources": [
+        {
+          "document": "github-company-policies/github-gifts-and-entertainment-policy.md",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_excerpt": "* A reasonably priced dinner in town 🍽",
+          "context_excerpt": "🙆 _Here is some stuff that is actually ok for customers or prospective customers:_"
+        }
+      ],
+      "citation_map": [
+        {
+          "citation_id": "S1",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Examples of acceptable and unacceptable gifts",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S2",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "Company policies",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        },
+        {
+          "citation_id": "S3",
+          "title": "GitHub Anti-Bribery Statement",
+          "section": "GitHub policies prohibiting bribery",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-anti-bribery-statement.md"
+        },
+        {
+          "citation_id": "S5",
+          "title": "GitHub Gifts and Entertainment Policy",
+          "section": "",
+          "source_url": "https://github.com/github/site-policy/blob/main/Policies/github-company-policies/github-gifts-and-entertainment-policy.md"
+        }
+      ]
+    }
+  ]
+}

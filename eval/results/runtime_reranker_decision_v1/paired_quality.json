@@ -1,0 +1,1663 @@
+{
+  "source": "eval\\results\\reranker_transfer_results.json",
+  "source_sha256": "bbce7fa512bfbf9d31b719ea3983934ce4a4781ce4caae6bb5751906a59cd589",
+  "protocol": "historical reranker-transfer judge, both arms filtered to 208 frozen QUERY_REQUIRED IDs",
+  "dataset_status": "exposed development/research benchmark",
+  "required_aspects": 208,
+  "candidate_availability_original_facts": "235/239 (shared archived candidate union)",
+  "arms": {
+    "minilm_top5": {
+      "covered": 185,
+      "complete": 40,
+      "context_covered": 184,
+      "context_complete": 43,
+      "contradicted_claims": 5,
+      "cases": [
+        {
+          "case_id": "VAL-001-001",
+          "covered": [],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-002",
+          "covered": [
+            "VAL-001-002-F01",
+            "VAL-001-002-F02",
+            "VAL-001-002-F03",
+            "VAL-001-002-F04",
+            "VAL-001-002-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-002-F03",
+            "VAL-001-002-F04",
+            "VAL-001-002-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-003",
+          "covered": [
+            "VAL-001-003-F01",
+            "VAL-001-003-F02",
+            "VAL-001-003-F03"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-003-F01",
+            "VAL-001-003-F02",
+            "VAL-001-003-F03"
+          ]
+        },
+        {
+          "case_id": "VAL-001-004",
+          "covered": [
+            "VAL-001-004-F01",
+            "VAL-001-004-F02",
+            "VAL-001-004-F03",
+            "VAL-001-004-F04",
+            "VAL-001-004-F05",
+            "VAL-001-004-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-004-F01",
+            "VAL-001-004-F02",
+            "VAL-001-004-F03",
+            "VAL-001-004-F04",
+            "VAL-001-004-F05",
+            "VAL-001-004-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-005",
+          "covered": [
+            "VAL-001-005-F01",
+            "VAL-001-005-F02",
+            "VAL-001-005-F03",
+            "VAL-001-005-F04",
+            "VAL-001-005-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-005-F01",
+            "VAL-001-005-F02",
+            "VAL-001-005-F03",
+            "VAL-001-005-F04",
+            "VAL-001-005-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-006",
+          "covered": [
+            "VAL-001-006-F01",
+            "VAL-001-006-F02",
+            "VAL-001-006-F03",
+            "VAL-001-006-F04",
+            "VAL-001-006-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-006-F01",
+            "VAL-001-006-F02",
+            "VAL-001-006-F03",
+            "VAL-001-006-F04",
+            "VAL-001-006-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-007",
+          "covered": [
+            "VAL-001-007-F01",
+            "VAL-001-007-F03",
+            "VAL-001-007-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-007-F01",
+            "VAL-001-007-F03",
+            "VAL-001-007-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-008",
+          "covered": [
+            "VAL-001-008-F01",
+            "VAL-001-008-F03",
+            "VAL-001-008-F04"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-008-F01",
+            "VAL-001-008-F02",
+            "VAL-001-008-F03",
+            "VAL-001-008-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-009",
+          "covered": [
+            "VAL-001-009-F03",
+            "VAL-001-009-F04",
+            "VAL-001-009-F05"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-009-F01",
+            "VAL-001-009-F03",
+            "VAL-001-009-F04",
+            "VAL-001-009-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-010",
+          "covered": [
+            "VAL-001-010-F01",
+            "VAL-001-010-F03",
+            "VAL-001-010-F04",
+            "VAL-001-010-F05",
+            "VAL-001-010-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-010-F01",
+            "VAL-001-010-F03",
+            "VAL-001-010-F04",
+            "VAL-001-010-F05",
+            "VAL-001-010-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-011",
+          "covered": [
+            "VAL-001-011-F01",
+            "VAL-001-011-F02",
+            "VAL-001-011-F03",
+            "VAL-001-011-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-011-F01",
+            "VAL-001-011-F02",
+            "VAL-001-011-F03",
+            "VAL-001-011-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-012",
+          "covered": [
+            "VAL-001-012-F01",
+            "VAL-001-012-F04",
+            "VAL-001-012-F05",
+            "VAL-001-012-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-012-F01",
+            "VAL-001-012-F04",
+            "VAL-001-012-F05",
+            "VAL-001-012-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-013",
+          "covered": [
+            "VAL-001-013-F01",
+            "VAL-001-013-F02",
+            "VAL-001-013-F03",
+            "VAL-001-013-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-013-F01",
+            "VAL-001-013-F02",
+            "VAL-001-013-F03",
+            "VAL-001-013-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-014",
+          "covered": [
+            "VAL-001-014-F01",
+            "VAL-001-014-F02",
+            "VAL-001-014-F03",
+            "VAL-001-014-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-014-F01",
+            "VAL-001-014-F02",
+            "VAL-001-014-F03",
+            "VAL-001-014-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-015",
+          "covered": [
+            "VAL-001-015-F01",
+            "VAL-001-015-F02",
+            "VAL-001-015-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-015-F01",
+            "VAL-001-015-F02",
+            "VAL-001-015-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-016",
+          "covered": [
+            "VAL-001-016-F01",
+            "VAL-001-016-F02",
+            "VAL-001-016-F03",
+            "VAL-001-016-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-016-F01",
+            "VAL-001-016-F02",
+            "VAL-001-016-F03",
+            "VAL-001-016-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-017",
+          "covered": [
+            "VAL-001-017-F01",
+            "VAL-001-017-F02",
+            "VAL-001-017-F03",
+            "VAL-001-017-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-017-F01",
+            "VAL-001-017-F02",
+            "VAL-001-017-F03",
+            "VAL-001-017-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-018",
+          "covered": [
+            "VAL-001-018-F01",
+            "VAL-001-018-F03",
+            "VAL-001-018-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-018-F01",
+            "VAL-001-018-F03",
+            "VAL-001-018-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-019",
+          "covered": [
+            "VAL-001-019-F01",
+            "VAL-001-019-F02",
+            "VAL-001-019-F03",
+            "VAL-001-019-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-019-F01",
+            "VAL-001-019-F02",
+            "VAL-001-019-F03",
+            "VAL-001-019-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-020",
+          "covered": [
+            "VAL-001-020-F01",
+            "VAL-001-020-F02",
+            "VAL-001-020-F03",
+            "VAL-001-020-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-020-F01",
+            "VAL-001-020-F02",
+            "VAL-001-020-F03",
+            "VAL-001-020-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-021",
+          "covered": [
+            "VAL-001-021-F01",
+            "VAL-001-021-F02",
+            "VAL-001-021-F03",
+            "VAL-001-021-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-021-F01",
+            "VAL-001-021-F02",
+            "VAL-001-021-F03",
+            "VAL-001-021-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-022",
+          "covered": [
+            "VAL-001-022-F01",
+            "VAL-001-022-F02",
+            "VAL-001-022-F03",
+            "VAL-001-022-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-022-F01",
+            "VAL-001-022-F02",
+            "VAL-001-022-F03",
+            "VAL-001-022-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-023",
+          "covered": [
+            "VAL-001-023-F01",
+            "VAL-001-023-F02",
+            "VAL-001-023-F03",
+            "VAL-001-023-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-023-F01",
+            "VAL-001-023-F02",
+            "VAL-001-023-F03",
+            "VAL-001-023-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-024",
+          "covered": [
+            "VAL-001-024-F01",
+            "VAL-001-024-F02",
+            "VAL-001-024-F03",
+            "VAL-001-024-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-024-F01",
+            "VAL-001-024-F02",
+            "VAL-001-024-F03",
+            "VAL-001-024-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-025",
+          "covered": [
+            "VAL-001-025-F02",
+            "VAL-001-025-F03",
+            "VAL-001-025-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-025-F02",
+            "VAL-001-025-F03",
+            "VAL-001-025-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-026",
+          "covered": [
+            "VAL-001-026-F01",
+            "VAL-001-026-F04",
+            "VAL-001-026-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-026-F01",
+            "VAL-001-026-F04",
+            "VAL-001-026-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-027",
+          "covered": [],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-028",
+          "covered": [
+            "VAL-001-028-F01",
+            "VAL-001-028-F02",
+            "VAL-001-028-F03"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-028-F01",
+            "VAL-001-028-F02",
+            "VAL-001-028-F03",
+            "VAL-001-028-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-029",
+          "covered": [
+            "VAL-001-029-F01"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-029-F01"
+          ]
+        },
+        {
+          "case_id": "VAL-001-030",
+          "covered": [
+            "VAL-001-030-F03"
+          ],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-031",
+          "covered": [
+            "VAL-001-031-F01",
+            "VAL-001-031-F02",
+            "VAL-001-031-F03",
+            "VAL-001-031-F05",
+            "VAL-001-031-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-031-F01",
+            "VAL-001-031-F02",
+            "VAL-001-031-F03",
+            "VAL-001-031-F05",
+            "VAL-001-031-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-032",
+          "covered": [
+            "VAL-001-032-F03",
+            "VAL-001-032-F04",
+            "VAL-001-032-F05"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-032-F02",
+            "VAL-001-032-F03",
+            "VAL-001-032-F04",
+            "VAL-001-032-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-033",
+          "covered": [
+            "VAL-001-033-F01",
+            "VAL-001-033-F02",
+            "VAL-001-033-F03",
+            "VAL-001-033-F04",
+            "VAL-001-033-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-033-F01",
+            "VAL-001-033-F02",
+            "VAL-001-033-F03",
+            "VAL-001-033-F04",
+            "VAL-001-033-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-034",
+          "covered": [
+            "VAL-001-034-F01",
+            "VAL-001-034-F02",
+            "VAL-001-034-F03",
+            "VAL-001-034-F04",
+            "VAL-001-034-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-034-F01",
+            "VAL-001-034-F02",
+            "VAL-001-034-F03",
+            "VAL-001-034-F04",
+            "VAL-001-034-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-035",
+          "covered": [
+            "VAL-001-035-F01",
+            "VAL-001-035-F02",
+            "VAL-001-035-F03",
+            "VAL-001-035-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-035-F01",
+            "VAL-001-035-F02",
+            "VAL-001-035-F03",
+            "VAL-001-035-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-036",
+          "covered": [
+            "VAL-001-036-F01",
+            "VAL-001-036-F02",
+            "VAL-001-036-F03",
+            "VAL-001-036-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-036-F01",
+            "VAL-001-036-F02",
+            "VAL-001-036-F03",
+            "VAL-001-036-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-037",
+          "covered": [
+            "VAL-001-037-F02",
+            "VAL-001-037-F03",
+            "VAL-001-037-F04",
+            "VAL-001-037-F05",
+            "VAL-001-037-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-037-F02",
+            "VAL-001-037-F03",
+            "VAL-001-037-F04",
+            "VAL-001-037-F05",
+            "VAL-001-037-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-038",
+          "covered": [
+            "VAL-001-038-F01",
+            "VAL-001-038-F02",
+            "VAL-001-038-F03",
+            "VAL-001-038-F04",
+            "VAL-001-038-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-038-F01",
+            "VAL-001-038-F02",
+            "VAL-001-038-F03",
+            "VAL-001-038-F04",
+            "VAL-001-038-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-039",
+          "covered": [
+            "VAL-001-039-F01",
+            "VAL-001-039-F03",
+            "VAL-001-039-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-039-F01",
+            "VAL-001-039-F03",
+            "VAL-001-039-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-040",
+          "covered": [
+            "VAL-001-040-F01",
+            "VAL-001-040-F02",
+            "VAL-001-040-F03"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-040-F01",
+            "VAL-001-040-F02",
+            "VAL-001-040-F03"
+          ]
+        },
+        {
+          "case_id": "VAL-001-041",
+          "covered": [
+            "VAL-001-041-F01",
+            "VAL-001-041-F02",
+            "VAL-001-041-F03",
+            "VAL-001-041-F04",
+            "VAL-001-041-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-041-F01",
+            "VAL-001-041-F02",
+            "VAL-001-041-F03",
+            "VAL-001-041-F04",
+            "VAL-001-041-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-042",
+          "covered": [
+            "VAL-001-042-F01",
+            "VAL-001-042-F02",
+            "VAL-001-042-F03",
+            "VAL-001-042-F04",
+            "VAL-001-042-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-042-F01",
+            "VAL-001-042-F02",
+            "VAL-001-042-F03",
+            "VAL-001-042-F04",
+            "VAL-001-042-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-043",
+          "covered": [
+            "VAL-001-043-F02",
+            "VAL-001-043-F03",
+            "VAL-001-043-F04",
+            "VAL-001-043-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-043-F02",
+            "VAL-001-043-F03",
+            "VAL-001-043-F04",
+            "VAL-001-043-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-044",
+          "covered": [
+            "VAL-001-044-F02",
+            "VAL-001-044-F03",
+            "VAL-001-044-F05",
+            "VAL-001-044-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-044-F02",
+            "VAL-001-044-F03",
+            "VAL-001-044-F05",
+            "VAL-001-044-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-045",
+          "covered": [
+            "VAL-001-045-F01",
+            "VAL-001-045-F02",
+            "VAL-001-045-F03",
+            "VAL-001-045-F04",
+            "VAL-001-045-F05",
+            "VAL-001-045-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-045-F01",
+            "VAL-001-045-F02",
+            "VAL-001-045-F03",
+            "VAL-001-045-F04",
+            "VAL-001-045-F05",
+            "VAL-001-045-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-046",
+          "covered": [
+            "VAL-001-046-F01",
+            "VAL-001-046-F02"
+          ],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-047",
+          "covered": [
+            "VAL-001-047-F01",
+            "VAL-001-047-F02",
+            "VAL-001-047-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-047-F01",
+            "VAL-001-047-F02",
+            "VAL-001-047-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-048",
+          "covered": [
+            "VAL-001-048-F01",
+            "VAL-001-048-F02",
+            "VAL-001-048-F03"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-048-F01",
+            "VAL-001-048-F02",
+            "VAL-001-048-F03"
+          ]
+        },
+        {
+          "case_id": "VAL-001-049",
+          "covered": [
+            "VAL-001-049-F02",
+            "VAL-001-049-F03",
+            "VAL-001-049-F04",
+            "VAL-001-049-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-049-F02",
+            "VAL-001-049-F03",
+            "VAL-001-049-F04",
+            "VAL-001-049-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-050",
+          "covered": [
+            "VAL-001-050-F01",
+            "VAL-001-050-F02",
+            "VAL-001-050-F03",
+            "VAL-001-050-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-050-F01",
+            "VAL-001-050-F02",
+            "VAL-001-050-F03",
+            "VAL-001-050-F04"
+          ]
+        }
+      ]
+    },
+    "bge_top5": {
+      "covered": 195,
+      "complete": 42,
+      "context_covered": 193,
+      "context_complete": 46,
+      "contradicted_claims": 1,
+      "cases": [
+        {
+          "case_id": "VAL-001-001",
+          "covered": [
+            "VAL-001-001-F01",
+            "VAL-001-001-F03",
+            "VAL-001-001-F04"
+          ],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-002",
+          "covered": [
+            "VAL-001-002-F01",
+            "VAL-001-002-F02",
+            "VAL-001-002-F03",
+            "VAL-001-002-F04",
+            "VAL-001-002-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-002-F01",
+            "VAL-001-002-F02",
+            "VAL-001-002-F03",
+            "VAL-001-002-F04",
+            "VAL-001-002-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-003",
+          "covered": [
+            "VAL-001-003-F01",
+            "VAL-001-003-F02",
+            "VAL-001-003-F03"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-003-F01",
+            "VAL-001-003-F02",
+            "VAL-001-003-F03"
+          ]
+        },
+        {
+          "case_id": "VAL-001-004",
+          "covered": [
+            "VAL-001-004-F01",
+            "VAL-001-004-F02",
+            "VAL-001-004-F03",
+            "VAL-001-004-F04",
+            "VAL-001-004-F05",
+            "VAL-001-004-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-004-F01",
+            "VAL-001-004-F02",
+            "VAL-001-004-F03",
+            "VAL-001-004-F04",
+            "VAL-001-004-F05",
+            "VAL-001-004-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-005",
+          "covered": [
+            "VAL-001-005-F01",
+            "VAL-001-005-F02",
+            "VAL-001-005-F03",
+            "VAL-001-005-F04",
+            "VAL-001-005-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-005-F01",
+            "VAL-001-005-F02",
+            "VAL-001-005-F03",
+            "VAL-001-005-F04",
+            "VAL-001-005-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-006",
+          "covered": [
+            "VAL-001-006-F01",
+            "VAL-001-006-F03",
+            "VAL-001-006-F04",
+            "VAL-001-006-F05"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-006-F03",
+            "VAL-001-006-F04",
+            "VAL-001-006-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-007",
+          "covered": [
+            "VAL-001-007-F01",
+            "VAL-001-007-F03",
+            "VAL-001-007-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-007-F01",
+            "VAL-001-007-F03",
+            "VAL-001-007-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-008",
+          "covered": [
+            "VAL-001-008-F01",
+            "VAL-001-008-F03",
+            "VAL-001-008-F04"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-008-F01",
+            "VAL-001-008-F02",
+            "VAL-001-008-F03",
+            "VAL-001-008-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-009",
+          "covered": [
+            "VAL-001-009-F03",
+            "VAL-001-009-F04",
+            "VAL-001-009-F05"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-009-F01",
+            "VAL-001-009-F03",
+            "VAL-001-009-F04",
+            "VAL-001-009-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-010",
+          "covered": [
+            "VAL-001-010-F01",
+            "VAL-001-010-F03",
+            "VAL-001-010-F04",
+            "VAL-001-010-F05",
+            "VAL-001-010-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-010-F01",
+            "VAL-001-010-F03",
+            "VAL-001-010-F04",
+            "VAL-001-010-F05",
+            "VAL-001-010-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-011",
+          "covered": [
+            "VAL-001-011-F02",
+            "VAL-001-011-F03",
+            "VAL-001-011-F05"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-011-F01",
+            "VAL-001-011-F02",
+            "VAL-001-011-F03",
+            "VAL-001-011-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-012",
+          "covered": [
+            "VAL-001-012-F01",
+            "VAL-001-012-F04",
+            "VAL-001-012-F05",
+            "VAL-001-012-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-012-F01",
+            "VAL-001-012-F04",
+            "VAL-001-012-F05",
+            "VAL-001-012-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-013",
+          "covered": [
+            "VAL-001-013-F01",
+            "VAL-001-013-F02",
+            "VAL-001-013-F03",
+            "VAL-001-013-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-013-F01",
+            "VAL-001-013-F02",
+            "VAL-001-013-F03",
+            "VAL-001-013-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-014",
+          "covered": [
+            "VAL-001-014-F01",
+            "VAL-001-014-F02",
+            "VAL-001-014-F03",
+            "VAL-001-014-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-014-F01",
+            "VAL-001-014-F02",
+            "VAL-001-014-F03",
+            "VAL-001-014-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-015",
+          "covered": [
+            "VAL-001-015-F01",
+            "VAL-001-015-F02",
+            "VAL-001-015-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-015-F01",
+            "VAL-001-015-F02",
+            "VAL-001-015-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-016",
+          "covered": [
+            "VAL-001-016-F01",
+            "VAL-001-016-F02",
+            "VAL-001-016-F03",
+            "VAL-001-016-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-016-F01",
+            "VAL-001-016-F02",
+            "VAL-001-016-F03",
+            "VAL-001-016-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-017",
+          "covered": [
+            "VAL-001-017-F01",
+            "VAL-001-017-F02",
+            "VAL-001-017-F03",
+            "VAL-001-017-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-017-F01",
+            "VAL-001-017-F02",
+            "VAL-001-017-F03",
+            "VAL-001-017-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-018",
+          "covered": [
+            "VAL-001-018-F01",
+            "VAL-001-018-F03",
+            "VAL-001-018-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-018-F01",
+            "VAL-001-018-F03",
+            "VAL-001-018-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-019",
+          "covered": [
+            "VAL-001-019-F01",
+            "VAL-001-019-F02",
+            "VAL-001-019-F03",
+            "VAL-001-019-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-019-F01",
+            "VAL-001-019-F02",
+            "VAL-001-019-F03",
+            "VAL-001-019-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-020",
+          "covered": [
+            "VAL-001-020-F01",
+            "VAL-001-020-F02",
+            "VAL-001-020-F03",
+            "VAL-001-020-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-020-F01",
+            "VAL-001-020-F02",
+            "VAL-001-020-F03",
+            "VAL-001-020-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-021",
+          "covered": [
+            "VAL-001-021-F01",
+            "VAL-001-021-F02",
+            "VAL-001-021-F03",
+            "VAL-001-021-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-021-F01",
+            "VAL-001-021-F02",
+            "VAL-001-021-F03",
+            "VAL-001-021-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-022",
+          "covered": [
+            "VAL-001-022-F01",
+            "VAL-001-022-F02",
+            "VAL-001-022-F03",
+            "VAL-001-022-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-022-F01",
+            "VAL-001-022-F02",
+            "VAL-001-022-F03",
+            "VAL-001-022-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-023",
+          "covered": [
+            "VAL-001-023-F01",
+            "VAL-001-023-F02",
+            "VAL-001-023-F03",
+            "VAL-001-023-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-023-F01",
+            "VAL-001-023-F02",
+            "VAL-001-023-F03",
+            "VAL-001-023-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-024",
+          "covered": [
+            "VAL-001-024-F01",
+            "VAL-001-024-F02",
+            "VAL-001-024-F03",
+            "VAL-001-024-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-024-F01",
+            "VAL-001-024-F02",
+            "VAL-001-024-F03",
+            "VAL-001-024-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-025",
+          "covered": [
+            "VAL-001-025-F02",
+            "VAL-001-025-F03",
+            "VAL-001-025-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-025-F02",
+            "VAL-001-025-F03",
+            "VAL-001-025-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-026",
+          "covered": [
+            "VAL-001-026-F01",
+            "VAL-001-026-F04",
+            "VAL-001-026-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-026-F01",
+            "VAL-001-026-F04",
+            "VAL-001-026-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-027",
+          "covered": [
+            "VAL-001-027-F01",
+            "VAL-001-027-F02",
+            "VAL-001-027-F03",
+            "VAL-001-027-F04",
+            "VAL-001-027-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-027-F01",
+            "VAL-001-027-F02",
+            "VAL-001-027-F03",
+            "VAL-001-027-F04",
+            "VAL-001-027-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-028",
+          "covered": [
+            "VAL-001-028-F01",
+            "VAL-001-028-F02",
+            "VAL-001-028-F03",
+            "VAL-001-028-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-028-F01",
+            "VAL-001-028-F02",
+            "VAL-001-028-F03",
+            "VAL-001-028-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-029",
+          "covered": [
+            "VAL-001-029-F01",
+            "VAL-001-029-F02",
+            "VAL-001-029-F03",
+            "VAL-001-029-F04",
+            "VAL-001-029-F05",
+            "VAL-001-029-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-029-F01",
+            "VAL-001-029-F02",
+            "VAL-001-029-F03",
+            "VAL-001-029-F04",
+            "VAL-001-029-F05",
+            "VAL-001-029-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-030",
+          "covered": [
+            "VAL-001-030-F02",
+            "VAL-001-030-F03",
+            "VAL-001-030-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-030-F02",
+            "VAL-001-030-F03",
+            "VAL-001-030-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-031",
+          "covered": [
+            "VAL-001-031-F01",
+            "VAL-001-031-F02",
+            "VAL-001-031-F03",
+            "VAL-001-031-F05",
+            "VAL-001-031-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-031-F01",
+            "VAL-001-031-F02",
+            "VAL-001-031-F03",
+            "VAL-001-031-F05",
+            "VAL-001-031-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-032",
+          "covered": [
+            "VAL-001-032-F02",
+            "VAL-001-032-F03",
+            "VAL-001-032-F04",
+            "VAL-001-032-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-032-F02",
+            "VAL-001-032-F03",
+            "VAL-001-032-F04",
+            "VAL-001-032-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-033",
+          "covered": [],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-034",
+          "covered": [
+            "VAL-001-034-F01",
+            "VAL-001-034-F02",
+            "VAL-001-034-F03",
+            "VAL-001-034-F04",
+            "VAL-001-034-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-034-F01",
+            "VAL-001-034-F02",
+            "VAL-001-034-F03",
+            "VAL-001-034-F04",
+            "VAL-001-034-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-035",
+          "covered": [
+            "VAL-001-035-F01",
+            "VAL-001-035-F02",
+            "VAL-001-035-F03",
+            "VAL-001-035-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-035-F01",
+            "VAL-001-035-F02",
+            "VAL-001-035-F03",
+            "VAL-001-035-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-036",
+          "covered": [
+            "VAL-001-036-F01",
+            "VAL-001-036-F02",
+            "VAL-001-036-F03",
+            "VAL-001-036-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-036-F01",
+            "VAL-001-036-F02",
+            "VAL-001-036-F03",
+            "VAL-001-036-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-037",
+          "covered": [
+            "VAL-001-037-F02",
+            "VAL-001-037-F03",
+            "VAL-001-037-F04",
+            "VAL-001-037-F05",
+            "VAL-001-037-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-037-F02",
+            "VAL-001-037-F03",
+            "VAL-001-037-F04",
+            "VAL-001-037-F05",
+            "VAL-001-037-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-038",
+          "covered": [
+            "VAL-001-038-F01",
+            "VAL-001-038-F02",
+            "VAL-001-038-F03",
+            "VAL-001-038-F04",
+            "VAL-001-038-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-038-F01",
+            "VAL-001-038-F02",
+            "VAL-001-038-F03",
+            "VAL-001-038-F04",
+            "VAL-001-038-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-039",
+          "covered": [
+            "VAL-001-039-F01",
+            "VAL-001-039-F03",
+            "VAL-001-039-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-039-F01",
+            "VAL-001-039-F03",
+            "VAL-001-039-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-040",
+          "covered": [
+            "VAL-001-040-F01",
+            "VAL-001-040-F02",
+            "VAL-001-040-F03"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-040-F01",
+            "VAL-001-040-F02",
+            "VAL-001-040-F03"
+          ]
+        },
+        {
+          "case_id": "VAL-001-041",
+          "covered": [
+            "VAL-001-041-F01",
+            "VAL-001-041-F02",
+            "VAL-001-041-F03",
+            "VAL-001-041-F04",
+            "VAL-001-041-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-041-F01",
+            "VAL-001-041-F02",
+            "VAL-001-041-F03",
+            "VAL-001-041-F04",
+            "VAL-001-041-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-042",
+          "covered": [
+            "VAL-001-042-F01",
+            "VAL-001-042-F02",
+            "VAL-001-042-F03",
+            "VAL-001-042-F04",
+            "VAL-001-042-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-042-F01",
+            "VAL-001-042-F02",
+            "VAL-001-042-F03",
+            "VAL-001-042-F04",
+            "VAL-001-042-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-043",
+          "covered": [
+            "VAL-001-043-F02",
+            "VAL-001-043-F03",
+            "VAL-001-043-F04",
+            "VAL-001-043-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-043-F02",
+            "VAL-001-043-F03",
+            "VAL-001-043-F04",
+            "VAL-001-043-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-044",
+          "covered": [
+            "VAL-001-044-F02",
+            "VAL-001-044-F03",
+            "VAL-001-044-F05",
+            "VAL-001-044-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-044-F02",
+            "VAL-001-044-F03",
+            "VAL-001-044-F05",
+            "VAL-001-044-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-045",
+          "covered": [
+            "VAL-001-045-F01",
+            "VAL-001-045-F02",
+            "VAL-001-045-F03",
+            "VAL-001-045-F04",
+            "VAL-001-045-F05",
+            "VAL-001-045-F06"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-045-F01",
+            "VAL-001-045-F02",
+            "VAL-001-045-F03",
+            "VAL-001-045-F04",
+            "VAL-001-045-F05",
+            "VAL-001-045-F06"
+          ]
+        },
+        {
+          "case_id": "VAL-001-046",
+          "covered": [
+            "VAL-001-046-F01",
+            "VAL-001-046-F02"
+          ],
+          "complete": false,
+          "context_covered": []
+        },
+        {
+          "case_id": "VAL-001-047",
+          "covered": [
+            "VAL-001-047-F01",
+            "VAL-001-047-F02",
+            "VAL-001-047-F04"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-047-F01",
+            "VAL-001-047-F02",
+            "VAL-001-047-F04"
+          ]
+        },
+        {
+          "case_id": "VAL-001-048",
+          "covered": [
+            "VAL-001-048-F01",
+            "VAL-001-048-F02",
+            "VAL-001-048-F03",
+            "VAL-001-048-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-048-F01",
+            "VAL-001-048-F02",
+            "VAL-001-048-F03",
+            "VAL-001-048-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-049",
+          "covered": [
+            "VAL-001-049-F02",
+            "VAL-001-049-F03",
+            "VAL-001-049-F04",
+            "VAL-001-049-F05"
+          ],
+          "complete": true,
+          "context_covered": [
+            "VAL-001-049-F02",
+            "VAL-001-049-F03",
+            "VAL-001-049-F04",
+            "VAL-001-049-F05"
+          ]
+        },
+        {
+          "case_id": "VAL-001-050",
+          "covered": [
+            "VAL-001-050-F02",
+            "VAL-001-050-F03",
+            "VAL-001-050-F04"
+          ],
+          "complete": false,
+          "context_covered": [
+            "VAL-001-050-F01",
+            "VAL-001-050-F02",
+            "VAL-001-050-F03",
+            "VAL-001-050-F04"
+          ]
+        }
+      ]
+    }
+  },
+  "paired": {
+    "minilm_wins": [
+      "VAL-001-006",
+      "VAL-001-011",
+      "VAL-001-033",
+      "VAL-001-050"
+    ],
+    "bge_wins": [
+      "VAL-001-027",
+      "VAL-001-028",
+      "VAL-001-029",
+      "VAL-001-030",
+      "VAL-001-032",
+      "VAL-001-048"
+    ],
+    "ties": [
+      "VAL-001-001",
+      "VAL-001-002",
+      "VAL-001-003",
+      "VAL-001-004",
+      "VAL-001-005",
+      "VAL-001-007",
+      "VAL-001-008",
+      "VAL-001-009",
+      "VAL-001-010",
+      "VAL-001-012",
+      "VAL-001-013",
+      "VAL-001-014",
+      "VAL-001-015",
+      "VAL-001-016",
+      "VAL-001-017",
+      "VAL-001-018",
+      "VAL-001-019",
+      "VAL-001-020",
+      "VAL-001-021",
+      "VAL-001-022",
+      "VAL-001-023",
+      "VAL-001-024",
+      "VAL-001-025",
+      "VAL-001-026",
+      "VAL-001-031",
+      "VAL-001-034",
+      "VAL-001-035",
+      "VAL-001-036",
+      "VAL-001-037",
+      "VAL-001-038",
+      "VAL-001-039",
+      "VAL-001-040",
+      "VAL-001-041",
+      "VAL-001-042",
+      "VAL-001-043",
+      "VAL-001-044",
+      "VAL-001-045",
+      "VAL-001-046",
+      "VAL-001-047",
+      "VAL-001-049"
+    ],
+    "bge_gained_aspects": [
+      "VAL-001-001-F01",
+      "VAL-001-001-F03",
+      "VAL-001-001-F04",
+      "VAL-001-027-F01",
+      "VAL-001-027-F02",
+      "VAL-001-027-F03",
+      "VAL-001-027-F04",
+      "VAL-001-027-F05",
+      "VAL-001-028-F04",
+      "VAL-001-029-F02",
+      "VAL-001-029-F03",
+      "VAL-001-029-F04",
+      "VAL-001-029-F05",
+      "VAL-001-029-F06",
+      "VAL-001-030-F02",
+      "VAL-001-030-F04",
+      "VAL-001-032-F02",
+      "VAL-001-048-F05"
+    ],
+    "bge_lost_aspects": [
+      "VAL-001-006-F02",
+      "VAL-001-011-F01",
+      "VAL-001-033-F01",
+      "VAL-001-033-F02",
+      "VAL-001-033-F03",
+      "VAL-001-033-F04",
+      "VAL-001-033-F05",
+      "VAL-001-050-F01"
+    ]
+  }
+}
