@@ -1,0 +1,473 @@
+{
+  "version": "router_v1_1_analysis",
+  "arm_metrics": {
+    "FIXED_DIRECT": {
+      "evidence_required_recall": 0.875,
+      "evidence_required_recall_fraction": "57/66",
+      "evidence_complete_queries": 15,
+      "required_context_precision": 0.39,
+      "non_required_chunks": 61,
+      "context_utilization": 0.9298245614035088,
+      "evidence_supported_but_answer_missing": 4,
+      "answer_without_detected_evidence": 1
+    },
+    "FIXED_DECOMPOSE": {
+      "evidence_required_recall": 0.7875,
+      "evidence_required_recall_fraction": "52/66",
+      "evidence_complete_queries": 11,
+      "required_context_precision": 0.45,
+      "non_required_chunks": 55,
+      "context_utilization": 0.9615384615384616,
+      "evidence_supported_but_answer_missing": 2,
+      "answer_without_detected_evidence": 1
+    },
+    "ROUTED": {
+      "evidence_required_recall": 0.875,
+      "evidence_required_recall_fraction": "57/66",
+      "evidence_complete_queries": 15,
+      "required_context_precision": 0.41000000000000003,
+      "non_required_chunks": 59,
+      "context_utilization": 0.9473684210526315,
+      "evidence_supported_but_answer_missing": 3,
+      "answer_without_detected_evidence": 1
+    }
+  },
+  "paired_direct_vs_decompose": {
+    "evidence_recall_delta": {
+      "decompose_higher": [
+        "router_001",
+        "router_019"
+      ],
+      "equal": [
+        "router_002",
+        "router_004",
+        "router_005",
+        "router_006",
+        "router_007",
+        "router_009",
+        "router_012",
+        "router_013",
+        "router_014",
+        "router_015",
+        "router_017",
+        "router_018",
+        "router_020"
+      ],
+      "decompose_lower": [
+        "router_003",
+        "router_008",
+        "router_010",
+        "router_011",
+        "router_016"
+      ]
+    },
+    "context_precision_delta": {
+      "decompose_higher": [
+        "router_001",
+        "router_005",
+        "router_011",
+        "router_012",
+        "router_014",
+        "router_015",
+        "router_019",
+        "router_020"
+      ],
+      "equal": [
+        "router_002",
+        "router_004",
+        "router_006",
+        "router_007",
+        "router_008",
+        "router_009",
+        "router_013",
+        "router_016",
+        "router_017",
+        "router_018"
+      ],
+      "decompose_lower": [
+        "router_003",
+        "router_010"
+      ]
+    },
+    "evidence_complete_queries": {
+      "FIXED_DIRECT": 15,
+      "FIXED_DECOMPOSE": 11
+    }
+  },
+  "displacement_cases": {
+    "useful_gain": [
+      "router_001",
+      "router_019"
+    ],
+    "useful_lost": [
+      "router_003",
+      "router_010",
+      "router_011",
+      "router_016"
+    ],
+    "non_required_gain": [
+      "router_001",
+      "router_002",
+      "router_003",
+      "router_004",
+      "router_005",
+      "router_006",
+      "router_007",
+      "router_008",
+      "router_010",
+      "router_013",
+      "router_014",
+      "router_015",
+      "router_016",
+      "router_017"
+    ],
+    "non_required_lost": [
+      "router_001",
+      "router_002",
+      "router_003",
+      "router_004",
+      "router_005",
+      "router_006",
+      "router_007",
+      "router_008",
+      "router_011",
+      "router_012",
+      "router_013",
+      "router_014",
+      "router_015",
+      "router_016",
+      "router_017",
+      "router_019"
+    ]
+  },
+  "net_evidence_utility": {
+    "net_gain": [
+      "router_001",
+      "router_019"
+    ],
+    "net_loss": [
+      "router_003",
+      "router_008",
+      "router_010",
+      "router_011",
+      "router_016"
+    ],
+    "net_equal": [
+      "router_002",
+      "router_004",
+      "router_005",
+      "router_006",
+      "router_007",
+      "router_009",
+      "router_012",
+      "router_013",
+      "router_014",
+      "router_015",
+      "router_017",
+      "router_018",
+      "router_020"
+    ]
+  },
+  "novelty_utility_counts": {
+    "representation_useful": [],
+    "representation_redundant": [
+      {
+        "case_id": "router_011",
+        "chunk_id": "chunk_3fe67c4153c058347f190445"
+      }
+    ],
+    "representation_non_required": [
+      {
+        "case_id": "router_001",
+        "chunk_id": "chunk_0d2d5abd2784cfcf630269b4"
+      },
+      {
+        "case_id": "router_001",
+        "chunk_id": "chunk_65d9607208f5f96afca0d68c"
+      },
+      {
+        "case_id": "router_003",
+        "chunk_id": "chunk_85867a0b6a0b9d17cba279d7"
+      },
+      {
+        "case_id": "router_004",
+        "chunk_id": "chunk_1b7a4f11eb7eec7619ddab24"
+      },
+      {
+        "case_id": "router_006",
+        "chunk_id": "chunk_aa63f943bce73a501994f897"
+      },
+      {
+        "case_id": "router_007",
+        "chunk_id": "chunk_8214a742720124ff8bdcbf21"
+      }
+    ],
+    "ranking_useful": [
+      {
+        "case_id": "router_001",
+        "chunk_id": "chunk_0ef6386af9657bbfb48bef55"
+      },
+      {
+        "case_id": "router_019",
+        "chunk_id": "chunk_11b0f878e227d23915728926"
+      }
+    ],
+    "ranking_redundant": [
+      {
+        "case_id": "router_005",
+        "chunk_id": "chunk_1b7a4f11eb7eec7619ddab24"
+      },
+      {
+        "case_id": "router_008",
+        "chunk_id": "chunk_c05a222b5013b1f82b468408"
+      },
+      {
+        "case_id": "router_011",
+        "chunk_id": "chunk_0cc6709199187f11f4436f08"
+      },
+      {
+        "case_id": "router_012",
+        "chunk_id": "chunk_58ee210103515124e3a18e67"
+      },
+      {
+        "case_id": "router_015",
+        "chunk_id": "chunk_69ac95f0ac7598ae7a1b0520"
+      },
+      {
+        "case_id": "router_016",
+        "chunk_id": "chunk_93b24002aa9b46b386d2061c"
+      },
+      {
+        "case_id": "router_020",
+        "chunk_id": "chunk_76a40eef1f0fee4df26723be"
+      }
+    ],
+    "ranking_non_required": [
+      {
+        "case_id": "router_002",
+        "chunk_id": "chunk_18898aa0b0208d333109b1e0"
+      },
+      {
+        "case_id": "router_002",
+        "chunk_id": "chunk_82b71e1d710271179f8b4bdd"
+      },
+      {
+        "case_id": "router_003",
+        "chunk_id": "chunk_aa63f943bce73a501994f897"
+      },
+      {
+        "case_id": "router_003",
+        "chunk_id": "chunk_a3593c3652416f4582a78c12"
+      },
+      {
+        "case_id": "router_005",
+        "chunk_id": "chunk_e921fe7a8e1eeb16ec85d0b4"
+      },
+      {
+        "case_id": "router_005",
+        "chunk_id": "chunk_eebcff7d8379f37aaf1bf06f"
+      },
+      {
+        "case_id": "router_008",
+        "chunk_id": "chunk_d3da9ce046c8ea901e71a245"
+      },
+      {
+        "case_id": "router_010",
+        "chunk_id": "chunk_d47c7ab9c53cc480c3c2c069"
+      },
+      {
+        "case_id": "router_013",
+        "chunk_id": "chunk_503d0f8451cd132a55e45b74"
+      },
+      {
+        "case_id": "router_013",
+        "chunk_id": "chunk_a241a064615d0fdcc343c6bf"
+      },
+      {
+        "case_id": "router_014",
+        "chunk_id": "chunk_d47c7ab9c53cc480c3c2c069"
+      },
+      {
+        "case_id": "router_014",
+        "chunk_id": "chunk_04504541348ed0c60511a490"
+      },
+      {
+        "case_id": "router_015",
+        "chunk_id": "chunk_2dbae335078ac45aaeafe49b"
+      },
+      {
+        "case_id": "router_016",
+        "chunk_id": "chunk_87071e099cc59566a1079a0f"
+      },
+      {
+        "case_id": "router_017",
+        "chunk_id": "chunk_42a4d7c9a708df455947bda2"
+      }
+    ]
+  },
+  "taxonomy_counts": {
+    "DECOMPOSITION_USEFUL_EXPLORATION": [
+      "router_001",
+      "router_019"
+    ],
+    "DECOMPOSITION_NOISY_EXPLORATION": [
+      "router_002",
+      "router_004",
+      "router_005",
+      "router_006",
+      "router_007",
+      "router_012",
+      "router_013",
+      "router_014",
+      "router_015",
+      "router_017",
+      "router_020"
+    ],
+    "DECOMPOSITION_DISPLACEMENT": [
+      "router_003",
+      "router_008",
+      "router_010",
+      "router_011",
+      "router_016"
+    ],
+    "STABLE": [
+      "router_009",
+      "router_018"
+    ]
+  },
+  "routed_decompose_cases": {
+    "router_009": {
+      "layers": {
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1,
+        "supported_aspect_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "unsupported_aspect_ids": [],
+        "uncertain_aspect_ids": [],
+        "answer_covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "context_utilization": 1.0,
+        "context_utilization_available": true,
+        "evidence_supported_but_answer_missing": [],
+        "answer_without_detected_evidence": []
+      },
+      "novelty_utility_routed": {
+        "representation_gain": [],
+        "selection_ranking_gain": []
+      }
+    },
+    "router_011": {
+      "layers": {
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1,
+        "supported_aspect_ids": [
+          "router_011_a1",
+          "router_011_a3",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "unsupported_aspect_ids": [],
+        "uncertain_aspect_ids": [],
+        "answer_covered_ids": [
+          "router_011_a1",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "context_utilization": 0.75,
+        "context_utilization_available": true,
+        "evidence_supported_but_answer_missing": [
+          "router_011_a3"
+        ],
+        "answer_without_detected_evidence": []
+      },
+      "novelty_utility_routed": {
+        "representation_gain": [
+          {
+            "chunk_id": "chunk_3fe67c4153c058347f190445",
+            "class": "redundant",
+            "supported_aspects": [
+              "router_011_a4"
+            ]
+          }
+        ],
+        "selection_ranking_gain": []
+      }
+    },
+    "router_020": {
+      "layers": {
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "required_context_precision": 1.0,
+        "non_required_chunk_count": 0,
+        "supported_aspect_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3",
+          "router_020_a5"
+        ],
+        "unsupported_aspect_ids": [],
+        "uncertain_aspect_ids": [],
+        "answer_covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3",
+          "router_020_a5"
+        ],
+        "context_utilization": 1.0,
+        "context_utilization_available": true,
+        "evidence_supported_but_answer_missing": [],
+        "answer_without_detected_evidence": []
+      },
+      "novelty_utility_routed": {
+        "representation_gain": [],
+        "selection_ranking_gain": [
+          {
+            "chunk_id": "chunk_76a40eef1f0fee4df26723be",
+            "class": "redundant",
+            "supported_aspects": [
+              "router_020_a5"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "v1_answer_metrics_check": {
+    "answer_complete": {
+      "FIXED_DIRECT": 12,
+      "FIXED_DECOMPOSE": 9,
+      "ROUTED": 13
+    },
+    "required_covered": {
+      "FIXED_DIRECT": 54,
+      "FIXED_DECOMPOSE": 51,
+      "ROUTED": 55
+    }
+  },
+  "evidence_judge_cost": {
+    "calls": 42,
+    "cached_successful_calls": 42,
+    "parse_failures": 0,
+    "input_tokens": 86551,
+    "output_tokens": 3766,
+    "latency_seconds": 31.728,
+    "note": "evaluation-only cost; excluded from Router serving cost; no frozen price table, monetary cost not estimated"
+  },
+  "rubric_limitations": [
+    "evidence_required_recall and context precision are proxies against frozen required aspects only",
+    "UNCERTAIN evidence judgments are excluded from supported counts",
+    "the evidence judge is a single model judge; raw responses are cached for audit",
+    "per-chunk displacement classification compares two independent judge calls (DIRECT and DECOMPOSE evidence sets); combination-dependent support can shift between calls, so boundary cases may lose coverage without a single identifiable useful chunk (e.g., router_008)",
+    "context precision counts chunks that support at least one frozen required aspect; chunks that are legitimate context beyond the minimum contract are counted as non-required by design"
+  ]
+}

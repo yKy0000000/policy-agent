@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+<title id="title">70 题四策略质量与 provider token 对比</title>
+<desc id="desc">Fast 完整 55/70，覆盖 250/274，token 倍率 1.00。固定 Decompose 51/70、241/274、1.01 倍。Adaptive 62/70、262/274、2.17 倍。自动 Router 57/70、251/274、1.37 倍。此图为两个开发研究 cohort 的合并展示，不是独立 holdout。</desc>
+<rect width="1200" height="690" fill="#FFFFFF"/>
+<text x="56" y="61" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="34" font-weight="700">更多计算，换来多少完整性？</text>
+<text x="56" y="96" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18">70 题总体对比：Validation V1 50 题 + Router V1 20 题</text>
+<line x1="56" y1="119" x2="1144" y2="119" stroke="#CBD6DC" stroke-width="2"/>
+
+<text x="62" y="159" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700">实验策略</text>
+<text x="472" y="159" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" text-anchor="middle">完整回答</text>
+<text x="676" y="159" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" text-anchor="middle">必需信息覆盖</text>
+<text x="882" y="159" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700">每题 provider tokens（相对 Fast）</text>
+
+<rect x="48" y="184" width="1104" height="91" rx="12" fill="#F3F7F9"/>
+<text x="62" y="220" fill="#315F7C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" font-weight="700">Fast</text>
+<text x="62" y="251" fill="#607584" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16">固定 Direct · 当前默认</text>
+<text x="472" y="239" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">55/70</text>
+<text x="676" y="239" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">250/274</text>
+<rect x="883" y="224" width="105" height="18" rx="9" fill="#5A839C"/>
+<text x="1002" y="241" fill="#315F7C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" font-weight="700">1.00×</text>
+
+<rect x="48" y="286" width="1104" height="91" rx="12" fill="#F7F8F8"/>
+<text x="62" y="323" fill="#4F626E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" font-weight="700">固定 Decompose</text>
+<text x="62" y="354" fill="#607584" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16">历史“SEARCH+”实验 arm</text>
+<text x="472" y="341" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">51/70</text>
+<text x="676" y="341" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">241/274</text>
+<rect x="883" y="326" width="106" height="18" rx="9" fill="#8A989F"/>
+<text x="1002" y="343" fill="#4F626E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" font-weight="700">1.01×</text>
+
+<rect x="48" y="388" width="1104" height="91" rx="12" fill="#FFF2E5" stroke="#D79B59" stroke-width="2"/>
+<text x="62" y="425" fill="#9A5A1E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" font-weight="700">Adaptive</text>
+<text x="62" y="456" fill="#8A6748" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16">当前产品 Search+ 后端</text>
+<text x="472" y="443" fill="#9A5A1E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">62/70</text>
+<text x="676" y="443" fill="#9A5A1E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">262/274</text>
+<rect x="883" y="428" width="228" height="18" rx="9" fill="#C58543"/>
+<text x="1030" y="420" fill="#9A5A1E" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" font-weight="700">2.17×</text>
+
+<rect x="48" y="490" width="1104" height="91" rx="12" fill="#F3F7F9"/>
+<text x="62" y="527" fill="#315F7C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" font-weight="700">自动 Router</text>
+<text x="62" y="558" fill="#607584" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16">两 cohort 使用不同历史实现</text>
+<text x="472" y="545" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">57/70</text>
+<text x="676" y="545" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle">251/274</text>
+<rect x="883" y="530" width="144" height="18" rx="9" fill="#5A839C"/>
+<text x="1041" y="547" fill="#315F7C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" font-weight="700">1.37×</text>
+
+<line x1="56" y1="604" x2="1144" y2="604" stroke="#CBD6DC" stroke-width="2"/>
+<text x="56" y="634" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17">固定 Decompose 的额外代价还包括更多检索流；此处只比较 provider tokens。</text>
+<text x="56" y="661" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16">两个 cohort 的模型与测量条件不同；合并图只作工程对比，不是新独立 holdout 或泛化准确率。</text>
+</svg>

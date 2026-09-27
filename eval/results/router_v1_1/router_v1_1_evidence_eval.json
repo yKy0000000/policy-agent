@@ -1,0 +1,3929 @@
+{
+  "version": "router_v1_1_evidence_eval",
+  "judge_version": "router-v1.1-evidence-aspect-v1",
+  "judge_model": "deepseek-v4-flash",
+  "blind": {
+    "judge_sees": [
+      "question",
+      "frozen required aspects",
+      "opaque indexed evidence chunks"
+    ],
+    "judge_never_sees": [
+      "arm identity",
+      "router decision",
+      "oracle",
+      "answers",
+      "attribution",
+      "benchmark metadata",
+      "prior judgments"
+    ]
+  },
+  "cases": {
+    "router_001": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c",
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_f9f27089a4f14eff065f88c7",
+          "chunk_153e4163c312de7c055f6c77",
+          "chunk_1a39aad0fc45cb27c5343d9e"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_001_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_001_a4"
+        ],
+        "required_total": 4,
+        "supported_count": 3,
+        "evidence_required_recall": 0.75,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_f9f27089a4f14eff065f88c7",
+          "chunk_153e4163c312de7c055f6c77",
+          "chunk_1a39aad0fc45cb27c5343d9e"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c",
+          "chunk_0ef6386af9657bbfb48bef55",
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_65d9607208f5f96afca0d68c",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_001_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3",
+          "router_001_a4"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c",
+          "chunk_0ef6386af9657bbfb48bef55",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_65d9607208f5f96afca0d68c"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c",
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_f9f27089a4f14eff065f88c7",
+          "chunk_153e4163c312de7c055f6c77",
+          "chunk_1a39aad0fc45cb27c5343d9e"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_001_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_001_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_001_a4"
+        ],
+        "required_total": 4,
+        "supported_count": 3,
+        "evidence_required_recall": 0.75,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_f9f27089a4f14eff065f88c7",
+          "chunk_153e4163c312de7c055f6c77",
+          "chunk_1a39aad0fc45cb27c5343d9e"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_002": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_f25af672289856012d211dad",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_c1587941e12d3214e84968ca"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_002_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_002_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_002_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_e921fe7a8e1eeb16ec85d0b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_f25af672289856012d211dad",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_c1587941e12d3214e84968ca"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_f25af672289856012d211dad",
+          "chunk_18898aa0b0208d333109b1e0",
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_e921fe7a8e1eeb16ec85d0b4"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_002_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_002_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_002_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_e921fe7a8e1eeb16ec85d0b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_f25af672289856012d211dad",
+          "chunk_18898aa0b0208d333109b1e0",
+          "chunk_82b71e1d710271179f8b4bdd"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_f25af672289856012d211dad",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_c1587941e12d3214e84968ca"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_002_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_002_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_002_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_e921fe7a8e1eeb16ec85d0b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_f25af672289856012d211dad",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_c1587941e12d3214e84968ca"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_003": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_65ff616040be6ec5bdfe0770",
+          "chunk_0ce99a6078cf37abe73d8a85",
+          "chunk_648a4d2bbb17b6b1207a8f13",
+          "chunk_0c3995fedc5f327566f40bfe",
+          "chunk_23acf65f48bfbc0fd2b142a9"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_003_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_003_a1",
+          "router_003_a2",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_65ff616040be6ec5bdfe0770",
+          "chunk_648a4d2bbb17b6b1207a8f13",
+          "chunk_23acf65f48bfbc0fd2b142a9"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_0ce99a6078cf37abe73d8a85",
+          "chunk_0c3995fedc5f327566f40bfe"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_65ff616040be6ec5bdfe0770",
+          "chunk_aa63f943bce73a501994f897",
+          "chunk_85867a0b6a0b9d17cba279d7",
+          "chunk_a3593c3652416f4582a78c12",
+          "chunk_0ce99a6078cf37abe73d8a85"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_003_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a2": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_003_a1",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_003_a2"
+        ],
+        "required_total": 4,
+        "supported_count": 3,
+        "evidence_required_recall": 0.75,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_65ff616040be6ec5bdfe0770"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_aa63f943bce73a501994f897",
+          "chunk_85867a0b6a0b9d17cba279d7",
+          "chunk_a3593c3652416f4582a78c12",
+          "chunk_0ce99a6078cf37abe73d8a85"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_65ff616040be6ec5bdfe0770",
+          "chunk_0ce99a6078cf37abe73d8a85",
+          "chunk_648a4d2bbb17b6b1207a8f13",
+          "chunk_0c3995fedc5f327566f40bfe",
+          "chunk_23acf65f48bfbc0fd2b142a9"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_003_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_003_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_003_a1",
+          "router_003_a2",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_65ff616040be6ec5bdfe0770",
+          "chunk_648a4d2bbb17b6b1207a8f13",
+          "chunk_23acf65f48bfbc0fd2b142a9"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_0ce99a6078cf37abe73d8a85",
+          "chunk_0c3995fedc5f327566f40bfe"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      }
+    },
+    "router_004": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_f25af672289856012d211dad",
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_a961fb1ca2e1ef387562c2c8",
+          "chunk_22d16bcaa9aba8426009a6aa"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_004_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_004_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_004_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_f25af672289856012d211dad"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_a961fb1ca2e1ef387562c2c8",
+          "chunk_22d16bcaa9aba8426009a6aa"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_f25af672289856012d211dad",
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_a961fb1ca2e1ef387562c2c8"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_004_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_004_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_004_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_f25af672289856012d211dad"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_a961fb1ca2e1ef387562c2c8"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_f25af672289856012d211dad",
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_a961fb1ca2e1ef387562c2c8",
+          "chunk_22d16bcaa9aba8426009a6aa"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_004_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_004_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_004_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_f25af672289856012d211dad"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_a961fb1ca2e1ef387562c2c8",
+          "chunk_22d16bcaa9aba8426009a6aa"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_005": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_80d71a13ddfac8eb977f9541",
+          "chunk_07d96053cdafec174753bfbb"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_005_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_005_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_005_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_80d71a13ddfac8eb977f9541",
+          "chunk_07d96053cdafec174753bfbb"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_eebcff7d8379f37aaf1bf06f",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_005_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_005_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_005_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_eebcff7d8379f37aaf1bf06f"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_80d71a13ddfac8eb977f9541",
+          "chunk_07d96053cdafec174753bfbb"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_005_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_005_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_005_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_80d71a13ddfac8eb977f9541",
+          "chunk_07d96053cdafec174753bfbb"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_006": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_7d54462de0e9154ce55d108b",
+          "chunk_d16788b425405e4d8b96f51b",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_b998f02cf97934254a3a52ca",
+          "chunk_8d6749978ce03b3fd0e6c189"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_006_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d16788b425405e4d8b96f51b",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_b998f02cf97934254a3a52ca",
+          "chunk_8d6749978ce03b3fd0e6c189"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_7d54462de0e9154ce55d108b",
+          "chunk_d16788b425405e4d8b96f51b",
+          "chunk_8d6749978ce03b3fd0e6c189",
+          "chunk_aa63f943bce73a501994f897",
+          "chunk_76a40eef1f0fee4df26723be"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_006_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d16788b425405e4d8b96f51b",
+          "chunk_8d6749978ce03b3fd0e6c189",
+          "chunk_aa63f943bce73a501994f897",
+          "chunk_76a40eef1f0fee4df26723be"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_7d54462de0e9154ce55d108b",
+          "chunk_d16788b425405e4d8b96f51b",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_b998f02cf97934254a3a52ca",
+          "chunk_8d6749978ce03b3fd0e6c189"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_006_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_006_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d16788b425405e4d8b96f51b",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_b998f02cf97934254a3a52ca",
+          "chunk_8d6749978ce03b3fd0e6c189"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_007": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_f4e8b281f08b3c0e1a5c2392",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_9bb6d940c2a6adec5ad7b5c5",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_007_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a2": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_007_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_007_a1",
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "required_total": 4,
+        "supported_count": 1,
+        "evidence_required_recall": 0.25,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_f4e8b281f08b3c0e1a5c2392",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_9bb6d940c2a6adec5ad7b5c5"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_8214a742720124ff8bdcbf21",
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_f4e8b281f08b3c0e1a5c2392"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_007_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a2": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_007_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_007_a1",
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "required_total": 4,
+        "supported_count": 1,
+        "evidence_required_recall": 0.25,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_8214a742720124ff8bdcbf21",
+          "chunk_f4e8b281f08b3c0e1a5c2392"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_f4e8b281f08b3c0e1a5c2392",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_9bb6d940c2a6adec5ad7b5c5",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_007_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a2": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_007_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_007_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_007_a1",
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "required_total": 4,
+        "supported_count": 1,
+        "evidence_required_recall": 0.25,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_f4e8b281f08b3c0e1a5c2392",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_9bb6d940c2a6adec5ad7b5c5"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_008": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_fcf43a6a1cec3127aa707b22",
+          "chunk_029abeb4a7b0d31dfe0744a5",
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_008_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_008_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_008_a1",
+          "router_008_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 2,
+        "supported_count": 2,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_029abeb4a7b0d31dfe0744a5"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_fcf43a6a1cec3127aa707b22",
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_c05a222b5013b1f82b468408",
+          "chunk_029abeb4a7b0d31dfe0744a5",
+          "chunk_d3da9ce046c8ea901e71a245",
+          "chunk_fcf43a6a1cec3127aa707b22"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_008_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_008_a2": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_008_a1"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_008_a2"
+        ],
+        "required_total": 2,
+        "supported_count": 1,
+        "evidence_required_recall": 0.5,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_c05a222b5013b1f82b468408"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_029abeb4a7b0d31dfe0744a5",
+          "chunk_d3da9ce046c8ea901e71a245",
+          "chunk_fcf43a6a1cec3127aa707b22"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_fcf43a6a1cec3127aa707b22",
+          "chunk_029abeb4a7b0d31dfe0744a5",
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_008_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_008_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_008_a1",
+          "router_008_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 2,
+        "supported_count": 2,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_029abeb4a7b0d31dfe0744a5"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_fcf43a6a1cec3127aa707b22",
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_009": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_e0d354aeaa7beb50005833bb",
+          "chunk_58c736793778782340c6f35c",
+          "chunk_943f62cca2ec5fdcf5f38e8c",
+          "chunk_364b5397f0f3435d7cc10a8f",
+          "chunk_d5357e5db301e01f2d4c408f"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_009_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_009_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_009_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_e0d354aeaa7beb50005833bb",
+          "chunk_58c736793778782340c6f35c",
+          "chunk_943f62cca2ec5fdcf5f38e8c",
+          "chunk_d5357e5db301e01f2d4c408f"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_364b5397f0f3435d7cc10a8f"
+        ],
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_e0d354aeaa7beb50005833bb",
+          "chunk_d5357e5db301e01f2d4c408f",
+          "chunk_943f62cca2ec5fdcf5f38e8c",
+          "chunk_364b5397f0f3435d7cc10a8f",
+          "chunk_58c736793778782340c6f35c"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_009_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_009_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_009_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_e0d354aeaa7beb50005833bb",
+          "chunk_d5357e5db301e01f2d4c408f",
+          "chunk_943f62cca2ec5fdcf5f38e8c",
+          "chunk_58c736793778782340c6f35c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_364b5397f0f3435d7cc10a8f"
+        ],
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_e0d354aeaa7beb50005833bb",
+          "chunk_d5357e5db301e01f2d4c408f",
+          "chunk_943f62cca2ec5fdcf5f38e8c",
+          "chunk_58c736793778782340c6f35c",
+          "chunk_364b5397f0f3435d7cc10a8f"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_009_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_009_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B",
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_009_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C",
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_e0d354aeaa7beb50005833bb",
+          "chunk_d5357e5db301e01f2d4c408f",
+          "chunk_943f62cca2ec5fdcf5f38e8c",
+          "chunk_58c736793778782340c6f35c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_364b5397f0f3435d7cc10a8f"
+        ],
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1
+      }
+    },
+    "router_010": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_621bbabad1d6f0cff7038c2c",
+          "chunk_ce4e78bb644577b70b81f4e9",
+          "chunk_2326f71de65fbc6ef7074eaa",
+          "chunk_a3ddf75464adab828d3d811f",
+          "chunk_80d71a13ddfac8eb977f9541"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_010_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_010_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_010_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_621bbabad1d6f0cff7038c2c",
+          "chunk_80d71a13ddfac8eb977f9541"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_ce4e78bb644577b70b81f4e9",
+          "chunk_2326f71de65fbc6ef7074eaa",
+          "chunk_a3ddf75464adab828d3d811f"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_621bbabad1d6f0cff7038c2c",
+          "chunk_ce4e78bb644577b70b81f4e9",
+          "chunk_2326f71de65fbc6ef7074eaa",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_a3ddf75464adab828d3d811f"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_010_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_010_a2": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_010_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_010_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_010_a1",
+          "router_010_a2"
+        ],
+        "required_total": 3,
+        "supported_count": 1,
+        "evidence_required_recall": 0.3333333333333333,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_621bbabad1d6f0cff7038c2c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_ce4e78bb644577b70b81f4e9",
+          "chunk_2326f71de65fbc6ef7074eaa",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_a3ddf75464adab828d3d811f"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_621bbabad1d6f0cff7038c2c",
+          "chunk_ce4e78bb644577b70b81f4e9",
+          "chunk_2326f71de65fbc6ef7074eaa",
+          "chunk_a3ddf75464adab828d3d811f",
+          "chunk_80d71a13ddfac8eb977f9541"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_010_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_010_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_010_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_621bbabad1d6f0cff7038c2c",
+          "chunk_80d71a13ddfac8eb977f9541"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_ce4e78bb644577b70b81f4e9",
+          "chunk_2326f71de65fbc6ef7074eaa",
+          "chunk_a3ddf75464adab828d3d811f"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_011": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_0ef6386af9657bbfb48bef55",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_8f7ea30ed2b0f19beac07dfc"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_011_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_011_a1",
+          "router_011_a3",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_a761f910df2bb1e22f5a4020"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_0ef6386af9657bbfb48bef55",
+          "chunk_8f7ea30ed2b0f19beac07dfc"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_0cc6709199187f11f4436f08",
+          "chunk_0ef6386af9657bbfb48bef55"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_011_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a5": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_011_a1",
+          "router_011_a3",
+          "router_011_a4"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_011_a5"
+        ],
+        "required_total": 4,
+        "supported_count": 3,
+        "evidence_required_recall": 0.75,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_0cc6709199187f11f4436f08"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_0ef6386af9657bbfb48bef55"
+        ],
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_0ef6386af9657bbfb48bef55",
+          "chunk_a761f910df2bb1e22f5a4020"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_011_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a4": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_011_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_011_a1",
+          "router_011_a3",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_a761f910df2bb1e22f5a4020"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_0ef6386af9657bbfb48bef55"
+        ],
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1
+      }
+    },
+    "router_012": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_012_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_012_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_012_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_012_a1",
+          "router_012_a2",
+          "router_012_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_649633341615e86787cb09b5",
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_58ee210103515124e3a18e67",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_ef6899bc1eb9e4fe063bec90"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_012_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_012_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_012_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_012_a1",
+          "router_012_a2",
+          "router_012_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802",
+          "chunk_58ee210103515124e3a18e67"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_649633341615e86787cb09b5",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_ef6899bc1eb9e4fe063bec90"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_012_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_012_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_012_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_012_a1",
+          "router_012_a2",
+          "router_012_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_649633341615e86787cb09b5",
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_013": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_013_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a5": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "required_total": 4,
+        "supported_count": 2,
+        "evidence_required_recall": 0.5,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_a241a064615d0fdcc343c6bf",
+          "chunk_649633341615e86787cb09b5"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_013_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a5": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "required_total": 4,
+        "supported_count": 2,
+        "evidence_required_recall": 0.5,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_a241a064615d0fdcc343c6bf",
+          "chunk_649633341615e86787cb09b5"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_013_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a4": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_013_a5": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "required_total": 4,
+        "supported_count": 2,
+        "evidence_required_recall": 0.5,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_014": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_848e7ed07babd1137a0b93ae",
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_17ad06919c46fe410c2cfa55"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_014_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_014_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_014_a3": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_014_a3"
+        ],
+        "required_total": 3,
+        "supported_count": 2,
+        "evidence_required_recall": 0.6666666666666666,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_30ab6464817b7b0946abaad0"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_848e7ed07babd1137a0b93ae",
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_17ad06919c46fe410c2cfa55"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_04504541348ed0c60511a490",
+          "chunk_848e7ed07babd1137a0b93ae"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_014_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_014_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_014_a3": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_014_a3"
+        ],
+        "required_total": 3,
+        "supported_count": 2,
+        "evidence_required_recall": 0.6666666666666666,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_848e7ed07babd1137a0b93ae"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_04504541348ed0c60511a490"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_848e7ed07babd1137a0b93ae",
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_17ad06919c46fe410c2cfa55"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_014_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_014_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_014_a3": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_014_a3"
+        ],
+        "required_total": 3,
+        "supported_count": 2,
+        "evidence_required_recall": 0.6666666666666666,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_30ab6464817b7b0946abaad0"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_848e7ed07babd1137a0b93ae",
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_17ad06919c46fe410c2cfa55"
+        ],
+        "required_context_precision": 0.2,
+        "non_required_chunk_count": 4
+      }
+    },
+    "router_015": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_5bd8f67a21c277adbd0e92cd",
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_69ac63743d6581ba5037799b",
+          "chunk_77aab8a00a1b032b28e5755b",
+          "chunk_d08f2d9c11ed7b1df2938b35"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_015_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_015_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_015_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_5bd8f67a21c277adbd0e92cd",
+          "chunk_82b71e1d710271179f8b4bdd"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_69ac63743d6581ba5037799b",
+          "chunk_77aab8a00a1b032b28e5755b",
+          "chunk_d08f2d9c11ed7b1df2938b35"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_5bd8f67a21c277adbd0e92cd",
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_69ac95f0ac7598ae7a1b0520",
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_69ac63743d6581ba5037799b"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_015_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_015_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_015_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_5bd8f67a21c277adbd0e92cd",
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_69ac95f0ac7598ae7a1b0520"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_69ac63743d6581ba5037799b"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_5bd8f67a21c277adbd0e92cd",
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_69ac63743d6581ba5037799b",
+          "chunk_77aab8a00a1b032b28e5755b",
+          "chunk_d08f2d9c11ed7b1df2938b35"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_015_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_015_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_015_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_5bd8f67a21c277adbd0e92cd",
+          "chunk_82b71e1d710271179f8b4bdd"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_69ac63743d6581ba5037799b",
+          "chunk_77aab8a00a1b032b28e5755b",
+          "chunk_d08f2d9c11ed7b1df2938b35"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_016": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_1c0bd6feab4c1cdf6411559c",
+          "chunk_ab100a3436d2ebc1ca3676f9",
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_53cfaee79a6c3b7ee9eed1d1",
+          "chunk_621bbabad1d6f0cff7038c2c"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_016_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_016_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_016_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_016_a1",
+          "router_016_a2",
+          "router_016_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_1c0bd6feab4c1cdf6411559c",
+          "chunk_53cfaee79a6c3b7ee9eed1d1"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_ab100a3436d2ebc1ca3676f9",
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_621bbabad1d6f0cff7038c2c"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_1c0bd6feab4c1cdf6411559c",
+          "chunk_ab100a3436d2ebc1ca3676f9",
+          "chunk_93b24002aa9b46b386d2061c",
+          "chunk_87071e099cc59566a1079a0f",
+          "chunk_eaec6d0a272a609a51331008"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_016_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_016_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_016_a3": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_016_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_016_a1",
+          "router_016_a3"
+        ],
+        "required_total": 3,
+        "supported_count": 1,
+        "evidence_required_recall": 0.3333333333333333,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_1c0bd6feab4c1cdf6411559c",
+          "chunk_93b24002aa9b46b386d2061c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_ab100a3436d2ebc1ca3676f9",
+          "chunk_87071e099cc59566a1079a0f",
+          "chunk_eaec6d0a272a609a51331008"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_1c0bd6feab4c1cdf6411559c",
+          "chunk_ab100a3436d2ebc1ca3676f9",
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_53cfaee79a6c3b7ee9eed1d1",
+          "chunk_621bbabad1d6f0cff7038c2c"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_016_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_016_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_016_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_016_a1",
+          "router_016_a2",
+          "router_016_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_1c0bd6feab4c1cdf6411559c",
+          "chunk_53cfaee79a6c3b7ee9eed1d1"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_ab100a3436d2ebc1ca3676f9",
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_621bbabad1d6f0cff7038c2c"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_017": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_612778d80d7c5c0b6e3e95ae",
+          "chunk_206616310b5568ad121cdd6d",
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_bea4fac07831fe47deb52a33",
+          "chunk_40fa809e44fa197e4800c856"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_017_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_017_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_017_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_612778d80d7c5c0b6e3e95ae",
+          "chunk_98cf35fb3afbd05cb943b94b"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_206616310b5568ad121cdd6d",
+          "chunk_bea4fac07831fe47deb52a33",
+          "chunk_40fa809e44fa197e4800c856"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_612778d80d7c5c0b6e3e95ae",
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_42a4d7c9a708df455947bda2",
+          "chunk_206616310b5568ad121cdd6d",
+          "chunk_bea4fac07831fe47deb52a33"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_017_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_017_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_017_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_612778d80d7c5c0b6e3e95ae",
+          "chunk_98cf35fb3afbd05cb943b94b"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_42a4d7c9a708df455947bda2",
+          "chunk_206616310b5568ad121cdd6d",
+          "chunk_bea4fac07831fe47deb52a33"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_612778d80d7c5c0b6e3e95ae",
+          "chunk_206616310b5568ad121cdd6d",
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_bea4fac07831fe47deb52a33",
+          "chunk_40fa809e44fa197e4800c856"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_017_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_017_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_017_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_612778d80d7c5c0b6e3e95ae",
+          "chunk_98cf35fb3afbd05cb943b94b"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_206616310b5568ad121cdd6d",
+          "chunk_bea4fac07831fe47deb52a33",
+          "chunk_40fa809e44fa197e4800c856"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_018": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_f4e90716332b9d36c12106b4",
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_6bd7a98ef5ca04c91b60a57f",
+          "chunk_9092956baf424fb221444e70"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_018_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_018_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_018_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_f4e90716332b9d36c12106b4",
+          "chunk_9092956baf424fb221444e70"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_6bd7a98ef5ca04c91b60a57f"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_6bd7a98ef5ca04c91b60a57f",
+          "chunk_9092956baf424fb221444e70",
+          "chunk_f4e90716332b9d36c12106b4"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_018_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_018_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_018_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_9092956baf424fb221444e70",
+          "chunk_f4e90716332b9d36c12106b4"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_6bd7a98ef5ca04c91b60a57f"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_f4e90716332b9d36c12106b4",
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_6bd7a98ef5ca04c91b60a57f",
+          "chunk_9092956baf424fb221444e70"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_018_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_018_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_018_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 3,
+        "supported_count": 3,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_f4e90716332b9d36c12106b4",
+          "chunk_9092956baf424fb221444e70"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_6bd7a98ef5ca04c91b60a57f"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      }
+    },
+    "router_019": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_b691dad55ea8ef335adf9c78",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_b92f64b82fa1880c3881344e"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_019_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_019_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_019_a3": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_019_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_019_a1",
+          "router_019_a3"
+        ],
+        "required_total": 3,
+        "supported_count": 1,
+        "evidence_required_recall": 0.3333333333333333,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_b691dad55ea8ef335adf9c78"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_b92f64b82fa1880c3881344e"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_11b0f878e227d23915728926",
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_b691dad55ea8ef335adf9c78"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_019_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_019_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_019_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_019_a2",
+          "router_019_a3"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_019_a1"
+        ],
+        "required_total": 3,
+        "supported_count": 2,
+        "evidence_required_recall": 0.6666666666666666,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_11b0f878e227d23915728926",
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_b691dad55ea8ef335adf9c78"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_672be43c925d3ed6d1adb2c2"
+        ],
+        "required_context_precision": 0.6,
+        "non_required_chunk_count": 2
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_b691dad55ea8ef335adf9c78",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_b92f64b82fa1880c3881344e"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_019_a1": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          },
+          "router_019_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B",
+              "C"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_019_a3": {
+            "status": "NOT_SUPPORTED",
+            "supporting_evidence_ids": [],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_019_a2"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [
+          "router_019_a1",
+          "router_019_a3"
+        ],
+        "required_total": 3,
+        "supported_count": 1,
+        "evidence_required_recall": 0.3333333333333333,
+        "evidence_required_complete": false,
+        "useful_chunk_ids": [
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_b691dad55ea8ef335adf9c78"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_b92f64b82fa1880c3881344e"
+        ],
+        "required_context_precision": 0.4,
+        "non_required_chunk_count": 3
+      }
+    },
+    "router_020": {
+      "FIXED_DIRECT": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_a72d9e71e4f90bda43370899",
+          "chunk_43cef0f3d5cec7c0f0dde036",
+          "chunk_312d5e57a467a74c75e0200c"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_020_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "D",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3",
+          "router_020_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_43cef0f3d5cec7c0f0dde036",
+          "chunk_312d5e57a467a74c75e0200c"
+        ],
+        "non_required_chunk_ids": [
+          "chunk_a72d9e71e4f90bda43370899"
+        ],
+        "required_context_precision": 0.8,
+        "non_required_chunk_count": 1
+      },
+      "FIXED_DECOMPOSE": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_a72d9e71e4f90bda43370899",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_43cef0f3d5cec7c0f0dde036"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_020_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C",
+              "D",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3",
+          "router_020_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_a72d9e71e4f90bda43370899",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_43cef0f3d5cec7c0f0dde036"
+        ],
+        "non_required_chunk_ids": [],
+        "required_context_precision": 1.0,
+        "non_required_chunk_count": 0
+      },
+      "ROUTED": {
+        "status": "judged",
+        "evidence_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_a72d9e71e4f90bda43370899",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_43cef0f3d5cec7c0f0dde036"
+        ],
+        "evidence_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "aspects": {
+          "router_020_a1": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a2": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "A",
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a3": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "B"
+            ],
+            "repaired_missing_support_ids": false
+          },
+          "router_020_a5": {
+            "status": "SUPPORTED",
+            "supporting_evidence_ids": [
+              "C",
+              "D",
+              "E"
+            ],
+            "repaired_missing_support_ids": false
+          }
+        },
+        "supported_aspect_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3",
+          "router_020_a5"
+        ],
+        "uncertain_aspect_ids": [],
+        "not_supported_aspect_ids": [],
+        "required_total": 4,
+        "supported_count": 4,
+        "evidence_required_recall": 1.0,
+        "evidence_required_complete": true,
+        "useful_chunk_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_a72d9e71e4f90bda43370899",
+          "chunk_76a40eef1f0fee4df26723be",
+          "chunk_43cef0f3d5cec7c0f0dde036"
+        ],
+        "non_required_chunk_ids": [],
+        "required_context_precision": 1.0,
+        "non_required_chunk_count": 0
+      }
+    }
+  },
+  "evidence_judge_cost": {
+    "calls": 42,
+    "cached_successful_calls": 42,
+    "parse_failures": 0,
+    "input_tokens": 86551,
+    "output_tokens": 3766,
+    "latency_seconds": 31.728,
+    "note": "evaluation-only cost; excluded from Router serving cost; no frozen price table, monetary cost not estimated"
+  },
+  "judge_failure_count": 0
+}

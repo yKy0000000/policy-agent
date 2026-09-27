@@ -1,0 +1,1349 @@
+{
+  "version": "router_v2_selection_study_analysis",
+  "study_role": "EXPLORATORY_MECHANISM_STUDY",
+  "evidence_table": [
+    {
+      "policy": "DIRECT_TOP5",
+      "group": "frozen",
+      "policy_ids": [
+        "DIRECT_TOP5"
+      ],
+      "supported_total": 57,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.8636363636363636,
+      "complete_queries": 15,
+      "precision": 0.39,
+      "exploratory_chunks": 0,
+      "useful_exploratory_chunks": 0,
+      "exploration_efficiency": null,
+      "exploration_efficiency_fraction": "0/0",
+      "useful_base_preserved": 39,
+      "useful_base_total": 39,
+      "base_preservation": 1.0,
+      "base_preservation_fraction": "39/39",
+      "displaced_queries": 0,
+      "oracle_gap_total": 9,
+      "queries_reaching_oracle": 15,
+      "queries_below_direct": 0,
+      "new_aspects_gained": 0,
+      "aspects_lost": 0,
+      "net_aspect_delta": 0,
+      "per_instance": [
+        {
+          "policy_id": "DIRECT_TOP5",
+          "supported": 57,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.8636363636363636
+        }
+      ]
+    },
+    {
+      "policy": "ROUND_ROBIN",
+      "group": "frozen",
+      "policy_ids": [
+        "ROUND_ROBIN"
+      ],
+      "supported_total": 52,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.7878787878787878,
+      "complete_queries": 11,
+      "precision": 0.45,
+      "exploratory_chunks": 31,
+      "useful_exploratory_chunks": 2,
+      "exploration_efficiency": 0.06451612903225806,
+      "exploration_efficiency_fraction": "2/31",
+      "useful_base_preserved": 33,
+      "useful_base_total": 39,
+      "base_preservation": 0.8461538461538461,
+      "base_preservation_fraction": "33/39",
+      "displaced_queries": 5,
+      "oracle_gap_total": 14,
+      "queries_reaching_oracle": 11,
+      "queries_below_direct": 5,
+      "new_aspects_gained": 2,
+      "aspects_lost": 7,
+      "net_aspect_delta": -5,
+      "per_instance": [
+        {
+          "policy_id": "ROUND_ROBIN",
+          "supported": 52,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.7878787878787878
+        }
+      ]
+    },
+    {
+      "policy": "GLOBAL_BASE_RERANK",
+      "group": "global",
+      "policy_ids": [
+        "GLOBAL_BASE_RERANK"
+      ],
+      "supported_total": 55,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.8333333333333334,
+      "complete_queries": 14,
+      "precision": 0.38,
+      "exploratory_chunks": 6,
+      "useful_exploratory_chunks": 0,
+      "exploration_efficiency": 0.0,
+      "exploration_efficiency_fraction": "0/6",
+      "useful_base_preserved": 37,
+      "useful_base_total": 39,
+      "base_preservation": 0.9487179487179487,
+      "base_preservation_fraction": "37/39",
+      "displaced_queries": 2,
+      "oracle_gap_total": 11,
+      "queries_reaching_oracle": 14,
+      "queries_below_direct": 2,
+      "new_aspects_gained": 0,
+      "aspects_lost": 2,
+      "net_aspect_delta": -2,
+      "per_instance": [
+        {
+          "policy_id": "GLOBAL_BASE_RERANK",
+          "supported": 55,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.8333333333333334
+        }
+      ]
+    },
+    {
+      "policy": "MMR lambda=0.10",
+      "group": "mmr",
+      "policy_ids": [
+        "MMR_0.10"
+      ],
+      "supported_total": 51,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.7727272727272727,
+      "complete_queries": 10,
+      "precision": 0.35000000000000003,
+      "exploratory_chunks": 10,
+      "useful_exploratory_chunks": 0,
+      "exploration_efficiency": 0.0,
+      "exploration_efficiency_fraction": "0/10",
+      "useful_base_preserved": 34,
+      "useful_base_total": 39,
+      "base_preservation": 0.8717948717948718,
+      "base_preservation_fraction": "34/39",
+      "displaced_queries": 4,
+      "oracle_gap_total": 15,
+      "queries_reaching_oracle": 10,
+      "queries_below_direct": 6,
+      "new_aspects_gained": 0,
+      "aspects_lost": 6,
+      "net_aspect_delta": -6,
+      "per_instance": [
+        {
+          "policy_id": "MMR_0.10",
+          "supported": 51,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.7727272727272727
+        }
+      ]
+    },
+    {
+      "policy": "MMR lambda=0.25",
+      "group": "mmr",
+      "policy_ids": [
+        "MMR_0.25"
+      ],
+      "supported_total": 56,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.8484848484848485,
+      "complete_queries": 13,
+      "precision": 0.37,
+      "exploratory_chunks": 18,
+      "useful_exploratory_chunks": 2,
+      "exploration_efficiency": 0.1111111111111111,
+      "exploration_efficiency_fraction": "2/18",
+      "useful_base_preserved": 34,
+      "useful_base_total": 39,
+      "base_preservation": 0.8717948717948718,
+      "base_preservation_fraction": "34/39",
+      "displaced_queries": 4,
+      "oracle_gap_total": 10,
+      "queries_reaching_oracle": 13,
+      "queries_below_direct": 4,
+      "new_aspects_gained": 3,
+      "aspects_lost": 4,
+      "net_aspect_delta": -1,
+      "per_instance": [
+        {
+          "policy_id": "MMR_0.25",
+          "supported": 56,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.8484848484848485
+        }
+      ]
+    },
+    {
+      "policy": "MMR lambda=0.50",
+      "group": "mmr",
+      "policy_ids": [
+        "MMR_0.50"
+      ],
+      "supported_total": 53,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.803030303030303,
+      "complete_queries": 11,
+      "precision": 0.35000000000000003,
+      "exploratory_chunks": 25,
+      "useful_exploratory_chunks": 2,
+      "exploration_efficiency": 0.08,
+      "exploration_efficiency_fraction": "2/25",
+      "useful_base_preserved": 33,
+      "useful_base_total": 39,
+      "base_preservation": 0.8461538461538461,
+      "base_preservation_fraction": "33/39",
+      "displaced_queries": 5,
+      "oracle_gap_total": 13,
+      "queries_reaching_oracle": 11,
+      "queries_below_direct": 6,
+      "new_aspects_gained": 3,
+      "aspects_lost": 7,
+      "net_aspect_delta": -4,
+      "per_instance": [
+        {
+          "policy_id": "MMR_0.50",
+          "supported": 53,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.803030303030303
+        }
+      ]
+    },
+    {
+      "policy": "MMR lambda=0.75",
+      "group": "mmr",
+      "policy_ids": [
+        "MMR_0.75"
+      ],
+      "supported_total": 50,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.7575757575757576,
+      "complete_queries": 9,
+      "precision": 0.34,
+      "exploratory_chunks": 34,
+      "useful_exploratory_chunks": 2,
+      "exploration_efficiency": 0.058823529411764705,
+      "exploration_efficiency_fraction": "2/34",
+      "useful_base_preserved": 31,
+      "useful_base_total": 39,
+      "base_preservation": 0.7948717948717948,
+      "base_preservation_fraction": "31/39",
+      "displaced_queries": 7,
+      "oracle_gap_total": 16,
+      "queries_reaching_oracle": 9,
+      "queries_below_direct": 8,
+      "new_aspects_gained": 3,
+      "aspects_lost": 10,
+      "net_aspect_delta": -7,
+      "per_instance": [
+        {
+          "policy_id": "MMR_0.75",
+          "supported": 50,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.7575757575757576
+        }
+      ]
+    },
+    {
+      "policy": "EACL_TS_TOPK (3 seeds pooled)",
+      "group": "bandit",
+      "policy_ids": [
+        "EACL_TS_TOPK::seed20260927",
+        "EACL_TS_TOPK::seed20260928",
+        "EACL_TS_TOPK::seed20260929"
+      ],
+      "supported_total": 140,
+      "required_total": 198,
+      "cases_evaluated": 60,
+      "recall": 0.7070707070707071,
+      "complete_queries": 30,
+      "precision": 0.36333333333333334,
+      "exploratory_chunks": 126,
+      "useful_exploratory_chunks": 8,
+      "exploration_efficiency": 0.06349206349206349,
+      "exploration_efficiency_fraction": "8/126",
+      "useful_base_preserved": 83,
+      "useful_base_total": 117,
+      "base_preservation": 0.7094017094017094,
+      "base_preservation_fraction": "83/117",
+      "displaced_queries": 25,
+      "oracle_gap_total": 58,
+      "queries_reaching_oracle": 30,
+      "queries_below_direct": 21,
+      "new_aspects_gained": 9,
+      "aspects_lost": 40,
+      "net_aspect_delta": -31,
+      "per_instance": [
+        {
+          "policy_id": "EACL_TS_TOPK::seed20260927",
+          "supported": 47,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.7121212121212122
+        },
+        {
+          "policy_id": "EACL_TS_TOPK::seed20260928",
+          "supported": 52,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.7878787878787878
+        },
+        {
+          "policy_id": "EACL_TS_TOPK::seed20260929",
+          "supported": 41,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.6212121212121212
+        }
+      ]
+    },
+    {
+      "policy": "EACL_TS_TOPK_DIV (3 seeds pooled)",
+      "group": "bandit",
+      "policy_ids": [
+        "EACL_TS_TOPK_DIV::seed20260927",
+        "EACL_TS_TOPK_DIV::seed20260928",
+        "EACL_TS_TOPK_DIV::seed20260929"
+      ],
+      "supported_total": 161,
+      "required_total": 198,
+      "cases_evaluated": 60,
+      "recall": 0.8131313131313131,
+      "complete_queries": 37,
+      "precision": 0.4166666666666667,
+      "exploratory_chunks": 117,
+      "useful_exploratory_chunks": 9,
+      "exploration_efficiency": 0.07692307692307693,
+      "exploration_efficiency_fraction": "9/117",
+      "useful_base_preserved": 95,
+      "useful_base_total": 117,
+      "base_preservation": 0.811965811965812,
+      "base_preservation_fraction": "95/117",
+      "displaced_queries": 17,
+      "oracle_gap_total": 37,
+      "queries_reaching_oracle": 37,
+      "queries_below_direct": 11,
+      "new_aspects_gained": 8,
+      "aspects_lost": 18,
+      "net_aspect_delta": -10,
+      "per_instance": [
+        {
+          "policy_id": "EACL_TS_TOPK_DIV::seed20260927",
+          "supported": 53,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.803030303030303
+        },
+        {
+          "policy_id": "EACL_TS_TOPK_DIV::seed20260928",
+          "supported": 55,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.8333333333333334
+        },
+        {
+          "policy_id": "EACL_TS_TOPK_DIV::seed20260929",
+          "supported": 53,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.803030303030303
+        }
+      ]
+    },
+    {
+      "policy": "EACL_TS_RESERVE (3 seeds pooled)",
+      "group": "bandit",
+      "policy_ids": [
+        "EACL_TS_RESERVE::seed20260927",
+        "EACL_TS_RESERVE::seed20260928",
+        "EACL_TS_RESERVE::seed20260929"
+      ],
+      "supported_total": 159,
+      "required_total": 198,
+      "cases_evaluated": 60,
+      "recall": 0.803030303030303,
+      "complete_queries": 33,
+      "precision": 0.39,
+      "exploratory_chunks": 103,
+      "useful_exploratory_chunks": 7,
+      "exploration_efficiency": 0.06796116504854369,
+      "exploration_efficiency_fraction": "7/103",
+      "useful_base_preserved": 96,
+      "useful_base_total": 117,
+      "base_preservation": 0.8205128205128205,
+      "base_preservation_fraction": "96/117",
+      "displaced_queries": 19,
+      "oracle_gap_total": 39,
+      "queries_reaching_oracle": 33,
+      "queries_below_direct": 15,
+      "new_aspects_gained": 7,
+      "aspects_lost": 19,
+      "net_aspect_delta": -12,
+      "per_instance": [
+        {
+          "policy_id": "EACL_TS_RESERVE::seed20260927",
+          "supported": 54,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.8181818181818182
+        },
+        {
+          "policy_id": "EACL_TS_RESERVE::seed20260928",
+          "supported": 51,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.7727272727272727
+        },
+        {
+          "policy_id": "EACL_TS_RESERVE::seed20260929",
+          "supported": 54,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.8181818181818182
+        }
+      ]
+    },
+    {
+      "policy": "ORACLE_BASE_TOP5",
+      "group": "oracle_analysis_only",
+      "policy_ids": [
+        "ORACLE_BASE_TOP5"
+      ],
+      "supported_total": 65,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 0.9848484848484849,
+      "complete_queries": 19,
+      "precision": 1.0,
+      "exploratory_chunks": 12,
+      "useful_exploratory_chunks": 7,
+      "exploration_efficiency": 0.5833333333333334,
+      "exploration_efficiency_fraction": "7/12",
+      "useful_base_preserved": 31,
+      "useful_base_total": 39,
+      "base_preservation": 0.7948717948717948,
+      "base_preservation_fraction": "31/39",
+      "displaced_queries": 7,
+      "oracle_gap_total": 1,
+      "queries_reaching_oracle": 19,
+      "queries_below_direct": 0,
+      "new_aspects_gained": 8,
+      "aspects_lost": 0,
+      "net_aspect_delta": 8,
+      "per_instance": [
+        {
+          "policy_id": "ORACLE_BASE_TOP5",
+          "supported": 65,
+          "required": 66,
+          "cases": 20,
+          "recall": 0.9848484848484849
+        }
+      ]
+    },
+    {
+      "policy": "ORACLE_TOP5",
+      "group": "oracle_analysis_only",
+      "policy_ids": [
+        "ORACLE_TOP5"
+      ],
+      "supported_total": 66,
+      "required_total": 66,
+      "cases_evaluated": 20,
+      "recall": 1.0,
+      "complete_queries": 20,
+      "precision": 0.9875,
+      "exploratory_chunks": 14,
+      "useful_exploratory_chunks": 9,
+      "exploration_efficiency": 0.6428571428571429,
+      "exploration_efficiency_fraction": "9/14",
+      "useful_base_preserved": 31,
+      "useful_base_total": 39,
+      "base_preservation": 0.7948717948717948,
+      "base_preservation_fraction": "31/39",
+      "displaced_queries": 7,
+      "oracle_gap_total": 0,
+      "queries_reaching_oracle": 20,
+      "queries_below_direct": 0,
+      "new_aspects_gained": 9,
+      "aspects_lost": 0,
+      "net_aspect_delta": 9,
+      "per_instance": [
+        {
+          "policy_id": "ORACLE_TOP5",
+          "supported": 66,
+          "required": 66,
+          "cases": 20,
+          "recall": 1.0
+        }
+      ]
+    }
+  ],
+  "bandit_seed_table": [
+    {
+      "instance": "EACL_TS_RESERVE::seed20260927",
+      "variant": "EACL_TS_RESERVE",
+      "seed": 20260927,
+      "supported": 54,
+      "recall": 0.8181818181818182,
+      "complete": 11,
+      "precision": 0.4,
+      "displaced": 6,
+      "exploration_efficiency": 0.0967741935483871,
+      "base_preservation": 0.8205128205128205,
+      "oracle_gap": 12,
+      "below_direct": 5
+    },
+    {
+      "instance": "EACL_TS_RESERVE::seed20260928",
+      "variant": "EACL_TS_RESERVE",
+      "seed": 20260928,
+      "supported": 51,
+      "recall": 0.7727272727272727,
+      "complete": 11,
+      "precision": 0.37,
+      "displaced": 8,
+      "exploration_efficiency": 0.05714285714285714,
+      "base_preservation": 0.7692307692307693,
+      "oracle_gap": 15,
+      "below_direct": 6
+    },
+    {
+      "instance": "EACL_TS_RESERVE::seed20260929",
+      "variant": "EACL_TS_RESERVE",
+      "seed": 20260929,
+      "supported": 54,
+      "recall": 0.8181818181818182,
+      "complete": 11,
+      "precision": 0.4,
+      "displaced": 5,
+      "exploration_efficiency": 0.05405405405405406,
+      "base_preservation": 0.8717948717948718,
+      "oracle_gap": 12,
+      "below_direct": 4
+    },
+    {
+      "instance": "EACL_TS_TOPK::seed20260927",
+      "variant": "EACL_TS_TOPK",
+      "seed": 20260927,
+      "supported": 47,
+      "recall": 0.7121212121212122,
+      "complete": 11,
+      "precision": 0.38,
+      "displaced": 7,
+      "exploration_efficiency": 0.07692307692307693,
+      "base_preservation": 0.7435897435897436,
+      "oracle_gap": 19,
+      "below_direct": 5
+    },
+    {
+      "instance": "EACL_TS_TOPK::seed20260928",
+      "variant": "EACL_TS_TOPK",
+      "seed": 20260928,
+      "supported": 52,
+      "recall": 0.7878787878787878,
+      "complete": 12,
+      "precision": 0.39,
+      "displaced": 7,
+      "exploration_efficiency": 0.08333333333333333,
+      "base_preservation": 0.7435897435897436,
+      "oracle_gap": 14,
+      "below_direct": 6
+    },
+    {
+      "instance": "EACL_TS_TOPK::seed20260929",
+      "variant": "EACL_TS_TOPK",
+      "seed": 20260929,
+      "supported": 41,
+      "recall": 0.6212121212121212,
+      "complete": 7,
+      "precision": 0.32,
+      "displaced": 11,
+      "exploration_efficiency": 0.02564102564102564,
+      "base_preservation": 0.6410256410256411,
+      "oracle_gap": 25,
+      "below_direct": 10
+    },
+    {
+      "instance": "EACL_TS_TOPK_DIV::seed20260927",
+      "variant": "EACL_TS_TOPK_DIV",
+      "seed": 20260927,
+      "supported": 53,
+      "recall": 0.803030303030303,
+      "complete": 12,
+      "precision": 0.4,
+      "displaced": 6,
+      "exploration_efficiency": 0.047619047619047616,
+      "base_preservation": 0.7948717948717948,
+      "oracle_gap": 13,
+      "below_direct": 4
+    },
+    {
+      "instance": "EACL_TS_TOPK_DIV::seed20260928",
+      "variant": "EACL_TS_TOPK_DIV",
+      "seed": 20260928,
+      "supported": 55,
+      "recall": 0.8333333333333334,
+      "complete": 12,
+      "precision": 0.43,
+      "displaced": 8,
+      "exploration_efficiency": 0.1,
+      "base_preservation": 0.7948717948717948,
+      "oracle_gap": 11,
+      "below_direct": 4
+    },
+    {
+      "instance": "EACL_TS_TOPK_DIV::seed20260929",
+      "variant": "EACL_TS_TOPK_DIV",
+      "seed": 20260929,
+      "supported": 53,
+      "recall": 0.803030303030303,
+      "complete": 13,
+      "precision": 0.42000000000000004,
+      "displaced": 3,
+      "exploration_efficiency": 0.08571428571428572,
+      "base_preservation": 0.8461538461538461,
+      "oracle_gap": 13,
+      "below_direct": 3
+    }
+  ],
+  "oracle_recovery_probe": {
+    "note": "ranks of truth-oracle chunks missing from the frozen DIRECT top5, in the global (shared-rewrite) cross-encoder order over the case super-pool; analysis-only",
+    "cases_with_new_oracle_chunks": [
+      "router_001",
+      "router_007",
+      "router_008",
+      "router_011",
+      "router_012",
+      "router_013",
+      "router_014",
+      "router_019",
+      "router_020"
+    ],
+    "rank_samples": [
+      45,
+      26,
+      27,
+      24,
+      11,
+      13,
+      9,
+      17,
+      8,
+      30,
+      62,
+      7,
+      8,
+      12
+    ],
+    "rank_median": 15.0,
+    "rank_min": 7,
+    "rank_max": 62,
+    "per_case": {
+      "router_001": {
+        "oracle_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c",
+          "chunk_fd1a8855ee650c1195777567"
+        ],
+        "direct_ids": [
+          "chunk_36c8fa4bcb4dccbdc3bbb72c",
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_f9f27089a4f14eff065f88c7",
+          "chunk_153e4163c312de7c055f6c77",
+          "chunk_1a39aad0fc45cb27c5343d9e"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_fd1a8855ee650c1195777567",
+            "global_rerank_rank": 45,
+            "global_rerank_score": -3.6299405097961426,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null
+            },
+            "in_base_union": true
+          }
+        ]
+      },
+      "router_007": {
+        "oracle_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_19600b091f62ca0ede3450a2",
+          "chunk_e21d5efa444988a6ee52dc30",
+          "chunk_f7c393d8c6398f15f8c9a7d1"
+        ],
+        "direct_ids": [
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_f4e8b281f08b3c0e1a5c2392",
+          "chunk_c9cb832f94130c5f887c161c",
+          "chunk_9bb6d940c2a6adec5ad7b5c5",
+          "chunk_0d2d5abd2784cfcf630269b4"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_19600b091f62ca0ede3450a2",
+            "global_rerank_rank": 26,
+            "global_rerank_score": -4.0849409103393555,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null,
+              "subquery_2": null,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          },
+          {
+            "chunk_id": "chunk_e21d5efa444988a6ee52dc30",
+            "global_rerank_rank": 27,
+            "global_rerank_score": -4.2366623878479,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null,
+              "subquery_2": null,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          },
+          {
+            "chunk_id": "chunk_f7c393d8c6398f15f8c9a7d1",
+            "global_rerank_rank": 24,
+            "global_rerank_score": -4.0231523513793945,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null,
+              "subquery_2": null,
+              "subquery_3": 5
+            },
+            "in_base_union": true
+          }
+        ]
+      },
+      "router_008": {
+        "oracle_ids": [
+          "chunk_19600b091f62ca0ede3450a2",
+          "chunk_e21d5efa444988a6ee52dc30"
+        ],
+        "direct_ids": [
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_fcf43a6a1cec3127aa707b22",
+          "chunk_029abeb4a7b0d31dfe0744a5",
+          "chunk_d37c28ee1a7e663c3e069148",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_19600b091f62ca0ede3450a2",
+            "global_rerank_rank": 11,
+            "global_rerank_score": -3.0442111492156982,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": 2,
+              "subquery_2": null,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          },
+          {
+            "chunk_id": "chunk_e21d5efa444988a6ee52dc30",
+            "global_rerank_rank": 13,
+            "global_rerank_score": -3.36942458152771,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": 5,
+              "subquery_2": null,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          }
+        ]
+      },
+      "router_011": {
+        "oracle_ids": [
+          "chunk_0cc6709199187f11f4436f08",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_d6d1c627931350dcab91a60d"
+        ],
+        "direct_ids": [
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_0ef6386af9657bbfb48bef55",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_8f7ea30ed2b0f19beac07dfc"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_0cc6709199187f11f4436f08",
+            "global_rerank_rank": 9,
+            "global_rerank_score": -0.07541732490062714,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null,
+              "subquery_3": 1
+            },
+            "in_base_union": true
+          }
+        ]
+      },
+      "router_012": {
+        "oracle_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802",
+          "chunk_cd467ee375fec67040db1e33"
+        ],
+        "direct_ids": [
+          "chunk_b5d910ef2bfc9d7ef2df4802",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_ef22d3b010ff9798ceba1fa4",
+          "chunk_7d54462de0e9154ce55d108b"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_cd467ee375fec67040db1e33",
+            "global_rerank_rank": 17,
+            "global_rerank_score": -0.5845290422439575,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null,
+              "subquery_2": 5,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          }
+        ]
+      },
+      "router_013": {
+        "oracle_ids": [
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_e38e8b117bf75ca2426fb8a0",
+          "chunk_ef6899bc1eb9e4fe063bec90"
+        ],
+        "direct_ids": [
+          "chunk_ef6899bc1eb9e4fe063bec90",
+          "chunk_a57209acbc132cc6e16c7234",
+          "chunk_649633341615e86787cb09b5",
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_b5d910ef2bfc9d7ef2df4802"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_30ab6464817b7b0946abaad0",
+            "global_rerank_rank": 8,
+            "global_rerank_score": -0.5957672595977783,
+            "stream_ranks": {
+              "base": null,
+              "subquery_2": 2
+            },
+            "in_base_union": true
+          },
+          {
+            "chunk_id": "chunk_e38e8b117bf75ca2426fb8a0",
+            "global_rerank_rank": 30,
+            "global_rerank_score": -4.008984565734863,
+            "stream_ranks": {
+              "subquery_3": null
+            },
+            "in_base_union": false
+          }
+        ]
+      },
+      "router_014": {
+        "oracle_ids": [
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_35fd87021964946f76efbd5f"
+        ],
+        "direct_ids": [
+          "chunk_82b71e1d710271179f8b4bdd",
+          "chunk_848e7ed07babd1137a0b93ae",
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_2dbae335078ac45aaeafe49b",
+          "chunk_17ad06919c46fe410c2cfa55"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_35fd87021964946f76efbd5f",
+            "global_rerank_rank": 62,
+            "global_rerank_score": -7.892904281616211,
+            "stream_ranks": {
+              "subquery_2": null
+            },
+            "in_base_union": false
+          }
+        ]
+      },
+      "router_019": {
+        "oracle_ids": [
+          "chunk_11b0f878e227d23915728926",
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_c11cc08e2ae10c0e3bb3806b"
+        ],
+        "direct_ids": [
+          "chunk_2899720d6a0761800653e2d4",
+          "chunk_88854c0d88a888f9e14ed636",
+          "chunk_b691dad55ea8ef335adf9c78",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_b92f64b82fa1880c3881344e"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_11b0f878e227d23915728926",
+            "global_rerank_rank": 7,
+            "global_rerank_score": 0.8416587114334106,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": 2,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          },
+          {
+            "chunk_id": "chunk_c11cc08e2ae10c0e3bb3806b",
+            "global_rerank_rank": 8,
+            "global_rerank_score": 0.7813209891319275,
+            "stream_ranks": {
+              "base": null,
+              "subquery_1": null,
+              "subquery_3": null
+            },
+            "in_base_union": true
+          }
+        ]
+      },
+      "router_020": {
+        "oracle_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_65d9607208f5f96afca0d68c",
+          "chunk_a523e9aa5d9d9ddd9c764fba"
+        ],
+        "direct_ids": [
+          "chunk_1cb42138938eed82045675df",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_a72d9e71e4f90bda43370899",
+          "chunk_43cef0f3d5cec7c0f0dde036",
+          "chunk_312d5e57a467a74c75e0200c"
+        ],
+        "oracle_new_vs_direct": [
+          {
+            "chunk_id": "chunk_65d9607208f5f96afca0d68c",
+            "global_rerank_rank": 12,
+            "global_rerank_score": 0.05775643140077591,
+            "stream_ranks": {
+              "base": null,
+              "subquery_3": 3
+            },
+            "in_base_union": true
+          }
+        ]
+      }
+    }
+  },
+  "case_studies": {
+    "oracle_over_direct_cases": [
+      {
+        "case_id": "router_001",
+        "oracle_only_aspects_vs_direct": [
+          "router_001_a4"
+        ],
+        "best_runtime_capture": {
+          "policy_id": "ROUND_ROBIN",
+          "captured": 1
+        },
+        "oracle_ids_not_in_direct": [
+          "chunk_fd1a8855ee650c1195777567"
+        ]
+      },
+      {
+        "case_id": "router_007",
+        "oracle_only_aspects_vs_direct": [
+          "router_007_a1",
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "best_runtime_capture": {
+          "policy_id": "EACL_TS_TOPK_DIV::seed20260928",
+          "captured": 2
+        },
+        "oracle_ids_not_in_direct": [
+          "chunk_19600b091f62ca0ede3450a2",
+          "chunk_e21d5efa444988a6ee52dc30",
+          "chunk_f7c393d8c6398f15f8c9a7d1"
+        ]
+      },
+      {
+        "case_id": "router_013",
+        "oracle_only_aspects_vs_direct": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "best_runtime_capture": {
+          "policy_id": "MMR_0.25",
+          "captured": 2
+        },
+        "oracle_ids_not_in_direct": [
+          "chunk_30ab6464817b7b0946abaad0",
+          "chunk_e38e8b117bf75ca2426fb8a0"
+        ]
+      },
+      {
+        "case_id": "router_014",
+        "oracle_only_aspects_vs_direct": [
+          "router_014_a3"
+        ],
+        "best_runtime_capture": {
+          "policy_id": "DIRECT_TOP5",
+          "captured": 0
+        },
+        "oracle_ids_not_in_direct": [
+          "chunk_35fd87021964946f76efbd5f"
+        ]
+      },
+      {
+        "case_id": "router_019",
+        "oracle_only_aspects_vs_direct": [
+          "router_019_a1",
+          "router_019_a3"
+        ],
+        "best_runtime_capture": {
+          "policy_id": "ROUND_ROBIN",
+          "captured": 1
+        },
+        "oracle_ids_not_in_direct": [
+          "chunk_11b0f878e227d23915728926",
+          "chunk_c11cc08e2ae10c0e3bb3806b"
+        ]
+      }
+    ],
+    "round_robin_displacement_cases": [
+      {
+        "case_id": "router_003",
+        "lost_aspects": [
+          "router_003_a2"
+        ],
+        "gained_aspects": [],
+        "exploratory": 3,
+        "useful_exploratory": 0
+      },
+      {
+        "case_id": "router_010",
+        "lost_aspects": [
+          "router_010_a1",
+          "router_010_a2"
+        ],
+        "gained_aspects": [],
+        "exploratory": 1,
+        "useful_exploratory": 0
+      },
+      {
+        "case_id": "router_011",
+        "lost_aspects": [
+          "router_011_a5"
+        ],
+        "gained_aspects": [],
+        "exploratory": 2,
+        "useful_exploratory": 0
+      },
+      {
+        "case_id": "router_016",
+        "lost_aspects": [
+          "router_016_a1",
+          "router_016_a3"
+        ],
+        "gained_aspects": [],
+        "exploratory": 2,
+        "useful_exploratory": 0
+      },
+      {
+        "case_id": "router_020",
+        "lost_aspects": [],
+        "gained_aspects": [],
+        "exploratory": 1,
+        "useful_exploratory": 0
+      }
+    ],
+    "answer_covered_delta_vs_direct": {
+      "router_001": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 1,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 1,
+        "ORACLE_TOP5": 1
+      },
+      "router_002": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_003": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": -1,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": -1,
+        "EACL_TS_TOPK_DIV::seed20260927": -3,
+        "ORACLE_TOP5": 0
+      },
+      "router_004": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_005": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_006": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_007": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": -1,
+        "MMR_0.25": -1,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 2
+      },
+      "router_008": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 1,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 2,
+        "ORACLE_TOP5": 2
+      },
+      "router_009": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_010": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": -2,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_011": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": -1,
+        "ORACLE_TOP5": 1
+      },
+      "router_012": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 1
+      },
+      "router_013": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 2,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 2
+      },
+      "router_014": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 1
+      },
+      "router_015": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_016": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": -2,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": -2,
+        "ORACLE_TOP5": 0
+      },
+      "router_017": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_018": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": -1,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 0
+      },
+      "router_019": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 1,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 1,
+        "EACL_TS_TOPK_DIV::seed20260927": 1,
+        "ORACLE_TOP5": 2
+      },
+      "router_020": {
+        "DIRECT_TOP5": 0,
+        "ROUND_ROBIN": 0,
+        "GLOBAL_BASE_RERANK": 0,
+        "MMR_0.25": 0,
+        "EACL_TS_TOPK_DIV::seed20260927": 0,
+        "ORACLE_TOP5": 1
+      }
+    }
+  },
+  "decision": {
+    "flags": {
+      "EXPLORATION_LIMITED": true,
+      "UTILITY_ESTIMATION_LIMITED": false,
+      "BANDIT_ADDS_VALUE": false,
+      "SIMPLE_SELECTOR_SUFFICIENT": false,
+      "SELECTION_LIMITED": false,
+      "MIXED": false
+    },
+    "signals": {
+      "exploration_upside_aspects": 1,
+      "oracle_upside_vs_direct_aspects": 9,
+      "round_robin_oracle_gap_aspects": 14,
+      "best_runtime_any_policy": {
+        "policy": "DIRECT_TOP5",
+        "supported": 57,
+        "note": "includes the frozen DIRECT_TOP5 baseline; DIRECT is still the best observed runtime behavior"
+      },
+      "best_selectable_policy": {
+        "policy": "MMR_0.25",
+        "supported": 56,
+        "recovery_of_rr_oracle_gap": 0.2857142857142857,
+        "note": "best non-frozen selection policy (global rerank, MMR, bandit)"
+      },
+      "best_simple": {
+        "policy": "MMR_0.25",
+        "supported": 56,
+        "recovery_of_rr_oracle_gap": 0.2857142857142857
+      },
+      "best_bandit": {
+        "policy": "EACL_TS_TOPK_DIV::seed20260928",
+        "supported": 55
+      },
+      "bandit_gain_vs_simple_aspects": -1,
+      "base_pool_oracle_gap_vs_best_selectable_aspects": 9,
+      "base_pool_oracle_gap_vs_direct_aspects": 8,
+      "base_pool_utility_estimation_limited_signal": true,
+      "generation_check": {
+        "oracle_evidence_gain_aspects": 9,
+        "oracle_answer_gain_aspects": 13,
+        "oracle_complete_gain_cases": 9,
+        "generation_transfers_evidence_gain": true,
+        "oracle_context_utilization": 1.0
+      }
+    },
+    "primary": "UTILITY_ESTIMATION_LIMITED",
+    "secondary": "EXPLORATION_LIMITED",
+    "primary_note": "Two mechanisms coexist: (1) decomposition-specific exploration upside is immaterial (ORACLE_TOP5 66 vs ORACLE_BASE_TOP5 65, +1 aspect); (2) even within the existing pools the runtime evidence utility proxies leave a large oracle gap (9 aspects vs the base-pool oracle; every runtime selector is at or below frozen DIRECT). Because (2) is the actionable, larger gap, UTILITY_ESTIMATION_LIMITED is primary; the decomposition direction is closed by EXPLORATION_LIMITED as secondary.",
+    "eacl_followup_decision": "IMPROVE_UTILITY_ESTIMATION_FIRST",
+    "eacl_followup_note": "the decomposition/exploration-specific upside is too small to justify the EACL main line, but the measured pool-level oracle gap (mostly inside the base pool) is a utility-estimation problem, not a bandit or allocation problem",
+    "followup_option_labels": [
+      "DECOMPOSITION_UPSIDE_TOO_SMALL",
+      "IMPROVE_UTILITY_ESTIMATION_FIRST",
+      "ADOPT_BANDIT_DIRECTION",
+      "ADOPT_UTILITY_SELECTION_NOT_BANDIT"
+    ],
+    "predeclared_thresholds": {
+      "exploration_upside_small": 2,
+      "oracle_upside_material": 5,
+      "bandit_material_gain": 2,
+      "runtime_recovery_weak_fraction": 0.25,
+      "runtime_recovery_strong_fraction": 0.75,
+      "selection_recovery_fraction": 0.5
+    }
+  },
+  "cost": {
+    "reranker_local_calls": 80,
+    "reranker_local_pairs": 3364,
+    "reranker_local_seconds": 222.8023896999075,
+    "evidence_judge_calls": 360,
+    "evidence_judge_new_calls": 244,
+    "evidence_judge_reused_v1_1_calls": 116,
+    "evidence_judge_input_tokens": 475922,
+    "evidence_judge_output_tokens": 21864,
+    "evidence_judge_reused_v1_1_cache_input_tokens": 86551,
+    "evidence_judge_reused_v1_1_cache_output_tokens": 3766,
+    "generation_calls": 102,
+    "generation_input_tokens": 167838,
+    "generation_output_tokens": 31267,
+    "answer_judge_calls": 20,
+    "answer_judge_input_tokens": 238496,
+    "answer_judge_output_tokens": 78575
+  },
+  "candidate_pool_totals": {
+    "superpool_size": 1425,
+    "novel_chunk_count": 767,
+    "novel_supporting_chunk_count": 3,
+    "aspects_only_coverable_by_novel_chunks": 2,
+    "oracle_top5_covered": 65,
+    "oracle_base_top5_covered": 63,
+    "superpool_recall": 65,
+    "base_union_recall": 63,
+    "required_total": 66,
+    "novel_supporting_rate": 0.003911342894393742
+  },
+  "oracle_totals": {
+    "direct_truth_covered": 51,
+    "round_robin_truth_covered": 46,
+    "base_union_recall": 63,
+    "superpool_recall": 65,
+    "oracle_base_top5": 63,
+    "oracle_top5": 65,
+    "required_total": 66,
+    "exploration_upside_oracle_top5_minus_base_top5": 2,
+    "decomposition_pool_recall_minus_base_union_recall": 2
+  }
+}

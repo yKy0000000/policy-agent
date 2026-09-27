@@ -6,7 +6,7 @@
 - implementation timestamp (UTC): `2026-09-27T14:35:02Z`
 - source git HEAD before implementation: `1350b54147e8cf17f3235dbe3988d17de370fef1`
 - current git HEAD at freeze artifacts creation: `1350b54147e8cf17f3235dbe3988d17de370fef1`
-- implementation source commit: `PENDING_COMMIT`
+- implementation source commit: `98cb503ee3a5b5f7f9340a5d5008b6497da5da0f`
 - implementation manifest: `eval/router_v1_implementation_manifest.json`
 - implementation manifest SHA-256 (pre-commit working tree): `3506f5d13adf75974ac1fa44b3c982f14e1bdb64fb39197648ffd71e326e2ed7`
 
@@ -75,6 +75,8 @@ The implementation commit cannot contain its own hash. Identity is therefore rec
 
 ## Post-commit identity
 
-- implementation source commit: `PENDING`
-- post-commit manifest working-tree SHA-256: `PENDING`
+- implementation source commit: `98cb503ee3a5b5f7f9340a5d5008b6497da5da0f`
+- post-commit manifest working-tree SHA-256: `49328f686e374d420d7e8c5a3d22b2c281e2ec8279ad15e6963be4d4fa8af923`
+- committed freeze document SHA-256 (layer-1 state): `0d6aed2ed4763c4289a4ff31909c6adecbe1ec3f47a12f10eff98ed2364fd53e`
+- this freeze document was updated after the commit only in this post-commit identity section; the committed version remains available at `HEAD:eval/router_v1_implementation_freeze.md`.
 

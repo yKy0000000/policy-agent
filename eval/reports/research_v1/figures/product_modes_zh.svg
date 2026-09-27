@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<title id="title">GitHub Policy Support Agent 产品回答链路</title>
+<desc id="desc">用户问题和历史经过上下文改写，由用户选择 Fast 或 Search+。Fast 使用 Direct Top5，Search+ 使用 Adaptive 分数差前缀规则。两者共用有依据的答案生成和引用校验。</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6C8090"/></marker>
+</defs>
+<rect width="1200" height="850" fill="#F7FAFB"/>
+<text x="70" y="62" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="34" font-weight="700">产品回答链路：预算由用户选择</text>
+<text x="70" y="99" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18">两个模式共用检索索引、MiniLM 重排、答案生成与引用校验</text>
+
+<rect x="330" y="132" width="540" height="66" rx="15" fill="#FFFFFF" stroke="#C6D5DD" stroke-width="2"/>
+<text x="600" y="173" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" text-anchor="middle">用户问题 + 对话历史</text>
+<line x1="600" y1="198" x2="600" y2="225" stroke="#6C8090" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="330" y="228" width="540" height="66" rx="15" fill="#FFFFFF" stroke="#C6D5DD" stroke-width="2"/>
+<text x="600" y="269" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Contextual Rewrite · 多轮问题改写</text>
+<line x1="600" y1="294" x2="600" y2="320" stroke="#6C8090" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="330" y="323" width="540" height="66" rx="15" fill="#E6F3F0" stroke="#258579" stroke-width="2"/>
+<text x="600" y="364" fill="#17695F" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" text-anchor="middle">用户选择 Response Mode</text>
+
+<path d="M 600 389 V 412 H 294 V 430" fill="none" stroke="#6C8090" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 600 412 H 906 V 430" fill="none" stroke="#6C8090" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="72" y="436" width="444" height="168" rx="18" fill="#FFFFFF" stroke="#5A839C" stroke-width="3"/>
+<text x="294" y="483" fill="#315F7C" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Fast · 默认</text>
+<text x="294" y="523" fill="#28485B" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" text-anchor="middle">Direct：混合检索 → MiniLM 重排</text>
+<text x="294" y="558" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" text-anchor="middle">固定 Top5，较低计算开销</text>
+
+<rect x="684" y="436" width="444" height="168" rx="18" fill="#FFFFFF" stroke="#C58543" stroke-width="3"/>
+<text x="906" y="483" fill="#A86627" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Search+ · 高预算</text>
+<text x="906" y="523" fill="#6D4B2A" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" text-anchor="middle">Adaptive：重排 Top20 的分数差前缀</text>
+<text x="906" y="558" fill="#4A6070" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" text-anchor="middle">最多 20 段，受证据 token 上限约束</text>
+
+<path d="M 294 604 V 629 H 600 V 644" fill="none" stroke="#6C8090" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 906 604 V 629 H 600" fill="none" stroke="#6C8090" stroke-width="2"/>
+<rect x="245" y="649" width="710" height="70" rx="15" fill="#EAF0F4" stroke="#B8C9D2" stroke-width="2"/>
+<text x="600" y="693" fill="#142B3D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" text-anchor="middle">选定证据 → Grounded Generation → Citation Validation</text>
+<line x1="600" y1="719" x2="600" y2="745" stroke="#6C8090" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="425" y="750" width="350" height="59" rx="14" fill="#17695F"/>
+<text x="600" y="788" fill="#FFFFFF" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" font-weight="700" text-anchor="middle">回答 + 可追溯来源</text>
+<text x="70" y="835" fill="#5A6F7D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15">Search+ 的总体完整性在当前快照更高；单个问题不保证优于 Fast。自动 Router 保留为研究实现。</text>
+</svg>

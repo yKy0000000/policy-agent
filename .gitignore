@@ -19,6 +19,7 @@ htmlcov/
 Thumbs.db
 *.log
 *.tmp
+.tmp_*
 *.bak
 *.swp
 *.part

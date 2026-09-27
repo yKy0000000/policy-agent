@@ -1,97 +1,119 @@
-# GitHub 政策问答 Agent
+# GitHub Policy Support Agent
 
-GitHub 政策问题常常不是单事实问答：一个完整答案可能同时需要一般规则、适用条件、例外和处理流程。这个项目用 [`github/site-policy`](https://github.com/github/site-policy) 语料回答问题，核心问题是：**系统能否找到、选入并真正用上用户需要的每一项证据，同时避免没有收益的复杂度和延迟？** 它会基于来源生成回答，证据不足时明确说明，并校验引用 ID 与来源元数据。
+基于 [GitHub site-policy](https://github.com/github/site-policy) **57 篇政策文档**的可追溯问答系统。政策术语与用户表述可能不同，多轮追问会省略上下文，完整回答还需要条件、例外和来源。项目先建立可靠的检索与引用链路，再用实验决定什么时候值得投入更多计算。
 
-> **真实案例 `VAL-001-046`：**用户问，调查人员索取账户数据时 GitHub 会不会先通知自己，何时可能不通知或延迟通知。完整回答还需要区分法律或法院禁令、披露前提供法律文书副本以便提出异议，以及紧急情况下延迟通知的条件。研究答案提到了**账户数据请求**的通知和法律禁令，却没有说出后两项；其支持段落没有进入原问题的候选证据池。这说明“找到相关文本”和“答全问题”之间还有多道关口。[逐题失败复盘](eval/results/a1_failure_analysis_summary.md) · [冻结答案与评测](eval/results/a1_blind_answer_quality_frozen_summary.md)
+## 最终体验：Fast / Search+
 
-## 系统如何回答
+**Fast**：默认模式，使用稳定的 Direct pipeline 和固定 Top5 证据，优先较低计算开销与稳定响应。**Search+**：用户选择的高预算模式，当前后端是 **Adaptive**；它在同一次混合检索与重排得到的 Top20 中，从 Top5 起逐段扩展，遇到与第一名重排分数差超过 **3.0** 或下一段会使证据超过 **6,000 tokens** 时停止，最多选 20 段。Adaptive 不做 query 难度分类，也不调用 Decomposer。
 
-```text
-用户问题 → 必要时改写多轮对话问题
-         → lexical Top20 + semantic Top20 → 合并并按 chunk ID 去重
-         → cross-encoder rerank → fixed Top5 证据
-         → 基于证据生成回答 → 确定性引用与输出校验
-```
+在当前 70 题对比快照中，Adaptive 的总体答案完整性高于 Fast，平均 provider tokens 约为 Fast 的 **2.17 倍**。这是两个研究数据集上的总体观察，**不保证每一道题的 Search+ 回答都更好**。两种模式共享对话历史；切换只改变本轮证据预算，重启后回到 Fast。
 
-仓库当前可执行默认值是 **MiniLM + fixed Top5**。[Agent 入口](src/agent.py) · [Reranker 默认值](src/reranker.py)
+![Fast 与 Search+ 的产品回答链路](eval/reports/research_v1/figures/product_modes_zh.svg)
 
-## 如何定位一次漏答
+## 从可靠 baseline 到预算选择
 
-以开头的问题为例，评测分别检查四件事，而不把“答案看起来合理”当成唯一信号：
+### 先让系统能找、能答、能引用
 
-- **Candidate availability：**支持事实的来源是否进入关键词与语义检索的候选并集？Validation V1 中为 **235/239** 个原始 rubric facts；这是检索诊断，不是答案准确率。[候选证据分析](eval/results/evidence_geometry_summary.md)
-- **Context coverage：**用户必需信息的证据是否进入生成上下文？研究用 fixed Top5 时为 **193/208** 个 `QUERY_REQUIRED` aspects。
-- **Answer coverage：**最终答案是否真的说出这些必需信息？fixed Top5 的冻结评测为 **196/208**。
-- **Complete case：**一道题的全部必需信息是否都被回答？fixed Top5 为 **43/50** 题；漏一项也不算完整。[A1 冻结质量](eval/results/a1_blind_answer_quality_frozen_summary.md)
+主链路是 **Contextual Rewrite → hybrid retrieval（lexical Top20 + semantic Top20）→ 按 chunk 去重 → MiniLM cross-encoder reranking → 证据选择 → grounded generation → citation validation**。Fast 固定使用 Top5；证据不足时，回答应说明已发布政策没有给出所问细节。[主链路](src/agent.py) · [检索与重排](src/reranked_retriever.py) · [生成与引用校验](src/generator.py)
 
-这里有**两种分母**：239 个 *original rubric facts* 用来诊断来源事实能否检索、排序；其中经 **Frozen Adjudicated Labels V1** 判定的 208 个 `QUERY_REQUIRED` 信息点用于上下文和答案评测。候选覆盖、Top5 覆盖、上下文覆盖、答案覆盖并非同一批对象的逐层准确率漏斗；**235/239、224/239、193/208、196/208 不能直接相减**。Context 与 answer 也由独立判定，不能用 193→196 推断生成“增加了三个事实”。[裁决口径](eval/human_truth_contract_v1.md) · [冻结标签](eval/results/frozen_human_verdicts_v1.json)
+Validation V1 的 50 题诊断中，原始 rubric facts 的候选覆盖达到 **235/239**；Fast 所依据的 fixed Top5 冻结答案完成 **43/50** 题、覆盖 **196/208** 个必需信息点。239 是来源事实的诊断分母，208 是裁决后的 `QUERY_REQUIRED` 信息点分母，不能把两项直接相减成准确率漏斗。[候选诊断](eval/results/evidence_geometry_summary.md) · [冻结答案评测](eval/results/a1_blind_answer_quality_frozen_summary.md) · [裁决口径](eval/human_truth_contract_v1.md)
 
-## 失败案例怎样改变工程决策
+多轮追问先利用近期 history 改写成独立问题，再进入同一检索链路。BGE 在离线对照中改善了排序，但同输入 CPU warm rerank p95 为 **14.78 秒**，MiniLM 为 **2.55 秒**，且存在完整答案回归；因此运行默认仍采用 MiniLM。[重排运行决策](eval/reports/runtime_reranker_decision_v1.md)
 
-### 1. 检索接近饱和后，先看排序与证据选择
+### 更深的检索是否值得？
 
-50 题中有 **49/50** 题的原始事实支持证据已全部进入候选池；扩大所有问题的检索深度不是优先选项。相同候选池上，BGE 将原始事实的 Top5 覆盖从 MiniLM 的 **211/239 提升至 224/239**。早期答案 rubric 下的迁移检查也得到 answer macro **0.866→0.920**、完整题 **36→38**，因此 BGE 成为后续实验的共同**研究基线**。[Reranker A/B](eval/results/reranker_ab_summary.md) · [答案迁移检查](eval/results/reranker_transfer_summary.md)
+baseline 已能找到大多数相关候选，但有些完整答案仍缺信息。接下来的问题是：能否让系统自己判断，什么时候值得多花一些计算？我最初尤其期待找到一个足够可靠的自动 Router：需要更深检索时自动升级，否则维持 Fast。这个假设有吸引力，因为它有机会兼顾低预算路径的效率、高预算路径的答案收益，同时不要求用户每次作选择。项目随后比较固定 Direct、固定拆分、扩大证据前缀，以及自动选择执行路径，检验额外检索与上下文预算究竟能换来多少收益。
 
-**36/38 是早期协议，不能与后来 208-aspect 盲评的 43/50 串成累计提升曲线。** `VAL-001-046` 也提醒我们：整体候选覆盖接近饱和，不代表每一道复合问题都已找到所有来源。
+几轮对照让这个问题变得不那么简单：更深的检索有时补到缺失证据，有时只增加冗余，有时新证据还会挤掉已有的有效证据；Auto Router 的总体增益也不足以说明它已经可靠找到了值得升级的题目。现实没有形成一条可直接采用的“复杂 query → 更复杂 pipeline”规则。下面的聚合结果决定工程取舍，后面的具体案例则帮助解释这些不同结果如何产生。
 
-### 2. 更大上下文有时有用，但 query router 没有赢得默认位置
+**Fixed Decompose** 是始终调用 Decomposer、进行多流检索并固定合并证据的实验路径。**Auto Router** 是实验中自动选择执行路径的策略；两个数据集使用不同的历史 Router 实现，它不是一套统一的线上算法，也不在普通 CLI 中运行。旧 70 题记录曾把 Fixed Decompose 命名为“SEARCH+”；**当前产品 Search+ 已映射为 Adaptive**，下表据此改用“Fixed Decompose”避免混淆。[完整对比与来源](eval/reports/zh/multiarm_70_summary_zh.md)
 
-`VAL-001-006` 问部分仓库内容的版权投诉该如何写，包括让 GitHub 定位材料的 URL，以及受影响者如何补救。A1 中，URL 这一必需信息的证据排在 **第 6 名**：fixed Top5 漏掉它，更深的策略选入并答出它。由问题决定证据预算，因此是一个合理的待检验假设。[失败复盘](eval/results/a1_failure_analysis_summary.md)
+## 70 题多策略对比
 
-研究冻结了 SIMPLE/BROAD router，并与无需 query 分类的证据 selector、无 router 的 adaptive 策略及 fixed Top5 配对比较；156 个独立答案先做隐藏策略标签的评测，再合并成本。[Stage 0 冻结记录](eval/query_aware_stage0_freeze.md) · [A1 决策](eval/results/a1_final_decision_v1.md)
+下表将 Validation V1 的 50 题与 Router V1 的 20 题合并作**工程对比一览**，不是新的独立 holdout，也不是泛化准确率。两 cohort 的历史实现与评测来源不同：Validation 复用了 BGE、无改写的 A1 结果，Router 20 使用 MiniLM 与共享改写；必需信息真值也分别来自人工裁决与模型审查。因而合并数只用于观察当前证据下的质量与成本取舍。[比较口径](eval/reports/zh/multiarm_70_summary_zh.md)
 
-![A1 策略：selector 以更低成本和风险达到 router 的答案质量](eval/reports/research_v1/figures/router_decision_zh.png)
+| 实验策略 | 完整回答 | 必需信息覆盖 | Provider tokens/题 | 相对 Fast |
+|---|---:|---:|---:|---:|
+| Fast / Fixed Direct | 55/70 | 250/274（91.2%） | 2,452.6 | 1.00× |
+| Fixed Decompose | 51/70 | 241/274（88.0%） | 2,470.7 | 1.01× |
+| **Adaptive（当前 Search+ 后端）** | **62/70** | **262/274（95.6%）** | **5,322.1** | **2.17×** |
+| Auto Router | 57/70 | 251/274（91.6%） | 3,371.9 | 1.37× |
 
-Selector 与 router 都覆盖 **196/208** 个必需信息点、完成 **44/50** 题；但 selector 使用 **3,281** 而非 **3,668 tokens/query**，确认的完整题回归为 **0 对 1**，correctness/grounding 问题为 **1 对 2**。按冻结规则，`coverage_selector_v2` 严格支配 `query_router_v1`，所以这条 router 的结论是 **KILL**。这只针对当前规则和开发集，不说明所有 router 都无效。
+![70 题质量与 provider token 对比](eval/reports/research_v1/figures/multiarm_70_zh.svg)
 
-Selector 相对 fixed Top5 **多答出一项、又漏掉另一项**，多用约 **29.5%** tokens；fixed Top5 保持 **2,533 tokens/query、43/50 完整、0 个确认回归**。无 router 的 adaptive 策略达到 **202/208、46/50**，却需 **6,189 tokens/query**（约 **2.44 倍**）且有一题回归。这些 tokens/query 是各策略独立服务问题的 provider-token 口径，并非实验共享缓存后的实际支出。复杂机制能提高某些结果，但这轮证据不足以让它们取代最简单的默认策略。[最终 Pareto](eval/results/a1_final_pareto_v1.json)
+Fast 是成本端点；Adaptive 在当前快照中提供更高的总体完整性，但花费两倍以上 provider tokens。Fixed Decompose 虽然 token 数接近 Fast，还会增加检索流与重排开销。Auto Router 比 Fast 多完成 **2/70** 题，却增加 token 成本，也没有捕捉到足够多的逐题最佳策略机会。历史 latency 的覆盖和测量条件不同，主表不把它们合并比较。四种策略若**事后逐题选择最佳**，可达 **64/70**、**265/274**；这是 post-hoc empirical upper bound，**不是产品成绩**。
 
-### 3. 离线质量更高，仍不足以成为运行默认值
+读到这里，需要作出的不只是“哪个算法最好”的判断。用户有时只想尽快得到可靠的政策说明，有时愿意投入更多计算，争取更完整的证据和回答。即使面对同一个 query，这两种选择也可能都合理；预算选择不完全是 query 的属性，用户愿意付出的时间和计算预算不能仅凭 query wording 可靠推断。
 
-BGE 是有价值的**质量导向研究候选方案**。但同一历史评价协议下的配对比较虽从 MiniLM 的 **40/50** 完整题升至 **42/50**，也出现 **4 题完整答案回归**；同输入、CPU warm rerank 的 p95 从 **2.55 秒**升至 **14.78 秒**，约 **5.80 倍**。两项均未通过预注册的晋升门槛，故 runtime default 继续是 **MiniLM + fixed Top5**。这组 40→42 也不能与 A1 盲评的 43/50 当作同协议增益。[运行决策与测量边界](eval/reports/runtime_reranker_decision_v1.md)
+Router 应在什么条件下替用户升级预算，一直困扰着我。到目前为止，我仍没有得到一个自己认为足够可靠、又能证明额外复杂度值得的自动解法。这并不意味着自动选择没有研究空间；只是当前数据和实现还不足以支持把它放进用户主链路。继续优化 Router、decomposition 和 evidence selection 可以留给下一阶段，而当前版本选择在这里收住复杂度。
 
-### 4. 少数真实失败值得研究，不等于要增加默认分支
+因此最终将预算偏好显式交还给用户：默认 Fast，需要更高预算时选择 Search+。它们是两种计算预算选择，不是“简单问题 / 困难问题”的标签。自动 Router 仍保留为研究实现与复现材料。[Router V1 报告](eval/reports/zh/router_v1_report_zh.md) · [A1 决策](eval/results/a1_final_decision_v1.md)
 
-剩余失败复盘涉及 **10 题、16 个**在至少一种 A1 策略中漏掉的必需信息点：**6 个**证据已在 context 但答案未用，**6 个**是选择或预算问题，**2 个**排序偏弱，另 **2 个**集中在 `VAL-001-046` 的原问题表述失效；确认的 chunk fragmentation 为 **0**。[失败分类](eval/results/a1_failure_analysis_summary.md)
+## 一个帮助解释机制的案例
 
-在 `VAL-001-046` 的离线、同为五个 chunk 的机制验证中，单纯加深原问题检索只能把目标来源放在 **91 个候选中的 BGE 第 79 名**；按用户问题拆出的 requirement query 则将它排到**第 2 名**并选入，使*必需信息的证据覆盖*从 **0/4 到 4/4**。这验证了该例的检索机制，**没有重新生成答案，也不是端到端质量提升**。明确的此类失败只有 **1/50** 题，因此 decomposition 保留为研究选项，不进入默认路径；hierarchical/parent expansion 缺少确认的 fragmentation 触发条件，未测试。[A2 机制验证](eval/results/a2_minimal_mechanism_probe_summary.md)
+聚合对比支持了上面的产品取舍；具体案例用来解释这些策略为何呈现不同结果。证据诊断显示，固定拆分产生的 **31** 个新 chunks 中，只有 **2** 个增加了此前未覆盖的必需信息支持，有时新证据还会挤掉有用的基础证据。[V1.1 诊断](eval/reports/zh/router_v1_1_report_zh.md)
 
-![VAL-001-046：requirement-query 检索使缺失证据进入 Top5](eval/reports/research_v1/figures/decomposition_case_zh.png)
+另一方面，`VAL-001-046` 的离线机制验证中，针对缺失条件的 requirement query 将目标来源排到第 **2** 名，使五段上下文内的必需证据覆盖从 **0/4** 到 **4/4**。这展示了更换检索表示可能有效，但当时**没有重新生成答案**，也不能仅凭一个案例决定产品架构；最终决策依据上面的聚合对比。[失败复盘](eval/results/a1_failure_analysis_summary.md) · [A2 机制验证](eval/results/a2_minimal_mechanism_probe_summary.md)
 
-## 测量审计：为什么还要校准答案 judge
+![VAL-001-046 的离线检索机制案例；不是总体质量结论](eval/reports/research_v1/figures/decomposition_case_zh.png)
 
-初期 331 条标签（Validation V1 与 Broad V3）由两个独立 model agents 初评，**314/331** 初始一致；其余 **17** 条由项目作者人工裁决，形成 **Frozen Adjudicated Labels V1**。这不是全面独立人工标注，也不是人类标注者一致率；历史文件中的 `human_truth` 名称仅为维持冻结哈希与复现路径。[标签来源](eval/human_truth_contract_v1.md)
+## 快速开始
 
-> **`JC-013`：**必需信息要求说明死者的近亲、指定继承人或其他获授权者可以提出账户请求。候选答案用“authorized individual”概括申请人资格；虽在提交材料中提及是否被指定为继承人，却未明确列出可申请者类别。历史 judge 与跨家族 Sol 都判 `COVERED`，项目作者盲审判 `MISSING`：这是对**部分语义匹配**的高估。[校准报告](eval/reports/judge_calibration_v1.md)
-
-随机样本为 **15 题 / 60 aspects**。历史 judge 与人工、Sol 与人工均 **58/60 一致**；各有 **2 个观察到的 over-credit、0 个 under-credit**。人工参考是 **AI-assisted blinded project-author review**，由**单一项目作者**作最终判定；模型间一致不等于独立真值。这个小样本只做 measurement calibration，**不是 corrected benchmark score**，不改写 196/208 或 43/50，也不能将 58/60 外推成普遍 judge 准确率。[完整审计](eval/reports/judge_calibration_v1.md)
-
-## 最终配置与仍未证明的事
-
-- **KEEP（运行默认）：**混合候选检索、MiniLM rerank、fixed Top5、基于证据的生成、确定性引用与输出校验。
-- **RESEARCH-ONLY：**BGE reranker 是离线质量候选方案；decomposition 仅在 `VAL-001-046` 的离线检索机制中得到验证。
-- **KILL / DO NOT PROMOTE：**冻结的 `query_router_v1` 被 selector 严格支配；selector 与 adaptive evidence budget 没有成为默认值；decomposition 不作为默认分支；hierarchical retrieval 未达到实验触发条件。[研究架构记录](eval/reports/research_v1/architecture_decision.md) · [runtime 决策](eval/reports/runtime_reranker_decision_v1.md)
-
-Validation V1 在多轮诊断、选择与机制研究中已暴露，现为 **development / research benchmark**，不能再充当新架构的 fresh holdout；16 题 Broad V3 也属开发数据。**尚未执行新的外部 holdout**，也未验证真实用户问题分布、部署监控或在线反馈闭环；小样本、单作者 judge 校准同样限制了结论。确定性引用校验不保证每个论断都获得语义支持。本 Agent 提供来源明确的政策说明，不提供法律意见。[复现清单与哈希](eval/reports/research_v1/reproducibility_manifest.md) · [Evaluation framework](eval/README.md)
-
-## 运行 Agent
-
-需要 Python 3.12+、本地政策语料；首次建立索引会下载模型；回答问题需要兼容 OpenAI Chat Completions 的服务端点。
+需要 Python 3.12+、本地政策语料和兼容 OpenAI Chat Completions 的服务端点。首次建索引会下载本地模型。复制 `.env.example` 后在本地填写 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL`；不要提交 `.env`。
 
 ```powershell
 git clone --depth 1 https://github.com/github/site-policy.git data/site-policy
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-Copy-Item .env.example .env  # 设置 LLM_API_KEY、LLM_BASE_URL、LLM_MODEL
+Copy-Item .env.example .env
 .\.venv\Scripts\python.exe -m src.indexing
 .\.venv\Scripts\python.exe -m src.semantic_indexing --device cpu
 .\.venv\Scripts\python.exe -m src.cli
 ```
 
-`src.cli` 即交互 demo：输入政策问题，输入 `exit` 退出。完成设置后，可用 `python -m src.cli --debug` 查看改写后的问题、所选证据与预算。Python 入口为 `PolicySupportAgent.from_project(device="cpu").answer(question, history=[])`。
+```text
+GitHub Policy Support Agent
+Response mode:
+  [f] Fast     Standard retrieval, lower compute
+  [s] Search+  Higher-budget retrieval, prioritizes completeness
+Press Enter for Fast.
+Mode [f]:             ← 直接回车
+[FAST] > GitHub 收到版权投诉后会怎样处理？
+[FAST] > /s
+Mode switched to SEARCH+.
+[SEARCH+] > 那么申诉流程呢？
+```
 
-运行不需要外部模型调用的测试：
+启动输入 `f`/`F` 或回车为 Fast，`s`/`S` 为 Search+。切换不清除历史；Adaptive 证据选择失败时会回退到 Direct 并给出简短提示。使用 `--debug` 可查看改写、证据数与回退原因。
+
+| 命令 | 作用 |
+|---|---|
+| `/f` | 切换 Fast |
+| `/s` | 切换 Search+ |
+| `/mode` | 查看当前模式 |
+| `/help` | 查看命令 |
+| `/exit`、`exit`、`quit` | 退出 |
+
+## 项目结构、评测与复现
+
+```text
+src/                  主链路、CLI、Adaptive 产品适配层及保留的 Router 研究代码
+tests/                主链路与研究路径测试
+eval/                 benchmark、truth、预注册、实验脚本与复现记录
+eval/results/         冻结结果、原始输出与 70 题对比摘要
+eval/reports/         研究总结与图表
+data/site-policy/     单独获取的上游文档（本地，不提交）
+cache/                本地索引、模型与缓存（不提交）
+```
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests
 ```
+
+Grounding 依靠证据约束生成，citation validation 确定性地检查引用 ID 和来源元数据；结构合法不等于每个论断都得到语义支持。详细 benchmark、truth、实验记录与复现材料在 [eval/](eval/README.md)，包括 [研究架构记录](eval/reports/research_v1/architecture_decision.md) 与 [复现清单](eval/reports/research_v1/reproducibility_manifest.md)。
+
+## 限制与下一步
+
+Validation V1 和 Broad V3 已作为开发数据使用，不是新外部 holdout；70 题合并快照也有跨 cohort 实现与 judge 来源差异。答案 judge 的小样本校准由单一项目作者最终裁决，不能当作全面独立人工真值。[校准报告](eval/reports/judge_calibration_v1.md)
+
+目前未验证真实用户问题分布、部署监控或在线反馈。Search+ 在本地 MiniLM 栈上的实际体验仍应独立观察；当前快照不保证逐题优于 Fast。本项目提供有来源的政策说明，不提供法律意见。

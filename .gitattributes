@@ -1,0 +1,5 @@
+# Preserve exact bytes of frozen reports that already end with a blank line.
+eval/results/router_v1/router_v1_failure_review.md whitespace=cr-at-eol,-blank-at-eof
+eval/results/router_v1/router_v1_report.md whitespace=cr-at-eol,-blank-at-eof
+eval/results/router_v1_1/router_v1_1_failure_review.md whitespace=cr-at-eol,-blank-at-eof
+eval/results/router_v1_1/router_v1_1_report.md whitespace=cr-at-eol,-blank-at-eof

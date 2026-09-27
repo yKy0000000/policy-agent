@@ -1,0 +1,525 @@
+{
+  "version": "router_v1_execution_summary",
+  "cases": {
+    "router_001": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_002": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_003": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_004": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_005": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_006": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_007": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_008": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_009": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_010": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_011": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_012": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_013": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_014": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_015": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_016": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_017": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_018": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_019": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      }
+    },
+    "router_020": {
+      "FIXED_DIRECT": {
+        "executed_path": "DIRECT",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": false,
+        "counterfactual_decompose_available": true
+      },
+      "FIXED_DECOMPOSE": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      },
+      "ROUTED": {
+        "executed_path": "DECOMPOSE",
+        "execution_success": true,
+        "error_stage": null,
+        "fallback_reason": null,
+        "decompose_available": true,
+        "counterfactual_decompose_available": true
+      }
+    }
+  }
+}

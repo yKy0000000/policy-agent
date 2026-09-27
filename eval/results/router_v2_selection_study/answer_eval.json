@@ -1,0 +1,3845 @@
+{
+  "version": "router_v2_answer_eval",
+  "judge_version": "broad-v3-answer-quality-v1",
+  "judge_model": "deepseek-v4-flash",
+  "blind": {
+    "labels": "hashed opaque labels per case",
+    "policy_identity_exposed": false
+  },
+  "eligibility_rule": "same frozen router_v1 eligibility logic; citation validation + no incorrect facts + no disqualifying claim statuses",
+  "cases": {
+    "router_001": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3"
+        ],
+        "missing_ids": [
+          "router_001_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "A"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3",
+          "router_001_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "E"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3"
+        ],
+        "missing_ids": [
+          "router_001_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "C"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3"
+        ],
+        "missing_ids": [
+          "router_001_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "D"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3",
+          "router_001_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_001_a1",
+          "router_001_a2",
+          "router_001_a3",
+          "router_001_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 5
+        },
+        "judge_label": "B"
+      }
+    },
+    "router_002": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "B"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "D"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "E"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "C"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_002_a1",
+          "router_002_a2",
+          "router_002_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "A"
+      }
+    },
+    "router_003": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_003_a1",
+          "router_003_a2",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "C"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_003_a1",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "missing_ids": [
+          "router_003_a2"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "F"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_003_a1",
+          "router_003_a2",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "E"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_003_a1",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [
+          "router_003_a2"
+        ],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 5,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "A"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 4,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_003_a2"
+        ],
+        "missing_ids": [
+          "router_003_a1",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "partial": 1,
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "B"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_003_a1",
+          "router_003_a2",
+          "router_003_a3",
+          "router_003_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "D"
+      }
+    },
+    "router_004": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "F"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "D"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "E"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 6,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "C"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 6,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "A"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_004_a1",
+          "router_004_a2",
+          "router_004_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 6,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "B"
+      }
+    },
+    "router_005": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "B"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "F"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "C"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "E"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "A"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_005_a1",
+          "router_005_a2",
+          "router_005_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "D"
+      }
+    },
+    "router_006": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "E"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "C"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "A"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "F"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "D"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_006_a1",
+          "router_006_a2",
+          "router_006_a3",
+          "router_006_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "B"
+      }
+    },
+    "router_007": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_007_a1",
+          "router_007_a3"
+        ],
+        "missing_ids": [
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "E"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_007_a1",
+          "router_007_a3"
+        ],
+        "missing_ids": [
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "A"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_007_a1"
+        ],
+        "missing_ids": [
+          "router_007_a2",
+          "router_007_a3",
+          "router_007_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "D"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_007_a1"
+        ],
+        "missing_ids": [
+          "router_007_a2",
+          "router_007_a3",
+          "router_007_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "B"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_007_a1",
+          "router_007_a3"
+        ],
+        "missing_ids": [
+          "router_007_a2",
+          "router_007_a4"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_007_a1",
+          "router_007_a2",
+          "router_007_a3",
+          "router_007_a4"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "C"
+      }
+    },
+    "router_008": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 2,
+        "required_covered": 0,
+        "covered_ids": [],
+        "missing_ids": [
+          "router_008_a1",
+          "router_008_a2"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 12
+        },
+        "claim_citation_counts": {
+          "supported": 12
+        },
+        "judge_label": "F"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 2,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_008_a1"
+        ],
+        "missing_ids": [
+          "router_008_a2"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "C"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 2,
+        "required_covered": 0,
+        "covered_ids": [],
+        "missing_ids": [
+          "router_008_a2"
+        ],
+        "incorrect_ids": [
+          "router_008_a1"
+        ],
+        "query_required_complete": false,
+        "claim_counts": {
+          "partial": 2,
+          "supported": 12
+        },
+        "claim_citation_counts": {
+          "supported": 14
+        },
+        "judge_label": "A"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 2,
+        "required_covered": 0,
+        "covered_ids": [],
+        "missing_ids": [
+          "router_008_a1",
+          "router_008_a2"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "E"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 2,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_008_a1",
+          "router_008_a2"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 5
+        },
+        "judge_label": "B"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 2,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_008_a1",
+          "router_008_a2"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 4
+        },
+        "claim_citation_counts": {
+          "supported": 4
+        },
+        "judge_label": "D"
+      }
+    },
+    "router_009": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "D"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "E"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "B"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "C"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_009_a1",
+          "router_009_a2",
+          "router_009_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "A"
+      }
+    },
+    "router_010": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 4,
+          "missing": 1
+        },
+        "judge_label": "A"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_010_a3"
+        ],
+        "missing_ids": [
+          "router_010_a1",
+          "router_010_a2"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "partial": 1,
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "B"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 4,
+          "missing": 1
+        },
+        "judge_label": "D"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 4,
+          "missing": 1
+        },
+        "judge_label": "E"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "partial": 1,
+          "supported": 3
+        },
+        "claim_citation_counts": {
+          "supported": 4
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_010_a1",
+          "router_010_a2",
+          "router_010_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 4
+        },
+        "claim_citation_counts": {
+          "supported": 4
+        },
+        "judge_label": "C"
+      }
+    },
+    "router_011": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_011_a1",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "missing_ids": [
+          "router_011_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 12
+        },
+        "claim_citation_counts": {
+          "supported": 12
+        },
+        "judge_label": "E"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_011_a1",
+          "router_011_a3",
+          "router_011_a4"
+        ],
+        "missing_ids": [
+          "router_011_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "C"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_011_a1",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "missing_ids": [
+          "router_011_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 12
+        },
+        "claim_citation_counts": {
+          "supported": 12
+        },
+        "judge_label": "A"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_011_a1",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "missing_ids": [
+          "router_011_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "B"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_011_a1",
+          "router_011_a4"
+        ],
+        "missing_ids": [
+          "router_011_a3",
+          "router_011_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 12
+        },
+        "claim_citation_counts": {
+          "supported": 12
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_011_a1",
+          "router_011_a3",
+          "router_011_a4",
+          "router_011_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "D"
+      }
+    },
+    "router_012": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_012_a1",
+          "router_012_a2"
+        ],
+        "missing_ids": [
+          "router_012_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "C"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_012_a1",
+          "router_012_a2"
+        ],
+        "missing_ids": [
+          "router_012_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "B"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_012_a1",
+          "router_012_a2"
+        ],
+        "missing_ids": [
+          "router_012_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "E"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_012_a1",
+          "router_012_a2"
+        ],
+        "missing_ids": [
+          "router_012_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "D"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_012_a1",
+          "router_012_a2"
+        ],
+        "missing_ids": [
+          "router_012_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "A"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_012_a1",
+          "router_012_a2",
+          "router_012_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "F"
+      }
+    },
+    "router_013": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "missing_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "C"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "missing_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "D"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "missing_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "A"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_013_a2",
+          "router_013_a3",
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "B"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_013_a2",
+          "router_013_a3"
+        ],
+        "missing_ids": [
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "E"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_013_a2",
+          "router_013_a3",
+          "router_013_a4",
+          "router_013_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "F"
+      }
+    },
+    "router_014": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "missing_ids": [
+          "router_014_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "E"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "missing_ids": [
+          "router_014_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "D"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "missing_ids": [
+          "router_014_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "F"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "missing_ids": [
+          "router_014_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8,
+          "unsupported": 1
+        },
+        "claim_citation_counts": {
+          "supported": 8,
+          "missing": 1
+        },
+        "judge_label": "C"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_014_a1",
+          "router_014_a2"
+        ],
+        "missing_ids": [
+          "router_014_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "A"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_014_a1",
+          "router_014_a2",
+          "router_014_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 5
+        },
+        "claim_citation_counts": {
+          "supported": 5
+        },
+        "judge_label": "B"
+      }
+    },
+    "router_015": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "B"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "F"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "A"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "D"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "C"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_015_a1",
+          "router_015_a2",
+          "router_015_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "E"
+      }
+    },
+    "router_016": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_016_a1",
+          "router_016_a2",
+          "router_016_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "A"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_016_a2"
+        ],
+        "missing_ids": [
+          "router_016_a1",
+          "router_016_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "contradicted": 2,
+          "supported": 14,
+          "partial": 1
+        },
+        "claim_citation_counts": {
+          "supported": 17
+        },
+        "judge_label": "F"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_016_a1",
+          "router_016_a2",
+          "router_016_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "B"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_016_a1",
+          "router_016_a2",
+          "router_016_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "C"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_016_a2"
+        ],
+        "missing_ids": [
+          "router_016_a1",
+          "router_016_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "contradicted": 2,
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "D"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_016_a1",
+          "router_016_a2",
+          "router_016_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "E"
+      }
+    },
+    "router_017": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "C"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 8,
+          "missing": 1
+        },
+        "judge_label": "D"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "E"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 7,
+          "missing": 1
+        },
+        "judge_label": "A"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "B"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_017_a1",
+          "router_017_a2",
+          "router_017_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "F"
+      }
+    },
+    "router_018": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "E"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 12
+        },
+        "claim_citation_counts": {
+          "supported": 11,
+          "missing": 1
+        },
+        "judge_label": "C"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "B"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_018_a1",
+          "router_018_a2"
+        ],
+        "missing_ids": [
+          "router_018_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 6,
+          "contradicted": 3
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "D"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": false,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 7,
+          "missing": 2
+        },
+        "judge_label": "A"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_018_a1",
+          "router_018_a2",
+          "router_018_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "F"
+      }
+    },
+    "router_019": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_019_a2"
+        ],
+        "missing_ids": [
+          "router_019_a1",
+          "router_019_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "C"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_019_a2",
+          "router_019_a3"
+        ],
+        "missing_ids": [
+          "router_019_a1"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 11
+        },
+        "claim_citation_counts": {
+          "supported": 11
+        },
+        "judge_label": "E"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 1,
+        "covered_ids": [
+          "router_019_a2"
+        ],
+        "missing_ids": [
+          "router_019_a1",
+          "router_019_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "D"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_019_a1",
+          "router_019_a2"
+        ],
+        "missing_ids": [
+          "router_019_a3"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "F"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 2,
+        "covered_ids": [
+          "router_019_a2",
+          "router_019_a3"
+        ],
+        "missing_ids": [
+          "router_019_a1"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "A"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 3,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_019_a1",
+          "router_019_a2",
+          "router_019_a3"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 10
+        },
+        "claim_citation_counts": {
+          "supported": 10
+        },
+        "judge_label": "B"
+      }
+    },
+    "router_020": {
+      "DIRECT_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3"
+        ],
+        "missing_ids": [
+          "router_020_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "D"
+      },
+      "ROUND_ROBIN": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3"
+        ],
+        "missing_ids": [
+          "router_020_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 9
+        },
+        "claim_citation_counts": {
+          "supported": 9
+        },
+        "judge_label": "C"
+      },
+      "GLOBAL_BASE_RERANK": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3"
+        ],
+        "missing_ids": [
+          "router_020_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 6
+        },
+        "claim_citation_counts": {
+          "supported": 6
+        },
+        "judge_label": "E"
+      },
+      "MMR_0.25": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3"
+        ],
+        "missing_ids": [
+          "router_020_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 8
+        },
+        "claim_citation_counts": {
+          "supported": 8
+        },
+        "judge_label": "A"
+      },
+      "EACL_TS_TOPK_DIV::seed20260927": {
+        "status": "judged",
+        "analysis_only_oracle": false,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 3,
+        "covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3"
+        ],
+        "missing_ids": [
+          "router_020_a5"
+        ],
+        "incorrect_ids": [],
+        "query_required_complete": false,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "F"
+      },
+      "ORACLE_TOP5": {
+        "status": "judged",
+        "analysis_only_oracle": true,
+        "execution_success": true,
+        "citation_validation": {
+          "valid": true,
+          "has_citations": true,
+          "invalid_citations": [],
+          "contains_model_generated_url": false,
+          "warnings": []
+        },
+        "eligible": true,
+        "required_total": 4,
+        "required_covered": 4,
+        "covered_ids": [
+          "router_020_a1",
+          "router_020_a2",
+          "router_020_a3",
+          "router_020_a5"
+        ],
+        "missing_ids": [],
+        "incorrect_ids": [],
+        "query_required_complete": true,
+        "claim_counts": {
+          "supported": 7
+        },
+        "claim_citation_counts": {
+          "supported": 7
+        },
+        "judge_label": "B"
+      }
+    }
+  },
+  "aggregate": {
+    "DIRECT_TOP5": {
+      "attempts": 20,
+      "judged": 20,
+      "analysis_only_oracle": false,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 19,
+      "query_required_complete_cases": 11,
+      "required_covered_total": 53,
+      "required_total_total": 66,
+      "context_utilization": 0.9122807017543859
+    },
+    "ROUND_ROBIN": {
+      "attempts": 20,
+      "judged": 20,
+      "analysis_only_oracle": false,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 14,
+      "query_required_complete_cases": 9,
+      "required_covered_total": 51,
+      "required_total_total": 66,
+      "context_utilization": 0.9615384615384616
+    },
+    "GLOBAL_BASE_RERANK": {
+      "attempts": 20,
+      "judged": 20,
+      "analysis_only_oracle": false,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 17,
+      "query_required_complete_cases": 11,
+      "required_covered_total": 52,
+      "required_total_total": 66,
+      "context_utilization": 0.9272727272727272
+    },
+    "MMR_0.25": {
+      "attempts": 20,
+      "judged": 20,
+      "analysis_only_oracle": false,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 14,
+      "query_required_complete_cases": 10,
+      "required_covered_total": 53,
+      "required_total_total": 66,
+      "context_utilization": 0.9285714285714286
+    },
+    "EACL_TS_TOPK_DIV::seed20260927": {
+      "attempts": 20,
+      "judged": 20,
+      "analysis_only_oracle": false,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 15,
+      "query_required_complete_cases": 11,
+      "required_covered_total": 51,
+      "required_total_total": 66,
+      "context_utilization": 0.9433962264150944
+    },
+    "ORACLE_TOP5": {
+      "attempts": 20,
+      "judged": 20,
+      "analysis_only_oracle": true,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 19,
+      "query_required_complete_cases": 20,
+      "required_covered_total": 66,
+      "required_total_total": 66,
+      "context_utilization": 1.0
+    }
+  },
+  "judge_usage": {
+    "new_calls": 20,
+    "cache_hits": 0,
+    "input_tokens": 238496,
+    "output_tokens": 78575,
+    "latency_seconds": 210.7235992999631
+  },
+  "judge_usage_cumulative": {
+    "calls": 20,
+    "input_tokens": 238496,
+    "output_tokens": 78575
+  },
+  "judge_failures": {}
+}

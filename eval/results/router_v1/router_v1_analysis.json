@@ -1,0 +1,758 @@
+{
+  "version": "router_v1_analysis",
+  "cases": {},
+  "routing": {
+    "router_direct": 17,
+    "router_decompose": 3,
+    "executed_direct": 17,
+    "executed_decompose": 3,
+    "fallbacks": {},
+    "decisions": {
+      "router_001": "DIRECT",
+      "router_002": "DIRECT",
+      "router_003": "DIRECT",
+      "router_004": "DIRECT",
+      "router_005": "DIRECT",
+      "router_006": "DIRECT",
+      "router_007": "DIRECT",
+      "router_008": "DIRECT",
+      "router_009": "DECOMPOSE",
+      "router_010": "DIRECT",
+      "router_011": "DECOMPOSE",
+      "router_012": "DIRECT",
+      "router_013": "DIRECT",
+      "router_014": "DIRECT",
+      "router_015": "DIRECT",
+      "router_016": "DIRECT",
+      "router_017": "DIRECT",
+      "router_018": "DIRECT",
+      "router_019": "DIRECT",
+      "router_020": "DECOMPOSE"
+    },
+    "reason_codes": {
+      "COHERENT_SINGLE_REPRESENTATION": 17,
+      "COVERAGE_SPLIT_RISK": 3
+    },
+    "reason_validity": {
+      "valid": 20
+    },
+    "schema_anomalies": 0
+  },
+  "oracle_counts": {
+    "FIXED_DECOMPOSE": 2,
+    "TIE": 8,
+    "FIXED_DIRECT": 6,
+    "NEITHER_ELIGIBLE": 4
+  },
+  "router_vs_oracle": {
+    "clear_oracle_cases": [
+      "router_001",
+      "router_003",
+      "router_010",
+      "router_011",
+      "router_012",
+      "router_014",
+      "router_016",
+      "router_018"
+    ],
+    "matched_clear_oracle": 7,
+    "chose_direct_when_decompose_better": 1,
+    "chose_decompose_when_direct_better": 0,
+    "tie_with_decompose": [
+      "router_009",
+      "router_020"
+    ]
+  },
+  "quality": {
+    "FIXED_DIRECT": {
+      "attempts": 20,
+      "judged": 20,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 14,
+      "query_required_complete_cases": 12,
+      "required_covered_total": 54,
+      "required_total_total": 66,
+      "failure_stages": {}
+    },
+    "FIXED_DECOMPOSE": {
+      "attempts": 20,
+      "judged": 20,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 11,
+      "query_required_complete_cases": 9,
+      "required_covered_total": 51,
+      "required_total_total": 66,
+      "failure_stages": {}
+    },
+    "ROUTED": {
+      "attempts": 20,
+      "judged": 20,
+      "execution_success": 20,
+      "citation_valid": 20,
+      "eligible": 15,
+      "query_required_complete_cases": 13,
+      "required_covered_total": 55,
+      "required_total_total": 66,
+      "failure_stages": {}
+    }
+  },
+  "attribution": {
+    "FIXED_DECOMPOSE": {
+      "executions": 20,
+      "representation_gain_cases": [
+        "router_001",
+        "router_003",
+        "router_004",
+        "router_006",
+        "router_007",
+        "router_011"
+      ],
+      "selection_ranking_gain_cases": [
+        "router_001",
+        "router_002",
+        "router_003",
+        "router_005",
+        "router_008",
+        "router_010",
+        "router_011",
+        "router_012",
+        "router_013",
+        "router_014",
+        "router_015",
+        "router_016",
+        "router_017",
+        "router_019",
+        "router_020"
+      ],
+      "zero_evidence_gain_cases": [
+        "router_009",
+        "router_018"
+      ]
+    },
+    "ROUTED_DECOMPOSE": {
+      "executions": 3,
+      "representation_gain_cases": [
+        "router_011"
+      ],
+      "selection_ranking_gain_cases": [
+        "router_020"
+      ],
+      "zero_evidence_gain_cases": [
+        "router_009"
+      ]
+    }
+  },
+  "quality_gain_mechanism": {
+    "router_001": {
+      "representation_gain_ids": [
+        "chunk_0d2d5abd2784cfcf630269b4",
+        "chunk_65d9607208f5f96afca0d68c"
+      ],
+      "selection_ranking_gain_ids": [
+        "chunk_0ef6386af9657bbfb48bef55"
+      ],
+      "zero_evidence_gain": false
+    },
+    "router_011": {
+      "representation_gain_ids": [
+        "chunk_3fe67c4153c058347f190445"
+      ],
+      "selection_ranking_gain_ids": [
+        "chunk_0cc6709199187f11f4436f08"
+      ],
+      "zero_evidence_gain": false
+    }
+  },
+  "zero_evidence_gain": {
+    "router_009": {
+      "FIXED_DECOMPOSE": {
+        "answer_equal_to_direct": false,
+        "direct_covered": 3,
+        "arm_covered": 3,
+        "direct_complete": true,
+        "arm_complete": true,
+        "extra_streams": 3,
+        "extra_llm_calls": 1,
+        "extra_input_tokens": 163,
+        "extra_output_tokens": 47
+      },
+      "ROUTED": {
+        "answer_equal_to_direct": false,
+        "direct_covered": 3,
+        "arm_covered": 3,
+        "direct_complete": true,
+        "arm_complete": true,
+        "extra_streams": 3,
+        "extra_llm_calls": 2,
+        "extra_input_tokens": 437,
+        "extra_output_tokens": 150
+      }
+    },
+    "router_018": {
+      "FIXED_DECOMPOSE": {
+        "answer_equal_to_direct": false,
+        "direct_covered": 3,
+        "arm_covered": 3,
+        "direct_complete": true,
+        "arm_complete": true,
+        "extra_streams": 3,
+        "extra_llm_calls": 1,
+        "extra_input_tokens": 172,
+        "extra_output_tokens": 153
+      }
+    }
+  },
+  "cost": {
+    "FIXED_DIRECT": {
+      "llm_calls": {
+        "total": 20,
+        "mean": 1.0,
+        "median": 1.0
+      },
+      "retrieval_streams": {
+        "total": 20,
+        "mean": 1.0,
+        "median": 1.0
+      },
+      "reranker_calls": {
+        "total": 20,
+        "mean": 1.0,
+        "median": 1.0
+      },
+      "input_tokens": {
+        "total": 39105,
+        "mean": 1955.25,
+        "median": 1862.5
+      },
+      "output_tokens": {
+        "total": 5920,
+        "mean": 296.0,
+        "median": 272.0
+      },
+      "latency_seconds": {
+        "total": 88.04,
+        "mean": 4.402,
+        "median": 4.4381
+      },
+      "stage_call_totals": {
+        "generation": 20
+      },
+      "estimated_monetary_cost": null,
+      "note": "no frozen price table for this run; tokens/calls/latency reported instead"
+    },
+    "FIXED_DECOMPOSE": {
+      "llm_calls": {
+        "total": 40,
+        "mean": 2.0,
+        "median": 2.0
+      },
+      "retrieval_streams": {
+        "total": 80,
+        "mean": 4.0,
+        "median": 4.0
+      },
+      "reranker_calls": {
+        "total": 80,
+        "mean": 4.0,
+        "median": 4.0
+      },
+      "input_tokens": {
+        "total": 38660,
+        "mean": 1933.0,
+        "median": 1893.5
+      },
+      "output_tokens": {
+        "total": 7364,
+        "mean": 368.2,
+        "median": 344.5
+      },
+      "latency_seconds": {
+        "total": 249.7907,
+        "mean": 12.4895,
+        "median": 12.3915
+      },
+      "stage_call_totals": {
+        "decomposer": 20,
+        "generation": 20
+      },
+      "estimated_monetary_cost": null,
+      "note": "no frozen price table for this run; tokens/calls/latency reported instead"
+    },
+    "ROUTED": {
+      "llm_calls": {
+        "total": 43,
+        "mean": 2.15,
+        "median": 2.0
+      },
+      "retrieval_streams": {
+        "total": 29,
+        "mean": 1.45,
+        "median": 1.0
+      },
+      "reranker_calls": {
+        "total": 29,
+        "mean": 1.45,
+        "median": 1.0
+      },
+      "input_tokens": {
+        "total": 45840,
+        "mean": 2292.0,
+        "median": 2229.0
+      },
+      "output_tokens": {
+        "total": 6809,
+        "mean": 340.45,
+        "median": 309.0
+      },
+      "latency_seconds": {
+        "total": 125.559,
+        "mean": 6.278,
+        "median": 5.2341
+      },
+      "stage_call_totals": {
+        "router": 20,
+        "generation": 20,
+        "decomposer": 3
+      },
+      "estimated_monetary_cost": null,
+      "note": "no frozen price table for this run; tokens/calls/latency reported instead"
+    }
+  },
+  "shared_rewrite_cost": {
+    "calls": 20,
+    "input_tokens": 3887,
+    "output_tokens": 655,
+    "note": "one shared rewrite per query; not part of per-arm cost"
+  },
+  "judge_cost": {
+    "calls": 20,
+    "input_tokens": 136937,
+    "output_tokens": 41461,
+    "note": "evaluation cost; excluded from serving cost"
+  },
+  "surface_heuristics": {
+    "direct_decisions": {
+      "cases": [
+        "router_001",
+        "router_002",
+        "router_003",
+        "router_004",
+        "router_005",
+        "router_006",
+        "router_007",
+        "router_008",
+        "router_010",
+        "router_012",
+        "router_013",
+        "router_014",
+        "router_015",
+        "router_016",
+        "router_017",
+        "router_018",
+        "router_019"
+      ],
+      "mean_words": 33.71,
+      "mean_conjunctions": 1.71,
+      "mean_clauses": 5.18,
+      "multi_document_count": 7,
+      "details": [
+        {
+          "case_id": "router_001",
+          "words": 41,
+          "conjunctions": 2,
+          "clauses": 4,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_002",
+          "words": 33,
+          "conjunctions": 1,
+          "clauses": 3,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_003",
+          "words": 32,
+          "conjunctions": 2,
+          "clauses": 6,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_004",
+          "words": 34,
+          "conjunctions": 2,
+          "clauses": 4,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_005",
+          "words": 37,
+          "conjunctions": 2,
+          "clauses": 6,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_006",
+          "words": 38,
+          "conjunctions": 2,
+          "clauses": 6,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_007",
+          "words": 32,
+          "conjunctions": 2,
+          "clauses": 7,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_008",
+          "words": 25,
+          "conjunctions": 1,
+          "clauses": 6,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_010",
+          "words": 33,
+          "conjunctions": 2,
+          "clauses": 5,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_012",
+          "words": 29,
+          "conjunctions": 1,
+          "clauses": 4,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_013",
+          "words": 33,
+          "conjunctions": 3,
+          "clauses": 6,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_014",
+          "words": 30,
+          "conjunctions": 1,
+          "clauses": 3,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_015",
+          "words": 39,
+          "conjunctions": 3,
+          "clauses": 8,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_016",
+          "words": 31,
+          "conjunctions": 1,
+          "clauses": 5,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_017",
+          "words": 35,
+          "conjunctions": 1,
+          "clauses": 3,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_018",
+          "words": 34,
+          "conjunctions": 1,
+          "clauses": 5,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_019",
+          "words": 37,
+          "conjunctions": 2,
+          "clauses": 7,
+          "multi_document_metadata": false
+        }
+      ]
+    },
+    "decompose_decisions": {
+      "cases": [
+        "router_009",
+        "router_011",
+        "router_020"
+      ],
+      "mean_words": 34.33,
+      "mean_conjunctions": 2.33,
+      "mean_clauses": 5,
+      "multi_document_count": 2,
+      "details": [
+        {
+          "case_id": "router_009",
+          "words": 37,
+          "conjunctions": 2,
+          "clauses": 4,
+          "multi_document_metadata": false
+        },
+        {
+          "case_id": "router_011",
+          "words": 29,
+          "conjunctions": 2,
+          "clauses": 5,
+          "multi_document_metadata": true
+        },
+        {
+          "case_id": "router_020",
+          "words": 37,
+          "conjunctions": 3,
+          "clauses": 6,
+          "multi_document_metadata": true
+        }
+      ]
+    }
+  },
+  "failures": {
+    "router_wrong_arm_vs_clear_oracle": [
+      {
+        "case_id": "router_001",
+        "router": "DIRECT",
+        "oracle": "FIXED_DECOMPOSE"
+      }
+    ],
+    "decompose_better_router_direct": [
+      {
+        "case_id": "router_001",
+        "router": "DIRECT",
+        "oracle": "FIXED_DECOMPOSE"
+      }
+    ],
+    "tie_router_decompose_extra_cost": [
+      {
+        "case_id": "router_009"
+      },
+      {
+        "case_id": "router_020"
+      }
+    ],
+    "representation_gain_without_answer_gain": [
+      {
+        "case_id": "router_001",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "representation_gain_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_65d9607208f5f96afca0d68c"
+        ]
+      },
+      {
+        "case_id": "router_003",
+        "direct_covered": 4,
+        "decompose_covered": 3,
+        "representation_gain_ids": [
+          "chunk_85867a0b6a0b9d17cba279d7"
+        ]
+      },
+      {
+        "case_id": "router_004",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "representation_gain_ids": [
+          "chunk_1b7a4f11eb7eec7619ddab24"
+        ]
+      },
+      {
+        "case_id": "router_006",
+        "direct_covered": 4,
+        "decompose_covered": 4,
+        "representation_gain_ids": [
+          "chunk_aa63f943bce73a501994f897"
+        ]
+      },
+      {
+        "case_id": "router_007",
+        "direct_covered": 2,
+        "decompose_covered": 2,
+        "representation_gain_ids": [
+          "chunk_8214a742720124ff8bdcbf21"
+        ]
+      },
+      {
+        "case_id": "router_011",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "representation_gain_ids": [
+          "chunk_3fe67c4153c058347f190445"
+        ]
+      }
+    ],
+    "selection_ranking_gain_without_answer_gain": [
+      {
+        "case_id": "router_001",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_0ef6386af9657bbfb48bef55"
+        ]
+      },
+      {
+        "case_id": "router_002",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_18898aa0b0208d333109b1e0",
+          "chunk_82b71e1d710271179f8b4bdd"
+        ]
+      },
+      {
+        "case_id": "router_003",
+        "direct_covered": 4,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_aa63f943bce73a501994f897",
+          "chunk_a3593c3652416f4582a78c12"
+        ]
+      },
+      {
+        "case_id": "router_005",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_eebcff7d8379f37aaf1bf06f"
+        ]
+      },
+      {
+        "case_id": "router_010",
+        "direct_covered": 3,
+        "decompose_covered": 1,
+        "selection_ranking_gain_ids": [
+          "chunk_d47c7ab9c53cc480c3c2c069"
+        ]
+      },
+      {
+        "case_id": "router_011",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_0cc6709199187f11f4436f08"
+        ]
+      },
+      {
+        "case_id": "router_012",
+        "direct_covered": 3,
+        "decompose_covered": 2,
+        "selection_ranking_gain_ids": [
+          "chunk_58ee210103515124e3a18e67"
+        ]
+      },
+      {
+        "case_id": "router_013",
+        "direct_covered": 2,
+        "decompose_covered": 2,
+        "selection_ranking_gain_ids": [
+          "chunk_503d0f8451cd132a55e45b74",
+          "chunk_a241a064615d0fdcc343c6bf"
+        ]
+      },
+      {
+        "case_id": "router_014",
+        "direct_covered": 2,
+        "decompose_covered": 2,
+        "selection_ranking_gain_ids": [
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_04504541348ed0c60511a490"
+        ]
+      },
+      {
+        "case_id": "router_015",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_69ac95f0ac7598ae7a1b0520",
+          "chunk_2dbae335078ac45aaeafe49b"
+        ]
+      },
+      {
+        "case_id": "router_016",
+        "direct_covered": 2,
+        "decompose_covered": 1,
+        "selection_ranking_gain_ids": [
+          "chunk_93b24002aa9b46b386d2061c",
+          "chunk_87071e099cc59566a1079a0f"
+        ]
+      },
+      {
+        "case_id": "router_017",
+        "direct_covered": 3,
+        "decompose_covered": 3,
+        "selection_ranking_gain_ids": [
+          "chunk_42a4d7c9a708df455947bda2"
+        ]
+      },
+      {
+        "case_id": "router_020",
+        "direct_covered": 4,
+        "decompose_covered": 4,
+        "selection_ranking_gain_ids": [
+          "chunk_76a40eef1f0fee4df26723be"
+        ]
+      }
+    ],
+    "evidence_gain_but_not_eligible": [
+      {
+        "case_id": "router_003",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_007",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_008",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_010",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_013",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_014",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_016",
+        "decompose_status": "judged"
+      },
+      {
+        "case_id": "router_019",
+        "decompose_status": "judged"
+      }
+    ]
+  },
+  "same_evidence_generation_variance": [
+    {
+      "case_id": "router_016",
+      "direct_covered": 2,
+      "routed_covered": 3,
+      "direct_complete": false,
+      "routed_complete": true
+    }
+  ],
+  "router_overhead": {
+    "router_calls": 20,
+    "router_input_tokens": 5555,
+    "router_output_tokens": 480,
+    "router_latency_seconds": 13.70289719995344,
+    "decomposer_calls_used": 3,
+    "decomposer_calls_saved_vs_fixed_decompose": 17,
+    "streams_saved_vs_fixed_decompose": 51
+  }
+}

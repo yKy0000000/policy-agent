@@ -1,0 +1,442 @@
+{
+  "version": "router_v2_candidate_pool_analysis",
+  "note": "candidate pools are frozen V1 FIXED_DECOMPOSE lexical Top20 + semantic Top20 unions per stream; truth-based counts are analysis-only",
+  "totals": {
+    "superpool_size": 1425,
+    "novel_chunk_count": 767,
+    "novel_supporting_chunk_count": 3,
+    "aspects_only_coverable_by_novel_chunks": 2,
+    "oracle_top5_covered": 65,
+    "oracle_base_top5_covered": 63,
+    "superpool_recall": 65,
+    "base_union_recall": 63,
+    "required_total": 66,
+    "novel_supporting_rate": 0.003911342894393742
+  },
+  "cases": {
+    "router_001": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 28,
+        "subquery_1": 27,
+        "subquery_2": 37,
+        "subquery_3": 35
+      },
+      "superpool_size": 76,
+      "base_union_size": 28,
+      "superpool_minus_base_union": 48,
+      "novel_chunk_count": 48,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 4,
+      "superpool_recall": 4,
+      "oracle_base_top5_covered": 4,
+      "oracle_top5_covered": 4,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_002": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 36,
+        "subquery_1": 29,
+        "subquery_2": 33,
+        "subquery_3": 38
+      },
+      "superpool_size": 85,
+      "base_union_size": 36,
+      "superpool_minus_base_union": 49,
+      "novel_chunk_count": 49,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_003": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 35,
+        "subquery_1": 30,
+        "subquery_2": 29,
+        "subquery_3": 35
+      },
+      "superpool_size": 95,
+      "base_union_size": 35,
+      "superpool_minus_base_union": 60,
+      "novel_chunk_count": 60,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 4,
+      "superpool_recall": 4,
+      "oracle_base_top5_covered": 4,
+      "oracle_top5_covered": 4,
+      "direct_truth_covered": 4,
+      "round_robin_truth_covered": 3
+    },
+    "router_004": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 36,
+        "subquery_1": 31,
+        "subquery_2": 31,
+        "subquery_3": 35
+      },
+      "superpool_size": 83,
+      "base_union_size": 36,
+      "superpool_minus_base_union": 47,
+      "novel_chunk_count": 47,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_005": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 35,
+        "subquery_1": 38,
+        "subquery_2": 37,
+        "subquery_3": 39
+      },
+      "superpool_size": 88,
+      "base_union_size": 35,
+      "superpool_minus_base_union": 53,
+      "novel_chunk_count": 53,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_006": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 38,
+        "subquery_1": 38,
+        "subquery_2": 38,
+        "subquery_3": 35
+      },
+      "superpool_size": 89,
+      "base_union_size": 38,
+      "superpool_minus_base_union": 51,
+      "novel_chunk_count": 51,
+      "novel_supporting_chunk_count": 1,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_007": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 32,
+        "subquery_1": 30,
+        "subquery_2": 29,
+        "subquery_3": 33
+      },
+      "superpool_size": 64,
+      "base_union_size": 32,
+      "superpool_minus_base_union": 32,
+      "novel_chunk_count": 32,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 4,
+      "superpool_recall": 4,
+      "oracle_base_top5_covered": 4,
+      "oracle_top5_covered": 4,
+      "direct_truth_covered": 1,
+      "round_robin_truth_covered": 1
+    },
+    "router_008": {
+      "required_total": 2,
+      "stream_union_sizes": {
+        "base": 34,
+        "subquery_1": 31,
+        "subquery_2": 32,
+        "subquery_3": 30
+      },
+      "superpool_size": 57,
+      "base_union_size": 34,
+      "superpool_minus_base_union": 23,
+      "novel_chunk_count": 23,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 2,
+      "superpool_recall": 2,
+      "oracle_base_top5_covered": 2,
+      "oracle_top5_covered": 2,
+      "direct_truth_covered": 0,
+      "round_robin_truth_covered": 0
+    },
+    "router_009": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 32,
+        "subquery_1": 30,
+        "subquery_2": 33,
+        "subquery_3": 30
+      },
+      "superpool_size": 67,
+      "base_union_size": 32,
+      "superpool_minus_base_union": 35,
+      "novel_chunk_count": 35,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_010": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 31,
+        "subquery_1": 28,
+        "subquery_2": 28,
+        "subquery_3": 34
+      },
+      "superpool_size": 44,
+      "base_union_size": 31,
+      "superpool_minus_base_union": 13,
+      "novel_chunk_count": 13,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 0
+    },
+    "router_011": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 27,
+        "subquery_1": 27,
+        "subquery_2": 23,
+        "subquery_3": 26
+      },
+      "superpool_size": 54,
+      "base_union_size": 27,
+      "superpool_minus_base_union": 27,
+      "novel_chunk_count": 27,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 4,
+      "superpool_recall": 4,
+      "oracle_base_top5_covered": 4,
+      "oracle_top5_covered": 4,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_012": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 36,
+        "subquery_1": 35,
+        "subquery_2": 33,
+        "subquery_3": 35
+      },
+      "superpool_size": 78,
+      "base_union_size": 36,
+      "superpool_minus_base_union": 42,
+      "novel_chunk_count": 42,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 2,
+      "round_robin_truth_covered": 2
+    },
+    "router_013": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 30,
+        "subquery_1": 27,
+        "subquery_2": 37,
+        "subquery_3": 31
+      },
+      "superpool_size": 72,
+      "base_union_size": 30,
+      "superpool_minus_base_union": 42,
+      "novel_chunk_count": 42,
+      "novel_supporting_chunk_count": 1,
+      "aspects_only_coverable_by_novel_chunks": [
+        "router_013_a4"
+      ],
+      "base_union_recall": 3,
+      "superpool_recall": 4,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 4,
+      "direct_truth_covered": 2,
+      "round_robin_truth_covered": 2
+    },
+    "router_014": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 33,
+        "subquery_1": 31,
+        "subquery_2": 34,
+        "subquery_3": 30
+      },
+      "superpool_size": 62,
+      "base_union_size": 33,
+      "superpool_minus_base_union": 29,
+      "novel_chunk_count": 29,
+      "novel_supporting_chunk_count": 1,
+      "aspects_only_coverable_by_novel_chunks": [
+        "router_014_a3"
+      ],
+      "base_union_recall": 2,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 2,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 2,
+      "round_robin_truth_covered": 2
+    },
+    "router_015": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 36,
+        "subquery_1": 36,
+        "subquery_2": 35,
+        "subquery_3": 36
+      },
+      "superpool_size": 59,
+      "base_union_size": 36,
+      "superpool_minus_base_union": 23,
+      "novel_chunk_count": 23,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_016": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 36,
+        "subquery_1": 32,
+        "subquery_2": 30,
+        "subquery_3": 34
+      },
+      "superpool_size": 73,
+      "base_union_size": 36,
+      "superpool_minus_base_union": 37,
+      "novel_chunk_count": 37,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 1
+    },
+    "router_017": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 30,
+        "subquery_1": 33,
+        "subquery_2": 34,
+        "subquery_3": 36
+      },
+      "superpool_size": 74,
+      "base_union_size": 30,
+      "superpool_minus_base_union": 44,
+      "novel_chunk_count": 44,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_018": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 29,
+        "subquery_1": 29,
+        "subquery_2": 32,
+        "subquery_3": 31
+      },
+      "superpool_size": 63,
+      "base_union_size": 29,
+      "superpool_minus_base_union": 34,
+      "novel_chunk_count": 34,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    },
+    "router_019": {
+      "required_total": 3,
+      "stream_union_sizes": {
+        "base": 32,
+        "subquery_1": 35,
+        "subquery_2": 27,
+        "subquery_3": 26
+      },
+      "superpool_size": 68,
+      "base_union_size": 32,
+      "superpool_minus_base_union": 36,
+      "novel_chunk_count": 36,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 3,
+      "superpool_recall": 3,
+      "oracle_base_top5_covered": 3,
+      "oracle_top5_covered": 3,
+      "direct_truth_covered": 1,
+      "round_robin_truth_covered": 2
+    },
+    "router_020": {
+      "required_total": 4,
+      "stream_union_sizes": {
+        "base": 32,
+        "subquery_1": 37,
+        "subquery_2": 31,
+        "subquery_3": 33
+      },
+      "superpool_size": 74,
+      "base_union_size": 32,
+      "superpool_minus_base_union": 42,
+      "novel_chunk_count": 42,
+      "novel_supporting_chunk_count": 0,
+      "aspects_only_coverable_by_novel_chunks": [],
+      "base_union_recall": 4,
+      "superpool_recall": 4,
+      "oracle_base_top5_covered": 4,
+      "oracle_top5_covered": 4,
+      "direct_truth_covered": 3,
+      "round_robin_truth_covered": 3
+    }
+  }
+}

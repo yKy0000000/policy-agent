@@ -3,8 +3,8 @@
   "implementation_timestamp_utc": "2026-09-27T14:35:02Z",
   "status": "frozen_pending_first_benchmark_run",
   "source_git_head_before_implementation": "1350b54147e8cf17f3235dbe3988d17de370fef1",
-  "implementation_source_commit": null,
-  "manifest_state": "pre_commit",
+  "implementation_source_commit": "98cb503ee3a5b5f7f9340a5d5008b6497da5da0f",
+  "manifest_state": "post_commit_working_tree",
   "two_layer_identity_note": "Identity is recorded in two layers to avoid self-referential commits: (1) implementation_source_commit is the git commit containing this implementation; (2) post_commit_manifest_sha256 is the SHA-256 of this manifest file in its post-commit working-tree state. The committed manifest intentionally leaves implementation_source_commit null; the post-commit working-tree update fills it. Neither layer contains its own hash.",
   "modules": {
     "router": "src/router_v1.py",
@@ -137,5 +137,7 @@
   "frozen_benchmark_executed": false,
   "router_v1_outcomes_generated": false,
   "real_benchmark_judge_run": false,
-  "no_model_calls_during_tests": true
+  "no_model_calls_during_tests": true,
+  "committed_freeze_document_sha256": "0d6aed2ed4763c4289a4ff31909c6adecbe1ec3f47a12f10eff98ed2364fd53e",
+  "committed_freeze_document": "eval/router_v1_implementation_freeze.md"
 }

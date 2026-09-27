@@ -1,0 +1,205 @@
+{
+  "version": "router_v1_oracle",
+  "cases": {
+    "router_001": {
+      "oracle": "FIXED_DECOMPOSE",
+      "decompose_available": true,
+      "direct_eligible": false,
+      "decompose_eligible": true,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_002": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_003": {
+      "oracle": "FIXED_DIRECT",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": false,
+      "direct_complete": true,
+      "decompose_complete": false,
+      "direct_covered": 4,
+      "decompose_covered": 3
+    },
+    "router_004": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_005": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_006": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 4,
+      "decompose_covered": 4
+    },
+    "router_007": {
+      "oracle": "NEITHER_ELIGIBLE",
+      "decompose_available": true,
+      "direct_eligible": false,
+      "decompose_eligible": false,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 2,
+      "decompose_covered": 2
+    },
+    "router_008": {
+      "oracle": "NEITHER_ELIGIBLE",
+      "decompose_available": true,
+      "direct_eligible": false,
+      "decompose_eligible": false,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 0,
+      "decompose_covered": 1
+    },
+    "router_009": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_010": {
+      "oracle": "FIXED_DIRECT",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": false,
+      "direct_complete": true,
+      "decompose_complete": false,
+      "direct_covered": 3,
+      "decompose_covered": 1
+    },
+    "router_011": {
+      "oracle": "FIXED_DECOMPOSE",
+      "decompose_available": true,
+      "direct_eligible": false,
+      "decompose_eligible": true,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_012": {
+      "oracle": "FIXED_DIRECT",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": false,
+      "direct_covered": 3,
+      "decompose_covered": 2
+    },
+    "router_013": {
+      "oracle": "NEITHER_ELIGIBLE",
+      "decompose_available": true,
+      "direct_eligible": false,
+      "decompose_eligible": false,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 2,
+      "decompose_covered": 2
+    },
+    "router_014": {
+      "oracle": "FIXED_DIRECT",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": false,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 2,
+      "decompose_covered": 2
+    },
+    "router_015": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_016": {
+      "oracle": "FIXED_DIRECT",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": false,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 2,
+      "decompose_covered": 1
+    },
+    "router_017": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_018": {
+      "oracle": "FIXED_DIRECT",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": false,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 3,
+      "decompose_covered": 3
+    },
+    "router_019": {
+      "oracle": "NEITHER_ELIGIBLE",
+      "decompose_available": true,
+      "direct_eligible": false,
+      "decompose_eligible": false,
+      "direct_complete": false,
+      "decompose_complete": false,
+      "direct_covered": 1,
+      "decompose_covered": 2
+    },
+    "router_020": {
+      "oracle": "TIE",
+      "decompose_available": true,
+      "direct_eligible": true,
+      "decompose_eligible": true,
+      "direct_complete": true,
+      "decompose_complete": true,
+      "direct_covered": 4,
+      "decompose_covered": 4
+    }
+  }
+}

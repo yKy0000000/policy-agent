@@ -1,4 +1,40 @@
-# Evaluation 工作区
+# Evaluation / Research Guide
+
+这里是研究材料的中文导航。建议先读结论，再看对照数据和失败机制；原始冻结文件、预注册与复现输入保留在各自原路径。以下阅读顺序不改变任何实验口径。
+
+## 从哪里开始看？
+
+先看[主 README](../README.md)了解当前 Fast / Search+ 产品选择，再读[研究架构决策](reports/research_v1/architecture_decision.md)，最后按下面主题追到具体证据。架构决策记录的是当时的研究配置；当前产品模式以主 README 为准。
+
+## Baseline Retrieval
+
+先看[证据几何诊断](results/evidence_geometry_summary.md)，了解候选覆盖、Top5 排序与缺口分别是什么；再看[MiniLM / BGE 运行决策](reports/runtime_reranker_decision_v1.md)，理解离线质量与 CPU latency 的取舍。
+
+## Answer Evaluation
+
+先看[冻结答案评测摘要](results/a1_blind_answer_quality_frozen_summary.md)，再看[Judge 校准报告](reports/judge_calibration_v1.md)。前者是原始评测记录，后者审计小样本测量误差；校准不重算 benchmark 分数。
+
+## Adaptive / Budget Study
+
+从[A1 最终决策](results/a1_final_decision_v1.md)读预算策略的历史结论，再看[70 题对照中文阅读版](reports/zh/multiarm_70_summary_zh.md)中 Adaptive 的总体质量与 provider token 代价。当前 Search+ 的 Adaptive 实现与历史对照臂的配置边界见主 README。
+
+## Router Exploration
+
+先读[Router V1 中文阅读版](reports/zh/router_v1_report_zh.md)，再读[V1.1 证据诊断中文阅读版](reports/zh/router_v1_1_report_zh.md)。前者比较 Direct、Decompose 与 Router；后者追查新证据是否真的补到必需信息。
+
+## 70-Query Comparative Snapshot
+
+读[70 题对照中文阅读版](reports/zh/multiarm_70_summary_zh.md)，需要逐题表格与完整方法时返回[原始冻结摘要](results/multiarm_70/multiarm_70_summary.md)。50 题和 20 题来自不同 cohort；合并只提供工程对照，不是新的独立 holdout。
+
+## Failure / Mechanism Analysis
+
+先看[A1 失败归因](results/a1_failure_analysis_summary.md)，再看[A2 最小机制验证](results/a2_minimal_mechanism_probe_summary.md)。单个 requirement-query 案例说明 decomposition 可能补回证据，但不足以支持默认启用。
+
+## Reproducibility & Frozen Artifacts
+
+需要核对研究身份时读[复现清单](reports/research_v1/reproducibility_manifest.md)，再查[Router V1 freeze manifest](router_v1_freeze_manifest.json)及[历史材料索引](legacy/MANIFEST.md)。中文阅读版只解释原始结果，不属于 frozen identity；请以原始文件和 manifest 为审计依据。
+
+## 评测工作区与运行说明
 
 ## 当前开发入口
 

@@ -1,0 +1,1380 @@
+{
+  "6b59ab34e91b2c3dbb38c96ff92f8d731962b32242a5f41a69212a1654cc9afd": {
+    "parsed": {
+      "router_001_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_001_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_001_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_001_a4": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1981,
+      "output_tokens": 105
+    },
+    "latency_seconds": 0.7705284000257961,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_001_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_001_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_001_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_001_a4\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "14ca5ea0a31e90f42ab51d2d05338be88f2edbb7da6c861db1ad491ec2cad169": {
+    "parsed": {
+      "router_001_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_001_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_001_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_001_a4": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 108
+    },
+    "latency_seconds": 0.7965331000159495,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_001_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_001_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_001_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_001_a4\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\",\"E\"]}]}"
+  },
+  "451fe70e9df7d5243e48ae6142395e053d829d37fccf9ba82f656861d93ab2ac": {
+    "parsed": {
+      "router_002_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_002_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_002_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2099,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.7342425999813713,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_002_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_002_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_002_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]}]}"
+  },
+  "45536dfb499b34fea7ef7524dc9e76e621c5de1d95ec2518d37e0105546a6d52": {
+    "parsed": {
+      "router_002_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_002_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_002_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2022,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.8798301000497304,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_002_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]},{\"aspect_id\":\"router_002_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_002_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]}]}"
+  },
+  "5cadf6905fa7e569a54373751b17c24301cbc8ec42f6e04f59f932e899b7e661": {
+    "parsed": {
+      "router_003_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_003_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_003_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_003_a4": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2713,
+      "output_tokens": 110
+    },
+    "latency_seconds": 0.9872633999912068,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_003_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_003_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]},{\"aspect_id\":\"router_003_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"E\"]},{\"aspect_id\":\"router_003_a4\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]}]}"
+  },
+  "21f96894490aaf9fad92325181b8f16dbff9de35e4d651fb88ea57da82556696": {
+    "parsed": {
+      "router_003_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_003_a2": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_003_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_003_a4": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2059,
+      "output_tokens": 105
+    },
+    "latency_seconds": 0.6459208999876864,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_003_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_003_a2\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_003_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_003_a4\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "34eb16f1195379dfb4f52d423619129f3ac5328df8c1b25f5644fd49dcca1184": {
+    "parsed": {
+      "router_004_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_004_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_004_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2198,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.8093052000040188,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_004_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_004_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_004_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "fc600307be8853a54e9af5b892a1cbe00d83dd5b5aacca643b69be6c11916052": {
+    "parsed": {
+      "router_004_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_004_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_004_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1764,
+      "output_tokens": 81
+    },
+    "latency_seconds": 1.072042000014335,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_004_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_004_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_004_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "a8657d203169f53a635daa986131eb7ec55eb7b35b699ac69977089e578e8bb3": {
+    "parsed": {
+      "router_005_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_005_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_005_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2955,
+      "output_tokens": 83
+    },
+    "latency_seconds": 0.5767385000362992,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_005_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_005_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"B\"]},{\"aspect_id\":\"router_005_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "895286275c8126d17f4b44ec140bc562d87fb63a3aa95ba5426d46e0daeb5cbe": {
+    "parsed": {
+      "router_005_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_005_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_005_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1906,
+      "output_tokens": 85
+    },
+    "latency_seconds": 0.6344005000428297,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_005_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"B\"]},{\"aspect_id\":\"router_005_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"E\"]},{\"aspect_id\":\"router_005_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "97a0588236c15d960bdb752de9a4724114d2c11ede84dcb9299b5be48736dc93": {
+    "parsed": {
+      "router_006_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_006_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_006_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_006_a5": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2821,
+      "output_tokens": 106
+    },
+    "latency_seconds": 0.7993317999644205,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_006_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_006_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_006_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_006_a5\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "ca3d678adb2ddd9a875bdc098725445882b3780e022a18e06332897428cd8b5b": {
+    "parsed": {
+      "router_006_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_006_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_006_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_006_a5": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2776,
+      "output_tokens": 106
+    },
+    "latency_seconds": 0.9433641000068747,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_006_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_006_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_006_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_006_a5\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "86342136f6b985ee9b8fb8e89ddd9e3c950010fa284ddd9a17ee8928757144eb": {
+    "parsed": {
+      "router_007_a1": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_007_a2": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_007_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_007_a4": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1627,
+      "output_tokens": 103
+    },
+    "latency_seconds": 0.6329603999620304,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_007_a1\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_007_a2\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_007_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]},{\"aspect_id\":\"router_007_a4\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "84488f711bd80fc5f4f826ac3787dd176c3ef22aad4fc32dc6b562c88ed6bd86": {
+    "parsed": {
+      "router_007_a1": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_007_a2": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_007_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_007_a4": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1465,
+      "output_tokens": 103
+    },
+    "latency_seconds": 0.4786196000059135,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_007_a1\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_007_a2\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_007_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\"]},{\"aspect_id\":\"router_007_a4\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "27a6b99474b409102ac294cfc4191292bf1cb7ae0e1f806fffb9f846dd94bc6a": {
+    "parsed": {
+      "router_008_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_008_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2165,
+      "output_tokens": 56
+    },
+    "latency_seconds": 0.5721443999791518,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_008_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\"]},{\"aspect_id\":\"router_008_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\"]}]}"
+  },
+  "d1cfa5edf1f867a0c4b576337a53db2ad502df6ba592c4d1daf3490d5cc4bed4": {
+    "parsed": {
+      "router_008_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_008_a2": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1741,
+      "output_tokens": 55
+    },
+    "latency_seconds": 0.7725954999914393,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_008_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_008_a2\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "61b1757c8995f71075de3492bfdf459168bf2d95cc81d0bb98e79bbed423b17d": {
+    "parsed": {
+      "router_009_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_009_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E",
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_009_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1655,
+      "output_tokens": 87
+    },
+    "latency_seconds": 0.9754985999898054,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_009_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"B\"]},{\"aspect_id\":\"router_009_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\",\"B\"]},{\"aspect_id\":\"router_009_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]}]}"
+  },
+  "ef0970363920dc375c2ec7e333622dd3a090ad12d5dd4beb61506ca1725f0ddb": {
+    "parsed": {
+      "router_009_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_009_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_009_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1655,
+      "output_tokens": 87
+    },
+    "latency_seconds": 0.42591329995775595,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_009_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_009_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\",\"E\"]},{\"aspect_id\":\"router_009_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\",\"E\"]}]}"
+  },
+  "b1b57f88b2dc17aba01a472f9d3745b88b6279e722efaa756f886c20005c7bbb": {
+    "parsed": {
+      "router_009_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_009_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B",
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_009_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C",
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1655,
+      "output_tokens": 87
+    },
+    "latency_seconds": 0.7810039999894798,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_009_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_009_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\",\"D\"]},{\"aspect_id\":\"router_009_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\",\"D\"]}]}"
+  },
+  "9554d7f7339d8d56d38e2555decc9f8c3a2fd0e67ebf9902c775ef87b95c80e5": {
+    "parsed": {
+      "router_010_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_010_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_010_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 3228,
+      "output_tokens": 83
+    },
+    "latency_seconds": 0.8926833999576047,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_010_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]},{\"aspect_id\":\"router_010_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]},{\"aspect_id\":\"router_010_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"E\"]}]}"
+  },
+  "3d7198204b9c892814e2d2279a116ab985db09c3ae0cf446b6c15c8825893773": {
+    "parsed": {
+      "router_010_a1": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_010_a2": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_010_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2989,
+      "output_tokens": 79
+    },
+    "latency_seconds": 0.7824814000050537,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_010_a1\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_010_a2\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_010_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "1baaef72f3ebd4ea8551c5430d3448ea649f1e2a623911448adfc12964eaf66d": {
+    "parsed": {
+      "router_011_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a4": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a5": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1710,
+      "output_tokens": 108
+    },
+    "latency_seconds": 0.5856250000069849,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_011_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_011_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"D\"]},{\"aspect_id\":\"router_011_a4\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_011_a5\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\"]}]}"
+  },
+  "8487ac8ab09221572c099a3b3974ed00fc1aec1c98a493914a979b3db1d6b2f8": {
+    "parsed": {
+      "router_011_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a4": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a5": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1948,
+      "output_tokens": 107
+    },
+    "latency_seconds": 0.9222354000085033,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_011_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_011_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\"]},{\"aspect_id\":\"router_011_a4\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]},{\"aspect_id\":\"router_011_a5\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "21e8d067e7deac6a552057a987ac2c9fcd12e2e8c8c14487bec700048c3aa348": {
+    "parsed": {
+      "router_011_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a4": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_011_a5": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2090,
+      "output_tokens": 110
+    },
+    "latency_seconds": 0.9653805999550968,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_011_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_011_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"E\"]},{\"aspect_id\":\"router_011_a4\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]},{\"aspect_id\":\"router_011_a5\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]}]}"
+  },
+  "884459fb92a7507ff77b66327dd5d0b642f90fd396bd1b94f5cc067823875b3a": {
+    "parsed": {
+      "router_012_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_012_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_012_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1527,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.8262929000193253,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_012_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_012_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_012_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "45c3d61d9fc75f4edfadd36776573f0450a284d294e36d8cb88d98e9ecc7eaf7": {
+    "parsed": {
+      "router_012_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_012_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_012_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1027,
+      "output_tokens": 83
+    },
+    "latency_seconds": 0.7483156999805942,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_012_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_012_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_012_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]}]}"
+  },
+  "2be038087be4a577203be0df8edd4020507dce2052fe2a1c4e948401ace61526": {
+    "parsed": {
+      "router_013_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_013_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_013_a4": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_013_a5": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1394,
+      "output_tokens": 104
+    },
+    "latency_seconds": 0.7877984000369906,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_013_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_013_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_013_a4\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_013_a5\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "e2b2f4197f4f89ff26cb4b5db98bc8b569c11eb0685b0db9b9511550c973b37d": {
+    "parsed": {
+      "router_013_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_013_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_013_a4": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_013_a5": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1187,
+      "output_tokens": 104
+    },
+    "latency_seconds": 0.5177708999835886,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_013_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_013_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_013_a4\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_013_a5\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "d7a4bb8d3b49cf224381214c2ee176eb16fd26b0be9ed38b1f7cae31f8552d6f": {
+    "parsed": {
+      "router_014_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_014_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_014_a3": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2029,
+      "output_tokens": 80
+    },
+    "latency_seconds": 0.8139214999973774,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_014_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\"]},{\"aspect_id\":\"router_014_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\"]},{\"aspect_id\":\"router_014_a3\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "f7e70784a21320165d5cc0379e7a7e8b5e79794fdbe5e078d1962c88ede740f6": {
+    "parsed": {
+      "router_014_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_014_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_014_a3": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2336,
+      "output_tokens": 82
+    },
+    "latency_seconds": 0.5524687999859452,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_014_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_014_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\",\"E\"]},{\"aspect_id\":\"router_014_a3\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "e87aed3355b07890d74bd2e9aa1151b1e0fe0930cff89fe64dcd0a63073b65e5": {
+    "parsed": {
+      "router_015_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_015_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_015_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 3050,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.9957346000010148,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_015_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_015_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_015_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "1354dc9329927bc9849cf95e96c615b8d6b806d89da1db5c2396bf0bd709c93c": {
+    "parsed": {
+      "router_015_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_015_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_015_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2103,
+      "output_tokens": 83
+    },
+    "latency_seconds": 0.7068406000034884,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_015_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_015_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]},{\"aspect_id\":\"router_015_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]}]}"
+  },
+  "863ebe490fe4d61566719a903efaadacdcbd48022b3805ed0bfe6048c85c6592": {
+    "parsed": {
+      "router_016_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_016_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_016_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2613,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.7863489000010304,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_016_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\"]},{\"aspect_id\":\"router_016_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_016_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\"]}]}"
+  },
+  "4eeef042cc8f06122e6866cc21fd465c7f09e1b50d210be9dc9be6776ed58b02": {
+    "parsed": {
+      "router_016_a1": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_016_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_016_a3": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2627,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.46132960001705214,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_016_a1\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_016_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"C\"]},{\"aspect_id\":\"router_016_a3\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "0dd17a1d506af1a76db0780904470a4d520fe74ecd62e3f0dbc6a674afbd8de5": {
+    "parsed": {
+      "router_017_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_017_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_017_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1371,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.6078497000271454,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_017_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_017_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\"]},{\"aspect_id\":\"router_017_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\"]}]}"
+  },
+  "9a45e85ac0236082061445487fdfb9ba26c49ec2367aac55a98a24740b280eee": {
+    "parsed": {
+      "router_017_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_017_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_017_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1311,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.6602505999617279,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_017_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_017_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_017_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]}]}"
+  },
+  "e1f9e2707eec77ff7e0b5bd825b368b895bfb43e4b86ceaa38f6fae9cc18041b": {
+    "parsed": {
+      "router_018_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_018_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_018_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1598,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.7259824000066146,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_018_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_018_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_018_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]}]}"
+  },
+  "7531527fb3711c5567a3ed62042eeda6bfe90e23a2f24c9bad64775ab65f66e3": {
+    "parsed": {
+      "router_018_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_018_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_018_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1598,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.645509599999059,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_018_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"E\"]},{\"aspect_id\":\"router_018_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_018_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\"]}]}"
+  },
+  "2c741bae2a5537f921a4c73de7b0c2e95d996729729e980e1d5697f7fb0e9b32": {
+    "parsed": {
+      "router_019_a1": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_019_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B",
+          "C"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_019_a3": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1652,
+      "output_tokens": 81
+    },
+    "latency_seconds": 0.7791610999847762,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_019_a1\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_019_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\",\"C\"]},{\"aspect_id\":\"router_019_a3\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]}]}"
+  },
+  "f2d86abe184f34ddd9930520cb41ef673343ae38e94bb5739f1e090d3aad66c6": {
+    "parsed": {
+      "router_019_a1": {
+        "status": "NOT_SUPPORTED",
+        "supporting_evidence_ids": [],
+        "repaired_missing_support_ids": false
+      },
+      "router_019_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_019_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 1707,
+      "output_tokens": 82
+    },
+    "latency_seconds": 0.7145329999621026,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_019_a1\",\"status\":\"NOT_SUPPORTED\",\"supporting_evidence_ids\":[]},{\"aspect_id\":\"router_019_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\",\"E\"]},{\"aspect_id\":\"router_019_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]}]}"
+  },
+  "21e87a5cec03bc154ae7d443aca8db6153f1f9714671e3b9f39b5bb90bf242ed": {
+    "parsed": {
+      "router_020_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_020_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_020_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_020_a5": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "D",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 2964,
+      "output_tokens": 110
+    },
+    "latency_seconds": 0.9521777000045404,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_020_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_020_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"B\"]},{\"aspect_id\":\"router_020_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_020_a5\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"D\",\"E\"]}]}"
+  },
+  "fa1b70f861ed62e2a152c9bd5b12789f205e0514fef35f6f6b0ca38decea7595": {
+    "parsed": {
+      "router_020_a1": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_020_a2": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "A",
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_020_a3": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "B"
+        ],
+        "repaired_missing_support_ids": false
+      },
+      "router_020_a5": {
+        "status": "SUPPORTED",
+        "supporting_evidence_ids": [
+          "C",
+          "D",
+          "E"
+        ],
+        "repaired_missing_support_ids": false
+      }
+    },
+    "usage": {
+      "input_tokens": 3280,
+      "output_tokens": 112
+    },
+    "latency_seconds": 1.0090667000040412,
+    "raw_response": "{\"aspects\":[{\"aspect_id\":\"router_020_a1\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\"]},{\"aspect_id\":\"router_020_a2\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"A\",\"B\"]},{\"aspect_id\":\"router_020_a3\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"B\"]},{\"aspect_id\":\"router_020_a5\",\"status\":\"SUPPORTED\",\"supporting_evidence_ids\":[\"C\",\"D\",\"E\"]}]}"
+  }
+}
