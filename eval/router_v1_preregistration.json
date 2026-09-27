@@ -1,0 +1,160 @@
+{
+  "version": "router_v1_preregistration",
+  "status": "frozen_before_router_v1_outputs",
+  "architecture_document": "eval/router_v1_architecture_frozen.md",
+  "architecture_document_sha256": "fc6ad624d800d1ea946555e3694725361f90bb0d347f3d07979f4770cbbf575b",
+  "contract": "eval/router_v1_contract.json",
+  "contract_sha256": "fb5484351eae3fcc285ab9ce8e819c33e3367ceea972ffdbca43cde7d18d9549",
+  "benchmark": {
+    "path": "eval/router_benchmark_v1.json",
+    "version": "router_benchmark_v1",
+    "case_count": 20,
+    "sha256": "a345ccfd8dabadedd41ac1abc341a079709d3bbc699e4ea7b3696a06f76acf16",
+    "routing_gold_present": false
+  },
+  "truth": {
+    "draft_path": "eval/router_v1_required_aspects_draft.json",
+    "final_truth_path": "eval/router_v1_required_aspects.json",
+    "must_be_independently_audited_and_frozen_before_arm_outcomes": true,
+    "no_routing_gold": true
+  },
+  "arms": {
+    "fixed_DIRECT": "shared_rewrite_then_exact_baseline_single_stream_Top5_generation_and_citation_validation",
+    "routed": "shared_rewrite_then_frozen_router; DIRECT_or_one_decomposer_call; validated_decomposition_or_frozen_fallback; chosen_path_only",
+    "fixed_DECOMPOSE_counterfactual": "shared_rewrite_then_one_decomposer_call_without_router; validated_subquery_streams_plus_base_and_frozen_merge; failure_recorded_not_disguised_as_DECOMPOSE"
+  },
+  "paired_input_rule": "same_raw_query_history_and_shared_rewrite_identity_for_all_arms_per_case",
+  "counterfactual_only_for_offline_research": true,
+  "required_trace": {
+    "input": [
+      "raw_query",
+      "history_identifier",
+      "history_present",
+      "shared_rewrite",
+      "rewrite_source",
+      "rewrite_model_version",
+      "rewrite_prompt_hash"
+    ],
+    "router": [
+      "provider",
+      "request_model",
+      "response_model",
+      "prompt_hash",
+      "schema_hash",
+      "raw_response",
+      "parsed_decision",
+      "raw_reason_code",
+      "effective_reason_code",
+      "reason_validity",
+      "fallback",
+      "input_tokens",
+      "output_tokens",
+      "latency_seconds",
+      "cost"
+    ],
+    "decomposer": [
+      "called",
+      "model_version",
+      "prompt_hash",
+      "schema_hash",
+      "raw_response",
+      "raw_subqueries",
+      "validated_subqueries",
+      "removed_subqueries_with_reason",
+      "fallback",
+      "tokens",
+      "latency_seconds",
+      "cost"
+    ],
+    "per_stream": [
+      "stream_id",
+      "stream_type",
+      "query_text",
+      "lexical_candidate_ids",
+      "semantic_candidate_ids",
+      "union_ids",
+      "reranked_ids_and_ranks",
+      "stream_top5_ids",
+      "retrieval_latency",
+      "rerank_latency",
+      "failure"
+    ],
+    "merge": [
+      "final_evidence_ids",
+      "source_stream",
+      "source_rank",
+      "selection_order",
+      "dedup_mapping"
+    ],
+    "attribution": [
+      "representation_gain_ids",
+      "selection_ranking_gain_ids",
+      "zero_evidence_gain"
+    ],
+    "answer": [
+      "generation_input_evidence",
+      "answer",
+      "citations",
+      "citation_validation",
+      "answer_metrics"
+    ],
+    "research_only": [
+      "direct_metrics",
+      "decompose_metrics",
+      "oracle_outcome",
+      "oracle_reason"
+    ]
+  },
+  "primary_evaluation_rule": {
+    "required_truth": "independently_frozen_QUERY_REQUIRED_statements",
+    "primary": "query_required_complete",
+    "tie_break": "required_covered",
+    "safety_citation_gate": "successful_answer_and_valid_deterministic_citations_and_no_incorrect_required_aspects_and_no_unsupported_contradicted_partial_uncertain_claims_and_no_unsupported_missing_uncertain_claim_citations",
+    "remaining_equal": "TIE",
+    "both_ineligible": "NEITHER_ELIGIBLE",
+    "unavailable_counterfactual": "ORACLE_UNAVAILABLE",
+    "cost_not_quality_tie_break": true
+  },
+  "post_hoc_oracle_rule": "compare_fixed_DIRECT_and_fixed_DECOMPOSE_only_after_both_outcomes_using_primary_evaluation_rule; never_used_by_router_or_decomposer",
+  "quality_metrics": [
+    "candidate_availability",
+    "required_context_coverage",
+    "required_answer_coverage",
+    "query_required_complete",
+    "grounding",
+    "citation_validity"
+  ],
+  "cost_metrics": [
+    "llm_calls",
+    "retrieval_streams",
+    "lexical_calls",
+    "semantic_calls",
+    "reranking_calls",
+    "candidate_count",
+    "input_tokens",
+    "output_tokens",
+    "latency_seconds",
+    "estimated_monetary_cost"
+  ],
+  "attribution_metrics": [
+    "final_evidence_source_stream",
+    "representation_gain_chunks",
+    "selection_ranking_gain_chunks",
+    "zero_evidence_gain"
+  ],
+  "forbidden_post_result_tuning": [
+    "router_prompt",
+    "decomposer_prompt",
+    "model",
+    "schema",
+    "route_semantics",
+    "subquery_count",
+    "retrieval_depth",
+    "merge_rule",
+    "evidence_budget",
+    "fallback",
+    "evaluation_rule"
+  ],
+  "change_policy": "any_change_after_observing_frozen_benchmark_outcome_requires_new_version_and_cannot_count_as_Router_V1",
+  "no_benchmark_query_modification": true
+}

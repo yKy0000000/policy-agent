@@ -1,0 +1,141 @@
+{
+  "implementation_version": "router_v1_implementation",
+  "implementation_timestamp_utc": "2026-09-27T14:35:02Z",
+  "status": "frozen_pending_first_benchmark_run",
+  "source_git_head_before_implementation": "1350b54147e8cf17f3235dbe3988d17de370fef1",
+  "implementation_source_commit": null,
+  "manifest_state": "pre_commit",
+  "two_layer_identity_note": "Identity is recorded in two layers to avoid self-referential commits: (1) implementation_source_commit is the git commit containing this implementation; (2) post_commit_manifest_sha256 is the SHA-256 of this manifest file in its post-commit working-tree state. The committed manifest intentionally leaves implementation_source_commit null; the post-commit working-tree update fills it. Neither layer contains its own hash.",
+  "modules": {
+    "router": "src/router_v1.py",
+    "decomposer": "src/decomposer_v1.py",
+    "pipeline": "src/router_v1_pipeline.py",
+    "trace_structures": "src/router_v1_trace.py",
+    "prompts": "src/router_v1_prompts.py",
+    "identity": "src/router_v1_identity.py",
+    "runner": "eval/run_router_v1.py"
+  },
+  "implementation_files": [
+    {
+      "path": "src/router_v1_prompts.py",
+      "sha256": "703d5c00add2649809922eaf77fb22f29f5cb7e76372f63af6c2166051265e48"
+    },
+    {
+      "path": "src/router_v1_identity.py",
+      "sha256": "1e1929415b2656496cbee8634858684252d8e2ce9456e99956eba385e81a9913"
+    },
+    {
+      "path": "src/router_v1.py",
+      "sha256": "0d28a9409e974ba60d9e65f6bb85bfa9e416ef8933c70637404186eb5fbf50b5"
+    },
+    {
+      "path": "src/decomposer_v1.py",
+      "sha256": "159294cc8bd16413001839e8689df11e32c2afa8be05aa114b260aba2c1d9bf3"
+    },
+    {
+      "path": "src/router_v1_trace.py",
+      "sha256": "269230ed81c6891c2838f3d266f7820126beb86fad2d7eb93be9d8073a72c945"
+    },
+    {
+      "path": "src/router_v1_pipeline.py",
+      "sha256": "67f965ed76d6fa913555274f5ec7446524412ff39d0044a0d60e5fad876f7fec"
+    },
+    {
+      "path": "eval/run_router_v1.py",
+      "sha256": "e57149874e0f462bdd077915056ff1cbc0d0230b3c6994c9036f266acb1084b2"
+    },
+    {
+      "path": "tests/test_router_v1.py",
+      "sha256": "aec9af35b4c62f6399eeaddbd6c7f56e56df4563a0bc5a45a2531a377df52b26"
+    },
+    {
+      "path": "tests/test_router_v1_pipeline.py",
+      "sha256": "772798843d46c8116ea079df54d717c6b08fc08d5e95d7f92d91166c3176d15e"
+    }
+  ],
+  "changed_source_files": [
+    "src/router_v1_prompts.py",
+    "src/router_v1_identity.py",
+    "src/router_v1.py",
+    "src/decomposer_v1.py",
+    "src/router_v1_trace.py",
+    "src/router_v1_pipeline.py",
+    "eval/run_router_v1.py"
+  ],
+  "changed_test_files": [
+    "tests/test_router_v1.py",
+    "tests/test_router_v1_pipeline.py"
+  ],
+  "runtime_prompt_schema_hashes": {
+    "router_prompt_sha256": "104b46283ffe2e504ff5dcd43ecce63107fc780461e2e5e7ff1e48e20a4da74b",
+    "router_schema_sha256": "651646d655ae5b963815cd168c5a9f023cf2d2d8ad9bddbdeda248e78e309d9b",
+    "decomposer_prompt_sha256": "6e866974a5a1861da766417b6f5715c7e0b1009b23fbecc66c15a2540946f489",
+    "decomposer_schema_sha256": "98d15a9221c38d2a65fd7cef07219e308ff40a49889953395bd2b304917190d4"
+  },
+  "frozen_artifacts": {
+    "benchmark": {
+      "path": "eval/router_benchmark_v1.json",
+      "sha256": "a345ccfd8dabadedd41ac1abc341a079709d3bbc699e4ea7b3696a06f76acf16"
+    },
+    "architecture": {
+      "path": "eval/router_v1_architecture_frozen.md",
+      "sha256": "fc6ad624d800d1ea946555e3694725361f90bb0d347f3d07979f4770cbbf575b"
+    },
+    "contract": {
+      "path": "eval/router_v1_contract.json",
+      "sha256": "fb5484351eae3fcc285ab9ce8e819c33e3367ceea972ffdbca43cde7d18d9549"
+    },
+    "preregistration": {
+      "path": "eval/router_v1_preregistration.json",
+      "sha256": "79499cd5a9959c8f4e390fa2d058cf1a70716d6fdd3b35bdb1ef69092bf34123"
+    },
+    "required_aspects_truth": {
+      "path": "eval/router_v1_required_aspects.json",
+      "sha256": "d22a5a919cd5828258491adeea0af3f7d5d8983a27f1226dc3e0fa71801b9b76"
+    },
+    "experiment_freeze_manifest": {
+      "path": "eval/router_v1_freeze_manifest.json",
+      "sha256": "7107c749af6a682cec11805520daea32a0a1e21051e111e113210ca532756818"
+    }
+  },
+  "frozen_artifact_integrity": {
+    "benchmark": true,
+    "architecture": true,
+    "contract": true,
+    "preregistration": true,
+    "required_aspects_truth": true,
+    "experiment_freeze_manifest": null
+  },
+  "frozen_benchmark_sha256": "a345ccfd8dabadedd41ac1abc341a079709d3bbc699e4ea7b3696a06f76acf16",
+  "final_truth_sha256": "d22a5a919cd5828258491adeea0af3f7d5d8983a27f1226dc3e0fa71801b9b76",
+  "contract_sha256": "fb5484351eae3fcc285ab9ce8e819c33e3367ceea972ffdbca43cde7d18d9549",
+  "test_results": {
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests",
+    "new_router_v1_tests": 52,
+    "existing_tests": 266,
+    "total_tests": 318,
+    "failures": 0,
+    "errors": 0,
+    "environment_issues": []
+  },
+  "router_implementation_behavior": {
+    "single_router_call_max_output_tokens": 96,
+    "single_decomposer_call_max_output_tokens": 256,
+    "temperature": 0.0,
+    "timeout_seconds": 30.0,
+    "retry_count": 0,
+    "stream_top_k": 5,
+    "lexical_top_k_per_stream": 20,
+    "semantic_top_k_per_stream": 20,
+    "evidence_target_count": 5,
+    "arms": [
+      "FIXED_DIRECT",
+      "FIXED_DECOMPOSE",
+      "ROUTED"
+    ]
+  },
+  "frozen_benchmark_executed": false,
+  "router_v1_outcomes_generated": false,
+  "real_benchmark_judge_run": false,
+  "no_model_calls_during_tests": true
+}

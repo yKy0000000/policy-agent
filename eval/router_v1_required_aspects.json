@@ -1,0 +1,1874 @@
+{
+  "version": "router_v1_required_aspects",
+  "status": "frozen",
+  "truth_role": "answer_required_aspects_only",
+  "benchmark_path": "eval/router_benchmark_v1.json",
+  "benchmark_sha256": "a345ccfd8dabadedd41ac1abc341a079709d3bbc699e4ea7b3696a06f76acf16",
+  "corpus_commit": "b9578b546d2506febda1da2cd7431644d58e512c",
+  "source_draft_path": "eval/router_v1_required_aspects_draft.json",
+  "source_draft_sha256": "c2f766b0610c37b899990d0eb8d6bbb229aa25add3a7f2a041f66686af07f547",
+  "audit_path": "eval/router_v1_required_aspects_deepseek_audit.md",
+  "audit_sha256": "b815ed0a4a7f8de4c5aa4e3f093032ca9fc827337cb2fa14bd729de9af81ce1f",
+  "change_set_path": "eval/router_v1_required_aspects_audit_changes.json",
+  "change_set_sha256": "9c4f373ed9dcc030d39d7fffa099dc15afe3008a046a8d5fa67ff2163e0c2792",
+  "truth_frozen_timestamp": "2026-09-27T14:25:39Z",
+  "truth_created_before_router_v1_outputs": true,
+  "outcome_blind_at_freeze": true,
+  "required_aspect_count": 66,
+  "optionalized_aspect_count": 4,
+  "corpus_gap_count": 0,
+  "supporting_evidence_semantics": "verified_examples_not_exhaustive",
+  "evaluation_semantics": {
+    "required_aspects": {
+      "enters": [
+        "required_covered",
+        "required_missing",
+        "required_incorrect",
+        "query_required_complete",
+        "oracle_quality_comparison"
+      ]
+    },
+    "optional_context": {
+      "enters": [
+        "qualitative_analysis_only"
+      ],
+      "does_not_enter": [
+        "required_covered",
+        "query_required_complete",
+        "oracle_winner"
+      ],
+      "omission_effect": "none_on_completeness"
+    },
+    "supporting_evidence": "semantic_answer_requirements; listed chunks are verified support, not an exhaustive unique chunk gold set; an equivalent frozen-corpus chunk must not be judged wrong solely for not being pre-listed"
+  },
+  "descriptive_statistics": {
+    "query_count": 20,
+    "required_min": 2,
+    "required_median": 3.0,
+    "required_mean": 3.3,
+    "required_max": 4,
+    "combined_support_aspect_count": 4,
+    "single_document_mean_aspect_count": 2.9091,
+    "multi_document_mean_aspect_count": 3.7778,
+    "pearson_r_aspect_count_vs_author_multi_document": 0.776194,
+    "note": "descriptive only; author multi_document is benchmark metadata, not a routing label or experiment input"
+  },
+  "cases": [
+    {
+      "id": "router_001",
+      "query": "Someone copied my home address from a public website into a GitHub issue and urged others to contact me. Can I report this as a privacy violation, and is the private-information removal request the right way to get it taken down?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_001_a1",
+          "statement": "GitHub’s privacy rule covers posting another person’s physical address or other private location information.",
+          "necessity": "用户问住址是否可报告。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+              "heading": [],
+              "chunk_id": "chunk_36c8fa4bcb4dccbdc3bbb72c",
+              "supporting_text_span": "l, private email addresses * Phone numbers * Physical addresses or other private location information * Bank account information or credit card numbers * Soci"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_36c8fa4bcb4dccbdc3bbb72c"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_001_a2",
+          "statement": "GitHub considers context and whether the information is publicly available elsewhere; public availability does not by itself settle the policy question.",
+          "necessity": "须处理地址原先公开这一条件。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+              "heading": [],
+              "chunk_id": "chunk_36c8fa4bcb4dccbdc3bbb72c",
+              "supporting_text_span": "t as well as whether the reported content is publicly available elsewhere. Please note, however, that while sharing publicly available content may not be a violation of"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_36c8fa4bcb4dccbdc3bbb72c"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_001_a3",
+          "statement": "Sharing publicly available information with intent to harass or incite abuse may violate GitHub’s harassment rule.",
+          "necessity": "须处理号召他人联系的行为。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-doxxing-and-invasion-of-privacy.md",
+              "heading": [],
+              "chunk_id": "chunk_36c8fa4bcb4dccbdc3bbb72c",
+              "supporting_text_span": "olicy, if the information is shared with the intent to harass or incite other abusive behavior, it may violate our prohibition against [bullying and harassment](/site"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_36c8fa4bcb4dccbdc3bbb72c"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_001_a4",
+          "statement": "The private-information removal process requires content that should have remained confidential and whose disclosure poses a specific or targeted security risk.",
+          "necessity": "须判断高风险移除流程是否适用。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "What is Private Information?"
+              ],
+              "chunk_id": "chunk_fd1a8855ee650c1195777567",
+              "supporting_text_span": "vate information” refers to content that (i) should have been kept confidential, _and_ (ii) whose public availability poses a specific or targeted security risk to you or you"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_fd1a8855ee650c1195777567"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [
+        {
+          "statement": "移除投诉还需指出具体文件、行号与风险。",
+          "optional": true,
+          "origin": "pre_existing_draft_optional_context"
+        }
+      ],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_002",
+      "query": "A repository contains no intimate images, but it advertises a tool for making realistic sexual images of real people without their consent. Does hosting only the tool put the project outside GitHub's policy?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_002_a1",
+          "statement": "GitHub prohibits projects designed to encourage or support synthetic-media tools for making sexually explicit media of people without consent.",
+          "necessity": "回答只托管工具是否豁免。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md",
+              "heading": [],
+              "chunk_id": "chunk_e921fe7a8e1eeb16ec85d0b4",
+              "supporting_text_span": "GitHub does not allow any projects that are designed for, encourage, promote, support, or suggest in any way the use of large lan"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_e921fe7a8e1eeb16ec85d0b4"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_002_a2",
+          "statement": "The non-consensual intimate imagery rule includes realistic digitally altered or synthetic sexual depictions made without the person’s consent.",
+          "necessity": "解释所述用途的政策类别。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-non-consensual-intimate-imagery.md",
+              "heading": [],
+              "chunk_id": "chunk_eebcff7d8379f37aaf1bf06f",
+              "supporting_text_span": "idden cameras, or other forms of voyeurism * Digitally altered or synthetic media that depicts a realistic-looking individual in a sexually explicit manner without their consen"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_eebcff7d8379f37aaf1bf06f"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_002_a3",
+          "statement": "GitHub assesses such projects in context, including configuration, marketing, README or other documentation, external links, and maintainer support.",
+          "necessity": "说明如何判断所述工具项目。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md",
+              "heading": [],
+              "chunk_id": "chunk_e921fe7a8e1eeb16ec85d0b4",
+              "supporting_text_span": "f many factors: how a project is configured; how it is marketed; the information provided in its README or other documentation; the external sites or resource"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_e921fe7a8e1eeb16ec85d0b4"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [
+        {
+          "statement": "已发布影像在罕见公共利益情境下可能逐案审查；本题未描述此情境。",
+          "optional": true,
+          "origin": "pre_existing_draft_optional_context"
+        }
+      ],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_003",
+      "query": "A contributor keeps opening empty pull requests and new accounts after I block them, flooding reviewers with notifications. Which GitHub conduct rules apply, and can staff act beyond moderation of my repository?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_003_a1",
+          "statement": "Empty or meaningless pull requests and excessive notifications are examples of prohibited significant or continual disruption.",
+          "necessity": "对应空 PR 与通知轰炸。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-disrupting-the-experience-of-other-users.md",
+              "heading": [],
+              "chunk_id": "chunk_65ff616040be6ec5bdfe0770",
+              "supporting_text_span": "is includes: * Posting off-topic comments * Opening empty or meaningless issues or pull requests * Starring and/or following accounts or repositories in large volume i"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_65ff616040be6ec5bdfe0770"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_003_a2",
+          "statement": "Creating alternative accounts specifically to evade moderation by GitHub staff or users is identified as harassment-related conduct.",
+          "necessity": "对应被屏蔽后开新号。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-bullying-and-harassment.md",
+              "heading": [],
+              "chunk_id": "chunk_23acf65f48bfbc0fd2b142a9",
+              "supporting_text_span": "conflict or undermines sincere discussion * Creating alternative accounts specifically to evade moderation action taken by GitHub staff or users Please note, not all unwelcome cond"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_23acf65f48bfbc0fd2b142a9"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_003_a3",
+          "statement": "Disruptive conduct may also be bullying or harassment depending on its nature and severity; it is not automatically harassment.",
+          "necessity": "说明两类规则的关系。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-disrupting-the-experience-of-other-users.md",
+              "heading": [],
+              "chunk_id": "chunk_65ff616040be6ec5bdfe0770",
+              "supporting_text_span": "use-policies). For example, depending on the nature and severity of the activity, it may rise to the level of [bullying and harassment](/site-policy/acceptable"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_65ff616040be6ec5bdfe0770"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_003_a4",
+          "statement": "Maintainers may moderate their projects, and GitHub staff may take further restrictive action against disruptive accounts.",
+          "necessity": "回答平台措施是否超出仓库管理。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-disrupting-the-experience-of-other-users.md",
+              "heading": [],
+              "chunk_id": "chunk_65ff616040be6ec5bdfe0770",
+              "supporting_text_span": "e their own projects on an individual basis, GitHub staff may take further restrictive action against accounts that are engaging in these types of behaviors. Please note that the above co"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_65ff616040be6ec5bdfe0770"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_004",
+      "query": "Our museum repository explains the history of nude artwork, but its account avatar previews one of the images. Does the educational context mean GitHub must leave both the repository and avatar visible to everyone?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_004_a1",
+          "statement": "GitHub may allow nudity in artistic, educational, historical, or journalistic contexts.",
+          "necessity": "回答博物馆教育背景的作用。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-sexually-obscene-content.md",
+              "heading": [],
+              "chunk_id": "chunk_f25af672289856012d211dad",
+              "supporting_text_span": "ay allow visual and/or textual depictions in artistic, educational, historical or journalistic contexts, or as it relates to victim advocacy. In some cases a disclaimer can"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f25af672289856012d211dad"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_004_a2",
+          "statement": "Sexually suggestive content in profiles or other social contexts receives particular scrutiny when it mainly solicits an erotic or shocking response.",
+          "necessity": "回答头像展示位置的作用。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-sexually-obscene-content.md",
+              "heading": [],
+              "chunk_id": "chunk_f25af672289856012d211dad",
+              "supporting_text_span": "larly where that content is amplified by its placement in profiles or other social contexts. This includes: * Pornographic content * Non-consensual intimate ima"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f25af672289856012d211dad"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_004_a3",
+          "statement": "Even when context supports allowing material, GitHub may limit viewing by requiring users to opt in.",
+          "necessity": "回答是否必须对所有人可见。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-sexually-obscene-content.md",
+              "heading": [],
+              "chunk_id": "chunk_f25af672289856012d211dad",
+              "supporting_text_span": "ose to limit the content by giving users the option to opt in before viewing."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f25af672289856012d211dad"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_005",
+      "query": "I'm posting a satirical graphic about a medical claim. Its README labels it as satire and links to sources, but the image could circulate without that context. How does GitHub assess whether it crosses the misinformation policy?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_005_a1",
+          "statement": "The misinformation rule reaches inaccurate or unsupported medical claims likely to endanger public health or safety.",
+          "necessity": "说明医疗图像的危害门槛。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-misinformation-and-disinformation.md",
+              "heading": [],
+              "chunk_id": "chunk_f9ddd26bbbc61c34bb71774a",
+              "supporting_text_span": ": * Inaccurate or scientifically unsupported medical claims that endanger public health or safety * Manipulated media, whether audio or visual, likely to mislead or deceive in a way"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f9ddd26bbbc61c34bb71774a"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_005_a2",
+          "statement": "GitHub generally allows parody and satire consistent with its Acceptable Use Policies, rather than automatically exempting anything labeled satire.",
+          "necessity": "回答讽刺标签的作用。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-misinformation-and-disinformation.md",
+              "heading": [],
+              "chunk_id": "chunk_f9ddd26bbbc61c34bb71774a",
+              "supporting_text_span": "ispute personal accounts or observations. We generally allow parody and satire that is in line with our [Acceptable Use Policies](/site-policy/acceptable-use-policies/github"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f9ddd26bbbc61c34bb71774a"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_005_a3",
+          "statement": "GitHub considers how context orients viewers, including clear disclaimers, credible citations, and details clarifying accuracy.",
+          "necessity": "回答 README 说明与来源的作用。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-misinformation-and-disinformation.md",
+              "heading": [],
+              "chunk_id": "chunk_f9ddd26bbbc61c34bb71774a",
+              "supporting_text_span": "s whether the content has been provided with clear disclaimers, citations to credible sources, or includes other details that clarify the accuracy of the information be"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f9ddd26bbbc61c34bb71774a"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_006",
+      "query": "We published an exploit demo for defensive research, and an active malware campaign now links to its download. Could GitHub limit that release without banning every copy, and how could we challenge a restriction we think is mistaken?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_006_a1",
+          "statement": "GitHub generally allows dual-use exploit and malware research content for its educational and security value.",
+          "necessity": "说明防御研究内容的政策起点。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+              "heading": [],
+              "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+              "supporting_text_span": "e prior to the abuse occurring. Note that GitHub allows dual-use content and supports the posting of content that is used for research into vulnerabilities, malware, o"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_7d54462de0e9154ce55d108b"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_006_a2",
+          "statement": "In rare widespread abuse during an active attack or malware campaign, GitHub may restrict the specific abused instance.",
+          "necessity": "回答能否针对 release 或实例采取限制。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+              "heading": [],
+              "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+              "supporting_text_span": "widespread abuse of dual-use content, we may restrict access to that specific instance of the content to disrupt an ongoing unlawful attack or malware campaign that is leveraging th"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_7d54462de0e9154ce55d108b"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_006_a3",
+          "statement": "Such a restriction is temporary where feasible and is not meant to purge all copies of the dual-use content permanently.",
+          "necessity": "回答是否会禁止所有副本。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+              "heading": [],
+              "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+              "supporting_text_span": "strictions are temporary where feasible, and do not serve the purpose of purging or restricting any specific dual-use content, or copies of that content, from the platform in"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_7d54462de0e9154ce55d108b"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_006_a5",
+          "statement": "A user who believes content was unduly restricted may appeal and provide grounds for a different decision.",
+          "necessity": "回答异议途径。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "heading": [
+                "How this works"
+              ],
+              "chunk_id": "chunk_5d1188bc9474b578388e2ddd",
+              "supporting_text_span": "an enforcement action, please fill out our [Appeal and Reinstatement form](https://support.github.com/contact/reinstatement). You may Appeal a moderation decision for u"
+            },
+            {
+              "document_path": "Policies/acceptable-use-policies/github-appeal-and-reinstatement.md",
+              "heading": [
+                "How this works",
+                "Appeals"
+              ],
+              "chunk_id": "chunk_56264636771e77075a782b6d",
+              "supporting_text_span": "sion, they can use the form to explain their basis for disputing the decision and to provide any additional information regarding the alleged violation that th"
+            }
+          ],
+          "support_type": "combined",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_5d1188bc9474b578388e2ddd",
+              "chunk_56264636771e77075a782b6d"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [
+        {
+          "aspect_id": "router_006_a4",
+          "statement": "A restriction usually puts content behind authentication; disabling or removal is a last resort when that is not possible.",
+          "necessity": "回答限制的具体方式。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-active-malware-or-exploits.md",
+              "heading": [],
+              "chunk_id": "chunk_7d54462de0e9154ce55d108b",
+              "supporting_text_span": "ese instances, restriction takes the form of putting the content behind authentication, but may, as an option of last resort, involve disabling access or full removal where this is"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_7d54462de0e9154ce55d108b"
+            ]
+          ],
+          "notes": "",
+          "optional": true,
+          "origin": "optionalized_from_required",
+          "change_ref": "eval/router_v1_required_aspects_audit_changes.json#router_006_a4"
+        }
+      ],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_007",
+      "query": "An account uses our registered company name as its handle, copies our logo, and calls itself parody. Is the matching name enough to reclaim the handle, or what would GitHub look at?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_007_a1",
+          "statement": "A username matching a registered trademark is not by itself a policy violation or automatic right to reclaim it.",
+          "necessity": "回答同名是否足够。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-trademark-policy.md",
+              "heading": [
+                "What is not a GitHub Trademark Policy Violation?"
+              ],
+              "chunk_id": "chunk_19600b091f62ca0ede3450a2",
+              "supporting_text_span": "ount with a user name that happens to be the same as a registered trademark is not, by itself, necessarily a violation of our trademark policy."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_19600b091f62ca0ede3450a2"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_007_a2",
+          "statement": "Use of a company name or logo may violate trademark policy when it may confuse others about brand or business affiliation.",
+          "necessity": "回答复制标识的商标判断。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-trademark-policy.md",
+              "heading": [
+                "What is a GitHub Trademark Policy Violation?"
+              ],
+              "chunk_id": "chunk_e21d5efa444988a6ee52dc30",
+              "supporting_text_span": "ark-protected materials in a manner that may mislead or confuse others with regard to its brand or business affiliation may be considered a trademark policy violatio"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_e21d5efa444988a6ee52dc30"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_007_a3",
+          "statement": "Impersonation depends on misleading context; a similar name alone is not necessarily impersonation, and parody may be allowed.",
+          "necessity": "回答戏仿抗辩的作用。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-impersonation.md",
+              "heading": [],
+              "chunk_id": "chunk_0d2d5abd2784cfcf630269b4",
+              "supporting_text_span": "oss of access to your account. Please note, having a username similar to another is not necessarily impersonation. GitHub will take context into account. For exampl"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_0d2d5abd2784cfcf630269b4"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_007_a4",
+          "statement": "After reviewing a registered-mark complaint, GitHub may release a username for the trademark holder’s active use; release is discretionary.",
+          "necessity": "说明可能转让而非保证转让。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-trademark-policy.md",
+              "heading": [
+                "How Does GitHub Respond To Reported Trademark Policy Violations?"
+              ],
+              "chunk_id": "chunk_f7c393d8c6398f15f8c9a7d1",
+              "supporting_text_span": "nity to clear up any potential confusion. We may also release a username for the trademark holder's active use."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f7c393d8c6398f15f8c9a7d1"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_008",
+      "query": "Our README, package description, and profile mention another company's product to explain compatibility, without claiming affiliation. When would that use become a GitHub trademark-policy problem?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_008_a1",
+          "statement": "Trademark use becomes a GitHub policy issue when it may mislead or confuse others about brand or business affiliation.",
+          "necessity": "回答违规门槛。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-trademark-policy.md",
+              "heading": [
+                "What is a GitHub Trademark Policy Violation?"
+              ],
+              "chunk_id": "chunk_e21d5efa444988a6ee52dc30",
+              "supporting_text_span": "ark-protected materials in a manner that may mislead or confuse others with regard to its brand or business affiliation may be considered a trademark policy violatio"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_e21d5efa444988a6ee52dc30"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_008_a2",
+          "statement": "Mentioning another’s mark is not automatically a violation; the policy distinguishes use unrelated to the registered product or service from confusing use.",
+          "necessity": "回答兼容性说明中的商标提及。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-trademark-policy.md",
+              "heading": [
+                "What is not a GitHub Trademark Policy Violation?"
+              ],
+              "chunk_id": "chunk_19600b091f62ca0ede3450a2",
+              "supporting_text_span": "Using another's trademark in a way that has nothing to do with the product or service for which the trademark was granted is not a trademark policy violation. GitHub user names are"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_19600b091f62ca0ede3450a2"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_009",
+      "query": "I found a vulnerability in GitHub and reporting it may involve conduct normally restricted by its site policies. Does the bug bounty safe harbor cover that research, and does it let me test a connected third-party service?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_009_a1",
+          "statement": "Good-faith research within GitHub’s bug bounty policy receives the stated legal safe-harbor protection, subject to the program’s scope.",
+          "necessity": "回答安全港适用条件。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "heading": [
+                "1. Safe Harbor Terms"
+              ],
+              "chunk_id": "chunk_e0d354aeaa7beb50005833bb",
+              "supporting_text_span": "ction, or send notice to law enforcement for accidental or good faith violations of this policy. We consider security research and vulnerability disclosure activities conducte"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_e0d354aeaa7beb50005833bb"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_009_a2",
+          "statement": "GitHub waives otherwise inconsistent site-policy restrictions only for research consistent with the bug bounty program and for that limited purpose.",
+          "necessity": "回答站点规则的有限豁免。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "heading": [
+                "3. Limited Waiver of Other Site Policies"
+              ],
+              "chunk_id": "chunk_d5357e5db301e01f2d4c408f",
+              "supporting_text_span": "program, we waive those restrictions for the sole and limited purpose of permitting your security research under this bug bounty program. Just like above, if in dou"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_d5357e5db301e01f2d4c408f"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_009_a3",
+          "statement": "GitHub cannot authorize testing of a connected third-party service or bind that third party with its own safe harbor.",
+          "necessity": "回答第三方系统测试边界。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md",
+              "heading": [
+                "2. Third Party Safe Harbor"
+              ],
+              "chunk_id": "chunk_943f62cca2ec5fdcf5f38e8c",
+              "supporting_text_span": "en permission to do so. Please note that we cannot authorize out-of-scope testing in the name of third parties, and such testing is beyond the scope of our policy. Refer to tha"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_943f62cca2ec5fdcf5f38e8c"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_010",
+      "query": "A DMCA notice identifies one file in my repository and one part of a published package. Can I edit both before GitHub disables anything, and what must I tell GitHub after making changes?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_010_a1",
+          "statement": "For a notice targeting only part of a repository, GitHub generally gives its creator approximately one business day to delete or modify the identified content before disabling the repository.",
+          "necessity": "回答仓库文件的修改窗口。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/dmca-takedown-policy.md",
+              "heading": [
+                "A. How Does This Actually Work?"
+              ],
+              "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+              "supporting_text_span": "ser who created the repository and give them approximately 1 business day to delete or modify the content specified in the notice. We'll notify the copyright owner if a"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_80d71a13ddfac8eb977f9541"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_010_a2",
+          "statement": "Because packages are immutable, an allegedly infringing part can require disabling the whole package, with possible reinstatement after removal of that part.",
+          "necessity": "回答 package 的不同处理。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/dmca-takedown-policy.md",
+              "heading": [
+                "A. How Does This Actually Work?"
+              ],
+              "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+              "supporting_text_span": "n we give the user a chance to make changes. Because packages are immutable, if only part of a package is infringing, GitHub would need to disable the entire package, but"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_80d71a13ddfac8eb977f9541"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_010_a3",
+          "statement": "A repository user who makes the specified changes must tell GitHub within the approximately one-business-day window; GitHub verifies them and notifies the rightsholder.",
+          "necessity": "回答修改后的告知步骤。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/dmca-takedown-policy.md",
+              "heading": [
+                "A. How Does This Actually Work?"
+              ],
+              "chunk_id": "chunk_80d71a13ddfac8eb977f9541",
+              "supporting_text_span": "s to make the specified changes, they _must_ tell us so within the window of approximately 1 business day. If they don't, we will disable the repository (as described i"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_80d71a13ddfac8eb977f9541"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_011",
+      "query": "A repository exposes our internal network diagram and republishes our copyrighted manual. Should I put both into one private-information removal request, and what would GitHub need to assess each?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_011_a1",
+          "statement": "An internal network diagram fits private-information removal only if its exposure poses a specific organizational security risk.",
+          "necessity": "回答网络图的适用门槛。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "What is Private Information?",
+                "Private information removal requests are appropriate for:"
+              ],
+              "chunk_id": "chunk_503d0f8451cd132a55e45b74",
+              "supporting_text_span": "does belong to you. * Documentation (such as network diagrams or architecture) that poses a specific security risk for an organization. * [Information](/site-policy/accepta"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_503d0f8451cd132a55e45b74"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_011_a3",
+          "statement": "A private-information request must explain how each identified item poses a concrete security risk, beyond simply asserting risk.",
+          "necessity": "回答网络图投诉的风险材料。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "Sending A Private Information Removal Request",
+                "Your Request Must Include:"
+              ],
+              "chunk_id": "chunk_0cc6709199187f11f4436f08",
+              "supporting_text_span": "ivate information. 1. A brief description of how each item you've identified poses a security risk to you or your organization. ***It is important that y"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_0cc6709199187f11f4436f08"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_011_a4",
+          "statement": "A complaint about a copyrighted manual belongs under the DMCA process, not private-information removal.",
+          "necessity": "回答手册版权部分的渠道。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "What is Private Information?",
+                "Private information removal requests are _not_ appropriate for:"
+              ],
+              "chunk_id": "chunk_d6d1c627931350dcab91a60d",
+              "supporting_text_span": "hat may infringe your or your organization's copyright rights. If you have questions about how GitHub handles copyright-related matters or would like to rep"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_d6d1c627931350dcab91a60d"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_011_a5",
+          "statement": "GitHub asks for private-information and potentially infringing-content requests separately because it cannot process them simultaneously.",
+          "necessity": "回答能否合并请求。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "Things to Know"
+              ],
+              "chunk_id": "chunk_a761f910df2bb1e22f5a4020",
+              "supporting_text_span": "in your private information removal requests separately from any requests to remove potentially infringing content. If you are unsure whether your request involves only"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_a761f910df2bb1e22f5a4020"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [
+        {
+          "aspect_id": "router_011_a2",
+          "statement": "A private-information request must identify a working link to each file and the specific lines containing the information.",
+          "necessity": "回答网络图投诉的定位材料。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "Sending A Private Information Removal Request",
+                "Your Request Must Include:"
+              ],
+              "chunk_id": "chunk_0cc6709199187f11f4436f08",
+              "supporting_text_span": "### Your Request Must Include: 1. A working, clickable link to each file containing private information. (Note that we're not able to work from search res"
+            },
+            {
+              "document_path": "Policies/content-removal-policies/github-private-information-removal-policy.md",
+              "heading": [
+                "Sending A Private Information Removal Request",
+                "Your Request Must Include:"
+              ],
+              "chunk_id": "chunk_0cc6709199187f11f4436f08",
+              "supporting_text_span": "earch results, examples, or screenshots.) 1. Specific line numbers within each file containing the private information. 1. A brief description of how each item y"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_0cc6709199187f11f4436f08"
+            ]
+          ],
+          "notes": "",
+          "optional": true,
+          "origin": "optionalized_from_required",
+          "change_ref": "eval/router_v1_required_aspects_audit_changes.json#router_011_a2"
+        }
+      ],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_012",
+      "query": "I found a notice naming my project in GitHub's public government-takedowns repository. Does that mean GitHub decided my project was unlawful, and what does the listing actually tell readers?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_012_a1",
+          "statement": "A public government-takedowns notice establishes that GitHub received it on the indicated date.",
+          "necessity": "回答列表能证明什么。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "What does it mean if we post a notice in our gov-takedowns repository?"
+              ],
+              "chunk_id": "chunk_b5d910ef2bfc9d7ef2df4802",
+              "supporting_text_span": "gov-takedowns repository? It means that we received the notice on the indicated date. It does _not_ mean that the content was unlawful or wrong. It does _not_ mean that the user i"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_b5d910ef2bfc9d7ef2df4802"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_012_a2",
+          "statement": "Publishing the notice does not mean the content was unlawful, the user did wrong, or GitHub endorses the claim’s merits.",
+          "necessity": "回答是否认定项目违法。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "What does it mean if we post a notice in our gov-takedowns repository?"
+              ],
+              "chunk_id": "chunk_b5d910ef2bfc9d7ef2df4802",
+              "supporting_text_span": "indicated date. It does _not_ mean that the content was unlawful or wrong. It does _not_ mean that the user identified in the notice has done anything wrong. We don't m"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_b5d910ef2bfc9d7ef2df4802"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_012_a3",
+          "statement": "GitHub posts government takedown notices for transparency about what is withheld and why.",
+          "necessity": "回答公开列表的用途。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "Why do we publicly post takedown notices?"
+              ],
+              "chunk_id": "chunk_cd467ee375fec67040db1e33",
+              "supporting_text_span": "tices, we can better inform the public about what content is being withheld from GitHub, and why. We post takedown notices to document their potential to chill speech."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_cd467ee375fec67040db1e33"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_013",
+      "query": "A government office says my public repository is illegal locally and also wants private data from my account. Does its content-takedown request give it that data, and how are the two requests handled?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_013_a2",
+          "statement": "For a complete government takedown request, GitHub notifies affected users of the allegation and permits appeal.",
+          "necessity": "说明受影响用户的程序。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "What happens when we receive a complete takedown request from a government?"
+              ],
+              "chunk_id": "chunk_ef6899bc1eb9e4fe063bec90",
+              "supporting_text_span": "specifies the source of the illegality, we * notify the affected users of the specific content that allegedly violates the law, and that this is a legal takedown req"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_ef6899bc1eb9e4fe063bec90"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_013_a3",
+          "statement": "For a complete government takedown request, GitHub limits geographic scope when possible and posts the official request publicly.",
+          "necessity": "说明内容限制范围与透明度。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "What happens when we receive a complete takedown request from a government?"
+              ],
+              "chunk_id": "chunk_ef6899bc1eb9e4fe063bec90",
+              "supporting_text_span": "the decision as part of that notification * limit the geographic scope of the takedown when possible and include that as part of the notification * post the official"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_ef6899bc1eb9e4fe063bec90"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_013_a4",
+          "statement": "A content-takedown request does not itself authorize disclosure of non-public account data; that requires consent or valid legal process, subject to limited emergency disclosure.",
+          "necessity": "回答内容请求是否附带私人数据。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "How to submit a government takedown request"
+              ],
+              "chunk_id": "chunk_a57209acbc132cc6e16c7234",
+              "supporting_text_span": "government official and wish to request the removal of content under this policy, you can submit your request using our [Government Takedown Requests Form](https://support.git"
+            },
+            {
+              "document_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+              "heading": [
+                "Disclosure of non-public information"
+              ],
+              "chunk_id": "chunk_e38e8b117bf75ca2426fb8a0",
+              "supporting_text_span": "ction with a civil or criminal investigation only with user consent or upon receipt of a valid subpoena, civil investigative demand, court order, search warrant,"
+            }
+          ],
+          "support_type": "combined",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_a57209acbc132cc6e16c7234",
+              "chunk_e38e8b117bf75ca2426fb8a0"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_013_a5",
+          "statement": "Private repository contents require a search warrant under the user-data guidelines.",
+          "necessity": "说明私人内容的更高门槛。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+              "heading": [
+                "Disclosure of non-public information"
+              ],
+              "chunk_id": "chunk_30ab6464817b7b0946abaad0",
+              "supporting_text_span": "a search warrant:** We will not disclose the private contents of any account unless compelled to do so under a search warrant issued under the procedures described in the"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_30ab6464817b7b0946abaad0"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [
+        {
+          "aspect_id": "router_013_a1",
+          "statement": "A complete government content-takedown request must come from a relevant official agency, identify illegal content, and specify the local legal basis.",
+          "necessity": "说明内容请求的条件。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-government-takedown-policy.md",
+              "heading": [
+                "How to submit a government takedown request"
+              ],
+              "chunk_id": "chunk_a57209acbc132cc6e16c7234",
+              "supporting_text_span": "rt.github.com/contact/government-takedown). To count as complete, a request must * come from a relevant, official government agency * identify illegal content"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_a57209acbc132cc6e16c7234"
+            ]
+          ],
+          "notes": "",
+          "optional": true,
+          "origin": "optionalized_from_required",
+          "change_ref": "eval/router_v1_required_aspects_audit_changes.json#router_013_a1"
+        }
+      ],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_014",
+      "query": "Police say they need my private repository immediately to prevent serious harm. Could GitHub disclose its contents under the emergency exception without a warrant, and would I be told first?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_014_a1",
+          "statement": "In a qualifying emergency involving danger of death or serious physical injury, GitHub may disclose only limited necessary information after verifying the law-enforcement request.",
+          "necessity": "回答紧急例外范围。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+              "heading": [
+                "Disclosure of non-public information"
+              ],
+              "chunk_id": "chunk_30ab6464817b7b0946abaad0",
+              "supporting_text_span": "* <a name=\"in-exigent-circumstances\"></a> **Under exigent circumstances:** If we receive a request for information under certain exigent circumstances (where we belie"
+            },
+            {
+              "document_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+              "heading": [
+                "Disclosure of non-public information"
+              ],
+              "chunk_id": "chunk_30ab6464817b7b0946abaad0",
+              "supporting_text_span": "ivate repositories without a search warrant. Before disclosing information, we confirm that the request came from a law enforcement agency, an authority sent an official notice summ"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_30ab6464817b7b0946abaad0"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_014_a2",
+          "statement": "Even in that emergency, GitHub says it will not disclose private repository contents without a search warrant.",
+          "necessity": "回答私人仓库是否免搜查令。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+              "heading": [
+                "Disclosure of non-public information"
+              ],
+              "chunk_id": "chunk_30ab6464817b7b0946abaad0",
+              "supporting_text_span": "t order, as described above. For example, we will not disclose contents of private repositories without a search warrant. Before disclosing information, we confirm that the request came from"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_30ab6464817b7b0946abaad0"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_014_a3",
+          "statement": "GitHub generally gives affected owners notice before disclosure, but may delay it in rare exigent circumstances to prevent death or serious harm or due to an ongoing investigation.",
+          "necessity": "回答是否一定事先通知。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/guidelines-for-legal-requests-of-user-data.md",
+              "heading": [
+                "We will notify any affected account owners"
+              ],
+              "chunk_id": "chunk_35fd87021964946f76efbd5f",
+              "supporting_text_span": "ey wish. In (rare) exigent circumstances, we may delay notification if we determine delay is necessary to prevent death or serious harm or due to an ongoing inves"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_35fd87021964946f76efbd5f"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_015",
+      "query": "I use a personal account and keep code in a private repository, but paste a snippet into a GitHub AI feature. Does “private” prevent GitHub from using that input to improve AI, and what changes if I opt out?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_015_a1",
+          "statement": "GitHub treats private repository contents as confidential and says it will not otherwise use them to develop or improve the Service unless provided as AI Feature Input.",
+          "necessity": "区分仓库存储与主动提交。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-terms-of-service.md",
+              "heading": [
+                "E. Private Repositories",
+                "3. Access"
+              ],
+              "chunk_id": "chunk_82b71e1d710271179f8b4bdd",
+              "supporting_text_span": "s to this use of private repository content. We will not otherwise use your private repository contents to develop or improve the Service. Additionally, we may be [compelled by law](/site-policy/pr"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_82b71e1d710271179f8b4bdd"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_015_a2",
+          "statement": "For an individual license, AI Inputs and Outputs may be used to improve AI unless the user opts out through account settings.",
+          "necessity": "回答粘贴片段可否用于 AI 改进。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-terms-of-service.md",
+              "heading": [
+                "J. AI Features, Training, and Your Data",
+                "3. Development and Improvement Using Your Input and Output"
+              ],
+              "chunk_id": "chunk_5bd8f67a21c277adbd0e92cd",
+              "supporting_text_span": "gies including those that power AI Features, unless (a) you opt out through your account settings, or (b) your use of the Service is governed by a GitHub Customer"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_5bd8f67a21c277adbd0e92cd"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_015_a3",
+          "statement": "The opt-out stops the specified collection or use of Inputs and Outputs from its effective date forward, not retroactively.",
+          "necessity": "回答退出后的时点。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-terms-of-service.md",
+              "heading": [
+                "J. AI Features, Training, and Your Data",
+                "3. Development and Improvement Using Your Input and Output"
+              ],
+              "chunk_id": "chunk_5bd8f67a21c277adbd0e92cd",
+              "supporting_text_span": "for the purposes described in this paragraph from the effective date of your opt-out going forward. Unless you opt out, GitHub's Affiliates may use your Inputs an"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_5bd8f67a21c277adbd0e92cd"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_016",
+      "query": "Our paid Marketplace app was disabled for a policy reason halfway through its annual term. Who should notify us, does payment guarantee continued access, and are we owed a partial refund?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_016_a1",
+          "statement": "GitHub may block or disable a Marketplace developer product for policy reasons and will work with its Product Provider to notify affected users.",
+          "necessity": "回答政策禁用与通知安排。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-marketplace-terms-of-service.md",
+              "heading": [
+                "H. Developer Product Blocking"
+              ],
+              "chunk_id": "chunk_53cfaee79a6c3b7ee9eed1d1",
+              "supporting_text_span": "lock or disable a Developer Product, we will work with the Product Provider to notify affected users."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_53cfaee79a6c3b7ee9eed1d1"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_016_a2",
+          "statement": "Monthly or yearly Marketplace purchases are billed in advance and non-refundable, with no refunds or credits for partial or unused months under the terms.",
+          "necessity": "回答部分退款。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-marketplace-terms-of-service.md",
+              "heading": [
+                "D. Payment, Billing Schedule, and Cancellation"
+              ],
+              "chunk_id": "chunk_1c0bd6feab4c1cdf6411559c",
+              "supporting_text_span": "monthly or yearly basis respectively and are non-refundable. There will be no refunds or credits for partial months of service, downgrade refunds, or refu"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_1c0bd6feab4c1cdf6411559c"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_016_a3",
+          "statement": "Because GitHub may block or disable a Developer Product for legal or policy reasons, paying for a paid Marketplace term does not guarantee continued access.",
+          "necessity": "回答付款是否保证继续访问。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-marketplace-terms-of-service.md",
+              "heading": [
+                "D. Payment, Billing Schedule, and Cancellation"
+              ],
+              "chunk_id": "chunk_1c0bd6feab4c1cdf6411559c",
+              "supporting_text_span": "for months unused; however, the service will remain active for the length of the paid billing period. If you would like to cancel the Developer Product services, you ca"
+            },
+            {
+              "document_path": "Policies/github-terms/github-marketplace-terms-of-service.md",
+              "heading": [
+                "H. Developer Product Blocking"
+              ],
+              "chunk_id": "chunk_53cfaee79a6c3b7ee9eed1d1",
+              "supporting_text_span": "## H. Developer Product Blocking GitHub may block a Developer Product from our servers, or disable its functionality, for legal or policy reasons. In the event that"
+            }
+          ],
+          "support_type": "combined",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_1c0bd6feab4c1cdf6411559c",
+              "chunk_53cfaee79a6c3b7ee9eed1d1"
+            ]
+          ],
+          "notes": "",
+          "edited_by": "eval/router_v1_required_aspects_audit_changes.json#router_016_a3",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_017",
+      "query": "I want to thank Sponsors by displaying their logos in my README and Sponsor content, then promote their products in other users' issue threads. Where does GitHub draw the line on that kind of promotion?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_017_a1",
+          "statement": "Sponsored developers may display Sponsors’ names or logos, but Sponsored Developer Content must not primarily be advertising.",
+          "necessity": "回答展示感谢的限度。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-sponsors-additional-terms.md",
+              "heading": [
+                "Terms For Sponsored Developer",
+                "2. Sponsored Developer Obligations.",
+                "2.3. Content Monetization.",
+                "2.3.3. Advertising."
+              ],
+              "chunk_id": "chunk_612778d80d7c5c0b6e3e95ae",
+              "supporting_text_span": "understand that you may want to promote your Sponsors by posting their names or logos in your account, the primary focus of your Sponsored Developer Content should not be advertisi"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_612778d80d7c5c0b6e3e95ae"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_017_a2",
+          "statement": "Project-related static images, links, and promotional text may appear in an account README or project description, provided advertising is not its primary focus.",
+          "necessity": "回答 README 展示条件。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+              "heading": [
+                "10. Advertising on GitHub"
+              ],
+              "chunk_id": "chunk_98cf35fb3afbd05cb943b94b",
+              "supporting_text_span": "other parts of the Service. You may include static images, links, and promotional text in the README documents or project description sections associated with your Account, but they"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_98cf35fb3afbd05cb943b94b"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_017_a3",
+          "statement": "GitHub prohibits advertising in other users’ accounts, including monetized or excessive bulk content in their issues.",
+          "necessity": "回答在他人 issue 推广的界限。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/acceptable-use-policies/github-acceptable-use-policies.md",
+              "heading": [
+                "10. Advertising on GitHub"
+              ],
+              "chunk_id": "chunk_98cf35fb3afbd05cb943b94b",
+              "supporting_text_span": "o the project you are hosting on GitHub. You may not advertise in other Users' Accounts, such as by posting monetized or excessive bulk content in issues. You may not prom"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_98cf35fb3afbd05cb943b94b"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_018",
+      "query": "At a GitHub event, staff are filming the room while another attendee records me after I say no. Do the same consent rules apply to both, and how can I report the attendee's conduct?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_018_a1",
+          "statement": "Event participation authorizes GitHub’s use of event photos or videos taken by GitHub and its partners, agents, or contractors.",
+          "necessity": "回答工作人员拍摄的条款。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-event-terms.md",
+              "heading": [
+                "2. Pictures and videos"
+              ],
+              "chunk_id": "chunk_f4e90716332b9d36c12106b4",
+              "supporting_text_span": "metimes take photos and videos at the Event. By participating or attending the Event, you agree that you may appear in some of these photos and videos, and you authorize"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_f4e90716332b9d36c12106b4"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_018_a2",
+          "statement": "The Event Code of Conduct lists photographing or recording participants without consent as unacceptable conduct.",
+          "necessity": "回答其他参加者被拒绝后的拍摄。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-event-code-of-conduct.md",
+              "heading": [
+                "Code of Conduct"
+              ],
+              "chunk_id": "chunk_6603d8df9b666afe3f73439e",
+              "supporting_text_span": "lowing, or harassing of Event Participants * Photography or recording of Event Participants without their consent * Harassment of any kind, even in a joking or ironic manner * Conduct wh"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_6603d8df9b666afe3f73439e"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_018_a3",
+          "statement": "An attendee may seek urgent help from venue security or a GitHub employee, or email events@github.com for non-urgent concerns.",
+          "necessity": "回答举报途径。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-event-code-of-conduct.md",
+              "heading": [
+                "Reporting an incident"
+              ],
+              "chunk_id": "chunk_9092956baf424fb221444e70",
+              "supporting_text_span": "ode of Conduct, please speak directly with a venue security officer or GitHub employee for urgent help, or email us at [events@github.com](mailto:events@github.co"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_9092956baf424fb221444e70"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_019",
+      "query": "I normally live outside a trade-restricted region, but my account was flagged while I was traveling through one. Have I permanently lost access to my private repositories, and what can I do if the flag is mistaken?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_019_a1",
+          "statement": "Travel in a sanctioned region may affect account status, but availability may be reinstated after leaving.",
+          "necessity": "回答旅行是否造成永久失去访问。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-and-trade-controls.md",
+              "heading": [
+                "Frequently asked questions",
+                "Will traveling in these regions be impacted?"
+              ],
+              "chunk_id": "chunk_c11cc08e2ae10c0e3bb3806b",
+              "supporting_text_span": "regions may impact your account status, but availability may be reinstated once you are outside of the sanctioned region."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_c11cc08e2ae10c0e3bb3806b"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_019_a2",
+          "statement": "A user who believes a sanctions flag is mistaken may appeal with verification information to GitHub Support; the flag may be removed upon sufficient verification.",
+          "necessity": "回答误标时的处理。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-and-trade-controls.md",
+              "heading": [
+                "Frequently asked questions",
+                "How is GitHub ensuring that folks not living in and/or having professional links to the sanctioned countries and territories still have access or ability to appeal?"
+              ],
+              "chunk_id": "chunk_88854c0d88a888f9e14ed636",
+              "supporting_text_span": "error, then that user has the opportunity to appeal the flag by providing verification information to GitHub. If GitHub receives sufficient information to verify that the user or or"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_88854c0d88a888f9e14ed636"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_019_a3",
+          "statement": "For specified trade restrictions, GitHub says it cannot allow download or deletion of private repository content until authorized.",
+          "necessity": "回答私人仓库访问限制。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/other-site-policies/github-and-trade-controls.md",
+              "heading": [
+                "Frequently asked questions",
+                "Can trade-restricted users access private repository data (e.g. downloading or deletion of repository data)?"
+              ],
+              "chunk_id": "chunk_11b0f878e227d23915728926",
+              "supporting_text_span": "nderstanding of the law does not give us the option to allow downloads or deletion of private repository content, until otherwise authorized by the U.S. government, for specific"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_11b0f878e227d23915728926"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [],
+      "corpus_gap": []
+    },
+    {
+      "id": "router_020",
+      "query": "Our enterprise admin sees a vendor on GitHub's subprocessor list and has also installed a Marketplace app. Are both covered by the same GitHub data-processing commitments, and who is responsible for the app's access to our data?",
+      "required_aspects": [
+        {
+          "aspect_id": "router_020_a1",
+          "statement": "The Subprocessor List covers processors acting for GitHub to serve Enterprise customers under GitHub services governed by its Data Protection Agreement.",
+          "necessity": "回答清单及承诺范围。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/privacy-policies/github-subprocessors.md",
+              "heading": [],
+              "chunk_id": "chunk_1cb42138938eed82045675df",
+              "supporting_text_span": "es to our Enterprise customers. This list is applicable for all GitHub services governed by the [GitHub Data Protection Agreement](https://github.com/customer-terms/github-data-protec"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_1cb42138938eed82045675df"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_020_a2",
+          "statement": "A customer-authorized Marketplace third-party application is a distinct data-sharing relationship from a vendor processing data on GitHub’s behalf under the Subprocessor List.",
+          "necessity": "回答两类供应商是否相同。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+              "heading": [
+                "Sharing of Personal Data"
+              ],
+              "chunk_id": "chunk_a523e9aa5d9d9ddd9c764fba",
+              "supporting_text_span": "sions in GitHub Codespaces and github.dev. * Other Third-party Applications: Upon your instruction, we may share Personal Data with third-party applications available on"
+            },
+            {
+              "document_path": "Policies/privacy-policies/github-subprocessors.md",
+              "heading": [],
+              "chunk_id": "chunk_1cb42138938eed82045675df",
+              "supporting_text_span": "PR. The GitHub Subprocessor List identifies subprocessors authorized to subprocess customer or personal data on behalf of GitHub to provide services to our Enterpr"
+            }
+          ],
+          "support_type": "combined",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_a523e9aa5d9d9ddd9c764fba",
+              "chunk_1cb42138938eed82045675df"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_020_a3",
+          "statement": "The customer is responsible for data it instructs GitHub to share with Marketplace third-party applications.",
+          "necessity": "回答客户对应用共享数据的责任。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/privacy-policies/github-general-privacy-statement.md",
+              "heading": [
+                "Sharing of Personal Data"
+              ],
+              "chunk_id": "chunk_a523e9aa5d9d9ddd9c764fba",
+              "supporting_text_span": "y applications available on our Marketplace. You are responsible for the data you instruct us to share with these applications. * Other Users and the Public: Depending on y"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_a523e9aa5d9d9ddd9c764fba"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        },
+        {
+          "aspect_id": "router_020_a5",
+          "statement": "The Marketplace Product Provider is responsible for its product’s security and custody of the data it receives.",
+          "necessity": "回答产品提供方的数据责任。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-marketplace-terms-of-service.md",
+              "heading": [
+                "E. Your Data and GitHub's Privacy Policy"
+              ],
+              "chunk_id": "chunk_65d9607208f5f96afca0d68c",
+              "supporting_text_span": "he security of the Developer Product and the custodianship of your data, including your Personal Information (if any), is the responsibility of the Product Provider."
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_65d9607208f5f96afca0d68c"
+            ]
+          ],
+          "notes": "",
+          "optional": false
+        }
+      ],
+      "optional_context": [
+        {
+          "aspect_id": "router_020_a4",
+          "statement": "Marketplace users can review the requested permission scope and accept or deny it at authorization.",
+          "necessity": "回答应用如何获得访问权限。",
+          "supporting_evidence": [
+            {
+              "document_path": "Policies/github-terms/github-marketplace-terms-of-service.md",
+              "heading": [
+                "E. Your Data and GitHub's Privacy Policy"
+              ],
+              "chunk_id": "chunk_65d9607208f5f96afca0d68c",
+              "supporting_text_span": "r private data. You will be able to view the scope of the permissions the Developer Product is requesting, and accept or deny them, when you grant it authorization"
+            }
+          ],
+          "support_type": "direct",
+          "acceptable_supporting_chunk_sets": [
+            [
+              "chunk_65d9607208f5f96afca0d68c"
+            ]
+          ],
+          "notes": "",
+          "optional": true,
+          "origin": "optionalized_from_required",
+          "change_ref": "eval/router_v1_required_aspects_audit_changes.json#router_020_a4"
+        }
+      ],
+      "corpus_gap": []
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "artifact": "router_v1_required_aspects_audit_changes",
+  "status": "suggested_change_set_only",
+  "note": "Advisory output of the independent evaluation-truth audit. Does NOT overwrite the draft truth, benchmark, architecture, or preregistration. Contains no routing gold (no DIRECT/DECOMPOSE label). Apply only the changes below, then freeze eval/router_v1_required_aspects.json.",
+  "audit_blind_to_router_v1_outputs": true,
+  "corpus": {
+    "document_count": 57,
+    "commit": "b9578b546d2506febda1da2cd7431644d58e512c"
+  },
+  "source_integrity": {
+    "router_benchmark_v1.json": {
+      "sha256": "A345CCFD8DABADEDD41AC1ABC341A079709D3BBC699E4EA7B3696A06F76ACF16",
+      "modified_by_audit": false
+    },
+    "router_v1_required_aspects_draft.json": {
+      "sha256": "C2F766B0610C37B899990D0EB8D6BBB229AA25ADD3A7F2A041F66686AF07F547",
+      "modified_by_audit": false
+    },
+    "router_v1_required_aspects_draft.md": {
+      "sha256": "3495E0E143A26E9C38D45E343D028541EB32A605DECF4561B36FB6AB42326D80",
+      "modified_by_audit": false
+    },
+    "router_v1_preregistration.json": {
+      "sha256": "79499CD5A9959C8F4E390FA2D058CF1A70716D6FDD3B35BDB1EF69092BF34123",
+      "modified_by_audit": false
+    },
+    "router_v1_architecture_frozen.md": {
+      "sha256": "FC6AD624D800D1EA946555E3694725361F90BB0D347F3D07979F4770CBBF575B",
+      "modified_by_audit": false
+    },
+    "router_v1_contract.json": {
+      "sha256": "FB5484351EAE3FCC285AB9CE8E819C33E3367CEEA972FFDBCA43CDE7D18D9549",
+      "modified_by_audit": false
+    }
+  },
+  "aspect_level_change_summary": {
+    "KEEP": 65,
+    "EDIT": 1,
+    "MERGE": 0,
+    "SPLIT": 0,
+    "OPTIONALIZE": 4,
+    "REMOVE": 0,
+    "total_aspects": 70
+  },
+  "dataset_level_changes": [
+    {
+      "change_id": "DS_1",
+      "action": "ADD_METADATA_FIELD",
+      "target": "document root",
+      "field": "supporting_evidence_semantics",
+      "value": "verified_examples_not_exhaustive",
+      "reason": "Section 7 requirement. The draft Markdown already states in prose that acceptable_supporting_chunk_sets is verified support, not an exhaustive gold set, but the JSON carries no machine-readable assertion. A blind judge that keys covered/missing/incorrect off chunk hits would wrongly penalize an answer supported by an equivalent chunk. This does not change any aspect fact."
+    },
+    {
+      "change_id": "DS_2",
+      "action": "DEDUPLICATE_SUPPORT_ENTRIES",
+      "targets": ["router_011_a2", "router_014_a1"],
+      "reason": "supporting_evidence lists the same chunk_id twice under the same heading for both aspects. Purely a metadata hygiene fix; no fact change. router_011_a2 is also OPTIONALIZED below, so its support entry moves to optional context.",
+      "fact_change": false
+    }
+  ],
+  "aspect_changes": [
+    {
+      "aspect_id": "router_006_a4",
+      "query_id": "router_006",
+      "action": "OPTIONALIZE",
+      "from": "required_aspects",
+      "to": "optional_context",
+      "statement": "A restriction usually puts content behind authentication; disabling or removal is a last resort when that is not possible.",
+      "necessity": "optional",
+      "atomicity": "atomic",
+      "corpus_support": "direct",
+      "evaluation_clarity": "clear",
+      "reason": "The query asks whether GitHub can limit a release without banning every copy. Aspects a2 (restrict the specific abused instance) and a3 (temporary, not a permanent purge) already answer that. The auth-gating mechanism is helpful detail but an answer omitting it is not substantively incomplete. Requiring it adds a secondary scoring unit on a cross-document query."
+    },
+    {
+      "aspect_id": "router_011_a2",
+      "query_id": "router_011",
+      "action": "OPTIONALIZE",
+      "from": "required_aspects",
+      "to": "optional_context",
+      "statement": "A private-information request must identify a working link to each file and the specific lines containing the information.",
+      "necessity": "optional",
+      "atomicity": "overcombined",
+      "corpus_support": "direct",
+      "evaluation_clarity": "clear",
+      "reason": "The query asks what GitHub would need to assess each item. The substantive assessment need is the concrete security-risk explanation (a3) and the copyright-vs-private-info channel split (a4/a5). Link/line-number mechanics are submission mechanics, and the aspect bundles two separate bullets from the same chunk. Secondary scoring unit on a cross-document query."
+    },
+    {
+      "aspect_id": "router_013_a1",
+      "query_id": "router_013",
+      "action": "OPTIONALIZE",
+      "from": "required_aspects",
+      "to": "optional_context",
+      "statement": "A complete government content-takedown request must come from a relevant official agency, identify illegal content, and specify the local legal basis.",
+      "necessity": "optional",
+      "atomicity": "overcombined",
+      "corpus_support": "direct",
+      "evaluation_clarity": "clear",
+      "reason": "The query asks whether a content-takedown request yields account data and how the two requests are handled. Request-completeness prerequisites are background about validity, not about handling; a2/a3 answer the handling. The aspect also bundles three independently judgeable conditions. Secondary scoring unit on a cross-document query."
+    },
+    {
+      "aspect_id": "router_020_a4",
+      "query_id": "router_020",
+      "action": "OPTIONALIZE",
+      "from": "required_aspects",
+      "to": "optional_context",
+      "statement": "Marketplace users can review the requested permission scope and accept or deny it at authorization.",
+      "necessity": "optional",
+      "atomicity": "atomic",
+      "corpus_support": "direct",
+      "evaluation_clarity": "clear",
+      "reason": "The query asks whether a subprocessor vendor and a Marketplace app are covered by the same commitments, and who is responsible for the app's data access. a1/a2/a3/a5 answer both parts. The OAuth scope-review control is useful context but not required. Secondary scoring unit on a cross-document query."
+    },
+    {
+      "aspect_id": "router_016_a3",
+      "query_id": "router_016",
+      "action": "EDIT",
+      "field": "statement",
+      "old_statement": "The ordinary paid-period continuation term does not override GitHub's separate authority to block a product for policy reasons.",
+      "revised_statement": "Because GitHub may block or disable a Developer Product for legal or policy reasons, paying for a paid Marketplace term does not guarantee continued access.",
+      "necessity": "required",
+      "atomicity": "atomic",
+      "corpus_support": "combined_valid",
+      "evaluation_clarity": "clear",
+      "supporting_evidence_unchanged": true,
+      "reason": "The original wording asserts a precedence rule ('does not override') that the corpus never states; Section D's continuation term concerns cancellation, while Section H separately grants blocking authority. The revised statement is the directly grounded conclusion of Section H and still answers the user's 'does payment guarantee continued access' question without an unsupported legal-interpretation claim."
+    }
+  ],
+  "verified_keep_no_change": [
+    {
+      "aspect_id": "router_015_a1",
+      "note": "Initially suspected statement/support drift resolved: full corpus chunk_82b71e1d710271179f8b4bdd contains both the ToS E.2 confidentiality sentence and the 'will not otherwise use ... unless provided as AI Feature Input' sentence. The truncated supporting_text_span had hidden the former."
+    },
+    {
+      "aspect_id": "router_013_a4",
+      "note": "Initially suspected support gap resolved: full corpus chunk_e38e8b117bf75ca2426fb8a0 contains the exigent-circumstances clause ('In certain exigent circumstances ... we also may share limited information ...'), so the 'limited emergency disclosure' qualifier is supported. Combined inference stands."
+    }
+  ],
+  "proposed_final_statistics": {
+    "required_aspect_total": 66,
+    "required_min": 2,
+    "required_median": 3,
+    "required_mean": 3.3,
+    "required_max": 4,
+    "optional_context_total": 6,
+    "combined_support_count": 4,
+    "corpus_gap_count": 0,
+    "single_document_mean": 2.91,
+    "multi_document_mean": 3.78,
+    "pearson_r_aspect_count_vs_multi_document": 0.776
+  }
+}

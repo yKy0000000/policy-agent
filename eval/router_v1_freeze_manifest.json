@@ -1,0 +1,254 @@
+{
+  "manifest_version": "router_v1_freeze_manifest",
+  "status": "frozen_before_router_v1_outputs",
+  "declaration": "Router V1 experimental specification was frozen before observation of any Router V1 benchmark outcome.",
+  "frozen_at_utc": "2026-09-27T14:25:39Z",
+  "outcome_blind_at_freeze": true,
+  "core_artifacts": [
+    {
+      "path": "eval/router_benchmark_v1.json",
+      "role": "frozen_benchmark",
+      "sha256": "a345ccfd8dabadedd41ac1abc341a079709d3bbc699e4ea7b3696a06f76acf16",
+      "status": "frozen"
+    },
+    {
+      "path": "eval/router_v1_architecture_frozen.md",
+      "role": "frozen_routing_architecture",
+      "sha256": "fc6ad624d800d1ea946555e3694725361f90bb0d347f3d07979f4770cbbf575b",
+      "status": "frozen"
+    },
+    {
+      "path": "eval/router_v1_contract.json",
+      "role": "frozen_router_decomposer_contract",
+      "sha256": "fb5484351eae3fcc285ab9ce8e819c33e3367ceea972ffdbca43cde7d18d9549",
+      "status": "frozen"
+    },
+    {
+      "path": "eval/router_v1_preregistration.json",
+      "role": "frozen_pre_registration",
+      "sha256": "79499cd5a9959c8f4e390fa2d058cf1a70716d6fdd3b35bdb1ef69092bf34123",
+      "status": "frozen"
+    },
+    {
+      "path": "eval/router_v1_required_aspects.json",
+      "role": "frozen_required_aspects_truth",
+      "sha256": "d22a5a919cd5828258491adeea0af3f7d5d8983a27f1226dc3e0fa71801b9b76",
+      "status": "frozen"
+    },
+    {
+      "path": "eval/router_v1_required_aspects.md",
+      "role": "frozen_required_aspects_truth_human_readable",
+      "sha256": "8853b5dee8132febe8a10db2abd01f22989b56260668ba908c555baa26202538",
+      "status": "frozen"
+    }
+  ],
+  "corpus": {
+    "path": "data/site-policy/Policies",
+    "document_count": 57,
+    "commit": "b9578b546d2506febda1da2cd7431644d58e512c",
+    "content_manifest_sha256": "7cb3d94d1bc9dde72aac75e807326f157e588f168d61ed1fdd2d817ffd06b06d",
+    "lexical_index_path": "cache/policy_index.json",
+    "lexical_index_sha256": "dc73a4725ff7361ebd0c28d5b9bef93a433ae6f2b6cd9a65723676e666e6ee82",
+    "semantic_index_path": "cache/semantic_index.json",
+    "semantic_index_sha256": "672f4231d914272da061524e34b845e0d60711ccb335be531cf0df117f2580a1"
+  },
+  "baseline_code": {
+    "baseline_preimplementation_head": "1350b54147e8cf17f3235dbe3988d17de370fef1",
+    "runtime_entry": "src/agent.py:PolicySupportAgent.from_project",
+    "mode": "fixed_top5",
+    "working_tracked_code_must_be_recorded_at_run": true
+  },
+  "router_implementation_commit": "PENDING_IMPLEMENTATION_FREEZE",
+  "experiment_identity": {
+    "rewrite": {
+      "version": "contextual-query-rewrite-v1",
+      "implementation": "src/conversation.py:rewrite_or_keep",
+      "prompt_source_sha256": "72aac5dcf3d72e02f11441f738bc3b47342390473d83061de3c97a7c2c494254",
+      "input": "raw_query_and_recent_history",
+      "max_history_turns": 2,
+      "single_turn_still_rewritten": true,
+      "temperature": 0.0,
+      "max_output_tokens": 96,
+      "failure": "baseline_pipeline_error"
+    },
+    "router": {
+      "input": "exact_shared_contextual_rewrite_only",
+      "model": {
+        "provider_endpoint": "https://api.deepseek.com",
+        "provider_host": "api.deepseek.com",
+        "requested_model_id": "deepseek-v4-flash",
+        "server_model_version": "record_response_value_if_available; otherwise unavailable",
+        "thinking_mode": "disabled",
+        "temperature": 0.0,
+        "timeout_seconds": 30.0,
+        "retry_count": 0,
+        "raw_response_required": true,
+        "max_output_tokens": 96
+      },
+      "prompt_sha256": "104b46283ffe2e504ff5dcd43ecce63107fc780461e2e5e7ff1e48e20a4da74b",
+      "schema_sha256": "651646d655ae5b963815cd168c5a9f023cf2d2d8ad9bddbdeda248e78e309d9b",
+      "allowed_decisions": [
+        "DIRECT",
+        "DECOMPOSE"
+      ],
+      "diagnostic_reason_codes": [
+        "COHERENT_SINGLE_REPRESENTATION",
+        "NO_CLEAR_FAITHFUL_SPLIT",
+        "COVERAGE_SPLIT_RISK"
+      ],
+      "uncertainty": "DIRECT"
+    },
+    "decomposer": {
+      "call_condition": "valid_router_decision_DECOMPOSE_only",
+      "input": "same_exact_shared_contextual_rewrite_only",
+      "model": {
+        "provider_endpoint": "https://api.deepseek.com",
+        "provider_host": "api.deepseek.com",
+        "requested_model_id": "deepseek-v4-flash",
+        "server_model_version": "record_response_value_if_available; otherwise unavailable",
+        "thinking_mode": "disabled",
+        "temperature": 0.0,
+        "timeout_seconds": 30.0,
+        "retry_count": 0,
+        "raw_response_required": true,
+        "max_output_tokens": 256
+      },
+      "prompt_sha256": "6e866974a5a1861da766417b6f5715c7e0b1009b23fbecc66c15a2540946f489",
+      "schema_sha256": "98d15a9221c38d2a65fd7cef07219e308ff40a49889953395bd2b304917190d4",
+      "raw_subquery_min": 2,
+      "raw_subquery_max": 3,
+      "validated_distinct_min": 2,
+      "validated_distinct_max": 3
+    },
+    "retrieval_and_reranker": {
+      "lexical_top_k_per_stream": 20,
+      "semantic_top_k_per_stream": 20,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "reranker_model_source": "src/reranker.py",
+      "stream_top_k": 5,
+      "candidate_union_dedup_key": "chunk_id"
+    },
+    "merge": {
+      "stream_order": [
+        "base",
+        "subquery_1",
+        "subquery_2",
+        "subquery_3"
+      ],
+      "policy": "round_robin_highest_ranked_unselected_chunk_per_stream",
+      "dedup_key": "chunk_id",
+      "final_evidence_target_count": 5,
+      "when_base_returns_less_than_five": "use_baseline_available_count_and_trace",
+      "cross_query_score_comparison": false
+    },
+    "fallback": {
+      "rewrite_failure": "baseline_pipeline_error",
+      "router_call_or_decision_failure": "DIRECT_no_retry",
+      "invalid_reason_code_with_legal_decision": "keep_decision_trace_UNRECOGNIZED",
+      "decomposer_failure_or_less_than_two_valid_subqueries": "DIRECT_no_retry",
+      "subquery_stream_failure": "discard_stream; if_fewer_than_two_successful_subquery_streams_use_existing_base_Top5_as_DIRECT",
+      "base_stream_failure": "baseline_retrieval_error",
+      "poor_DIRECT_retrieval": "no_reroute",
+      "zero_evidence_gain": "generate_with_merged_evidence_no_reroute"
+    },
+    "generation": {
+      "version": "grounded-policy-answer-v1",
+      "temperature": 0.0,
+      "max_output_tokens": 512,
+      "evidence_target_count": 5,
+      "citation_validation": "src/generator.py:validate_citations",
+      "unchanged_from_baseline": true
+    },
+    "oracle_rule": "eval/router_v1_architecture_frozen.md#l-oracle-comparison-rule"
+  },
+  "preregistration_binding": {
+    "preregistration_path": "eval/router_v1_preregistration.json",
+    "preregistration_sha256": "79499cd5a9959c8f4e390fa2d058cf1a70716d6fdd3b35bdb1ef69092bf34123",
+    "final_truth_path": "eval/router_v1_required_aspects.json",
+    "final_truth_sha256": "d22a5a919cd5828258491adeea0af3f7d5d8983a27f1226dc3e0fa71801b9b76",
+    "final_truth_human_readable_path": "eval/router_v1_required_aspects.md",
+    "final_truth_human_readable_sha256": "8853b5dee8132febe8a10db2abd01f22989b56260668ba908c555baa26202538",
+    "note": "The frozen preregistration artifact was not rewritten; binding is recorded only in this manifest to avoid post-hoc preregistration."
+  },
+  "truth_statistics": {
+    "query_count": 20,
+    "required_min": 2,
+    "required_median": 3.0,
+    "required_mean": 3.3,
+    "required_max": 4,
+    "combined_support_aspect_count": 4,
+    "single_document_mean_aspect_count": 2.9091,
+    "multi_document_mean_aspect_count": 3.7778,
+    "pearson_r_aspect_count_vs_author_multi_document": 0.776194,
+    "note": "descriptive only; author multi_document is benchmark metadata, not a routing label or experiment input",
+    "required_aspect_count": 66,
+    "optionalized_aspect_count": 4,
+    "corpus_gap_count": 0
+  },
+  "provenance": [
+    {
+      "path": "eval/router_benchmark_v1_draft.json",
+      "role": "benchmark_generation_draft",
+      "sha256": "2638f308d70b9c6a85d9381cb81aef2bbe593de89528f5b7c4c3976e46514b78",
+      "runtime_input": false
+    },
+    {
+      "path": "eval/router_benchmark_v1_deepseek_audit.md",
+      "role": "benchmark_independent_audit",
+      "sha256": "6b688b68f8408ef00e1a90e6977f90d41ccae8696b0a92c46aa0f42bcefb904a",
+      "runtime_input": false
+    },
+    {
+      "path": "eval/router_benchmark_v1_freeze_gate.md",
+      "role": "benchmark_freeze_gate_record",
+      "sha256": "a2fdb89673159ea5d79b20691af058e381d210a81264034c10071bce66d78c04",
+      "runtime_input": false
+    },
+    {
+      "path": "eval/router_v1_required_aspects_draft.json",
+      "role": "required_aspects_generation_draft",
+      "sha256": "c2f766b0610c37b899990d0eb8d6bbb229aa25add3a7f2a041f66686af07f547",
+      "runtime_input": false
+    },
+    {
+      "path": "eval/router_v1_required_aspects_draft.md",
+      "role": "required_aspects_generation_draft_human_readable",
+      "sha256": "3495e0e143a26e9c38d45e343d028541eb32a605decf4561b36fb6ab42326d80",
+      "runtime_input": false
+    },
+    {
+      "path": "eval/router_v1_required_aspects_deepseek_audit.md",
+      "role": "required_aspects_independent_audit",
+      "sha256": "b815ed0a4a7f8de4c5aa4e3f093032ca9fc827337cb2fa14bd729de9af81ce1f",
+      "runtime_input": false
+    },
+    {
+      "path": "eval/router_v1_required_aspects_audit_changes.json",
+      "role": "required_aspects_audit_change_set",
+      "sha256": "9c4f373ed9dcc030d39d7fffa099dc15afe3008a046a8d5fa67ff2163e0c2792",
+      "runtime_input": false
+    }
+  ],
+  "post_freeze_modification_requires_new_version": {
+    "statement": "Any modification after this freeze point to any item below constitutes Router V2 or a separate new experiment version and cannot count as Router V1.",
+    "items": [
+      "benchmark",
+      "required truth",
+      "Router semantics",
+      "Router prompt",
+      "Router schema",
+      "Router model",
+      "Decomposer prompt",
+      "Decomposer schema",
+      "Decomposer model",
+      "rewrite behavior",
+      "retrieval Top-K",
+      "reranker",
+      "merge rules",
+      "evidence budget",
+      "fallback rules",
+      "oracle comparison rule"
+    ]
+  },
+  "change_policy": true
+}

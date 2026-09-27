@@ -1,0 +1,161 @@
+{
+  "artifact": "router_benchmark_v1_audit_changes",
+  "status": "suggested_changes_only",
+  "note": "Advisory output of the independent audit. Does NOT overwrite router_benchmark_v1_draft.json or router_benchmark_v1_draft.md. No routing gold (DIRECT/DECOMPOSE) is recorded anywhere in this file.",
+  "corpus": {
+    "document_count": 57,
+    "commit": "b9578b546d2506febda1da2cd7431644d58e512c",
+    "policies_root": "data/site-policy/Policies"
+  },
+  "source_integrity": {
+    "router_benchmark_v1_draft.json": {
+      "sha256": "2638F308D70B9C6A85D9381CB81AEF2BBE593DE89528F5B7C4C3976E46514B78",
+      "modified_by_audit": false
+    },
+    "router_benchmark_v1_draft.md": {
+      "sha256": "FD213C5A89FD6A56B9744F72378B06AD1B7E0B7F3A2197F2DF9A6A89A9DC4087",
+      "modified_by_audit": false
+    }
+  },
+  "summary": {
+    "KEEP": 17,
+    "EDIT": 0,
+    "RECLASSIFY": 3,
+    "REMOVE": 0,
+    "usable_total": 20
+  },
+  "changes": [
+    {
+      "id": "router_002",
+      "disposition": "RECLASSIFY",
+      "query_unchanged": true,
+      "reason": "Claimed multi_document is not required. github-synthetic-media-and-ai-tools.md alone answers the question: it forbids projects designed for/enabling synthetic-media creation of NCII and provides the project-context evaluation factors (configuration, marketing, README/documentation, external links, maintainer support). github-non-consensual-intimate-imagery.md supplies only a definition the synthetic-media policy already names and links. The item reads as cross-topic but is single-document, so it is a strong hard-looking localized control.",
+      "benchmark_role_before": "multi_document decomposition-looking case",
+      "benchmark_role_after": "hard-looking localized control",
+      "benchmark_property_before": [
+        "multi_document",
+        "representation_mismatch",
+        "multi_requirement"
+      ],
+      "benchmark_property_after": [
+        "direct_control",
+        "rule_exception",
+        "hard_looking_control",
+        "representation_mismatch",
+        "multi_requirement"
+      ],
+      "likely_evidence_structure_before": "multi_document",
+      "likely_evidence_structure_after": "localized",
+      "evidence_documents": [
+        "Policies/acceptable-use-policies/github-synthetic-media-and-ai-tools.md"
+      ]
+    },
+    {
+      "id": "router_009",
+      "disposition": "RECLASSIFY",
+      "query_unchanged": true,
+      "reason": "Claimed multi_document is not required. github-bug-bounty-program-legal-safe-harbor.md alone covers all three needs: section 1 safe-harbor coverage, section 2 third-party limits, section 3 limited waiver of other site policies. coordinated-disclosure-of-security-vulnerabilities.md is only a landing page linking to the bounty site and the safe-harbor policy. Fragmentation is real but intra-document (multi_section), not cross-document.",
+      "benchmark_role_before": "multi_document decomposition-looking case",
+      "benchmark_role_after": "intra-document control (single document, several sections)",
+      "benchmark_property_before": [
+        "multi_document",
+        "rule_exception",
+        "rule_process",
+        "fragmented_evidence",
+        "multi_requirement"
+      ],
+      "benchmark_property_after": [
+        "direct_control",
+        "rule_exception",
+        "rule_process",
+        "fragmented_evidence",
+        "hard_looking_control",
+        "multi_requirement"
+      ],
+      "likely_evidence_structure_before": "multi_document",
+      "likely_evidence_structure_after": "multi_section",
+      "evidence_documents": [
+        "Policies/security-policies/github-bug-bounty-program-legal-safe-harbor.md"
+      ]
+    },
+    {
+      "id": "router_016",
+      "disposition": "RECLASSIFY",
+      "query_unchanged": true,
+      "reason": "Property-only correction. The item already is a single-document (github-marketplace-terms-of-service.md) multi-section control; its broad surface (notification, paid-term/access, refund) around one agreement also makes it a valid broad_coherent_control, addressing the under-populated broad-coherent-control bucket. Additionally, the 'does payment guarantee continued access' sub-question is answered only by combining section D (service active for the paid period) with section H (GitHub may block for policy reasons).",
+      "benchmark_role_before": "direct_control (multi_section)",
+      "benchmark_role_after": "hard-looking intra-document control / broad-coherent control",
+      "benchmark_property_before": [
+        "direct_control",
+        "rule_exception",
+        "rule_process",
+        "fragmented_evidence",
+        "multi_requirement"
+      ],
+      "benchmark_property_after": [
+        "direct_control",
+        "rule_exception",
+        "rule_process",
+        "fragmented_evidence",
+        "broad_coherent_control",
+        "multi_requirement"
+      ],
+      "likely_evidence_structure_before": "multi_section",
+      "likely_evidence_structure_after": "multi_section",
+      "evidence_documents": [
+        "Policies/github-terms/github-marketplace-terms-of-service.md"
+      ]
+    }
+  ],
+  "no_change_but_flagged": [
+    {
+      "id": "router_001",
+      "disposition": "KEEP",
+      "flag": "representation_mismatch is weak/over-claimed; user wording already matches policy vocabulary. multi_document remains genuine."
+    },
+    {
+      "id": "router_008",
+      "disposition": "KEEP",
+      "flag": "Shortest query (25 words) and it names the trademark policy directly; weakest hard control, weak against length heuristics."
+    },
+    {
+      "id": "router_010",
+      "disposition": "KEEP",
+      "flag": "direct_control means single source document only; answer spans DMCA steps 3/4 and section D, so it is also an intra-document fragmentation case."
+    },
+    {
+      "id": "router_013",
+      "disposition": "KEEP",
+      "flag": "Mild route leakage: 'the two requests' enumerates the answer structure."
+    },
+    {
+      "id": "router_014",
+      "disposition": "KEEP",
+      "flag": "Same document-count vs evidence-structure caveat as router_010."
+    },
+    {
+      "id": "router_015",
+      "disposition": "KEEP",
+      "flag": "Longest query (39 words) yet single-document; best length-heuristic control. Optionally could also carry broad_coherent_control."
+    },
+    {
+      "id": "router_017",
+      "disposition": "KEEP",
+      "flag": "Weakest naturalness among multi-document cases: two sponsor-promotion behaviours joined by 'then'."
+    },
+    {
+      "id": "router_019",
+      "disposition": "KEEP",
+      "flag": "Same document-count vs evidence-structure caveat as router_010."
+    }
+  ],
+  "corrected_coverage_after_changes": {
+    "likely_localized": ["router_002", "router_004", "router_005", "router_008", "router_012"],
+    "likely_multi_section_single_document": ["router_009", "router_010", "router_014", "router_015", "router_016", "router_019"],
+    "likely_multi_document": ["router_001", "router_003", "router_006", "router_007", "router_011", "router_013", "router_017", "router_018", "router_020"],
+    "representation_mismatch": ["router_001", "router_002", "router_007", "router_011", "router_013", "router_015", "router_017", "router_020"],
+    "multi_requirement_effective": "20 of 20 (every query has >= 2 explicit sub-asks) - property is near-uniform and non-discriminative as currently defined",
+    "hard_looking_controls": ["router_002", "router_004", "router_005", "router_008", "router_009", "router_010", "router_014", "router_015", "router_016", "router_019"],
+    "broad_coherent_controls": ["router_008", "router_012", "router_016"]
+  }
+}
