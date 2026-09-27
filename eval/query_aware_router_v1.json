@@ -1,0 +1,116 @@
+{
+  "version": "query-structure-router-v1",
+  "status": "frozen",
+  "input": "rewritten_query; for the frozen single-turn evaluation sets = the original query",
+  "normalization": {
+    "strip": true,
+    "collapse_whitespace": true,
+    "regex_flags": "IGNORECASE"
+  },
+  "signals": {
+    "question_marks_ge_2": {
+      "definition": "count('?') >= 2"
+    },
+    "interrogative_words_ge_2": {
+      "pattern": "\\b(what|where|when|which|who|whom|whose|how|why)\\b",
+      "broad_if": "count >= 2"
+    },
+    "list_markers": {
+      "pattern": "(^|\\n)\\s*([-*\\u2022]|\\d+[.)])\\s",
+      "additional": "';' present",
+      "broad_if": "true"
+    },
+    "multi_clause_conjunction": {
+      "definition": "count(',') >= 2 and re.search(r'\\b(and|or)\\b', q, IGNORECASE)",
+      "broad_if": "true"
+    },
+    "words_gt_35": {
+      "definition": "len(q.split()) > 35",
+      "broad_if": "true"
+    }
+  },
+  "rule": "SIMPLE iff no signal fires; otherwise BROAD (conservative default to BROAD)",
+  "no_llm": true,
+  "prohibited": "Must not be edited after the first Stage 1 call. Any change requires a new version and full revalidation; Stage 1 may not tune this rule on observed results.",
+  "distribution": {
+    "validation_v1_50": {
+      "BROAD": 29,
+      "SIMPLE": 21,
+      "labels": {
+        "VAL-001-001": "BROAD",
+        "VAL-001-002": "SIMPLE",
+        "VAL-001-003": "SIMPLE",
+        "VAL-001-004": "SIMPLE",
+        "VAL-001-005": "BROAD",
+        "VAL-001-006": "BROAD",
+        "VAL-001-007": "BROAD",
+        "VAL-001-008": "BROAD",
+        "VAL-001-009": "SIMPLE",
+        "VAL-001-010": "SIMPLE",
+        "VAL-001-011": "SIMPLE",
+        "VAL-001-012": "BROAD",
+        "VAL-001-013": "SIMPLE",
+        "VAL-001-014": "SIMPLE",
+        "VAL-001-015": "SIMPLE",
+        "VAL-001-016": "BROAD",
+        "VAL-001-017": "BROAD",
+        "VAL-001-018": "BROAD",
+        "VAL-001-019": "BROAD",
+        "VAL-001-020": "BROAD",
+        "VAL-001-021": "SIMPLE",
+        "VAL-001-022": "BROAD",
+        "VAL-001-023": "BROAD",
+        "VAL-001-024": "BROAD",
+        "VAL-001-025": "BROAD",
+        "VAL-001-026": "BROAD",
+        "VAL-001-027": "SIMPLE",
+        "VAL-001-028": "SIMPLE",
+        "VAL-001-029": "BROAD",
+        "VAL-001-030": "SIMPLE",
+        "VAL-001-031": "SIMPLE",
+        "VAL-001-032": "SIMPLE",
+        "VAL-001-033": "SIMPLE",
+        "VAL-001-034": "SIMPLE",
+        "VAL-001-035": "SIMPLE",
+        "VAL-001-036": "BROAD",
+        "VAL-001-037": "BROAD",
+        "VAL-001-038": "BROAD",
+        "VAL-001-039": "BROAD",
+        "VAL-001-040": "SIMPLE",
+        "VAL-001-041": "BROAD",
+        "VAL-001-042": "BROAD",
+        "VAL-001-043": "BROAD",
+        "VAL-001-044": "BROAD",
+        "VAL-001-045": "BROAD",
+        "VAL-001-046": "BROAD",
+        "VAL-001-047": "BROAD",
+        "VAL-001-048": "BROAD",
+        "VAL-001-049": "SIMPLE",
+        "VAL-001-050": "SIMPLE"
+      }
+    },
+    "broad_v3_16": {
+      "BROAD": 9,
+      "SIMPLE": 7,
+      "labels": {
+        "V3-01": "BROAD",
+        "V3-02": "SIMPLE",
+        "V3-03": "SIMPLE",
+        "V3-04": "BROAD",
+        "V3-05": "BROAD",
+        "V3-06": "SIMPLE",
+        "V3-07": "SIMPLE",
+        "V3-08": "SIMPLE",
+        "V3-09": "BROAD",
+        "V3-10": "BROAD",
+        "V3-11": "SIMPLE",
+        "V3-12": "BROAD",
+        "V3-13": "SIMPLE",
+        "V3-14": "BROAD",
+        "V3-15": "BROAD",
+        "V3-16": "BROAD"
+      }
+    }
+  },
+  "v3_note": "V3 queries are topic-broad by construction; this router detects multi-ask structure only. Topic-broad single-ask queries route SIMPLE by design in v1."
+}

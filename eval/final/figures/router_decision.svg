@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="748" viewBox="0 0 1200 748">
+<rect width="1200" height="748" fill="#FFFFFF"/>
+<text x="54" y="42.1" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">A1 / CONTEXT ALLOCATION</text>
+<text x="54" y="93.0" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="start">The router did not earn its extra context</text>
+<text x="54" y="129.9" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start">Four reference arms shown; the frozen Pareto decision compares all five arms and all quality axes.</text>
+<line x1="54" y1="152" x2="1146" y2="152" stroke="#C9D3D9" stroke-width="1"/>
+<text x="55" y="188.1" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">POLICY</text>
+<text x="383" y="188.1" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">PROVIDER TOKENS / QUERY</text>
+<text x="967" y="188.1" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">COMPLETE</text>
+<text x="1117" y="188.1" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end">ROLE</text>
+<text x="56" y="246.7" fill="#677783" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">Fixed Top5</text>
+<rect x="383" y="231" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="231" width="203.03770769230766" height="17" rx="8" fill="#677783"/>
+<text x="596.0377076923077" y="242.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">2,533</text>
+<text x="978" y="246.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">43/50</text>
+<text x="1131" y="244.0" fill="#677783" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end">cost floor</text>
+<rect x="48" y="292" width="1090" height="57" rx="7" fill="#E3F3F0"/>
+<text x="56" y="322.7" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">Evidence selector</text>
+<rect x="383" y="307" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="307" width="262.9927846153846" height="17" rx="8" fill="#087F77"/>
+<text x="655.9927846153846" y="318.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">3,281</text>
+<text x="978" y="322.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">44/50</text>
+<text x="1131" y="320.0" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end">reference</text>
+<rect x="48" y="368" width="1090" height="57" rx="7" fill="#FAECE9"/>
+<text x="56" y="398.7" fill="#AF483E" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">Query router</text>
+<rect x="383" y="383" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="383" width="293.98026153846155" height="17" rx="8" fill="#AF483E"/>
+<text x="686.9802615384615" y="394.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">3,668</text>
+<text x="978" y="398.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">44/50</text>
+<text x="1131" y="396.0" fill="#AF483E" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end">KILL</text>
+<text x="56" y="474.7" fill="#315F9C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">No-router adaptive</text>
+<rect x="383" y="459" width="521" height="17" rx="8" fill="#F3F6F7"/>
+<rect x="383" y="459" width="496.06413846153845" height="17" rx="8" fill="#315F9C"/>
+<text x="889.0641384615385" y="470.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">6,189</text>
+<text x="978" y="474.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start">46/50</text>
+<text x="1131" y="472.0" fill="#315F9C" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end">ceiling</text>
+<line x1="54" y1="526" x2="1146" y2="526" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="562.8" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start">STRICT DOMINANCE: EVIDENCE SELECTOR  →  QUERY ROUTER</text>
+<text x="54" y="596.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">Same answer quality</text>
+<text x="54" y="626.8" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">44/50 complete  ·  196/208 required aspects</text>
+<text x="461" y="596.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">Lower cost</text>
+<text x="461" y="626.8" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">3,281 vs 3,668 tokens/query</text>
+<text x="823" y="596.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">Fewer failures</text>
+<text x="823" y="626.8" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">0 vs 1 regressions</text>
+<text x="823" y="654.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">1 vs 2 grounding issues</text>
+<line x1="54" y1="689" x2="1146" y2="689" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="717.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Dominance also requires no worse coverage, regressions or grounding; bar position alone is not the test.</text>
+<text x="54" y="739.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/final/final_metrics.json · frozen A1 Pareto</text>
+</svg>

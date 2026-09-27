@@ -1,0 +1,693 @@
+{
+  "version": "a1-failure-analysis-v1",
+  "status": "complete",
+  "scope": "Residual query-required failures after A1, across the four surviving arms (fixed_top5, coverage_selector_v2, adaptive_prefix_v1, no_router_adaptive_v1).",
+  "inputs": {
+    "frozen_quality": "a1_blind_answer_quality_frozen_v1.json",
+    "frozen_quality_sha256": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+    "candidate_order_used_by_pipeline": "a0_bge_rerank_orders.json",
+    "context_diagnostics": "human_aware_context_v1.json",
+    "human_truth": "frozen_human_verdicts_v1.json"
+  },
+  "totals": {
+    "query_required_aspects": 208,
+    "aspects_missing_in_at_least_one_arm": 16,
+    "distinct_cases_with_residual_failure": 10,
+    "missing_by_route": {
+      "BROAD": 7,
+      "SIMPLE": 9
+    },
+    "per_arm_missing": {
+      "fixed_top5": 12,
+      "coverage_selector_v2": 12,
+      "adaptive_prefix_v1": 8,
+      "no_router_adaptive_v1": 6
+    }
+  },
+  "taxonomy_counts": {
+    "RANKING_WEAKNESS": 2,
+    "SELECTION_BUDGET": 6,
+    "GENERATION_MISS": 6,
+    "REPRESENTATION_CANDIDATE": 2
+  },
+  "taxonomy_cases": {
+    "RANKING_WEAKNESS": [
+      "VAL-001-001"
+    ],
+    "SELECTION_BUDGET": [
+      "VAL-001-006",
+      "VAL-001-033"
+    ],
+    "GENERATION_MISS": [
+      "VAL-001-008",
+      "VAL-001-011",
+      "VAL-001-027",
+      "VAL-001-032",
+      "VAL-001-039",
+      "VAL-001-050"
+    ],
+    "REPRESENTATION_CANDIDATE": [
+      "VAL-001-046"
+    ]
+  },
+  "items": [
+    {
+      "case_id": "VAL-001-001",
+      "aspect_id": "VAL-001-001-F02",
+      "route": "BROAD",
+      "statement": "The counter notice is sworn under penalty of perjury.",
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 22,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "primary_failure_type": "RANKING_WEAKNESS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-001",
+      "aspect_id": "VAL-001-001-F03",
+      "route": "BROAD",
+      "statement": "Intentionally false sworn information can cause criminal and civil consequences.",
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 22,
+      "missing_in_arms": [
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "primary_failure_type": "RANKING_WEAKNESS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-006",
+      "aspect_id": "VAL-001-006-F02",
+      "route": "BROAD",
+      "statement": "It must identify allegedly infringing material specifically enough for GitHub to locate it, including a URL at minimum.",
+      "support_chunks": [
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 6,
+      "missing_in_arms": [
+        "fixed_top5"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "SELECTION_BUDGET",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02",
+      "route": "BROAD",
+      "statement": "Email submissions should include a plain-text version in the email body even if attached.",
+      "support_chunks": [
+        "chunk_266d98caef0a483344635953"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 1,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "GENERATION_MISS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-011",
+      "aspect_id": "VAL-001-011-F01",
+      "route": "SIMPLE",
+      "statement": "GitHub prohibits using the platform to organize, promote, threaten, or incite violence.",
+      "support_chunks": [
+        "chunk_ae41e789bbbed39cb12b5443"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 1,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "GENERATION_MISS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-027",
+      "aspect_id": "VAL-001-027-F01",
+      "route": "SIMPLE",
+      "statement": "The partner must not resell GitHub products under the agreement.",
+      "support_chunks": [
+        "chunk_9f80d858e3246cbc81d58e68"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 3,
+      "missing_in_arms": [
+        "no_router_adaptive_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "GENERATION_MISS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F02",
+      "route": "SIMPLE",
+      "statement": "Actions cannot be used for cryptomining.",
+      "support_chunks": [
+        "chunk_21c14e57ff95da6ba1659aaf"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 1,
+      "missing_in_arms": [
+        "adaptive_prefix_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "GENERATION_MISS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F01",
+      "route": "SIMPLE",
+      "statement": "Maintainers can publish community-specific expectations for project interaction.",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 6,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "SELECTION_BUDGET",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F02",
+      "route": "SIMPLE",
+      "statement": "People with repository write access can edit, delete, or hide comments.",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 6,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "SELECTION_BUDGET",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F03",
+      "route": "SIMPLE",
+      "statement": "Authorized repository members can lock disruptive conversations.",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 6,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "SELECTION_BUDGET",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F04",
+      "route": "SIMPLE",
+      "statement": "An account or organization can block a user.",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 6,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "SELECTION_BUDGET",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F05",
+      "route": "SIMPLE",
+      "statement": "A public project can set temporary interaction limits when facing unwanted attention.",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 6,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "SELECTION_BUDGET",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-039",
+      "aspect_id": "VAL-001-039-F03",
+      "route": "BROAD",
+      "statement": "Application Terms remain part of the agreement unless GitHub agrees otherwise in writing.",
+      "support_chunks": [
+        "chunk_8c88d9a6aab4ed4705a2c814"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 1,
+      "missing_in_arms": [
+        "adaptive_prefix_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "GENERATION_MISS",
+      "representation_candidate": false
+    },
+    {
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03",
+      "route": "BROAD",
+      "statement": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": false,
+      "candidate_best_rank_pipeline": null,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "primary_failure_type": "REPRESENTATION_CANDIDATE",
+      "representation_candidate": true
+    },
+    {
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04",
+      "route": "BROAD",
+      "statement": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": false,
+      "candidate_best_rank_pipeline": null,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "primary_failure_type": "REPRESENTATION_CANDIDATE",
+      "representation_candidate": true
+    },
+    {
+      "case_id": "VAL-001-050",
+      "aspect_id": "VAL-001-050-F01",
+      "route": "SIMPLE",
+      "statement": "The commitment applies before GitHub brings a non-defensive claim arising from termination of a Covered License.",
+      "support_chunks": [
+        "chunk_aaba9b84619227b3f737900e"
+      ],
+      "n_support_chunks": 1,
+      "in_candidate_union": true,
+      "candidate_best_rank_pipeline": 1,
+      "missing_in_arms": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1"
+      ],
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "primary_failure_type": "GENERATION_MISS",
+      "representation_candidate": false
+    }
+  ],
+  "representation_candidates": [
+    {
+      "case_id": "VAL-001-046",
+      "route": "BROAD",
+      "aspects": [
+        "VAL-001-046-F03",
+        "VAL-001-046-F04"
+      ],
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "pipeline_original_rank": null,
+      "probe_original_runtime_rank": null,
+      "probe_requirement_query_ranks": {
+        "req_withhold": 1,
+        "req_email_process": 3,
+        "req_urgent": 1
+      },
+      "status": "strong candidate; only case classified REPRESENTATION_CANDIDATE"
+    },
+    {
+      "case_id": "VAL-001-001",
+      "route": "BROAD",
+      "aspects": [
+        "VAL-001-001-F02",
+        "VAL-001-001-F03"
+      ],
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "pipeline_original_rank": 22,
+      "probe_original_runtime_rank": 12,
+      "probe_requirement_query_ranks": {
+        "req_assert": 1,
+        "req_legalrisk": 2
+      },
+      "status": "uncertain (ranking weakness under the pipeline order; rank is within reach under the runtime order) - not counted as REPRESENTATION_CANDIDATE"
+    }
+  ],
+  "a2_trigger": {
+    "status": "WEAK_TRIGGER",
+    "confidence": "low-moderate",
+    "basis": "Exactly one BROAD multi-requirement case (VAL-001-046) has a requirement whose supporting evidence is entirely absent from the original-query candidate union yet is surfaced at rank 1 by a faithful requirement query. One further case (VAL-001-001) is uncertain.",
+    "not_a_default_hot_path": true,
+    "dominant_residual_layers": [
+      "GENERATION_MISS (6)",
+      "SELECTION_BUDGET (6)",
+      "RANKING_WEAKNESS (2)",
+      "REPRESENTATION_CANDIDATE (2)"
+    ]
+  },
+  "probe_artifact": "a1_representation_probe_v1.json",
+  "caveats": [
+    "a0_bge_rerank_orders.json (the order the A1 arms actually consumed) differs from the current-runtime reranked order in all 50 cases; source fingerprints match but the runtime retriever does not bit-reproduce the frozen a0 order. Candidate ranks for pipeline behaviour use a0; the counterfactual probe uses one consistent retriever for original and requirement queries.",
+    "The probe uses no generation LLM and changes no index/model/depth; it is diagnostic only."
+  ]
+}

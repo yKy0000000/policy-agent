@@ -1,0 +1,1661 @@
+{
+  "reviewer": "Reviewer 1",
+  "information_scope": "Read the full human_truth_contract_v1.md and only the blinded review packet for review content (case_id, aspect_id, query, statement); no evidence, model outputs, router, arms, replay, coverage, answers, or other reviewer work.",
+  "judgments": [
+    {
+      "aspect_id": "VAL-001-001-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a counter notice asserts or risks; this is a core assertion or legal risk."
+    },
+    {
+      "aspect_id": "VAL-001-001-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a counter notice asserts or risks; this is a core assertion or legal risk."
+    },
+    {
+      "aspect_id": "VAL-001-001-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a counter notice asserts or risks; this is a core assertion or legal risk."
+    },
+    {
+      "aspect_id": "VAL-001-001-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a counter notice asserts or risks; this is a core assertion or legal risk."
+    },
+    {
+      "aspect_id": "VAL-001-002-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked for checks before a copyright notice; this is a material prefiling check."
+    },
+    {
+      "aspect_id": "VAL-001-002-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked for checks before a copyright notice; this is a material prefiling check."
+    },
+    {
+      "aspect_id": "VAL-001-002-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked for checks before a copyright notice; this is a material prefiling check."
+    },
+    {
+      "aspect_id": "VAL-001-002-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked for checks before a copyright notice; this is a material prefiling check."
+    },
+    {
+      "aspect_id": "VAL-001-002-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked for checks before a copyright notice; this is a material prefiling check."
+    },
+    {
+      "aspect_id": "VAL-001-003-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which disclosures fall outside private-information removal; this is a direct exclusion."
+    },
+    {
+      "aspect_id": "VAL-001-003-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which disclosures fall outside private-information removal; this is a direct exclusion."
+    },
+    {
+      "aspect_id": "VAL-001-003-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which disclosures fall outside private-information removal; this is a direct exclusion."
+    },
+    {
+      "aspect_id": "VAL-001-003-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The query asks which disclosures do not qualify; a copyright-process referral is a different issue."
+    },
+    {
+      "aspect_id": "VAL-001-004-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the trademark report must give GitHub; this is a required report element."
+    },
+    {
+      "aspect_id": "VAL-001-004-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the trademark report must give GitHub; this is a required report element."
+    },
+    {
+      "aspect_id": "VAL-001-004-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the trademark report must give GitHub; this is a required report element."
+    },
+    {
+      "aspect_id": "VAL-001-004-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the trademark report must give GitHub; this is a required report element."
+    },
+    {
+      "aspect_id": "VAL-001-004-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the trademark report must give GitHub; this is a required report element."
+    },
+    {
+      "aspect_id": "VAL-001-004-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the trademark report must give GitHub; this is a required report element."
+    },
+    {
+      "aspect_id": "VAL-001-005-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the counter notice identifies or commits to; this is a required element."
+    },
+    {
+      "aspect_id": "VAL-001-005-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the counter notice identifies or commits to; this is a required element."
+    },
+    {
+      "aspect_id": "VAL-001-005-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the counter notice identifies or commits to; this is a required element."
+    },
+    {
+      "aspect_id": "VAL-001-005-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the counter notice identifies or commits to; this is a required element."
+    },
+    {
+      "aspect_id": "VAL-001-005-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what the counter notice identifies or commits to; this is a required element."
+    },
+    {
+      "aspect_id": "VAL-001-006-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what makes the partial-repository complaint actionable; this is a required detail."
+    },
+    {
+      "aspect_id": "VAL-001-006-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what makes the partial-repository complaint actionable; this is a required detail."
+    },
+    {
+      "aspect_id": "VAL-001-006-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what makes the partial-repository complaint actionable; this is a required detail."
+    },
+    {
+      "aspect_id": "VAL-001-006-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what makes the partial-repository complaint actionable; this is a required detail."
+    },
+    {
+      "aspect_id": "VAL-001-006-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what makes the partial-repository complaint actionable; this is a required detail."
+    },
+    {
+      "aspect_id": "VAL-001-007-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to prepare and what delays review; this supplies a material preparation or delay point."
+    },
+    {
+      "aspect_id": "VAL-001-007-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to prepare and what delays review; this supplies a material preparation or delay point."
+    },
+    {
+      "aspect_id": "VAL-001-007-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to prepare and what delays review; this supplies a material preparation or delay point."
+    },
+    {
+      "aspect_id": "VAL-001-007-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to prepare and what delays review; this supplies a material preparation or delay point."
+    },
+    {
+      "aspect_id": "VAL-001-008-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to send the notice and when waiting begins; this directly answers that process."
+    },
+    {
+      "aspect_id": "VAL-001-008-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to send the notice and when waiting begins; this directly answers that process."
+    },
+    {
+      "aspect_id": "VAL-001-008-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to send the notice and when waiting begins; this directly answers that process."
+    },
+    {
+      "aspect_id": "VAL-001-008-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to send the notice and when waiting begins; this directly answers that process."
+    },
+    {
+      "aspect_id": "VAL-001-009-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a circumvention claim must establish; this states part of that showing."
+    },
+    {
+      "aspect_id": "VAL-001-009-F02",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Where to send a complaint does not establish the circumvention claim."
+    },
+    {
+      "aspect_id": "VAL-001-009-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a circumvention claim must establish; this states part of that showing."
+    },
+    {
+      "aspect_id": "VAL-001-009-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a circumvention claim must establish; this states part of that showing."
+    },
+    {
+      "aspect_id": "VAL-001-009-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what a circumvention claim must establish; this states part of that showing."
+    },
+    {
+      "aspect_id": "VAL-001-010-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens to forks under the two processes; this states an outcome or necessary requester action."
+    },
+    {
+      "aspect_id": "VAL-001-010-F02",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The reasons forks differ explain the policy but can be omitted from the outcome."
+    },
+    {
+      "aspect_id": "VAL-001-010-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens to forks under the two processes; this states an outcome or necessary requester action."
+    },
+    {
+      "aspect_id": "VAL-001-010-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens to forks under the two processes; this states an outcome or necessary requester action."
+    },
+    {
+      "aspect_id": "VAL-001-010-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens to forks under the two processes; this states an outcome or necessary requester action."
+    },
+    {
+      "aspect_id": "VAL-001-010-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens to forks under the two processes; this states an outcome or necessary requester action."
+    },
+    {
+      "aspect_id": "VAL-001-011-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how violent documentary content is treated and visibility limited; this states a governing rule or outcome."
+    },
+    {
+      "aspect_id": "VAL-001-011-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how violent documentary content is treated and visibility limited; this states a governing rule or outcome."
+    },
+    {
+      "aspect_id": "VAL-001-011-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how violent documentary content is treated and visibility limited; this states a governing rule or outcome."
+    },
+    {
+      "aspect_id": "VAL-001-011-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "A warning is helpful posting guidance, but the query asks allowance and visibility."
+    },
+    {
+      "aspect_id": "VAL-001-011-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how violent documentary content is treated and visibility limited; this states a governing rule or outcome."
+    },
+    {
+      "aspect_id": "VAL-001-012-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what authorized people may request or prove; this states authority, action, or proof."
+    },
+    {
+      "aspect_id": "VAL-001-012-F02",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The Support portal is a filing channel; the query asks possible actions and proof."
+    },
+    {
+      "aspect_id": "VAL-001-012-F03",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Identifying the account is a filing detail, not an action or proof of authority."
+    },
+    {
+      "aspect_id": "VAL-001-012-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what authorized people may request or prove; this states authority, action, or proof."
+    },
+    {
+      "aspect_id": "VAL-001-012-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what authorized people may request or prove; this states authority, action, or proof."
+    },
+    {
+      "aspect_id": "VAL-001-012-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what authorized people may request or prove; this states authority, action, or proof."
+    },
+    {
+      "aspect_id": "VAL-001-013-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which promotion and engagement conduct is prohibited; this is a directly relevant prohibition."
+    },
+    {
+      "aspect_id": "VAL-001-013-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which promotion and engagement conduct is prohibited; this is a directly relevant prohibition."
+    },
+    {
+      "aspect_id": "VAL-001-013-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which promotion and engagement conduct is prohibited; this is a directly relevant prohibition."
+    },
+    {
+      "aspect_id": "VAL-001-013-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Phishing is prohibited, but the query focuses on automated promotion and engagement."
+    },
+    {
+      "aspect_id": "VAL-001-013-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked which promotion and engagement conduct is prohibited; this is a directly relevant prohibition."
+    },
+    {
+      "aspect_id": "VAL-001-014-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted research or archiving and collection-independent limits; this states one of those rules."
+    },
+    {
+      "aspect_id": "VAL-001-014-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted research or archiving and collection-independent limits; this states one of those rules."
+    },
+    {
+      "aspect_id": "VAL-001-014-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted research or archiving and collection-independent limits; this states one of those rules."
+    },
+    {
+      "aspect_id": "VAL-001-014-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted research or archiving and collection-independent limits; this states one of those rules."
+    },
+    {
+      "aspect_id": "VAL-001-015-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what harassment covers and whether unwelcome conduct alone qualifies; this supplies a distinction."
+    },
+    {
+      "aspect_id": "VAL-001-015-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what harassment covers and whether unwelcome conduct alone qualifies; this supplies a distinction."
+    },
+    {
+      "aspect_id": "VAL-001-015-F03",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Evading moderation is related misconduct, not needed to distinguish harassment from disagreement."
+    },
+    {
+      "aspect_id": "VAL-001-015-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what harassment covers and whether unwelcome conduct alone qualifies; this supplies a distinction."
+    },
+    {
+      "aspect_id": "VAL-001-016-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how privacy rules treat personal data, photos, public status, and hostile context; this addresses one."
+    },
+    {
+      "aspect_id": "VAL-001-016-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how privacy rules treat personal data, photos, public status, and hostile context; this addresses one."
+    },
+    {
+      "aspect_id": "VAL-001-016-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how privacy rules treat personal data, photos, public status, and hostile context; this addresses one."
+    },
+    {
+      "aspect_id": "VAL-001-016-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how privacy rules treat personal data, photos, public status, and hostile context; this addresses one."
+    },
+    {
+      "aspect_id": "VAL-001-017-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when similar identity or parody is allowed or prohibited; this draws that boundary."
+    },
+    {
+      "aspect_id": "VAL-001-017-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when similar identity or parody is allowed or prohibited; this draws that boundary."
+    },
+    {
+      "aspect_id": "VAL-001-017-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when similar identity or parody is allowed or prohibited; this draws that boundary."
+    },
+    {
+      "aspect_id": "VAL-001-017-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when similar identity or parody is allowed or prohibited; this draws that boundary."
+    },
+    {
+      "aspect_id": "VAL-001-018-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked the harmful-misinformation boundary and contextual exceptions; this states a defining rule."
+    },
+    {
+      "aspect_id": "VAL-001-018-F02",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Unsafe medical claims illustrate the rule; the harm threshold answers the distinction."
+    },
+    {
+      "aspect_id": "VAL-001-018-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked the harmful-misinformation boundary and contextual exceptions; this states a defining rule."
+    },
+    {
+      "aspect_id": "VAL-001-018-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked the harmful-misinformation boundary and contextual exceptions; this states a defining rule."
+    },
+    {
+      "aspect_id": "VAL-001-019-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked barred generative-media uses and intent assessment; this states a barred use or assessment factor."
+    },
+    {
+      "aspect_id": "VAL-001-019-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked barred generative-media uses and intent assessment; this states a barred use or assessment factor."
+    },
+    {
+      "aspect_id": "VAL-001-019-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked barred generative-media uses and intent assessment; this states a barred use or assessment factor."
+    },
+    {
+      "aspect_id": "VAL-001-019-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked barred generative-media uses and intent assessment; this states a barred use or assessment factor."
+    },
+    {
+      "aspect_id": "VAL-001-020-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked cookie purposes and whether the list is stable; this gives a purpose or change caveat."
+    },
+    {
+      "aspect_id": "VAL-001-020-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked cookie purposes and whether the list is stable; this gives a purpose or change caveat."
+    },
+    {
+      "aspect_id": "VAL-001-020-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked cookie purposes and whether the list is stable; this gives a purpose or change caveat."
+    },
+    {
+      "aspect_id": "VAL-001-020-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked cookie purposes and whether the list is stable; this gives a purpose or change caveat."
+    },
+    {
+      "aspect_id": "VAL-001-021-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked whether candidate data can move to later purposes; this states the use condition or transition."
+    },
+    {
+      "aspect_id": "VAL-001-021-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked whether candidate data can move to later purposes; this states the use condition or transition."
+    },
+    {
+      "aspect_id": "VAL-001-021-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked whether candidate data can move to later purposes; this states the use condition or transition."
+    },
+    {
+      "aspect_id": "VAL-001-021-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked whether candidate data can move to later purposes; this states the use condition or transition."
+    },
+    {
+      "aspect_id": "VAL-001-022-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data recipients and disclosure limits; this gives a recipient or governing limit."
+    },
+    {
+      "aspect_id": "VAL-001-022-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data recipients and disclosure limits; this gives a recipient or governing limit."
+    },
+    {
+      "aspect_id": "VAL-001-022-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data recipients and disclosure limits; this gives a recipient or governing limit."
+    },
+    {
+      "aspect_id": "VAL-001-022-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data recipients and disclosure limits; this gives a recipient or governing limit."
+    },
+    {
+      "aspect_id": "VAL-001-022-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data recipients and disclosure limits; this gives a recipient or governing limit."
+    },
+    {
+      "aspect_id": "VAL-001-023-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what cookies and beacons do and how to control them; this directly covers one component."
+    },
+    {
+      "aspect_id": "VAL-001-023-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what cookies and beacons do and how to control them; this directly covers one component."
+    },
+    {
+      "aspect_id": "VAL-001-023-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what cookies and beacons do and how to control them; this directly covers one component."
+    },
+    {
+      "aspect_id": "VAL-001-023-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what cookies and beacons do and how to control them; this directly covers one component."
+    },
+    {
+      "aspect_id": "VAL-001-024-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked collected information and essential versus optional cookies; this supplies a category or distinction."
+    },
+    {
+      "aspect_id": "VAL-001-024-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked collected information and essential versus optional cookies; this supplies a category or distinction."
+    },
+    {
+      "aspect_id": "VAL-001-024-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked collected information and essential versus optional cookies; this supplies a category or distinction."
+    },
+    {
+      "aspect_id": "VAL-001-024-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked collected information and essential versus optional cookies; this supplies a category or distinction."
+    },
+    {
+      "aspect_id": "VAL-001-025-F01",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The Community platform description does not state an applicable rule or moderation outcome."
+    },
+    {
+      "aspect_id": "VAL-001-025-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked applicable Community rules and moderation; this states one of those obligations or outcomes."
+    },
+    {
+      "aspect_id": "VAL-001-025-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked applicable Community rules and moderation; this states one of those obligations or outcomes."
+    },
+    {
+      "aspect_id": "VAL-001-025-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked applicable Community rules and moderation; this states one of those obligations or outcomes."
+    },
+    {
+      "aspect_id": "VAL-001-026-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension permission, violation consequences, and appeal; this answers one of those points."
+    },
+    {
+      "aspect_id": "VAL-001-026-F02",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Technical specifications are a compliance condition, but not needed to state the license, sanctions, or appeal."
+    },
+    {
+      "aspect_id": "VAL-001-026-F03",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "General platform discontinuation is not a policy-violation response asked about here."
+    },
+    {
+      "aspect_id": "VAL-001-026-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension permission, violation consequences, and appeal; this answers one of those points."
+    },
+    {
+      "aspect_id": "VAL-001-026-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension permission, violation consequences, and appeal; this answers one of those points."
+    },
+    {
+      "aspect_id": "VAL-001-027-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked partner duties for qualified users and continuing access; this states a program duty."
+    },
+    {
+      "aspect_id": "VAL-001-027-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked partner duties for qualified users and continuing access; this states a program duty."
+    },
+    {
+      "aspect_id": "VAL-001-027-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked partner duties for qualified users and continuing access; this states a program duty."
+    },
+    {
+      "aspect_id": "VAL-001-027-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked partner duties for qualified users and continuing access; this states a program duty."
+    },
+    {
+      "aspect_id": "VAL-001-027-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked partner duties for qualified users and continuing access; this states a program duty."
+    },
+    {
+      "aspect_id": "VAL-001-027-F06",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The designated admin is a communication detail outside qualified users’ access duties."
+    },
+    {
+      "aspect_id": "VAL-001-028-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked expected and prohibited event conduct; this is a direct conduct rule."
+    },
+    {
+      "aspect_id": "VAL-001-028-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked expected and prohibited event conduct; this is a direct conduct rule."
+    },
+    {
+      "aspect_id": "VAL-001-028-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked expected and prohibited event conduct; this is a direct conduct rule."
+    },
+    {
+      "aspect_id": "VAL-001-028-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked expected and prohibited event conduct; this is a direct conduct rule."
+    },
+    {
+      "aspect_id": "VAL-001-029-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked who is covered, entry conditions, and response to misconduct; this answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-029-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked who is covered, entry conditions, and response to misconduct; this answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-029-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked who is covered, entry conditions, and response to misconduct; this answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-029-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked who is covered, entry conditions, and response to misconduct; this answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-029-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked who is covered, entry conditions, and response to misconduct; this answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-029-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked who is covered, entry conditions, and response to misconduct; this answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-030-F01",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The question already specifies the preview is before general availability."
+    },
+    {
+      "aspect_id": "VAL-001-030-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked preview risks and service commitments; this states a material risk or commitment limit."
+    },
+    {
+      "aspect_id": "VAL-001-030-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked preview risks and service commitments; this states a material risk or commitment limit."
+    },
+    {
+      "aspect_id": "VAL-001-030-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked preview risks and service commitments; this states a material risk or commitment limit."
+    },
+    {
+      "aspect_id": "VAL-001-031-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+    },
+    {
+      "aspect_id": "VAL-001-031-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+    },
+    {
+      "aspect_id": "VAL-001-031-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+    },
+    {
+      "aspect_id": "VAL-001-031-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+    },
+    {
+      "aspect_id": "VAL-001-031-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+    },
+    {
+      "aspect_id": "VAL-001-031-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+    },
+    {
+      "aspect_id": "VAL-001-032-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted Actions uses and misuse consequences; this supplies a restriction or consequence."
+    },
+    {
+      "aspect_id": "VAL-001-032-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted Actions uses and misuse consequences; this supplies a restriction or consequence."
+    },
+    {
+      "aspect_id": "VAL-001-032-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted Actions uses and misuse consequences; this supplies a restriction or consequence."
+    },
+    {
+      "aspect_id": "VAL-001-032-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted Actions uses and misuse consequences; this supplies a restriction or consequence."
+    },
+    {
+      "aspect_id": "VAL-001-032-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted Actions uses and misuse consequences; this supplies a restriction or consequence."
+    },
+    {
+      "aspect_id": "VAL-001-033-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked repository moderation options before escalation; this is an available maintainer action."
+    },
+    {
+      "aspect_id": "VAL-001-033-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked repository moderation options before escalation; this is an available maintainer action."
+    },
+    {
+      "aspect_id": "VAL-001-033-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked repository moderation options before escalation; this is an available maintainer action."
+    },
+    {
+      "aspect_id": "VAL-001-033-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked repository moderation options before escalation; this is an available maintainer action."
+    },
+    {
+      "aspect_id": "VAL-001-033-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked repository moderation options before escalation; this is an available maintainer action."
+    },
+    {
+      "aspect_id": "VAL-001-034-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension security and privacy boundaries; this is a direct boundary."
+    },
+    {
+      "aspect_id": "VAL-001-034-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension security and privacy boundaries; this is a direct boundary."
+    },
+    {
+      "aspect_id": "VAL-001-034-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension security and privacy boundaries; this is a direct boundary."
+    },
+    {
+      "aspect_id": "VAL-001-034-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension security and privacy boundaries; this is a direct boundary."
+    },
+    {
+      "aspect_id": "VAL-001-034-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked extension security and privacy boundaries; this is a direct boundary."
+    },
+    {
+      "aspect_id": "VAL-001-035-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked administrative control over accounts, organizations, and their content; this states an allocation."
+    },
+    {
+      "aspect_id": "VAL-001-035-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked administrative control over accounts, organizations, and their content; this states an allocation."
+    },
+    {
+      "aspect_id": "VAL-001-035-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked administrative control over accounts, organizations, and their content; this states an allocation."
+    },
+    {
+      "aspect_id": "VAL-001-035-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked administrative control over accounts, organizations, and their content; this states an allocation."
+    },
+    {
+      "aspect_id": "VAL-001-036-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked urgent and nonurgent reporting and staff help; this directly answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-036-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked urgent and nonurgent reporting and staff help; this directly answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-036-F03",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "An emergency-service number is ancillary to the asked GitHub event reporting routes and staff help."
+    },
+    {
+      "aspect_id": "VAL-001-036-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked urgent and nonurgent reporting and staff help; this directly answers one part."
+    },
+    {
+      "aspect_id": "VAL-001-037-F01",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Free versus paid listing scope does not answer responsibility, EULA, or display rights."
+    },
+    {
+      "aspect_id": "VAL-001-037-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked developer responsibility, EULA, and GitHub listing rights; this states an allocation or right."
+    },
+    {
+      "aspect_id": "VAL-001-037-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked developer responsibility, EULA, and GitHub listing rights; this states an allocation or right."
+    },
+    {
+      "aspect_id": "VAL-001-037-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked developer responsibility, EULA, and GitHub listing rights; this states an allocation or right."
+    },
+    {
+      "aspect_id": "VAL-001-037-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked developer responsibility, EULA, and GitHub listing rights; this states an allocation or right."
+    },
+    {
+      "aspect_id": "VAL-001-037-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked developer responsibility, EULA, and GitHub listing rights; this states an allocation or right."
+    },
+    {
+      "aspect_id": "VAL-001-038-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked account, age, agreement, and authority requirements; this is one such requirement."
+    },
+    {
+      "aspect_id": "VAL-001-038-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked account, age, agreement, and authority requirements; this is one such requirement."
+    },
+    {
+      "aspect_id": "VAL-001-038-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked account, age, agreement, and authority requirements; this is one such requirement."
+    },
+    {
+      "aspect_id": "VAL-001-038-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked account, age, agreement, and authority requirements; this is one such requirement."
+    },
+    {
+      "aspect_id": "VAL-001-038-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked account, age, agreement, and authority requirements; this is one such requirement."
+    },
+    {
+      "aspect_id": "VAL-001-039-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked where component licenses appear and when they govern; this states a location or priority rule."
+    },
+    {
+      "aspect_id": "VAL-001-039-F02",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "A source-code offer is related to licenses but not their location or priority over the terms."
+    },
+    {
+      "aspect_id": "VAL-001-039-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked where component licenses appear and when they govern; this states a location or priority rule."
+    },
+    {
+      "aspect_id": "VAL-001-039-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked where component licenses appear and when they govern; this states a location or priority rule."
+    },
+    {
+      "aspect_id": "VAL-001-040-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked preview evaluation, production limits, and DPA coverage; this states one of those terms."
+    },
+    {
+      "aspect_id": "VAL-001-040-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked preview evaluation, production limits, and DPA coverage; this states one of those terms."
+    },
+    {
+      "aspect_id": "VAL-001-040-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked preview evaluation, production limits, and DPA coverage; this states one of those terms."
+    },
+    {
+      "aspect_id": "VAL-001-040-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "General-availability-equivalent data handling does not decide whether internal evaluation or production use is allowed."
+    },
+    {
+      "aspect_id": "VAL-001-040-F05",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The exact DPA coverage start date is ancillary to the allowed evaluation and production-use boundary."
+    },
+    {
+      "aspect_id": "VAL-001-041-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted use, disclosure, and compelled-disclosure duties; this states a direct restriction."
+    },
+    {
+      "aspect_id": "VAL-001-041-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted use, disclosure, and compelled-disclosure duties; this states a direct restriction."
+    },
+    {
+      "aspect_id": "VAL-001-041-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted use, disclosure, and compelled-disclosure duties; this states a direct restriction."
+    },
+    {
+      "aspect_id": "VAL-001-041-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted use, disclosure, and compelled-disclosure duties; this states a direct restriction."
+    },
+    {
+      "aspect_id": "VAL-001-041-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked permitted use, disclosure, and compelled-disclosure duties; this states a direct restriction."
+    },
+    {
+      "aspect_id": "VAL-001-042-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked rights to token patterns including distribution and survival; this states a granted right or limit."
+    },
+    {
+      "aspect_id": "VAL-001-042-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked rights to token patterns including distribution and survival; this states a granted right or limit."
+    },
+    {
+      "aspect_id": "VAL-001-042-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked rights to token patterns including distribution and survival; this states a granted right or limit."
+    },
+    {
+      "aspect_id": "VAL-001-042-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked rights to token patterns including distribution and survival; this states a granted right or limit."
+    },
+    {
+      "aspect_id": "VAL-001-042-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked rights to token patterns including distribution and survival; this states a granted right or limit."
+    },
+    {
+      "aspect_id": "VAL-001-043-F01",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The query assumes a complete official request and asks what follows it."
+    },
+    {
+      "aspect_id": "VAL-001-043-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked post-request notice, appeal, geography, and transparency; this directly answers one step."
+    },
+    {
+      "aspect_id": "VAL-001-043-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked post-request notice, appeal, geography, and transparency; this directly answers one step."
+    },
+    {
+      "aspect_id": "VAL-001-043-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked post-request notice, appeal, geography, and transparency; this directly answers one step."
+    },
+    {
+      "aspect_id": "VAL-001-043-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked post-request notice, appeal, geography, and transparency; this directly answers one step."
+    },
+    {
+      "aspect_id": "VAL-001-044-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked self-hosted export-controlled use and remaining export limits; this states a material permission or limit."
+    },
+    {
+      "aspect_id": "VAL-001-044-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked self-hosted export-controlled use and remaining export limits; this states a material permission or limit."
+    },
+    {
+      "aspect_id": "VAL-001-044-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked self-hosted export-controlled use and remaining export limits; this states a material permission or limit."
+    },
+    {
+      "aspect_id": "VAL-001-044-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The precise ECCN code is a classification detail; the practical export limits can be stated without it."
+    },
+    {
+      "aspect_id": "VAL-001-044-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked self-hosted export-controlled use and remaining export limits; this states a material permission or limit."
+    },
+    {
+      "aspect_id": "VAL-001-044-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked self-hosted export-controlled use and remaining export limits; this states a material permission or limit."
+    },
+    {
+      "aspect_id": "VAL-001-045-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked public, optional, and private account data; this is a representative category in that allocation."
+    },
+    {
+      "aspect_id": "VAL-001-045-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked public, optional, and private account data; this is a representative category in that allocation."
+    },
+    {
+      "aspect_id": "VAL-001-045-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked public, optional, and private account data; this is a representative category in that allocation."
+    },
+    {
+      "aspect_id": "VAL-001-045-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked public, optional, and private account data; this is a representative category in that allocation."
+    },
+    {
+      "aspect_id": "VAL-001-045-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked public, optional, and private account data; this is a representative category in that allocation."
+    },
+    {
+      "aspect_id": "VAL-001-045-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked public, optional, and private account data; this is a representative category in that allocation."
+    },
+    {
+      "aspect_id": "VAL-001-046-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked user notice and exceptions or delay; this states the default or a material exception."
+    },
+    {
+      "aspect_id": "VAL-001-046-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked user notice and exceptions or delay; this states the default or a material exception."
+    },
+    {
+      "aspect_id": "VAL-001-046-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked user notice and exceptions or delay; this states the default or a material exception."
+    },
+    {
+      "aspect_id": "VAL-001-046-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked user notice and exceptions or delay; this states the default or a material exception."
+    },
+    {
+      "aspect_id": "VAL-001-047-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked legal process for private data and subpoena versus logs; this states a governing threshold."
+    },
+    {
+      "aspect_id": "VAL-001-047-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked legal process for private data and subpoena versus logs; this states a governing threshold."
+    },
+    {
+      "aspect_id": "VAL-001-047-F03",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The organization-owner subpoena nuance is secondary to the subpoena versus access-log distinction."
+    },
+    {
+      "aspect_id": "VAL-001-047-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked legal process for private data and subpoena versus logs; this states a governing threshold."
+    },
+    {
+      "aspect_id": "VAL-001-048-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+    },
+    {
+      "aspect_id": "VAL-001-048-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+    },
+    {
+      "aspect_id": "VAL-001-048-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+    },
+    {
+      "aspect_id": "VAL-001-048-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+    },
+    {
+      "aspect_id": "VAL-001-048-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+    },
+    {
+      "aspect_id": "VAL-001-048-F06",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Third-party coordination is an internal SIRT detail beyond the customer responsibility boundary."
+    },
+    {
+      "aspect_id": "VAL-001-049-F01",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The example concerns a customer, with no government-official status specified."
+    },
+    {
+      "aspect_id": "VAL-001-049-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked acceptable customer hospitality versus influence; this directly draws the gift boundary."
+    },
+    {
+      "aspect_id": "VAL-001-049-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked acceptable customer hospitality versus influence; this directly draws the gift boundary."
+    },
+    {
+      "aspect_id": "VAL-001-049-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked acceptable customer hospitality versus influence; this directly draws the gift boundary."
+    },
+    {
+      "aspect_id": "VAL-001-049-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked acceptable customer hospitality versus influence; this directly draws the gift boundary."
+    },
+    {
+      "aspect_id": "VAL-001-049-F06",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Receiving vendor gifts is outside the asked customer hospitality scenario."
+    },
+    {
+      "aspect_id": "VAL-001-050-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked GPLv2 cure and provisional or permanent reinstatement; this states a qualifying condition."
+    },
+    {
+      "aspect_id": "VAL-001-050-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked GPLv2 cure and provisional or permanent reinstatement; this states a qualifying condition."
+    },
+    {
+      "aspect_id": "VAL-001-050-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked GPLv2 cure and provisional or permanent reinstatement; this states a qualifying condition."
+    },
+    {
+      "aspect_id": "VAL-001-050-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked GPLv2 cure and provisional or permanent reinstatement; this states a qualifying condition."
+    },
+    {
+      "aspect_id": "VAL-001-050-F05",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The query specifies GPLv2; listing other covered licenses does not resolve reinstatement timing."
+    },
+    {
+      "aspect_id": "V3-01-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to choose a removal route; this states a route-defining condition."
+    },
+    {
+      "aspect_id": "V3-01-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to choose a removal route; this states a route-defining condition."
+    },
+    {
+      "aspect_id": "V3-01-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to choose a removal route; this states a route-defining condition."
+    },
+    {
+      "aspect_id": "V3-01-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how to choose a removal route; this states a route-defining condition."
+    },
+    {
+      "aspect_id": "V3-02-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens before and after copyright disablement; this is a principal step or outcome."
+    },
+    {
+      "aspect_id": "V3-02-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens before and after copyright disablement; this is a principal step or outcome."
+    },
+    {
+      "aspect_id": "V3-02-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens before and after copyright disablement; this is a principal step or outcome."
+    },
+    {
+      "aspect_id": "V3-02-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The approximate one-day period is a timing detail; the change opportunity answers the broad process question."
+    },
+    {
+      "aspect_id": "V3-02-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens before and after copyright disablement; this is a principal step or outcome."
+    },
+    {
+      "aspect_id": "V3-02-F06",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "A renewed notice after changes is an additional branch, omittable from a broad process answer."
+    },
+    {
+      "aspect_id": "V3-02-F07",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens before and after copyright disablement; this is a principal step or outcome."
+    },
+    {
+      "aspect_id": "V3-02-F08",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked what happens before and after copyright disablement; this is a principal step or outcome."
+    },
+    {
+      "aspect_id": "V3-03-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-03-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-03-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-03-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Line numbers are a submission detail; the broad handling question can be answered without this precision."
+    },
+    {
+      "aspect_id": "V3-03-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-03-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-03-F07",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "The owner’s dispute option is an ancillary branch beyond the main handling sequence."
+    },
+    {
+      "aspect_id": "V3-03-F08",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-03-F09",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked how a secret-removal request is handled; this is an eligibility, submission, or outcome condition."
+    },
+    {
+      "aspect_id": "V3-04-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked trademark threshold and possible action; this directly states a boundary or remedy."
+    },
+    {
+      "aspect_id": "V3-04-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked trademark threshold and possible action; this directly states a boundary or remedy."
+    },
+    {
+      "aspect_id": "V3-04-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked trademark threshold and possible action; this directly states a boundary or remedy."
+    },
+    {
+      "aspect_id": "V3-04-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked trademark threshold and possible action; this directly states a boundary or remedy."
+    },
+    {
+      "aspect_id": "V3-04-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked trademark threshold and possible action; this directly states a boundary or remedy."
+    },
+    {
+      "aspect_id": "V3-05-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked available help and what remains recoverable after 2FA loss; this states a core option or limit."
+    },
+    {
+      "aspect_id": "V3-05-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked available help and what remains recoverable after 2FA loss; this states a core option or limit."
+    },
+    {
+      "aspect_id": "V3-05-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked available help and what remains recoverable after 2FA loss; this states a core option or limit."
+    },
+    {
+      "aspect_id": "V3-05-F04",
+      "verdict": "RELEVANT_BUT_OPTIONAL",
+      "reason": "Removing a payment method is account administration, not recovery of access or content."
+    },
+    {
+      "aspect_id": "V3-05-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked available help and what remains recoverable after 2FA loss; this states a core option or limit."
+    },
+    {
+      "aspect_id": "V3-05-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked available help and what remains recoverable after 2FA loss; this states a core option or limit."
+    },
+    {
+      "aspect_id": "V3-06-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked abandoned names and squatting consequences; this directly answers the rule or outcome."
+    },
+    {
+      "aspect_id": "V3-06-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked abandoned names and squatting consequences; this directly answers the rule or outcome."
+    },
+    {
+      "aspect_id": "V3-06-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked abandoned names and squatting consequences; this directly answers the rule or outcome."
+    },
+    {
+      "aspect_id": "V3-06-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked abandoned names and squatting consequences; this directly answers the rule or outcome."
+    },
+    {
+      "aspect_id": "V3-07-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when exploit research is restricted; this states the allowed/prohibited boundary."
+    },
+    {
+      "aspect_id": "V3-07-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when exploit research is restricted; this states the allowed/prohibited boundary."
+    },
+    {
+      "aspect_id": "V3-07-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked when exploit research is restricted; this states the allowed/prohibited boundary."
+    },
+    {
+      "aspect_id": "V3-08-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked bug-bounty protection with third-party effects; this states a protection or limit."
+    },
+    {
+      "aspect_id": "V3-08-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked bug-bounty protection with third-party effects; this states a protection or limit."
+    },
+    {
+      "aspect_id": "V3-08-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked bug-bounty protection with third-party effects; this states a protection or limit."
+    },
+    {
+      "aspect_id": "V3-08-F05a",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked bug-bounty protection with third-party effects; this states a protection or limit."
+    },
+    {
+      "aspect_id": "V3-08-F05b",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked bug-bounty protection with third-party effects; this states a protection or limit."
+    },
+    {
+      "aspect_id": "V3-08-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked bug-bounty protection with third-party effects; this states a protection or limit."
+    },
+    {
+      "aspect_id": "V3-09-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked employer versus GitHub data control and privacy-statement scope; this allocates those roles."
+    },
+    {
+      "aspect_id": "V3-09-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked employer versus GitHub data control and privacy-statement scope; this allocates those roles."
+    },
+    {
+      "aspect_id": "V3-09-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked employer versus GitHub data control and privacy-statement scope; this allocates those roles."
+    },
+    {
+      "aspect_id": "V3-09-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked employer versus GitHub data control and privacy-statement scope; this allocates those roles."
+    },
+    {
+      "aspect_id": "V3-09-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked employer versus GitHub data control and privacy-statement scope; this allocates those roles."
+    },
+    {
+      "aspect_id": "V3-09-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked employer versus GitHub data control and privacy-statement scope; this allocates those roles."
+    },
+    {
+      "aspect_id": "V3-10-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked data rights, request method, and limits; this states one such right, step, or exception."
+    },
+    {
+      "aspect_id": "V3-10-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked data rights, request method, and limits; this states one such right, step, or exception."
+    },
+    {
+      "aspect_id": "V3-10-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked data rights, request method, and limits; this states one such right, step, or exception."
+    },
+    {
+      "aspect_id": "V3-10-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked data rights, request method, and limits; this states one such right, step, or exception."
+    },
+    {
+      "aspect_id": "V3-10-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked data rights, request method, and limits; this states one such right, step, or exception."
+    },
+    {
+      "aspect_id": "V3-10-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked data rights, request method, and limits; this states one such right, step, or exception."
+    },
+    {
+      "aspect_id": "V3-11-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked app responsibility and data treatment after revocation; this answers a core allocation."
+    },
+    {
+      "aspect_id": "V3-11-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked app responsibility and data treatment after revocation; this answers a core allocation."
+    },
+    {
+      "aspect_id": "V3-11-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked app responsibility and data treatment after revocation; this answers a core allocation."
+    },
+    {
+      "aspect_id": "V3-11-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked app responsibility and data treatment after revocation; this answers a core allocation."
+    },
+    {
+      "aspect_id": "V3-12-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-12-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-12-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-12-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-12-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-12-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-12-F07",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked regional access differences and blocked-party limits; this gives a direct comparison point."
+    },
+    {
+      "aspect_id": "V3-13-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked whether commercial Pages use, donations, or sales are allowed; this states the controlling limit."
+    },
+    {
+      "aspect_id": "V3-13-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked whether commercial Pages use, donations, or sales are allowed; this states the controlling limit."
+    },
+    {
+      "aspect_id": "V3-14-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F07a",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-14-F07b",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+    },
+    {
+      "aspect_id": "V3-15-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F07",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-15-F08",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked candidate-data types and purposes; this is a direct data source, category, or use."
+    },
+    {
+      "aspect_id": "V3-16-F01",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked payout timing and delay or withholding conditions; this states a direct schedule or condition."
+    },
+    {
+      "aspect_id": "V3-16-F02",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked payout timing and delay or withholding conditions; this states a direct schedule or condition."
+    },
+    {
+      "aspect_id": "V3-16-F03",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked payout timing and delay or withholding conditions; this states a direct schedule or condition."
+    },
+    {
+      "aspect_id": "V3-16-F04",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked payout timing and delay or withholding conditions; this states a direct schedule or condition."
+    },
+    {
+      "aspect_id": "V3-16-F05",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked payout timing and delay or withholding conditions; this states a direct schedule or condition."
+    },
+    {
+      "aspect_id": "V3-16-F06",
+      "verdict": "QUERY_REQUIRED",
+      "reason": "Asked payout timing and delay or withholding conditions; this states a direct schedule or condition."
+    }
+  ]
+}

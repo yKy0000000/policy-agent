@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="744" viewBox="0 0 1200 744">
+<rect width="1200" height="744" fill="#FFFFFF"/>
+<text x="54" y="42.1" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">A1 / RESIDUAL POSTMORTEM</text>
+<text x="54" y="93.0" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="start">Most remaining misses point to use and selection</text>
+<text x="54" y="129.9" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start">16 distinct QUERY_REQUIRED aspects missing in ≥1 of four surviving arms; 10 cases in total.</text>
+<line x1="54" y1="152" x2="1146" y2="152" stroke="#C9D3D9" stroke-width="1"/>
+<rect x="52" y="175" width="735" height="166" rx="9" fill="#E3F3F0"/>
+<text x="68" y="215.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start">Generation miss</text>
+<rect x="355" y="201" width="381" height="20" rx="9" fill="#F3F6F7"/>
+<rect x="355" y="201" width="381.0" height="20" rx="9" fill="#087F77"/>
+<text x="755" y="217.5" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">6</text>
+<text x="68" y="306.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start">Selection / budget</text>
+<rect x="355" y="292" width="381" height="20" rx="9" fill="#F3F6F7"/>
+<rect x="355" y="292" width="381.0" height="20" rx="9" fill="#087F77"/>
+<text x="755" y="308.5" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">6</text>
+<text x="68" y="397.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start">Ranking weakness</text>
+<rect x="355" y="383" width="381" height="20" rx="9" fill="#F3F6F7"/>
+<rect x="355" y="383" width="127.0" height="20" rx="9" fill="#677783"/>
+<text x="755" y="399.5" fill="#677783" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">2</text>
+<text x="68" y="488.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start">Representation candidate</text>
+<rect x="355" y="474" width="381" height="20" rx="9" fill="#F3F6F7"/>
+<rect x="355" y="474" width="127.0" height="20" rx="9" fill="#315F9C"/>
+<text x="755" y="490.5" fill="#315F9C" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">2</text>
+<text x="68" y="579.7" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start">Confirmed fragmentation</text>
+<rect x="355" y="565" width="381" height="20" rx="9" fill="#F3F6F7"/>
+<line x1="355" y1="576" x2="736" y2="576" stroke="#C9D3D9" stroke-width="2"/>
+<text x="755" y="581.5" fill="#AF483E" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">0</text>
+<rect x="827" y="193" width="313" height="118" rx="9" fill="#E3F3F0"/>
+<text x="846" y="246.4" fill="#087F77" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="700" text-anchor="start">12 / 16</text>
+<text x="846" y="284.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">generation + selection</text>
+<text x="827" y="367.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">ROADMAP CONSEQUENCE</text>
+<text x="827" y="406.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start">Improve evidence use and</text>
+<text x="827" y="436.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start">context allocation first.</text>
+<text x="827" y="484.9" fill="#315F9C" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">One clear representation case</text>
+<text x="827" y="512.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">justifies a small A2 probe.</text>
+<text x="827" y="566.9" fill="#AF483E" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">Zero confirmed fragmentation</text>
+<text x="827" y="594.9" fill="#15283A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">means A3 does not start.</text>
+<line x1="54" y1="669" x2="1146" y2="669" stroke="#C9D3D9" stroke-width="1"/>
+<text x="54" y="696.0" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Counts are unique aspects, not per-arm totals; two representation aspects come from one case (VAL-001-046).</text>
+<text x="54" y="726.2" fill="#4A6070" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Source: eval/final/failure_analysis.json</text>
+</svg>

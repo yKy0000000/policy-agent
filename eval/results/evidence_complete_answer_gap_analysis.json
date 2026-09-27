@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "name": "Evidence-complete but answer-incomplete gap",
+  "status": "post-hoc diagnostic",
+  "role": "offline attribution over existing labels; no re-judge, no generation",
+  "rubric_sha256": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+  "frozen_results_sha256": "a6a50d879b5536273c4aef5bf2f18239effb176d4b9d18fe49de1bbdcbc3e458",
+  "units": {
+    "case": "one Validation V1 query",
+    "fact": "one required atomic fact",
+    "claim": "one answer sentence clause; used as context only"
+  },
+  "evidence_complete_cases": 46,
+  "grounded_complete_among_evidence_complete": 39,
+  "conversion_rate_cases": 0.8478260869565217,
+  "gap_case_count": 7,
+  "facts_in_evidence_complete_cases": 221,
+  "grounded_covered_facts_in_evidence_complete": 213,
+  "conversion_rate_facts": 0.9638009049773756,
+  "attribution_unit": "facts",
+  "attribution_fact_counts": {
+    "utilization_miss": 8,
+    "partial_synthesis": 0,
+    "citation_grounding_issue": 0,
+    "judge_rubric_disagreement": 0,
+    "compression_organization_loss": 0,
+    "other_or_unclear": 0
+  },
+  "attribution_case_primary_counts": {
+    "utilization_miss": 7,
+    "partial_synthesis": 0,
+    "citation_grounding_issue": 0,
+    "judge_rubric_disagreement": 0,
+    "compression_organization_loss": 0,
+    "other_or_unclear": 0
+  },
+  "claim_level_context": {
+    "note": "claim-level grounding/citation diagnoses are a different unit than facts",
+    "citation_error_claims": 14,
+    "grounding_review_claims": 13
+  },
+  "method": "Deterministic attribution over existing frozen labels; no re-judge.",
+  "utilization_pattern_summary": {
+    "unit": "facts",
+    "facts_analyzed": 8,
+    "flag_counts": {
+      "single_dense_gold_chunk": 8,
+      "enumeration_query": 7,
+      "many_selected_chunks": 6,
+      "high_evidence_to_answer_compression": 3
+    },
+    "gap_case_feature_rates": {
+      "high_k": 0.714,
+      "enumeration": 0.857,
+      "short_answer": 0.714
+    },
+    "converted_case_feature_rates": {
+      "high_k": 0.872,
+      "enumeration": 0.949,
+      "short_answer": 0.436
+    },
+    "feature_rate_delta_gap_minus_converted": {
+      "high_k": -0.158,
+      "enumeration": -0.092,
+      "short_answer": 0.278
+    },
+    "discriminative_features": [
+      "short_answer"
+    ],
+    "text": {
+      "concentrated_in_evidence_back_half": 0,
+      "concentrated_in_chunk_back_third": 0,
+      "list_or_multi_condition_query": 7,
+      "high_k_selected_cases": 6,
+      "single_dense_gold_chunk": 8,
+      "high_evidence_to_answer_compression": 3
+    },
+    "verdict": "MIXED GENERATION PATTERN",
+    "thresholds": {
+      "util_late_evidence_percentile": 0.5,
+      "util_many_selected_chunks_k": 8,
+      "util_compression_words_per_1k": 60
+    }
+  },
+  "cases": [
+    {
+      "case_id": "VAL-001-009",
+      "policy_family": "content-removal-policies",
+      "query_type": "eligibility",
+      "required_facts": 5,
+      "grounded_covered_facts": 4,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-009-F02",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 2,
+            "evidence_percentile": 0.25,
+            "evidence_first_half": true,
+            "intra_chunk_position": "middle_third",
+            "intra_chunk_ratio": 0.531,
+            "query_tags": {
+              "query_type": "eligibility",
+              "enumeration_query": false,
+              "multi_condition_query": false
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 203,
+            "answer_tokens": 243,
+            "selected_k": 5,
+            "evidence_tokens": 2977,
+            "required_facts": 5,
+            "answer_covered_facts": 4,
+            "compression_words_per_1k": 68.19,
+            "required_facts_per_selected_chunk": 1.0,
+            "required_facts_per_1k_evidence_tokens": 1.68,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 4,
+            "pattern_flags": [
+              "single_dense_gold_chunk"
+            ]
+          },
+          "text_trace_diagnostic": 0.222
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": [
+        "grounding_review",
+        "citation_error"
+      ]
+    },
+    {
+      "case_id": "VAL-001-011",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "required_facts": 5,
+      "grounded_covered_facts": 4,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-011-F01",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "front_third",
+            "intra_chunk_ratio": 0.099,
+            "query_tags": {
+              "query_type": "scope",
+              "enumeration_query": true,
+              "multi_condition_query": false
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 235,
+            "answer_tokens": 283,
+            "selected_k": 5,
+            "evidence_tokens": 1744,
+            "required_facts": 5,
+            "answer_covered_facts": 4,
+            "compression_words_per_1k": 134.75,
+            "required_facts_per_selected_chunk": 1.0,
+            "required_facts_per_1k_evidence_tokens": 2.867,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 4,
+            "pattern_flags": [
+              "enumeration_query",
+              "single_dense_gold_chunk"
+            ]
+          },
+          "text_trace_diagnostic": 0.333
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": []
+    },
+    {
+      "case_id": "VAL-001-013",
+      "policy_family": "acceptable-use-policies",
+      "query_type": "scope",
+      "required_facts": 5,
+      "grounded_covered_facts": 4,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-013-F04",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "middle_third",
+            "intra_chunk_ratio": 0.611,
+            "query_tags": {
+              "query_type": "scope",
+              "enumeration_query": true,
+              "multi_condition_query": false
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 228,
+            "answer_tokens": 330,
+            "selected_k": 10,
+            "evidence_tokens": 3283,
+            "required_facts": 5,
+            "answer_covered_facts": 4,
+            "compression_words_per_1k": 69.45,
+            "required_facts_per_selected_chunk": 0.5,
+            "required_facts_per_1k_evidence_tokens": 1.523,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 9,
+            "pattern_flags": [
+              "enumeration_query",
+              "many_selected_chunks",
+              "single_dense_gold_chunk"
+            ]
+          },
+          "text_trace_diagnostic": 0.333
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": []
+    },
+    {
+      "case_id": "VAL-001-026",
+      "policy_family": "github-terms",
+      "query_type": "eligibility",
+      "required_facts": 5,
+      "grounded_covered_facts": 4,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-026-F02",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "front_third",
+            "intra_chunk_ratio": 0.228,
+            "query_tags": {
+              "query_type": "eligibility",
+              "enumeration_query": true,
+              "multi_condition_query": true
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 281,
+            "answer_tokens": 357,
+            "selected_k": 12,
+            "evidence_tokens": 3568,
+            "required_facts": 5,
+            "answer_covered_facts": 4,
+            "compression_words_per_1k": 78.76,
+            "required_facts_per_selected_chunk": 0.417,
+            "required_facts_per_1k_evidence_tokens": 1.401,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 11,
+            "pattern_flags": [
+              "enumeration_query",
+              "many_selected_chunks",
+              "single_dense_gold_chunk"
+            ]
+          },
+          "text_trace_diagnostic": 0.333
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": []
+    },
+    {
+      "case_id": "VAL-001-032",
+      "policy_family": "github-terms",
+      "query_type": "scope",
+      "required_facts": 5,
+      "grounded_covered_facts": 3,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-032-F01",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "front_third",
+            "intra_chunk_ratio": 0.193,
+            "query_tags": {
+              "query_type": "scope",
+              "enumeration_query": true,
+              "multi_condition_query": true
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 195,
+            "answer_tokens": 244,
+            "selected_k": 8,
+            "evidence_tokens": 3577,
+            "required_facts": 5,
+            "answer_covered_facts": 3,
+            "compression_words_per_1k": 54.51,
+            "required_facts_per_selected_chunk": 0.625,
+            "required_facts_per_1k_evidence_tokens": 1.398,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 7,
+            "pattern_flags": [
+              "enumeration_query",
+              "many_selected_chunks",
+              "single_dense_gold_chunk",
+              "high_evidence_to_answer_compression"
+            ]
+          },
+          "text_trace_diagnostic": 0.5
+        },
+        {
+          "fact_id": "VAL-001-032-F02",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "front_third",
+            "intra_chunk_ratio": 0.271,
+            "query_tags": {
+              "query_type": "scope",
+              "enumeration_query": true,
+              "multi_condition_query": true
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 195,
+            "answer_tokens": 244,
+            "selected_k": 8,
+            "evidence_tokens": 3577,
+            "required_facts": 5,
+            "answer_covered_facts": 3,
+            "compression_words_per_1k": 54.51,
+            "required_facts_per_selected_chunk": 0.625,
+            "required_facts_per_1k_evidence_tokens": 1.398,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 7,
+            "pattern_flags": [
+              "enumeration_query",
+              "many_selected_chunks",
+              "single_dense_gold_chunk",
+              "high_evidence_to_answer_compression"
+            ]
+          },
+          "text_trace_diagnostic": 0.5
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": []
+    },
+    {
+      "case_id": "VAL-001-037",
+      "policy_family": "github-terms",
+      "query_type": "rights",
+      "required_facts": 6,
+      "grounded_covered_facts": 5,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-037-F01",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "front_third",
+            "intra_chunk_ratio": 0.108,
+            "query_tags": {
+              "query_type": "rights",
+              "enumeration_query": true,
+              "multi_condition_query": true
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 257,
+            "answer_tokens": 331,
+            "selected_k": 12,
+            "evidence_tokens": 3816,
+            "required_facts": 6,
+            "answer_covered_facts": 5,
+            "compression_words_per_1k": 67.35,
+            "required_facts_per_selected_chunk": 0.5,
+            "required_facts_per_1k_evidence_tokens": 1.572,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 11,
+            "pattern_flags": [
+              "enumeration_query",
+              "many_selected_chunks",
+              "single_dense_gold_chunk"
+            ]
+          },
+          "text_trace_diagnostic": 0.625
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": []
+    },
+    {
+      "case_id": "VAL-001-039",
+      "policy_family": "github-terms",
+      "query_type": "comparison",
+      "required_facts": 4,
+      "grounded_covered_facts": 3,
+      "grounded_missing_facts": [
+        {
+          "fact_id": "VAL-001-039-F02",
+          "answer_status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss",
+          "answer_covered": false,
+          "primary": "utilization_miss",
+          "reason": "frozen pipeline cause=utilization_miss",
+          "pattern": {
+            "evidence_position": 1,
+            "evidence_percentile": 0.0,
+            "evidence_first_half": true,
+            "intra_chunk_position": "middle_third",
+            "intra_chunk_ratio": 0.383,
+            "query_tags": {
+              "query_type": "comparison",
+              "enumeration_query": true,
+              "multi_condition_query": true
+            },
+            "fact_type_source": "not_in_frozen_rubric",
+            "answer_words": 98,
+            "answer_tokens": 132,
+            "selected_k": 14,
+            "evidence_tokens": 2900,
+            "required_facts": 4,
+            "answer_covered_facts": 3,
+            "compression_words_per_1k": 33.79,
+            "required_facts_per_selected_chunk": 0.286,
+            "required_facts_per_1k_evidence_tokens": 1.379,
+            "single_dense_gold_chunk": true,
+            "selected_chunks_mapped": 1,
+            "selected_chunks_unmapped": 13,
+            "pattern_flags": [
+              "enumeration_query",
+              "many_selected_chunks",
+              "single_dense_gold_chunk",
+              "high_evidence_to_answer_compression"
+            ]
+          },
+          "text_trace_diagnostic": 0.714
+        }
+      ],
+      "primary": "utilization_miss",
+      "secondary": [],
+      "claim_diagnosis_causes": []
+    }
+  ]
+}

@@ -1,0 +1,982 @@
+{
+  "version": "a2-minimal-mechanism-probe-v1",
+  "status": "complete",
+  "environment": {
+    "retriever": "RerankedPolicyRetriever (Lex20+Sem20 union, BGE rerank)",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "select_k": 5,
+    "deep_k": 50,
+    "mmr_lambda": 0.7,
+    "generation_calls": 0
+  },
+  "cases": {
+    "VAL-001-046": {
+      "role": "clear_trigger",
+      "route": "BROAD",
+      "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-046-R1",
+          "requirement_text": "Will GitHub notify me first (and how) before disclosing my account data to investigators?",
+          "source_phrase": "will GitHub tell me first",
+          "affected_aspects": [
+            "VAL-001-046-F01",
+            "VAL-001-046-F03"
+          ]
+        },
+        {
+          "requirement_id": "VAL-001-046-R2",
+          "requirement_text": "In what situations might that notice be withheld or delayed?",
+          "source_phrase": "in what situations might that notice be withheld or delayed",
+          "affected_aspects": [
+            "VAL-001-046-F02",
+            "VAL-001-046-F04"
+          ]
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-046-F01",
+        "VAL-001-046-F02",
+        "VAL-001-046-F03",
+        "VAL-001-046-F04"
+      ],
+      "target_support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "candidate_layer_original": {
+        "chunk_35fd87021964946f76efbd5f": {
+          "in_lex20": false,
+          "in_sem20": false
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 38,
+          "selected": [
+            "chunk_d47c7ab9c53cc480c3c2c069",
+            "chunk_f7b58f1a20a04f20e654f546",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_9101040ac8e85b20857b515c",
+            "chunk_848e7ed07babd1137a0b93ae"
+          ],
+          "selected_tokens": 1865,
+          "target_visibility": {
+            "chunk_35fd87021964946f76efbd5f": {
+              "in_order": false,
+              "rank": null,
+              "selected": false
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 91,
+          "selected": [
+            "chunk_d47c7ab9c53cc480c3c2c069",
+            "chunk_f7b58f1a20a04f20e654f546",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_9101040ac8e85b20857b515c",
+            "chunk_848e7ed07babd1137a0b93ae"
+          ],
+          "selected_tokens": 1865,
+          "target_visibility": {
+            "chunk_35fd87021964946f76efbd5f": {
+              "in_order": true,
+              "rank": 79,
+              "selected": false
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 38,
+          "selected": [
+            "chunk_d47c7ab9c53cc480c3c2c069",
+            "chunk_9101040ac8e85b20857b515c",
+            "chunk_f7b58f1a20a04f20e654f546",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_ceff67a22ef05b69d89d0c46"
+          ],
+          "selected_tokens": 1981,
+          "target_visibility": {
+            "chunk_35fd87021964946f76efbd5f": {
+              "in_order": false,
+              "rank": null,
+              "selected": false
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 81,
+          "selected": [
+            "chunk_d47c7ab9c53cc480c3c2c069",
+            "chunk_848e7ed07babd1137a0b93ae",
+            "chunk_5bcb80dc18a6ac6e92576ab5",
+            "chunk_f7b58f1a20a04f20e654f546",
+            "chunk_35fd87021964946f76efbd5f"
+          ],
+          "selected_tokens": 1286,
+          "target_visibility": {
+            "chunk_35fd87021964946f76efbd5f": {
+              "in_order": true,
+              "rank": 2,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 0,
+          "total": 4
+        },
+        "A2-1_deeper_original": {
+          "covered": 0,
+          "total": 4
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 0,
+          "total": 4
+        },
+        "A2-3_requirement_query": {
+          "covered": 4,
+          "total": 4
+        }
+      }
+    },
+    "VAL-001-033": {
+      "role": "budget_control",
+      "route": "SIMPLE",
+      "query": "A discussion in my public repository is getting abusive. What moderation options can I use before asking GitHub for help?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-033-R1",
+          "requirement_text": "What moderation options can I use in my public repository when a discussion is getting abusive?",
+          "source_phrase": "What moderation options can I use",
+          "affected_aspects": [
+            "VAL-001-033-F01",
+            "VAL-001-033-F02",
+            "VAL-001-033-F03",
+            "VAL-001-033-F04",
+            "VAL-001-033-F05"
+          ]
+        },
+        {
+          "requirement_id": "VAL-001-033-R2",
+          "requirement_text": "What can I do myself before asking GitHub for help with an abusive discussion?",
+          "source_phrase": "before asking GitHub for help",
+          "affected_aspects": [
+            "VAL-001-033-F01",
+            "VAL-001-033-F02",
+            "VAL-001-033-F03",
+            "VAL-001-033-F04",
+            "VAL-001-033-F05"
+          ]
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-033-F01",
+        "VAL-001-033-F02",
+        "VAL-001-033-F03",
+        "VAL-001-033-F04",
+        "VAL-001-033-F05"
+      ],
+      "target_support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "candidate_layer_original": {
+        "chunk_648a4d2bbb17b6b1207a8f13": {
+          "in_lex20": true,
+          "in_sem20": true
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 33,
+          "selected": [
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_0c3995fedc5f327566f40bfe",
+            "chunk_648a4d2bbb17b6b1207a8f13",
+            "chunk_6bc363aa4e3f40702deda958",
+            "chunk_1a39aad0fc45cb27c5343d9e"
+          ],
+          "selected_tokens": 2799,
+          "target_visibility": {
+            "chunk_648a4d2bbb17b6b1207a8f13": {
+              "in_order": true,
+              "rank": 3,
+              "selected": true
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 86,
+          "selected": [
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_0c3995fedc5f327566f40bfe",
+            "chunk_648a4d2bbb17b6b1207a8f13",
+            "chunk_6bc363aa4e3f40702deda958",
+            "chunk_1a39aad0fc45cb27c5343d9e"
+          ],
+          "selected_tokens": 2799,
+          "target_visibility": {
+            "chunk_648a4d2bbb17b6b1207a8f13": {
+              "in_order": true,
+              "rank": 3,
+              "selected": true
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 33,
+          "selected": [
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_6bc363aa4e3f40702deda958",
+            "chunk_0c3995fedc5f327566f40bfe",
+            "chunk_1a39aad0fc45cb27c5343d9e",
+            "chunk_648a4d2bbb17b6b1207a8f13"
+          ],
+          "selected_tokens": 2799,
+          "target_visibility": {
+            "chunk_648a4d2bbb17b6b1207a8f13": {
+              "in_order": true,
+              "rank": 3,
+              "selected": true
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 60,
+          "selected": [
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_648a4d2bbb17b6b1207a8f13",
+            "chunk_0c3995fedc5f327566f40bfe",
+            "chunk_0875d93e84a41c2c732a4508",
+            "chunk_1a39aad0fc45cb27c5343d9e"
+          ],
+          "selected_tokens": 2289,
+          "target_visibility": {
+            "chunk_648a4d2bbb17b6b1207a8f13": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 5,
+          "total": 5
+        },
+        "A2-1_deeper_original": {
+          "covered": 5,
+          "total": 5
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 5,
+          "total": 5
+        },
+        "A2-3_requirement_query": {
+          "covered": 5,
+          "total": 5
+        }
+      }
+    },
+    "VAL-001-011": {
+      "role": "generation_control",
+      "route": "SIMPLE",
+      "query": "A repository includes graphic depictions of violence for a documentary project. How does GitHub distinguish allowed context from prohibited violence, and can visibility be limited?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-011-R1",
+          "requirement_text": "What violent content does GitHub prohibit?",
+          "source_phrase": "prohibited violence",
+          "affected_aspects": [
+            "VAL-001-011-F01",
+            "VAL-001-011-F02"
+          ]
+        },
+        {
+          "requirement_id": "VAL-001-011-R2",
+          "requirement_text": "Are documentary or educational depictions of violence allowed, and can GitHub limit their visibility?",
+          "source_phrase": "documentary project ... can visibility be limited",
+          "affected_aspects": [
+            "VAL-001-011-F03",
+            "VAL-001-011-F05"
+          ]
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-011-F01",
+        "VAL-001-011-F02",
+        "VAL-001-011-F03",
+        "VAL-001-011-F05"
+      ],
+      "target_support_chunks": [
+        "chunk_ae41e789bbbed39cb12b5443"
+      ],
+      "candidate_layer_original": {
+        "chunk_ae41e789bbbed39cb12b5443": {
+          "in_lex20": true,
+          "in_sem20": true
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 33,
+          "selected": [
+            "chunk_ae41e789bbbed39cb12b5443",
+            "chunk_aab4fdd9b6247e11c4754104",
+            "chunk_e921fe7a8e1eeb16ec85d0b4",
+            "chunk_7d54462de0e9154ce55d108b",
+            "chunk_f25af672289856012d211dad"
+          ],
+          "selected_tokens": 1744,
+          "target_visibility": {
+            "chunk_ae41e789bbbed39cb12b5443": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 86,
+          "selected": [
+            "chunk_ae41e789bbbed39cb12b5443",
+            "chunk_aab4fdd9b6247e11c4754104",
+            "chunk_e921fe7a8e1eeb16ec85d0b4",
+            "chunk_7d54462de0e9154ce55d108b",
+            "chunk_f25af672289856012d211dad"
+          ],
+          "selected_tokens": 1744,
+          "target_visibility": {
+            "chunk_ae41e789bbbed39cb12b5443": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 33,
+          "selected": [
+            "chunk_ae41e789bbbed39cb12b5443",
+            "chunk_aab4fdd9b6247e11c4754104",
+            "chunk_e921fe7a8e1eeb16ec85d0b4",
+            "chunk_7d54462de0e9154ce55d108b",
+            "chunk_eebcff7d8379f37aaf1bf06f"
+          ],
+          "selected_tokens": 1759,
+          "target_visibility": {
+            "chunk_ae41e789bbbed39cb12b5443": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 75,
+          "selected": [
+            "chunk_ae41e789bbbed39cb12b5443",
+            "chunk_aab4fdd9b6247e11c4754104",
+            "chunk_e921fe7a8e1eeb16ec85d0b4",
+            "chunk_1b7a4f11eb7eec7619ddab24",
+            "chunk_f25af672289856012d211dad"
+          ],
+          "selected_tokens": 1574,
+          "target_visibility": {
+            "chunk_ae41e789bbbed39cb12b5443": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 4,
+          "total": 4
+        },
+        "A2-1_deeper_original": {
+          "covered": 4,
+          "total": 4
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 4,
+          "total": 4
+        },
+        "A2-3_requirement_query": {
+          "covered": 4,
+          "total": 4
+        }
+      }
+    },
+    "VAL-001-005": {
+      "role": "fully_covered_broad_control",
+      "route": "BROAD",
+      "query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-005-R1",
+          "requirement_text": "What must a DMCA counter notice identify?",
+          "source_phrase": "what must the notice identify",
+          "affected_aspects": []
+        },
+        {
+          "requirement_id": "VAL-001-005-R2",
+          "requirement_text": "What legal commitments am I making when I submit a DMCA counter notice?",
+          "source_phrase": "what legal commitments am I making",
+          "affected_aspects": []
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-005-F01",
+        "VAL-001-005-F02",
+        "VAL-001-005-F03",
+        "VAL-001-005-F04",
+        "VAL-001-005-F05"
+      ],
+      "target_support_chunks": [
+        "chunk_9eff71948173867f562cf65f"
+      ],
+      "candidate_layer_original": {
+        "chunk_9eff71948173867f562cf65f": {
+          "in_lex20": true,
+          "in_sem20": true
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 26,
+          "selected": [
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_6c0b3e8396e42e3f9a7ccf18",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_621bbabad1d6f0cff7038c2c",
+            "chunk_dfcbf6c0856007fb39268709"
+          ],
+          "selected_tokens": 2890,
+          "target_visibility": {
+            "chunk_9eff71948173867f562cf65f": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 68,
+          "selected": [
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_6c0b3e8396e42e3f9a7ccf18",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_621bbabad1d6f0cff7038c2c",
+            "chunk_dfcbf6c0856007fb39268709"
+          ],
+          "selected_tokens": 2890,
+          "target_visibility": {
+            "chunk_9eff71948173867f562cf65f": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 26,
+          "selected": [
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_6c0b3e8396e42e3f9a7ccf18",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_201a3c4be6cf44693fbebab7",
+            "chunk_ce4e78bb644577b70b81f4e9"
+          ],
+          "selected_tokens": 2540,
+          "target_visibility": {
+            "chunk_9eff71948173867f562cf65f": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 29,
+          "selected": [
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_6c0b3e8396e42e3f9a7ccf18",
+            "chunk_dfcbf6c0856007fb39268709",
+            "chunk_3fe67c4153c058347f190445"
+          ],
+          "selected_tokens": 2708,
+          "target_visibility": {
+            "chunk_9eff71948173867f562cf65f": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 5,
+          "total": 5
+        },
+        "A2-1_deeper_original": {
+          "covered": 5,
+          "total": 5
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 5,
+          "total": 5
+        },
+        "A2-3_requirement_query": {
+          "covered": 5,
+          "total": 5
+        }
+      }
+    },
+    "VAL-001-045": {
+      "role": "fully_covered_broad_control",
+      "route": "BROAD",
+      "query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-045-R1",
+          "requirement_text": "What kinds of GitHub account information are public by default?",
+          "source_phrase": "public by default",
+          "affected_aspects": []
+        },
+        {
+          "requirement_id": "VAL-001-045-R2",
+          "requirement_text": "What account information is optional for users to reveal or maintained privately?",
+          "source_phrase": "optional for users to reveal, or maintained privately",
+          "affected_aspects": []
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-045-F01",
+        "VAL-001-045-F02",
+        "VAL-001-045-F03",
+        "VAL-001-045-F04",
+        "VAL-001-045-F05",
+        "VAL-001-045-F06"
+      ],
+      "target_support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "candidate_layer_original": {
+        "chunk_479d01282d63ba9028b61fb4": {
+          "in_lex20": true,
+          "in_sem20": true
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 35,
+          "selected": [
+            "chunk_479d01282d63ba9028b61fb4",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_848e7ed07babd1137a0b93ae",
+            "chunk_57eedab457d3f6006c93aa2c",
+            "chunk_a761f910df2bb1e22f5a4020"
+          ],
+          "selected_tokens": 2429,
+          "target_visibility": {
+            "chunk_479d01282d63ba9028b61fb4": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 82,
+          "selected": [
+            "chunk_479d01282d63ba9028b61fb4",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_848e7ed07babd1137a0b93ae",
+            "chunk_6bc363aa4e3f40702deda958",
+            "chunk_57eedab457d3f6006c93aa2c"
+          ],
+          "selected_tokens": 2720,
+          "target_visibility": {
+            "chunk_479d01282d63ba9028b61fb4": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 35,
+          "selected": [
+            "chunk_479d01282d63ba9028b61fb4",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_848e7ed07babd1137a0b93ae",
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_30ab6464817b7b0946abaad0"
+          ],
+          "selected_tokens": 2639,
+          "target_visibility": {
+            "chunk_479d01282d63ba9028b61fb4": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 67,
+          "selected": [
+            "chunk_479d01282d63ba9028b61fb4",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_30ab6464817b7b0946abaad0",
+            "chunk_848e7ed07babd1137a0b93ae",
+            "chunk_85867a0b6a0b9d17cba279d7"
+          ],
+          "selected_tokens": 2805,
+          "target_visibility": {
+            "chunk_479d01282d63ba9028b61fb4": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 6,
+          "total": 6
+        },
+        "A2-1_deeper_original": {
+          "covered": 6,
+          "total": 6
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 6,
+          "total": 6
+        },
+        "A2-3_requirement_query": {
+          "covered": 6,
+          "total": 6
+        }
+      }
+    },
+    "VAL-001-047": {
+      "role": "fully_covered_broad_control",
+      "route": "BROAD",
+      "query": "What legal process does GitHub require before disclosing non-public user data, and how do subpoena requests differ from requests for access logs?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-047-R1",
+          "requirement_text": "What legal process does GitHub require before disclosing non-public user data?",
+          "source_phrase": "What legal process does GitHub require before disclosing non-public user data",
+          "affected_aspects": []
+        },
+        {
+          "requirement_id": "VAL-001-047-R2",
+          "requirement_text": "How do subpoena requests differ from requests for access logs?",
+          "source_phrase": "how do subpoena requests differ from requests for access logs",
+          "affected_aspects": []
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-047-F01",
+        "VAL-001-047-F02",
+        "VAL-001-047-F04"
+      ],
+      "target_support_chunks": [
+        "chunk_e38e8b117bf75ca2426fb8a0"
+      ],
+      "candidate_layer_original": {
+        "chunk_e38e8b117bf75ca2426fb8a0": {
+          "in_lex20": true,
+          "in_sem20": true
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 34,
+          "selected": [
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_30ab6464817b7b0946abaad0",
+            "chunk_32e0b053fd01881e36edc91c",
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_35fd87021964946f76efbd5f"
+          ],
+          "selected_tokens": 1772,
+          "target_visibility": {
+            "chunk_e38e8b117bf75ca2426fb8a0": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 79,
+          "selected": [
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_30ab6464817b7b0946abaad0",
+            "chunk_32e0b053fd01881e36edc91c",
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_35fd87021964946f76efbd5f"
+          ],
+          "selected_tokens": 1772,
+          "target_visibility": {
+            "chunk_e38e8b117bf75ca2426fb8a0": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 34,
+          "selected": [
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_30ab6464817b7b0946abaad0",
+            "chunk_35fd87021964946f76efbd5f",
+            "chunk_32e0b053fd01881e36edc91c",
+            "chunk_a761f910df2bb1e22f5a4020"
+          ],
+          "selected_tokens": 1772,
+          "target_visibility": {
+            "chunk_e38e8b117bf75ca2426fb8a0": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 56,
+          "selected": [
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_30ab6464817b7b0946abaad0",
+            "chunk_32e0b053fd01881e36edc91c",
+            "chunk_6bc363aa4e3f40702deda958",
+            "chunk_35fd87021964946f76efbd5f"
+          ],
+          "selected_tokens": 2063,
+          "target_visibility": {
+            "chunk_e38e8b117bf75ca2426fb8a0": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 3,
+          "total": 3
+        },
+        "A2-1_deeper_original": {
+          "covered": 3,
+          "total": 3
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 3,
+          "total": 3
+        },
+        "A2-3_requirement_query": {
+          "covered": 3,
+          "total": 3
+        }
+      }
+    },
+    "VAL-001-001": {
+      "role": "uncertain_representation_probe",
+      "route": "BROAD",
+      "query": "My repository was taken down after a DMCA complaint. Before I challenge it, what am I asserting and what legal risks should I consider?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-001-R1",
+          "requirement_text": "What must I assert when I challenge a DMCA takedown?",
+          "source_phrase": "what am I asserting",
+          "affected_aspects": [
+            "VAL-001-001-F01",
+            "VAL-001-001-F02"
+          ]
+        },
+        {
+          "requirement_id": "VAL-001-001-R2",
+          "requirement_text": "What legal risks should I consider before submitting a DMCA counter notice?",
+          "source_phrase": "what legal risks should I consider",
+          "affected_aspects": [
+            "VAL-001-001-F03",
+            "VAL-001-001-F04"
+          ]
+        }
+      ],
+      "affected_aspects": [
+        "VAL-001-001-F01",
+        "VAL-001-001-F02",
+        "VAL-001-001-F03",
+        "VAL-001-001-F04"
+      ],
+      "target_support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "candidate_layer_original": {
+        "chunk_dfcbf6c0856007fb39268709": {
+          "in_lex20": true,
+          "in_sem20": false
+        }
+      },
+      "arms": {
+        "A2-0_original": {
+          "order_size": 30,
+          "selected": [
+            "chunk_b3a75390d468384fcf4e9ecf",
+            "chunk_ce4e78bb644577b70b81f4e9",
+            "chunk_201a3c4be6cf44693fbebab7",
+            "chunk_80d71a13ddfac8eb977f9541",
+            "chunk_07d96053cdafec174753bfbb"
+          ],
+          "selected_tokens": 3430,
+          "target_visibility": {
+            "chunk_dfcbf6c0856007fb39268709": {
+              "in_order": true,
+              "rank": 12,
+              "selected": false
+            }
+          }
+        },
+        "A2-1_deeper_original": {
+          "order_size": 75,
+          "selected": [
+            "chunk_b3a75390d468384fcf4e9ecf",
+            "chunk_ce4e78bb644577b70b81f4e9",
+            "chunk_201a3c4be6cf44693fbebab7",
+            "chunk_80d71a13ddfac8eb977f9541",
+            "chunk_07d96053cdafec174753bfbb"
+          ],
+          "selected_tokens": 3430,
+          "target_visibility": {
+            "chunk_dfcbf6c0856007fb39268709": {
+              "in_order": true,
+              "rank": 12,
+              "selected": false
+            }
+          }
+        },
+        "A2-2_diversity_mmr": {
+          "order_size": 30,
+          "selected": [
+            "chunk_b3a75390d468384fcf4e9ecf",
+            "chunk_ce4e78bb644577b70b81f4e9",
+            "chunk_201a3c4be6cf44693fbebab7",
+            "chunk_51e2a409338af3ecbb58deb6",
+            "chunk_80d71a13ddfac8eb977f9541"
+          ],
+          "selected_tokens": 3528,
+          "target_visibility": {
+            "chunk_dfcbf6c0856007fb39268709": {
+              "in_order": true,
+              "rank": 12,
+              "selected": false
+            }
+          }
+        },
+        "A2-3_requirement_query": {
+          "order_size": 38,
+          "selected": [
+            "chunk_b3a75390d468384fcf4e9ecf",
+            "chunk_ce4e78bb644577b70b81f4e9",
+            "chunk_dfcbf6c0856007fb39268709",
+            "chunk_201a3c4be6cf44693fbebab7",
+            "chunk_7858ac759f06d98823da5dbf"
+          ],
+          "selected_tokens": 3353,
+          "target_visibility": {
+            "chunk_dfcbf6c0856007fb39268709": {
+              "in_order": true,
+              "rank": 1,
+              "selected": true
+            }
+          }
+        }
+      },
+      "coverage": {
+        "A2-0_original": {
+          "covered": 0,
+          "total": 4
+        },
+        "A2-1_deeper_original": {
+          "covered": 0,
+          "total": 4
+        },
+        "A2-2_diversity_mmr": {
+          "covered": 0,
+          "total": 4
+        },
+        "A2-3_requirement_query": {
+          "covered": 4,
+          "total": 4
+        }
+      }
+    }
+  },
+  "verdict": {
+    "mechanism": "A2_MECHANISM_CONFIRMED",
+    "adoption": "NOT_ADOPTED (default adoption evidence INSUFFICIENT)",
+    "overall": "A2_MECHANISM_CONFIRMED_BUT_NOT_ADOPTED",
+    "trigger_case": "VAL-001-046",
+    "criteria": {
+      "c1_requirement_arm_improves_F03_F04_visibility": true,
+      "c2_not_achievable_by_deeper_original": true,
+      "c3_not_achievable_by_diversity_selection": true,
+      "c4_controls_no_retrieval_drift_or_regression": true
+    },
+    "evidence": {
+      "VAL-001-046": {
+        "target_chunk": "chunk_35fd87021964946f76efbd5f",
+        "A2-0_original": "absent from the Lex20+Sem20 candidate union; not selected; coverage 0/4",
+        "A2-1_deeper_original_Lex50_Sem50": "present but BGE rank 79 of 91; not selected; coverage 0/4",
+        "A2-2_diversity_mmr": "target absent from the pool; coverage 0/4",
+        "A2-3_requirement_query": "BGE rank 2, selected; coverage 4/4 at 1286 evidence tokens"
+      },
+      "VAL-001-001_uncertain": {
+        "target_chunk": "chunk_dfcbf6c0856007fb39268709",
+        "A2-0_original": "rank 12, not selected; coverage 0/4",
+        "A2-1_deeper_original": "rank 12, not selected; coverage 0/4",
+        "A2-2_diversity_mmr": "rank 12, not selected; coverage 0/4",
+        "A2-3_requirement_query": "rank 1, selected; coverage 4/4",
+        "note": "uncertain due to a0-vs-runtime ordering mismatch; reported separately, not used as primary trigger proof"
+      }
+    },
+    "controls": {
+      "VAL-001-033_budget_control": "target rank 3 in every arm and selected; decomposition yields no unique gain -> SELECTION_BUDGET diagnosis preserved",
+      "VAL-001-011_generation_control": "target rank 1 and selected in every arm including original -> GENERATION_MISS diagnosis preserved; A2 retrieval manipulation adds nothing",
+      "fully_covered_broad_controls": {
+        "VAL-001-005": "covered 5/5 in all arms",
+        "VAL-001-045": "covered 6/6 in all arms",
+        "VAL-001-047": "covered 3/3 in all arms",
+        "conclusion": "no required-coverage regression or retrieval drift"
+      }
+    },
+    "incidence": {
+      "clear_representation_cases": 1,
+      "uncertain_cases": 1,
+      "v1_cases": 50
+    },
+    "architecture_recommendation": "Do not add a decomposition hot path. Mechanism proven for one case; default adoption evidence is insufficient.",
+    "constraints_honored": [
+      "no LLM decomposition",
+      "no generation LLM",
+      "no production pipeline change",
+      "no retriever/reranker/model/index change",
+      "no parameter sweep",
+      "no A3"
+    ]
+  }
+}

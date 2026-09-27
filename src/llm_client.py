@@ -107,6 +107,22 @@ class OpenAIChatCompletionsClient:
         temperature: float = 0.0,
     ) -> tuple[str, dict[str, int | None]]:
         """Return the same answer plus provider-reported tokens, when present."""
+        answer, metadata = self.complete_with_metadata(
+            messages, max_tokens=max_tokens, temperature=temperature
+        )
+        return answer, {
+            "input_tokens": metadata["input_tokens"],
+            "output_tokens": metadata["output_tokens"],
+        }
+
+    def complete_with_metadata(
+        self,
+        messages: Sequence[Mapping[str, str]],
+        *,
+        max_tokens: int = 96,
+        temperature: float = 0.0,
+    ) -> tuple[str, dict[str, Any]]:
+        """Return usage and request provenance from the existing chat endpoint."""
         if not messages:
             raise ValueError("messages must not be empty")
         if max_tokens <= 0:
@@ -131,6 +147,8 @@ class OpenAIChatCompletionsClient:
         try:
             with urlopen(request, timeout=self.config.timeout_seconds) as response:
                 body = response.read().decode("utf-8")
+                headers = getattr(response, "headers", None)
+                header_request_id = headers.get("x-request-id") if headers is not None else None
         except HTTPError as error:
             details = error.read().decode("utf-8", errors="replace")[:500]
             raise LLMClientError(
@@ -152,9 +170,13 @@ class OpenAIChatCompletionsClient:
                 return value
             return None
 
+        request_id = header_request_id or data.get("request_id")
         return answer, {
             "input_tokens": token_count("prompt_tokens"),
             "output_tokens": token_count("completion_tokens"),
+            "request_id": str(request_id) if request_id else None,
+            "response_id": str(data["id"]) if data.get("id") else None,
+            "cache_metadata": usage.get("prompt_tokens_details"),
         }
 
 

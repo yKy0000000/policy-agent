@@ -1,0 +1,147 @@
+{
+  "version": "final-metrics-v1",
+  "status": "final",
+  "generated_from_frozen_artifacts_only": true,
+  "note": "Values validated against the frozen artifacts listed in source_artifacts; not copied from prompts.",
+  "reranker": {
+    "comparison": "MiniLM Top5 vs BGE Top5 (reranker transfer)",
+    "answer_macro": {
+      "before": 0.866,
+      "after": 0.92
+    },
+    "answer_complete_cases": {
+      "before": 36,
+      "after": 38
+    },
+    "contradicted_claims": {
+      "before": 5,
+      "after": 1
+    },
+    "missing_citations": {
+      "before": 16,
+      "after": 6
+    },
+    "decision": "KEEP",
+    "source": "eval/results/reranker_transfer_summary.md"
+  },
+  "baseline_candidate_coverage": {
+    "covered_required_facts": 235,
+    "required_facts": 239,
+    "micro": 0.983,
+    "note": "candidate required-fact coverage on Validation V1; not retrieval accuracy",
+    "source": "eval/validation/VALIDATION.md / README"
+  },
+  "a1": {
+    "fixed_top5": {
+      "required_covered": 196,
+      "required_total": 208,
+      "complete": 43,
+      "cases": 50,
+      "confirmed_regressions": 0,
+      "correctness_grounding_issues": 1,
+      "tokens_per_query": 2533.1,
+      "cost_per_query_usd": 0.00052381,
+      "evidence_tokens": 91699
+    },
+    "coverage_selector_v2": {
+      "required_covered": 196,
+      "required_total": 208,
+      "complete": 44,
+      "cases": 50,
+      "confirmed_regressions": 0,
+      "correctness_grounding_issues": 1,
+      "tokens_per_query": 3281.1,
+      "cost_per_query_usd": 0.00064523,
+      "evidence_tokens": 125648
+    },
+    "query_router_v1": {
+      "required_covered": 196,
+      "required_total": 208,
+      "complete": 44,
+      "cases": 50,
+      "confirmed_regressions": 1,
+      "correctness_grounding_issues": 2,
+      "tokens_per_query": 3667.7,
+      "cost_per_query_usd": 0.0006998,
+      "evidence_tokens": 143319,
+      "decision": "KILL"
+    },
+    "no_router_adaptive_v1": {
+      "required_covered": 202,
+      "required_total": 208,
+      "complete": 46,
+      "cases": 50,
+      "confirmed_regressions": 1,
+      "correctness_grounding_issues": 1,
+      "tokens_per_query": 6188.9,
+      "cost_per_query_usd": 0.00109824,
+      "evidence_tokens": 256422
+    },
+    "adaptive_prefix_v1": {
+      "required_covered": 200,
+      "required_total": 208,
+      "complete": 44,
+      "cases": 50,
+      "confirmed_regressions": 2,
+      "correctness_grounding_issues": 1,
+      "tokens_per_query": 4417.8,
+      "cost_per_query_usd": 0.00082328,
+      "evidence_tokens": 176934
+    }
+  },
+  "a1_strict_dominance": {
+    "coverage_selector_v2_dominates_query_router_v1": true,
+    "detail": "complete 44=44, covered 196=196, regressions 0<1, grounding 1<2, tokens/query 3281.1<3667.7"
+  },
+  "a1_verified_totals": {
+    "unique_answers": 156,
+    "aspect_instances": 654,
+    "aspect_totals": {
+      "judged": 654,
+      "covered": 626,
+      "missing": 28,
+      "incorrect": 0,
+      "uncertain": 0
+    },
+    "answers_query_required_complete": 138
+  },
+  "residual_failure": {
+    "query_required_aspects": 208,
+    "missing_in_at_least_one_arm": 16,
+    "cases": 10,
+    "by_type": {
+      "RANKING_WEAKNESS": 2,
+      "SELECTION_BUDGET": 6,
+      "GENERATION_MISS": 6,
+      "REPRESENTATION_CANDIDATE": 2
+    },
+    "by_route": {
+      "BROAD": 7,
+      "SIMPLE": 9
+    }
+  },
+  "a2": {
+    "trigger_case": "VAL-001-046",
+    "affected_aspects": [
+      "VAL-001-046-F03",
+      "VAL-001-046-F04"
+    ],
+    "mechanism_confirmed": true,
+    "default_adoption": false,
+    "clear_incidence": "1/50",
+    "verdict": "A2_MECHANISM_CONFIRMED_BUT_NOT_ADOPTED"
+  },
+  "triggers": {
+    "a1_router": "KILL",
+    "a2_requirement_decomposition": "A2_MECHANISM_CONFIRMED_BUT_NOT_ADOPTED",
+    "a3_hierarchical_context": "A3_NOT_TRIGGERED"
+  },
+  "source_artifacts": {
+    "a1_blind_answer_quality_arm_table_v1.json": "4a737bb502f9a2d57b0edb328d300bd8bbe468dfdbbe869dd6853e8b2583b217",
+    "a1_blind_answer_quality_frozen_v1.json": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+    "a1_final_pareto_v1.json": "5629d050e4e099547449ff57d1b9bb423a8d1a7786d9fa855331ebaef0be3628",
+    "a1_failure_analysis_v1.json": "c0baf21496e86916b6e62b0328dfb1dcb44ce3ab1097cea02a36d88ad2c564b3",
+    "a2_minimal_mechanism_probe_v1.json": "ceba0ffa54a6e4f6039ebf2cac82284a42349ef8a9a61942c91be70f93c08cde",
+    "frozen_human_verdicts_v1.json": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716"
+  }
+}

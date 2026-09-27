@@ -1,0 +1,54 @@
+{
+  "version": "a1-blind-answer-quality-arm-table-v1",
+  "source_frozen": "a1_blind_answer_quality_frozen_v1.json",
+  "unblinded_via": "a1_blind_answer_mapping_v1.json",
+  "economics_read": false,
+  "pareto": false,
+  "table": [
+    {
+      "arm": "fixed_top5",
+      "required_covered": 196,
+      "required_missing": 12,
+      "query_required_complete": "43/50",
+      "confirmed_regressions_vs_fixed": 0,
+      "confirmed_improvements_vs_fixed": 0,
+      "correctness_grounding_issues": 1
+    },
+    {
+      "arm": "adaptive_prefix_v1",
+      "required_covered": 200,
+      "required_missing": 8,
+      "query_required_complete": "44/50",
+      "confirmed_regressions_vs_fixed": 2,
+      "confirmed_improvements_vs_fixed": 0,
+      "correctness_grounding_issues": 1
+    },
+    {
+      "arm": "coverage_selector_v2",
+      "required_covered": 196,
+      "required_missing": 12,
+      "query_required_complete": "44/50",
+      "confirmed_regressions_vs_fixed": 0,
+      "confirmed_improvements_vs_fixed": 0,
+      "correctness_grounding_issues": 1
+    },
+    {
+      "arm": "no_router_adaptive_v1",
+      "required_covered": 202,
+      "required_missing": 6,
+      "query_required_complete": "46/50",
+      "confirmed_regressions_vs_fixed": 1,
+      "confirmed_improvements_vs_fixed": 0,
+      "correctness_grounding_issues": 1
+    },
+    {
+      "arm": "query_router_v1",
+      "required_covered": 196,
+      "required_missing": 12,
+      "query_required_complete": "44/50",
+      "confirmed_regressions_vs_fixed": 1,
+      "confirmed_improvements_vs_fixed": 0,
+      "correctness_grounding_issues": 2
+    }
+  ]
+}

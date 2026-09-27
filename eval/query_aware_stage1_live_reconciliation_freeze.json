@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "version": "query-aware-stage1-live-reconciliation-freeze-v1",
+  "status": "source_frozen_for_independent_audit",
+  "created_utc": "2026-09-26T21:05:00.000000+00:00",
+  "executor_path": "eval/run_query_aware_stage1_live.py",
+  "source_hashes": {
+    "eval/run_query_aware_stage1_live.py": "a41e5e7376061c8b307e6fefb13d3a9001c0ebca71231fe6d54495ea0f6ab976",
+    "eval/run_query_aware_stage1.py": "b929209fbcf72b2ad59c870ee10eb98ac1360e0c2fdf336ae4b18c9bf112aee5",
+    "src/llm_client.py": "c4040fc7c25a5a0b7989ddeac1f2b78b1c29ce89fa1bedd609bdc66a8d0a130c",
+    "eval/results/query_aware_stage1_dry_run.json": "1557f29a937545bc80ed46d595f3ac2d4e22727a57c65520aa001be461ff8b5b",
+    "tests/test_query_aware_stage1_live.py": "611522c50c84ff08b5171bd41bbc9e1b6d827bfd6eb6861e72eb9dec0184ca01"
+  },
+  "frozen_artifact_hashes": {
+    "eval/query_aware_stage0_config.json": "744ed411e301aaf28a3751be99c31157b26dcbcf524673f749aa711d2a82e3a6",
+    "eval/query_aware_router_v1.json": "dcc7d4953f3ba9794c35f2168e29f419bbb40eb014775cf8ccb5e0e7ae913bd7",
+    "eval/query_aware_arms_v1.json": "18d7adbfd1ac8a1802dbf29d2c222fb988d0c495ca4f979c24297a406f0112c9",
+    "eval/results/frozen_human_verdicts_v1.json": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716",
+    "eval/results/a0_bge_rerank_orders.json": "fb15b316c4b5170514e6f1c5140689ba0e77869dd516b7c7e170593c4db5b2e2",
+    "eval/results/stage0_replay_results.json": "5e7d665bdae13803dd00d39756881f55e5a6792eb01ca37d0e2f63a4e1563703"
+  },
+  "provider": "openai-compatible-chat-completions",
+  "provider_base_url_sha256": "a34e2a4708ed1c61008a151688838dcf1c44d4e7f08054633e72ba7c0b16cfc1",
+  "generation_model": "deepseek-v4-flash",
+  "generation_prompt_version": "grounded-policy-answer-v1",
+  "generation_prompt_sha256": "5f7018961248fe4d4d53fba8e15c409cb6de42260bf3acc05e7279c2d8e0b603",
+  "provider_thinking_mode": "disabled",
+  "expected_unique_owners": 106,
+  "expected_final_rows": 250,
+  "expected_legacy_reuse": 103,
+  "retry_rule": "no automatic retries; UNKNOWN or FAILED_KNOWN_NOT_COMPLETED requires manual reconciliation",
+  "semantic_change": "only semantic change = explicit one-shot manual reconciliation path for UNKNOWN completion; --execute never reconciles, and reconciliation requires the dedicated --reconcile-generation-key CLI with --confirm-manual-reconciliation",
+  "invariants": {
+    "case_arm_rows": 250,
+    "legacy_reuse_rows": 103,
+    "unique_generation_owners": 106,
+    "generation_identity_changed": false,
+    "planner_context_policy_identity_changed": false,
+    "generation_model_or_prompt_changed": false
+  },
+  "reconciliation_semantics": {
+    "states": [
+      "MANUAL_RECONCILIATION_AUTHORIZED",
+      "RECONCILIATION_ATTEMPT_STARTED",
+      "RECONCILIATION_SUCCESS",
+      "RECONCILIATION_FAILED_KNOWN_NOT_COMPLETED",
+      "RECONCILIATION_UNKNOWN_COMPLETION_STATE"
+    ],
+    "legal_transition": "ATTEMPT_STARTED -> UNKNOWN_COMPLETION_STATE -> MANUAL_RECONCILIATION_AUTHORIZED -> RECONCILIATION_ATTEMPT_STARTED -> reconciliation terminal",
+    "max_reconciliation_attempts": 1,
+    "original_unknown_preserved": true,
+    "execute_auto_reconciles": false
+  }
+}

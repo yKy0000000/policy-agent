@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-size="20">A1 Quality-Cost Pareto (Validation V1, 50 cases)</text>
+<line x1="90" y1="600" x2="960" y2="600" stroke="#888"/>
+<line x1="90" y1="600" x2="90" y2="70" stroke="#888"/>
+<text x="415" y="640" font-size="16">provider total tokens / query</text>
+<circle cx="168" cy="490" r="7" fill="#3c3c3c"/>
+<text x="179" y="490" font-size="14" fill="#3c3c3c">fixed_top5 (cost extreme)</text>
+<circle cx="314" cy="379" r="7" fill="#1f77b4"/>
+<text x="325" y="379" font-size="14" fill="#1f77b4">coverage_selector_v2</text>
+<circle cx="390" cy="379" r="7" fill="#d62728"/>
+<text x="401" y="379" font-size="14" fill="#d62728">query_router_v1 (dominated)</text>
+<circle cx="536" cy="379" r="7" fill="#2ca02c"/>
+<text x="547" y="379" font-size="14" fill="#2ca02c">adaptive_prefix_v1</text>
+<circle cx="882" cy="158" r="7" fill="#9467bd"/>
+<text x="893" y="158" font-size="14" fill="#9467bd">no_router_adaptive_v1 (quality extreme)</text>
+</svg>

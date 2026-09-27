@@ -1,0 +1,98 @@
+{
+  "version": "final-results-table-v1",
+  "status": "final",
+  "generated_from_frozen_inputs_only": true,
+  "no_new_metrics": true,
+  "research_phase": "COMPLETE",
+
+  "final_architecture": {
+    "production_path": [
+      "conversation history + latest question",
+      "existing multi-turn contextual rewrite when applicable",
+      "lexical Top20 + semantic Top20",
+      "union / chunk-ID dedup",
+      "BGE reranker",
+      "fixed Top5 context",
+      "frozen grounded generation",
+      "deterministic citation/output validation"
+    ],
+    "excluded_mechanisms": ["query_router_v1 (SIMPLE/BROAD router)",
+                            "default requirement decomposition",
+                            "hierarchical/parent context expansion"],
+    "note": "Research A0-BGE stack uses BAAI/bge-reranker-base + fixed_top5. The repository production default uses the MiniLM cross-encoder and fixed_top5; the two configurations are never compared as one baseline (Stage 0 separation note)."
+  },
+
+  "mechanism_decisions": [
+    {"mechanism": "BGE reranker",
+     "hypothesis": "better ranking improves evidence quality",
+     "evidence": "prior transfer gain (MiniLM-Top5 vs BGE-Top5: answer macro 0.866 -> 0.920, complete 36 -> 38, contradicted 5 -> 1, missing citations 16 -> 6)",
+     "decision": "KEEP"},
+    {"mechanism": "SIMPLE/BROAD router (query_router_v1)",
+     "hypothesis": "query structure improves context allocation",
+     "evidence": "strictly dominated by coverage_selector_v2 (equal 196/208 covered and 44/50 complete; 1 vs 0 confirmed regressions; 2 vs 1 grounding issues; 3,667.7 vs 3,281.1 tokens/query)",
+     "decision": "KILL"},
+    {"mechanism": "Evidence selector (coverage_selector_v2)",
+     "hypothesis": "allocation without query classification",
+     "evidence": "no material adoption gain over the simplest baseline: vs fixed_top5 gained 1 / lost 1 required aspect, complete 43 -> 44, 0 confirmed regressions, but +29.5% tokens",
+     "decision": "REFERENCE / NON-DEFAULT"},
+    {"mechanism": "Requirement decomposition",
+     "hypothesis": "fixes single-representation visibility failures on multi-requirement queries",
+     "evidence": "uniquely fixes VAL-001-046 (rank 2/selected vs absent, rank 79, and absent for original, deeper, and MMR); clear incidence 1/50",
+     "decision": "CONFIRMED, NOT ADOPTED"},
+    {"mechanism": "Parent/hierarchical context",
+     "hypothesis": "fixes chunk-boundary fragmentation",
+     "evidence": "0 confirmed fragmentation cases in the residual-failure postmortem",
+     "decision": "NOT TRIGGERED"}
+  ],
+
+  "quality_economics": [
+    {"arm": "fixed_top5", "required_covered": 196, "required_total": 208, "query_required_complete": "43/50", "confirmed_regressions": 0, "tokens_per_query": 2533.1, "cost_per_query_usd": 0.00052381, "role": "working/default baseline"},
+    {"arm": "coverage_selector_v2", "required_covered": 196, "required_total": 208, "query_required_complete": "44/50", "confirmed_regressions": 0, "tokens_per_query": 3281.1, "cost_per_query_usd": 0.00064523, "role": "non-dominated, not adopted"},
+    {"arm": "query_router_v1", "required_covered": 196, "required_total": 208, "query_required_complete": "44/50", "confirmed_regressions": 1, "tokens_per_query": 3667.7, "cost_per_query_usd": 0.00069980, "role": "KILLED (strictly dominated by coverage_selector_v2)"},
+    {"arm": "adaptive_prefix_v1", "required_covered": 200, "required_total": 208, "query_required_complete": "44/50", "confirmed_regressions": 2, "tokens_per_query": 4417.8, "cost_per_query_usd": 0.00082328, "role": "non-dominated, not adopted"},
+    {"arm": "no_router_adaptive_v1", "required_covered": 202, "required_total": 208, "query_required_complete": "46/50", "confirmed_regressions": 1, "tokens_per_query": 6188.9, "cost_per_query_usd": 0.00109824, "role": "quality ceiling/reference"}
+  ],
+
+  "a2_showcase_case": {
+    "case_id": "VAL-001-046",
+    "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+    "affected_requirements": ["VAL-001-046-F03", "VAL-001-046-F04"],
+    "strategies": [
+      {"strategy": "Original query", "supporting_evidence_visibility": "absent", "final_retrieval_result": "0/4"},
+      {"strategy": "Deeper original", "supporting_evidence_visibility": "rank 79/91", "final_retrieval_result": "0/4"},
+      {"strategy": "Diversity/MMR", "supporting_evidence_visibility": "absent from pool", "final_retrieval_result": "0/4"},
+      {"strategy": "Requirement query", "supporting_evidence_visibility": "rank 2", "final_retrieval_result": "4/4"}
+    ],
+    "interpretation": "This is the failure mode decomposition genuinely helps, but only one clear case out of 50 was observed, so it is not in the default system."
+  },
+
+  "residual_failure_postmortem": {
+    "query_required_aspects": 208,
+    "missing_in_at_least_one_arm": 16,
+    "by_type": {"GENERATION_MISS": 6, "SELECTION_BUDGET": 6, "RANKING_WEAKNESS": 2,
+                "REPRESENTATION_CANDIDATE": 2, "FRAGMENTATION_CANDIDATE": 0, "OTHER": 0},
+    "by_route": {"BROAD": 7, "SIMPLE": 9}
+  },
+
+  "trigger_statuses": {
+    "a1_router": "KILL",
+    "a2_requirement_decomposition": "A2_MECHANISM_CONFIRMED_BUT_NOT_ADOPTED",
+    "a3_hierarchical_context": "A3_NOT_TRIGGERED"
+  },
+
+  "frozen_artifact_hashes": {
+    "a1_blind_answer_quality_frozen_v1.json": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+    "a1_final_pareto_v1.json": "5629d050e4e099547449ff57d1b9bb423a8d1a7786d9fa855331ebaef0be3628",
+    "a1_failure_analysis_v1.json": "c0baf21496e86916b6e62b0328dfb1dcb44ce3ab1097cea02a36d88ad2c564b3",
+    "a2_minimal_mechanism_probe_v1.json": "ceba0ffa54a6e4f6039ebf2cac82284a42349ef8a9a61942c91be70f93c08cde",
+    "frozen_human_verdicts_v1.json": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716"
+  },
+
+  "caveats": [
+    "USD cost per query is an uncached-equivalent estimate; physical experiment dedup is not an independent-deployment cost.",
+    "Latency is only available for no_router_adaptive_v1; the other arms reused cached answers, so latency is not treated as 0.",
+    "a0_bge_rerank_orders.json (the order the A1 arms consumed) does not bit-match the current-runtime reranked order; the trigger result is unaffected (the VAL-001-046 chunk is absent under both orders).",
+    "Grounding/citation diagnostics are mostly judge-derived; one human-confirmed contradicted claim (VAL-001-046 / no_router_adaptive_v1).",
+    "Validation V1 is 50 cases; the 16 Broad Query V3 cases are development/diagnostic."
+  ]
+}

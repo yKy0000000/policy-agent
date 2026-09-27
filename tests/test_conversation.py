@@ -27,6 +27,30 @@ class EchoClient:
 
 
 class ConversationTests(unittest.TestCase):
+    def test_provider_metadata_captures_request_id_without_changing_usage_api(self) -> None:
+        class Response:
+            headers = {"x-request-id": "req-123"}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_):
+                return None
+
+            def read(self):
+                return json.dumps({"id": "completion-456",
+                    "choices": [{"message": {"content": "Answer"}}],
+                    "usage": {"prompt_tokens": 12, "completion_tokens": 3,
+                              "prompt_tokens_details": {"cached_tokens": 5}}}).encode("utf-8")
+
+        client = OpenAIChatCompletionsClient(LLMConfig("key", "https://example.test", "model"))
+        with patch("src.llm_client.urlopen", return_value=Response()):
+            answer, metadata = client.complete_with_metadata([{"role": "user", "content": "Question?"}])
+        self.assertEqual(answer, "Answer")
+        self.assertEqual(metadata["request_id"], "req-123")
+        self.assertEqual(metadata["response_id"], "completion-456")
+        self.assertEqual(metadata["cache_metadata"], {"cached_tokens": 5})
+
     def test_provider_usage_is_reported_only_when_present(self) -> None:
         class Response:
             def __init__(self, data):

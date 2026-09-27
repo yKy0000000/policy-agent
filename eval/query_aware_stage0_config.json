@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "version": "query-aware-stage0-v1",
+  "status": "frozen_before_stage1",
+  "created_utc": "2026-09-27",
+  "research_baseline": {
+    "id": "A0_BGE_FIXED_TOP5",
+    "candidate_stage": "lexical_top20 + semantic_top20 -> union -> chunk-ID dedup",
+    "reranker_model": "BAAI/bge-reranker-base",
+    "union_hash": "0b217aea75b97c9d66727050e29aca3b8283950690f356d0aaafec439e1345b0",
+    "union_hash_method": "_stable_hash({case_id: sorted(chunk_ids)})",
+    "alternative_union_hash": "d09e85acd86c8c8939be49704feb2111ad6bf58c2073a6a78ee6a4416bb021e8",
+    "alternative_union_hash_method": "sha256(json.dumps({case_id: sorted(chunk_ids)})) as recorded in reranker_ab_analysis.json",
+    "context_policy": "fixed_top5",
+    "context_k": 5,
+    "generation_model": "deepseek-v4-flash",
+    "generation_prompt_version": "grounded-policy-answer-v1",
+    "generation_prompt_sha256": "5f7018961248fe4d4d53fba8e15c409cb6de42260bf3acc05e7279c2d8e0b603",
+    "rewrite_prompt_version": "contextual-query-rewrite-v1",
+    "rewrite_prompt_sha256": "eccf476b2634b40c59a53577c5fdffd83d4cdab97bb3dc063b61a113ac983534",
+    "rewrite_applied_in_frozen_replay": false,
+    "judge_prompt_version": "broad-v3-answer-quality-v1",
+    "judge_prompt_sha256": "0a6139e32af53f1235c39b33067ffd54bff101e9b5f90e1a231ac0b74e537979",
+    "validation_version": "validation-v1"
+  },
+  "repository_default": {
+    "id": "REPO_DEFAULT_MINILM_FIXED_TOP5",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "evidence_mode": "fixed_top5",
+    "context_k": 5,
+    "source": "src/agent.py (EVIDENCE_TOP_K=5, evidence_mode default fixed_top5), src/reranker.py (DEFAULT_RERANKER_MODEL)",
+    "generation_model": "deepseek-v4-flash"
+  },
+  "separation_note": "Repository default (MiniLM) and research A0-BGE (BGE) are different causal configurations; they must not be compared as one baseline. All Stage 1 arms share the A0-BGE retrieval stack and differ only in context allocation policy.",
+  "query_sets": {
+    "validation_v1_50": {
+      "path": "eval/validation/broad_queries_validation_v1.json",
+      "sha256": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+      "role": "primary Stage 1 replay/eval set (development/diagnostic)"
+    },
+    "validation_v1_rubric": {
+      "path": "eval/validation/broad_atomic_facts_validation_v1.json",
+      "sha256": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+      "role": "aspect source (diagnostic until human adjudication)"
+    },
+    "broad_v3_16": {
+      "path": "eval/broad_queries_v3_adjudicated.json",
+      "sha256": "9e15b40cc5068aa4fc52ce3e7a5c154c90733156f66e5c92bc688c19a6b919e4",
+      "role": "broad aspect human-adjudication source"
+    },
+    "broad_v3_rubric": {
+      "path": "eval/broad_query_v3_atomic_facts_frozen_candidate.json",
+      "sha256": "616e0968038a26b27b7a4d8a90293b100d9a2287da0038caa9cbe3f258646534",
+      "role": "broad aspect source"
+    }
+  },
+  "policy_configs": {
+    "adaptive_prefix_v1": {
+      "config": {
+        "initial_k": 5,
+        "first_expansion_k": 8,
+        "max_k": 20,
+        "max_evidence_tokens": 6000,
+        "saturation_coverage": 0.8,
+        "deep_expansion_coverage": 0.8,
+        "plateau_score_drop": 1.5,
+        "max_score_drop": 3.0
+      },
+      "config_hash": "b27547114386085f7d0421e13cb6a042b5fa1141794a7e828012c96e894fe71d",
+      "source": "src/evidence_budget.py"
+    },
+    "coverage_selector_v2": {
+      "config": {
+        "min_k": 5,
+        "max_k": 12,
+        "max_evidence_tokens": 6000,
+        "min_marginal_utility": 0.28,
+        "relevance_weight": 0.4,
+        "novelty_weight": 0.4,
+        "query_gain_weight": 0.2
+      },
+      "config_hash": "c8e42bb7d95d5893fbf30032d7749d8bce0409081a8dcf6c77319fe70b7366be",
+      "source": "src/evidence_selector.py"
+    }
+  },
+  "router": {
+    "path": "eval/query_aware_router_v1.json",
+    "version": "query-structure-router-v1",
+    "rule_hash": "04bb954ee9528d90e22260eab257e89e47e17bb101c8aa7180a38d0667722185"
+  },
+  "arms": {
+    "path": "eval/query_aware_arms_v1.json",
+    "stage2_shared_rerank_rule_hash": "103cbeb6296a369c903a3d64c46e23828405e402b7a9fe88e07f38c8d15a3557",
+    "mechanism_vs_adoption_hash": "b83c49e44604ac5c53b7e549b16d9b9b55027a46b910c5c740151ee692b4d14b"
+  },
+  "artifact_hashes": {
+    "eval/validation/validation_v1_metadata.json": "a91ab96a6c3f25551753b18bf647c718bdd7b3226fe59f3ebece26a2210c0339",
+    "eval/validation/broad_queries_validation_v1.json": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+    "eval/validation/broad_atomic_facts_validation_v1.json": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+    "eval/broad_queries_v3_adjudicated.json": "9e15b40cc5068aa4fc52ce3e7a5c154c90733156f66e5c92bc688c19a6b919e4",
+    "eval/broad_query_v3_atomic_facts_frozen_candidate.json": "616e0968038a26b27b7a4d8a90293b100d9a2287da0038caa9cbe3f258646534",
+    "cache/policy_index.json": "dc73a4725ff7361ebd0c28d5b9bef93a433ae6f2b6cd9a65723676e666e6ee82",
+    "cache/semantic_index.json": "672f4231d914272da061524e34b845e0d60711ccb335be531cf0df117f2580a1",
+    "cache/semantic_index.npy": "354c189c2414cb13b1eebd62cebd67472ba39c206cc6cf68cf623fb8cf6caf56",
+    "cache/query_rewrites.json": "0cb37d4f7aae5434acf2d5bb8f2847165c1a31591bca0c3bc141313d4660141d",
+    "cache/generated_answers.json": "1a1b83bd8b80cfc171a9665dec4f85fd9ba4eeab1fdfab6a2448d475b4deaa85",
+    "cache/validation_v1_llm_cache.json": "7e86d4b0efd7f2184dade8385d729f101fcd22734e7b0db5e52064b97ee257d4",
+    "cache/huggingface/models--BAAI--bge-reranker-base/snapshots/2cfc18c9415c912f9d8155881c133215df768a70/model.safetensors": "ced967c45fd1902eb92716c9ceeca7c95a936770ea9db611f5a841b926e33fbd",
+    "cache/huggingface/models--cross-encoder--ms-marco-MiniLM-L-6-v2/snapshots/233902d25c440f23af6f7d6e94d2946bac0bee0a/model.safetensors": "821d1aa69520101d6e0737f78a042ae25b19e5cb9160701909d10434f4aeb0ae",
+    "cache/huggingface/models--BAAI--bge-reranker-base/refs/main": "6f77fed7c8b7375adc65a1945e0a64d693a36e407269a277039b81b8eb59f95d",
+    "cache/huggingface/models--cross-encoder--ms-marco-MiniLM-L-6-v2/refs/main": "a721087079fe8eb5443de81483a3a20286b6defe572f0bbe3cbc15a137a0e232",
+    "eval/results/reranker_transfer_results.json": "bbce7fa512bfbf9d31b719ea3983934ce4a4781ce4caae6bb5751906a59cd589",
+    "eval/results/generation_utilization_results.json": "01be9f9c3a3c26b845df83475013c12838e67e55eb7967b7c3a4fda15f5d6963",
+    "eval/results/reranker_ab_analysis.json": "b3d5bcd19d6561230f530d7651fde053e8e765882b2be9de3a357ccbaa3a628a",
+    "eval/results/evidence_geometry_analysis.json": "3a5918595cf742bd083230c818055db664e61d20cd38ac7bed39cceb4a73cf2e",
+    "eval/results/a0_bge_rerank_orders.json": "fb15b316c4b5170514e6f1c5140689ba0e77869dd516b7c7e170593c4db5b2e2",
+    "eval/validation/results/validation_v1_results.json": "a6a50d879b5536273c4aef5bf2f18239effb176d4b9d18fe49de1bbdcbc3e458",
+    "eval/results/validation_mapping_audit.json": "2b264fc21cba39b490385fd7b14663bb5f02e6ff50e5eb5689c2a03e665c1592",
+    "src/agent.py": "12ce8f6eee0548a638a5ba563fda0e56642ffa22f833b17af780be589be62857",
+    "src/evidence_budget.py": "958260e405beb449831b0ebffe7bf8e6ceb6be19f58d72619d7260b882382601",
+    "src/evidence_selector.py": "563a431025c0ca142e088502e2b6d04d85a7652c941d1af51de4bfb84bc7b13a",
+    "src/reranker.py": "3b4e904952bc947a94596b52e87600d23498e1cdd5dd81360b4341e4b2176da5",
+    "src/reranked_retriever.py": "7e3971697e6c41d47459a00b149d14abc5e5336c41f1d2aa3d2fddb585603667",
+    "src/conversation.py": "72aac5dcf3d72e02f11441f738bc3b47342390473d83061de3c97a7c2c494254",
+    "src/generator.py": "42a7880c6a5e0bf43382d95102342c06e0c3c7d01086f4328d4b1d696b3aaa0c",
+    "src/chunking.py": "0aa53a5fd01ebeec99341f365f99854c53cf67a608dffb1c3de60d88f1e97c89",
+    "src/indexing.py": "7d7ca5c32ba4c18f09ed283f606c28fcfd25e2536b977da1ce994662f1e043e1",
+    "src/semantic_indexing.py": "0cc11c7795e7a9ab94b6adc10aa0b98eed51b74c55c9a4026cb98bde34bd6146",
+    "eval/run_validation.py": "ac33918007655293e57433868057849aa847079e19bf6d03ca29287610aa4147",
+    "eval/run_reranker_transfer_eval.py": "8ebb75ee0dc60b479343793b759cdb0d12f69ba52f91e890df7e1416b11196a4",
+    "eval/run_generation_utilization_eval.py": "d16528bfcc5a814ac7efa9f0ee527a3e83e9f5484db0ee45ff470fc1b26dd025",
+    "eval/compare_rerankers.py": "004254345eaf620a105569b78073901c68b5c6c9af5cf179cb8ce96530efe7e6"
+  }
+}

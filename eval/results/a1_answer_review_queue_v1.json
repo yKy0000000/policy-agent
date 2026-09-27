@@ -1,0 +1,116 @@
+{
+  "version": "a1-answer-review-queue-v1",
+  "note": "Minimal human queue; arms shown for resolution, evaluator/judge was blind.",
+  "counts": {
+    "total": 8,
+    "by_priority": {
+      "1": 6,
+      "3": 2
+    },
+    "by_kind": {
+      "complete_regression_vs_fixed_top5": 5,
+      "contradicted_claim": 1,
+      "selector_vs_router": 2
+    }
+  },
+  "selector_vs_router_disputes": [
+    {
+      "case_id": "VAL-001-008",
+      "selector_complete": false,
+      "router_complete": true,
+      "selector_covered": 3,
+      "router_covered": 4,
+      "selector_contradicted": 0,
+      "router_contradicted": 0
+    },
+    {
+      "case_id": "VAL-001-039",
+      "selector_complete": true,
+      "router_complete": false,
+      "selector_covered": 3,
+      "router_covered": 2,
+      "selector_contradicted": 0,
+      "router_contradicted": 0
+    }
+  ],
+  "items": [
+    {
+      "case_id": "VAL-001-011",
+      "arm": "no_router_adaptive_v1",
+      "label": "C",
+      "priority": 1,
+      "kind": "complete_regression_vs_fixed_top5",
+      "detail": "QueryRequiredComplete true->false"
+    },
+    {
+      "case_id": "VAL-001-027",
+      "arm": "no_router_adaptive_v1",
+      "label": "A",
+      "priority": 1,
+      "kind": "complete_regression_vs_fixed_top5",
+      "detail": "QueryRequiredComplete true->false"
+    },
+    {
+      "case_id": "VAL-001-032",
+      "arm": "adaptive_prefix_v1",
+      "label": "B",
+      "priority": 1,
+      "kind": "complete_regression_vs_fixed_top5",
+      "detail": "QueryRequiredComplete true->false"
+    },
+    {
+      "case_id": "VAL-001-039",
+      "arm": "adaptive_prefix_v1",
+      "label": "B",
+      "priority": 1,
+      "kind": "complete_regression_vs_fixed_top5",
+      "detail": "QueryRequiredComplete true->false"
+    },
+    {
+      "case_id": "VAL-001-039",
+      "arm": "query_router_v1",
+      "label": "B",
+      "priority": 1,
+      "kind": "complete_regression_vs_fixed_top5",
+      "detail": "QueryRequiredComplete true->false"
+    },
+    {
+      "case_id": "VAL-001-046",
+      "arm": "no_router_adaptive_v1",
+      "label": "A",
+      "priority": 1,
+      "kind": "contradicted_claim",
+      "detail": "1 contradicted claim(s)"
+    },
+    {
+      "case_id": "VAL-001-008",
+      "arm": "coverage_selector_v2|query_router_v1",
+      "priority": 3,
+      "kind": "selector_vs_router",
+      "detail": {
+        "case_id": "VAL-001-008",
+        "selector_complete": false,
+        "router_complete": true,
+        "selector_covered": 3,
+        "router_covered": 4,
+        "selector_contradicted": 0,
+        "router_contradicted": 0
+      }
+    },
+    {
+      "case_id": "VAL-001-039",
+      "arm": "coverage_selector_v2|query_router_v1",
+      "priority": 3,
+      "kind": "selector_vs_router",
+      "detail": {
+        "case_id": "VAL-001-039",
+        "selector_complete": true,
+        "router_complete": false,
+        "selector_covered": 3,
+        "router_covered": 2,
+        "selector_contradicted": 0,
+        "router_contradicted": 0
+      }
+    }
+  ]
+}

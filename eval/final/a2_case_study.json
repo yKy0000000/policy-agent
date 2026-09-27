@@ -1,0 +1,49 @@
+{
+  "version": "final-a2-case-study-v1",
+  "status": "final",
+  "source": "a2_minimal_mechanism_probe_v1.json",
+  "case_id": "VAL-001-046",
+  "role": "clear_trigger",
+  "route": "BROAD",
+  "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+  "affected_aspects": [
+    "VAL-001-046-F03",
+    "VAL-001-046-F04"
+  ],
+  "target_chunk": "chunk_35fd87021964946f76efbd5f",
+  "strategies": [
+    {
+      "strategy": "Original query",
+      "evidence_visibility": "absent",
+      "bge_rank": null,
+      "selected": false,
+      "coverage": "0/4"
+    },
+    {
+      "strategy": "Deeper original",
+      "evidence_visibility": "present",
+      "bge_rank": 79,
+      "order_size": 91,
+      "selected": false,
+      "coverage": "0/4"
+    },
+    {
+      "strategy": "MMR / diversity",
+      "evidence_visibility": "absent from pool",
+      "bge_rank": null,
+      "selected": false,
+      "coverage": "0/4"
+    },
+    {
+      "strategy": "Requirement query",
+      "evidence_visibility": "present",
+      "bge_rank": 2,
+      "selected": true,
+      "coverage": "4/4"
+    }
+  ],
+  "mechanism_confirmed": true,
+  "default_adoption": false,
+  "clear_incidence": "1/50",
+  "interpretation": "Decomposition uniquely restores the missing requirement evidence (rank 2, selected) while deeper retrieval (rank 79/91) and MMR (absent) cannot. Incidence is too low for a default hot path."
+}

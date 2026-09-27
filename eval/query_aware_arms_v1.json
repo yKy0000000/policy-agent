@@ -1,0 +1,149 @@
+{
+  "version": "query-aware-arms-v1",
+  "status": "frozen_before_stage1",
+  "shared_prior": {
+    "research_baseline": "A0_BGE_FIXED_TOP5",
+    "candidate_stage": "Lexical Top20 + Semantic Top20 -> union -> chunk-ID dedup (unchanged)",
+    "reranker": "BAAI/bge-reranker-base (frozen; see stage0 config hashes)",
+    "context_policy_for_A0": "fixed_top5 (k=5)",
+    "generation_model": "current model from .env",
+    "generation_prompt": "grounded-policy-answer-v1",
+    "rewrite": "not applied in the frozen single-turn replay (rewrite_calls = 0)"
+  },
+  "cache_key_schema": {
+    "existing_generation_key": "stable_hash({validation_version, case_id, evidence_hash, prompt_config_hash, generator_model})",
+    "stage1_generation_key": "stable_hash({validation_version, case_id, evidence_hash, prompt_config_hash, generator_model, context_policy_id, context_policy_hash})",
+    "reuse_rule": "A Stage 1 arm may reuse an existing frozen answer only when selected chunk IDs and order equal the frozen A0-BGE top5 evidence for that case; otherwise it must use the stage1 key."
+  },
+  "stage1_comparison": {
+    "A0_FIXED_TOP5": "reference",
+    "A1_ALWAYS_ADAPTIVE": "must beat A0 on quality-cost Pareto, otherwise delete",
+    "A1_V2_SELECTOR": "existing alternative policy",
+    "A1_NO_ROUTER_ADAPTIVE": "must not be dominated by A1_ROUTER; if it ties, delete router",
+    "A1_ROUTER": "must beat no-router adaptive on quality-cost Pareto, otherwise delete router"
+  },
+  "arms": [
+    {
+      "arm_id": "A0_FIXED_TOP5",
+      "policy_id": "fixed_top5",
+      "kind": "existing",
+      "source": "src/agent.py evidence_mode=fixed_top5; EVIDENCE_TOP_K=5",
+      "algorithm": "take BGE-ranked Top5 as the generation context",
+      "allowed_signals": [
+        "bge_rank"
+      ],
+      "params": {
+        "k": 5
+      },
+      "policy_hash": null,
+      "cache_key": "existing_generation_key"
+    },
+    {
+      "arm_id": "A1_ALWAYS_ADAPTIVE",
+      "policy_id": "adaptive_prefix_v1",
+      "kind": "existing",
+      "source": "src/evidence_budget.py select_evidence_prefix (production code)",
+      "algorithm": "contiguous prefix from k=5; expands to 8 or deeper on broad-query cues (_BREADTH) or conditional cues (_CONDITION) plus weak query-term coverage; stops on coverage saturation, score plateau/decay, token cap 6000, Top20",
+      "allowed_signals": [
+        "rewritten_query_breadth_regex",
+        "rewritten_query_condition_regex",
+        "query_term_coverage",
+        "reranker_scores",
+        "token_counts",
+        "source_path_distribution"
+      ],
+      "params": {
+        "initial_k": 5,
+        "first_expansion_k": 8,
+        "max_k": 20,
+        "max_evidence_tokens": 6000,
+        "saturation_coverage": 0.8,
+        "deep_expansion_coverage": 0.8,
+        "plateau_score_drop": 1.5,
+        "max_score_drop": 3.0
+      },
+      "policy_hash": "b27547114386085f7d0421e13cb6a042b5fa1141794a7e828012c96e894fe71d",
+      "cache_key": "stage1_generation_key"
+    },
+    {
+      "arm_id": "A1_V2_SELECTOR",
+      "policy_id": "coverage_selector_v2",
+      "kind": "existing",
+      "source": "src/evidence_selector.py select_evidence_set (production code)",
+      "algorithm": "greedy set selection over Top20 pool: relevance floor for first min_k=5, then utility = 0.4*relevance + 0.4*semantic_novelty + 0.2*query_term_gain; stops at max_k=12, token cap 6000, or marginal utility < 0.28",
+      "allowed_signals": [
+        "reranker_scores",
+        "indexed_semantic_vectors",
+        "query_terms",
+        "token_counts"
+      ],
+      "params": {
+        "min_k": 5,
+        "max_k": 12,
+        "max_evidence_tokens": 6000,
+        "min_marginal_utility": 0.28,
+        "relevance_weight": 0.4,
+        "novelty_weight": 0.4,
+        "query_gain_weight": 0.2
+      },
+      "policy_hash": "c8e42bb7d95d5893fbf30032d7749d8bce0409081a8dcf6c77319fe70b7366be",
+      "cache_key": "stage1_generation_key"
+    },
+    {
+      "arm_id": "A1_NO_ROUTER_ADAPTIVE",
+      "policy_id": "no_router_adaptive_v1",
+      "kind": "new_eval_only_to_implement_in_stage1",
+      "source": "eval/run_stage0_replay.py (reference implementation for replay only)",
+      "algorithm": "prefix from initial_k=5; extend while k < max_k and (bge_score[0] - bge_score[k]) <= max_score_drop and used_tokens + tokens[k] <= max_evidence_tokens; no query text, no query class",
+      "allowed_signals": [
+        "reranker_scores",
+        "token_counts",
+        "candidate_count"
+      ],
+      "prohibited_signals": [
+        "query_text",
+        "query_classification",
+        "llm"
+      ],
+      "params": {
+        "initial_k": 5,
+        "max_k": 20,
+        "max_evidence_tokens": 6000,
+        "max_score_drop": 3.0
+      },
+      "policy_hash": null,
+      "cache_key": "stage1_generation_key"
+    },
+    {
+      "arm_id": "A1_ROUTER",
+      "policy_id": "query_router_v1",
+      "kind": "new_eval_only_to_implement_in_stage1",
+      "source": "eval/query_aware_router_v1.json + src evidence policies",
+      "algorithm": "route rewritten query with query-structure-router-v1; SIMPLE -> fixed_top5; BROAD -> adaptive_prefix_v1 (existing config)",
+      "allowed_signals": [
+        "rewritten_query_structure"
+      ],
+      "params": {
+        "router_version": "query-structure-router-v1",
+        "router_rule_hash": "04bb954ee9528d90e22260eab257e89e47e17bb101c8aa7180a38d0667722185",
+        "simple_policy": "fixed_top5",
+        "broad_policy": "adaptive_prefix_v1"
+      },
+      "policy_hash": null,
+      "cache_key": "stage1_generation_key"
+    }
+  ],
+  "stage2_shared_rerank_rule": {
+    "applies_to": "Stage 2 (A2) only; frozen now to remove the shared-rerank ambiguity",
+    "candidate_pool": "union by chunk_id of the original-query retrieval and the per-requirement retrievals (each lexical Top20 + semantic Top20)",
+    "per_query_rerank": "BGE-score each (query, build_reranker_text(chunk)) pair independently per query; within-query order by (-score, chunk_id)",
+    "merge_rule": "for each chunk, best_rank = min over queries of its within-query rank; order the merged pool by (best_rank asc, first-query-index asc, chunk_id asc); original query = query index 0, then R1..R3",
+    "cross_query_scores_prohibited": "raw BGE scores from different queries must never be compared, averaged, or fused",
+    "context_builder_input": "one shared merged candidate order"
+  },
+  "mechanism_vs_adoption": {
+    "mechanism_proof": "existence proof only, evaluated on cases selected by the observed failure type",
+    "architecture_adoption": "must be evaluated on a pre-frozen, unfiltered query set (default: Validation V1 50) reporting trigger frequency, net quality, and total cost",
+    "no_post_filtering": "adoption may not be argued from failure-type-selected subsets"
+  }
+}

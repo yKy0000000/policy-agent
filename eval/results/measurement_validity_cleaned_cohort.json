@@ -1,0 +1,1057 @@
+{
+  "schema_version": 1,
+  "version": "measurement-validity-cleaned-cohort-v1",
+  "status": "frozen",
+  "validate_stage": "COMPLETE",
+  "frozen_at_utc": "2026-09-26",
+  "scope_note": "Human-review writeback and cleaned nominal cohort for Measurement Validity Audit V2. Human verdicts are added as a fourth layer; no model artifact is modified. Only the pre-registered 20-item subset was human reviewed: the 10 nominal problematic facts and 10 of the 40 covered-side facts. Model adjudication evidence (V2 40/40 covered PRESENT) is not human-confirmed ground truth.",
+  "human_review": {
+    "subset_size": 20,
+    "subset_construction": "V2 selection.human_review_items: 10 nominal problematic facts + 5 stratum A covered facts + 5 stratum B covered facts",
+    "review_mode": "pre-registered blind human review before model comparison",
+    "frozen_human_review_writeback": [
+      {
+        "fact_id": "VAL-001-008-F02",
+        "case_id": "VAL-001-008",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "Email submissions should include a plain-text version in the email body even if attached.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_266d98caef0a483344635953",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_3fe67c4153c058347f190445",
+            "chunk_dfcbf6c0856007fb39268709"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer conveys the anchor information: it states that you can send an email notification to copyright@github.com and that you may include an attachment but should also include a plain-text version in the body. This matches the source excerpt, and the additional details about the contact form, physical mail, and waiting period are also supported by S1."
+        },
+        "human_adjudication": "AMBIGUOUS",
+        "human_note": "The baseline answer covers email as a submission channel and that plain-text email is usually faster than a PDF attachment or physical mail, but it does not explicitly cover the requirement that an attachment also be accompanied by a plain-text version in the email body. The review packet does not state whether the atomic target is 'email is an allowed submission channel', 'an attachment requires a plain-text copy in the body', or both, so no reliable binary human verdict is possible. This is a target-ambiguity / non-atomic-anchor problem, not a model error, and the item is excluded from the repair cohort.",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-009-F01",
+        "case_id": "VAL-001-009",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "The claim concerns a technological measure that effectively controls access to a copyright-protected work.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+          "anchor_source_id": "S2",
+          "evidence_chunk_ids": [
+            "chunk_07d96053cdafec174753bfbb",
+            "chunk_1e7e1cfaaa17625d3512104e",
+            "chunk_cbbf5766a5fe4cff59f17ba0",
+            "chunk_3fe67c4153c058347f190445",
+            "chunk_ce4e78bb644577b70b81f4e9"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-009-F02",
+        "case_id": "VAL-001-009",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "A complainant can send this kind of report through GitHub's DMCA contact form.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+          "anchor_source_id": "S2",
+          "evidence_chunk_ids": [
+            "chunk_07d96053cdafec174753bfbb",
+            "chunk_1e7e1cfaaa17625d3512104e",
+            "chunk_cbbf5766a5fe4cff59f17ba0",
+            "chunk_3fe67c4153c058347f190445",
+            "chunk_ce4e78bb644577b70b81f4e9"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-011-F01",
+        "case_id": "VAL-001-011",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "GitHub prohibits using the platform to organize, promote, threaten, or incite violence.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_ae41e789bbbed39cb12b5443",
+            "chunk_aab4fdd9b6247e11c4754104",
+            "chunk_e921fe7a8e1eeb16ec85d0b4",
+            "chunk_1b7a4f11eb7eec7619ddab24",
+            "chunk_f25af672289856012d211dad"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer conveys the anchor information: GitHub prohibits posting content that depicts or glorifies violence or physical harm against humans or animals, including graphic depictions of violence toward oneself, another individual, group, or animal. It also correctly notes legitimate documentary/educational exceptions, the role of warnings/disclaimers, and GitHub's ability to limit visibility to u"
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-022-F02",
+        "case_id": "VAL-001-022",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "Disclosed data must be used consistently with the candidate privacy statement.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_f7b58f1a20a04f20e654f546",
+            "chunk_a523e9aa5d9d9ddd9c764fba",
+            "chunk_f358f8d5e53e3590e8d0262e",
+            "chunk_ec175777b8f96d3c7543a7f3",
+            "chunk_6f3ddb4e59ef15510cdf8bfa"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information from S1: GitHub may disclose candidate personal data to subsidiaries, affiliates, and other third parties including service providers, but only to those with a legitimate business need and only for specified legitimate purposes. It also correctly lists the purposes and notes that GitHub will respect legal limits on disclosure. The additional Can"
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-026-F02",
+        "case_id": "VAL-001-026",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "The developer must follow GitHub's technical specifications and requirements.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_4b1ccddd8f212ea10fc4f086",
+            "chunk_629f116a14edc8c511f8743f",
+            "chunk_ff54b5e32ef69dc034a00ce1",
+            "chunk_24c84997323d275f6987864a",
+            "chunk_bc97792e281d312abdad8050"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information: the limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement for publishing, developing, demonstrating, testing, and supporting interoperability/integrations between the Extension and GitHub Copilot, conditioned on compliance. It also correctly states that no other rights or licenses are granted. The addition"
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-037-F01",
+        "case_id": "VAL-001-037",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "The developer agreement covers Marketplace products offered free or for a fee.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+          "anchor_source_id": "S2",
+          "evidence_chunk_ids": [
+            "chunk_eaec6d0a272a609a51331008",
+            "chunk_43cef0f3d5cec7c0f0dde036",
+            "chunk_d5a5be343ee65f8df14618e6",
+            "chunk_cefad4cdbdf0d2a79e427c9b",
+            "chunk_ab100a3436d2ebc1ca3676f9"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer states that the Developer is solely responsible for its Developer Products, which matches the anchor excerpt from S2. It also accurately conveys the EULA responsibility and GitHub's license rights from S2, and the discretion/use of listing information from S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-039-F02",
+        "case_id": "VAL-001-039",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "GitHub offers source code where component licenses require such an offer.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_8c88d9a6aab4ed4705a2c814",
+            "chunk_77d4b3d632e159ae63727bfa",
+            "chunk_857a3166741a114aca6f6bf0",
+            "chunk_b946a182821a13de6a72b378",
+            "chunk_1e5dda7606ebcd203194b13b"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information from S1: the open-source license is documented in the 'Open Source Notices' documentation included with the Software, and an open-source license can override the Application Terms only to the limited extent it expressly supersedes them, otherwise the Application Terms remain the minimum agreement. The wording is a faithful paraphrase of the sour"
+        },
+        "human_adjudication": "ABSENT_OR_INCORRECT",
+        "human_note": "The anchor requires that GitHub makes an offer to provide source code where component licenses require such an offer. The baseline answer discusses Open Source Notices and when an open-source license overrides the Application Terms, but never states the source-code offer. The V2 model found topically related content in the full Top5 evidence without aligning it to the atomic fact (topical relevance is not proposition equivalence).",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-050-F01",
+        "case_id": "VAL-001-050",
+        "side": "nominal",
+        "nominal_type": "omission",
+        "stratum": null,
+        "fact_statement": "The commitment applies before GitHub brings a non-defensive claim arising from termination of a Covered License.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_aaba9b84619227b3f737900e",
+            "chunk_4b1ccddd8f212ea10fc4f086",
+            "chunk_6dd3c18e71547c266c8433d1",
+            "chunk_d4209de6474f5282d1013b77",
+            "chunk_6b52e8e296b1ffebdd560cf7"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information from S1: provisional reinstatement upon ceasing violation unless the copyright holder explicitly and finally terminates, permanent reinstatement if no notice within 60 days after cessation, and permanent reinstatement if first notice and cure within 30 days. It also correctly notes GPLv2 is a Covered License."
+        },
+        "human_adjudication": "ABSENT_OR_INCORRECT",
+        "human_note": "The anchor requires that, before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, GitHub commits to extend cure/reinstatement provisions. The baseline answer explains the cure/reinstatement mechanism and reinstatement conditions, but not the pre-filing commitment or its timing. The V2 model treated the related reinstatement content as covering the commitment as well.",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-050-F05",
+        "case_id": "VAL-001-050",
+        "side": "nominal",
+        "nominal_type": "incorrect_synthesis",
+        "stratum": null,
+        "fact_statement": "Covered Licenses include GPLv2 and LGPLv2 or LGPLv2.1.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_aaba9b84619227b3f737900e",
+            "chunk_4b1ccddd8f212ea10fc4f086",
+            "chunk_6dd3c18e71547c266c8433d1",
+            "chunk_d4209de6474f5282d1013b77",
+            "chunk_6b52e8e296b1ffebdd560cf7"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "incorrect",
+          "citation_status": "supported",
+          "pipeline_cause": "synthesis_error"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information that GPLv2 is a Covered License under the GitHub GPL Cooperation Commitment, and correctly explains the provisional and permanent reinstatement conditions from S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-009-F03",
+        "case_id": "VAL-001-009",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "A",
+        "fact_statement": "The claim must describe the technical measure in question.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+          "anchor_source_id": "S2",
+          "evidence_chunk_ids": [
+            "chunk_07d96053cdafec174753bfbb",
+            "chunk_1e7e1cfaaa17625d3512104e",
+            "chunk_cbbf5766a5fe4cff59f17ba0",
+            "chunk_3fe67c4153c058347f190445",
+            "chunk_ce4e78bb644577b70b81f4e9"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-008-F03",
+        "case_id": "VAL-001-008",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "A",
+        "fact_statement": "Physical mail takes substantially longer to receive and process.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_266d98caef0a483344635953",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_3fe67c4153c058347f190445",
+            "chunk_dfcbf6c0856007fb39268709"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer states that the 10–14 day waiting period starts when GitHub receives the counter notice, not when it is sent, which matches the anchor excerpt. It also correctly lists the submission methods and mailing address from S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-008-F01",
+        "case_id": "VAL-001-008",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "A",
+        "fact_statement": "The online DMCA form is the fastest way to get a response.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_266d98caef0a483344635953",
+            "chunk_7858ac759f06d98823da5dbf",
+            "chunk_9eff71948173867f562cf65f",
+            "chunk_3fe67c4153c058347f190445",
+            "chunk_dfcbf6c0856007fb39268709"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer conveys the anchor information: it states the fastest way is the contact form, and it correctly explains that for physical mail the 10-14 day waiting period starts when GitHub receives the counter notice, not when sent. It also provides the mailing address from S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-022-F03",
+        "case_id": "VAL-001-022",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "A",
+        "fact_statement": "GitHub may disclose candidate data to third parties providing services for it.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_f7b58f1a20a04f20e654f546",
+            "chunk_a523e9aa5d9d9ddd9c764fba",
+            "chunk_f358f8d5e53e3590e8d0262e",
+            "chunk_ec175777b8f96d3c7543a7f3",
+            "chunk_6f3ddb4e59ef15510cdf8bfa"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information from S1: GitHub may disclose candidate personal data to subsidiaries, affiliates, and other third parties including service providers, but only where recipients have a legitimate business need and only for specified legitimate purposes, including enabling third parties to provide services on GitHub's behalf. It also correctly notes the limits on"
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-011-F03",
+        "case_id": "VAL-001-011",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "A",
+        "fact_statement": "Educational or documentary uses can be legitimate reasons to post violent content.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_ae41e789bbbed39cb12b5443",
+            "chunk_aab4fdd9b6247e11c4754104",
+            "chunk_e921fe7a8e1eeb16ec85d0b4",
+            "chunk_1b7a4f11eb7eec7619ddab24",
+            "chunk_f25af672289856012d211dad"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer conveys the anchor information: GitHub prohibits indiscriminate or hard-to-avoid violent content, allows legitimate documentary/educational uses with a warning or disclaimer, and may limit visibility to users who opt in. It also correctly notes the policy does not specify further implementation details for documentary content."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-004-F02",
+        "case_id": "VAL-001-004",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "B",
+        "fact_statement": "The report must provide the trademark registration number.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_029abeb4a7b0d31dfe0744a5",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_029abeb4a7b0d31dfe0744a5",
+            "chunk_442fe95102aad5a27909b356",
+            "chunk_f7c393d8c6398f15f8c9a7d1",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_ecc0814ad52c3b6b7b4fd8b9"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer includes 'Trademark registration number' in the bulleted list of required information, directly conveying the anchor information from S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-007-F03",
+        "case_id": "VAL-001-007",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "B",
+        "fact_statement": "The process is an exceptional service for high-risk content and cannot handle unrelated removal requests at the same time.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_a761f910df2bb1e22f5a4020",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_a761f910df2bb1e22f5a4020",
+            "chunk_d74546f5fc184a68367f89b5",
+            "chunk_d47c7ab9c53cc480c3c2c069",
+            "chunk_d6d1c627931350dcab91a60d",
+            "chunk_a241a064615d0fdcc343c6bf"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer conveys the anchor information that the private information removal process is only for high-risk content, cannot be used for other content such as potentially infringing content, cannot process other removal requests simultaneously, and that sending private information requests separately from infringement requests helps GitHub respond more quickly. It also notes consulting legal couns"
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-024-F03",
+        "case_id": "VAL-001-024",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "B",
+        "fact_statement": "Essential cookies support functions such as stored settings and recognition.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_2cec2cf86cb897094258e286",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_2cec2cf86cb897094258e286",
+            "chunk_781da9ec3c33897a8c48e53f",
+            "chunk_c5916a5b0c370e675d8ce41e",
+            "chunk_30303b4016563bd96f27e027",
+            "chunk_aed5daae41b2300a164398e8"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer explicitly states that essential cookies and similar tracking technologies are used to provide essential functionality, such as storing settings and recognizing you while using the services, which matches the anchor information from S1. It also correctly distinguishes non-essential cookies, including consent requirements in some jurisdictions."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-042-F05",
+        "case_id": "VAL-001-042",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "B",
+        "fact_statement": "The token-pattern license survives termination or expiration.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_3a99d939976741f6cc61bcb1",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_3a99d939976741f6cc61bcb1",
+            "chunk_2bd1b6197797e0b0994ec11b",
+            "chunk_9b271e926f3e35bf0678ca6d",
+            "chunk_b982ccbafb3c686aba90f043",
+            "chunk_e75b92cd4d9c70251da884cf"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer explicitly states that the Section 2.2 license survives expiration or termination of the agreement for any reason, which matches the anchor excerpt from S1. The surrounding details about the license grant and open-source distribution are also accurately drawn from S1."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      },
+      {
+        "fact_id": "VAL-001-017-F03",
+        "case_id": "VAL-001-017",
+        "side": "covered",
+        "nominal_type": null,
+        "stratum": "B",
+        "fact_statement": "A similar username alone is not necessarily impersonation; GitHub considers context.",
+        "anchor": {
+          "anchor_chunk_id": "chunk_0d2d5abd2784cfcf630269b4",
+          "anchor_source_id": "S1",
+          "evidence_chunk_ids": [
+            "chunk_0d2d5abd2784cfcf630269b4",
+            "chunk_f9ddd26bbbc61c34bb71774a",
+            "chunk_e38e8b117bf75ca2426fb8a0",
+            "chunk_203989db376bdcace7726749",
+            "chunk_9bba3228987c04af2bbd72b5"
+          ],
+          "evidence_source_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "covered",
+          "citation_status": "supported",
+          "pipeline_cause": null
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer explicitly states that having a username similar to another is not necessarily impersonation and that GitHub will take context into account, and it states that GitHub generally allows parody and satire in line with the Acceptable Use Policies, including in misinformation/disinformation cases. This conveys the anchor information accurately."
+        },
+        "human_adjudication": "SEMANTICALLY_PRESENT",
+        "human_note": "",
+        "human_reviewed": true
+      }
+    ],
+    "agreement": {
+      "subset_size": 20,
+      "v2_model_labels": {
+        "SEMANTICALLY_PRESENT": 20,
+        "ABSENT_OR_INCORRECT": 0,
+        "AMBIGUOUS": 0
+      },
+      "human_labels": {
+        "SEMANTICALLY_PRESENT": 17,
+        "ABSENT_OR_INCORRECT": 2,
+        "AMBIGUOUS": 1
+      },
+      "exact_agreement": {
+        "numerator": 17,
+        "denominator": 20,
+        "proportion": 0.85
+      },
+      "disagreement": {
+        "numerator": 3,
+        "denominator": 20,
+        "proportion": 0.15,
+        "items": [
+          {
+            "fact_id": "VAL-001-008-F02",
+            "human_adjudication": "AMBIGUOUS",
+            "v2_model_adjudication": "SEMANTICALLY_PRESENT",
+            "attributed_to": "evaluation_case_representation",
+            "mechanism": "non_atomic_anchor_target_ambiguity",
+            "note": "The baseline answer covers email as a submission channel and that plain-text email is usually faster than a PDF attachment or physical mail, but it does not explicitly cover the requirement that an attachment also be accompanied by a plain-text version in the email body. The review packet does not state whether the atomic target is 'email is an allowed submission channel', 'an attachment requires a plain-text copy in the body', or both, so no reliable binary human verdict is possible. This is a target-ambiguity / non-atomic-anchor problem, not a model error, and the item is excluded from the repair cohort."
+          },
+          {
+            "fact_id": "VAL-001-039-F02",
+            "human_adjudication": "ABSENT_OR_INCORRECT",
+            "v2_model_adjudication": "SEMANTICALLY_PRESENT",
+            "attributed_to": "v2_adjudicator",
+            "mechanism": "anchor_drift_false_present",
+            "note": "The anchor requires that GitHub makes an offer to provide source code where component licenses require such an offer. The baseline answer discusses Open Source Notices and when an open-source license overrides the Application Terms, but never states the source-code offer. The V2 model found topically related content in the full Top5 evidence without aligning it to the atomic fact (topical relevance is not proposition equivalence)."
+          },
+          {
+            "fact_id": "VAL-001-050-F01",
+            "human_adjudication": "ABSENT_OR_INCORRECT",
+            "v2_model_adjudication": "SEMANTICALLY_PRESENT",
+            "attributed_to": "v2_adjudicator",
+            "mechanism": "over_lenient_semantic_match_incomplete_proposition_coverage",
+            "note": "The anchor requires that, before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, GitHub commits to extend cure/reinstatement provisions. The baseline answer explains the cure/reinstatement mechanism and reinstatement conditions, but not the pre-filing commitment or its timing. The V2 model treated the related reinstatement content as covering the commitment as well."
+          }
+        ]
+      },
+      "classification_note": "039-F02 and 050-F01 are V2-adjudicator errors of different kinds (anchor drift / false PRESENT; over-lenient incomplete proposition coverage). 008-F02 is not a model error: the human reviewer could not reliably determine the atomic target because the anchor is non-atomic."
+    }
+  },
+  "layer_summary_nominal": {
+    "original_judge": {
+      "model": "deepseek-v4-flash",
+      "missing": 9,
+      "incorrect": 1,
+      "covered": 0
+    },
+    "v1_adjudicator": {
+      "model": "deepseek-v4-pro",
+      "SEMANTICALLY_PRESENT": 7,
+      "ABSENT_OR_INCORRECT": 3,
+      "AMBIGUOUS": 0
+    },
+    "v2_adjudicator": {
+      "model": "deepseek-v4-pro",
+      "SEMANTICALLY_PRESENT": 10,
+      "ABSENT_OR_INCORRECT": 0,
+      "AMBIGUOUS": 0
+    },
+    "human_review": {
+      "SEMANTICALLY_PRESENT": 7,
+      "ABSENT_OR_INCORRECT": 2,
+      "AMBIGUOUS": 1
+    }
+  },
+  "cleaned_nominal_cohort": {
+    "counts": {
+      "nominal_problematic_facts": 10,
+      "confirmed_errors": 2,
+      "ambiguous": 1,
+      "confirmed_present": 7
+    },
+    "confirmed_errors": [
+      {
+        "fact_id": "VAL-001-039-F02",
+        "case_id": "VAL-001-039",
+        "nominal_type": "omission",
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information from S1: the open-source license is documented in the 'Open Source Notices' documentation included with the Software, and an open-source license can override the Application Terms only to the limited extent it expressly supersedes them, otherwise the Application Terms remain the minimum agreement. The wording is a faithful paraphrase of the sour"
+        },
+        "human_adjudication": "ABSENT_OR_INCORRECT",
+        "human_note": "The anchor requires that GitHub makes an offer to provide source code where component licenses require such an offer. The baseline answer discusses Open Source Notices and when an open-source license overrides the Application Terms, but never states the source-code offer. The V2 model found topically related content in the full Top5 evidence without aligning it to the atomic fact (topical relevance is not proposition equivalence)."
+      },
+      {
+        "fact_id": "VAL-001-050-F01",
+        "case_id": "VAL-001-050",
+        "nominal_type": "omission",
+        "original_judge": {
+          "model": "deepseek-v4-flash",
+          "status": "missing",
+          "citation_status": "not_applicable",
+          "pipeline_cause": "utilization_miss"
+        },
+        "v2_model_adjudication": {
+          "model": "deepseek-v4-pro",
+          "label": "SEMANTICALLY_PRESENT",
+          "diagnostic_tag": "paraphrase",
+          "reason": "The answer accurately conveys the anchor information from S1: provisional reinstatement upon ceasing violation unless the copyright holder explicitly and finally terminates, permanent reinstatement if no notice within 60 days after cessation, and permanent reinstatement if first notice and cure within 30 days. It also correctly notes GPLv2 is a Covered License."
+        },
+        "human_adjudication": "ABSENT_OR_INCORRECT",
+        "human_note": "The anchor requires that, before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, GitHub commits to extend cure/reinstatement provisions. The baseline answer explains the cure/reinstatement mechanism and reinstatement conditions, but not the pre-filing commitment or its timing. The V2 model treated the related reinstatement content as covering the commitment as well."
+      }
+    ],
+    "ambiguous": [
+      {
+        "fact_id": "VAL-001-008-F02",
+        "case_id": "VAL-001-008",
+        "nominal_type": "omission",
+        "human_note": "The baseline answer covers email as a submission channel and that plain-text email is usually faster than a PDF attachment or physical mail, but it does not explicitly cover the requirement that an attachment also be accompanied by a plain-text version in the email body. The review packet does not state whether the atomic target is 'email is an allowed submission channel', 'an attachment requires a plain-text copy in the body', or both, so no reliable binary human verdict is possible. This is a target-ambiguity / non-atomic-anchor problem, not a model error, and the item is excluded from the repair cohort."
+      }
+    ],
+    "confirmed_present_fact_ids": [
+      "VAL-001-009-F01",
+      "VAL-001-009-F02",
+      "VAL-001-011-F01",
+      "VAL-001-022-F02",
+      "VAL-001-026-F02",
+      "VAL-001-037-F01",
+      "VAL-001-050-F05"
+    ],
+    "repair_cohort": {
+      "fact_ids": [
+        "VAL-001-039-F02",
+        "VAL-001-050-F01"
+      ],
+      "excluded": [
+        {
+          "fact_id": "VAL-001-008-F02",
+          "reason": "non_atomic_anchor_target_ambiguity"
+        }
+      ]
+    }
+  },
+  "covered_side": {
+    "covered_sample_size": 40,
+    "v2_model_labels": {
+      "SEMANTICALLY_PRESENT": 40
+    },
+    "human_reviewed_subset_size": 10,
+    "human_reviewed_fact_ids": [
+      "VAL-001-009-F03",
+      "VAL-001-008-F03",
+      "VAL-001-008-F01",
+      "VAL-001-022-F03",
+      "VAL-001-011-F03",
+      "VAL-001-004-F02",
+      "VAL-001-007-F03",
+      "VAL-001-024-F03",
+      "VAL-001-042-F05",
+      "VAL-001-017-F03"
+    ],
+    "human_confirmed_present": 10,
+    "model_only_fact_ids": [
+      "VAL-001-009-F04",
+      "VAL-001-011-F02",
+      "VAL-001-022-F01",
+      "VAL-001-026-F01",
+      "VAL-001-026-F03",
+      "VAL-001-030-F01",
+      "VAL-001-030-F02",
+      "VAL-001-032-F01",
+      "VAL-001-032-F02",
+      "VAL-001-037-F02",
+      "VAL-001-037-F03",
+      "VAL-001-039-F01",
+      "VAL-001-039-F03",
+      "VAL-001-050-F02",
+      "VAL-001-050-F03",
+      "VAL-001-003-F02",
+      "VAL-001-005-F01",
+      "VAL-001-012-F03",
+      "VAL-001-013-F03",
+      "VAL-001-015-F02",
+      "VAL-001-019-F01",
+      "VAL-001-020-F04",
+      "VAL-001-021-F03",
+      "VAL-001-028-F01",
+      "VAL-001-035-F01",
+      "VAL-001-036-F02",
+      "VAL-001-044-F04",
+      "VAL-001-045-F06",
+      "VAL-001-047-F04",
+      "VAL-001-049-F06"
+    ],
+    "interpretation": "The V2 model adjudicated all 40 covered-side facts as SEMANTICALLY_PRESENT, but only the 10 pre-registered human-review items are human-confirmed. Do not report 40/40 as human-confirmed."
+  },
+  "production": {
+    "generation_prompt_version": "grounded-policy-answer-v1",
+    "generation_prompt_sha256": "5f7018961248fe4d4d53fba8e15c409cb6de42260bf3acc05e7279c2d8e0b603",
+    "generator_model": "deepseek-v4-flash",
+    "baseline_answer_source": "eval/results/generation_utilization_results.json: cases[].arms.baseline.answer"
+  },
+  "source_artifacts": {
+    "eval/validation/broad_atomic_facts_validation_v1.json": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+    "eval/validation/broad_queries_validation_v1.json": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+    "eval/broad_queries_v3_adjudicated.json": "9e15b40cc5068aa4fc52ce3e7a5c154c90733156f66e5c92bc688c19a6b919e4",
+    "eval/broad_query_v3_atomic_facts_frozen_candidate.json": "616e0968038a26b27b7a4d8a90293b100d9a2287da0038caa9cbe3f258646534",
+    "eval/results/measurement_validity_audit.json": "d8d90af8b2e17be167ed4b73c3f649ffec6bb4a3398114ae92f80a458dfcd036",
+    "eval/results/measurement_validity_audit_v2.json": "516afe9a0185920aae493d01030f2ddee56ba9cee042014ccc569c0d9d1a416f",
+    "eval/results/generation_utilization_results.json": "01be9f9c3a3c26b845df83475013c12838e67e55eb7967b7c3a4fda15f5d6963",
+    "eval/results/reranker_transfer_results.json": "bbce7fa512bfbf9d31b719ea3983934ce4a4781ce4caae6bb5751906a59cd589",
+    "eval/validation/validation_v1_metadata.json": "a91ab96a6c3f25551753b18bf647c718bdd7b3226fe59f3ebece26a2210c0339"
+  }
+}

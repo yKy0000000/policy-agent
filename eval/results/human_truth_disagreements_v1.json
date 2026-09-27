@@ -1,0 +1,1632 @@
+{
+  "artifact": "human_truth_dual_review_disagreements_v1",
+  "status": "pending_final_adjudication",
+  "note": "Two independent model-agent initial reviews. Agreement is only a candidate final verdict; disagreement has no automatic resolution. DeepSeek advisory data was used only for priority flags after both reviews completed.",
+  "reviewer_artifacts": [
+    "eval/results/human_truth_reviewer1_v1.json",
+    "eval/results/human_truth_reviewer2_v1.json"
+  ],
+  "counts": {
+    "total_aspects": 331,
+    "agreement": 314,
+    "disagreement": 17,
+    "agreement_rate": 0.94864
+  },
+  "agreement_candidates": [
+    {
+      "aspect_id": "VAL-001-001-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-001-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-001-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-001-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-002-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-002-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-002-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-002-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-002-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-003-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-003-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-003-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-004-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-004-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-004-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-004-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-004-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-004-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-005-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-005-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-005-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-005-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-005-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-006-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-006-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-006-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-006-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-006-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-007-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-007-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-008-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-008-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-008-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-008-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-009-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-009-F02",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-009-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-009-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-009-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-010-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-010-F02",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-010-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-010-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-010-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-010-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-011-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-011-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-011-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-011-F04",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-011-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-012-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-012-F02",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-012-F03",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-012-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-012-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-012-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-013-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-013-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-013-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-013-F04",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-013-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-014-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-014-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-014-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-014-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-015-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-015-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-015-F03",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-015-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-016-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-016-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-016-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-016-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-017-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-017-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-017-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-017-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-018-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-018-F02",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-018-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-018-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-019-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-019-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-019-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-019-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-020-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-020-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-020-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-020-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-021-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-021-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-021-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-021-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-022-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-022-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-022-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-022-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-023-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-023-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-023-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-023-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-024-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-024-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-024-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-024-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-025-F01",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-025-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-025-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-025-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-026-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-026-F02",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-026-F03",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-026-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-026-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-027-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-027-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-027-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-027-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-027-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-027-F06",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-028-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-028-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-028-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-028-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-029-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-029-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-029-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-029-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-029-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-029-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-030-F01",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-030-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-030-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-030-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-031-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-031-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-031-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-031-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-031-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-032-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-032-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-032-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-032-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-033-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-033-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-033-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-033-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-033-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-034-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-034-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-034-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-034-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-034-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-035-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-035-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-035-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-035-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-036-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-036-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-036-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-037-F01",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-037-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-037-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-037-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-037-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-037-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-038-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-038-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-038-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-038-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-038-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-039-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-039-F02",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-039-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-039-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-040-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-040-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-040-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-041-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-041-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-041-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-041-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-041-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-042-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-042-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-042-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-042-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-042-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-043-F01",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-043-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-043-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-043-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-043-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-044-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-044-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-044-F04",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-044-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-044-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-045-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-045-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-045-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-045-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-045-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-045-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-046-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-046-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-046-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-046-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-047-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-047-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-047-F03",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-047-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-048-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-048-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-048-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-048-F06",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-049-F01",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-049-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-049-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-049-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-049-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-049-F06",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "VAL-001-050-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-050-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-050-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-050-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "VAL-001-050-F05",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "V3-01-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-01-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-01-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-01-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-02-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-02-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-02-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-02-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-02-F06",
+      "candidate_final": "RELEVANT_BUT_OPTIONAL"
+    },
+    {
+      "aspect_id": "V3-02-F07",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-02-F08",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F08",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-03-F09",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-04-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-04-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-04-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-04-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-04-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-05-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-05-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-05-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-05-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-05-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-06-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-06-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-06-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-06-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-07-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-07-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-07-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-08-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-08-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-08-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-08-F05a",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-08-F05b",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-08-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-09-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-09-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-09-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-09-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-09-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-09-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-10-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-10-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-10-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-10-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-10-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-10-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-11-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-11-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-11-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-11-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-12-F07",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-13-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-13-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F07a",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-14-F07b",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F07",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-15-F08",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-16-F01",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-16-F02",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-16-F03",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-16-F04",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-16-F05",
+      "candidate_final": "QUERY_REQUIRED"
+    },
+    {
+      "aspect_id": "V3-16-F06",
+      "candidate_final": "QUERY_REQUIRED"
+    }
+  ],
+  "disagreements": [
+    {
+      "aspect_id": "VAL-001-003-F04",
+      "case_id": "VAL-001-003",
+      "original_query": "A repository includes information about me. Which kinds of disclosure fall outside GitHub's private-information removal process, even if I dislike them?",
+      "aspect_statement": "Copyright claims belong in the DMCA process rather than the private-information process.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "The query asks which disclosures do not qualify; a copyright-process referral is a different issue."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Identifies a distinct disclosure outside the requested removal route."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-007-F02",
+      "case_id": "VAL-001-007",
+      "original_query": "Before asking GitHub to remove private information, how should I prepare the request and what may slow its review?",
+      "aspect_statement": "A trained professional should evaluate each request rather than a bulk submission bot.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked how to prepare and what delays review; this supplies a material preparation or delay point."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Professional review is guidance for bulk submitters, not necessary for this individual request."
+      },
+      "review_priority_flags": [
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-007-F03",
+      "case_id": "VAL-001-007",
+      "original_query": "Before asking GitHub to remove private information, how should I prepare the request and what may slow its review?",
+      "aspect_statement": "The process is an exceptional service for high-risk content and cannot handle unrelated removal requests at the same time.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked how to prepare and what delays review; this supplies a material preparation or delay point."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "The service's high-risk scope is background; the query asks preparation and review delay."
+      },
+      "review_priority_flags": [
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-022-F05",
+      "case_id": "VAL-001-022",
+      "original_query": "During recruitment, with whom might GitHub share my application data, and what limits does its candidate privacy policy put on disclosure?",
+      "aspect_statement": "GitHub respects legal limits on disclosure.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked candidate-data recipients and disclosure limits; this gives a recipient or governing limit."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "General compliance with legal limits adds no concrete disclosure limit beyond the stated rules."
+      },
+      "review_priority_flags": [
+        "assistant_contamination_risk",
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-031-F04",
+      "case_id": "VAL-001-031",
+      "original_query": "Our procurement team wants to understand GitHub's modern-slavery and child-labor safeguards. How does it identify supplier risks and respond if it finds harm?",
+      "aspect_statement": "Manual-labor service suppliers are identified as more likely risk areas.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked supplier risk identification and response to harm; this states a relevant safeguard or response."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Manual-labor suppliers are an illustrative risk area; due-diligence method answers the query."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-032-F01",
+      "case_id": "VAL-001-032",
+      "original_query": "Can I use GitHub Actions as a general compute or delivery service, and what might GitHub do if my workflows misuse it?",
+      "aspect_statement": "Actions must comply with GitHub's general agreement and Acceptable Use Policies.",
+      "route": "SIMPLE",
+      "sentinel": true,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked permitted Actions uses and misuse consequences; this supplies a restriction or consequence."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Generic agreement compliance is background to the specific compute/delivery limits."
+      },
+      "review_priority_flags": [
+        "assistant_contamination_risk"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-036-F03",
+      "case_id": "VAL-001-036",
+      "original_query": "If harassment happens at a GitHub event, where should I report urgent and non-urgent problems, and what help can staff provide?",
+      "aspect_statement": "Life-threatening situations call for dialing 911 immediately.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "An emergency-service number is ancillary to the asked GitHub event reporting routes and staff help."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "States an urgent or non-urgent reporting route or available staff help."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-040-F04",
+      "case_id": "VAL-001-040",
+      "original_query": "A GitHub preview is listed as DPA-covered. Can we evaluate it inside our company, and does that allow production use with live customer data?",
+      "aspect_statement": "Listed DPA-covered previews use the same data handling as when the software becomes generally available.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "General-availability-equivalent data handling does not decide whether internal evaluation or production use is allowed."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Defines permitted evaluation, prohibited production use, or DPA coverage."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-040-F05",
+      "case_id": "VAL-001-040",
+      "original_query": "A GitHub preview is listed as DPA-covered. Can we evaluate it inside our company, and does that allow production use with live customer data?",
+      "aspect_statement": "The Data Protection Agreement applies from the preview's stated DPA Coverage Date.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "The exact DPA coverage start date is ancillary to the allowed evaluation and production-use boundary."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Defines permitted evaluation, prohibited production use, or DPA coverage."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-044-F01",
+      "case_id": "VAL-001-044",
+      "original_query": "Our organization is considering self-hosted GitHub Enterprise Server for export-controlled material. What does the policy permit and what export limits remain?",
+      "aspect_statement": "Enterprise Server is self-hosted in a data center or virtual private cloud.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked self-hosted export-controlled use and remaining export limits; this states a material permission or limit."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Self-hosting describes the product but does not answer permission or export limits."
+      },
+      "review_priority_flags": [
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-048-F04",
+      "case_id": "VAL-001-048",
+      "original_query": "If a security incident affects GitHub and its customers, what does GitHub's SIRT handle, and what must customers handle themselves?",
+      "aspect_statement": "SIRT triage interprets security signals to determine risk, severity, and priority.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Triage prioritization is internal detail beyond the SIRT/customer responsibility split."
+      },
+      "review_priority_flags": [
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "VAL-001-048-F05",
+      "case_id": "VAL-001-048",
+      "original_query": "If a security incident affects GitHub and its customers, what does GitHub's SIRT handle, and what must customers handle themselves?",
+      "aspect_statement": "SIRT triage investigates whether an incident occurred and its impact.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "validation_v1_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked SIRT scope and customer responsibility; this states a core function or boundary."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Triage investigation is internal detail beyond the SIRT/customer responsibility split."
+      },
+      "review_priority_flags": [
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "V3-02-F04",
+      "case_id": "V3-02",
+      "original_query": "A copyright complaint was filed against my repository. What can happen before and after GitHub disables it?",
+      "aspect_statement": "The normal partial-repository change window is approximately one business day.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "broad_v3_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "The approximate one-day period is a timing detail; the change opportunity answers the broad process question."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Describes a requested pre-disablement or post-disablement step."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "V3-03-F04",
+      "case_id": "V3-03",
+      "original_query": "A repository exposes a secret belonging to my team. How does GitHub handle a request to remove it?",
+      "aspect_statement": "The request must identify specific line numbers within each file.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "broad_v3_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Line numbers are a submission detail; the broad handling question can be answered without this precision."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Defines eligibility, request content, or the removal workflow for the secret."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "V3-03-F07",
+      "case_id": "V3-03",
+      "original_query": "A repository exposes a secret belonging to my team. How does GitHub handle a request to remove it?",
+      "aspect_statement": "The owner may dispute that the information qualifies under the policy.",
+      "route": "SIMPLE",
+      "sentinel": false,
+      "source_set": "broad_v3_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "The owner’s dispute option is an ancillary branch beyond the main handling sequence."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Defines eligibility, request content, or the removal workflow for the secret."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "V3-05-F04",
+      "case_id": "V3-05",
+      "original_query": "I lost access to my two-factor-authenticated account. What can GitHub do for me, and what can I still recover?",
+      "aspect_statement": "Support can be asked to remove a payment method from a locked account.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "broad_v3_rubric",
+      "reviewer_1": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Removing a payment method is account administration, not recovery of access or content."
+      },
+      "reviewer_2": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Explains the recovery boundary or what remains retrievable."
+      },
+      "review_priority_flags": [],
+      "final": null,
+      "resolution_reason": null
+    },
+    {
+      "aspect_id": "V3-14-F06",
+      "case_id": "V3-14",
+      "original_query": "My GitHub content was moderated. What outcomes can I challenge, and what is the process for getting it restored?",
+      "aspect_statement": "A human makes the final appeal decision.",
+      "route": "BROAD",
+      "sentinel": false,
+      "source_set": "broad_v3_rubric",
+      "reviewer_1": {
+        "verdict": "QUERY_REQUIRED",
+        "reason": "Asked challengeable moderation outcomes and restoration process; this states a step, deadline, or result."
+      },
+      "reviewer_2": {
+        "verdict": "RELEVANT_BUT_OPTIONAL",
+        "reason": "Human decision maker is a procedural assurance, not needed to explain how to seek restoration."
+      },
+      "review_priority_flags": [
+        "assistant_broad_boundary"
+      ],
+      "final": null,
+      "resolution_reason": null
+    }
+  ]
+}

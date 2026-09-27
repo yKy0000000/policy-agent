@@ -1,0 +1,4601 @@
+{
+  "schema_version": 1,
+  "version": "semantic-gap-discrimination-v1",
+  "status": "complete",
+  "scope_note": "Mechanism / H1 mechanism diagnostic: proposition-level semantic state classification on frozen answers and evidence. No repair generation; MISSING n=2, so no population inference.",
+  "preregistration": {
+    "path": "eval\\semantic_gap_discrimination_v1_preregistration.md",
+    "sha256": "eef5b220aa7520e41f9ed6d8ad14626658c840ee1629e86ea89d134d36ccc2c6"
+  },
+  "dataset": {
+    "composition": {
+      "MISSING": 2,
+      "ALREADY_PRESENT": 19,
+      "UNSUPPORTED": 6,
+      "items": 27
+    },
+    "items": [
+      {
+        "item_id": "M-VAL-001-039-F02",
+        "gold": "MISSING",
+        "source": "cleaned_cohort_confirmed_error",
+        "fact_id": "VAL-001-039-F02",
+        "case_id": "VAL-001-039",
+        "proposition": "GitHub offers source code where component licenses require such an offer."
+      },
+      {
+        "item_id": "M-VAL-001-050-F01",
+        "gold": "MISSING",
+        "source": "cleaned_cohort_confirmed_error",
+        "fact_id": "VAL-001-050-F01",
+        "case_id": "VAL-001-050",
+        "proposition": "The commitment applies before GitHub brings a non-defensive claim arising from termination of a Covered License."
+      },
+      {
+        "item_id": "P-VAL-001-004-F02",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-004-F02",
+        "case_id": "VAL-001-004",
+        "proposition": "The report must provide the trademark registration number."
+      },
+      {
+        "item_id": "P-VAL-001-007-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-007-F03",
+        "case_id": "VAL-001-007",
+        "proposition": "The process is an exceptional service for high-risk content and cannot handle unrelated removal requests at the same time."
+      },
+      {
+        "item_id": "P-VAL-001-008-F01",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-008-F01",
+        "case_id": "VAL-001-008",
+        "proposition": "The online DMCA form is the fastest way to get a response."
+      },
+      {
+        "item_id": "P-VAL-001-008-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-008-F03",
+        "case_id": "VAL-001-008",
+        "proposition": "Physical mail takes substantially longer to receive and process."
+      },
+      {
+        "item_id": "P-VAL-001-009-F01",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-009-F01",
+        "case_id": "VAL-001-009",
+        "proposition": "The claim concerns a technological measure that effectively controls access to a copyright-protected work."
+      },
+      {
+        "item_id": "P-VAL-001-009-F02",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-009-F02",
+        "case_id": "VAL-001-009",
+        "proposition": "A complainant can send this kind of report through GitHub's DMCA contact form."
+      },
+      {
+        "item_id": "P-VAL-001-009-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-009-F03",
+        "case_id": "VAL-001-009",
+        "proposition": "The claim must describe the technical measure in question."
+      },
+      {
+        "item_id": "P-VAL-001-011-F01",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-011-F01",
+        "case_id": "VAL-001-011",
+        "proposition": "GitHub prohibits using the platform to organize, promote, threaten, or incite violence."
+      },
+      {
+        "item_id": "P-VAL-001-011-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-011-F03",
+        "case_id": "VAL-001-011",
+        "proposition": "Educational or documentary uses can be legitimate reasons to post violent content."
+      },
+      {
+        "item_id": "P-VAL-001-017-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-017-F03",
+        "case_id": "VAL-001-017",
+        "proposition": "A similar username alone is not necessarily impersonation; GitHub considers context."
+      },
+      {
+        "item_id": "P-VAL-001-022-F02",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-022-F02",
+        "case_id": "VAL-001-022",
+        "proposition": "Disclosed data must be used consistently with the candidate privacy statement."
+      },
+      {
+        "item_id": "P-VAL-001-022-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-022-F03",
+        "case_id": "VAL-001-022",
+        "proposition": "GitHub may disclose candidate data to third parties providing services for it."
+      },
+      {
+        "item_id": "P-VAL-001-024-F03",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-024-F03",
+        "case_id": "VAL-001-024",
+        "proposition": "Essential cookies support functions such as stored settings and recognition."
+      },
+      {
+        "item_id": "P-VAL-001-026-F02",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-026-F02",
+        "case_id": "VAL-001-026",
+        "proposition": "The developer must follow GitHub's technical specifications and requirements."
+      },
+      {
+        "item_id": "P-VAL-001-037-F01",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-037-F01",
+        "case_id": "VAL-001-037",
+        "proposition": "The developer agreement covers Marketplace products offered free or for a fee."
+      },
+      {
+        "item_id": "P-VAL-001-042-F05",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-042-F05",
+        "case_id": "VAL-001-042",
+        "proposition": "The token-pattern license survives termination or expiration."
+      },
+      {
+        "item_id": "P-VAL-001-050-F05",
+        "gold": "ALREADY_PRESENT",
+        "source": "mva_human_present",
+        "fact_id": "VAL-001-050-F05",
+        "case_id": "VAL-001-050",
+        "proposition": "Covered Licenses include GPLv2 and LGPLv2 or LGPLv2.1."
+      },
+      {
+        "item_id": "P-VAL-001-039-F01",
+        "gold": "ALREADY_PRESENT",
+        "source": "oracle_repair_control",
+        "fact_id": "VAL-001-039-F01",
+        "case_id": "VAL-001-039",
+        "proposition": "The Software's open-source license and applicable component licenses appear in the Open Source Notices documentation."
+      },
+      {
+        "item_id": "P-VAL-001-050-F02",
+        "gold": "ALREADY_PRESENT",
+        "source": "oracle_repair_control",
+        "fact_id": "VAL-001-050-F02",
+        "case_id": "VAL-001-050",
+        "proposition": "Ceasing all violation provisionally reinstates the license unless and until the copyright holder explicitly and finally terminates it."
+      },
+      {
+        "item_id": "U-039-01",
+        "gold": "UNSUPPORTED",
+        "source": "oracle_repair_sham",
+        "fact_id": null,
+        "case_id": "VAL-001-039",
+        "proposition": "GitHub's source-code offer expires one year after the Software release.",
+        "validation": "frozen Oracle Repair V1 sham; non-entailment/non-contradiction review recorded"
+      },
+      {
+        "item_id": "U-039-02",
+        "gold": "UNSUPPORTED",
+        "source": "preregistered_alternate_sham",
+        "fact_id": null,
+        "case_id": "VAL-001-039",
+        "proposition": "GitHub must deliver the complete source code of open-source components within 30 days of a written request.",
+        "validation": "no timeline sentence in any full-Top5 chunk"
+      },
+      {
+        "item_id": "U-039-03",
+        "gold": "UNSUPPORTED",
+        "source": "new_validated",
+        "fact_id": null,
+        "case_id": "VAL-001-039",
+        "proposition": "GitHub provides a written warranty for the Software's open-source components.",
+        "validation": "no warranty sentence in the full Top5 (including Miscellanea)"
+      },
+      {
+        "item_id": "U-039-04",
+        "gold": "UNSUPPORTED",
+        "source": "new_validated",
+        "fact_id": null,
+        "case_id": "VAL-001-039",
+        "proposition": "The Software's open-source components are licensed under the MIT license.",
+        "validation": "no license is named; only generic open source software license agreements"
+      },
+      {
+        "item_id": "U-050-01",
+        "gold": "UNSUPPORTED",
+        "source": "oracle_repair_sham",
+        "fact_id": null,
+        "case_id": "VAL-001-050",
+        "proposition": "GitHub must reimburse a violator's reasonable legal costs after the violation is cured.",
+        "validation": "frozen Oracle Repair V1 sham; non-entailment/non-contradiction review recorded"
+      },
+      {
+        "item_id": "U-050-02",
+        "gold": "UNSUPPORTED",
+        "source": "new_validated",
+        "fact_id": null,
+        "case_id": "VAL-001-050",
+        "proposition": "GitHub must publish an annual compliance report for this Commitment.",
+        "validation": "no reporting duty; the only publication is new editions of the commitment"
+      }
+    ],
+    "excluded_fact_ids": [
+      "VAL-001-008-F02"
+    ],
+    "caveats": [
+      "gold caveat item: VAL-001-050-F05; sensitivity reported"
+    ]
+  },
+  "design": {
+    "models": {
+      "current": "deepseek-v4-flash",
+      "stronger": "deepseek-v4-pro"
+    },
+    "replicates": 3,
+    "max_tokens": 200,
+    "temperature": 0.0,
+    "cells": 162,
+    "classifier_prompt_sha256": "8f805894a7963ca12c496b37130842e33624e3320b2971a92cba7836c7599aa3",
+    "request_timeout_seconds": 120.0
+  },
+  "frozen_inputs": {
+    "eval/semantic_gap_discrimination_v1_preregistration.md": "eef5b220aa7520e41f9ed6d8ad14626658c840ee1629e86ea89d134d36ccc2c6",
+    "eval/results/measurement_validity_cleaned_cohort.json": "9bb81f81a7b2d77076276c6ec381a0dd5c93ace2b465358f18f6bdc49dc1c0a3",
+    "eval/results/measurement_validity_audit.json": "d8d90af8b2e17be167ed4b73c3f649ffec6bb4a3398114ae92f80a458dfcd036",
+    "eval/results/measurement_validity_audit_v2.json": "516afe9a0185920aae493d01030f2ddee56ba9cee042014ccc569c0d9d1a416f",
+    "eval/results/generation_utilization_results.json": "01be9f9c3a3c26b845df83475013c12838e67e55eb7967b7c3a4fda15f5d6963",
+    "eval/results/reranker_transfer_results.json": "bbce7fa512bfbf9d31b719ea3983934ce4a4781ce4caae6bb5751906a59cd589",
+    "eval/results/oracle_repair_v1_results.json": "762af76c6f192623a4f89f337ff127e5467b3653d6069f9c2cf1fab822781e02",
+    "eval/results/oracle_repair_v1_human_scored.json": "91f2da3ae0aa7bb97ff7bda0a5b03dbfed3a721fc245174f1c0276559744a7dc",
+    "eval/results/repairability_stage_summary.md": "46f4da92aad2d9db86149ee784cefe422684551bc891d23cfc776806f0b6c059",
+    "eval/validation/broad_atomic_facts_validation_v1.json": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+    "eval/validation/broad_queries_validation_v1.json": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858"
+  },
+  "cells": [
+    {
+      "cell_id": "M-VAL-001-039-F02::current::r1",
+      "item_id": "M-VAL-001-039-F02",
+      "gold": "MISSING",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "bb52cd21590ce48601e9c86218205e1c68454b4e76c093d941180348ef6b31c5",
+      "cache_key": "92e82231c5aced95cb5839306249971df321c8dba5992e9a12f1210f3560c158",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub makes the source-code offer required by open-source component licenses, but the baseline answer does not mention this offer."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.6221187000046484
+    },
+    {
+      "cell_id": "M-VAL-001-039-F02::current::r2",
+      "item_id": "M-VAL-001-039-F02",
+      "gold": "MISSING",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "bb52cd21590ce48601e9c86218205e1c68454b4e76c093d941180348ef6b31c5",
+      "cache_key": "f5f39f431946bd36bd11462eee286753502b441cf69b896a7d2ada0ed71e45a6",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Evidence S1 states GitHub makes the source-code offer required by open-source component licenses; the baseline answer does not mention this offer."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.6556263000238687
+    },
+    {
+      "cell_id": "M-VAL-001-039-F02::current::r3",
+      "item_id": "M-VAL-001-039-F02",
+      "gold": "MISSING",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "bb52cd21590ce48601e9c86218205e1c68454b4e76c093d941180348ef6b31c5",
+      "cache_key": "10035afb0c11e0f0b6309f721fab8674d37e703dcc4117a94da1828afa51e0aa",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Evidence S1 states GitHub makes an offer to provide source code when open-source component licenses require it; the baseline answer does not mention this offer."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 50
+      },
+      "latency_seconds": 0.9624461999628693
+    },
+    {
+      "cell_id": "M-VAL-001-039-F02::stronger::r1",
+      "item_id": "M-VAL-001-039-F02",
+      "gold": "MISSING",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "bb52cd21590ce48601e9c86218205e1c68454b4e76c093d941180348ef6b31c5",
+      "cache_key": "3a91130d86407771c741b25515dd165e3022ac4c4b90538e1d4e3010862d7980",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub makes an offer to provide source code when open-source component licenses require it. The baseline answer does not mention this offer."
+      },
+      "provider_usage": {
+        "input_tokens": 1420,
+        "output_tokens": 56
+      },
+      "latency_seconds": 1.6113932999433018
+    },
+    {
+      "cell_id": "M-VAL-001-039-F02::stronger::r2",
+      "item_id": "M-VAL-001-039-F02",
+      "gold": "MISSING",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "bb52cd21590ce48601e9c86218205e1c68454b4e76c093d941180348ef6b31c5",
+      "cache_key": "46ec5ed4d4644989604b369801dc4f0079c5be7531d0670f8fcf036d07251dcd",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub makes an offer to provide source code when open-source component licenses require it. The baseline answer does not mention this offer."
+      },
+      "provider_usage": {
+        "input_tokens": 1420,
+        "output_tokens": 56
+      },
+      "latency_seconds": 1.225385500001721
+    },
+    {
+      "cell_id": "M-VAL-001-039-F02::stronger::r3",
+      "item_id": "M-VAL-001-039-F02",
+      "gold": "MISSING",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "bb52cd21590ce48601e9c86218205e1c68454b4e76c093d941180348ef6b31c5",
+      "cache_key": "f7668a5def280496727da23532514444a43d42da539e5febd89b902d0db50f4a",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub makes an offer to provide source code when open-source component licenses require it. The baseline answer does not mention this offer."
+      },
+      "provider_usage": {
+        "input_tokens": 1420,
+        "output_tokens": 56
+      },
+      "latency_seconds": 1.5978856000001542
+    },
+    {
+      "cell_id": "M-VAL-001-050-F01::current::r1",
+      "item_id": "M-VAL-001-050-F01",
+      "gold": "MISSING",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "c395dd5403909b1cd26663fcfb8c06b4d46c7fe4fbfbf75186830711b2bb0a3d",
+      "cache_key": "9f2e1fe0de086e36b595099d7601e1092ad07c352f42e89fde7ce79d81c7b31c",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer states the commitment applies to GPLv2 as a Covered License and describes cure/reinstatement provisions, implicitly covering its application before GitHub brings a non-defensive claim."
+      },
+      "provider_usage": {
+        "input_tokens": 1851,
+        "output_tokens": 60
+      },
+      "latency_seconds": 0.7825481999898329
+    },
+    {
+      "cell_id": "M-VAL-001-050-F01::current::r2",
+      "item_id": "M-VAL-001-050-F01",
+      "gold": "MISSING",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "c395dd5403909b1cd26663fcfb8c06b4d46c7fe4fbfbf75186830711b2bb0a3d",
+      "cache_key": "25eddc1d3a8ada4d3b3c7fdce3709898bb777114b4736081f7c05c4134e1c9b2",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer states the commitment applies to GPLv2 as a Covered License and describes cure/reinstatement provisions, matching the proposition's scope."
+      },
+      "provider_usage": {
+        "input_tokens": 1851,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.7335758999688551
+    },
+    {
+      "cell_id": "M-VAL-001-050-F01::current::r3",
+      "item_id": "M-VAL-001-050-F01",
+      "gold": "MISSING",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "c395dd5403909b1cd26663fcfb8c06b4d46c7fe4fbfbf75186830711b2bb0a3d",
+      "cache_key": "82db1a5455fc727fe007269db39a37500e04b08e876cb0255a46fe625c04fd4a",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer states the commitment applies to GPLv2 as a Covered License and describes cure/reinstatement provisions, matching the proposition's scope."
+      },
+      "provider_usage": {
+        "input_tokens": 1851,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.8054010999621823
+    },
+    {
+      "cell_id": "M-VAL-001-050-F01::stronger::r1",
+      "item_id": "M-VAL-001-050-F01",
+      "gold": "MISSING",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "c395dd5403909b1cd26663fcfb8c06b4d46c7fe4fbfbf75186830711b2bb0a3d",
+      "cache_key": "d41a4d2c32f232b35bf9e3642ac4d4ecd2877675d4a0bccd987cc31c74efe6f3",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The evidence states the commitment applies 'Before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action)', but does not explicitly state it applies to non-defensive claims arising from termination of a Covered License."
+      },
+      "provider_usage": {
+        "input_tokens": 1850,
+        "output_tokens": 76
+      },
+      "latency_seconds": 2.5987873999984004
+    },
+    {
+      "cell_id": "M-VAL-001-050-F01::stronger::r2",
+      "item_id": "M-VAL-001-050-F01",
+      "gold": "MISSING",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "c395dd5403909b1cd26663fcfb8c06b4d46c7fe4fbfbf75186830711b2bb0a3d",
+      "cache_key": "6fcd78aa2da67db571e7779ebf9491e8eb187205b5c291dc21904f39c7089b4d",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the commitment applies to GPLv2 as a Covered License, and S1 specifies it applies before filing or continuing any legal proceeding other than a Defensive Action."
+      },
+      "provider_usage": {
+        "input_tokens": 1850,
+        "output_tokens": 72
+      },
+      "latency_seconds": 1.4136281000101008
+    },
+    {
+      "cell_id": "M-VAL-001-050-F01::stronger::r3",
+      "item_id": "M-VAL-001-050-F01",
+      "gold": "MISSING",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "c395dd5403909b1cd26663fcfb8c06b4d46c7fe4fbfbf75186830711b2bb0a3d",
+      "cache_key": "64db609e64c0c2f35b426ba530952de7676c8f8fef676460c86e1ec499a3e361",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the commitment applies to GPLv2 as a Covered License, and S1 specifies it applies before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License."
+      },
+      "provider_usage": {
+        "input_tokens": 1850,
+        "output_tokens": 85
+      },
+      "latency_seconds": 1.6655967999831773
+    },
+    {
+      "cell_id": "P-VAL-001-004-F02::current::r1",
+      "item_id": "P-VAL-001-004-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "85522fedc19f55d16898b5adfcdf4976a4d17c7dfba18edd0030e97ebecd313c",
+      "cache_key": "d1310a31af8bd5f453172f28c6186ab6bfa84c7ed38c5c10fa473ef6acbcc22b",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer lists 'Trademark registration number' and states a federal or international registration number is required."
+      },
+      "provider_usage": {
+        "input_tokens": 2713,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.6124699999927543
+    },
+    {
+      "cell_id": "P-VAL-001-004-F02::current::r2",
+      "item_id": "P-VAL-001-004-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "85522fedc19f55d16898b5adfcdf4976a4d17c7dfba18edd0030e97ebecd313c",
+      "cache_key": "88fb9f8329135541965e7e8ac40a0280186582daeb2e19c901e0e66e9c8dfa7f",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline lists 'Trademark registration number' and states a federal or international registration number is required."
+      },
+      "provider_usage": {
+        "input_tokens": 2713,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.8161355000338517
+    },
+    {
+      "cell_id": "P-VAL-001-004-F02::current::r3",
+      "item_id": "P-VAL-001-004-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "85522fedc19f55d16898b5adfcdf4976a4d17c7dfba18edd0030e97ebecd313c",
+      "cache_key": "de488b8a178fea1f2e637875f85858950a0f03bbbe475272c3616ad27f3ed7c9",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer lists 'Trademark registration number' and states a federal or international trademark registration number is required."
+      },
+      "provider_usage": {
+        "input_tokens": 2713,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.8501189000089653
+    },
+    {
+      "cell_id": "P-VAL-001-004-F02::stronger::r1",
+      "item_id": "P-VAL-001-004-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "85522fedc19f55d16898b5adfcdf4976a4d17c7dfba18edd0030e97ebecd313c",
+      "cache_key": "a92b1f629a36ee013de197cff38df29a6ce219dbf628f9caae12b294e192cc35",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer lists 'Trademark registration number' as required information, and S1 includes it in the required reporting list."
+      },
+      "provider_usage": {
+        "input_tokens": 2712,
+        "output_tokens": 57
+      },
+      "latency_seconds": 2.0439790000091307
+    },
+    {
+      "cell_id": "P-VAL-001-004-F02::stronger::r2",
+      "item_id": "P-VAL-001-004-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "85522fedc19f55d16898b5adfcdf4976a4d17c7dfba18edd0030e97ebecd313c",
+      "cache_key": "5264f502f0bbba3add38c7d10c1fc2c4fab690e5911ed32add6dbd27a8f8a989",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly lists 'Trademark registration number' as required information, directly matching the requirement in S1."
+      },
+      "provider_usage": {
+        "input_tokens": 2712,
+        "output_tokens": 59
+      },
+      "latency_seconds": 1.3116391000221483
+    },
+    {
+      "cell_id": "P-VAL-001-004-F02::stronger::r3",
+      "item_id": "P-VAL-001-004-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "85522fedc19f55d16898b5adfcdf4976a4d17c7dfba18edd0030e97ebecd313c",
+      "cache_key": "49696ead66c4b974ca641b995d638b577d4ba90859e43384a0a78459cdc89cf4",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly lists 'Trademark registration number' as required information and notes a federal or international registration number is required."
+      },
+      "provider_usage": {
+        "input_tokens": 2712,
+        "output_tokens": 61
+      },
+      "latency_seconds": 1.2401177000137977
+    },
+    {
+      "cell_id": "P-VAL-001-007-F03::current::r1",
+      "item_id": "P-VAL-001-007-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "595c7b2451efbdea38f9a69d4f2623f2c54763ea970557f32661c006a48115fc",
+      "cache_key": "c2273b8da592283a1ead889fdff9f21a27fd84a4d2bc808aa72e981b80502e4d",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the process is only for high-risk private information and other removal requests cannot be processed simultaneously."
+      },
+      "provider_usage": {
+        "input_tokens": 2251,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.7575674999970943
+    },
+    {
+      "cell_id": "P-VAL-001-007-F03::current::r2",
+      "item_id": "P-VAL-001-007-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "595c7b2451efbdea38f9a69d4f2623f2c54763ea970557f32661c006a48115fc",
+      "cache_key": "3aa5dc6844792cfd8b9ab73419a759a7d0ff39df6080df5afe50343b5e3ab615",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the process is only for high-risk private information, not other content, and other removal requests cannot be processed simultaneously."
+      },
+      "provider_usage": {
+        "input_tokens": 2251,
+        "output_tokens": 50
+      },
+      "latency_seconds": 0.884401399991475
+    },
+    {
+      "cell_id": "P-VAL-001-007-F03::current::r3",
+      "item_id": "P-VAL-001-007-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "595c7b2451efbdea38f9a69d4f2623f2c54763ea970557f32661c006a48115fc",
+      "cache_key": "db7fca5322e2729b16c09f68cc9336c61d0beb2b834eb7d769b4ebcb98a0f5d3",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the process is only for high-risk private information, not other content, and other removal requests cannot be processed simultaneously."
+      },
+      "provider_usage": {
+        "input_tokens": 2251,
+        "output_tokens": 50
+      },
+      "latency_seconds": 0.7497367999749258
+    },
+    {
+      "cell_id": "P-VAL-001-007-F03::stronger::r1",
+      "item_id": "P-VAL-001-007-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "595c7b2451efbdea38f9a69d4f2623f2c54763ea970557f32661c006a48115fc",
+      "cache_key": "f6592db32d1451581ac27ec5568cf75a2968157d1f9e14ce94765a98b6895a76",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline states this process is only for high-risk private information and that other removal requests cannot be processed simultaneously, matching S1."
+      },
+      "provider_usage": {
+        "input_tokens": 2250,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.9190660000313073
+    },
+    {
+      "cell_id": "P-VAL-001-007-F03::stronger::r2",
+      "item_id": "P-VAL-001-007-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "595c7b2451efbdea38f9a69d4f2623f2c54763ea970557f32661c006a48115fc",
+      "cache_key": "a390874a6a7a977c0b1fb3f13b940251ad97e0758160ed2248c3cd21636b9fe5",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline states this process is only for high-risk private information and that other removal requests cannot be processed simultaneously, matching S1."
+      },
+      "provider_usage": {
+        "input_tokens": 2250,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.304502599989064
+    },
+    {
+      "cell_id": "P-VAL-001-007-F03::stronger::r3",
+      "item_id": "P-VAL-001-007-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "595c7b2451efbdea38f9a69d4f2623f2c54763ea970557f32661c006a48115fc",
+      "cache_key": "c4f464d2b12bd82a31f38031dbd2b2a49d138022a3854203cc55d398bc9ae0d8",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline states the process is only for high-risk private information and that other removal requests cannot be processed simultaneously, matching S1."
+      },
+      "provider_usage": {
+        "input_tokens": 2250,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.042130600020755
+    },
+    {
+      "cell_id": "P-VAL-001-008-F01::current::r1",
+      "item_id": "P-VAL-001-008-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "ebc997cff0ac120118150415563f4962d3986aa092a4e836f1f1a64553b2e9cc",
+      "cache_key": "e3e05e6b6b3fcd0c1cfa09ba927845707b0d070e1e750317e88e6d946ce85bea",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the contact form is the fastest option, matching S1's statement that the form is the fastest way to get a response."
+      },
+      "provider_usage": {
+        "input_tokens": 2837,
+        "output_tokens": 52
+      },
+      "latency_seconds": 0.845429899985902
+    },
+    {
+      "cell_id": "P-VAL-001-008-F01::current::r2",
+      "item_id": "P-VAL-001-008-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "ebc997cff0ac120118150415563f4962d3986aa092a4e836f1f1a64553b2e9cc",
+      "cache_key": "5b60e5dd2b9bb2418fac67a1411174e6465a91b0b1c52f3165242dbb690c6141",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the contact form is the fastest option, matching S1's statement that the form is the fastest way to get a response."
+      },
+      "provider_usage": {
+        "input_tokens": 2837,
+        "output_tokens": 52
+      },
+      "latency_seconds": 0.6727687999955378
+    },
+    {
+      "cell_id": "P-VAL-001-008-F01::current::r3",
+      "item_id": "P-VAL-001-008-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "ebc997cff0ac120118150415563f4962d3986aa092a4e836f1f1a64553b2e9cc",
+      "cache_key": "f554283738e7dbb41db9c784e35938b79a3aefe1882169b36e9e00542cf1f29f",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the contact form is the fastest option, matching S1's statement that the form is the fastest way to get a response."
+      },
+      "provider_usage": {
+        "input_tokens": 2837,
+        "output_tokens": 52
+      },
+      "latency_seconds": 0.49222599994391203
+    },
+    {
+      "cell_id": "P-VAL-001-008-F01::stronger::r1",
+      "item_id": "P-VAL-001-008-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "ebc997cff0ac120118150415563f4962d3986aa092a4e836f1f1a64553b2e9cc",
+      "cache_key": "76195d6189a01d0ad1eb5daea7c058062864a9a08024783d77e6d10c70a739e0",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the contact form is the fastest option, which semantically matches the proposition that the online DMCA form is the fastest way to get a response."
+      },
+      "provider_usage": {
+        "input_tokens": 2836,
+        "output_tokens": 63
+      },
+      "latency_seconds": 1.710454199986998
+    },
+    {
+      "cell_id": "P-VAL-001-008-F01::stronger::r2",
+      "item_id": "P-VAL-001-008-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "ebc997cff0ac120118150415563f4962d3986aa092a4e836f1f1a64553b2e9cc",
+      "cache_key": "6ccbe858751b91c5b73428a626496d3ab5778911a1585242980d8ac4c8ef4097",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the contact form is the fastest option, which semantically matches the proposition that the online DMCA form is the fastest way to get a response."
+      },
+      "provider_usage": {
+        "input_tokens": 2836,
+        "output_tokens": 63
+      },
+      "latency_seconds": 1.4069172000163235
+    },
+    {
+      "cell_id": "P-VAL-001-008-F01::stronger::r3",
+      "item_id": "P-VAL-001-008-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "ebc997cff0ac120118150415563f4962d3986aa092a4e836f1f1a64553b2e9cc",
+      "cache_key": "3821eb87d7c1626d6d5a2602411382bb060de24964888104a7f5aefab23e9c62",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the contact form is the fastest option, which semantically matches the proposition that the online DMCA form is the fastest way to get a response."
+      },
+      "provider_usage": {
+        "input_tokens": 2836,
+        "output_tokens": 63
+      },
+      "latency_seconds": 1.325659399968572
+    },
+    {
+      "cell_id": "P-VAL-001-008-F03::current::r1",
+      "item_id": "P-VAL-001-008-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "3b72b0f47bdff89d0f4e2377aefe5a9d1e61f220793a26807d8d075b920fcc26",
+      "cache_key": "61344b447b5bbe086e29e394e965681f01bacc853a94d00e7b07bf30c6705f5c",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline says physical mail is slower and that plain-text email is much faster than physical mail, matching the evidence that mail takes substantially longer."
+      },
+      "provider_usage": {
+        "input_tokens": 2833,
+        "output_tokens": 52
+      },
+      "latency_seconds": 0.6005331000196747
+    },
+    {
+      "cell_id": "P-VAL-001-008-F03::current::r2",
+      "item_id": "P-VAL-001-008-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "3b72b0f47bdff89d0f4e2377aefe5a9d1e61f220793a26807d8d075b920fcc26",
+      "cache_key": "16611e13b5b8b0347e0b1ff57caa60f608fcbb63f2010a1de63f568b872a2254",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline says physical mail is slower and that plain-text email is much faster than physical mail, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2833,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.9895912999636494
+    },
+    {
+      "cell_id": "P-VAL-001-008-F03::current::r3",
+      "item_id": "P-VAL-001-008-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "3b72b0f47bdff89d0f4e2377aefe5a9d1e61f220793a26807d8d075b920fcc26",
+      "cache_key": "79d2758be421c19c263288c3e99bc157efb24fef6236c4dd782020bc4bb047ae",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline says physical mail is slower and that plain-text email is much faster than physical mail, conveying substantially longer processing."
+      },
+      "provider_usage": {
+        "input_tokens": 2833,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.8214840000146069
+    },
+    {
+      "cell_id": "P-VAL-001-008-F03::stronger::r1",
+      "item_id": "P-VAL-001-008-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "3b72b0f47bdff89d0f4e2377aefe5a9d1e61f220793a26807d8d075b920fcc26",
+      "cache_key": "15483972cfc90015267a23dae910c3d01095fbcec277c327370d4016aa1cd5c8",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states physical mail will take substantially longer to receive and respond to, but the baseline answer only mentions the waiting period start and does not express the longer processing time."
+      },
+      "provider_usage": {
+        "input_tokens": 2832,
+        "output_tokens": 62
+      },
+      "latency_seconds": 1.7836561999865808
+    },
+    {
+      "cell_id": "P-VAL-001-008-F03::stronger::r2",
+      "item_id": "P-VAL-001-008-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "3b72b0f47bdff89d0f4e2377aefe5a9d1e61f220793a26807d8d075b920fcc26",
+      "cache_key": "41278f855728766ecd13098c202412fb8a27f9fe8973a726280902404bbf47b3",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states physical mail will take 'substantially longer for us to receive and respond to it.' The baseline answer only mentions the waiting period start, omitting this delay."
+      },
+      "provider_usage": {
+        "input_tokens": 2832,
+        "output_tokens": 67
+      },
+      "latency_seconds": 1.973618499992881
+    },
+    {
+      "cell_id": "P-VAL-001-008-F03::stronger::r3",
+      "item_id": "P-VAL-001-008-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "3b72b0f47bdff89d0f4e2377aefe5a9d1e61f220793a26807d8d075b920fcc26",
+      "cache_key": "75369d603694e0196487044db256621bcb8f2079c87a960739c077842ed06873",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states physical mail will take substantially longer to receive and respond to, but the baseline answer only mentions the waiting period start and does not express the longer processing time."
+      },
+      "provider_usage": {
+        "input_tokens": 2832,
+        "output_tokens": 62
+      },
+      "latency_seconds": 1.474715499964077
+    },
+    {
+      "cell_id": "P-VAL-001-009-F01::current::r1",
+      "item_id": "P-VAL-001-009-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "c71a87fc45a2bfb7403b29c6cdeb71e1c47ab17922f88fc6ff51a222af88b542",
+      "cache_key": "cf78cb4c6c92a6a0294714609087e654d3838dfc0d139f25b518d0c6f1a45e4c",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The answer states the complaint must describe how the measures effectively control access to the copyrighted material, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2869,
+        "output_tokens": 49
+      },
+      "latency_seconds": 1.1540041000116616
+    },
+    {
+      "cell_id": "P-VAL-001-009-F01::current::r2",
+      "item_id": "P-VAL-001-009-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "c71a87fc45a2bfb7403b29c6cdeb71e1c47ab17922f88fc6ff51a222af88b542",
+      "cache_key": "2c024eb2215d353421171506f6596f26244db891fa0679dcd1499f4129f6682e",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The answer states the complaint must describe how the measures effectively control access to the copyrighted material, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2869,
+        "output_tokens": 49
+      },
+      "latency_seconds": 0.9036396000301465
+    },
+    {
+      "cell_id": "P-VAL-001-009-F01::current::r3",
+      "item_id": "P-VAL-001-009-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "c71a87fc45a2bfb7403b29c6cdeb71e1c47ab17922f88fc6ff51a222af88b542",
+      "cache_key": "20582411c5e914af774ead9a10a7f720d9787ab1fc3eb2a18c6ec55a7c5578f6",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The answer states the complaint must describe how the measures effectively control access to the copyrighted material, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2869,
+        "output_tokens": 49
+      },
+      "latency_seconds": 0.6948418999672867
+    },
+    {
+      "cell_id": "P-VAL-001-009-F01::stronger::r1",
+      "item_id": "P-VAL-001-009-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "c71a87fc45a2bfb7403b29c6cdeb71e1c47ab17922f88fc6ff51a222af88b542",
+      "cache_key": "3f91ff45697478241b97b3c59f1c033ac4d1686dbc903c11c12d7b181f8e63a6",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The baseline answer states the complaint must describe how the technical measures effectively control access to the copyrighted material, which semantically expresses the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2868,
+        "output_tokens": 61
+      },
+      "latency_seconds": 1.7906729000387713
+    },
+    {
+      "cell_id": "P-VAL-001-009-F01::stronger::r2",
+      "item_id": "P-VAL-001-009-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "c71a87fc45a2bfb7403b29c6cdeb71e1c47ab17922f88fc6ff51a222af88b542",
+      "cache_key": "12090b4bcdddaa11e3ab95b9e62f346542aca48186f88c312efb7e33ac490536",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The baseline answer states the complaint must describe how the technical measures effectively control access to the copyrighted material, which semantically expresses the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2868,
+        "output_tokens": 61
+      },
+      "latency_seconds": 1.3809080999926664
+    },
+    {
+      "cell_id": "P-VAL-001-009-F01::stronger::r3",
+      "item_id": "P-VAL-001-009-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "c71a87fc45a2bfb7403b29c6cdeb71e1c47ab17922f88fc6ff51a222af88b542",
+      "cache_key": "74f4d7da2b92d0f4f29b9826b2469f66b29c99bf089a4a781c7deddf3cb63f2c",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The baseline answer states a circumvention complaint must describe how the technical measures effectively control access to the copyrighted material, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2868,
+        "output_tokens": 61
+      },
+      "latency_seconds": 1.8604873000294901
+    },
+    {
+      "cell_id": "P-VAL-001-009-F02::current::r1",
+      "item_id": "P-VAL-001-009-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "7e877b143992ffba56dd89bf5088a9b162ba4ea15a06c6865dce3902066aac80",
+      "cache_key": "13f16d9005220fad1f6fb088c1a2f302de4c0c6383ec3e7709b277a0ff64ac82",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states circumvention reports should be sent through GitHub's DMCA contact, but the baseline answer does not mention this submission channel."
+      },
+      "provider_usage": {
+        "input_tokens": 2868,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.9239792000153102
+    },
+    {
+      "cell_id": "P-VAL-001-009-F02::current::r2",
+      "item_id": "P-VAL-001-009-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "7e877b143992ffba56dd89bf5088a9b162ba4ea15a06c6865dce3902066aac80",
+      "cache_key": "08ae894cb642a0069ba189d5f090dba2a9177933672a2eb8c358b494369b5865",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states circumvention reports should be sent through GitHub's DMCA contact, but the baseline answer does not mention this submission channel."
+      },
+      "provider_usage": {
+        "input_tokens": 2868,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.5953016999992542
+    },
+    {
+      "cell_id": "P-VAL-001-009-F02::current::r3",
+      "item_id": "P-VAL-001-009-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "7e877b143992ffba56dd89bf5088a9b162ba4ea15a06c6865dce3902066aac80",
+      "cache_key": "6aa18e987366762e5e87de96bf93a1539cca5d9288c1d64b1e3175af98b7b279",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "Baseline describes the circumvention complaint requirements and GitHub's review process, implicitly covering submission via GitHub's DMCA process; S2 states reports are sent through GitHub's DMCA contact form."
+      },
+      "provider_usage": {
+        "input_tokens": 2868,
+        "output_tokens": 62
+      },
+      "latency_seconds": 0.6106655000476167
+    },
+    {
+      "cell_id": "P-VAL-001-009-F02::stronger::r1",
+      "item_id": "P-VAL-001-009-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "7e877b143992ffba56dd89bf5088a9b162ba4ea15a06c6865dce3902066aac80",
+      "cache_key": "9639896515c228d066c415f01e24f4ed155e658ae20a4cd507b53d8cc5bd4d92",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states a circumvention report should be sent through GitHub's DMCA contact form, but the baseline answer does not mention the submission method."
+      },
+      "provider_usage": {
+        "input_tokens": 2867,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.497264199948404
+    },
+    {
+      "cell_id": "P-VAL-001-009-F02::stronger::r2",
+      "item_id": "P-VAL-001-009-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "7e877b143992ffba56dd89bf5088a9b162ba4ea15a06c6865dce3902066aac80",
+      "cache_key": "f83cee3ddba4a93db9f8acd78bd61d0a7695b1a1d4464e0a555956aa7d576160",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states a circumvention report should be sent through GitHub's DMCA contact form, but the baseline answer does not mention the submission method."
+      },
+      "provider_usage": {
+        "input_tokens": 2867,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.409405099984724
+    },
+    {
+      "cell_id": "P-VAL-001-009-F02::stronger::r3",
+      "item_id": "P-VAL-001-009-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "7e877b143992ffba56dd89bf5088a9b162ba4ea15a06c6865dce3902066aac80",
+      "cache_key": "2da137d39fe6b10459f37b8508017381e5b20ffaf5f9e3745524c5125ebc853f",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states to send a report through GitHub's DMCA contact form, but the baseline answer does not mention the contact form or submission method."
+      },
+      "provider_usage": {
+        "input_tokens": 2867,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.5076281999936327
+    },
+    {
+      "cell_id": "P-VAL-001-009-F03::current::r1",
+      "item_id": "P-VAL-001-009-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "9d7c6c3373aebd3bf2b17592f3e8f8fbd18f684a7238e9cf0272adb68ed80d85",
+      "cache_key": "7b728512fb73794dbfcd6e56226b7b5b4072de83064641e4e15ca885d36e55c7",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "Baseline item 1 states the complaint must describe 'What the technical measures are,' matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2862,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.9090005999896675
+    },
+    {
+      "cell_id": "P-VAL-001-009-F03::current::r2",
+      "item_id": "P-VAL-001-009-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "9d7c6c3373aebd3bf2b17592f3e8f8fbd18f684a7238e9cf0272adb68ed80d85",
+      "cache_key": "69df954c576197bf54458ea08a1a364d7dbb88d447bfb20dd219ddb74cb80dc7",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "Baseline item 1 states the complaint must describe 'What the technical measures are,' matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2862,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.7030708999955095
+    },
+    {
+      "cell_id": "P-VAL-001-009-F03::current::r3",
+      "item_id": "P-VAL-001-009-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "9d7c6c3373aebd3bf2b17592f3e8f8fbd18f684a7238e9cf0272adb68ed80d85",
+      "cache_key": "59ef4f2406be74f4b2c2e00f4bf7819a2535e66f52b6a04b2b551bfae290149e",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "Baseline item 1 states the complaint must describe 'What the technical measures are,' matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2862,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.9415868000360206
+    },
+    {
+      "cell_id": "P-VAL-001-009-F03::stronger::r1",
+      "item_id": "P-VAL-001-009-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "9d7c6c3373aebd3bf2b17592f3e8f8fbd18f684a7238e9cf0272adb68ed80d85",
+      "cache_key": "ad461c3a1e5c96775b9903a1d8334a72dc012823b68ff44ff2a5ab4375c0c19b",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The baseline answer states a circumvention complaint must include 'What the technical measures are,' which semantically expresses the proposition that the claim must describe the technical measure."
+      },
+      "provider_usage": {
+        "input_tokens": 2861,
+        "output_tokens": 70
+      },
+      "latency_seconds": 1.6756467999657616
+    },
+    {
+      "cell_id": "P-VAL-001-009-F03::stronger::r2",
+      "item_id": "P-VAL-001-009-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "9d7c6c3373aebd3bf2b17592f3e8f8fbd18f684a7238e9cf0272adb68ed80d85",
+      "cache_key": "bbb806d93b97db43e1611d02b7ae40e173937316713f94060969cd8d59abae8b",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The baseline answer states the complaint must describe 'What the technical measures are', which semantically expresses the proposition that the claim must describe the technical measure in question."
+      },
+      "provider_usage": {
+        "input_tokens": 2861,
+        "output_tokens": 70
+      },
+      "latency_seconds": 1.3727774000144564
+    },
+    {
+      "cell_id": "P-VAL-001-009-F03::stronger::r3",
+      "item_id": "P-VAL-001-009-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "9d7c6c3373aebd3bf2b17592f3e8f8fbd18f684a7238e9cf0272adb68ed80d85",
+      "cache_key": "ea61048556ab330f266d64bec39676aa6188450fcd2536c4599ce5eaf8f10935",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1",
+          "S2"
+        ],
+        "answer_support": "The baseline answer states a circumvention complaint must include 'What the technical measures are,' which semantically expresses the proposition that the claim must describe the technical measure."
+      },
+      "provider_usage": {
+        "input_tokens": 2861,
+        "output_tokens": 70
+      },
+      "latency_seconds": 1.4905256999772973
+    },
+    {
+      "cell_id": "P-VAL-001-011-F01::current::r1",
+      "item_id": "P-VAL-001-011-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "ac8129732495c6689a6ea2bd1a45ea28ff9ef3db5c68ba613261178054088216",
+      "cache_key": "73207e638211efa4ced70362615a6c403b89183bf645c58489b6f78697bd4454",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub prohibits posting content depicting or glorifying violence and cites S1, which also bars organizing, promoting, encouraging, threatening, or inciting violence."
+      },
+      "provider_usage": {
+        "input_tokens": 2127,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.0018536999705248
+    },
+    {
+      "cell_id": "P-VAL-001-011-F01::current::r2",
+      "item_id": "P-VAL-001-011-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "ac8129732495c6689a6ea2bd1a45ea28ff9ef3db5c68ba613261178054088216",
+      "cache_key": "b4cca778412ee257b413024fbf14bdf7584aeafad87ccf152c7fffd61e4ebda3",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub prohibits posting content depicting or glorifying violence and cites S1, which explicitly bars organizing, promoting, encouraging, threatening, or inciting violence."
+      },
+      "provider_usage": {
+        "input_tokens": 2127,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.2297693999717012
+    },
+    {
+      "cell_id": "P-VAL-001-011-F01::current::r3",
+      "item_id": "P-VAL-001-011-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "ac8129732495c6689a6ea2bd1a45ea28ff9ef3db5c68ba613261178054088216",
+      "cache_key": "89ec00969a8bf7f5c5c2a09762ce3cafe32b4b13a1141aeafb0b13c806842ee9",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub prohibits posting content depicting or glorifying violence and organizing/promoting/threatening/inciting acts of violence, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2127,
+        "output_tokens": 54
+      },
+      "latency_seconds": 0.980051199963782
+    },
+    {
+      "cell_id": "P-VAL-001-011-F01::stronger::r1",
+      "item_id": "P-VAL-001-011-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "ac8129732495c6689a6ea2bd1a45ea28ff9ef3db5c68ba613261178054088216",
+      "cache_key": "62a9d569b607bef28d0f342022c5e412a26cc5e540b70cb87f254289805638a2",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states GitHub prohibits posting content that depicts or glorifies violence, which semantically covers organizing, promoting, threatening, or inciting violence as prohibited uses."
+      },
+      "provider_usage": {
+        "input_tokens": 2126,
+        "output_tokens": 63
+      },
+      "latency_seconds": 2.1362272999831475
+    },
+    {
+      "cell_id": "P-VAL-001-011-F01::stronger::r2",
+      "item_id": "P-VAL-001-011-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "ac8129732495c6689a6ea2bd1a45ea28ff9ef3db5c68ba613261178054088216",
+      "cache_key": "d10ef51c29982e0ad5ed876793f2e15abf4d44d9dafb5ffa9154e7da5e5a82e3",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states GitHub prohibits posting content that depicts or glorifies violence, which semantically covers organizing, promoting, threatening, or inciting violence as prohibited uses."
+      },
+      "provider_usage": {
+        "input_tokens": 2126,
+        "output_tokens": 63
+      },
+      "latency_seconds": 1.2911234000348486
+    },
+    {
+      "cell_id": "P-VAL-001-011-F01::stronger::r3",
+      "item_id": "P-VAL-001-011-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "ac8129732495c6689a6ea2bd1a45ea28ff9ef3db5c68ba613261178054088216",
+      "cache_key": "8a265ae8b64e3a52a6cf73b513aa438b4e2328e1b8dba33edfb0d66e919ad5df",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub prohibits using the platform to organize, promote, encourage, threaten, or incite acts of violence. The baseline answer only mentions posting content that depicts or glorifies violence, not the prohibition on organizing, promoting, threatening, or inciting violence."
+      },
+      "provider_usage": {
+        "input_tokens": 2126,
+        "output_tokens": 81
+      },
+      "latency_seconds": 1.8330144999781623
+    },
+    {
+      "cell_id": "P-VAL-001-011-F03::current::r1",
+      "item_id": "P-VAL-001-011-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "8b9cf190b843138b45ae2aae45e4c45deab9cd1a05f815175bb9350235bedee8",
+      "cache_key": "884ff0c334a1c0e64ff639444b28ad932542639493982ba06a0842758424ac24",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub recognizes legitimate reasons such as educational or documentary purposes for posting violent content."
+      },
+      "provider_usage": {
+        "input_tokens": 2122,
+        "output_tokens": 42
+      },
+      "latency_seconds": 0.5174728999845684
+    },
+    {
+      "cell_id": "P-VAL-001-011-F03::current::r2",
+      "item_id": "P-VAL-001-011-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "8b9cf190b843138b45ae2aae45e4c45deab9cd1a05f815175bb9350235bedee8",
+      "cache_key": "7fc78cfde42bb0a7178b506f574d2e8f42ff3262e83c3bc229cfcb027a1504fd",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub recognizes legitimate reasons such as educational or documentary purposes for posting violent content."
+      },
+      "provider_usage": {
+        "input_tokens": 2122,
+        "output_tokens": 42
+      },
+      "latency_seconds": 0.6383327000075951
+    },
+    {
+      "cell_id": "P-VAL-001-011-F03::current::r3",
+      "item_id": "P-VAL-001-011-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "8b9cf190b843138b45ae2aae45e4c45deab9cd1a05f815175bb9350235bedee8",
+      "cache_key": "f719c76bb3bcdbf8b2a2ff563f8fe1ed5ed9a76d81743354ecdbcbd2ddbd1aba",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub recognizes legitimate reasons such as educational or documentary purposes for posting violent content."
+      },
+      "provider_usage": {
+        "input_tokens": 2122,
+        "output_tokens": 42
+      },
+      "latency_seconds": 0.8690938000218011
+    },
+    {
+      "cell_id": "P-VAL-001-011-F03::stronger::r1",
+      "item_id": "P-VAL-001-011-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "8b9cf190b843138b45ae2aae45e4c45deab9cd1a05f815175bb9350235bedee8",
+      "cache_key": "6b13d7a6fd21ca89be2d06897ea254d95fa2ba3d272cfe1a8e6e6d357ba3572b",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states GitHub recognizes legitimate reasons to post violent content, such as for educational or documentary purposes, directly matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2121,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.5018252999871038
+    },
+    {
+      "cell_id": "P-VAL-001-011-F03::stronger::r2",
+      "item_id": "P-VAL-001-011-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "8b9cf190b843138b45ae2aae45e4c45deab9cd1a05f815175bb9350235bedee8",
+      "cache_key": "8564ab0369f00a86484773c1ab81fc25931e8f1316957573ab1274f0e25c10f2",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states GitHub recognizes legitimate reasons to post violent content, such as for educational or documentary purposes, directly reflecting S1."
+      },
+      "provider_usage": {
+        "input_tokens": 2121,
+        "output_tokens": 62
+      },
+      "latency_seconds": 1.386715499975253
+    },
+    {
+      "cell_id": "P-VAL-001-011-F03::stronger::r3",
+      "item_id": "P-VAL-001-011-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "8b9cf190b843138b45ae2aae45e4c45deab9cd1a05f815175bb9350235bedee8",
+      "cache_key": "f1bb0cfbfb9c2c02b93f8d76b4575ee2cc1d4275fde90f3ee68ab09cec2bb578",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states GitHub recognizes legitimate reasons to post violent content, such as for educational or documentary purposes, directly reflecting S1."
+      },
+      "provider_usage": {
+        "input_tokens": 2121,
+        "output_tokens": 62
+      },
+      "latency_seconds": 1.33450769999763
+    },
+    {
+      "cell_id": "P-VAL-001-017-F03::current::r1",
+      "item_id": "P-VAL-001-017-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "054b7bfb6b3ffc99ce75abfd20cb0acbfea0ee6ddcf3742b8fd4d3bb94211f7b",
+      "cache_key": "114785ce78bb49cd1f21fca27853151fae959047c15a18dea12be63a34ffc4f5",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states having a username similar to another is not necessarily impersonation and GitHub will take context into account."
+      },
+      "provider_usage": {
+        "input_tokens": 2896,
+        "output_tokens": 46
+      },
+      "latency_seconds": 0.7741466000443324
+    },
+    {
+      "cell_id": "P-VAL-001-017-F03::current::r2",
+      "item_id": "P-VAL-001-017-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "054b7bfb6b3ffc99ce75abfd20cb0acbfea0ee6ddcf3742b8fd4d3bb94211f7b",
+      "cache_key": "596fe78ed2b6fa342cbd2729272d77d1b77827bbea98b03a55de77197db0e111",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states having a username similar to another is not necessarily impersonation and GitHub will take context into account."
+      },
+      "provider_usage": {
+        "input_tokens": 2896,
+        "output_tokens": 46
+      },
+      "latency_seconds": 0.6998137999908067
+    },
+    {
+      "cell_id": "P-VAL-001-017-F03::current::r3",
+      "item_id": "P-VAL-001-017-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "054b7bfb6b3ffc99ce75abfd20cb0acbfea0ee6ddcf3742b8fd4d3bb94211f7b",
+      "cache_key": "b4e6ad85a2d8c4e50904e822f350078b7132eaeec2e0ad5c51232d5ad67e5eb8",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states having a username similar to another is not necessarily impersonation and GitHub will take context into account."
+      },
+      "provider_usage": {
+        "input_tokens": 2896,
+        "output_tokens": 46
+      },
+      "latency_seconds": 0.8425273000029847
+    },
+    {
+      "cell_id": "P-VAL-001-017-F03::stronger::r1",
+      "item_id": "P-VAL-001-017-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "054b7bfb6b3ffc99ce75abfd20cb0acbfea0ee6ddcf3742b8fd4d3bb94211f7b",
+      "cache_key": "1c92b264a0f0650d1b894572904682828685121a0fd84a66914f385e31b0355a",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states that having a username similar to another is not necessarily impersonation and that GitHub will take context into account, directly matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2895,
+        "output_tokens": 65
+      },
+      "latency_seconds": 2.0375324999913573
+    },
+    {
+      "cell_id": "P-VAL-001-017-F03::stronger::r2",
+      "item_id": "P-VAL-001-017-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "054b7bfb6b3ffc99ce75abfd20cb0acbfea0ee6ddcf3742b8fd4d3bb94211f7b",
+      "cache_key": "1ef11e4a85ef03a7ec084e2586aa108a4f2456da79cd5bf6ee328f362e6855ee",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states that having a username similar to another is not necessarily impersonation and that GitHub will take context into account, directly matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2895,
+        "output_tokens": 65
+      },
+      "latency_seconds": 1.3930263000074774
+    },
+    {
+      "cell_id": "P-VAL-001-017-F03::stronger::r3",
+      "item_id": "P-VAL-001-017-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "054b7bfb6b3ffc99ce75abfd20cb0acbfea0ee6ddcf3742b8fd4d3bb94211f7b",
+      "cache_key": "300b627aa3f8896c2928f772a993472cc8328c4ab0417218c3737cebebe27568",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states that having a username similar to another is not necessarily impersonation and that GitHub will take context into account."
+      },
+      "provider_usage": {
+        "input_tokens": 2895,
+        "output_tokens": 61
+      },
+      "latency_seconds": 1.3086192000191659
+    },
+    {
+      "cell_id": "P-VAL-001-022-F02::current::r1",
+      "item_id": "P-VAL-001-022-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "80ee7c64a75616f700854ad4e0c78a6a2462c550fce3681e9f713cf77e8e6ddd",
+      "cache_key": "66a4bc2f6c4368d9e7f611d7ab0fe09329a1a81f0cc5ad927f2b5c4e63c9a0d4",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub ensures data is used consistently with the notice, paraphrasing S1's consistency requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 3439,
+        "output_tokens": 45
+      },
+      "latency_seconds": 1.0217933999956585
+    },
+    {
+      "cell_id": "P-VAL-001-022-F02::current::r2",
+      "item_id": "P-VAL-001-022-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "80ee7c64a75616f700854ad4e0c78a6a2462c550fce3681e9f713cf77e8e6ddd",
+      "cache_key": "5847eba0ee0a9ed9b0e654a13283ea11a43a4d4a9163a614454b55270e463046",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub ensures recipients have legitimate business need and discloses only for specified legitimate purposes, matching S1's consistency requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 3439,
+        "output_tokens": 49
+      },
+      "latency_seconds": 1.1088963000220247
+    },
+    {
+      "cell_id": "P-VAL-001-022-F02::current::r3",
+      "item_id": "P-VAL-001-022-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "80ee7c64a75616f700854ad4e0c78a6a2462c550fce3681e9f713cf77e8e6ddd",
+      "cache_key": "aaba69af7438bd1615bf8af285c670fb03177df216a695da2dbb0ef36fb9259d",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub ensures recipients have legitimate business need and discloses only for specified legitimate purposes, matching S1's consistency requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 3439,
+        "output_tokens": 49
+      },
+      "latency_seconds": 1.2411812999635004
+    },
+    {
+      "cell_id": "P-VAL-001-022-F02::stronger::r1",
+      "item_id": "P-VAL-001-022-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "80ee7c64a75616f700854ad4e0c78a6a2462c550fce3681e9f713cf77e8e6ddd",
+      "cache_key": "624181df8bd261526827f2af281074cbb3be652f93c252b8067159ec9c90c171",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub will ensure disclosed personal data is used in a manner consistent with the privacy notice. The baseline answer does not mention this consistency requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 3438,
+        "output_tokens": 58
+      },
+      "latency_seconds": 1.9442532999673858
+    },
+    {
+      "cell_id": "P-VAL-001-022-F02::stronger::r2",
+      "item_id": "P-VAL-001-022-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "80ee7c64a75616f700854ad4e0c78a6a2462c550fce3681e9f713cf77e8e6ddd",
+      "cache_key": "31da99f29ba91b43e75bc5f3bd1331dbd03889b676d22a778ffb88c9ddb162d0",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub will ensure disclosed personal data is used in a manner consistent with the privacy notice. The baseline answer does not mention this consistency requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 3438,
+        "output_tokens": 58
+      },
+      "latency_seconds": 1.3379973999690264
+    },
+    {
+      "cell_id": "P-VAL-001-022-F02::stronger::r3",
+      "item_id": "P-VAL-001-022-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "80ee7c64a75616f700854ad4e0c78a6a2462c550fce3681e9f713cf77e8e6ddd",
+      "cache_key": "34d6167778f2ee4ec36ecd3fcc5adfef74d064b1bae934a5325cb356dd233cc5",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states GitHub will ensure disclosed personal data is used in a manner consistent with the privacy notice. The baseline answer does not mention this consistency requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 3438,
+        "output_tokens": 58
+      },
+      "latency_seconds": 1.5429058999870904
+    },
+    {
+      "cell_id": "P-VAL-001-022-F03::current::r1",
+      "item_id": "P-VAL-001-022-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "c2593e1450bf88795b52322013bb45186d662acb5ae06052228dedeea80089a5",
+      "cache_key": "0fd565e554bd20c3c2ca88c7199a2e395e7ca88ae98d912cbf633403722ecb35",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub may disclose candidate data to other third parties, including service providers, and to enable third parties to provide services on GitHub's behalf."
+      },
+      "provider_usage": {
+        "input_tokens": 3440,
+        "output_tokens": 54
+      },
+      "latency_seconds": 0.7100416000466794
+    },
+    {
+      "cell_id": "P-VAL-001-022-F03::current::r2",
+      "item_id": "P-VAL-001-022-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "c2593e1450bf88795b52322013bb45186d662acb5ae06052228dedeea80089a5",
+      "cache_key": "aaf4bb8515a90b40b61b3ee39b26556ec5b9c0df683dd70eb85dd394529334ec",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub may disclose candidate data to other third parties, including service providers, and to enable third parties to provide services on GitHub's behalf."
+      },
+      "provider_usage": {
+        "input_tokens": 3440,
+        "output_tokens": 54
+      },
+      "latency_seconds": 0.6418318999931216
+    },
+    {
+      "cell_id": "P-VAL-001-022-F03::current::r3",
+      "item_id": "P-VAL-001-022-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "c2593e1450bf88795b52322013bb45186d662acb5ae06052228dedeea80089a5",
+      "cache_key": "20d4160219b86f749146c85c4c9187d60e71db2d9fcda0aa3f811875fc55a17e",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states GitHub may disclose candidate data to other third parties, including service providers, and to enable third parties to provide services on GitHub's behalf."
+      },
+      "provider_usage": {
+        "input_tokens": 3440,
+        "output_tokens": 54
+      },
+      "latency_seconds": 0.8166364000062458
+    },
+    {
+      "cell_id": "P-VAL-001-022-F03::stronger::r1",
+      "item_id": "P-VAL-001-022-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "c2593e1450bf88795b52322013bb45186d662acb5ae06052228dedeea80089a5",
+      "cache_key": "a9ce866cfc74ecaea8593509d638cbd449fb0004257ce37b347695be9e99b902",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states GitHub may disclose candidate personal data to other third parties, including service providers, for legitimate purposes, including enabling third parties to provide services on GitHub's behalf."
+      },
+      "provider_usage": {
+        "input_tokens": 3439,
+        "output_tokens": 66
+      },
+      "latency_seconds": 1.460367000021506
+    },
+    {
+      "cell_id": "P-VAL-001-022-F03::stronger::r2",
+      "item_id": "P-VAL-001-022-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "c2593e1450bf88795b52322013bb45186d662acb5ae06052228dedeea80089a5",
+      "cache_key": "a16691b94eb0ae9f40c78be223e338ab6dcd3b7f281e533e84a3fc12802f6d74",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states GitHub may disclose candidate personal data to other third parties, including service providers, for legitimate purposes, including enabling third parties to provide services on GitHub's behalf."
+      },
+      "provider_usage": {
+        "input_tokens": 3439,
+        "output_tokens": 66
+      },
+      "latency_seconds": 1.213434299977962
+    },
+    {
+      "cell_id": "P-VAL-001-022-F03::stronger::r3",
+      "item_id": "P-VAL-001-022-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "c2593e1450bf88795b52322013bb45186d662acb5ae06052228dedeea80089a5",
+      "cache_key": "cf1968fa1f17228707a57e77c1bafe052ed17d9e4a54dfc2d79821b9e0498103",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states GitHub may disclose candidate personal data to other third parties, including service providers, for legitimate purposes, including enabling third parties to provide services on GitHub's behalf."
+      },
+      "provider_usage": {
+        "input_tokens": 3439,
+        "output_tokens": 66
+      },
+      "latency_seconds": 1.350677700014785
+    },
+    {
+      "cell_id": "P-VAL-001-024-F03::current::r1",
+      "item_id": "P-VAL-001-024-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "f97c4e9a1f4bb7b704d64ef7125eb054e51c6c6e78582d118185b302f3a1aed3",
+      "cache_key": "f94adc71fe87dfa3f0ff5a5355d4932854c2f809f6b126b56b57d14694d2afc2",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states essential cookies provide essential functionality, such as storing settings and recognizing you while using the services."
+      },
+      "provider_usage": {
+        "input_tokens": 2430,
+        "output_tokens": 45
+      },
+      "latency_seconds": 1.3774421999696642
+    },
+    {
+      "cell_id": "P-VAL-001-024-F03::current::r2",
+      "item_id": "P-VAL-001-024-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "f97c4e9a1f4bb7b704d64ef7125eb054e51c6c6e78582d118185b302f3a1aed3",
+      "cache_key": "6c93d3a2ab84e3719ced0a52f7581d878ab8c57669d916c55fb77cba6ed81986",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states essential cookies provide essential functionality such as storing settings and recognizing you while using the services."
+      },
+      "provider_usage": {
+        "input_tokens": 2430,
+        "output_tokens": 44
+      },
+      "latency_seconds": 0.609914899978321
+    },
+    {
+      "cell_id": "P-VAL-001-024-F03::current::r3",
+      "item_id": "P-VAL-001-024-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "f97c4e9a1f4bb7b704d64ef7125eb054e51c6c6e78582d118185b302f3a1aed3",
+      "cache_key": "21c24e5dc04a1a5886d4c73e2bcce3dd2da904786294b38fc10954b8fcd572e4",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states essential cookies provide essential functionality, such as storing settings and recognizing you while using the services."
+      },
+      "provider_usage": {
+        "input_tokens": 2430,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.5703355000005104
+    },
+    {
+      "cell_id": "P-VAL-001-024-F03::stronger::r1",
+      "item_id": "P-VAL-001-024-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "f97c4e9a1f4bb7b704d64ef7125eb054e51c6c6e78582d118185b302f3a1aed3",
+      "cache_key": "8785b342be23722ef9924c09fd1f6dd032396ebf6cf4acfd37d45963b0418f9d",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline states essential cookies provide functionality like storing settings and recognizing you, matching S1's description."
+      },
+      "provider_usage": {
+        "input_tokens": 2429,
+        "output_tokens": 44
+      },
+      "latency_seconds": 1.5638403000193648
+    },
+    {
+      "cell_id": "P-VAL-001-024-F03::stronger::r2",
+      "item_id": "P-VAL-001-024-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "f97c4e9a1f4bb7b704d64ef7125eb054e51c6c6e78582d118185b302f3a1aed3",
+      "cache_key": "51fe026e22039304aa215f976babb7acf329d02aa9a7d39c1f786df1b0873af9",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states essential cookies are used to provide essential functionality, such as storing settings and recognizing you while using the services, which semantically matches the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2429,
+        "output_tokens": 62
+      },
+      "latency_seconds": 0.8127917999518104
+    },
+    {
+      "cell_id": "P-VAL-001-024-F03::stronger::r3",
+      "item_id": "P-VAL-001-024-F03",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "f97c4e9a1f4bb7b704d64ef7125eb054e51c6c6e78582d118185b302f3a1aed3",
+      "cache_key": "9a8dd215ac49fe27d72e073aba90c1f2b8f81e68031f12182a4a84ffe67a03c3",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states essential cookies are used to provide essential functionality, such as storing settings and recognizing you while using the services, which semantically matches the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 2429,
+        "output_tokens": 62
+      },
+      "latency_seconds": 1.4016096999985166
+    },
+    {
+      "cell_id": "P-VAL-001-026-F02::current::r1",
+      "item_id": "P-VAL-001-026-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "4db418ed3ddba9b6a16ca0b45f9091d5a25cb5e1920eab0e0e9d4c66524552d1",
+      "cache_key": "83f77cbd9803325942317f263a2a9febacf096f2dcd596b1da1692eecd3a2ad4",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the license is conditioned on remaining compliant with the Agreement and associated requirements, which includes technical specifications and requirements."
+      },
+      "provider_usage": {
+        "input_tokens": 2763,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.5866831000312231
+    },
+    {
+      "cell_id": "P-VAL-001-026-F02::current::r2",
+      "item_id": "P-VAL-001-026-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "4db418ed3ddba9b6a16ca0b45f9091d5a25cb5e1920eab0e0e9d4c66524552d1",
+      "cache_key": "6aaae6a922803b83b21ede37b9b2d9b331f2a56d44759f5dfa40cb319bd2e35f",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the license is conditioned on remaining compliant with the Agreement and associated requirements, which includes technical specifications and requirements."
+      },
+      "provider_usage": {
+        "input_tokens": 2763,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.6617483000154607
+    },
+    {
+      "cell_id": "P-VAL-001-026-F02::current::r3",
+      "item_id": "P-VAL-001-026-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "4db418ed3ddba9b6a16ca0b45f9091d5a25cb5e1920eab0e0e9d4c66524552d1",
+      "cache_key": "bfc52d09a30ae44f64fe58be0045883d45105b9734974d57fcd9313cea4f7fde",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the license is conditioned on remaining compliant with the Agreement and associated requirements, which includes technical specifications and requirements."
+      },
+      "provider_usage": {
+        "input_tokens": 2763,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.6406472999951802
+    },
+    {
+      "cell_id": "P-VAL-001-026-F02::stronger::r1",
+      "item_id": "P-VAL-001-026-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "4db418ed3ddba9b6a16ca0b45f9091d5a25cb5e1920eab0e0e9d4c66524552d1",
+      "cache_key": "b34e6f72cff21d5d97a20382d6e22f5317c52e841c6e9989b8f15f4a5c60a1d9",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states you must adhere to all technical specifications and requirements published by GitHub. The baseline answer omits this obligation, focusing only on the license grant and enforcement actions."
+      },
+      "provider_usage": {
+        "input_tokens": 2762,
+        "output_tokens": 66
+      },
+      "latency_seconds": 2.1207851000363007
+    },
+    {
+      "cell_id": "P-VAL-001-026-F02::stronger::r2",
+      "item_id": "P-VAL-001-026-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "4db418ed3ddba9b6a16ca0b45f9091d5a25cb5e1920eab0e0e9d4c66524552d1",
+      "cache_key": "6d03992e8d9fb7ce89db71d204bb860baf6244d62faeecc3135823611241a2fe",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states you must adhere to all technical specifications and requirements published by GitHub, but the baseline answer omits this obligation."
+      },
+      "provider_usage": {
+        "input_tokens": 2762,
+        "output_tokens": 46
+      },
+      "latency_seconds": 1.174820100015495
+    },
+    {
+      "cell_id": "P-VAL-001-026-F02::stronger::r3",
+      "item_id": "P-VAL-001-026-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "4db418ed3ddba9b6a16ca0b45f9091d5a25cb5e1920eab0e0e9d4c66524552d1",
+      "cache_key": "18aadd37d48ea7951830fd7df464510e10d186688c4673f2be7c5a40b19f5094",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states you must adhere to all technical specifications and requirements published by GitHub, but the baseline answer omits this obligation."
+      },
+      "provider_usage": {
+        "input_tokens": 2762,
+        "output_tokens": 46
+      },
+      "latency_seconds": 1.3074857000028715
+    },
+    {
+      "cell_id": "P-VAL-001-037-F01::current::r1",
+      "item_id": "P-VAL-001-037-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "8adf4dcee31034d9cff5da2fe20b51959ab2f255e8da35a70574e37b0cb68a8d",
+      "cache_key": "7dffb4fe92983aa740bf34230780b12f15681dc9b3a6f381ab1ecb2b141e294d",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "Baseline cites S2 for developer responsibility and EULA; S2 states the agreement applies to all Developer Products regardless of free or fee distribution."
+      },
+      "provider_usage": {
+        "input_tokens": 2587,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.733105199993588
+    },
+    {
+      "cell_id": "P-VAL-001-037-F01::current::r2",
+      "item_id": "P-VAL-001-037-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "8adf4dcee31034d9cff5da2fe20b51959ab2f255e8da35a70574e37b0cb68a8d",
+      "cache_key": "159a33ad873cc86f2974138c503704833d1cc75fd72422929152d4f6067cf6ee",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "Baseline cites S2 for developer responsibility and EULA; S2 states the agreement applies to all Developer Products regardless of free or fee distribution, which the answer's cited source covers."
+      },
+      "provider_usage": {
+        "input_tokens": 2587,
+        "output_tokens": 61
+      },
+      "latency_seconds": 0.7136251000338234
+    },
+    {
+      "cell_id": "P-VAL-001-037-F01::current::r3",
+      "item_id": "P-VAL-001-037-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "8adf4dcee31034d9cff5da2fe20b51959ab2f255e8da35a70574e37b0cb68a8d",
+      "cache_key": "ca1d6bafd6b4d128c332694ec8905d8bb073a5f18ec8144128004517e7f4807a",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "Baseline cites S2 for developer responsibility and EULA; S2.1 states the agreement applies to all Developer Products regardless of free or fee distribution, which the answer's S2-based points implicitly cover."
+      },
+      "provider_usage": {
+        "input_tokens": 2587,
+        "output_tokens": 66
+      },
+      "latency_seconds": 0.9627194000058807
+    },
+    {
+      "cell_id": "P-VAL-001-037-F01::stronger::r1",
+      "item_id": "P-VAL-001-037-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "8adf4dcee31034d9cff5da2fe20b51959ab2f255e8da35a70574e37b0cb68a8d",
+      "cache_key": "828b1b7e95b4e0966bbe6ea43b153b0cd21124f00ac59b86ff565af4ecc0d6de",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states the agreement applies to all Developer Products, regardless of whether distributed for free or for a fee. The baseline answer does not mention this applicability to both free and paid products."
+      },
+      "provider_usage": {
+        "input_tokens": 2586,
+        "output_tokens": 69
+      },
+      "latency_seconds": 1.9410412999568507
+    },
+    {
+      "cell_id": "P-VAL-001-037-F01::stronger::r2",
+      "item_id": "P-VAL-001-037-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "8adf4dcee31034d9cff5da2fe20b51959ab2f255e8da35a70574e37b0cb68a8d",
+      "cache_key": "7cf89ad07b097f08be288ae210a646f00e71ff5ad7884a97bcd4080836feb446",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states the Agreement applies to all Developer Products, regardless of whether distributed for free or for a fee. The baseline answer does not mention this applicability to both free and paid products."
+      },
+      "provider_usage": {
+        "input_tokens": 2586,
+        "output_tokens": 69
+      },
+      "latency_seconds": 1.4651155000319704
+    },
+    {
+      "cell_id": "P-VAL-001-037-F01::stronger::r3",
+      "item_id": "P-VAL-001-037-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "8adf4dcee31034d9cff5da2fe20b51959ab2f255e8da35a70574e37b0cb68a8d",
+      "cache_key": "8aa640bb3b7dbae25cdf4d513e4f687d3895dc0a2b96ec60215102760847cd10",
+      "parsed": {
+        "label": "MISSING",
+        "evidence_source_ids": [
+          "S2"
+        ],
+        "answer_support": "S2 states the agreement applies to all Developer Products, regardless of whether distributed for free or for a fee. The baseline answer does not mention this applicability to both free and paid products."
+      },
+      "provider_usage": {
+        "input_tokens": 2586,
+        "output_tokens": 69
+      },
+      "latency_seconds": 1.591426600003615
+    },
+    {
+      "cell_id": "P-VAL-001-042-F05::current::r1",
+      "item_id": "P-VAL-001-042-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "addf10c673b6615a59f825dbda97f976c99a062b4051bd1c750281c5ccec923e",
+      "cache_key": "313678eb6d8fe32e203cde8992b16beda084fc5e73ad0bf3ab2952ff60a5e75c",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the Section 2.2 license survives expiration or termination for any reason, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1151,
+        "output_tokens": 46
+      },
+      "latency_seconds": 0.46694419998675585
+    },
+    {
+      "cell_id": "P-VAL-001-042-F05::current::r2",
+      "item_id": "P-VAL-001-042-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "addf10c673b6615a59f825dbda97f976c99a062b4051bd1c750281c5ccec923e",
+      "cache_key": "1fd6f254910ebbbf1d11c678e485ccbc1e72879200c484bddcf4e2e81fcba7ea",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the Section 2.2 license survives expiration or termination for any reason, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1151,
+        "output_tokens": 46
+      },
+      "latency_seconds": 0.7138858999824151
+    },
+    {
+      "cell_id": "P-VAL-001-042-F05::current::r3",
+      "item_id": "P-VAL-001-042-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "addf10c673b6615a59f825dbda97f976c99a062b4051bd1c750281c5ccec923e",
+      "cache_key": "2a5c036c5a97725837eebbae2d8e76df26fdf8bc2bf64f08515c4db27139699a",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the Section 2.2 license survives expiration or termination for any reason, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1151,
+        "output_tokens": 46
+      },
+      "latency_seconds": 0.4897421000059694
+    },
+    {
+      "cell_id": "P-VAL-001-042-F05::stronger::r1",
+      "item_id": "P-VAL-001-042-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "addf10c673b6615a59f825dbda97f976c99a062b4051bd1c750281c5ccec923e",
+      "cache_key": "2d78b60408bf61b36f166987eb3d1da367b7aab09f8f1a0b2c49eb35963ec8ad",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline states the license in Section 2.2 survives expiration or termination for any reason, matching S1(c)."
+      },
+      "provider_usage": {
+        "input_tokens": 1150,
+        "output_tokens": 56
+      },
+      "latency_seconds": 1.9288258000160567
+    },
+    {
+      "cell_id": "P-VAL-001-042-F05::stronger::r2",
+      "item_id": "P-VAL-001-042-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "addf10c673b6615a59f825dbda97f976c99a062b4051bd1c750281c5ccec923e",
+      "cache_key": "d2e1fa8aabca4fd4aab36a9cdd2648a75806ca3bda890e039c72ab73ee66f3ae",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states that the license in Section 2.2 survives expiration or termination of the agreement for any reason, directly matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1150,
+        "output_tokens": 65
+      },
+      "latency_seconds": 1.2242126000346616
+    },
+    {
+      "cell_id": "P-VAL-001-042-F05::stronger::r3",
+      "item_id": "P-VAL-001-042-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "addf10c673b6615a59f825dbda97f976c99a062b4051bd1c750281c5ccec923e",
+      "cache_key": "39582efc1cec5892eec0c775af6d0583926faed6ff7dc41d5a3ac420aaa19d3e",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline states the license in Section 2.2 survives expiration or termination, matching S1(c)."
+      },
+      "provider_usage": {
+        "input_tokens": 1150,
+        "output_tokens": 53
+      },
+      "latency_seconds": 2.404745100007858
+    },
+    {
+      "cell_id": "P-VAL-001-050-F05::current::r1",
+      "item_id": "P-VAL-001-050-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "c8a4dc033c7d2ed63fb456d5a633edaaff133b1df7eb07a3ed3a1b954c19b2fb",
+      "cache_key": "e991b82c5363dc6ea9b319b0dd7aa530373fc8a8740c7a7563715a734da52cb9",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer states the commitment applies to GPLv2 as a Covered License, matching the proposition's inclusion of GPLv2 and LGPLv2/LGPLv2.1."
+      },
+      "provider_usage": {
+        "input_tokens": 1854,
+        "output_tokens": 63
+      },
+      "latency_seconds": 0.7446610999759287
+    },
+    {
+      "cell_id": "P-VAL-001-050-F05::current::r2",
+      "item_id": "P-VAL-001-050-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "c8a4dc033c7d2ed63fb456d5a633edaaff133b1df7eb07a3ed3a1b954c19b2fb",
+      "cache_key": "e2621e7c61f0124b5c86620da09052441e856e7f90e28911027fec7a0e31acff",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer states the commitment applies to GPLv2 as a Covered License, matching the proposition's inclusion of GPLv2 and LGPLv2/LGPLv2.1."
+      },
+      "provider_usage": {
+        "input_tokens": 1854,
+        "output_tokens": 63
+      },
+      "latency_seconds": 0.791239999991376
+    },
+    {
+      "cell_id": "P-VAL-001-050-F05::current::r3",
+      "item_id": "P-VAL-001-050-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "c8a4dc033c7d2ed63fb456d5a633edaaff133b1df7eb07a3ed3a1b954c19b2fb",
+      "cache_key": "5c7c3d2afb4223d16dff3aa1a3fd20a74322e78157e45a6f67cb5c654a5684f1",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The answer states the commitment applies to GPLv2 as a Covered License, matching the proposition's inclusion of GPLv2 and LGPLv2/LGPLv2.1."
+      },
+      "provider_usage": {
+        "input_tokens": 1854,
+        "output_tokens": 63
+      },
+      "latency_seconds": 0.6679033999680541
+    },
+    {
+      "cell_id": "P-VAL-001-050-F05::stronger::r1",
+      "item_id": "P-VAL-001-050-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "c8a4dc033c7d2ed63fb456d5a633edaaff133b1df7eb07a3ed3a1b954c19b2fb",
+      "cache_key": "49652c81b87156095c463552e7e8e98327bd4947b9e77133b8d7a23a37b1c7f4",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the commitment applies to GPLv2 as a Covered License, and S1 defines Covered License as including GPLv2, LGPLv2.1, or LGPLv2."
+      },
+      "provider_usage": {
+        "input_tokens": 1853,
+        "output_tokens": 78
+      },
+      "latency_seconds": 1.7630243999883533
+    },
+    {
+      "cell_id": "P-VAL-001-050-F05::stronger::r2",
+      "item_id": "P-VAL-001-050-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "c8a4dc033c7d2ed63fb456d5a633edaaff133b1df7eb07a3ed3a1b954c19b2fb",
+      "cache_key": "725e92f659bb3afc53f37ad1c180c9935865e32c917edbfe46abcb978d380778",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states 'The commitment applies to GPLv2 as a Covered License,' which semantically expresses the proposition that GPLv2 is included among the Covered Licenses."
+      },
+      "provider_usage": {
+        "input_tokens": 1853,
+        "output_tokens": 71
+      },
+      "latency_seconds": 1.5025695000076666
+    },
+    {
+      "cell_id": "P-VAL-001-050-F05::stronger::r3",
+      "item_id": "P-VAL-001-050-F05",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "c8a4dc033c7d2ed63fb456d5a633edaaff133b1df7eb07a3ed3a1b954c19b2fb",
+      "cache_key": "ce6b3b01c4b0a208de242193e0e740e70aad0f4ca31b700b968767377fa0ab82",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the commitment applies to GPLv2 as a Covered License, and S1 defines Covered License to include GPLv2, LGPLv2.1, and LGPLv2."
+      },
+      "provider_usage": {
+        "input_tokens": 1853,
+        "output_tokens": 78
+      },
+      "latency_seconds": 1.4157941999728791
+    },
+    {
+      "cell_id": "P-VAL-001-039-F01::current::r1",
+      "item_id": "P-VAL-001-039-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "01ea44bcfe9a9c945f2463018f552894cc3365c6fc7f3042a74a90d3fd29a0c2",
+      "cache_key": "98af0c917cc48c3b4f70d7c8a3d455a58038771dcb813683e92a803025a7c193",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the open-source license is in the 'Open Source Notices' documentation, which also includes copies of all applicable open-source licenses."
+      },
+      "provider_usage": {
+        "input_tokens": 1427,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.8789740000502206
+    },
+    {
+      "cell_id": "P-VAL-001-039-F01::current::r2",
+      "item_id": "P-VAL-001-039-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "01ea44bcfe9a9c945f2463018f552894cc3365c6fc7f3042a74a90d3fd29a0c2",
+      "cache_key": "2ab096ec1a1721d6b77fa2673f7bf9bbba5b3e2ba028ee953fc5ad80c88da640",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the open-source license is in the Open Source Notices documentation, which also includes copies of all applicable open-source licenses."
+      },
+      "provider_usage": {
+        "input_tokens": 1427,
+        "output_tokens": 51
+      },
+      "latency_seconds": 0.912821999983862
+    },
+    {
+      "cell_id": "P-VAL-001-039-F01::current::r3",
+      "item_id": "P-VAL-001-039-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "01ea44bcfe9a9c945f2463018f552894cc3365c6fc7f3042a74a90d3fd29a0c2",
+      "cache_key": "ec32b1458f472cff114ffb892d5dac708505a134a2f6c3a8eabbcec7597cda9e",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states the open-source license is in the 'Open Source Notices' documentation, which also includes copies of all applicable open-source licenses."
+      },
+      "provider_usage": {
+        "input_tokens": 1427,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.6976513999979943
+    },
+    {
+      "cell_id": "P-VAL-001-039-F01::stronger::r1",
+      "item_id": "P-VAL-001-039-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "01ea44bcfe9a9c945f2463018f552894cc3365c6fc7f3042a74a90d3fd29a0c2",
+      "cache_key": "b6241beb79573f64fb443555a58006ffa204a26cfa2b67e6adc10863361eebe4",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the open-source license is included in the 'Open Source Notices' documentation, which also contains copies of all applicable open-source licenses, matching S1."
+      },
+      "provider_usage": {
+        "input_tokens": 1426,
+        "output_tokens": 66
+      },
+      "latency_seconds": 1.5802292000153102
+    },
+    {
+      "cell_id": "P-VAL-001-039-F01::stronger::r2",
+      "item_id": "P-VAL-001-039-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "01ea44bcfe9a9c945f2463018f552894cc3365c6fc7f3042a74a90d3fd29a0c2",
+      "cache_key": "2d5d95f1e1d79ef2c457129e91f0b70ed15b26af5698bbd0115a615de682c548",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the open-source license is included in the 'Open Source Notices' documentation, which also contains copies of all applicable open-source licenses, matching S1."
+      },
+      "provider_usage": {
+        "input_tokens": 1426,
+        "output_tokens": 66
+      },
+      "latency_seconds": 1.3121286000241525
+    },
+    {
+      "cell_id": "P-VAL-001-039-F01::stronger::r3",
+      "item_id": "P-VAL-001-039-F01",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "01ea44bcfe9a9c945f2463018f552894cc3365c6fc7f3042a74a90d3fd29a0c2",
+      "cache_key": "bf93a00360aaac03a600c35c8a8c44e9aac9c2578cb96df0eeac1992ef3c2e93",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer states the open-source license is included in the 'Open Source Notices' documentation, which also contains copies of all applicable open-source licenses, matching S1."
+      },
+      "provider_usage": {
+        "input_tokens": 1426,
+        "output_tokens": 66
+      },
+      "latency_seconds": 1.2300293000298552
+    },
+    {
+      "cell_id": "P-VAL-001-050-F02::current::r1",
+      "item_id": "P-VAL-001-050-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "3f0575a0db6b37bdd614923482b6eef39f38edec3118c460ea3c85c2e7080dfe",
+      "cache_key": "46e6a737cd4994cddb085304e8c348b69a725d126c99e723f3cd4d43e2045d47",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states license is reinstated provisionally unless and until the copyright holder explicitly and finally terminates it, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1854,
+        "output_tokens": 49
+      },
+      "latency_seconds": 0.9633160000084899
+    },
+    {
+      "cell_id": "P-VAL-001-050-F02::current::r2",
+      "item_id": "P-VAL-001-050-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "3f0575a0db6b37bdd614923482b6eef39f38edec3118c460ea3c85c2e7080dfe",
+      "cache_key": "127b09f9d70b538f9765967ac53350dbc1fedc36a96911d32ac2090b2afccd00",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states license is reinstated provisionally unless and until the copyright holder explicitly and finally terminates it, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1854,
+        "output_tokens": 49
+      },
+      "latency_seconds": 0.7723607000079937
+    },
+    {
+      "cell_id": "P-VAL-001-050-F02::current::r3",
+      "item_id": "P-VAL-001-050-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "3f0575a0db6b37bdd614923482b6eef39f38edec3118c460ea3c85c2e7080dfe",
+      "cache_key": "4f9872caec816aad1faad51254f7aab6d4d0019eddf4ea38304289d8f64d88f5",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Baseline states license is reinstated provisionally unless and until the copyright holder explicitly and finally terminates it, matching the proposition."
+      },
+      "provider_usage": {
+        "input_tokens": 1854,
+        "output_tokens": 49
+      },
+      "latency_seconds": 0.6560173000325449
+    },
+    {
+      "cell_id": "P-VAL-001-050-F02::stronger::r1",
+      "item_id": "P-VAL-001-050-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "3f0575a0db6b37bdd614923482b6eef39f38edec3118c460ea3c85c2e7080dfe",
+      "cache_key": "ded161478fa19f5779060c8fb7944ae110ec94967cc320a91f695e074bf4a540",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states that ceasing all violation leads to provisional reinstatement unless and until the copyright holder explicitly and finally terminates the license, directly matching the proposition and S1."
+      },
+      "provider_usage": {
+        "input_tokens": 1853,
+        "output_tokens": 71
+      },
+      "latency_seconds": 1.4844706999720074
+    },
+    {
+      "cell_id": "P-VAL-001-050-F02::stronger::r2",
+      "item_id": "P-VAL-001-050-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "3f0575a0db6b37bdd614923482b6eef39f38edec3118c460ea3c85c2e7080dfe",
+      "cache_key": "00c67c3aad735a2662fe88f617522cacf027caf6b2e12a511d00b9625083af66",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states that ceasing all violation leads to provisional reinstatement unless and until the copyright holder explicitly and finally terminates the license, directly matching the proposition and S1."
+      },
+      "provider_usage": {
+        "input_tokens": 1853,
+        "output_tokens": 71
+      },
+      "latency_seconds": 1.5431396000203677
+    },
+    {
+      "cell_id": "P-VAL-001-050-F02::stronger::r3",
+      "item_id": "P-VAL-001-050-F02",
+      "gold": "ALREADY_PRESENT",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "3f0575a0db6b37bdd614923482b6eef39f38edec3118c460ea3c85c2e7080dfe",
+      "cache_key": "dbe3aa48b22c9cc139dc48f019b6ea041f7254bce05038fca6e21d9c51c6e3d7",
+      "parsed": {
+        "label": "ALREADY_PRESENT",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "The baseline answer explicitly states that ceasing all violation leads to provisional reinstatement unless and until the copyright holder explicitly and finally terminates the license, directly matching the proposition and S1."
+      },
+      "provider_usage": {
+        "input_tokens": 1853,
+        "output_tokens": 71
+      },
+      "latency_seconds": 1.3473663000040688
+    },
+    {
+      "cell_id": "U-039-01::current::r1",
+      "item_id": "U-039-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "6512079a4682089ad66c2703777059b3e6cd067dce16db2e92b4e591e277db88",
+      "cache_key": "8c1883d036e89ff5459e2308aa70142413fcb6cb8baf3a5fa1bdd615537a1cd5",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 states the source-code offer is made and may be exercised by contacting GitHub, but says nothing about a one-year expiration."
+      },
+      "provider_usage": {
+        "input_tokens": 1422,
+        "output_tokens": 48
+      },
+      "latency_seconds": 0.7657405000063591
+    },
+    {
+      "cell_id": "U-039-01::current::r2",
+      "item_id": "U-039-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "6512079a4682089ad66c2703777059b3e6cd067dce16db2e92b4e591e277db88",
+      "cache_key": "bb2ab9c225535041cb8054cdc6d3d34d5dfb862065fb7767187e5aa6342b32fa",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Evidence S1 mentions a source-code offer but sets no expiration; the one-year expiry is not supported."
+      },
+      "provider_usage": {
+        "input_tokens": 1422,
+        "output_tokens": 43
+      },
+      "latency_seconds": 0.67011129995808
+    },
+    {
+      "cell_id": "U-039-01::current::r3",
+      "item_id": "U-039-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "6512079a4682089ad66c2703777059b3e6cd067dce16db2e92b4e591e277db88",
+      "cache_key": "a3dfc7024b1a305e04a4812dc5bc1ca6a94218bd2f1f6a4856feaea451314cb9",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "Evidence S1 mentions a source-code offer but sets no expiration; the one-year limit is not supported."
+      },
+      "provider_usage": {
+        "input_tokens": 1422,
+        "output_tokens": 43
+      },
+      "latency_seconds": 0.980982800014317
+    },
+    {
+      "cell_id": "U-039-01::stronger::r1",
+      "item_id": "U-039-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "6512079a4682089ad66c2703777059b3e6cd067dce16db2e92b4e591e277db88",
+      "cache_key": "47ba62d625cec0dcd317b3afddf8c47432d864d7d2aa2d3a513cb8870c356f82",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any expiration period for the source-code offer; it only states that the offer is made and can be exercised by contacting GitHub."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.2355538999545388
+    },
+    {
+      "cell_id": "U-039-01::stronger::r2",
+      "item_id": "U-039-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "6512079a4682089ad66c2703777059b3e6cd067dce16db2e92b4e591e277db88",
+      "cache_key": "194f315c11d60384131cf2286a60c196467c59bd1fe8413c7ca3ee623c4e0308",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any expiration period for the source-code offer; it only states that the offer is made and can be exercised by contacting GitHub."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.195277700026054
+    },
+    {
+      "cell_id": "U-039-01::stronger::r3",
+      "item_id": "U-039-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "6512079a4682089ad66c2703777059b3e6cd067dce16db2e92b4e591e277db88",
+      "cache_key": "d6e87c5cd017391db2ce035cffc00e18305dbc77a6b404b83e25618e46fdb3ee",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any expiration period for the source-code offer; it only states that the offer is made and can be exercised by contacting GitHub."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.0540468000108376
+    },
+    {
+      "cell_id": "U-039-02::current::r1",
+      "item_id": "U-039-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "3fb33256bcd2cd6305a340a939cc207ae3d5c52046c9daf6cb273126cddcbe81",
+      "cache_key": "61ebb4480977534c1865f8398c3a6d7126cda1b44d2ef14187b297a2d6e7e0ef",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 says GitHub makes an offer to provide source code on request, but does not mention any 30-day delivery deadline."
+      },
+      "provider_usage": {
+        "input_tokens": 1429,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.6472621000139043
+    },
+    {
+      "cell_id": "U-039-02::current::r2",
+      "item_id": "U-039-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "3fb33256bcd2cd6305a340a939cc207ae3d5c52046c9daf6cb273126cddcbe81",
+      "cache_key": "d1ca1910f0c58beab7851b33570322224c62ea355c7afbfc1ee56c7f2736d8f8",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 says GitHub makes an offer to provide source code on request, but does not mention any 30-day delivery deadline."
+      },
+      "provider_usage": {
+        "input_tokens": 1429,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.825196199992206
+    },
+    {
+      "cell_id": "U-039-02::current::r3",
+      "item_id": "U-039-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "3fb33256bcd2cd6305a340a939cc207ae3d5c52046c9daf6cb273126cddcbe81",
+      "cache_key": "d25ea59c2b27d8f4c3079bf424c339a403a02788a162feae6772f1fe3f11c22d",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "S1 says GitHub makes an offer to provide source code on request, but does not mention any 30-day delivery deadline."
+      },
+      "provider_usage": {
+        "input_tokens": 1429,
+        "output_tokens": 47
+      },
+      "latency_seconds": 0.6714071999886073
+    },
+    {
+      "cell_id": "U-039-02::stronger::r1",
+      "item_id": "U-039-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "3fb33256bcd2cd6305a340a939cc207ae3d5c52046c9daf6cb273126cddcbe81",
+      "cache_key": "244d1ea259cd1a6063e345baafb595908c2febdfb3fe998371ee8581a5cff971",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence states GitHub makes an offer to provide source code upon contact, but does not specify a 30-day delivery requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 1428,
+        "output_tokens": 52
+      },
+      "latency_seconds": 1.2204343000194058
+    },
+    {
+      "cell_id": "U-039-02::stronger::r2",
+      "item_id": "U-039-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "3fb33256bcd2cd6305a340a939cc207ae3d5c52046c9daf6cb273126cddcbe81",
+      "cache_key": "561157638f110629ac9b9d3aec5d95867da7f051cd349cd2141497fc12e1915b",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence states GitHub makes an offer to provide source code upon contact but does not specify a 30-day delivery requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 1428,
+        "output_tokens": 51
+      },
+      "latency_seconds": 1.464117499999702
+    },
+    {
+      "cell_id": "U-039-02::stronger::r3",
+      "item_id": "U-039-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "3fb33256bcd2cd6305a340a939cc207ae3d5c52046c9daf6cb273126cddcbe81",
+      "cache_key": "19c25900fbc66474a063f3966daffb7799887a776195837cf54fae5cb997ca98",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence states GitHub makes an offer to provide source code upon contact, but does not specify a 30-day delivery requirement."
+      },
+      "provider_usage": {
+        "input_tokens": 1428,
+        "output_tokens": 52
+      },
+      "latency_seconds": 1.7611047999816947
+    },
+    {
+      "cell_id": "U-039-03::current::r1",
+      "item_id": "U-039-03",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "d8068197bf3857d94f77fc9fdd5d6e670746337ee0313c51aa41cd70a7b85ca5",
+      "cache_key": "cf897ce55d13b378c30da4d5f70a9d7450ef1ad2f1a9c740dbd99a704267e637",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence mentions any written warranty for open-source components; the sources discuss licenses, notices, and agreements only."
+      },
+      "provider_usage": {
+        "input_tokens": 1422,
+        "output_tokens": 42
+      },
+      "latency_seconds": 0.496906400017906
+    },
+    {
+      "cell_id": "U-039-03::current::r2",
+      "item_id": "U-039-03",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "d8068197bf3857d94f77fc9fdd5d6e670746337ee0313c51aa41cd70a7b85ca5",
+      "cache_key": "e85e49f9ee198cfd1d6593176b4a39803ca487885d298a86a04778803b9a30eb",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence mentions a written warranty for open-source components; the sources discuss licenses, notices, and agreements, not warranties."
+      },
+      "provider_usage": {
+        "input_tokens": 1422,
+        "output_tokens": 44
+      },
+      "latency_seconds": 1.4610619999584742
+    },
+    {
+      "cell_id": "U-039-03::current::r3",
+      "item_id": "U-039-03",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "d8068197bf3857d94f77fc9fdd5d6e670746337ee0313c51aa41cd70a7b85ca5",
+      "cache_key": "b82a5055c477de1a19ab50482af3a09f0c2a34633b20198a2be5bdd6bbe0a215",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence mentions any written warranty for open-source components."
+      },
+      "provider_usage": {
+        "input_tokens": 1422,
+        "output_tokens": 31
+      },
+      "latency_seconds": 0.774562300008256
+    },
+    {
+      "cell_id": "U-039-03::stronger::r1",
+      "item_id": "U-039-03",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "d8068197bf3857d94f77fc9fdd5d6e670746337ee0313c51aa41cd70a7b85ca5",
+      "cache_key": "88a4d7dd54e5e4f2ea3794e58f93508d0599db14ff15801cec68b2da62d466a0",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any warranty for open-source components; it only addresses licenses, notices, and terms of agreement."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 55
+      },
+      "latency_seconds": 1.2559584999689832
+    },
+    {
+      "cell_id": "U-039-03::stronger::r2",
+      "item_id": "U-039-03",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "d8068197bf3857d94f77fc9fdd5d6e670746337ee0313c51aa41cd70a7b85ca5",
+      "cache_key": "f375a8d2aa315ec2abb557bf23394b186fa9c0d6733fd290fd49c4fd250948e4",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any warranty for open-source components. It only discusses license documentation, offers for source code, and the relationship between open-source licenses and Application Terms."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 65
+      },
+      "latency_seconds": 1.4518405999988317
+    },
+    {
+      "cell_id": "U-039-03::stronger::r3",
+      "item_id": "U-039-03",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "d8068197bf3857d94f77fc9fdd5d6e670746337ee0313c51aa41cd70a7b85ca5",
+      "cache_key": "75098a95793bb8a8be149e10b9074e29872385efd917381898450268e7aa49b4",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any warranty for open-source components. It only discusses license documentation, terms of agreement, and source code offers."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 58
+      },
+      "latency_seconds": 1.3529575999709778
+    },
+    {
+      "cell_id": "U-039-04::current::r1",
+      "item_id": "U-039-04",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "d998ddd9dec48f5bf5e401d2b7287754af70eeec50e63074ec52da22a5b3fb8e",
+      "cache_key": "03ee13946e4f90a04fcd0b19bc243a50b88d24b2e71f0f6a382131bfc8ee6667",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence states the Software's open-source components are licensed under the MIT license."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 36
+      },
+      "latency_seconds": 0.6586068000178784
+    },
+    {
+      "cell_id": "U-039-04::current::r2",
+      "item_id": "U-039-04",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "d998ddd9dec48f5bf5e401d2b7287754af70eeec50e63074ec52da22a5b3fb8e",
+      "cache_key": "d0bf65c07489aa54e4aae3766e10b88cab2b6721b40329ee7b96b23fd4c0a254",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence states the Software's open-source components are licensed under the MIT license."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 36
+      },
+      "latency_seconds": 0.8932745000347495
+    },
+    {
+      "cell_id": "U-039-04::current::r3",
+      "item_id": "U-039-04",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "d998ddd9dec48f5bf5e401d2b7287754af70eeec50e63074ec52da22a5b3fb8e",
+      "cache_key": "bc68469743b0c9ccdd0326d659101f2075803bdc4cf69ddfe232164ddabac83f",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence states the Software's open-source components are licensed under the MIT license."
+      },
+      "provider_usage": {
+        "input_tokens": 1421,
+        "output_tokens": 36
+      },
+      "latency_seconds": 0.8946071999962442
+    },
+    {
+      "cell_id": "U-039-04::stronger::r1",
+      "item_id": "U-039-04",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "d998ddd9dec48f5bf5e401d2b7287754af70eeec50e63074ec52da22a5b3fb8e",
+      "cache_key": "623c114d1c54dca840fc6c3b43eb13ce4c9d5a67f9d4fad677b7f136d182e5bf",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not specify the MIT license for the Software's open-source components; it only refers to open-source licenses generally."
+      },
+      "provider_usage": {
+        "input_tokens": 1420,
+        "output_tokens": 56
+      },
+      "latency_seconds": 1.2547261000145227
+    },
+    {
+      "cell_id": "U-039-04::stronger::r2",
+      "item_id": "U-039-04",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "d998ddd9dec48f5bf5e401d2b7287754af70eeec50e63074ec52da22a5b3fb8e",
+      "cache_key": "91554e26d2fc556b8fd92646e9ef041fb081dfb8ac9d98808f9e1ede5de8ebdc",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not specify the MIT license for the Software's open-source components; it only refers to open-source licenses generally."
+      },
+      "provider_usage": {
+        "input_tokens": 1420,
+        "output_tokens": 56
+      },
+      "latency_seconds": 1.0434668000089005
+    },
+    {
+      "cell_id": "U-039-04::stronger::r3",
+      "item_id": "U-039-04",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "d998ddd9dec48f5bf5e401d2b7287754af70eeec50e63074ec52da22a5b3fb8e",
+      "cache_key": "efed1f9e749167967e55d7ca816aafec69faf4b48e41eecae5da625284485152",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not specify the MIT license for the Software's open-source components; it only refers generally to open-source licenses and notices."
+      },
+      "provider_usage": {
+        "input_tokens": 1420,
+        "output_tokens": 54
+      },
+      "latency_seconds": 1.7258500999887474
+    },
+    {
+      "cell_id": "U-050-01::current::r1",
+      "item_id": "U-050-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "cae1895657835d82197ccb68752207ccb64dbcdf4de763a902593323f57d2f1d",
+      "cache_key": "dc6d90c75189c6a88190bf8b5cbdf580d84ef6b25c41dc2b808d21a37f4478c2",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "No evidence mentions reimbursement of legal costs; S1 covers cure and reinstatement only."
+      },
+      "provider_usage": {
+        "input_tokens": 1851,
+        "output_tokens": 39
+      },
+      "latency_seconds": 0.4893251999747008
+    },
+    {
+      "cell_id": "U-050-01::current::r2",
+      "item_id": "U-050-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "cae1895657835d82197ccb68752207ccb64dbcdf4de763a902593323f57d2f1d",
+      "cache_key": "8ea637e158d9dd97f6b3156eb5cde76b63fc68d13e00cbd8341d1e07e256a539",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "No evidence mentions reimbursement of legal costs; S1 covers cure and reinstatement only."
+      },
+      "provider_usage": {
+        "input_tokens": 1851,
+        "output_tokens": 39
+      },
+      "latency_seconds": 1.1045637999777682
+    },
+    {
+      "cell_id": "U-050-01::current::r3",
+      "item_id": "U-050-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "cae1895657835d82197ccb68752207ccb64dbcdf4de763a902593323f57d2f1d",
+      "cache_key": "e0c8529fcda6181a35c6961a2c033b693d6db18a73281cfbcb0354e03d7ae815",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "No evidence mentions reimbursement of legal costs; S1 only addresses cure and reinstatement of licenses."
+      },
+      "provider_usage": {
+        "input_tokens": 1851,
+        "output_tokens": 41
+      },
+      "latency_seconds": 0.8732487000524998
+    },
+    {
+      "cell_id": "U-050-01::stronger::r1",
+      "item_id": "U-050-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "cae1895657835d82197ccb68752207ccb64dbcdf4de763a902593323f57d2f1d",
+      "cache_key": "1ad77d5f5023c2c0070ce11bb149fb81f03f85d0a5ec080495413dd51c3557db",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence (S1) describes license reinstatement terms but does not mention any obligation for GitHub to reimburse legal costs."
+      },
+      "provider_usage": {
+        "input_tokens": 1850,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.337943800026551
+    },
+    {
+      "cell_id": "U-050-01::stronger::r2",
+      "item_id": "U-050-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "cae1895657835d82197ccb68752207ccb64dbcdf4de763a902593323f57d2f1d",
+      "cache_key": "51e4175b808e2517f5aa7b5c11a67b57e463b6d9103ec356e55e0576c702a8a1",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence (S1) describes license reinstatement terms but does not mention any obligation for GitHub to reimburse legal costs."
+      },
+      "provider_usage": {
+        "input_tokens": 1850,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.401874899980612
+    },
+    {
+      "cell_id": "U-050-01::stronger::r3",
+      "item_id": "U-050-01",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "cae1895657835d82197ccb68752207ccb64dbcdf4de763a902593323f57d2f1d",
+      "cache_key": "b8c4c5408a6248a73beefe85dc39f950ffad08fd1475ab4d7fa661bcaf341e9d",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence (S1) describes license reinstatement terms but does not mention any obligation for GitHub to reimburse legal costs."
+      },
+      "provider_usage": {
+        "input_tokens": 1850,
+        "output_tokens": 57
+      },
+      "latency_seconds": 1.8760230000480078
+    },
+    {
+      "cell_id": "U-050-02::current::r1",
+      "item_id": "U-050-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 1,
+      "prompt_config_hash": "17c97793f7a26f9c36155eed48f6938b921643cfcbe8fe596f80e02a505c3e86",
+      "cache_key": "8bdeda289d30bc0f7b048d96a460260e2307980a5734a0d662a85d83b67669b3",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence mentions any annual compliance report requirement for the Commitment."
+      },
+      "provider_usage": {
+        "input_tokens": 1844,
+        "output_tokens": 32
+      },
+      "latency_seconds": 0.8074947000131942
+    },
+    {
+      "cell_id": "U-050-02::current::r2",
+      "item_id": "U-050-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 2,
+      "prompt_config_hash": "17c97793f7a26f9c36155eed48f6938b921643cfcbe8fe596f80e02a505c3e86",
+      "cache_key": "a9a7c2e4846e842d85467503d936435cdda57628bd4f433fda32eb248bc22dae",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [
+          "S1"
+        ],
+        "answer_support": "No evidence mentions an annual compliance report; S1 only describes cure and reinstatement terms."
+      },
+      "provider_usage": {
+        "input_tokens": 1844,
+        "output_tokens": 40
+      },
+      "latency_seconds": 0.7723197999875993
+    },
+    {
+      "cell_id": "U-050-02::current::r3",
+      "item_id": "U-050-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "current",
+      "model": "deepseek-v4-flash",
+      "replicate": 3,
+      "prompt_config_hash": "17c97793f7a26f9c36155eed48f6938b921643cfcbe8fe596f80e02a505c3e86",
+      "cache_key": "47e9d77d8e71a9343e19223ee90472d35896650f0ee0e6f7259d234cd24cde7e",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "No frozen evidence mentions any annual compliance report requirement for the Commitment."
+      },
+      "provider_usage": {
+        "input_tokens": 1844,
+        "output_tokens": 32
+      },
+      "latency_seconds": 0.7108618000056595
+    },
+    {
+      "cell_id": "U-050-02::stronger::r1",
+      "item_id": "U-050-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 1,
+      "prompt_config_hash": "17c97793f7a26f9c36155eed48f6938b921643cfcbe8fe596f80e02a505c3e86",
+      "cache_key": "8bfc22c82734430564d76799302a1dfb8806485cd94d62e1d226cf44cbb071eb",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any requirement for GitHub to publish an annual compliance report for the GPL Cooperation Commitment."
+      },
+      "provider_usage": {
+        "input_tokens": 1843,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.8953781999880448
+    },
+    {
+      "cell_id": "U-050-02::stronger::r2",
+      "item_id": "U-050-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 2,
+      "prompt_config_hash": "17c97793f7a26f9c36155eed48f6938b921643cfcbe8fe596f80e02a505c3e86",
+      "cache_key": "79fcfc90d31f143827fa3ddbf4dfa2a2667c486490644d230c7d30592ba68cbb",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any requirement for GitHub to publish an annual compliance report for the GPL Cooperation Commitment."
+      },
+      "provider_usage": {
+        "input_tokens": 1843,
+        "output_tokens": 53
+      },
+      "latency_seconds": 0.8583007999695837
+    },
+    {
+      "cell_id": "U-050-02::stronger::r3",
+      "item_id": "U-050-02",
+      "gold": "UNSUPPORTED",
+      "model_key": "stronger",
+      "model": "deepseek-v4-pro",
+      "replicate": 3,
+      "prompt_config_hash": "17c97793f7a26f9c36155eed48f6938b921643cfcbe8fe596f80e02a505c3e86",
+      "cache_key": "3d06c12eba18b9ff52ccf1ca2c574613b4ffd729b0b1442372b918049fe00983",
+      "parsed": {
+        "label": "UNSUPPORTED",
+        "evidence_source_ids": [],
+        "answer_support": "The frozen evidence does not mention any requirement for GitHub to publish an annual compliance report for the GPL Cooperation Commitment."
+      },
+      "provider_usage": {
+        "input_tokens": 1843,
+        "output_tokens": 53
+      },
+      "latency_seconds": 1.3552774999989197
+    }
+  ],
+  "aggregates": {
+    "current": {
+      "items": [
+        {
+          "item_id": "P-VAL-001-004-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-007-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-008-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-008-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-009-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-009-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "MISSING",
+          "consistency": "2/3"
+        },
+        {
+          "item_id": "P-VAL-001-009-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-011-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-011-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-017-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-022-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-022-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-024-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-026-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-037-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-039-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-042-F05",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-050-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-050-F05",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "M-VAL-001-039-F02",
+          "gold": "MISSING",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "M-VAL-001-050-F01",
+          "gold": "MISSING",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-01",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-02",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-03",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-04",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-050-01",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-050-02",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        }
+      ],
+      "confusion": {
+        "matrix": {
+          "MISSING": {
+            "MISSING": 1,
+            "ALREADY_PRESENT": 1,
+            "UNSUPPORTED": 0
+          },
+          "ALREADY_PRESENT": {
+            "MISSING": 1,
+            "ALREADY_PRESENT": 18,
+            "UNSUPPORTED": 0
+          },
+          "UNSUPPORTED": {
+            "MISSING": 0,
+            "ALREADY_PRESENT": 0,
+            "UNSUPPORTED": 6
+          }
+        },
+        "excluded_inconsistent": 0
+      },
+      "confusion_strict_3_of_3": {
+        "matrix": {
+          "MISSING": {
+            "MISSING": 1,
+            "ALREADY_PRESENT": 1,
+            "UNSUPPORTED": 0
+          },
+          "ALREADY_PRESENT": {
+            "MISSING": 0,
+            "ALREADY_PRESENT": 18,
+            "UNSUPPORTED": 0
+          },
+          "UNSUPPORTED": {
+            "MISSING": 0,
+            "ALREADY_PRESENT": 0,
+            "UNSUPPORTED": 6
+          }
+        },
+        "excluded_inconsistent": 1
+      },
+      "per_class_recall": {
+        "MISSING": {
+          "numerator": 1,
+          "denominator": 2,
+          "recall": 0.5
+        },
+        "ALREADY_PRESENT": {
+          "numerator": 18,
+          "denominator": 19,
+          "recall": 0.9473684210526315
+        },
+        "UNSUPPORTED": {
+          "numerator": 6,
+          "denominator": 6,
+          "recall": 1.0
+        }
+      },
+      "missing_errors": {
+        "to_already_present": 1,
+        "to_unsupported": 0,
+        "unresolved_inconsistent": 0
+      },
+      "consistency": {
+        "3/3": 26,
+        "2/3": 1,
+        "1/3": 0
+      },
+      "overall_accuracy_modal": 0.9259259259259259,
+      "auxiliary": {
+        "invalid_evidence_source_ids_cells": 0,
+        "unsupported_cells_citing_sources": 10
+      }
+    },
+    "stronger": {
+      "items": [
+        {
+          "item_id": "P-VAL-001-004-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-007-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-008-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-008-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-009-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-009-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-009-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-011-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "MISSING"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "2/3"
+        },
+        {
+          "item_id": "P-VAL-001-011-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-017-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-022-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-022-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-024-F03",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-026-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-037-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-039-F01",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-042-F05",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-050-F02",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "P-VAL-001-050-F05",
+          "gold": "ALREADY_PRESENT",
+          "labels": [
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "M-VAL-001-039-F02",
+          "gold": "MISSING",
+          "labels": [
+            "MISSING",
+            "MISSING",
+            "MISSING"
+          ],
+          "modal": "MISSING",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "M-VAL-001-050-F01",
+          "gold": "MISSING",
+          "labels": [
+            "UNSUPPORTED",
+            "ALREADY_PRESENT",
+            "ALREADY_PRESENT"
+          ],
+          "modal": "ALREADY_PRESENT",
+          "consistency": "2/3"
+        },
+        {
+          "item_id": "U-039-01",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-02",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-03",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-039-04",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-050-01",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        },
+        {
+          "item_id": "U-050-02",
+          "gold": "UNSUPPORTED",
+          "labels": [
+            "UNSUPPORTED",
+            "UNSUPPORTED",
+            "UNSUPPORTED"
+          ],
+          "modal": "UNSUPPORTED",
+          "consistency": "3/3"
+        }
+      ],
+      "confusion": {
+        "matrix": {
+          "MISSING": {
+            "MISSING": 1,
+            "ALREADY_PRESENT": 1,
+            "UNSUPPORTED": 0
+          },
+          "ALREADY_PRESENT": {
+            "MISSING": 5,
+            "ALREADY_PRESENT": 14,
+            "UNSUPPORTED": 0
+          },
+          "UNSUPPORTED": {
+            "MISSING": 0,
+            "ALREADY_PRESENT": 0,
+            "UNSUPPORTED": 6
+          }
+        },
+        "excluded_inconsistent": 0
+      },
+      "confusion_strict_3_of_3": {
+        "matrix": {
+          "MISSING": {
+            "MISSING": 1,
+            "ALREADY_PRESENT": 0,
+            "UNSUPPORTED": 0
+          },
+          "ALREADY_PRESENT": {
+            "MISSING": 5,
+            "ALREADY_PRESENT": 13,
+            "UNSUPPORTED": 0
+          },
+          "UNSUPPORTED": {
+            "MISSING": 0,
+            "ALREADY_PRESENT": 0,
+            "UNSUPPORTED": 6
+          }
+        },
+        "excluded_inconsistent": 2
+      },
+      "per_class_recall": {
+        "MISSING": {
+          "numerator": 1,
+          "denominator": 2,
+          "recall": 0.5
+        },
+        "ALREADY_PRESENT": {
+          "numerator": 14,
+          "denominator": 19,
+          "recall": 0.7368421052631579
+        },
+        "UNSUPPORTED": {
+          "numerator": 6,
+          "denominator": 6,
+          "recall": 1.0
+        }
+      },
+      "missing_errors": {
+        "to_already_present": 1,
+        "to_unsupported": 0,
+        "unresolved_inconsistent": 0
+      },
+      "consistency": {
+        "3/3": 25,
+        "2/3": 2,
+        "1/3": 0
+      },
+      "overall_accuracy_modal": 0.7777777777777778,
+      "auxiliary": {
+        "invalid_evidence_source_ids_cells": 0,
+        "unsupported_cells_citing_sources": 0
+      }
+    },
+    "sensitivity_excluding_050_F05": {
+      "current": {
+        "per_class_recall": {
+          "MISSING": {
+            "numerator": 1,
+            "denominator": 2,
+            "recall": 0.5
+          },
+          "ALREADY_PRESENT": {
+            "numerator": 17,
+            "denominator": 18,
+            "recall": 0.9444444444444444
+          },
+          "UNSUPPORTED": {
+            "numerator": 6,
+            "denominator": 6,
+            "recall": 1.0
+          }
+        }
+      },
+      "stronger": {
+        "per_class_recall": {
+          "MISSING": {
+            "numerator": 1,
+            "denominator": 2,
+            "recall": 0.5
+          },
+          "ALREADY_PRESENT": {
+            "numerator": 13,
+            "denominator": 18,
+            "recall": 0.7222222222222222
+          },
+          "UNSUPPORTED": {
+            "numerator": 6,
+            "denominator": 6,
+            "recall": 1.0
+          }
+        }
+      }
+    },
+    "preregistered_outcome": {
+      "outcome": "mixed/unresolved",
+      "current_missing_modals": {
+        "M-VAL-001-039-F02": "MISSING",
+        "M-VAL-001-050-F01": "ALREADY_PRESENT"
+      },
+      "stronger_missing_modals": {
+        "M-VAL-001-039-F02": "MISSING",
+        "M-VAL-001-050-F01": "ALREADY_PRESENT"
+      },
+      "039_current": "MISSING",
+      "039_stronger": "MISSING",
+      "050_current": "ALREADY_PRESENT",
+      "050_stronger": "ALREADY_PRESENT"
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "name": "Validation V1 rubric-disagreement audit",
+  "status": "post-hoc diagnostic",
+  "role": "sensitivity analysis layer; does not overwrite the frozen rubric",
+  "rubric_sha256": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+  "disagreement_events": 11,
+  "unique_facts": [
+    "VAL-001-001-F01",
+    "VAL-001-001-F04",
+    "VAL-001-002-F02",
+    "VAL-001-030-F03",
+    "VAL-001-046-F01",
+    "VAL-001-046-F02"
+  ],
+  "independent_facts": 6,
+  "category_counts": {
+    "judge_false_positive": 6,
+    "existing_direct_mapping_sufficient": 5,
+    "missing_direct_mapping_candidate": 0,
+    "partial_support": 0,
+    "unresolved": 0
+  },
+  "missing_direct_mapping_candidates": {},
+  "facts_removed_from_available": [],
+  "entries": [
+    {
+      "case_id": "VAL-001-001",
+      "strategy": "always_v1",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-001-F01",
+      "category": "judge_false_positive",
+      "reason": "no lexical trace of the fact in the answer",
+      "direct_chunk_ids": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-001",
+      "strategy": "always_v1",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-001-F04",
+      "category": "existing_direct_mapping_sufficient",
+      "reason": "frozen mapping valid; disagreement is selection/generation",
+      "direct_chunk_ids": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-001",
+      "strategy": "frozen_adaptive",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-001-F01",
+      "category": "judge_false_positive",
+      "reason": "no lexical trace of the fact in the answer",
+      "direct_chunk_ids": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-001",
+      "strategy": "frozen_adaptive",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-001-F04",
+      "category": "existing_direct_mapping_sufficient",
+      "reason": "frozen mapping valid; disagreement is selection/generation",
+      "direct_chunk_ids": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-002",
+      "strategy": "frozen_adaptive",
+      "route": "fixed_top5",
+      "fact_id": "VAL-001-002-F02",
+      "category": "existing_direct_mapping_sufficient",
+      "reason": "frozen mapping valid; disagreement is selection/generation",
+      "direct_chunk_ids": [
+        "chunk_b3a75390d468384fcf4e9ecf"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-030",
+      "strategy": "always_v1",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-030-F03",
+      "category": "existing_direct_mapping_sufficient",
+      "reason": "frozen mapping valid; disagreement is selection/generation",
+      "direct_chunk_ids": [
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-030",
+      "strategy": "frozen_adaptive",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-030-F03",
+      "category": "existing_direct_mapping_sufficient",
+      "reason": "frozen mapping valid; disagreement is selection/generation",
+      "direct_chunk_ids": [
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "strategy": "always_v1",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-046-F01",
+      "category": "judge_false_positive",
+      "reason": "no lexical trace of the fact in the answer",
+      "direct_chunk_ids": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "strategy": "always_v1",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-046-F02",
+      "category": "judge_false_positive",
+      "reason": "no lexical trace of the fact in the answer",
+      "direct_chunk_ids": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "strategy": "frozen_adaptive",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-046-F01",
+      "category": "judge_false_positive",
+      "reason": "no lexical trace of the fact in the answer",
+      "direct_chunk_ids": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "strategy": "frozen_adaptive",
+      "route": "adaptive_prefix_v1",
+      "fact_id": "VAL-001-046-F02",
+      "category": "judge_false_positive",
+      "reason": "no lexical trace of the fact in the answer",
+      "direct_chunk_ids": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "mapped_chunk_selected": [],
+      "unmapped_excerpt_chunks": []
+    }
+  ],
+  "method": "Deterministic frozen-mapping containment audit; no LLM re-judge."
+}

@@ -1,0 +1,2522 @@
+{
+  "schema_version": 1,
+  "version": "measurement-validity-audit-v2",
+  "status": "complete",
+  "scope_note": "V1 confirmation ablation. Single intervention: adjudicator packet now carries the full frozen BGE Top5 evidence and AMBIGUOUS is a real outcome. Selection/baseline answers/model/labels reused from V1; V1 artifacts untouched. Same-family adjudicator (deepseek-v4-pro).",
+  "v1_reference_sha256": "d8d90af8b2e17be167ed4b73c3f649ffec6bb4a3398114ae92f80a458dfcd036",
+  "selection_reused_from_v1": true,
+  "selection": {
+    "seed": 20260926,
+    "adjudicator_model": "deepseek-v4-pro",
+    "nominal_problematic_facts": [
+      {
+        "case_id": "VAL-001-008",
+        "fact_id": "VAL-001-008-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-009",
+        "fact_id": "VAL-001-009-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-009",
+        "fact_id": "VAL-001-009-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-011",
+        "fact_id": "VAL-001-011-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-022",
+        "fact_id": "VAL-001-022-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-026",
+        "fact_id": "VAL-001-026-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-037",
+        "fact_id": "VAL-001-037-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-039",
+        "fact_id": "VAL-001-039-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-050",
+        "fact_id": "VAL-001-050-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-050",
+        "fact_id": "VAL-001-050-F05",
+        "nominal_type": "incorrect_synthesis"
+      }
+    ],
+    "nominal_counts": {
+      "omission": 9,
+      "incorrect_synthesis": 1
+    },
+    "stratum_a_case_ids": [
+      "VAL-001-008",
+      "VAL-001-009",
+      "VAL-001-011",
+      "VAL-001-022",
+      "VAL-001-026",
+      "VAL-001-030",
+      "VAL-001-032",
+      "VAL-001-037",
+      "VAL-001-039",
+      "VAL-001-050"
+    ],
+    "stratum_a_facts": [
+      "VAL-001-008-F01",
+      "VAL-001-008-F03",
+      "VAL-001-009-F03",
+      "VAL-001-009-F04",
+      "VAL-001-011-F02",
+      "VAL-001-011-F03",
+      "VAL-001-022-F01",
+      "VAL-001-022-F03",
+      "VAL-001-026-F01",
+      "VAL-001-026-F03",
+      "VAL-001-030-F01",
+      "VAL-001-030-F02",
+      "VAL-001-032-F01",
+      "VAL-001-032-F02",
+      "VAL-001-037-F02",
+      "VAL-001-037-F03",
+      "VAL-001-039-F01",
+      "VAL-001-039-F03",
+      "VAL-001-050-F02",
+      "VAL-001-050-F03"
+    ],
+    "stratum_b_facts": [
+      "VAL-001-003-F02",
+      "VAL-001-004-F02",
+      "VAL-001-005-F01",
+      "VAL-001-007-F03",
+      "VAL-001-012-F03",
+      "VAL-001-013-F03",
+      "VAL-001-015-F02",
+      "VAL-001-017-F03",
+      "VAL-001-019-F01",
+      "VAL-001-020-F04",
+      "VAL-001-021-F03",
+      "VAL-001-024-F03",
+      "VAL-001-028-F01",
+      "VAL-001-035-F01",
+      "VAL-001-036-F02",
+      "VAL-001-042-F05",
+      "VAL-001-044-F04",
+      "VAL-001-045-F06",
+      "VAL-001-047-F04",
+      "VAL-001-049-F06"
+    ],
+    "covered_sample_size": 40,
+    "human_review_items": [
+      {
+        "fact_id": "VAL-001-008-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-009-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-009-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-011-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-022-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-026-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-037-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-039-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-050-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-050-F05",
+        "nominal_type": "incorrect_synthesis"
+      },
+      {
+        "fact_id": "VAL-001-009-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-008-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-008-F01",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-022-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-011-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-004-F02",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-007-F03",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-024-F03",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-042-F05",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-017-F03",
+        "stratum": "B"
+      }
+    ]
+  },
+  "anchors": {
+    "VAL-001-008-F02": {
+      "case_id": "VAL-001-008",
+      "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_266d98caef0a483344635953",
+        "chunk_7858ac759f06d98823da5dbf",
+        "chunk_9eff71948173867f562cf65f",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-009-F01": {
+      "case_id": "VAL-001-009",
+      "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_07d96053cdafec174753bfbb",
+        "chunk_1e7e1cfaaa17625d3512104e",
+        "chunk_cbbf5766a5fe4cff59f17ba0",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-009-F02": {
+      "case_id": "VAL-001-009",
+      "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_07d96053cdafec174753bfbb",
+        "chunk_1e7e1cfaaa17625d3512104e",
+        "chunk_cbbf5766a5fe4cff59f17ba0",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-011-F01": {
+      "case_id": "VAL-001-011",
+      "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_ae41e789bbbed39cb12b5443",
+        "chunk_aab4fdd9b6247e11c4754104",
+        "chunk_e921fe7a8e1eeb16ec85d0b4",
+        "chunk_1b7a4f11eb7eec7619ddab24",
+        "chunk_f25af672289856012d211dad"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-022-F02": {
+      "case_id": "VAL-001-022",
+      "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_f7b58f1a20a04f20e654f546",
+        "chunk_a523e9aa5d9d9ddd9c764fba",
+        "chunk_f358f8d5e53e3590e8d0262e",
+        "chunk_ec175777b8f96d3c7543a7f3",
+        "chunk_6f3ddb4e59ef15510cdf8bfa"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-026-F02": {
+      "case_id": "VAL-001-026",
+      "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_629f116a14edc8c511f8743f",
+        "chunk_ff54b5e32ef69dc034a00ce1",
+        "chunk_24c84997323d275f6987864a",
+        "chunk_bc97792e281d312abdad8050"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-037-F01": {
+      "case_id": "VAL-001-037",
+      "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_eaec6d0a272a609a51331008",
+        "chunk_43cef0f3d5cec7c0f0dde036",
+        "chunk_d5a5be343ee65f8df14618e6",
+        "chunk_cefad4cdbdf0d2a79e427c9b",
+        "chunk_ab100a3436d2ebc1ca3676f9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-039-F02": {
+      "case_id": "VAL-001-039",
+      "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_8c88d9a6aab4ed4705a2c814",
+        "chunk_77d4b3d632e159ae63727bfa",
+        "chunk_857a3166741a114aca6f6bf0",
+        "chunk_b946a182821a13de6a72b378",
+        "chunk_1e5dda7606ebcd203194b13b"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-050-F01": {
+      "case_id": "VAL-001-050",
+      "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_aaba9b84619227b3f737900e",
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_6dd3c18e71547c266c8433d1",
+        "chunk_d4209de6474f5282d1013b77",
+        "chunk_6b52e8e296b1ffebdd560cf7"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-050-F05": {
+      "case_id": "VAL-001-050",
+      "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_aaba9b84619227b3f737900e",
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_6dd3c18e71547c266c8433d1",
+        "chunk_d4209de6474f5282d1013b77",
+        "chunk_6b52e8e296b1ffebdd560cf7"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-008-F01": {
+      "case_id": "VAL-001-008",
+      "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_266d98caef0a483344635953",
+        "chunk_7858ac759f06d98823da5dbf",
+        "chunk_9eff71948173867f562cf65f",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-008-F03": {
+      "case_id": "VAL-001-008",
+      "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_266d98caef0a483344635953",
+        "chunk_7858ac759f06d98823da5dbf",
+        "chunk_9eff71948173867f562cf65f",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-009-F03": {
+      "case_id": "VAL-001-009",
+      "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_07d96053cdafec174753bfbb",
+        "chunk_1e7e1cfaaa17625d3512104e",
+        "chunk_cbbf5766a5fe4cff59f17ba0",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-009-F04": {
+      "case_id": "VAL-001-009",
+      "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_07d96053cdafec174753bfbb",
+        "chunk_1e7e1cfaaa17625d3512104e",
+        "chunk_cbbf5766a5fe4cff59f17ba0",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-011-F02": {
+      "case_id": "VAL-001-011",
+      "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_ae41e789bbbed39cb12b5443",
+        "chunk_aab4fdd9b6247e11c4754104",
+        "chunk_e921fe7a8e1eeb16ec85d0b4",
+        "chunk_1b7a4f11eb7eec7619ddab24",
+        "chunk_f25af672289856012d211dad"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-011-F03": {
+      "case_id": "VAL-001-011",
+      "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_ae41e789bbbed39cb12b5443",
+        "chunk_aab4fdd9b6247e11c4754104",
+        "chunk_e921fe7a8e1eeb16ec85d0b4",
+        "chunk_1b7a4f11eb7eec7619ddab24",
+        "chunk_f25af672289856012d211dad"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-022-F01": {
+      "case_id": "VAL-001-022",
+      "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_f7b58f1a20a04f20e654f546",
+        "chunk_a523e9aa5d9d9ddd9c764fba",
+        "chunk_f358f8d5e53e3590e8d0262e",
+        "chunk_ec175777b8f96d3c7543a7f3",
+        "chunk_6f3ddb4e59ef15510cdf8bfa"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-022-F03": {
+      "case_id": "VAL-001-022",
+      "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_f7b58f1a20a04f20e654f546",
+        "chunk_a523e9aa5d9d9ddd9c764fba",
+        "chunk_f358f8d5e53e3590e8d0262e",
+        "chunk_ec175777b8f96d3c7543a7f3",
+        "chunk_6f3ddb4e59ef15510cdf8bfa"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-026-F01": {
+      "case_id": "VAL-001-026",
+      "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_629f116a14edc8c511f8743f",
+        "chunk_ff54b5e32ef69dc034a00ce1",
+        "chunk_24c84997323d275f6987864a",
+        "chunk_bc97792e281d312abdad8050"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-026-F03": {
+      "case_id": "VAL-001-026",
+      "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_629f116a14edc8c511f8743f",
+        "chunk_ff54b5e32ef69dc034a00ce1",
+        "chunk_24c84997323d275f6987864a",
+        "chunk_bc97792e281d312abdad8050"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-030-F01": {
+      "case_id": "VAL-001-030",
+      "anchor_chunk_id": "chunk_34136e4d23182639a9255feb",
+      "anchor_source_id": "S5",
+      "evidence_chunk_ids": [
+        "chunk_ac3f4d73a79619dc52dca70a",
+        "chunk_a961fb1ca2e1ef387562c2c8",
+        "chunk_672be43c925d3ed6d1adb2c2",
+        "chunk_2c8cd839a0b55f07640751b9",
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-030-F02": {
+      "case_id": "VAL-001-030",
+      "anchor_chunk_id": "chunk_34136e4d23182639a9255feb",
+      "anchor_source_id": "S5",
+      "evidence_chunk_ids": [
+        "chunk_ac3f4d73a79619dc52dca70a",
+        "chunk_a961fb1ca2e1ef387562c2c8",
+        "chunk_672be43c925d3ed6d1adb2c2",
+        "chunk_2c8cd839a0b55f07640751b9",
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-032-F01": {
+      "case_id": "VAL-001-032",
+      "anchor_chunk_id": "chunk_21c14e57ff95da6ba1659aaf",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_21c14e57ff95da6ba1659aaf",
+        "chunk_a19c68a1db8f91b664b18561",
+        "chunk_9f80d858e3246cbc81d58e68",
+        "chunk_86d8407d66eb0e68c243ba2c",
+        "chunk_4df2f10653db3a02c0dd96da"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-032-F02": {
+      "case_id": "VAL-001-032",
+      "anchor_chunk_id": "chunk_21c14e57ff95da6ba1659aaf",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_21c14e57ff95da6ba1659aaf",
+        "chunk_a19c68a1db8f91b664b18561",
+        "chunk_9f80d858e3246cbc81d58e68",
+        "chunk_86d8407d66eb0e68c243ba2c",
+        "chunk_4df2f10653db3a02c0dd96da"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-037-F02": {
+      "case_id": "VAL-001-037",
+      "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_eaec6d0a272a609a51331008",
+        "chunk_43cef0f3d5cec7c0f0dde036",
+        "chunk_d5a5be343ee65f8df14618e6",
+        "chunk_cefad4cdbdf0d2a79e427c9b",
+        "chunk_ab100a3436d2ebc1ca3676f9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-037-F03": {
+      "case_id": "VAL-001-037",
+      "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_eaec6d0a272a609a51331008",
+        "chunk_43cef0f3d5cec7c0f0dde036",
+        "chunk_d5a5be343ee65f8df14618e6",
+        "chunk_cefad4cdbdf0d2a79e427c9b",
+        "chunk_ab100a3436d2ebc1ca3676f9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-039-F01": {
+      "case_id": "VAL-001-039",
+      "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_8c88d9a6aab4ed4705a2c814",
+        "chunk_77d4b3d632e159ae63727bfa",
+        "chunk_857a3166741a114aca6f6bf0",
+        "chunk_b946a182821a13de6a72b378",
+        "chunk_1e5dda7606ebcd203194b13b"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-039-F03": {
+      "case_id": "VAL-001-039",
+      "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_8c88d9a6aab4ed4705a2c814",
+        "chunk_77d4b3d632e159ae63727bfa",
+        "chunk_857a3166741a114aca6f6bf0",
+        "chunk_b946a182821a13de6a72b378",
+        "chunk_1e5dda7606ebcd203194b13b"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-050-F02": {
+      "case_id": "VAL-001-050",
+      "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_aaba9b84619227b3f737900e",
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_6dd3c18e71547c266c8433d1",
+        "chunk_d4209de6474f5282d1013b77",
+        "chunk_6b52e8e296b1ffebdd560cf7"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-050-F03": {
+      "case_id": "VAL-001-050",
+      "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_aaba9b84619227b3f737900e",
+        "chunk_4b1ccddd8f212ea10fc4f086",
+        "chunk_6dd3c18e71547c266c8433d1",
+        "chunk_d4209de6474f5282d1013b77",
+        "chunk_6b52e8e296b1ffebdd560cf7"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-003-F02": {
+      "case_id": "VAL-001-003",
+      "anchor_chunk_id": "chunk_d6d1c627931350dcab91a60d",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_a761f910df2bb1e22f5a4020",
+        "chunk_d6d1c627931350dcab91a60d",
+        "chunk_8f7ea30ed2b0f19beac07dfc",
+        "chunk_d47c7ab9c53cc480c3c2c069",
+        "chunk_161463875a51eb1c46ff33f3"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-004-F02": {
+      "case_id": "VAL-001-004",
+      "anchor_chunk_id": "chunk_029abeb4a7b0d31dfe0744a5",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_029abeb4a7b0d31dfe0744a5",
+        "chunk_442fe95102aad5a27909b356",
+        "chunk_f7c393d8c6398f15f8c9a7d1",
+        "chunk_e38e8b117bf75ca2426fb8a0",
+        "chunk_ecc0814ad52c3b6b7b4fd8b9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-005-F01": {
+      "case_id": "VAL-001-005",
+      "anchor_chunk_id": "chunk_9eff71948173867f562cf65f",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_9eff71948173867f562cf65f",
+        "chunk_7858ac759f06d98823da5dbf",
+        "chunk_3fe67c4153c058347f190445",
+        "chunk_6c0b3e8396e42e3f9a7ccf18",
+        "chunk_621bbabad1d6f0cff7038c2c"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-007-F03": {
+      "case_id": "VAL-001-007",
+      "anchor_chunk_id": "chunk_a761f910df2bb1e22f5a4020",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_a761f910df2bb1e22f5a4020",
+        "chunk_d74546f5fc184a68367f89b5",
+        "chunk_d47c7ab9c53cc480c3c2c069",
+        "chunk_d6d1c627931350dcab91a60d",
+        "chunk_a241a064615d0fdcc343c6bf"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-012-F03": {
+      "case_id": "VAL-001-012",
+      "anchor_chunk_id": "chunk_cdfe12024cbad23056ef4218",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_cdfe12024cbad23056ef4218",
+        "chunk_153e4163c312de7c055f6c77",
+        "chunk_e38e8b117bf75ca2426fb8a0",
+        "chunk_e75fc3be39895b81c29362bf",
+        "chunk_04504541348ed0c60511a490"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-013-F03": {
+      "case_id": "VAL-001-013",
+      "anchor_chunk_id": "chunk_aa63f943bce73a501994f897",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_aa63f943bce73a501994f897",
+        "chunk_98cf35fb3afbd05cb943b94b",
+        "chunk_c1587941e12d3214e84968ca",
+        "chunk_3e7882aabd3aae619c66f4c9",
+        "chunk_6603d8df9b666afe3f73439e"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-015-F02": {
+      "case_id": "VAL-001-015",
+      "anchor_chunk_id": "chunk_23acf65f48bfbc0fd2b142a9",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_23acf65f48bfbc0fd2b142a9",
+        "chunk_648a4d2bbb17b6b1207a8f13",
+        "chunk_65ff616040be6ec5bdfe0770",
+        "chunk_6603d8df9b666afe3f73439e",
+        "chunk_8c069498fe6527d4b3e088a9"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-017-F03": {
+      "case_id": "VAL-001-017",
+      "anchor_chunk_id": "chunk_0d2d5abd2784cfcf630269b4",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_0d2d5abd2784cfcf630269b4",
+        "chunk_f9ddd26bbbc61c34bb71774a",
+        "chunk_e38e8b117bf75ca2426fb8a0",
+        "chunk_203989db376bdcace7726749",
+        "chunk_9bba3228987c04af2bbd72b5"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-019-F01": {
+      "case_id": "VAL-001-019",
+      "anchor_chunk_id": "chunk_e921fe7a8e1eeb16ec85d0b4",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_e921fe7a8e1eeb16ec85d0b4",
+        "chunk_7b7eaace154dcbc8c109107b",
+        "chunk_7d54462de0e9154ce55d108b",
+        "chunk_648a4d2bbb17b6b1207a8f13",
+        "chunk_d4209de6474f5282d1013b77"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-020-F04": {
+      "case_id": "VAL-001-020",
+      "anchor_chunk_id": "chunk_7e8835106fdfbbef2c11bce7",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_7e8835106fdfbbef2c11bce7",
+        "chunk_aed5daae41b2300a164398e8",
+        "chunk_bead5643cdaf606f234968cd",
+        "chunk_909dbd2ae14b726dc19d0bb7",
+        "chunk_62ada47ad210626b43b4c10d"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-021-F03": {
+      "case_id": "VAL-001-021",
+      "anchor_chunk_id": "chunk_c5cbc44ff8a280613d193cb2",
+      "anchor_source_id": "S2",
+      "evidence_chunk_ids": [
+        "chunk_6f3ddb4e59ef15510cdf8bfa",
+        "chunk_c5cbc44ff8a280613d193cb2",
+        "chunk_a87173a6d9fcc296e34c843e",
+        "chunk_30303b4016563bd96f27e027",
+        "chunk_f358f8d5e53e3590e8d0262e"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-024-F03": {
+      "case_id": "VAL-001-024",
+      "anchor_chunk_id": "chunk_2cec2cf86cb897094258e286",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_2cec2cf86cb897094258e286",
+        "chunk_781da9ec3c33897a8c48e53f",
+        "chunk_c5916a5b0c370e675d8ce41e",
+        "chunk_30303b4016563bd96f27e027",
+        "chunk_aed5daae41b2300a164398e8"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-028-F01": {
+      "case_id": "VAL-001-028",
+      "anchor_chunk_id": "chunk_6603d8df9b666afe3f73439e",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_6603d8df9b666afe3f73439e",
+        "chunk_153a3b53c8146213b665c3a0",
+        "chunk_1c838ffe88f83252151cffa0",
+        "chunk_f4e90716332b9d36c12106b4",
+        "chunk_f24f41ee7bddee0edd1641a7"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-035-F01": {
+      "case_id": "VAL-001-035",
+      "anchor_chunk_id": "chunk_379442e1fe4711d16df933a9",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_379442e1fe4711d16df933a9",
+        "chunk_3224fb18dd570640812d90f0",
+        "chunk_dc03216a68a88fcbae59657e",
+        "chunk_2687eac203c8274bdd98f38b",
+        "chunk_a78978f647280d964ecc7d8d"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-036-F02": {
+      "case_id": "VAL-001-036",
+      "anchor_chunk_id": "chunk_9092956baf424fb221444e70",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_9092956baf424fb221444e70",
+        "chunk_6603d8df9b666afe3f73439e",
+        "chunk_77b2dc2625bb2b697f37a7b2",
+        "chunk_23acf65f48bfbc0fd2b142a9",
+        "chunk_9f9bb94e164783623c1ab48e"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-042-F05": {
+      "case_id": "VAL-001-042",
+      "anchor_chunk_id": "chunk_3a99d939976741f6cc61bcb1",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_3a99d939976741f6cc61bcb1",
+        "chunk_2bd1b6197797e0b0994ec11b",
+        "chunk_9b271e926f3e35bf0678ca6d",
+        "chunk_b982ccbafb3c686aba90f043",
+        "chunk_e75b92cd4d9c70251da884cf"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-044-F04": {
+      "case_id": "VAL-001-044",
+      "anchor_chunk_id": "chunk_4eb0be3c894567fc2e46ef9e",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_4eb0be3c894567fc2e46ef9e",
+        "chunk_08c852b3afe02f64cb67825e",
+        "chunk_85867a0b6a0b9d17cba279d7",
+        "chunk_df73e16c166ad721ad8a1801",
+        "chunk_a1f468932197747ed1b86ec4"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-045-F06": {
+      "case_id": "VAL-001-045",
+      "anchor_chunk_id": "chunk_479d01282d63ba9028b61fb4",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_479d01282d63ba9028b61fb4",
+        "chunk_e38e8b117bf75ca2426fb8a0",
+        "chunk_a523e9aa5d9d9ddd9c764fba",
+        "chunk_848e7ed07babd1137a0b93ae",
+        "chunk_cdfe12024cbad23056ef4218"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-047-F04": {
+      "case_id": "VAL-001-047",
+      "anchor_chunk_id": "chunk_e38e8b117bf75ca2426fb8a0",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_e38e8b117bf75ca2426fb8a0",
+        "chunk_f7b58f1a20a04f20e654f546",
+        "chunk_a523e9aa5d9d9ddd9c764fba",
+        "chunk_35fd87021964946f76efbd5f",
+        "chunk_32e0b053fd01881e36edc91c"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "VAL-001-049-F06": {
+      "case_id": "VAL-001-049",
+      "anchor_chunk_id": "chunk_e6b1a931deda6bd84305c1ee",
+      "anchor_source_id": "S1",
+      "evidence_chunk_ids": [
+        "chunk_e6b1a931deda6bd84305c1ee",
+        "chunk_bc2851ea91bd47719515bf56",
+        "chunk_63de52711196b0fc3cdd14c3",
+        "chunk_805b7c9854a99a6cc92689be",
+        "chunk_4576bb42471393252f267c04"
+      ],
+      "evidence_source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  },
+  "adjudications": {
+    "VAL-001-008-F02": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-008",
+        "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_266d98caef0a483344635953",
+          "chunk_7858ac759f06d98823da5dbf",
+          "chunk_9eff71948173867f562cf65f",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_dfcbf6c0856007fb39268709"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information: it states that you can send an email notification to copyright@github.com and that you may include an attachment but should also include a plain-text version in the body. This matches the source excerpt, and the additional details about the contact form, physical mail, and waiting period are also supported by S1."
+    },
+    "VAL-001-009-F01": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-009",
+        "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_07d96053cdafec174753bfbb",
+          "chunk_1e7e1cfaaa17625d3512104e",
+          "chunk_cbbf5766a5fe4cff59f17ba0",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_ce4e78bb644577b70b81f4e9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+    },
+    "VAL-001-009-F02": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-009",
+        "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_07d96053cdafec174753bfbb",
+          "chunk_1e7e1cfaaa17625d3512104e",
+          "chunk_cbbf5766a5fe4cff59f17ba0",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_ce4e78bb644577b70b81f4e9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+    },
+    "VAL-001-011-F01": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-011",
+        "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_aab4fdd9b6247e11c4754104",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_f25af672289856012d211dad"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information: GitHub prohibits posting content that depicts or glorifies violence or physical harm against humans or animals, including graphic depictions of violence toward oneself, another individual, group, or animal. It also correctly notes legitimate documentary/educational exceptions, the role of warnings/disclaimers, and GitHub's ability to limit visibility to u"
+    },
+    "VAL-001-022-F02": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-022",
+        "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_f7b58f1a20a04f20e654f546",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_f358f8d5e53e3590e8d0262e",
+          "chunk_ec175777b8f96d3c7543a7f3",
+          "chunk_6f3ddb4e59ef15510cdf8bfa"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S1: GitHub may disclose candidate personal data to subsidiaries, affiliates, and other third parties including service providers, but only to those with a legitimate business need and only for specified legitimate purposes. It also correctly lists the purposes and notes that GitHub will respect legal limits on disclosure. The additional Can"
+    },
+    "VAL-001-026-F02": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-026",
+        "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_629f116a14edc8c511f8743f",
+          "chunk_ff54b5e32ef69dc034a00ce1",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_bc97792e281d312abdad8050"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: the limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement for publishing, developing, demonstrating, testing, and supporting interoperability/integrations between the Extension and GitHub Copilot, conditioned on compliance. It also correctly states that no other rights or licenses are granted. The addition"
+    },
+    "VAL-001-037-F01": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-037",
+        "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_43cef0f3d5cec7c0f0dde036",
+          "chunk_d5a5be343ee65f8df14618e6",
+          "chunk_cefad4cdbdf0d2a79e427c9b",
+          "chunk_ab100a3436d2ebc1ca3676f9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer states that the Developer is solely responsible for its Developer Products, which matches the anchor excerpt from S2. It also accurately conveys the EULA responsibility and GitHub's license rights from S2, and the discretion/use of listing information from S1."
+    },
+    "VAL-001-039-F02": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-039",
+        "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_8c88d9a6aab4ed4705a2c814",
+          "chunk_77d4b3d632e159ae63727bfa",
+          "chunk_857a3166741a114aca6f6bf0",
+          "chunk_b946a182821a13de6a72b378",
+          "chunk_1e5dda7606ebcd203194b13b"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S1: the open-source license is documented in the 'Open Source Notices' documentation included with the Software, and an open-source license can override the Application Terms only to the limited extent it expressly supersedes them, otherwise the Application Terms remain the minimum agreement. The wording is a faithful paraphrase of the sour"
+    },
+    "VAL-001-050-F01": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-050",
+        "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_aaba9b84619227b3f737900e",
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_6dd3c18e71547c266c8433d1",
+          "chunk_d4209de6474f5282d1013b77",
+          "chunk_6b52e8e296b1ffebdd560cf7"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S1: provisional reinstatement upon ceasing violation unless the copyright holder explicitly and finally terminates, permanent reinstatement if no notice within 60 days after cessation, and permanent reinstatement if first notice and cure within 30 days. It also correctly notes GPLv2 is a Covered License."
+    },
+    "VAL-001-050-F05": {
+      "kind": "nominal",
+      "anchor": {
+        "case_id": "VAL-001-050",
+        "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_aaba9b84619227b3f737900e",
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_6dd3c18e71547c266c8433d1",
+          "chunk_d4209de6474f5282d1013b77",
+          "chunk_6b52e8e296b1ffebdd560cf7"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information that GPLv2 is a Covered License under the GitHub GPL Cooperation Commitment, and correctly explains the provisional and permanent reinstatement conditions from S1."
+    },
+    "VAL-001-008-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-008",
+        "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_266d98caef0a483344635953",
+          "chunk_7858ac759f06d98823da5dbf",
+          "chunk_9eff71948173867f562cf65f",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_dfcbf6c0856007fb39268709"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information: it states the fastest way is the contact form, and it correctly explains that for physical mail the 10-14 day waiting period starts when GitHub receives the counter notice, not when sent. It also provides the mailing address from S1."
+    },
+    "VAL-001-008-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-008",
+        "anchor_chunk_id": "chunk_266d98caef0a483344635953",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_266d98caef0a483344635953",
+          "chunk_7858ac759f06d98823da5dbf",
+          "chunk_9eff71948173867f562cf65f",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_dfcbf6c0856007fb39268709"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer states that the 10–14 day waiting period starts when GitHub receives the counter notice, not when it is sent, which matches the anchor excerpt. It also correctly lists the submission methods and mailing address from S1."
+    },
+    "VAL-001-009-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-009",
+        "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_07d96053cdafec174753bfbb",
+          "chunk_1e7e1cfaaa17625d3512104e",
+          "chunk_cbbf5766a5fe4cff59f17ba0",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_ce4e78bb644577b70b81f4e9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+    },
+    "VAL-001-009-F04": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-009",
+        "anchor_chunk_id": "chunk_1e7e1cfaaa17625d3512104e",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_07d96053cdafec174753bfbb",
+          "chunk_1e7e1cfaaa17625d3512104e",
+          "chunk_cbbf5766a5fe4cff59f17ba0",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_ce4e78bb644577b70b81f4e9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: a circumvention complaint must include detailed statements describing what the technical measures are, how they effectively control access to the copyrighted material, and how the accused project is designed to circumvent those measures. This matches S2 and is also supported by S1."
+    },
+    "VAL-001-011-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-011",
+        "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_aab4fdd9b6247e11c4754104",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_f25af672289856012d211dad"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information: GitHub prohibits posting content that depicts or glorifies violence or physical harm against humans or animals, including graphic depictions of violence toward oneself, another individual, group, or animal. It also correctly notes legitimate documentary/educational exceptions, the role of warnings/disclaimers, and GitHub's ability to limit visibility to u"
+    },
+    "VAL-001-011-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-011",
+        "anchor_chunk_id": "chunk_ae41e789bbbed39cb12b5443",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_ae41e789bbbed39cb12b5443",
+          "chunk_aab4fdd9b6247e11c4754104",
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_1b7a4f11eb7eec7619ddab24",
+          "chunk_f25af672289856012d211dad"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information: GitHub prohibits indiscriminate or hard-to-avoid violent content, allows legitimate documentary/educational uses with a warning or disclaimer, and may limit visibility to users who opt in. It also correctly notes the policy does not specify further implementation details for documentary content."
+    },
+    "VAL-001-022-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-022",
+        "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_f7b58f1a20a04f20e654f546",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_f358f8d5e53e3590e8d0262e",
+          "chunk_ec175777b8f96d3c7543a7f3",
+          "chunk_6f3ddb4e59ef15510cdf8bfa"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S1: GitHub may disclose candidate personal data to subsidiaries, affiliates, and other third parties including service providers, but only to those with a legitimate business need and only for specified legitimate purposes. It also correctly lists the purposes and notes that GitHub will respect legal limits on disclosure. The additional Can"
+    },
+    "VAL-001-022-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-022",
+        "anchor_chunk_id": "chunk_f7b58f1a20a04f20e654f546",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_f7b58f1a20a04f20e654f546",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_f358f8d5e53e3590e8d0262e",
+          "chunk_ec175777b8f96d3c7543a7f3",
+          "chunk_6f3ddb4e59ef15510cdf8bfa"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S1: GitHub may disclose candidate personal data to subsidiaries, affiliates, and other third parties including service providers, but only where recipients have a legitimate business need and only for specified legitimate purposes, including enabling third parties to provide services on GitHub's behalf. It also correctly notes the limits on"
+    },
+    "VAL-001-026-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-026",
+        "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_629f116a14edc8c511f8743f",
+          "chunk_ff54b5e32ef69dc034a00ce1",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_bc97792e281d312abdad8050"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: the limited, worldwide, non-exclusive, non-transferable license during the term of the Agreement for publishing, developing, demonstrating, testing, and supporting interoperability/integrations between the Extension and GitHub Copilot, conditioned on compliance. It also correctly states that no other rights or licenses are granted. The addition"
+    },
+    "VAL-001-026-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-026",
+        "anchor_chunk_id": "chunk_4b1ccddd8f212ea10fc4f086",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_629f116a14edc8c511f8743f",
+          "chunk_ff54b5e32ef69dc034a00ce1",
+          "chunk_24c84997323d275f6987864a",
+          "chunk_bc97792e281d312abdad8050"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: the limited, worldwide, non-exclusive, non-transferable license during the Agreement term for Platform access/use; GitHub's right to modify or discontinue access with or without notice; no other rights/licenses to GitHub Copilot or other products/services; violation consequences including removal, token revocation, suspension, notification, leg"
+    },
+    "VAL-001-030-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-030",
+        "anchor_chunk_id": "chunk_34136e4d23182639a9255feb",
+        "anchor_source_id": "S5",
+        "evidence_chunk_ids": [
+          "chunk_ac3f4d73a79619dc52dca70a",
+          "chunk_a961fb1ca2e1ef387562c2c8",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_2c8cd839a0b55f07640751b9",
+          "chunk_34136e4d23182639a9255feb"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The anchor defines 'pre-release' as software, online services, and additional products/features not yet generally available, including private preview, public preview, early access, technical preview, or similar versions. The answer conveys this concept by discussing GitHub previews as pre-release offerings and explicitly notes that the policies do not specify when a preview will become generally "
+    },
+    "VAL-001-030-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-030",
+        "anchor_chunk_id": "chunk_34136e4d23182639a9255feb",
+        "anchor_source_id": "S5",
+        "evidence_chunk_ids": [
+          "chunk_ac3f4d73a79619dc52dca70a",
+          "chunk_a961fb1ca2e1ef387562c2c8",
+          "chunk_672be43c925d3ed6d1adb2c2",
+          "chunk_2c8cd839a0b55f07640751b9",
+          "chunk_34136e4d23182639a9255feb"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer's Risks section states: 'Pre-release software may not operate correctly, may delete or corrupt your data, or have other bugs, and may not work the way a final commercial version will [S5].' This directly conveys the anchor information from S5, including the possibility of data deletion/corruption, other bugs, and divergence from the final commercial version."
+    },
+    "VAL-001-032-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-032",
+        "anchor_chunk_id": "chunk_21c14e57ff95da6ba1659aaf",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_21c14e57ff95da6ba1659aaf",
+          "chunk_a19c68a1db8f91b664b18561",
+          "chunk_9f80d858e3246cbc81d58e68",
+          "chunk_86d8407d66eb0e68c243ba2c",
+          "chunk_4df2f10653db3a02c0dd96da"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: GitHub Actions may not be used as a general compute or delivery service, with the specific example of not using it as a content delivery network or serverless application, and it correctly states the possible consequences of misuse, including job termination, restrictions, repository disabling, and account suspension or termination. These state"
+    },
+    "VAL-001-032-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-032",
+        "anchor_chunk_id": "chunk_21c14e57ff95da6ba1659aaf",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_21c14e57ff95da6ba1659aaf",
+          "chunk_a19c68a1db8f91b664b18561",
+          "chunk_9f80d858e3246cbc81d58e68",
+          "chunk_86d8407d66eb0e68c243ba2c",
+          "chunk_4df2f10653db3a02c0dd96da"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that Actions should not be used for cryptomining, which matches the anchor excerpt from S1. It also correctly conveys the broader restrictions and consequences from the same source."
+    },
+    "VAL-001-037-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-037",
+        "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_43cef0f3d5cec7c0f0dde036",
+          "chunk_d5a5be343ee65f8df14618e6",
+          "chunk_cefad4cdbdf0d2a79e427c9b",
+          "chunk_ab100a3436d2ebc1ca3676f9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer states that the Developer is solely responsible for its Developer Products, which matches the anchor excerpt from S2. It also accurately conveys the EULA responsibility and GitHub's license rights from S2, and the discretion/use of listing information from S1."
+    },
+    "VAL-001-037-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-037",
+        "anchor_chunk_id": "chunk_43cef0f3d5cec7c0f0dde036",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_eaec6d0a272a609a51331008",
+          "chunk_43cef0f3d5cec7c0f0dde036",
+          "chunk_d5a5be343ee65f8df14618e6",
+          "chunk_cefad4cdbdf0d2a79e427c9b",
+          "chunk_ab100a3436d2ebc1ca3676f9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S2 section 2.2: GitHub receives a non-exclusive, worldwide, transferable, sublicensable, fully paid-up, royalty-free license to process the Listing and display Developer Brand Features in connection with Marketplace. It also correctly covers related responsibility and EULA points from S2."
+    },
+    "VAL-001-039-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-039",
+        "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_8c88d9a6aab4ed4705a2c814",
+          "chunk_77d4b3d632e159ae63727bfa",
+          "chunk_857a3166741a114aca6f6bf0",
+          "chunk_b946a182821a13de6a72b378",
+          "chunk_1e5dda7606ebcd203194b13b"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: the open-source license is included in the 'Open Source Notices' documentation shipped with the Software, and that documentation includes copies of all applicable open-source licenses. It also correctly states the override condition from S1: an open-source license governs only to the limited extent it expressly supersedes the Application Terms."
+    },
+    "VAL-001-039-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-039",
+        "anchor_chunk_id": "chunk_8c88d9a6aab4ed4705a2c814",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_8c88d9a6aab4ed4705a2c814",
+          "chunk_77d4b3d632e159ae63727bfa",
+          "chunk_857a3166741a114aca6f6bf0",
+          "chunk_b946a182821a13de6a72b378",
+          "chunk_1e5dda7606ebcd203194b13b"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: licenses are documented in the 'Open Source Notices' documentation included with the Software, and an open-source license overrides the Application Terms only to the limited extent it expressly supersedes them, otherwise the Application Terms remain the minimum agreement and open-source licenses are separate written agreements."
+    },
+    "VAL-001-050-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-050",
+        "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_aaba9b84619227b3f737900e",
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_6dd3c18e71547c266c8433d1",
+          "chunk_d4209de6474f5282d1013b77",
+          "chunk_6b52e8e296b1ffebdd560cf7"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: provisional reinstatement upon ceasing violation unless the copyright holder explicitly and finally terminates, and permanent reinstatement if the copyright holder fails to notify within 60 days after cessation. It also correctly includes the additional permanent reinstatement condition from the same source. The statement that the commitment ap"
+    },
+    "VAL-001-050-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-050",
+        "anchor_chunk_id": "chunk_aaba9b84619227b3f737900e",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_aaba9b84619227b3f737900e",
+          "chunk_4b1ccddd8f212ea10fc4f086",
+          "chunk_6dd3c18e71547c266c8433d1",
+          "chunk_d4209de6474f5282d1013b77",
+          "chunk_6b52e8e296b1ffebdd560cf7"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: provisional reinstatement upon ceasing violation unless the copyright holder explicitly and finally terminates, and permanent reinstatement if the copyright holder fails to notify within 60 days after cessation. It also correctly includes the additional permanent reinstatement condition from the same source. The statement that the commitment ap"
+    },
+    "VAL-001-003-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-003",
+        "anchor_chunk_id": "chunk_d6d1c627931350dcab91a60d",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_8f7ea30ed2b0f19beac07dfc",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_161463875a51eb1c46ff33f3"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that mere mentions of your company's identity, name, brand, domain name, or other company references in files on GitHub fall outside the private-information removal process unless you can articulate why the use threatens your company's security posture. This matches the anchor information from S2."
+    },
+    "VAL-001-004-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-004",
+        "anchor_chunk_id": "chunk_029abeb4a7b0d31dfe0744a5",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_029abeb4a7b0d31dfe0744a5",
+          "chunk_442fe95102aad5a27909b356",
+          "chunk_f7c393d8c6398f15f8c9a7d1",
+          "chunk_e38e8b117bf75ca2426fb8a0",
+          "chunk_ecc0814ad52c3b6b7b4fd8b9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer includes 'Trademark registration number' in the bulleted list of required information, directly conveying the anchor information from S1."
+    },
+    "VAL-001-005-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-005",
+        "anchor_chunk_id": "chunk_9eff71948173867f562cf65f",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_9eff71948173867f562cf65f",
+          "chunk_7858ac759f06d98823da5dbf",
+          "chunk_3fe67c4153c058347f190445",
+          "chunk_6c0b3e8396e42e3f9a7ccf18",
+          "chunk_621bbabad1d6f0cff7038c2c"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that the counter notice must identify the disabled content and its location, and that the disabled content should have been identified by URL in the takedown notice, so you simply copy the URL(s) you want to challenge. This accurately conveys the anchor information from S1."
+    },
+    "VAL-001-007-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-007",
+        "anchor_chunk_id": "chunk_a761f910df2bb1e22f5a4020",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_a761f910df2bb1e22f5a4020",
+          "chunk_d74546f5fc184a68367f89b5",
+          "chunk_d47c7ab9c53cc480c3c2c069",
+          "chunk_d6d1c627931350dcab91a60d",
+          "chunk_a241a064615d0fdcc343c6bf"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information that the private information removal process is only for high-risk content, cannot be used for other content such as potentially infringing content, cannot process other removal requests simultaneously, and that sending private information requests separately from infringement requests helps GitHub respond more quickly. It also notes consulting legal couns"
+    },
+    "VAL-001-012-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-012",
+        "anchor_chunk_id": "chunk_cdfe12024cbad23056ef4218",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_cdfe12024cbad23056ef4218",
+          "chunk_153e4163c312de7c055f6c77",
+          "chunk_e38e8b117bf75ca2426fb8a0",
+          "chunk_e75fc3be39895b81c29362bf",
+          "chunk_04504541348ed0c60511a490"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer includes the anchor information that the requester must provide the name of the deceased account holder, and it accurately reflects the full S1 policy on what an authorized person can ask GitHub to do and what proof may be requested."
+    },
+    "VAL-001-013-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-013",
+        "anchor_chunk_id": "chunk_aa63f943bce73a501994f897",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_aa63f943bce73a501994f897",
+          "chunk_98cf35fb3afbd05cb943b94b",
+          "chunk_c1587941e12d3214e84968ca",
+          "chunk_3e7882aabd3aae619c66f4c9",
+          "chunk_6603d8df9b666afe3f73439e"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly lists 'Rank abuse, such as automated starring or following [S1]', which directly conveys the anchor information that rank abuse includes automated starring or following. The statement is semantically correct and consistent with the full evidence."
+    },
+    "VAL-001-015-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-015",
+        "anchor_chunk_id": "chunk_23acf65f48bfbc0fd2b142a9",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_23acf65f48bfbc0fd2b142a9",
+          "chunk_648a4d2bbb17b6b1207a8f13",
+          "chunk_65ff616040be6ec5bdfe0770",
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_8c069498fe6527d4b3e088a9"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer includes the anchor bullet 'Piling on to or orchestrating disruptive activity in a way that amounts to abuse' as part of its list of prohibited harassment conduct, accurately paraphrasing the source."
+    },
+    "VAL-001-017-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-017",
+        "anchor_chunk_id": "chunk_0d2d5abd2784cfcf630269b4",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_0d2d5abd2784cfcf630269b4",
+          "chunk_f9ddd26bbbc61c34bb71774a",
+          "chunk_e38e8b117bf75ca2426fb8a0",
+          "chunk_203989db376bdcace7726749",
+          "chunk_9bba3228987c04af2bbd72b5"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that having a username similar to another is not necessarily impersonation and that GitHub will take context into account, and it states that GitHub generally allows parody and satire in line with the Acceptable Use Policies, including in misinformation/disinformation cases. This conveys the anchor information accurately."
+    },
+    "VAL-001-019-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-019",
+        "anchor_chunk_id": "chunk_e921fe7a8e1eeb16ec85d0b4",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_e921fe7a8e1eeb16ec85d0b4",
+          "chunk_7b7eaace154dcbc8c109107b",
+          "chunk_7d54462de0e9154ce55d108b",
+          "chunk_648a4d2bbb17b6b1207a8f13",
+          "chunk_d4209de6474f5282d1013b77"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that GitHub does not allow projects designed for, encouraging, promoting, supporting, or suggesting use of LLMs or synthetic/manipulated media tools to create sexual material involving minors or other content constituting Child Sexual Abuse Material under GitHub policies, which matches the anchor information from S1."
+    },
+    "VAL-001-020-F04": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-020",
+        "anchor_chunk_id": "chunk_7e8835106fdfbbef2c11bce7",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_7e8835106fdfbbef2c11bce7",
+          "chunk_aed5daae41b2300a164398e8",
+          "chunk_bead5643cdaf606f234968cd",
+          "chunk_909dbd2ae14b726dc19d0bb7",
+          "chunk_62ada47ad210626b43b4c10d"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that GitHub says the number and names of cookies may change, the table may be updated from time to time, and provides instructions for receiving notifications of updates, which matches the anchor information from S1."
+    },
+    "VAL-001-021-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-021",
+        "anchor_chunk_id": "chunk_c5cbc44ff8a280613d193cb2",
+        "anchor_source_id": "S2",
+        "evidence_chunk_ids": [
+          "chunk_6f3ddb4e59ef15510cdf8bfa",
+          "chunk_c5cbc44ff8a280613d193cb2",
+          "chunk_a87173a6d9fcc296e34c843e",
+          "chunk_30303b4016563bd96f27e027",
+          "chunk_f358f8d5e53e3590e8d0262e"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information from S2: GitHub may process data provided while researching job openings for the compatible purpose of entering into an employment relationship once the person applies for and obtains a role, subject to a legal basis. It also correctly supplements this with related onboarding and employment-purpose details from S1 and S5."
+    },
+    "VAL-001-024-F03": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-024",
+        "anchor_chunk_id": "chunk_2cec2cf86cb897094258e286",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_2cec2cf86cb897094258e286",
+          "chunk_781da9ec3c33897a8c48e53f",
+          "chunk_c5916a5b0c370e675d8ce41e",
+          "chunk_30303b4016563bd96f27e027",
+          "chunk_aed5daae41b2300a164398e8"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that essential cookies and similar tracking technologies are used to provide essential functionality, such as storing settings and recognizing you while using the services, which matches the anchor information from S1. It also correctly distinguishes non-essential cookies, including consent requirements in some jurisdictions."
+    },
+    "VAL-001-028-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-028",
+        "anchor_chunk_id": "chunk_6603d8df9b666afe3f73439e",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_153a3b53c8146213b665c3a0",
+          "chunk_1c838ffe88f83252151cffa0",
+          "chunk_f4e90716332b9d36c12106b4",
+          "chunk_f24f41ee7bddee0edd1641a7"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer's first paragraph states that all attendees, speakers, exhibitors, sponsors, organizers, staff, and volunteers are expected to show respect and courtesy to other participants throughout the Event, which directly conveys the anchor information from S1. The wording is a close paraphrase and is semantically correct in scope, actor, and relation."
+    },
+    "VAL-001-035-F01": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-035",
+        "anchor_chunk_id": "chunk_379442e1fe4711d16df933a9",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_379442e1fe4711d16df933a9",
+          "chunk_3224fb18dd570640812d90f0",
+          "chunk_dc03216a68a88fcbae59657e",
+          "chunk_2687eac203c8274bdd98f38b",
+          "chunk_a78978f647280d964ecc7d8d"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer states that individual employees retain ultimate administrative control over their individual accounts and content, and that the Customer retains ultimate administrative control over Organizations created on its behalf, matching the anchor information from S1. The additional S3 statement about managing access is consistent with the evidence."
+    },
+    "VAL-001-036-F02": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-036",
+        "anchor_chunk_id": "chunk_9092956baf424fb221444e70",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_9092956baf424fb221444e70",
+          "chunk_6603d8df9b666afe3f73439e",
+          "chunk_77b2dc2625bb2b697f37a7b2",
+          "chunk_23acf65f48bfbc0fd2b142a9",
+          "chunk_9f9bb94e164783623c1ab48e"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: urgent issues should be reported to a venue security officer or GitHub employee, non-urgent issues via email to events@github.com, and life-threatening situations by dialing 911. It also correctly states that GitHub employees can help contact security or law enforcement, escort to safety, or otherwise assist those experiencing harassment to fee"
+    },
+    "VAL-001-042-F05": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-042",
+        "anchor_chunk_id": "chunk_3a99d939976741f6cc61bcb1",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_3a99d939976741f6cc61bcb1",
+          "chunk_2bd1b6197797e0b0994ec11b",
+          "chunk_9b271e926f3e35bf0678ca6d",
+          "chunk_b982ccbafb3c686aba90f043",
+          "chunk_e75b92cd4d9c70251da884cf"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that the Section 2.2 license survives expiration or termination of the agreement for any reason, which matches the anchor excerpt from S1. The surrounding details about the license grant and open-source distribution are also accurately drawn from S1."
+    },
+    "VAL-001-044-F04": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-044",
+        "anchor_chunk_id": "chunk_4eb0be3c894567fc2e46ef9e",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_4eb0be3c894567fc2e46ef9e",
+          "chunk_08c852b3afe02f64cb67825e",
+          "chunk_85867a0b6a0b9d17cba279d7",
+          "chunk_df73e16c166ad721ad8a1801",
+          "chunk_a1f468932197747ed1b86ec4"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly states that GitHub Enterprise Server is a commercial, mass-market product under ECCN 5D992.c and may be exported to most destinations with no license required (NLR), which matches the anchor information from S1."
+    },
+    "VAL-001-045-F06": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-045",
+        "anchor_chunk_id": "chunk_479d01282d63ba9028b61fb4",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_479d01282d63ba9028b61fb4",
+          "chunk_e38e8b117bf75ca2426fb8a0",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_848e7ed07babd1137a0b93ae",
+          "chunk_cdfe12024cbad23056ef4218"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer explicitly lists 'Security access logs' under 'Maintained privately (private account data)' and cites S1, which matches the anchor excerpt from S1's private account data list. The categorization as private is semantically correct."
+    },
+    "VAL-001-047-F04": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-047",
+        "anchor_chunk_id": "chunk_e38e8b117bf75ca2426fb8a0",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_e38e8b117bf75ca2426fb8a0",
+          "chunk_f7b58f1a20a04f20e654f546",
+          "chunk_a523e9aa5d9d9ddd9c764fba",
+          "chunk_35fd87021964946f76efbd5f",
+          "chunk_32e0b053fd01881e36edc91c"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the anchor information: GitHub will not disclose account access logs unless compelled by a 2703(d) court order or a search warrant, and can provide access logs in addition to the non-public account information listed above. The conditions, standards (specific and articulable facts/probable cause), and distinction from subpoena requests are correctly stated."
+    },
+    "VAL-001-049-F06": {
+      "kind": "covered",
+      "anchor": {
+        "case_id": "VAL-001-049",
+        "anchor_chunk_id": "chunk_e6b1a931deda6bd84305c1ee",
+        "anchor_source_id": "S1",
+        "evidence_chunk_ids": [
+          "chunk_e6b1a931deda6bd84305c1ee",
+          "chunk_bc2851ea91bd47719515bf56",
+          "chunk_63de52711196b0fc3cdd14c3",
+          "chunk_805b7c9854a99a6cc92689be",
+          "chunk_4576bb42471393252f267c04"
+        ],
+        "evidence_source_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer conveys the anchor information that the policy applies to taking bribes too and advises not accepting or running it by Legal, and it does so accurately in the broader context of the gifts policy."
+    }
+  },
+  "nominal_side": {
+    "omission": {
+      "counts": {
+        "SEMANTICALLY_PRESENT": 9,
+        "ABSENT_OR_INCORRECT": 0,
+        "AMBIGUOUS": 0
+      },
+      "real_error": {
+        "numerator": 0,
+        "denominator": 9,
+        "proportion": 0.0,
+        "wilson_95": [
+          0.0,
+          0.2991527535509594
+        ]
+      }
+    },
+    "incorrect_synthesis": {
+      "counts": {
+        "SEMANTICALLY_PRESENT": 1,
+        "ABSENT_OR_INCORRECT": 0,
+        "AMBIGUOUS": 0
+      },
+      "real_error": {
+        "numerator": 0,
+        "denominator": 1,
+        "proportion": 0.0,
+        "wilson_95": [
+          0.0,
+          0.7934567085261071
+        ]
+      }
+    },
+    "combined_descriptive": {
+      "numerator": 0,
+      "denominator": 10,
+      "proportion": 0.0,
+      "wilson_95": [
+        0.0,
+        0.2775401687666165
+      ]
+    }
+  },
+  "covered_side": {
+    "counts": {
+      "SEMANTICALLY_PRESENT": 40,
+      "ABSENT_OR_INCORRECT": 0,
+      "AMBIGUOUS": 0
+    },
+    "genuinely_covered": {
+      "numerator": 40,
+      "denominator": 40,
+      "proportion": 1.0,
+      "wilson_95": [
+        0.9123754607496077,
+        1.0
+      ]
+    },
+    "hidden_error": {
+      "numerator": 0,
+      "denominator": 40,
+      "proportion": 0.0,
+      "wilson_95": [
+        0.0,
+        0.08762453925039232
+      ]
+    },
+    "ambiguous": 0,
+    "real_covered_proportion": 1.0
+  },
+  "transitions": {
+    "nominal": {
+      "SEMANTICALLY_PRESENT": {
+        "SEMANTICALLY_PRESENT": 7
+      },
+      "ABSENT_OR_INCORRECT": {
+        "SEMANTICALLY_PRESENT": 3
+      }
+    },
+    "covered": {
+      "SEMANTICALLY_PRESENT": {
+        "SEMANTICALLY_PRESENT": 36
+      },
+      "ABSENT_OR_INCORRECT": {
+        "SEMANTICALLY_PRESENT": 4
+      }
+    }
+  },
+  "diagnostic_tags": {
+    "v1_unclear_source": 6,
+    "v2_unclear_source": 0
+  },
+  "cleaned_cohort": {
+    "status": "pending_human_review",
+    "genuine_error_facts": [],
+    "ambiguous_facts": [],
+    "semantically_present_facts": [
+      "VAL-001-008-F02",
+      "VAL-001-009-F01",
+      "VAL-001-009-F02",
+      "VAL-001-011-F01",
+      "VAL-001-022-F02",
+      "VAL-001-026-F02",
+      "VAL-001-037-F01",
+      "VAL-001-039-F02",
+      "VAL-001-050-F01",
+      "VAL-001-050-F05"
+    ],
+    "human_negated_facts": []
+  },
+  "failures": []
+}

@@ -1,0 +1,7137 @@
+{
+  "version": "a1-failure-inventory-raw-v1",
+  "arms": [
+    "fixed_top5",
+    "coverage_selector_v2",
+    "adaptive_prefix_v1",
+    "no_router_adaptive_v1"
+  ],
+  "items": [
+    {
+      "case_id": "VAL-001-001",
+      "aspect_id": "VAL-001-001-F01",
+      "statement": "A counter notice requires a good-faith belief that removal resulted from mistake or misidentification.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 22,
+      "pool_ranks": {
+        "chunk_dfcbf6c0856007fb39268709": 22
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": false
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-001",
+      "aspect_id": "VAL-001-001-F02",
+      "statement": "The counter notice is sworn under penalty of perjury.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 22,
+      "pool_ranks": {
+        "chunk_dfcbf6c0856007fb39268709": 22
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-001",
+      "aspect_id": "VAL-001-001-F03",
+      "statement": "Intentionally false sworn information can cause criminal and civil consequences.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 22,
+      "pool_ranks": {
+        "chunk_dfcbf6c0856007fb39268709": 22
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "missing_in": [
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-001",
+      "aspect_id": "VAL-001-001-F04",
+      "statement": "The complainant may sue to keep the material disabled if they dispute the counter notice.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 22,
+      "pool_ranks": {
+        "chunk_dfcbf6c0856007fb39268709": 22
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": false
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-002",
+      "aspect_id": "VAL-001-002-F01",
+      "statement": "A DMCA notice is for a specific copyrightable work, not a trademark or sensitive-data complaint.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_b3a75390d468384fcf4e9ecf"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_b3a75390d468384fcf4e9ecf": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-002",
+      "aspect_id": "VAL-001-002-F02",
+      "statement": "The complainant should investigate the allegation before filing.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_b3a75390d468384fcf4e9ecf"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_b3a75390d468384fcf4e9ecf": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-002",
+      "aspect_id": "VAL-001-002-F03",
+      "statement": "A code repository may contain only a file or subroutine that infringes rather than an entire repository.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_51e2a409338af3ecbb58deb6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_51e2a409338af3ecbb58deb6": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-002",
+      "aspect_id": "VAL-001-002-F04",
+      "statement": "Open-source licenses can authorize use even when code bears a copyright notice.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_51e2a409338af3ecbb58deb6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_51e2a409338af3ecbb58deb6": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-002",
+      "aspect_id": "VAL-001-002-F05",
+      "statement": "A particular code use may qualify as fair use and must be considered separately.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_51e2a409338af3ecbb58deb6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_51e2a409338af3ecbb58deb6": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-003",
+      "aspect_id": "VAL-001-003-F01",
+      "statement": "Internal server names, IP addresses, or URLs alone do not qualify without a shown security threat.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_d6d1c627931350dcab91a60d"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_d6d1c627931350dcab91a60d": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-003",
+      "aspect_id": "VAL-001-003-F02",
+      "statement": "A mere mention of a company name or brand does not qualify without an articulated security threat.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_d6d1c627931350dcab91a60d"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_d6d1c627931350dcab91a60d": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-003",
+      "aspect_id": "VAL-001-003-F03",
+      "statement": "An objectionable full file or repository does not qualify if it poses no specific security risk.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_d6d1c627931350dcab91a60d"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_d6d1c627931350dcab91a60d": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-004",
+      "aspect_id": "VAL-001-004-F01",
+      "statement": "The report must identify the reported account username.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_029abeb4a7b0d31dfe0744a5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_029abeb4a7b0d31dfe0744a5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-004",
+      "aspect_id": "VAL-001-004-F02",
+      "statement": "The report must provide the trademark registration number.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_029abeb4a7b0d31dfe0744a5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_029abeb4a7b0d31dfe0744a5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-004",
+      "aspect_id": "VAL-001-004-F03",
+      "statement": "The report must identify the trademark registration office.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_029abeb4a7b0d31dfe0744a5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_029abeb4a7b0d31dfe0744a5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-004",
+      "aspect_id": "VAL-001-004-F04",
+      "statement": "The report must describe the confusion caused by the reported use.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_029abeb4a7b0d31dfe0744a5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_029abeb4a7b0d31dfe0744a5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-004",
+      "aspect_id": "VAL-001-004-F05",
+      "statement": "The report must state the requested action.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_029abeb4a7b0d31dfe0744a5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_029abeb4a7b0d31dfe0744a5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-004",
+      "aspect_id": "VAL-001-004-F06",
+      "statement": "The report must include a good-faith statement addressing authorization and fair uses.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_029abeb4a7b0d31dfe0744a5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_029abeb4a7b0d31dfe0744a5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F01",
+      "statement": "A counter notice must identify the disabled content and its prior URL.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9eff71948173867f562cf65f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9eff71948173867f562cf65f": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F02",
+      "statement": "It must provide the submitter's email, name, phone, and physical address.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9eff71948173867f562cf65f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9eff71948173867f562cf65f": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F03",
+      "statement": "It must include a sworn good-faith belief that removal was a mistake or misidentification.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9eff71948173867f562cf65f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9eff71948173867f562cf65f": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F04",
+      "statement": "It must consent to the specified federal court's jurisdiction and accept service of process.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9eff71948173867f562cf65f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9eff71948173867f562cf65f": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-005",
+      "aspect_id": "VAL-001-005-F05",
+      "statement": "It must include a physical or electronic signature.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9eff71948173867f562cf65f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9eff71948173867f562cf65f": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-006",
+      "aspect_id": "VAL-001-006-F01",
+      "statement": "The complaint must identify the copyrighted work claimed to be infringed.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_ce4e78bb644577b70b81f4e9": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-006",
+      "aspect_id": "VAL-001-006-F02",
+      "statement": "It must identify allegedly infringing material specifically enough for GitHub to locate it, including a URL at minimum.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ce4e78bb644577b70b81f4e9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_ce4e78bb644577b70b81f4e9": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5"
+      ]
+    },
+    {
+      "case_id": "VAL-001-006",
+      "aspect_id": "VAL-001-006-F03",
+      "statement": "It must explain what the affected user needs to do to remedy the infringement.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_201a3c4be6cf44693fbebab7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_201a3c4be6cf44693fbebab7": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-006",
+      "aspect_id": "VAL-001-006-F04",
+      "statement": "It must give the complainant's contact information.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_201a3c4be6cf44693fbebab7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_201a3c4be6cf44693fbebab7": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-006",
+      "aspect_id": "VAL-001-006-F05",
+      "statement": "It must include a good-faith statement considering authorization and fair use.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_201a3c4be6cf44693fbebab7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_201a3c4be6cf44693fbebab7": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F01",
+      "statement": "Contacting the user first is encouraged but is not required.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_a761f910df2bb1e22f5a4020"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_a761f910df2bb1e22f5a4020": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F03",
+      "statement": "The process is an exceptional service for high-risk content and cannot handle unrelated removal requests at the same time.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_a761f910df2bb1e22f5a4020"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_a761f910df2bb1e22f5a4020": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-007",
+      "aspect_id": "VAL-001-007-F04",
+      "statement": "Multiple or additional requests can delay review.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_a761f910df2bb1e22f5a4020"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_a761f910df2bb1e22f5a4020": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F01",
+      "statement": "The online DMCA form is the fastest way to get a response.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_266d98caef0a483344635953"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_266d98caef0a483344635953": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F02",
+      "statement": "Email submissions should include a plain-text version in the email body even if attached.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_266d98caef0a483344635953"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_266d98caef0a483344635953": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ]
+    },
+    {
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F03",
+      "statement": "Physical mail takes substantially longer to receive and process.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_266d98caef0a483344635953"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_266d98caef0a483344635953": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-008",
+      "aspect_id": "VAL-001-008-F04",
+      "statement": "The 10–14 day waiting period begins when GitHub receives the counter notice.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_266d98caef0a483344635953"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_266d98caef0a483344635953": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-009",
+      "aspect_id": "VAL-001-009-F01",
+      "statement": "The claim concerns a technological measure that effectively controls access to a copyright-protected work.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_1e7e1cfaaa17625d3512104e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_1e7e1cfaaa17625d3512104e": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-009",
+      "aspect_id": "VAL-001-009-F03",
+      "statement": "The claim must describe the technical measure in question.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_1e7e1cfaaa17625d3512104e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_1e7e1cfaaa17625d3512104e": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-009",
+      "aspect_id": "VAL-001-009-F04",
+      "statement": "The claim must describe how the measure effectively controls access to copyrighted material.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_1e7e1cfaaa17625d3512104e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_1e7e1cfaaa17625d3512104e": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-009",
+      "aspect_id": "VAL-001-009-F05",
+      "statement": "The claim must describe how the accused project is designed to circumvent that measure.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_1e7e1cfaaa17625d3512104e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_1e7e1cfaaa17625d3512104e": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-010",
+      "aspect_id": "VAL-001-010-F01",
+      "statement": "GitHub does not automatically disable forks when it disables a parent repository.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_a3ddf75464adab828d3d811f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_a3ddf75464adab828d3d811f": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-010",
+      "aspect_id": "VAL-001-010-F03",
+      "statement": "GitHub does not independently investigate forks; the copyright owner must do so.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_a3ddf75464adab828d3d811f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_a3ddf75464adab828d3d811f": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-010",
+      "aspect_id": "VAL-001-010-F04",
+      "statement": "A valid claim identifying all then-existing forks may be processed against the network's forks.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_a3ddf75464adab828d3d811f"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_a3ddf75464adab828d3d811f": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-010",
+      "aspect_id": "VAL-001-010-F05",
+      "statement": "The private-information process also does not automatically disable forks with the parent.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_161463875a51eb1c46ff33f3"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_161463875a51eb1c46ff33f3": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-010",
+      "aspect_id": "VAL-001-010-F06",
+      "statement": "A private-information requester must investigate and identify forks containing the reported information.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_161463875a51eb1c46ff33f3"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_161463875a51eb1c46ff33f3": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-011",
+      "aspect_id": "VAL-001-011-F01",
+      "statement": "GitHub prohibits using the platform to organize, promote, threaten, or incite violence.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ae41e789bbbed39cb12b5443"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ae41e789bbbed39cb12b5443": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-011",
+      "aspect_id": "VAL-001-011-F02",
+      "statement": "GitHub prohibits content that depicts or glorifies physical violence toward people or animals.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ae41e789bbbed39cb12b5443"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ae41e789bbbed39cb12b5443": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-011",
+      "aspect_id": "VAL-001-011-F03",
+      "statement": "Educational or documentary uses can be legitimate reasons to post violent content.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ae41e789bbbed39cb12b5443"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ae41e789bbbed39cb12b5443": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-011",
+      "aspect_id": "VAL-001-011-F05",
+      "statement": "GitHub may restrict such content's visibility to people who opt in.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ae41e789bbbed39cb12b5443"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ae41e789bbbed39cb12b5443": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F01",
+      "statement": "Next of kin, a designated successor, or another authorized person can request action on a deceased user's account.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_cdfe12024cbad23056ef4218"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_cdfe12024cbad23056ef4218": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F04",
+      "statement": "A request must explain the requester's relationship to the deceased user.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_cdfe12024cbad23056ef4218"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_cdfe12024cbad23056ef4218": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F05",
+      "statement": "The requester must say what action is sought, such as transferring public repositories or canceling billing.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_cdfe12024cbad23056ef4218"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_cdfe12024cbad23056ef4218": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-012",
+      "aspect_id": "VAL-001-012-F06",
+      "statement": "GitHub may request identification, a death certificate, or evidence of authority before processing.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_cdfe12024cbad23056ef4218"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_cdfe12024cbad23056ef4218": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-013",
+      "aspect_id": "VAL-001-013-F01",
+      "statement": "Excessive automated bulk activity is prohibited.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aa63f943bce73a501994f897"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aa63f943bce73a501994f897": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-013",
+      "aspect_id": "VAL-001-013-F02",
+      "statement": "Fake accounts and automated inauthentic interactions are prohibited.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aa63f943bce73a501994f897"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aa63f943bce73a501994f897": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-013",
+      "aspect_id": "VAL-001-013-F03",
+      "statement": "Automated starring or following used for rank abuse is prohibited.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aa63f943bce73a501994f897"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aa63f943bce73a501994f897": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-013",
+      "aspect_id": "VAL-001-013-F05",
+      "statement": "Using GitHub servers to relay unsolicited advertising is prohibited.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aa63f943bce73a501994f897"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aa63f943bce73a501994f897": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-014",
+      "aspect_id": "VAL-001-014-F01",
+      "statement": "Researchers may use public non-personal information only if resulting publications are open access.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_55f184d482beed2e324992d6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_55f184d482beed2e324992d6": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-014",
+      "aspect_id": "VAL-001-014-F02",
+      "statement": "Archivists may use public information for archival purposes.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_55f184d482beed2e324992d6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_55f184d482beed2e324992d6": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-014",
+      "aspect_id": "VAL-001-014-F03",
+      "statement": "The information-use rules apply regardless of scraping, API collection, or another collection route.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_55f184d482beed2e324992d6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_55f184d482beed2e324992d6": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-014",
+      "aspect_id": "VAL-001-014-F04",
+      "statement": "Service information may not be used for spam, including unsolicited emails or selling personal information.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_55f184d482beed2e324992d6"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_55f184d482beed2e324992d6": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-015",
+      "aspect_id": "VAL-001-015-F01",
+      "statement": "Targeted personal attacks are prohibited harassment.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_23acf65f48bfbc0fd2b142a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_23acf65f48bfbc0fd2b142a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-015",
+      "aspect_id": "VAL-001-015-F02",
+      "statement": "Orchestrating disruptive activity that amounts to abuse is prohibited.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_23acf65f48bfbc0fd2b142a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_23acf65f48bfbc0fd2b142a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-015",
+      "aspect_id": "VAL-001-015-F04",
+      "statement": "Disagreement or downvoting alone may not rise to harassment.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_23acf65f48bfbc0fd2b142a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_23acf65f48bfbc0fd2b142a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F01",
+      "statement": "Posting another person's personal information is prohibited.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_36c8fa4bcb4dccbdc3bbb72c"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_36c8fa4bcb4dccbdc3bbb72c": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F02",
+      "statement": "Nonconsensual photos or videos may be an invasion of privacy, especially when they pose a safety risk.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_36c8fa4bcb4dccbdc3bbb72c"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_36c8fa4bcb4dccbdc3bbb72c": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F03",
+      "statement": "GitHub considers whether reported information is already publicly available elsewhere.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_36c8fa4bcb4dccbdc3bbb72c"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_36c8fa4bcb4dccbdc3bbb72c": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-016",
+      "aspect_id": "VAL-001-016-F04",
+      "statement": "Public information shared with intent to harass may violate the bullying and harassment policy.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_36c8fa4bcb4dccbdc3bbb72c"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_36c8fa4bcb4dccbdc3bbb72c": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-017",
+      "aspect_id": "VAL-001-017-F01",
+      "statement": "Misrepresenting identity or association in a misleading way is prohibited.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_0d2d5abd2784cfcf630269b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_0d2d5abd2784cfcf630269b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-017",
+      "aspect_id": "VAL-001-017-F02",
+      "statement": "A deceptively similar username or organization name can be impersonation when it misleads others.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_0d2d5abd2784cfcf630269b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_0d2d5abd2784cfcf630269b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-017",
+      "aspect_id": "VAL-001-017-F03",
+      "statement": "A similar username alone is not necessarily impersonation; GitHub considers context.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_0d2d5abd2784cfcf630269b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_0d2d5abd2784cfcf630269b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-017",
+      "aspect_id": "VAL-001-017-F04",
+      "statement": "Parody and satire consistent with acceptable-use rules are generally allowed.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_0d2d5abd2784cfcf630269b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_0d2d5abd2784cfcf630269b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-018",
+      "aspect_id": "VAL-001-018-F01",
+      "statement": "False or deceptive content is prohibited under this policy when likely to harm the public or interfere with civic participation.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f9ddd26bbbc61c34bb71774a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f9ddd26bbbc61c34bb71774a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-018",
+      "aspect_id": "VAL-001-018-F03",
+      "statement": "GitHub generally allows parody and satire consistent with its acceptable-use rules.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f9ddd26bbbc61c34bb71774a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f9ddd26bbbc61c34bb71774a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-018",
+      "aspect_id": "VAL-001-018-F04",
+      "statement": "GitHub considers context such as disclaimers and credible citations when reviewing the content.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f9ddd26bbbc61c34bb71774a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f9ddd26bbbc61c34bb71774a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F01",
+      "statement": "Projects designed to facilitate synthetic child sexual abuse material are prohibited.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e921fe7a8e1eeb16ec85d0b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e921fe7a8e1eeb16ec85d0b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F02",
+      "statement": "Projects designed to facilitate violent extremist propaganda are prohibited.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e921fe7a8e1eeb16ec85d0b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e921fe7a8e1eeb16ec85d0b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F03",
+      "statement": "Projects designed to facilitate nonconsensual sexually explicit media are prohibited.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e921fe7a8e1eeb16ec85d0b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e921fe7a8e1eeb16ec85d0b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-019",
+      "aspect_id": "VAL-001-019-F04",
+      "statement": "GitHub examines project context, including configuration, marketing, and documentation, when assessing violations.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e921fe7a8e1eeb16ec85d0b4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e921fe7a8e1eeb16ec85d0b4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F01",
+      "statement": "GitHub uses cookies to provide its websites.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_7e8835106fdfbbef2c11bce7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_7e8835106fdfbbef2c11bce7": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F02",
+      "statement": "GitHub uses cookies to secure its websites.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_7e8835106fdfbbef2c11bce7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_7e8835106fdfbbef2c11bce7": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F03",
+      "statement": "GitHub uses cookies to analyze website usage.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_7e8835106fdfbbef2c11bce7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_7e8835106fdfbbef2c11bce7": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-020",
+      "aspect_id": "VAL-001-020-F04",
+      "statement": "The published cookie list may change as cookie names and numbers change.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_7e8835106fdfbbef2c11bce7"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_7e8835106fdfbbef2c11bce7": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F01",
+      "statement": "Candidate personal data is normally used only for the purpose for which it was collected.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_c5cbc44ff8a280613d193cb2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_c5cbc44ff8a280613d193cb2": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F02",
+      "statement": "A different compatible use requires a reasonable need and legal basis for further processing.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_c5cbc44ff8a280613d193cb2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_c5cbc44ff8a280613d193cb2": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F03",
+      "statement": "Data from exploring job openings may be processed for recruiting.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_c5cbc44ff8a280613d193cb2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_c5cbc44ff8a280613d193cb2": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-021",
+      "aspect_id": "VAL-001-021-F04",
+      "statement": "After successful application, candidate data may be processed to enter an employment relationship.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_c5cbc44ff8a280613d193cb2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_c5cbc44ff8a280613d193cb2": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-022",
+      "aspect_id": "VAL-001-022-F01",
+      "statement": "GitHub discloses candidate data only to recipients with a legitimate business need.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f7b58f1a20a04f20e654f546"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f7b58f1a20a04f20e654f546": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-022",
+      "aspect_id": "VAL-001-022-F02",
+      "statement": "Disclosed data must be used consistently with the candidate privacy statement.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f7b58f1a20a04f20e654f546"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f7b58f1a20a04f20e654f546": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-022",
+      "aspect_id": "VAL-001-022-F03",
+      "statement": "GitHub may disclose candidate data to third parties providing services for it.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f7b58f1a20a04f20e654f546"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f7b58f1a20a04f20e654f546": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-022",
+      "aspect_id": "VAL-001-022-F04",
+      "statement": "GitHub may disclose candidate data to comply with legal obligations or lawful process.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f7b58f1a20a04f20e654f546"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f7b58f1a20a04f20e654f546": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-023",
+      "aspect_id": "VAL-001-023-F01",
+      "statement": "Candidate-site cookies can store settings and enable sign-in.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_11e28f3378704f15c2a0ba73"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_11e28f3378704f15c2a0ba73": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-023",
+      "aspect_id": "VAL-001-023-F02",
+      "statement": "Candidate-site cookies can combat fraud and measure service performance.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_11e28f3378704f15c2a0ba73"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_11e28f3378704f15c2a0ba73": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-023",
+      "aspect_id": "VAL-001-023-F03",
+      "statement": "Web beacons help deliver cookies and collect usage or performance data.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_11e28f3378704f15c2a0ba73"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_11e28f3378704f15c2a0ba73": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-023",
+      "aspect_id": "VAL-001-023-F04",
+      "statement": "Browser controls can limit cookies and clearing or blocking them can withdraw consent.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_11e28f3378704f15c2a0ba73"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_11e28f3378704f15c2a0ba73": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F01",
+      "statement": "Service usage collection includes IP address, device and session details.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_2cec2cf86cb897094258e286"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_2cec2cf86cb897094258e286": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F02",
+      "statement": "Website logs include the referring site, pages viewed, and links clicked.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_2cec2cf86cb897094258e286"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_2cec2cf86cb897094258e286": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F03",
+      "statement": "Essential cookies support functions such as stored settings and recognition.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_2cec2cf86cb897094258e286"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_2cec2cf86cb897094258e286": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-024",
+      "aspect_id": "VAL-001-024-F04",
+      "statement": "Non-essential analytics cookies may depend on jurisdiction and consent.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_2cec2cf86cb897094258e286"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_2cec2cf86cb897094258e286": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-025",
+      "aspect_id": "VAL-001-025-F02",
+      "statement": "Participants agree to GitHub's Terms of Service.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_d4209de6474f5282d1013b77"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_d4209de6474f5282d1013b77": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-025",
+      "aspect_id": "VAL-001-025-F03",
+      "statement": "Participants also agree to Acceptable Use Policies and the Community Code of Conduct.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_d4209de6474f5282d1013b77"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_d4209de6474f5282d1013b77": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-025",
+      "aspect_id": "VAL-001-025-F04",
+      "statement": "GitHub investigates abuse reports and may moderate public Community content violating the terms or code.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_d4209de6474f5282d1013b77"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_d4209de6474f5282d1013b77": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F01",
+      "statement": "The platform license is limited to compliant extension development and related interoperability purposes.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4b1ccddd8f212ea10fc4f086"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4b1ccddd8f212ea10fc4f086": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F04",
+      "statement": "Violations may lead to extension removal, token revocation, or account or extension suspension.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4b1ccddd8f212ea10fc4f086"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4b1ccddd8f212ea10fc4f086": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-026",
+      "aspect_id": "VAL-001-026-F05",
+      "statement": "Appeals may be submitted through GitHub's appeal and reinstatement process.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4b1ccddd8f212ea10fc4f086"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4b1ccddd8f212ea10fc4f086": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-027",
+      "aspect_id": "VAL-001-027-F01",
+      "statement": "The partner must not resell GitHub products under the agreement.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_9f80d858e3246cbc81d58e68"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_9f80d858e3246cbc81d58e68": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "no_router_adaptive_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-027",
+      "aspect_id": "VAL-001-027-F02",
+      "statement": "The partner must not charge qualified users for use of GitHub products under the agreement.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_9f80d858e3246cbc81d58e68"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_9f80d858e3246cbc81d58e68": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-027",
+      "aspect_id": "VAL-001-027-F03",
+      "statement": "The partner is responsible and liable for qualified users' use of the products.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_9f80d858e3246cbc81d58e68"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_9f80d858e3246cbc81d58e68": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-027",
+      "aspect_id": "VAL-001-027-F04",
+      "statement": "The partner must cooperate with GitHub to enforce the agreement against misuse.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_9f80d858e3246cbc81d58e68"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_9f80d858e3246cbc81d58e68": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-027",
+      "aspect_id": "VAL-001-027-F05",
+      "statement": "The partner must promptly end product access for users who no longer qualify.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_9f80d858e3246cbc81d58e68"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_9f80d858e3246cbc81d58e68": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-028",
+      "aspect_id": "VAL-001-028-F01",
+      "statement": "Participants are expected to treat other participants with respect and courtesy.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_6603d8df9b666afe3f73439e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_6603d8df9b666afe3f73439e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-028",
+      "aspect_id": "VAL-001-028-F02",
+      "statement": "Harassment of event participants is not tolerated.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_6603d8df9b666afe3f73439e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_6603d8df9b666afe3f73439e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-028",
+      "aspect_id": "VAL-001-028-F03",
+      "statement": "Behavior reasonably making participants feel unsafe is not tolerated.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_6603d8df9b666afe3f73439e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_6603d8df9b666afe3f73439e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-028",
+      "aspect_id": "VAL-001-028-F04",
+      "statement": "Event communication and behavior should suit a professional setting with varied backgrounds.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_6603d8df9b666afe3f73439e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_6603d8df9b666afe3f73439e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-029",
+      "aspect_id": "VAL-001-029-F01",
+      "statement": "The Event Code of Conduct covers staff and sponsors as Event Participants.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_6603d8df9b666afe3f73439e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_6603d8df9b666afe3f73439e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-029",
+      "aspect_id": "VAL-001-029-F02",
+      "statement": "An attendee must have capacity and authority to accept the Event Terms.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_153a3b53c8146213b665c3a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_153a3b53c8146213b665c3a0": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-029",
+      "aspect_id": "VAL-001-029-F03",
+      "statement": "An attendee must agree to follow the Event Code of Conduct.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_153a3b53c8146213b665c3a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_153a3b53c8146213b665c3a0": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-029",
+      "aspect_id": "VAL-001-029-F04",
+      "statement": "Where alcohol is served, the attendee must meet the stated age or local legal drinking age.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_153a3b53c8146213b665c3a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_153a3b53c8146213b665c3a0": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-029",
+      "aspect_id": "VAL-001-029-F05",
+      "statement": "A participant asked to stop harassing or prohibited behavior must comply immediately.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_153a3b53c8146213b665c3a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_153a3b53c8146213b665c3a0": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-029",
+      "aspect_id": "VAL-001-029-F06",
+      "statement": "Organizers may warn or expel a violator without a refund.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_153a3b53c8146213b665c3a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_153a3b53c8146213b665c3a0": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F02",
+      "statement": "Pre-release software may fail or delete or corrupt data.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 5,
+      "pool_ranks": {
+        "chunk_34136e4d23182639a9255feb": 5
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F03",
+      "statement": "GitHub may change or discontinue a pre-release product without notice.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 5,
+      "pool_ranks": {
+        "chunk_34136e4d23182639a9255feb": 5
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-030",
+      "aspect_id": "VAL-001-030-F04",
+      "statement": "GitHub is not obligated to provide maintenance, support, or updates for the pre-release product.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_34136e4d23182639a9255feb"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 5,
+      "pool_ranks": {
+        "chunk_34136e4d23182639a9255feb": 5
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-031",
+      "aspect_id": "VAL-001-031-F01",
+      "statement": "GitHub assesses its business and supply chain for modern-slavery and child-labor risks.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_4f86b2f54a2759fff7dc283a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4f86b2f54a2759fff7dc283a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-031",
+      "aspect_id": "VAL-001-031-F02",
+      "statement": "GitHub prioritizes more severe, widespread, or probable risk areas for due diligence and monitoring.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_4f86b2f54a2759fff7dc283a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4f86b2f54a2759fff7dc283a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-031",
+      "aspect_id": "VAL-001-031-F03",
+      "statement": "GitHub obtains supplier assurances that their practices align with the statement and relevant law.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_4f86b2f54a2759fff7dc283a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4f86b2f54a2759fff7dc283a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-031",
+      "aspect_id": "VAL-001-031-F05",
+      "statement": "GitHub says it will audit existing suppliers and seek confirmation from higher-risk suppliers.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_7b7eaace154dcbc8c109107b"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_7b7eaace154dcbc8c109107b": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-031",
+      "aspect_id": "VAL-001-031-F06",
+      "statement": "If GitHub directly caused such harm, it commits to remediation for victims.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_7b7eaace154dcbc8c109107b"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_7b7eaace154dcbc8c109107b": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F02",
+      "statement": "Actions cannot be used for cryptomining.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_21c14e57ff95da6ba1659aaf"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_21c14e57ff95da6ba1659aaf": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "adaptive_prefix_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F03",
+      "statement": "Actions cannot be offered as a standalone or integrated commercial Actions service.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_21c14e57ff95da6ba1659aaf"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_21c14e57ff95da6ba1659aaf": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F04",
+      "statement": "Disproportionate server burden, such as using Actions as a CDN or serverless app, is prohibited.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_21c14e57ff95da6ba1659aaf"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_21c14e57ff95da6ba1659aaf": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-032",
+      "aspect_id": "VAL-001-032-F05",
+      "statement": "Misuse can cause job termination, use restrictions, repository disabling, or account suspension.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_21c14e57ff95da6ba1659aaf"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_21c14e57ff95da6ba1659aaf": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F01",
+      "statement": "Maintainers can publish community-specific expectations for project interaction.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_648a4d2bbb17b6b1207a8f13": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F02",
+      "statement": "People with repository write access can edit, delete, or hide comments.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_648a4d2bbb17b6b1207a8f13": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F03",
+      "statement": "Authorized repository members can lock disruptive conversations.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_648a4d2bbb17b6b1207a8f13": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F04",
+      "statement": "An account or organization can block a user.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_648a4d2bbb17b6b1207a8f13": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "aspect_id": "VAL-001-033-F05",
+      "statement": "A public project can set temporary interaction limits when facing unwanted attention.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_648a4d2bbb17b6b1207a8f13"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 6,
+      "pool_ranks": {
+        "chunk_648a4d2bbb17b6b1207a8f13": 6
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2"
+      ]
+    },
+    {
+      "case_id": "VAL-001-034",
+      "aspect_id": "VAL-001-034-F01",
+      "statement": "Extension developers must protect personal data and encrypt any stored personal data.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ff54b5e32ef69dc034a00ce1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_ff54b5e32ef69dc034a00ce1": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-034",
+      "aspect_id": "VAL-001-034-F02",
+      "statement": "Extensions may not bypass access controls.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ff54b5e32ef69dc034a00ce1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_ff54b5e32ef69dc034a00ce1": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-034",
+      "aspect_id": "VAL-001-034-F03",
+      "statement": "Extensions may not use unpublished APIs.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ff54b5e32ef69dc034a00ce1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_ff54b5e32ef69dc034a00ce1": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-034",
+      "aspect_id": "VAL-001-034-F04",
+      "statement": "Extensions may not collect, store, or use personal data without proper user consent.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ff54b5e32ef69dc034a00ce1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_ff54b5e32ef69dc034a00ce1": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-034",
+      "aspect_id": "VAL-001-034-F05",
+      "statement": "Contacting users outside GitHub requires a separate clear permission process, except for specified emergencies.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_ff54b5e32ef69dc034a00ce1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_ff54b5e32ef69dc034a00ce1": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-035",
+      "aspect_id": "VAL-001-035-F01",
+      "statement": "Individual users retain ultimate administrative control over their own accounts.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_379442e1fe4711d16df933a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_379442e1fe4711d16df933a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-035",
+      "aspect_id": "VAL-001-035-F02",
+      "statement": "Individual users retain ultimate administrative control over content within their accounts.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_379442e1fe4711d16df933a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_379442e1fe4711d16df933a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-035",
+      "aspect_id": "VAL-001-035-F03",
+      "statement": "The customer retains ultimate administrative control over organizations created for it.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_379442e1fe4711d16df933a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_379442e1fe4711d16df933a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-035",
+      "aspect_id": "VAL-001-035-F04",
+      "statement": "The customer controls user-generated content in repositories within its organizations, subject to the corporate terms.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_379442e1fe4711d16df933a9"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_379442e1fe4711d16df933a9": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-036",
+      "aspect_id": "VAL-001-036-F01",
+      "statement": "Urgent event problems should be reported directly to venue security or a GitHub employee.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9092956baf424fb221444e70"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9092956baf424fb221444e70": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-036",
+      "aspect_id": "VAL-001-036-F02",
+      "statement": "Non-urgent issues can be emailed to GitHub's event contact.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9092956baf424fb221444e70"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9092956baf424fb221444e70": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-036",
+      "aspect_id": "VAL-001-036-F03",
+      "statement": "Life-threatening situations call for dialing 911 immediately.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9092956baf424fb221444e70"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9092956baf424fb221444e70": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-036",
+      "aspect_id": "VAL-001-036-F04",
+      "statement": "GitHub employees can help participants contact security or law enforcement or escort them to safety.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_9092956baf424fb221444e70"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_9092956baf424fb221444e70": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-037",
+      "aspect_id": "VAL-001-037-F02",
+      "statement": "The developer is solely responsible for its Developer Products.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_43cef0f3d5cec7c0f0dde036"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_43cef0f3d5cec7c0f0dde036": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-037",
+      "aspect_id": "VAL-001-037-F03",
+      "statement": "The developer grants GitHub a license to process and display the listing on Marketplace.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_43cef0f3d5cec7c0f0dde036"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_43cef0f3d5cec7c0f0dde036": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-037",
+      "aspect_id": "VAL-001-037-F04",
+      "statement": "The developer must provide a separate EULA governing end-user rights to its products.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_43cef0f3d5cec7c0f0dde036"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_43cef0f3d5cec7c0f0dde036": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-037",
+      "aspect_id": "VAL-001-037-F05",
+      "statement": "The EULA is between developer and end user.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_43cef0f3d5cec7c0f0dde036"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_43cef0f3d5cec7c0f0dde036": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-037",
+      "aspect_id": "VAL-001-037-F06",
+      "statement": "GitHub is not responsible under the developer's EULA.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_43cef0f3d5cec7c0f0dde036"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_43cef0f3d5cec7c0f0dde036": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-038",
+      "aspect_id": "VAL-001-038-F01",
+      "statement": "A US Marketplace user must be at least 13 years old.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e0d78a9f258b531630c4e0f2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e0d78a9f258b531630c4e0f2": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-038",
+      "aspect_id": "VAL-001-038-F02",
+      "statement": "A Marketplace user outside the US must meet that country's minimum age law.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e0d78a9f258b531630c4e0f2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e0d78a9f258b531630c4e0f2": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-038",
+      "aspect_id": "VAL-001-038-F03",
+      "statement": "A Marketplace user must have a valid GitHub account.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e0d78a9f258b531630c4e0f2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e0d78a9f258b531630c4e0f2": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-038",
+      "aspect_id": "VAL-001-038-F04",
+      "statement": "A Marketplace user must accept applicable GitHub Terms and Marketplace Terms.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e0d78a9f258b531630c4e0f2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e0d78a9f258b531630c4e0f2": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-038",
+      "aspect_id": "VAL-001-038-F05",
+      "statement": "A person accepting terms for an entity must have authority to bind that entity and its users.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e0d78a9f258b531630c4e0f2"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e0d78a9f258b531630c4e0f2": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-039",
+      "aspect_id": "VAL-001-039-F01",
+      "statement": "The Software's open-source license and applicable component licenses appear in Open Source Notices.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_8c88d9a6aab4ed4705a2c814"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_8c88d9a6aab4ed4705a2c814": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-039",
+      "aspect_id": "VAL-001-039-F03",
+      "statement": "Application Terms remain part of the agreement unless GitHub agrees otherwise in writing.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_8c88d9a6aab4ed4705a2c814"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_8c88d9a6aab4ed4705a2c814": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "adaptive_prefix_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-039",
+      "aspect_id": "VAL-001-039-F04",
+      "statement": "An open-source license governs a component only to the limited extent it expressly supersedes Application Terms.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_8c88d9a6aab4ed4705a2c814"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_8c88d9a6aab4ed4705a2c814": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-040",
+      "aspect_id": "VAL-001-040-F01",
+      "statement": "The pre-release license permits non-production evaluation and testing.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_312ae69281cf6feec4c0ac99"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_312ae69281cf6feec4c0ac99": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-040",
+      "aspect_id": "VAL-001-040-F02",
+      "statement": "Internal network deployment for evaluation is allowed.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_312ae69281cf6feec4c0ac99"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_312ae69281cf6feec4c0ac99": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-040",
+      "aspect_id": "VAL-001-040-F03",
+      "statement": "Active production use, including live customer-data processing, is not allowed.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_312ae69281cf6feec4c0ac99"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 2,
+      "pool_ranks": {
+        "chunk_312ae69281cf6feec4c0ac99": 2
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-041",
+      "aspect_id": "VAL-001-041-F01",
+      "statement": "Non-public program information is confidential even without a confidentiality marking.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ac3f4d73a79619dc52dca70a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ac3f4d73a79619dc52dca70a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-041",
+      "aspect_id": "VAL-001-041-F02",
+      "statement": "The participant may use confidential information only to provide program feedback.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ac3f4d73a79619dc52dca70a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ac3f4d73a79619dc52dca70a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-041",
+      "aspect_id": "VAL-001-041-F03",
+      "statement": "The participant must not disclose program confidential information to third parties.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ac3f4d73a79619dc52dca70a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ac3f4d73a79619dc52dca70a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-041",
+      "aspect_id": "VAL-001-041-F04",
+      "statement": "Legally compelled disclosure requires prior notice to GitHub.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ac3f4d73a79619dc52dca70a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ac3f4d73a79619dc52dca70a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-041",
+      "aspect_id": "VAL-001-041-F05",
+      "statement": "Legally compelled disclosure requires efforts to limit disclosure and obtain confidential treatment.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ac3f4d73a79619dc52dca70a"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ac3f4d73a79619dc52dca70a": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-042",
+      "aspect_id": "VAL-001-042-F01",
+      "statement": "The partner grants GitHub a perpetual and irrevocable license for token patterns used in security scanning or credential protection.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_3a99d939976741f6cc61bcb1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_3a99d939976741f6cc61bcb1": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-042",
+      "aspect_id": "VAL-001-042-F02",
+      "statement": "GitHub may sublicense token patterns only to affiliates and bound service providers.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_3a99d939976741f6cc61bcb1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_3a99d939976741f6cc61bcb1": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-042",
+      "aspect_id": "VAL-001-042-F03",
+      "statement": "GitHub may distribute software containing token patterns under MIT or another OSI-approved license.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_3a99d939976741f6cc61bcb1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_3a99d939976741f6cc61bcb1": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-042",
+      "aspect_id": "VAL-001-042-F04",
+      "statement": "Once open-source distributed, incorporated token patterns are not subject to recall or revocation.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_3a99d939976741f6cc61bcb1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_3a99d939976741f6cc61bcb1": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-042",
+      "aspect_id": "VAL-001-042-F05",
+      "statement": "The token-pattern license survives termination or expiration.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_3a99d939976741f6cc61bcb1"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_3a99d939976741f6cc61bcb1": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-043",
+      "aspect_id": "VAL-001-043-F02",
+      "statement": "GitHub notifies affected users of the specific allegedly illegal content and the legal takedown request.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ef6899bc1eb9e4fe063bec90"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ef6899bc1eb9e4fe063bec90": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-043",
+      "aspect_id": "VAL-001-043-F03",
+      "statement": "GitHub allows affected users to appeal the decision.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ef6899bc1eb9e4fe063bec90"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ef6899bc1eb9e4fe063bec90": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-043",
+      "aspect_id": "VAL-001-043-F04",
+      "statement": "GitHub limits the takedown's geographic scope when possible.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ef6899bc1eb9e4fe063bec90"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ef6899bc1eb9e4fe063bec90": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-043",
+      "aspect_id": "VAL-001-043-F05",
+      "statement": "GitHub posts the official request in its public government-takedowns repository.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_ef6899bc1eb9e4fe063bec90"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_ef6899bc1eb9e4fe063bec90": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-044",
+      "aspect_id": "VAL-001-044-F02",
+      "statement": "Enterprise Server can be used to store ITAR or other export-controlled information.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4eb0be3c894567fc2e46ef9e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4eb0be3c894567fc2e46ef9e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-044",
+      "aspect_id": "VAL-001-044-F03",
+      "statement": "End users remain responsible for ITAR and other export-control compliance.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4eb0be3c894567fc2e46ef9e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4eb0be3c894567fc2e46ef9e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-044",
+      "aspect_id": "VAL-001-044-F05",
+      "statement": "Enterprise Server can usually be exported without a license to most destinations.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4eb0be3c894567fc2e46ef9e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4eb0be3c894567fc2e46ef9e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-044",
+      "aspect_id": "VAL-001-044-F06",
+      "statement": "It may not be sold or exported to the specified Country Group E:1 destinations or named restricted Ukrainian regions.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_4eb0be3c894567fc2e46ef9e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_4eb0be3c894567fc2e46ef9e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F01",
+      "statement": "Public user profiles display a username.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_479d01282d63ba9028b61fb4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F02",
+      "statement": "Public user profiles display starred repositories.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_479d01282d63ba9028b61fb4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F03",
+      "statement": "Users may optionally publish their real name.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_479d01282d63ba9028b61fb4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F04",
+      "statement": "GitHub may maintain private email addresses as private account data.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_479d01282d63ba9028b61fb4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F05",
+      "statement": "GitHub may maintain payment details as private account data.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_479d01282d63ba9028b61fb4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-045",
+      "aspect_id": "VAL-001-045-F06",
+      "statement": "GitHub may maintain security access logs as private account data.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_479d01282d63ba9028b61fb4"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_479d01282d63ba9028b61fb4": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F01",
+      "statement": "GitHub generally notifies users about pending account or repository requests.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "n_support": 1,
+      "in_pool": false,
+      "best_rank": null,
+      "pool_ranks": {
+        "chunk_35fd87021964946f76efbd5f": null
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": false
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F02",
+      "statement": "Notice may be omitted when law or a court order prohibits it.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "n_support": 1,
+      "in_pool": false,
+      "best_rank": null,
+      "pool_ranks": {
+        "chunk_35fd87021964946f76efbd5f": null
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": false
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F03",
+      "statement": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "n_support": 1,
+      "in_pool": false,
+      "best_rank": null,
+      "pool_ranks": {
+        "chunk_35fd87021964946f76efbd5f": null
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-046",
+      "aspect_id": "VAL-001-046-F04",
+      "statement": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "n_support": 1,
+      "in_pool": false,
+      "best_rank": null,
+      "pool_ranks": {
+        "chunk_35fd87021964946f76efbd5f": null
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": false
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": false
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": false
+        },
+        "no_router_adaptive_v1": {
+          "answer": "missing",
+          "selected": false
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1",
+        "no_router_adaptive_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-047",
+      "aspect_id": "VAL-001-047-F01",
+      "statement": "Non-public user data is disclosed with user consent or valid legal process, subject to limited urgent circumstances.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e38e8b117bf75ca2426fb8a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e38e8b117bf75ca2426fb8a0": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-047",
+      "aspect_id": "VAL-001-047-F02",
+      "statement": "A valid subpoena can obtain some non-public account information in an official civil or criminal investigation.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e38e8b117bf75ca2426fb8a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e38e8b117bf75ca2426fb8a0": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-047",
+      "aspect_id": "VAL-001-047-F04",
+      "statement": "Account access logs require a qualifying court order or search warrant.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_e38e8b117bf75ca2426fb8a0"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e38e8b117bf75ca2426fb8a0": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-048",
+      "aspect_id": "VAL-001-048-F01",
+      "statement": "GitHub SIRT handles internal incident response when its constituency is affected.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f6dbe04a8ce7a23247233ad5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f6dbe04a8ce7a23247233ad5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-048",
+      "aspect_id": "VAL-001-048-F02",
+      "statement": "GitHub SIRT does not provide incident response services to customers.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f6dbe04a8ce7a23247233ad5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f6dbe04a8ce7a23247233ad5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-048",
+      "aspect_id": "VAL-001-048-F03",
+      "statement": "GitHub aims to give affected customers timely, accurate incident information for their own investigation.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_f6dbe04a8ce7a23247233ad5"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_f6dbe04a8ce7a23247233ad5": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-048",
+      "aspect_id": "VAL-001-048-F05",
+      "statement": "SIRT triage investigates whether an incident occurred and its impact.",
+      "route": "BROAD",
+      "support_chunks": [
+        "chunk_810cd82c81700d3110b01e4d"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 3,
+      "pool_ranks": {
+        "chunk_810cd82c81700d3110b01e4d": 3
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F02",
+      "statement": "Even a small benefit can be improper when intended to influence someone.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_e6b1a931deda6bd84305c1ee"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e6b1a931deda6bd84305c1ee": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F03",
+      "statement": "Tickets to major events are examples of unacceptable customer gifts.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_e6b1a931deda6bd84305c1ee"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e6b1a931deda6bd84305c1ee": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F04",
+      "statement": "Low-cost bleacher-type sports tickets are examples of acceptable customer hospitality.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_e6b1a931deda6bd84305c1ee"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e6b1a931deda6bd84305c1ee": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-049",
+      "aspect_id": "VAL-001-049-F05",
+      "statement": "A reasonably priced dinner is an example of acceptable customer hospitality.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_e6b1a931deda6bd84305c1ee"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_e6b1a931deda6bd84305c1ee": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-050",
+      "aspect_id": "VAL-001-050-F01",
+      "statement": "The commitment applies before GitHub brings a non-defensive claim arising from termination of a Covered License.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aaba9b84619227b3f737900e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aaba9b84619227b3f737900e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "missing",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "missing",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "missing",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": [
+        "fixed_top5",
+        "coverage_selector_v2",
+        "adaptive_prefix_v1"
+      ]
+    },
+    {
+      "case_id": "VAL-001-050",
+      "aspect_id": "VAL-001-050-F02",
+      "statement": "Stopping a violation provisionally reinstates the license unless the copyright holder finally terminates it.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aaba9b84619227b3f737900e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aaba9b84619227b3f737900e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-050",
+      "aspect_id": "VAL-001-050-F03",
+      "statement": "Stopping a violation permanently reinstates the license if the copyright holder does not notify the violator within 60 days.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aaba9b84619227b3f737900e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aaba9b84619227b3f737900e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    },
+    {
+      "case_id": "VAL-001-050",
+      "aspect_id": "VAL-001-050-F04",
+      "statement": "A first-time notice followed by cure within 30 days also permanently reinstates the license.",
+      "route": "SIMPLE",
+      "support_chunks": [
+        "chunk_aaba9b84619227b3f737900e"
+      ],
+      "n_support": 1,
+      "in_pool": true,
+      "best_rank": 1,
+      "pool_ranks": {
+        "chunk_aaba9b84619227b3f737900e": 1
+      },
+      "per_arm": {
+        "fixed_top5": {
+          "answer": "covered",
+          "selected": true
+        },
+        "coverage_selector_v2": {
+          "answer": "covered",
+          "selected": true
+        },
+        "adaptive_prefix_v1": {
+          "answer": "covered",
+          "selected": true
+        },
+        "no_router_adaptive_v1": {
+          "answer": "covered",
+          "selected": true
+        }
+      },
+      "missing_in": []
+    }
+  ]
+}

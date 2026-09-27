@@ -1,0 +1,1649 @@
+{
+  "schema_version": 1,
+  "version": "measurement-validity-audit-v1",
+  "status": "complete",
+  "scope_note": "Development/diagnostic audit on frozen artifacts; Validate only. Adjudication is different-model, same-family (deepseek-v4-pro vs deepseek-v4-flash), not family-independent.",
+  "selection": {
+    "seed": 20260926,
+    "adjudicator_model": "deepseek-v4-pro",
+    "nominal_problematic_facts": [
+      {
+        "case_id": "VAL-001-008",
+        "fact_id": "VAL-001-008-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-009",
+        "fact_id": "VAL-001-009-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-009",
+        "fact_id": "VAL-001-009-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-011",
+        "fact_id": "VAL-001-011-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-022",
+        "fact_id": "VAL-001-022-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-026",
+        "fact_id": "VAL-001-026-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-037",
+        "fact_id": "VAL-001-037-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-039",
+        "fact_id": "VAL-001-039-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-050",
+        "fact_id": "VAL-001-050-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-050",
+        "fact_id": "VAL-001-050-F05",
+        "nominal_type": "incorrect_synthesis"
+      }
+    ],
+    "nominal_counts": {
+      "omission": 9,
+      "incorrect_synthesis": 1
+    },
+    "stratum_a_case_ids": [
+      "VAL-001-008",
+      "VAL-001-009",
+      "VAL-001-011",
+      "VAL-001-022",
+      "VAL-001-026",
+      "VAL-001-030",
+      "VAL-001-032",
+      "VAL-001-037",
+      "VAL-001-039",
+      "VAL-001-050"
+    ],
+    "stratum_a_facts": [
+      "VAL-001-008-F01",
+      "VAL-001-008-F03",
+      "VAL-001-009-F03",
+      "VAL-001-009-F04",
+      "VAL-001-011-F02",
+      "VAL-001-011-F03",
+      "VAL-001-022-F01",
+      "VAL-001-022-F03",
+      "VAL-001-026-F01",
+      "VAL-001-026-F03",
+      "VAL-001-030-F01",
+      "VAL-001-030-F02",
+      "VAL-001-032-F01",
+      "VAL-001-032-F02",
+      "VAL-001-037-F02",
+      "VAL-001-037-F03",
+      "VAL-001-039-F01",
+      "VAL-001-039-F03",
+      "VAL-001-050-F02",
+      "VAL-001-050-F03"
+    ],
+    "stratum_b_facts": [
+      "VAL-001-003-F02",
+      "VAL-001-004-F02",
+      "VAL-001-005-F01",
+      "VAL-001-007-F03",
+      "VAL-001-012-F03",
+      "VAL-001-013-F03",
+      "VAL-001-015-F02",
+      "VAL-001-017-F03",
+      "VAL-001-019-F01",
+      "VAL-001-020-F04",
+      "VAL-001-021-F03",
+      "VAL-001-024-F03",
+      "VAL-001-028-F01",
+      "VAL-001-035-F01",
+      "VAL-001-036-F02",
+      "VAL-001-042-F05",
+      "VAL-001-044-F04",
+      "VAL-001-045-F06",
+      "VAL-001-047-F04",
+      "VAL-001-049-F06"
+    ],
+    "covered_sample_size": 40,
+    "human_review_items": [
+      {
+        "fact_id": "VAL-001-008-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-009-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-009-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-011-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-022-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-026-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-037-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-039-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-050-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "fact_id": "VAL-001-050-F05",
+        "nominal_type": "incorrect_synthesis"
+      },
+      {
+        "fact_id": "VAL-001-009-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-008-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-008-F01",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-022-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-011-F03",
+        "stratum": "A"
+      },
+      {
+        "fact_id": "VAL-001-004-F02",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-007-F03",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-024-F03",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-042-F05",
+        "stratum": "B"
+      },
+      {
+        "fact_id": "VAL-001-017-F03",
+        "stratum": "B"
+      }
+    ]
+  },
+  "adjudications": {
+    "VAL-001-008-F02": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer correctly conveys that email to copyright@github.com is a submission method, matching the evidence."
+    },
+    "VAL-001-009-F01": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately restates the three required elements from the evidence and adds consistent context about GitHub's review process."
+    },
+    "VAL-001-009-F02": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately restates the three required elements from the evidence and adds consistent context about GitHub's review process."
+    },
+    "VAL-001-011-F01": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately paraphrases the evidence: it states GitHub prohibits content depicting or glorifying violence or physical harm against humans or animals, and notes legitimate contexts like documentary/educational use with warnings and possible visibility limits."
+    },
+    "VAL-001-022-F02": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately reflects the evidence that GitHub may disclose candidate data to subsidiaries, affiliates, and other third parties including service providers, limited to legitimate business need and specified legitimate purposes."
+    },
+    "VAL-001-026-F02": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately paraphrases the license grant from E1, including its limited, worldwide, non-exclusive, non-transferable nature and permitted purposes. The violation consequences and appeal process are not in the provided evidence, but the question asks about them and the answer cites S1; since only E1 is supplied, the license portion is confirmed as present."
+    },
+    "VAL-001-037-F01": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys that the Developer is solely responsible for its Developer Products, matching the evidence."
+    },
+    "VAL-001-039-F02": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "unclear_source",
+      "reason": "The answer cites S1 for details about 'Open Source Notices' documentation and license override conditions, but the provided evidence E1 only states GitHub's offer to provide source code for open-source components and does not support those claims."
+    },
+    "VAL-001-050-F01": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "unclear_source",
+      "reason": "The supplied evidence only states GitHub's general commitment to extend cure/reinstatement provisions from GPLv3; it does not contain the specific provisional/permanent reinstatement conditions described in the answer."
+    },
+    "VAL-001-050-F05": {
+      "nominal": true,
+      "stratum": null,
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "unclear_source",
+      "reason": "The evidence only defines Covered License; it does not address reinstatement conditions, timing, or provisional/permanent reinstatement."
+    },
+    "VAL-001-008-F01": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer states the fastest option is the contact form, which matches the evidence that the fastest way to get a response is to use the DMCA contact form."
+    },
+    "VAL-001-008-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer correctly states the submission methods, notes the fastest option, and accurately conveys that the waiting period begins upon receipt for physical mail, matching the evidence."
+    },
+    "VAL-001-009-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately restates the three required elements from the evidence and adds consistent context about GitHub's review process."
+    },
+    "VAL-001-009-F04": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately restates the three required elements from the evidence and adds consistent context about GitHub's review process."
+    },
+    "VAL-001-011-F02": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately paraphrases the evidence: it states GitHub prohibits content depicting or glorifying violence or physical harm against humans or animals, and notes legitimate contexts like documentary/educational use with warnings and possible visibility limits."
+    },
+    "VAL-001-011-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the evidence: GitHub prohibits indiscriminate violent content, allows legitimate educational/documentary uses with warnings, and may limit visibility to opt-in users."
+    },
+    "VAL-001-022-F01": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately reflects the evidence that GitHub may disclose candidate data to subsidiaries, affiliates, and other third parties including service providers, limited to legitimate business need and specified legitimate purposes."
+    },
+    "VAL-001-022-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys that GitHub may share candidate data with subsidiaries, affiliates, and third parties/service providers only where there is a legitimate business need and for specified legitimate purposes, matching the evidence."
+    },
+    "VAL-001-026-F01": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately paraphrases the license grant from E1, including its limited, worldwide, non-exclusive, non-transferable nature and permitted purposes. The violation consequences and appeal process are not in the provided evidence, but the question asks about them and the answer cites S1; since only E1 is supplied, the license portion is confirmed as present."
+    },
+    "VAL-001-026-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the limited license, GitHub's enforcement actions, and appeal process as supported by the evidence."
+    },
+    "VAL-001-030-F01": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "unclear_source",
+      "reason": "The answer cites sources S1-S5, but the provided evidence contains only E1, which merely defines pre-release software. None of the answer's specific claims about service commitments, risks, or confidentiality are supported by the supplied evidence."
+    },
+    "VAL-001-030-F02": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately paraphrases the evidence that pre-release software may not operate correctly, may delete or corrupt data, or have other bugs, and may not work like the final version."
+    },
+    "VAL-001-032-F01": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the prohibition on using Actions as a general compute or delivery service and lists the enforcement consequences, consistent with the source excerpt."
+    },
+    "VAL-001-032-F02": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the prohibition on using Actions as a general compute/delivery service, the examples of misuse, and the potential enforcement actions, consistent with the source evidence."
+    },
+    "VAL-001-037-F02": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys that the Developer is solely responsible for its Developer Products, matching the evidence."
+    },
+    "VAL-001-037-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the license grant from the developer to GitHub, including the non-exclusive, worldwide, transferable, sublicensable, fully paid-up, royalty-free terms and the rights to process and display the listing and brand features."
+    },
+    "VAL-001-039-F01": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately reflects the evidence that the open-source license is included in the 'Open Source Notices' documentation, which also contains copies of applicable licenses."
+    },
+    "VAL-001-039-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the evidence: licenses are documented in Open Source Notices, and open-source licenses override Application Terms only to the limited extent they expressly supersede them."
+    },
+    "VAL-001-050-F02": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately restates the provisional and permanent reinstatement conditions from the evidence, including the 60-day notice provision and the additional permanent reinstatement scenario, and correctly notes GPLv2 is covered."
+    },
+    "VAL-001-050-F03": {
+      "nominal": false,
+      "stratum": "A",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately restates the provisional and permanent reinstatement conditions from the evidence, including the 60-day notice provision and the additional permanent reinstatement scenario, and correctly notes GPLv2 is covered."
+    },
+    "VAL-001-003-F02": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys that mere mentions of company identity, name, brand, domain name, or other company references fall outside the private-information removal process unless a security threat is articulated, matching the evidence."
+    },
+    "VAL-001-004-F02": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer includes 'Trademark registration number' as required information, matching the evidence."
+    },
+    "VAL-001-005-F01": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the requirement to identify the disabled content and its location by copying the URL(s) from the takedown notice, matching the source evidence."
+    },
+    "VAL-001-007-F03": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the evidence: send the correct request type, private information requests separately from infringement requests, and other removal requests cannot be processed simultaneously."
+    },
+    "VAL-001-012-F03": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the actions GitHub may take, the request process, required information, and possible proof, consistent with the source excerpt."
+    },
+    "VAL-001-013-F03": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer includes 'Rank abuse, such as automated starring or following' which matches the evidence excerpt."
+    },
+    "VAL-001-015-F02": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys that GitHub prohibits harassment, bullying, or abuse, and includes the specific example of piling on or orchestrating disruptive activity amounting to abuse, matching the evidence."
+    },
+    "VAL-001-017-F03": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the policy: similar usernames are not necessarily impersonation, context is considered, and parody/satire are generally allowed in line with Acceptable Use Policies."
+    },
+    "VAL-001-019-F01": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the barred harmful uses and the contextual assessment factors from the source evidence."
+    },
+    "VAL-001-020-F04": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys that the cookie list may change and that GitHub provides instructions for receiving update notifications, matching the evidence."
+    },
+    "VAL-001-021-F03": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately reflects the evidence: data collected while researching job openings may later be processed for entering into an employment relationship if the person applies and obtains a role, under a compatible purpose with a legal basis."
+    },
+    "VAL-001-024-F03": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the evidence that essential cookies provide essential functionality such as storing settings and recognizing users, and it correctly distinguishes them from non-essential cookies."
+    },
+    "VAL-001-028-F01": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the expected respectful and courteous behavior from the evidence, with additional details that are consistent with the source."
+    },
+    "VAL-001-035-F01": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer correctly states that individual employees retain ultimate administrative control over their individual accounts, matching the evidence. The organization control portion is not in the provided evidence but is not contradicted by it."
+    },
+    "VAL-001-036-F02": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the reporting channels and staff assistance described in the evidence."
+    },
+    "VAL-001-042-F05": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer states that the license survives expiration or termination, which matches the evidence that the Section 2.2 license survives expiration or termination for any reason."
+    },
+    "VAL-001-044-F04": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "incorrect_synthesis",
+      "reason": "The answer attributes multiple claims to S1–S5, but the only provided evidence (E1) supports only the ECCN/NLR statement. The ITAR storage permission, destination restrictions, and user-responsibility statements are not present in the supplied evidence."
+    },
+    "VAL-001-045-F06": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "unclear_source",
+      "reason": "The supplied evidence only contains a fragment about security access logs and does not support the answer's detailed public, optional, and private account information lists."
+    },
+    "VAL-001-047-F04": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "SEMANTICALLY_PRESENT",
+      "diagnostic_tag": "paraphrase",
+      "reason": "The answer accurately conveys the legal process required for disclosure of non-public user data and correctly distinguishes subpoena requests from access log requests, matching the evidence."
+    },
+    "VAL-001-049-F06": {
+      "nominal": false,
+      "stratum": "B",
+      "packet_source_ids": [
+        "E1"
+      ],
+      "label": "ABSENT_OR_INCORRECT",
+      "diagnostic_tag": "unclear_source",
+      "reason": "The supplied evidence only addresses not accepting bribes from vendors and running gifts by Legal; it does not support the answer's detailed distinction between acceptable hospitality and improper influence, including intent, examples of acceptable/unacceptable gifts, or special rules for government officials."
+    }
+  },
+  "nominal_error_side": {
+    "omission": {
+      "numerator": 2,
+      "denominator": 9,
+      "proportion": 0.2222222222222222,
+      "wilson_95": [
+        0.0632237623122272,
+        0.5474166563271946
+      ]
+    },
+    "incorrect_synthesis": {
+      "numerator": 1,
+      "denominator": 1,
+      "proportion": 1.0,
+      "wilson_95": [
+        0.20654329147389294,
+        1.0
+      ]
+    },
+    "combined_descriptive": {
+      "numerator": 3,
+      "denominator": 10,
+      "proportion": 0.3,
+      "wilson_95": [
+        0.10778928748621182,
+        0.6032267800204347
+      ]
+    },
+    "labels": {
+      "VAL-001-008-F02": "SEMANTICALLY_PRESENT",
+      "VAL-001-009-F01": "SEMANTICALLY_PRESENT",
+      "VAL-001-009-F02": "SEMANTICALLY_PRESENT",
+      "VAL-001-011-F01": "SEMANTICALLY_PRESENT",
+      "VAL-001-022-F02": "SEMANTICALLY_PRESENT",
+      "VAL-001-026-F02": "SEMANTICALLY_PRESENT",
+      "VAL-001-037-F01": "SEMANTICALLY_PRESENT",
+      "VAL-001-039-F02": "ABSENT_OR_INCORRECT",
+      "VAL-001-050-F01": "ABSENT_OR_INCORRECT",
+      "VAL-001-050-F05": "ABSENT_OR_INCORRECT"
+    }
+  },
+  "covered_side": {
+    "sample_size": 40,
+    "hidden_errors": 4,
+    "real_covered_numerator": 36,
+    "proportion_real_covered": 0.9,
+    "wilson_95": [
+      0.7694792561952611,
+      0.9604211124044252
+    ]
+  },
+  "stability": {
+    "VAL-001-008": {
+      "target_answer_hash": "2ab2644100b827842144962964e0ff6d35533d52aae53568d86738fa46923acf",
+      "labels": {
+        "S1_isolated": {
+          "VAL-001-008-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F02": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S2_minilm_partner": {
+          "VAL-001-008-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F02": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S3_coverage_partner": {
+          "VAL-001-008-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F02": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F03": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S4_identical_copy": {
+          "VAL-001-008-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F02": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F03": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S5_repeat_s3": {
+          "VAL-001-008-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-008-F02": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F03": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-008-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        }
+      },
+      "E_identical_pair_within": 0,
+      "E_fact": 1,
+      "fact_count": 4,
+      "E_case": 0,
+      "E_partner": 1,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": false,
+        "S2_minilm_partner": false,
+        "S3_coverage_partner": false,
+        "S4_identical_copy": false,
+        "S5_repeat_s3": false
+      },
+      "grounded_by_condition": {
+        "S1_isolated": {
+          "VAL-001-008-F01": true,
+          "VAL-001-008-F02": false,
+          "VAL-001-008-F03": true,
+          "VAL-001-008-F04": true
+        },
+        "S2_minilm_partner": {
+          "VAL-001-008-F01": true,
+          "VAL-001-008-F02": false,
+          "VAL-001-008-F03": true,
+          "VAL-001-008-F04": true
+        },
+        "S3_coverage_partner": {
+          "VAL-001-008-F01": true,
+          "VAL-001-008-F02": false,
+          "VAL-001-008-F03": false,
+          "VAL-001-008-F04": true
+        },
+        "S4_identical_copy": {
+          "VAL-001-008-F01": true,
+          "VAL-001-008-F02": false,
+          "VAL-001-008-F03": false,
+          "VAL-001-008-F04": true
+        },
+        "S5_repeat_s3": {
+          "VAL-001-008-F01": true,
+          "VAL-001-008-F02": false,
+          "VAL-001-008-F03": false,
+          "VAL-001-008-F04": true
+        }
+      }
+    },
+    "VAL-001-022": {
+      "target_answer_hash": "0015befb4e96c8cf08c0b4896ce78efe4f646319748c9a1c9828b1eb528c7039",
+      "labels": {
+        "S1_isolated": {
+          "VAL-001-022-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S2_minilm_partner": {
+          "VAL-001-022-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S3_coverage_partner": {
+          "VAL-001-022-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S4_identical_copy": {
+          "VAL-001-022-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S5_repeat_s3": {
+          "VAL-001-022-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-022-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        }
+      },
+      "E_identical_pair_within": 0,
+      "E_fact": 0,
+      "fact_count": 5,
+      "E_case": 0,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": true,
+        "S2_minilm_partner": true,
+        "S3_coverage_partner": true,
+        "S4_identical_copy": true,
+        "S5_repeat_s3": true
+      },
+      "grounded_by_condition": {
+        "S1_isolated": {
+          "VAL-001-022-F01": true,
+          "VAL-001-022-F02": true,
+          "VAL-001-022-F03": true,
+          "VAL-001-022-F04": true,
+          "VAL-001-022-F05": true
+        },
+        "S2_minilm_partner": {
+          "VAL-001-022-F01": true,
+          "VAL-001-022-F02": true,
+          "VAL-001-022-F03": true,
+          "VAL-001-022-F04": true,
+          "VAL-001-022-F05": true
+        },
+        "S3_coverage_partner": {
+          "VAL-001-022-F01": true,
+          "VAL-001-022-F02": true,
+          "VAL-001-022-F03": true,
+          "VAL-001-022-F04": true,
+          "VAL-001-022-F05": true
+        },
+        "S4_identical_copy": {
+          "VAL-001-022-F01": true,
+          "VAL-001-022-F02": true,
+          "VAL-001-022-F03": true,
+          "VAL-001-022-F04": true,
+          "VAL-001-022-F05": true
+        },
+        "S5_repeat_s3": {
+          "VAL-001-022-F01": true,
+          "VAL-001-022-F02": true,
+          "VAL-001-022-F03": true,
+          "VAL-001-022-F04": true,
+          "VAL-001-022-F05": true
+        }
+      }
+    },
+    "VAL-001-030": {
+      "target_answer_hash": "c27f5b65f5de402ec530a7a2c4d7db6d3bcc79104220465f22a7621437ec43b0",
+      "labels": {
+        "S1_isolated": {
+          "VAL-001-030-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S2_minilm_partner": {
+          "VAL-001-030-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-030-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S3_coverage_partner": {
+          "VAL-001-030-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-030-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S4_identical_copy": {
+          "VAL-001-030-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S5_repeat_s3": {
+          "VAL-001-030-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-030-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-030-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        }
+      },
+      "E_identical_pair_within": 0,
+      "E_fact": 1,
+      "fact_count": 4,
+      "E_case": 1,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 1,
+      "case_complete_by_condition": {
+        "S1_isolated": true,
+        "S2_minilm_partner": false,
+        "S3_coverage_partner": false,
+        "S4_identical_copy": true,
+        "S5_repeat_s3": false
+      },
+      "grounded_by_condition": {
+        "S1_isolated": {
+          "VAL-001-030-F01": true,
+          "VAL-001-030-F02": true,
+          "VAL-001-030-F03": true,
+          "VAL-001-030-F04": true
+        },
+        "S2_minilm_partner": {
+          "VAL-001-030-F01": false,
+          "VAL-001-030-F02": true,
+          "VAL-001-030-F03": true,
+          "VAL-001-030-F04": true
+        },
+        "S3_coverage_partner": {
+          "VAL-001-030-F01": false,
+          "VAL-001-030-F02": true,
+          "VAL-001-030-F03": true,
+          "VAL-001-030-F04": true
+        },
+        "S4_identical_copy": {
+          "VAL-001-030-F01": true,
+          "VAL-001-030-F02": true,
+          "VAL-001-030-F03": true,
+          "VAL-001-030-F04": true
+        },
+        "S5_repeat_s3": {
+          "VAL-001-030-F01": false,
+          "VAL-001-030-F02": true,
+          "VAL-001-030-F03": true,
+          "VAL-001-030-F04": true
+        }
+      }
+    },
+    "VAL-001-032": {
+      "target_answer_hash": "7d09cc93794decdc1bb8bf09cb499132c9a2df12900c2a7cc12b1726f190ea44",
+      "labels": {
+        "S1_isolated": {
+          "VAL-001-032-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S2_minilm_partner": {
+          "VAL-001-032-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S3_coverage_partner": {
+          "VAL-001-032-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S4_identical_copy": {
+          "VAL-001-032-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        },
+        "S5_repeat_s3": {
+          "VAL-001-032-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-032-F05": {
+            "status": "covered",
+            "citation_status": "supported"
+          }
+        }
+      },
+      "E_identical_pair_within": 0,
+      "E_fact": 0,
+      "fact_count": 5,
+      "E_case": 0,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": true,
+        "S2_minilm_partner": true,
+        "S3_coverage_partner": true,
+        "S4_identical_copy": true,
+        "S5_repeat_s3": true
+      },
+      "grounded_by_condition": {
+        "S1_isolated": {
+          "VAL-001-032-F01": true,
+          "VAL-001-032-F02": true,
+          "VAL-001-032-F03": true,
+          "VAL-001-032-F04": true,
+          "VAL-001-032-F05": true
+        },
+        "S2_minilm_partner": {
+          "VAL-001-032-F01": true,
+          "VAL-001-032-F02": true,
+          "VAL-001-032-F03": true,
+          "VAL-001-032-F04": true,
+          "VAL-001-032-F05": true
+        },
+        "S3_coverage_partner": {
+          "VAL-001-032-F01": true,
+          "VAL-001-032-F02": true,
+          "VAL-001-032-F03": true,
+          "VAL-001-032-F04": true,
+          "VAL-001-032-F05": true
+        },
+        "S4_identical_copy": {
+          "VAL-001-032-F01": true,
+          "VAL-001-032-F02": true,
+          "VAL-001-032-F03": true,
+          "VAL-001-032-F04": true,
+          "VAL-001-032-F05": true
+        },
+        "S5_repeat_s3": {
+          "VAL-001-032-F01": true,
+          "VAL-001-032-F02": true,
+          "VAL-001-032-F03": true,
+          "VAL-001-032-F04": true,
+          "VAL-001-032-F05": true
+        }
+      }
+    },
+    "VAL-001-050": {
+      "target_answer_hash": "7f14b35f0171b8240bc6ad7be258932fa5e4c3f71579b03a4e4dffdb581f7d99",
+      "labels": {
+        "S1_isolated": {
+          "VAL-001-050-F01": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F05": {
+            "status": "incorrect",
+            "citation_status": "supported"
+          }
+        },
+        "S2_minilm_partner": {
+          "VAL-001-050-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-050-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F05": {
+            "status": "incorrect",
+            "citation_status": "supported"
+          }
+        },
+        "S3_coverage_partner": {
+          "VAL-001-050-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-050-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F05": {
+            "status": "incorrect",
+            "citation_status": "supported"
+          }
+        },
+        "S4_identical_copy": {
+          "VAL-001-050-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-050-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F05": {
+            "status": "incorrect",
+            "citation_status": "supported"
+          }
+        },
+        "S5_repeat_s3": {
+          "VAL-001-050-F01": {
+            "status": "missing",
+            "citation_status": "not_applicable"
+          },
+          "VAL-001-050-F02": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F03": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F04": {
+            "status": "covered",
+            "citation_status": "supported"
+          },
+          "VAL-001-050-F05": {
+            "status": "incorrect",
+            "citation_status": "supported"
+          }
+        }
+      },
+      "E_identical_pair_within": 0,
+      "E_fact": 1,
+      "fact_count": 5,
+      "E_case": 0,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": false,
+        "S2_minilm_partner": false,
+        "S3_coverage_partner": false,
+        "S4_identical_copy": false,
+        "S5_repeat_s3": false
+      },
+      "grounded_by_condition": {
+        "S1_isolated": {
+          "VAL-001-050-F01": true,
+          "VAL-001-050-F02": true,
+          "VAL-001-050-F03": true,
+          "VAL-001-050-F04": true,
+          "VAL-001-050-F05": false
+        },
+        "S2_minilm_partner": {
+          "VAL-001-050-F01": false,
+          "VAL-001-050-F02": true,
+          "VAL-001-050-F03": true,
+          "VAL-001-050-F04": true,
+          "VAL-001-050-F05": false
+        },
+        "S3_coverage_partner": {
+          "VAL-001-050-F01": false,
+          "VAL-001-050-F02": true,
+          "VAL-001-050-F03": true,
+          "VAL-001-050-F04": true,
+          "VAL-001-050-F05": false
+        },
+        "S4_identical_copy": {
+          "VAL-001-050-F01": false,
+          "VAL-001-050-F02": true,
+          "VAL-001-050-F03": true,
+          "VAL-001-050-F04": true,
+          "VAL-001-050-F05": false
+        },
+        "S5_repeat_s3": {
+          "VAL-001-050-F01": false,
+          "VAL-001-050-F02": true,
+          "VAL-001-050-F03": true,
+          "VAL-001-050-F04": true,
+          "VAL-001-050-F05": false
+        }
+      }
+    }
+  },
+  "stability_metrics": {
+    "VAL-001-008": {
+      "E_identical_pair_within": 0,
+      "E_fact": 1,
+      "E_case": 0,
+      "E_partner": 1,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": false,
+        "S2_minilm_partner": false,
+        "S3_coverage_partner": false,
+        "S4_identical_copy": false,
+        "S5_repeat_s3": false
+      }
+    },
+    "VAL-001-022": {
+      "E_identical_pair_within": 0,
+      "E_fact": 0,
+      "E_case": 0,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": true,
+        "S2_minilm_partner": true,
+        "S3_coverage_partner": true,
+        "S4_identical_copy": true,
+        "S5_repeat_s3": true
+      }
+    },
+    "VAL-001-030": {
+      "E_identical_pair_within": 0,
+      "E_fact": 1,
+      "E_case": 1,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 1,
+      "case_complete_by_condition": {
+        "S1_isolated": true,
+        "S2_minilm_partner": false,
+        "S3_coverage_partner": false,
+        "S4_identical_copy": true,
+        "S5_repeat_s3": false
+      }
+    },
+    "VAL-001-032": {
+      "E_identical_pair_within": 0,
+      "E_fact": 0,
+      "E_case": 0,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": true,
+        "S2_minilm_partner": true,
+        "S3_coverage_partner": true,
+        "S4_identical_copy": true,
+        "S5_repeat_s3": true
+      }
+    },
+    "VAL-001-050": {
+      "E_identical_pair_within": 0,
+      "E_fact": 1,
+      "E_case": 0,
+      "E_partner": 0,
+      "E_repeat": 0,
+      "E_identical_copy_vs_coverage": 0,
+      "case_complete_by_condition": {
+        "S1_isolated": false,
+        "S2_minilm_partner": false,
+        "S3_coverage_partner": false,
+        "S4_identical_copy": false,
+        "S5_repeat_s3": false
+      }
+    }
+  },
+  "cleaned_cohort": {
+    "status": "pending_human_review",
+    "genuine_error_facts": [
+      {
+        "case_id": "VAL-001-039",
+        "fact_id": "VAL-001-039-F02",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-050",
+        "fact_id": "VAL-001-050-F01",
+        "nominal_type": "omission"
+      },
+      {
+        "case_id": "VAL-001-050",
+        "fact_id": "VAL-001-050-F05",
+        "nominal_type": "incorrect_synthesis"
+      }
+    ],
+    "ambiguous_facts": [],
+    "semantically_present_facts": [
+      "VAL-001-008-F02",
+      "VAL-001-009-F01",
+      "VAL-001-009-F02",
+      "VAL-001-011-F01",
+      "VAL-001-022-F02",
+      "VAL-001-026-F02",
+      "VAL-001-037-F01"
+    ],
+    "human_negated_facts": []
+  },
+  "failures": []
+}

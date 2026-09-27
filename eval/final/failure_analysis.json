@@ -1,0 +1,86 @@
+{
+  "version": "final-failure-analysis-v1",
+  "status": "final",
+  "source": "a1_failure_analysis_v1.json",
+  "totals": {
+    "query_required_aspects": 208,
+    "aspects_missing_in_at_least_one_arm": 16,
+    "distinct_cases_with_residual_failure": 10,
+    "missing_by_route": {
+      "BROAD": 7,
+      "SIMPLE": 9
+    },
+    "per_arm_missing": {
+      "fixed_top5": 12,
+      "coverage_selector_v2": 12,
+      "adaptive_prefix_v1": 8,
+      "no_router_adaptive_v1": 6
+    }
+  },
+  "taxonomy_counts": {
+    "RANKING_WEAKNESS": 2,
+    "SELECTION_BUDGET": 6,
+    "GENERATION_MISS": 6,
+    "REPRESENTATION_CANDIDATE": 2
+  },
+  "taxonomy_cases": {
+    "RANKING_WEAKNESS": [
+      "VAL-001-001"
+    ],
+    "SELECTION_BUDGET": [
+      "VAL-001-006",
+      "VAL-001-033"
+    ],
+    "GENERATION_MISS": [
+      "VAL-001-008",
+      "VAL-001-011",
+      "VAL-001-027",
+      "VAL-001-032",
+      "VAL-001-039",
+      "VAL-001-050"
+    ],
+    "REPRESENTATION_CANDIDATE": [
+      "VAL-001-046"
+    ]
+  },
+  "representation_candidates": [
+    {
+      "case_id": "VAL-001-046",
+      "route": "BROAD",
+      "aspects": [
+        "VAL-001-046-F03",
+        "VAL-001-046-F04"
+      ],
+      "support_chunks": [
+        "chunk_35fd87021964946f76efbd5f"
+      ],
+      "pipeline_original_rank": null,
+      "probe_original_runtime_rank": null,
+      "probe_requirement_query_ranks": {
+        "req_withhold": 1,
+        "req_email_process": 3,
+        "req_urgent": 1
+      },
+      "status": "strong candidate; only case classified REPRESENTATION_CANDIDATE"
+    },
+    {
+      "case_id": "VAL-001-001",
+      "route": "BROAD",
+      "aspects": [
+        "VAL-001-001-F02",
+        "VAL-001-001-F03"
+      ],
+      "support_chunks": [
+        "chunk_dfcbf6c0856007fb39268709"
+      ],
+      "pipeline_original_rank": 22,
+      "probe_original_runtime_rank": 12,
+      "probe_requirement_query_ranks": {
+        "req_assert": 1,
+        "req_legalrisk": 2
+      },
+      "status": "uncertain (ranking weakness under the pipeline order; rank is within reach under the runtime order) - not counted as REPRESENTATION_CANDIDATE"
+    }
+  ],
+  "interpretation": "Dominant residual layers are generation and selection/budget. Exactly one clear representation case (1/50) and zero fragmentation cases, so A2 is a weak trigger and A3 is not triggered."
+}

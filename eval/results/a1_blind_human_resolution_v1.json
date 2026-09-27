@@ -1,0 +1,135 @@
+{
+  "version": "a1-blind-human-resolution-v1",
+  "status": "complete",
+  "seed": "a1-blind-v1-2026-09-27",
+  "blind": true,
+  "note": "Independent adjudication of the 8 flagged blind disputes. No arm/policy identity was read at any point (the arm->label mapping was not opened until after the quality freeze). Verdicts are based only on the original query, answer text, cited evidence, and the frozen QUERY_REQUIRED aspects.",
+  "judge_reference": "broad-v3-answer-quality-v1",
+  "aspect_source": "frozen_human_verdicts_v1.json final==QUERY_REQUIRED (Validation V1 only)",
+  "queue_item_count": 8,
+  "resolved_item_count": 8,
+  "downstream_corrections": [
+    {
+      "case_id": "VAL-001-011",
+      "aspect_id": "VAL-001-011-F01",
+      "answers_corrected": ["A", "B", "C"],
+      "from": "covered (A, B); missing (C)",
+      "to": "NOT_COVERED (A, B, C)",
+      "reason": "Resolving the VAL-001-011 regression required reading the baseline answer. Answers A and B are word-for-word equivalent to C on F01 and likewise never mention 'organize, promote, threaten, or incite violence'; the judge's covered verdict for A and B was a false positive. Corrected so the case is internally consistent."
+    }
+  ],
+  "items": [
+    {
+      "case_id": "VAL-001-011",
+      "blind_answer_id": "C",
+      "aspect_id": "VAL-001-011-F01",
+      "queue_kind": "complete_regression_vs_baseline",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": "NOT_A_REGRESSION",
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["A", "B", "C"],
+      "reason": "Answer C covers F02 (depicting/glorifying violence) and indiscriminate posting but never states F01's prohibition on using the platform to organize, promote, threaten, or incite violence, so C's missing status is confirmed. However baseline answers A and B (near-identical wording) make the same omission; the judge's covered verdict for A/B is a false positive. The candidate therefore did not lose an aspect the baseline actually possessed, and the flagged complete regression is spurious."
+    },
+    {
+      "case_id": "VAL-001-027",
+      "blind_answer_id": "A",
+      "aspect_id": "VAL-001-027-F01",
+      "queue_kind": "complete_regression_vs_baseline",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": "CONFIRMED_REGRESSION",
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["A"],
+      "reason": "Answer A enumerates the no-fee duty and other obligations but never states the no-resale restriction. Baseline answers B and C each state that the partner must not resell the GitHub Products. F01 was genuinely covered by the baseline and is genuinely lost in A."
+    },
+    {
+      "case_id": "VAL-001-032",
+      "blind_answer_id": "B",
+      "aspect_id": "VAL-001-032-F02",
+      "queue_kind": "complete_regression_vs_baseline",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": "CONFIRMED_REGRESSION",
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["B"],
+      "reason": "Answer B omits cryptomining entirely. Baseline answers A, C, and D each state that Actions may not be used for cryptomining. F02 was genuinely covered by the baseline and is genuinely lost in B."
+    },
+    {
+      "case_id": "VAL-001-039",
+      "blind_answer_id": "B",
+      "aspect_id": "VAL-001-039-F03",
+      "queue_kind": "complete_regression_vs_baseline",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": "CONFIRMED_REGRESSION",
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["B"],
+      "reason": "Answer B describes where licenses are documented and the limited-supersession rule but never states that the agreement always includes the Application Terms. Baseline answers A and C both state that the agreement with GitHub always includes, at a minimum, the Application Terms. F03 was genuinely covered by the baseline and is genuinely lost in B."
+    },
+    {
+      "case_id": "VAL-001-039",
+      "blind_answer_id": "B",
+      "aspect_id": "VAL-001-039-F03",
+      "queue_kind": "complete_regression_vs_baseline",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": "CONFIRMED_REGRESSION",
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["B"],
+      "reason": "Same shared generation and aspect as the other VAL-001-039 regression item; the loss of F03 relative to the complete baseline answers is confirmed for this arm as well."
+    },
+    {
+      "case_id": "VAL-001-046",
+      "blind_answer_id": "A",
+      "aspect_id": "VAL-001-046-F04",
+      "queue_kind": "contradicted_claim",
+      "original_candidate": "claim support_status=contradicted",
+      "final_verdict": "INCORRECT_OR_CONTRADICTED",
+      "regression_resolution": null,
+      "improvement_resolution": null,
+      "grounding_resolution": "Claim contradicted: answer A asserts 'The only stated exception is the legal/court-order prohibition', which is false because the frozen QUERY_REQUIRED aspect F04 requires that in rare urgent circumstances GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation. The retrieved context supplied to the judge does not itself contain F04 and citation [S2] supports only the law/court-order exception, so the citation is over-generalised; but the contradicted claim is correctly flagged against the frozen required facts. The contradiction is a claim-correctness/grounding issue only and does not change required-aspect completeness: F03 and F04 remain NOT_COVERED for answer A.",
+      "affected_answers": ["A"],
+      "reason": "The absolute claim conflicts with frozen required fact F04; confirm contradicted. Answer completeness is unaffected (F03/F04 stay missing)."
+    },
+    {
+      "case_id": "VAL-001-008",
+      "blind_answer_id": "B",
+      "aspect_id": "VAL-001-008-F02",
+      "queue_kind": "selector_vs_router",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": null,
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["B"],
+      "reason": "The 3-covered answer (B) says plain-text email is faster but never states that email submissions should include a plain-text version in the body even if attached. The 4-covered answer does state it. The coverage/completeness difference is real and the judge's missing verdict for B is confirmed; no relabel."
+    },
+    {
+      "case_id": "VAL-001-039",
+      "blind_answer_id": "B",
+      "aspect_id": "VAL-001-039-F03",
+      "queue_kind": "selector_vs_router",
+      "original_candidate": "missing (NOT_COVERED)",
+      "final_verdict": "NOT_COVERED",
+      "regression_resolution": null,
+      "improvement_resolution": null,
+      "grounding_resolution": null,
+      "affected_answers": ["B"],
+      "reason": "The 2-covered answer (B) omits the rule that the agreement always includes the Application Terms, which the 3-covered complete answer states. The coverage/completeness difference is real and the judge's missing verdict for B is confirmed; no relabel."
+    }
+  ],
+  "counts": {
+    "confirmed_regressions": 4,
+    "rejected_regression_candidates": 1,
+    "confirmed_improvements": 0,
+    "rejected_improvement_candidates": 0,
+    "confirmed_grounding_issues": 1,
+    "unresolved": 0
+  }
+}

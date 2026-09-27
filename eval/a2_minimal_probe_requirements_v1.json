@@ -1,0 +1,147 @@
+{
+  "version": "a2-minimal-probe-requirements-v1",
+  "status": "frozen",
+  "note": "Hand-frozen, strictly query-derived requirements for the minimal A2 mechanism probe. Requirements are extracted from the original query text only; no requirement is invented from policy evidence. No LLM decomposition is used.",
+  "cases": [
+    {
+      "case_id": "VAL-001-046",
+      "role": "clear_trigger",
+      "route": "BROAD",
+      "original_query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-046-R1",
+          "requirement_text": "Will GitHub notify me first (and how) before disclosing my account data to investigators?",
+          "source_phrase": "will GitHub tell me first",
+          "affected_aspects": ["VAL-001-046-F01", "VAL-001-046-F03"]
+        },
+        {
+          "requirement_id": "VAL-001-046-R2",
+          "requirement_text": "In what situations might that notice be withheld or delayed?",
+          "source_phrase": "in what situations might that notice be withheld or delayed",
+          "affected_aspects": ["VAL-001-046-F02", "VAL-001-046-F04"]
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "role": "budget_control",
+      "route": "SIMPLE",
+      "original_query": "A discussion in my public repository is getting abusive. What moderation options can I use before asking GitHub for help?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-033-R1",
+          "requirement_text": "What moderation options can I use in my public repository when a discussion is getting abusive?",
+          "source_phrase": "What moderation options can I use",
+          "affected_aspects": ["VAL-001-033-F01", "VAL-001-033-F02", "VAL-001-033-F03", "VAL-001-033-F04", "VAL-001-033-F05"]
+        },
+        {
+          "requirement_id": "VAL-001-033-R2",
+          "requirement_text": "What can I do myself before asking GitHub for help with an abusive discussion?",
+          "source_phrase": "before asking GitHub for help",
+          "affected_aspects": ["VAL-001-033-F01", "VAL-001-033-F02", "VAL-001-033-F03", "VAL-001-033-F04", "VAL-001-033-F05"]
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-011",
+      "role": "generation_control",
+      "route": "SIMPLE",
+      "original_query": "A repository includes graphic depictions of violence for a documentary project. How does GitHub distinguish allowed context from prohibited violence, and can visibility be limited?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-011-R1",
+          "requirement_text": "What violent content does GitHub prohibit?",
+          "source_phrase": "prohibited violence",
+          "affected_aspects": ["VAL-001-011-F01", "VAL-001-011-F02"]
+        },
+        {
+          "requirement_id": "VAL-001-011-R2",
+          "requirement_text": "Are documentary or educational depictions of violence allowed, and can GitHub limit their visibility?",
+          "source_phrase": "documentary project ... can visibility be limited",
+          "affected_aspects": ["VAL-001-011-F03", "VAL-001-011-F05"]
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-005",
+      "role": "fully_covered_broad_control",
+      "route": "BROAD",
+      "original_query": "If I submit a DMCA counter notice for disabled GitHub content, what must the notice identify and what legal commitments am I making?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-005-R1",
+          "requirement_text": "What must a DMCA counter notice identify?",
+          "source_phrase": "what must the notice identify",
+          "affected_aspects": []
+        },
+        {
+          "requirement_id": "VAL-001-005-R2",
+          "requirement_text": "What legal commitments am I making when I submit a DMCA counter notice?",
+          "source_phrase": "what legal commitments am I making",
+          "affected_aspects": []
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-045",
+      "role": "fully_covered_broad_control",
+      "route": "BROAD",
+      "original_query": "For a legal request, what kinds of GitHub account information are public by default, optional for users to reveal, or maintained privately?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-045-R1",
+          "requirement_text": "What kinds of GitHub account information are public by default?",
+          "source_phrase": "public by default",
+          "affected_aspects": []
+        },
+        {
+          "requirement_id": "VAL-001-045-R2",
+          "requirement_text": "What account information is optional for users to reveal or maintained privately?",
+          "source_phrase": "optional for users to reveal, or maintained privately",
+          "affected_aspects": []
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-047",
+      "role": "fully_covered_broad_control",
+      "route": "BROAD",
+      "original_query": "What legal process does GitHub require before disclosing non-public user data, and how do subpoena requests differ from requests for access logs?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-047-R1",
+          "requirement_text": "What legal process does GitHub require before disclosing non-public user data?",
+          "source_phrase": "What legal process does GitHub require before disclosing non-public user data",
+          "affected_aspects": []
+        },
+        {
+          "requirement_id": "VAL-001-047-R2",
+          "requirement_text": "How do subpoena requests differ from requests for access logs?",
+          "source_phrase": "how do subpoena requests differ from requests for access logs",
+          "affected_aspects": []
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-001",
+      "role": "uncertain_representation_probe",
+      "route": "BROAD",
+      "original_query": "My repository was taken down after a DMCA complaint. Before I challenge it, what am I asserting and what legal risks should I consider?",
+      "requirements": [
+        {
+          "requirement_id": "VAL-001-001-R1",
+          "requirement_text": "What must I assert when I challenge a DMCA takedown?",
+          "source_phrase": "what am I asserting",
+          "affected_aspects": ["VAL-001-001-F01", "VAL-001-001-F02"]
+        },
+        {
+          "requirement_id": "VAL-001-001-R2",
+          "requirement_text": "What legal risks should I consider before submitting a DMCA counter notice?",
+          "source_phrase": "what legal risks should I consider",
+          "affected_aspects": ["VAL-001-001-F03", "VAL-001-001-F04"]
+        }
+      ]
+    }
+  ]
+}

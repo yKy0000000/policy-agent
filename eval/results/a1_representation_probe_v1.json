@@ -1,0 +1,182 @@
+{
+  "version": "a1-representation-probe-v1",
+  "model": "BAAI/bge-reranker-base",
+  "candidate_stage": "lexical_top20 + semantic_top20 -> union -> chunk-id dedup",
+  "cases": {
+    "VAL-001-001": {
+      "original_query": "My repository was taken down after a DMCA complaint. Before I challenge it, what am I asserting and what legal risks should I consider?",
+      "targets": {
+        "VAL-001-001-F02": "chunk_dfcbf6c0856007fb39268709",
+        "VAL-001-001-F03": "chunk_dfcbf6c0856007fb39268709"
+      },
+      "runs": {
+        "original": {
+          "query": "My repository was taken down after a DMCA complaint. Before I challenge it, what am I asserting and what legal risks should I consider?",
+          "union_size": 30,
+          "target_visibility": {
+            "VAL-001-001-F02": {
+              "present": true,
+              "rank": 12,
+              "top5": false,
+              "top8": false,
+              "top12": true,
+              "top20": true
+            },
+            "VAL-001-001-F03": {
+              "present": true,
+              "rank": 12,
+              "top5": false,
+              "top8": false,
+              "top12": true,
+              "top20": true
+            }
+          }
+        },
+        "req_assert": {
+          "query": "What must I assert and swear to when I file a DMCA counter notice?",
+          "union_size": 24,
+          "target_visibility": {
+            "VAL-001-001-F02": {
+              "present": true,
+              "rank": 1,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            },
+            "VAL-001-001-F03": {
+              "present": true,
+              "rank": 1,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            }
+          }
+        },
+        "req_legalrisk": {
+          "query": "What are the legal risks, perjury penalties, and consequences of submitting a false or intentionally false DMCA counter notice?",
+          "union_size": 24,
+          "target_visibility": {
+            "VAL-001-001-F02": {
+              "present": true,
+              "rank": 2,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            },
+            "VAL-001-001-F03": {
+              "present": true,
+              "rank": 2,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            }
+          }
+        }
+      },
+      "a0_pipeline_original_rank": {
+        "VAL-001-001-F02": 22,
+        "VAL-001-001-F03": 22
+      },
+      "a0_and_runtime_agree": false
+    },
+    "VAL-001-046": {
+      "original_query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+      "targets": {
+        "VAL-001-046-F03": "chunk_35fd87021964946f76efbd5f",
+        "VAL-001-046-F04": "chunk_35fd87021964946f76efbd5f"
+      },
+      "runs": {
+        "original": {
+          "query": "If investigators seek my GitHub account data, will GitHub tell me first, and in what situations might that notice be withheld or delayed?",
+          "union_size": 38,
+          "target_visibility": {
+            "VAL-001-046-F03": {
+              "present": false,
+              "rank": null
+            },
+            "VAL-001-046-F04": {
+              "present": false,
+              "rank": null
+            }
+          }
+        },
+        "req_withhold": {
+          "query": "When may GitHub withhold or delay notifying affected users about a legal request for their account data?",
+          "union_size": 37,
+          "target_visibility": {
+            "VAL-001-046-F03": {
+              "present": true,
+              "rank": 1,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            },
+            "VAL-001-046-F04": {
+              "present": true,
+              "rank": 1,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            }
+          }
+        },
+        "req_email_process": {
+          "query": "Does GitHub email affected account owners a copy of the legal process before disclosure?",
+          "union_size": 38,
+          "target_visibility": {
+            "VAL-001-046-F03": {
+              "present": true,
+              "rank": 3,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            },
+            "VAL-001-046-F04": {
+              "present": true,
+              "rank": 3,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            }
+          }
+        },
+        "req_urgent": {
+          "query": "In what urgent circumstances may GitHub delay notice to a user to prevent death or serious harm or because of an ongoing investigation?",
+          "union_size": 36,
+          "target_visibility": {
+            "VAL-001-046-F03": {
+              "present": true,
+              "rank": 1,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            },
+            "VAL-001-046-F04": {
+              "present": true,
+              "rank": 1,
+              "top5": true,
+              "top8": true,
+              "top12": true,
+              "top20": true
+            }
+          }
+        }
+      },
+      "a0_pipeline_original_rank": {
+        "VAL-001-046-F03": null,
+        "VAL-001-046-F04": null
+      },
+      "a0_and_runtime_agree": true
+    }
+  },
+  "note": "Counterfactual retrieval probe only: no generation LLM, no index/model/depth change. The probe runs the current frozen-config lexical+semantic retrieval with the same local BAAI/bge-reranker-base for BOTH the original query and the requirement queries, so the relative delta is the signal. Caveat: a0_bge_rerank_orders.json (the order the A1 arms consumed) does not bit-match the current-runtime reranked order, so absolute ranks differ between 'a0_pipeline_original_rank' and 'runs.original'."
+}

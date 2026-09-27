@@ -1,0 +1,1293 @@
+{
+  "version": "a1-blind-answer-mapping-v1",
+  "seed": "a1-blind-v1-2026-09-27",
+  "note": "UNBLIND ONLY - not visible to the evaluator",
+  "cases": {
+    "VAL-001-001": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:faab4d128044416984dfbf2456bbaaac8f68ad14efe3df2c09a1e5151cef670f",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "72702b3bcf5b6cbd244c6706d203af2343802431c254605c5c0823fb00a9d60e",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "8213c7e77f78d4115f07b36e08080cfc8a134e6fd0f3c7c1df6b1def90e765e5",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-002": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "b23885d5311cb65ffb1572c273756150c9c50394ad289c95f9255d5ce079ae86",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:0d82c2b729ada0171236c012ebb5813a57200278c4a7bd5f2e30d7e84cf0d28f",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "c2b4df85ed34018b9fdf7fe6c03334cd40bc479181efd054973a34ce72421ec5",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "bda9435f02b5ef174a82ee561ceaf48ae8c025cbc029d4cdbe29a8e6a8a61271",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-003": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "2d0a14b4ce30fc2bf44bea6fe9e4986e591ae8537386b28a1feff0a515ff4b7f",
+        "generation_source": "manual_reconciliation_after_unknown"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:da23f30c58e5f986f56fca6aead8cb37f679bc789e1287e0be39fcc62aafd1aa",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "079feea0ffa2338c1ec113c114f7330fc86104044b889bfedfc8e65488e219fb",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-004": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:c2ec43faaefb9a520ab278d7a15cca07dce182d1ba90c0cd19cd638789657d2f",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "5fee3ba61c14d4ac8a585c0fe15aae96a036a54b618de5cd8e76f9d2fa654a17",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "85fd071869cbd37cd02ba063a087390dfc28b584fedd55b6dfcee8981ce22c56",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-005": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "b91f6de77778aff00b715d9e5ff6830a9e41f423ee1446170231c05838bd5322",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "832bde92ab74ec24994942dea3117b7146e075e35584bc1686f244c5ddcf6387",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "c37e9c277ad5cdfc6ed70f2515370bedf1db2f367d88b3255197e9ae103321dd",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:2742234ac225a986089d295b486a830758f9cf900d2b42ff17f12030b18d8397",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-006": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:14bf6030a5053dce342bbf5a7d36aba54c09f5ac1c109d6b171ef1348060fefb",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "96509bd846d1b8cfb22d7db42e92ba34744bb4949caa3179aac16b9d4b2730fc",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "9c215caf75c84432fd6126e4c85eb9d427463cbfd15f0a9fdb7b8a0022091b97",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-007": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "d272b9b9eea192cefeb235bfda133399943d47f2dbfab8eb398dbff9379047c0",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:c74c2c8ca7473378adfd8c0d407602ec9afd52a1eb11a3a8cd2ab7c396a57bc3",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "6648fa1f140b32f0d74ff1a47bb1267d2f99894aa70903f1ac379ff93ffd70cd",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-008": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "5c1802aae7bac9bd5ba5019e0922f5f290c58143e879511c6ec15492b5a4e45c",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:fe9e3c95d25a6826ad4014288a26a0f752429c36ded60d746ffbdfc7ae64c23e",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "ef7b6ba2518a680d55202e586a2486fd1c486c2ee5c46dac73093617486b4367",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-009": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "421c8d6fdf939254b99bf27ac808af097eb0bbcd396736b587f31418d7249d84",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:55df702b7fe9ee85f6253361feee6c5b11d3bbe3672d5a42b8ede6085ffeeaa9",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-010": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "8d341d26836cf4568993c5cc6918cac0198838ddfd0edc0bdca86109f42c389b",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "3847ebe4fe4a82cf5ce31040f88624b3611cf97311eeccf4fcad4aa97795e9ae",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:0961c2b67df9c8d525472a3c2523c96eb1cc4251147c7c2199e95ff24eb1cde4",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-011": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "7bebeaf630b8ddc4f60d1bda6cdb684a904c5138961f1ccbff368d581f598536",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:f33d9426d1ac180824c88c54c0e194e4676a397845834978dd23dc141e121019",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "22f9e9c4a4e164a16e3e82659f749307ec048281d999e36e43640d5fda9a58be",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-012": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "360858e28048b035a5ac50e238e7387751ecb15f1b860116c5927258dee56ef4",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:8f2e57976ceded5f31a071a3160a68e1b400defea8578c6f97b541edea24aac3",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-013": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "23006ec571b08980b0810f0be7b0fc639b3f7dbafc56d2e6d522f5dc1420a7b1",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:b2b2866c4450bb263b56050b5adb7dfa94902b42e857886fe5630a5b80ab028d",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-014": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "ef40f4607eea9ae17f8493fac636ddf59ced20f90bd8a8ee75290c6cbc96fc92",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:9c731e2d6eb1a842094834c1c842a72f3f81e750a5dddac666f3f89cde3231b8",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-015": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:de1884e11d0f3c6cbc3c87e7883056674b29fadbc1cb6cf974c169d321fa322f",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "37ec390748e9a95e812dd59740e9cdeffcd5a507ef959d17f30cff15e8390e2c",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-016": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:ead67880fecb270e58af08e0c86881a35c9f9b15b02850d66e501307026a481d",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "e0d00ade7bcc1633bd2c5753f34e309e9551b2b3810c8571a8bd747e750fdb06",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-017": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:39f9603cda9928b38c5b407a835626840e63410b796add7fc847ba20c38a927f",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "908c99e0374f3ab18143a0de96613a8d0cfd13d8245e70f01269377b28539705",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-018": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:0e13de03fe75ab37262a5fdfaa203f9af84fcb76792db40b877f8863a60c8d0f",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "7c6a335a94789e92015d8e50366beb0b22e379745bf478130f309f8cd62edd5c",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "627ac22bb419324275f7da263747c81c3d75a048cbc5ed867b6e28588304fb4d",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-019": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:0257e39f865eae20f326efbd577f0082cb7cb023a1c27ce41df6d078128a5f7a",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "f9ab9b1c5cb4e93a057699cd934a2dd5a2447643686f996b707f99e9a266606b",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-020": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:702451c03046eca6b459ac970f75ecf9311b8ae1f7885e8c564da8324d4c50d7",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "bf7f158ead60845c55198dff7daf8fd64d1afae38c663ab366f8567ab42a885a",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "c59b6ffa8fcab46763ac79fe4367c540a016b7a874955997e3e84bbed26d964c",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-021": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:be8a4929c26698cd9cbf7c2b10aa956f8bbed4fe1786021eb9a4d3c30213a7ce",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "8330d9a884a804bb1bea6c4c93f010b929fb13e836b1bf28978a7c113bac7c72",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-022": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "fb4f861377393af7044afff07a0ef274e4749fea83910d2398ccac208682c073",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "f345f90dc610222ce730ad0e5e95253d22d85d8e64281028d7cdb6a57bdc1316",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "09a05bf561622f325ab9abe3ed3e41a2988f257004ac124ce3e12b2652608a79",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:11918bb81e3c718e1681186f5c1805f9e0134a99867e1f29c5eaf93275885b0a",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-023": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "2fd067c2431a295fa2f0dc4fa532bbd7fb00638376027117bcb0aeff6ced6c4e",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "937e47d6fe84a4be499cc0fa55b4f0bfbf7506b4998eeddff94eb1b9450684dd",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:014148365476267281360877568034efdd65a54d40eb7fb2ad4c01f6be52eaf3",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-024": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "786cb64d56aa5da8f015b01603ad67f90028b4abcd8c1c7e8010850de9a1f293",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:038e0fc669cfa1bd7e451eefd7399e1c3054e281716549854868016a54833766",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "16391d057d21e2fa3d0acf39d7c77e817b0783a01a9dd3c3ef28bc4087bc10d3",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-025": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:c375609400ffb40c18045fbd7aa3cc91d659510ade3c9545e77bb31a16104739",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "fe2a39cd8d075c0bea62a02394f42067e87e5a72945fd78307f7f91ef883d443",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "6da2291a0aa0f52f413e4782a52bddac3ef0a74715d76400683fccc70744486b",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "7aa2f8b0e608286b69e62a1f273f76f73657533c1b92e394d380272c627d055b",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-026": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "d0e20d96d0930faa42a743823bb7615829ac4184e4ef1b0b2c53f38a2cd76b9d",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "26b7782d29d6195cf75251c9d933d51f1ecefdee354b0c88f19ec79b0585e4b3",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "8d5e1d9ea78cee8c43dfab72ca2bc846e6184af3f6a60d21d80f4722daf755f2",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:44339d8571a3a237956022ace4a3068d6118cf16d3ce7c7c1b05675db5658979",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-027": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "123d98321d046705d233d0f3a1d47bff2661c5e85ab7af7e86f5e9fd71fc122f",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:3799c7423655bdde88b22e643cc764cd805de6821853606e7dbf24c2162edca8",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "647f87df64af95b60c8984be6c1a684de00c1feec70568626a6bff90deece3e7",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-028": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "36bc14fa15e2ab59ace5a5236c4d185b433d8917857408f597d7de94944e0e70",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "97866a74315e442a24a1f6b26a7ec620e2a6003bdf7c95cbc1ace60631b01765",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:4a978dc250df08f13610cd598de9463b21c558143378df21ee0c50ec7b171fc9",
+        "generation_source": "reused"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "7ef1b2bd53064cd30e70b69413090cf28e6f19d42f23f5f755c900cf94ceea10",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-029": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:d83e4ea3212377e0342a2ede25faa794181757e67851a9bb120f8789282bc26f",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "652c89e1354b012f9c0e71b10bdfdac9f478b092dfc95a9b4de85b45cc39cf59",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "40e204743e80bb5e9624d515b50b866eca3f253350d3c3886492c214725eb6b8",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-030": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "9ff83ea923ef3cd0f5db94ab323545a905163f20af4d89fb1bafde2192c34e0f",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "b6a0562df93d043bacee202e7260aaccef7ca6b7dec1c598a1cdaff2ad80e560",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "3f16024ddc9d7d193d98f11089dd91d259d5c1d1d96a2ba3039a1995fbffb31b",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:7f4ea4e99dae5470c9589dfc2e33616e6c7d81668a43b02fa032b7fde2f8b56f",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-031": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "a000f39c40dee6d98cb2adb6c31702232f82eafc9893b811412180d8ec4afe39",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "ef9cfbbacc57f518e82559bea6519219553386caf89e03f0699f145b24379156",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "5d39790601ab0cfac8bd8aa9557a70db68b2bbc08d80eb75c5c6341dc2e69d17",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:c47fd660b3c500e64ffc424968776174e60cfa83e7f9899a31372421965cf0ba",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-032": {
+      "A": {
+        "arms": [
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:40385792dbcab0198d2ca775bf0bb6d025663dd179ef26e5a5d3f031c0ca5736",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "ef403d32831aa06ea05daa9c5c63315dba5a836dff26af53a72240b86e729d87",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "aa81f2bc59ba7144ce28d0cdaaa5a465867b8bfc70ffe027dacdccc32421ea32",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "56b9e0a1be79fe3bc0c49c4ce20118343a4edb64f18e53c0976fda75190af895",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-033": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "660006908193bd2a13be16e1bc290cb0ce2ef8d4988e1bff4579d760b64517c3",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "0ccce4bcc6a0a556449328afc5297a0b8bdd8ef4481c71f81836e6d3b0068c12",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:39b7a2869e9a37d64fc9ed8d2a292e3f104026ac6170d510baa7fcef4e5839e2",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-034": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "27fa83eb58e1f7dfefffeadaad67f83717736b0de6759900f34a86895935028f",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:52b6ad929a91f497c721f7346cf3eec3d52d11a28617b9042d7b6573a6a966a8",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-035": {
+      "A": {
+        "arms": [
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:5d1510b7705d189403f472ceefe9bee49c4dc8e84ed2ea215986266775894077",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "aa3306a9fb881f44dc101eeb45c4481c924f60bf401b437ddb12d2612e478592",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "c58add85df1eded88670d2b908bf175203d2c8a30ec3e9c05280fa0de48ade67",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "3388ab4125e60902e4e951aef8f7d4acc1ca8376b6646cd2c86f93bef2e7ea0f",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-036": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:7aab797524231fb7c6477beafa5a983aaf7d66842025d7de2574e810210e9f3c",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "4f5a9c1ced928e5ec0ea8a6b78dd7f44740de94f4f624ab37eaa7928ac4c3d8f",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "57841188eabd34be13f6afed718bd28d94c955249b8f8b31678f78996e0da101",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-037": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "138f10309f10cd53c066b5f1d1750d34dde9f462018c002b99fb1d5e3e94c8a4",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "ad9e23d9ffa7f922c4cd909e2ddb13d9614a89a7d4be9d1e448601ee0461a362",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:53d6b7fcc4abf4e3cabda08cef762d6c2a100d32fc90dfea05e1acec2178e8ff",
+        "generation_source": "reused"
+      },
+      "D": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "f3ee20ee9aedef773121b20690e4ffd0ba4121e1d65a8e25d70d0f966a9a3036",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-038": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "3be6a112d328e08c9b945f22c2164c511f38dbfa66deac0d915f0ed7d89c779b",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:eca4d7abc2cdac8ab0e069f09c1a5b08ffa5577052fca60f063627777c80b760",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "72ac106673bdb28e041c936b069bd42ac2db98691c35664226bf69b553fd5864",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "ad630c24ab9665a8e4b832e39a84cacb01cd6256b010128698c4ac8ae817f9f2",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-039": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:d4bd396452923b33da194f47abcd7f24a3531c2289ef94a701e242c5450246dd",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "7b47bbe43c2b6a8f1816272da262d64f09cf76a03c8e915163a0954e010dab05",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "ac1c78e801b2d9da8c35bb7a39fcea8f56770f66a47da5220b1c2d4e6fc413f1",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-040": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "0b2ae9777cdf3a8929739b93dc7564fdd20e6151458a27d8a8ae5b61a0264b01",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:bf31a0ef4fcb8b1103d20df6be500e6f6abcee359568436db6360610a23b3bcc",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-041": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:3a7b1226fd415efc9949d976e77989e0e36e3e6dbd59ebf9dbce3049fb311cd6",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "47c731c1de357eac7bac6e05a1018c579fe4b6252072bdb967e5a2b6311612da",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "582c71db91197c7b03a211ae640a79e416727ebad874c883b7aed5d0860a8437",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "f6da86b0dfc3175731385d480769d77fd63b460a2156ab9bd60bf796cf81a5da",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-042": {
+      "A": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:810fca17e3ff35a9a42aae026e433ce03e309d5a316cf1261ddf83dd76f52ba2",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "0623466aea8adcf301301dcadf518933feaf0b20247385a34b445881a52435a6",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "2393338b9936b76f095afaf642418c35c4d799b573fa6b87527b393683d6e734",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "4e28618e06621fd51f1c9849d3e269f524f45d7ac743f0e122f8c9132470857c",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-043": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "a07dcbe17b7c44a0a0834ca14ef7e21df8c87b61b3844cc2f13153e846fc92a8",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "9b3eae2b292c8c67ea927b9e432fa7e1a67330da55beccd1b8c32acca10ff95d",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:1872392d4092bc6b09b3df35fab6864f88f532136f8a6503ce1add87105f3284",
+        "generation_source": "reused"
+      }
+    },
+    "VAL-001-044": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:33f5c5a2245fc5c3dc49df3ae836534ce38be18dd2d1f17354e3705ce02c7944",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "b43d3dab085eb5445586d67d9cddddd4842f6111b185e38ba2488b319b2e5627",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "1af4824d243f7906e124040909fcc4f9013b3d689c746af7847b9513153db0c2",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-045": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "45bb617fbfc35d4b7eaa1ac6b304d7416e529ccb52d2168ab903e49b31818a41",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:06a351ce566202c9998dbe838d1e10cdd601098e1f04e71cb386237d095a9010",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "1d71efdf8c19a3dc5ed84e3717a2eb139a737fabb4350914cc01eeec443104a6",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "995a6483ed98eaeea7bd3ba24bf80a22778a28183de2d319fc3674687ed0bd52",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-046": {
+      "A": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "88abaf09ed4d76d8c18d7fed746e5144536c77ce4e527417c8de7590a7459768",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "319cc8065292ffffb774ff682bb0c1571c5c206b576517775a38762aeb5e9d83",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:bb4426ca04ff1b9e1f93e47ba9216a4b271e6a136f74b5b71f7a7cd66d99bdb1",
+        "generation_source": "reused"
+      },
+      "D": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "7d4a022bf1dddacf52c4410f86a5fd54b439336f8fe683a406415911f70181d3",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-047": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "d5eb01ee14780d5264d763c233b82a6256316adbe640cb5749696fb7d16ad473",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:712cef87962a55b13499747279cd528cbf0ddd02fa84153f049a98ef956f1a69",
+        "generation_source": "reused"
+      },
+      "C": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "5093bdc32c043430000ec739a9b5c466f6954fce1b3ae2343dccb8b7b0f7b48b",
+        "generation_source": "new"
+      },
+      "D": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "884d47698ad8214df3624e594a8708375881844f319729362108e879a8581ef0",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-048": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2"
+        ],
+        "generation_identity": "cf1927c7fa524ee9de6351b56c14570e3ee7fb91423e2b9f0d371b822b546c15",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "query_router_v1"
+        ],
+        "generation_identity": "17510227ba76db9b6c2a847011177ffde998081cb2a96cdc13b8cc25afad5081",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "fixed_top5"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:76f12e9735310d3ce29a4e0f250552a8b2a457427f5bfe50edb13cee9596b249",
+        "generation_source": "reused"
+      },
+      "D": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "39b7e952a4cf6453810f48e024d0bf3998e3448ba142343dcf3a82823a2a1988",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-049": {
+      "A": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:c8a67d6f597db853685b8935c94c091c220853318324f5fca894d54c373ff9ad",
+        "generation_source": "reused"
+      },
+      "B": {
+        "arms": [
+          "adaptive_prefix_v1",
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "a53cb4191a6016e1cca515abf1040342ad4cff6608648dfb41a2ff5cf695575e",
+        "generation_source": "new"
+      }
+    },
+    "VAL-001-050": {
+      "A": {
+        "arms": [
+          "adaptive_prefix_v1"
+        ],
+        "generation_identity": "7dc59385149f8428ef3f7f5eb53ed1e24d1757e1f1df361c6806760e8c102923",
+        "generation_source": "new"
+      },
+      "B": {
+        "arms": [
+          "no_router_adaptive_v1"
+        ],
+        "generation_identity": "78c09ac38285f2535f2684b5010f680412d6b28356bbacb9cfb2cec01443c5f3",
+        "generation_source": "new"
+      },
+      "C": {
+        "arms": [
+          "coverage_selector_v2",
+          "fixed_top5",
+          "query_router_v1"
+        ],
+        "generation_identity": "cache/validation_v1_llm_cache.json:3382fd6bb38db07c567f0b97a9c3542e83158d06197d2ec8dde2c8333c48c01f",
+        "generation_source": "reused"
+      }
+    }
+  }
+}
