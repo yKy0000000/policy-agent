@@ -69,3 +69,9 @@ Validation V1 早期有 holdout 价值，后来已用于 geometry、reranker、�
 - **只有测得的失败模式能支持增加复杂度时，才增加复杂度。**
 
 详见 `architecture_decision.md`、`final_metrics.json`、`failure_analysis.json`、`a2_case_study.json`、`figures/`。
+
+## Release 收尾：Non-Oracle Controller Gate
+
+检索、预算与失败分析之后，最后检验了一个部署信息可得的动作发现问题：只给问题、实际上下文和草稿，能否可靠提出一次必要补充或补证据动作？冻结 BGE 研究场景的 12 个输入各执行两次；PATCH 0/2、REFRESH 0/3 稳定发现，单次提出的 REFRESH 未复现。没有 transport/parse failures，controls 和 optional-pressure 没有有害触发，但自然正例没有稳定可执行动作。
+
+Sensor 额外消耗平均 2,775.8 provider tokens/request；美元成本只按历史 blended rate 估算。**两分支 FAIL → STOP**，没有执行 action probes、E2E 或实现 Controller。产品保留 Fast + Search+，架构研究封板。结果范围、原始报告和 release 澄清见 [Final Controller Gate V1](../final_controller_gate_v1/README.md)；不据此声称 LLM 无法发现缺口或所有 Agent architecture 无效。

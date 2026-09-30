@@ -1,0 +1,43 @@
+{
+  "version": "final-controller-gate-v1-economics",
+  "status": "complete",
+  "authoritative_basis": "provider-reported prompt/completion tokens and live per-call latency",
+  "cohort": "Gate 1 frozen sample (12 cases x 2 replicates = 24 sensor calls)",
+  "sensor": {
+    "calls": 24,
+    "provider_input_tokens_total": 64454,
+    "provider_output_tokens_total": 2165,
+    "provider_total_tokens": 66619,
+    "provider_input_tokens_per_request": 2685.6,
+    "provider_output_tokens_per_request": 90.2,
+    "provider_total_tokens_per_request": 2775.8,
+    "latency_p50_seconds": 0.934,
+    "latency_p95_seconds": 1.428,
+    "latency_mean_seconds": 0.946
+  },
+  "actions": {
+    "executed_actions": 0,
+    "reason": "Gate 1 failed before any action probe; no repair or refresh was executed.",
+    "action_cost_usd": 0.0
+  },
+  "reference_baseline": {
+    "arm": "fixed_top5 (historical, frozen)",
+    "provider_total_tokens_per_query": 2533.12,
+    "cost_per_query_usd": 0.00052381
+  },
+  "cost_estimate": {
+    "price_basis": "repository historical blended fixed_top5 rate = 0.00052381 / 2533.12 USD per token; no external price table is stored in the repository, so this is an estimate, not authoritative",
+    "blended_rate_usd_per_token": 2.0678451869631128e-07,
+    "sensor_cost_per_request_usd_est": 0.00057399,
+    "sensor_cost_per_request_vs_fixed_top5_ratio_est": 1.096
+  },
+  "trigger_rate": {
+    "non_return_actions": 1,
+    "non_return_actions_over_calls": 0.0417,
+    "stable_correct_actions": 0,
+    "note": "descriptive for this cohort only; not a production prevalence estimate"
+  },
+  "failed_action_cost_usd": 0.0,
+  "no_op_sensor_overhead_tokens_per_request": 2775.8,
+  "verdict": "The sensor overhead alone (2775.8 tokens/request) exceeds the entire historical fixed_top5 per-query token budget (2533.1) and estimated cost, while detecting 0 confirmed required gaps. The policy is dominated by the simpler fixed baseline."
+}

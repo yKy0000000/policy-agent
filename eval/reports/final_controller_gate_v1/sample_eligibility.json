@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "version": "final-controller-gate-v1",
+  "frozen_inputs": {
+    "eval/validation/broad_queries_validation_v1.json": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+    "eval/validation/broad_atomic_facts_validation_v1.json": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+    "eval/results/frozen_human_verdicts_v1.json": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716",
+    "eval/results/reranker_transfer_results.json": "bbce7fa512bfbf9d31b719ea3983934ce4a4781ce4caae6bb5751906a59cd589",
+    "eval/results/generation_utilization_results.json": "01be9f9c3a3c26b845df83475013c12838e67e55eb7967b7c3a4fda15f5d6963",
+    "eval/results/a1_blind_answer_quality_frozen_v1.json": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+    "eval/results/a1_blind_answer_mapping_v1.json": "62739dbcf4f4a95c81ba06280e9a31b4f4a0ee4cac3f7c81d89171bf2a3cfaee"
+  },
+  "roles": {
+    "patch_positive": "QUERY_REQUIRED aspect omitted by the draft, evidence present in context",
+    "patch_judge_disagreement": "generation-utilization judge says missing, canonical A1 judge says covered; not in the primary denominator",
+    "refresh_positive": "QUERY_REQUIRED aspect omitted by the draft, evidence absent from context",
+    "complete_control": "baseline grounded-fact-complete case (harmful-action control)",
+    "optional_pressure": "RELEVANT_BUT_OPTIONAL omitted fact (must not become a required action)",
+    "secondary_refresh": "ranking-weakness case; recorded, not in the primary denominator"
+  },
+  "counts": {
+    "patch_positive": 2,
+    "patch_judge_disagreement": 2,
+    "refresh_positive": 3,
+    "complete_control": 3,
+    "optional_pressure": 2,
+    "secondary_refresh": 1
+  },
+  "cases": [
+    {
+      "case_id": "VAL-001-011",
+      "role": "patch_positive",
+      "expected_action": "PATCH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-011-F01"
+      ],
+      "route": "SIMPLE",
+      "draft_omits": true,
+      "a1_fixed_top5_labels": {
+        "VAL-001-011-F01": {
+          "label": "NOT_COVERED",
+          "note": "human resolution correction"
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-011-F01": "missing"
+      },
+      "support_in_context": true,
+      "truth": [
+        {
+          "fact_id": "VAL-001-011-F01",
+          "statement": "GitHub prohibits using the platform to organize, promote, threaten, or incite violence.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-050",
+      "role": "patch_positive",
+      "expected_action": "PATCH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-050-F01"
+      ],
+      "route": "SIMPLE",
+      "draft_omits": true,
+      "a1_fixed_top5_labels": {
+        "VAL-001-050-F01": {
+          "label": "NOT_COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-050-F01": "missing"
+      },
+      "support_in_context": true,
+      "truth": [
+        {
+          "fact_id": "VAL-001-050-F01",
+          "statement": "The commitment applies before GitHub brings a non-defensive claim arising from termination of a Covered License.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-009",
+      "role": "patch_judge_disagreement",
+      "expected_action": "PATCH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-009-F01"
+      ],
+      "route": "SIMPLE",
+      "draft_omits": false,
+      "a1_fixed_top5_labels": {
+        "VAL-001-009-F01": {
+          "label": "COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-009-F01": "missing"
+      },
+      "support_in_context": true,
+      "truth": [
+        {
+          "fact_id": "VAL-001-009-F01",
+          "statement": "The claim concerns a technological measure that effectively controls access to a copyright-protected work.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-022",
+      "role": "patch_judge_disagreement",
+      "expected_action": "PATCH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-022-F02"
+      ],
+      "route": "BROAD",
+      "draft_omits": false,
+      "a1_fixed_top5_labels": {
+        "VAL-001-022-F02": {
+          "label": "COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-022-F02": "missing"
+      },
+      "support_in_context": true,
+      "truth": [
+        {
+          "fact_id": "VAL-001-022-F02",
+          "statement": "Disclosed data must be used consistently with the candidate privacy statement.",
+          "final": "QUERY_REQUIRED",
+          "route": "BROAD",
+          "in_context": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-006",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-006-F02"
+      ],
+      "route": "BROAD",
+      "draft_omits": true,
+      "a1_fixed_top5_labels": {
+        "VAL-001-006-F02": {
+          "label": "NOT_COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-006-F02": "covered"
+      },
+      "support_in_context": false,
+      "truth": [
+        {
+          "fact_id": "VAL-001-006-F02",
+          "statement": "It must identify allegedly infringing material specifically enough for GitHub to locate it, including a URL at minimum.",
+          "final": "QUERY_REQUIRED",
+          "route": "BROAD",
+          "in_context": false
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-033",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-033-F01",
+        "VAL-001-033-F02",
+        "VAL-001-033-F03",
+        "VAL-001-033-F04",
+        "VAL-001-033-F05"
+      ],
+      "route": "SIMPLE",
+      "draft_omits": true,
+      "a1_fixed_top5_labels": {
+        "VAL-001-033-F01": {
+          "label": "NOT_COVERED",
+          "note": ""
+        },
+        "VAL-001-033-F02": {
+          "label": "NOT_COVERED",
+          "note": ""
+        },
+        "VAL-001-033-F03": {
+          "label": "NOT_COVERED",
+          "note": ""
+        },
+        "VAL-001-033-F04": {
+          "label": "NOT_COVERED",
+          "note": ""
+        },
+        "VAL-001-033-F05": {
+          "label": "NOT_COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-033-F01": "covered",
+        "VAL-001-033-F02": "covered",
+        "VAL-001-033-F03": "covered",
+        "VAL-001-033-F04": "covered",
+        "VAL-001-033-F05": "covered"
+      },
+      "support_in_context": false,
+      "truth": [
+        {
+          "fact_id": "VAL-001-033-F01",
+          "statement": "Maintainers can publish community-specific expectations for project interaction.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": false
+        },
+        {
+          "fact_id": "VAL-001-033-F02",
+          "statement": "People with repository write access can edit, delete, or hide comments.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": false
+        },
+        {
+          "fact_id": "VAL-001-033-F03",
+          "statement": "Authorized repository members can lock disruptive conversations.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": false
+        },
+        {
+          "fact_id": "VAL-001-033-F04",
+          "statement": "An account or organization can block a user.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": false
+        },
+        {
+          "fact_id": "VAL-001-033-F05",
+          "statement": "A public project can set temporary interaction limits when facing unwanted attention.",
+          "final": "QUERY_REQUIRED",
+          "route": "SIMPLE",
+          "in_context": false
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-046",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-046-F03",
+        "VAL-001-046-F04"
+      ],
+      "route": "BROAD",
+      "draft_omits": true,
+      "a1_fixed_top5_labels": {
+        "VAL-001-046-F03": {
+          "label": "NOT_COVERED",
+          "note": ""
+        },
+        "VAL-001-046-F04": {
+          "label": "NOT_COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-046-F03": "covered",
+        "VAL-001-046-F04": "covered"
+      },
+      "support_in_context": false,
+      "truth": [
+        {
+          "fact_id": "VAL-001-046-F03",
+          "statement": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+          "final": "QUERY_REQUIRED",
+          "route": "BROAD",
+          "in_context": false
+        },
+        {
+          "fact_id": "VAL-001-046-F04",
+          "statement": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+          "final": "QUERY_REQUIRED",
+          "route": "BROAD",
+          "in_context": false
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-029",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "target_fact_ids": [],
+      "route": "BROAD",
+      "draft_omits": false,
+      "support_in_context": null,
+      "truth": [],
+      "baseline_fact_complete": true,
+      "baseline_grounded_fact_complete": true
+    },
+    {
+      "case_id": "VAL-001-042",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "target_fact_ids": [],
+      "route": "BROAD",
+      "draft_omits": false,
+      "support_in_context": null,
+      "truth": [],
+      "baseline_fact_complete": true,
+      "baseline_grounded_fact_complete": true
+    },
+    {
+      "case_id": "VAL-001-007",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "target_fact_ids": [],
+      "route": "BROAD",
+      "draft_omits": false,
+      "support_in_context": null,
+      "truth": [],
+      "baseline_fact_complete": true,
+      "baseline_grounded_fact_complete": true
+    },
+    {
+      "case_id": "VAL-001-026",
+      "role": "optional_pressure",
+      "expected_action": "RETURN_DRAFT",
+      "target_fact_ids": [
+        "VAL-001-026-F02"
+      ],
+      "route": "BROAD",
+      "draft_omits": false,
+      "a1_fixed_top5_labels": {
+        "VAL-001-026-F02": {
+          "label": null,
+          "note": "not_in_required_aspects"
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-026-F02": "missing"
+      },
+      "support_in_context": true,
+      "truth": [
+        {
+          "fact_id": "VAL-001-026-F02",
+          "statement": "The developer must follow GitHub's technical specifications and requirements.",
+          "final": "RELEVANT_BUT_OPTIONAL",
+          "route": "BROAD",
+          "in_context": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-039",
+      "role": "optional_pressure",
+      "expected_action": "RETURN_DRAFT",
+      "target_fact_ids": [
+        "VAL-001-039-F02"
+      ],
+      "route": "BROAD",
+      "draft_omits": false,
+      "a1_fixed_top5_labels": {
+        "VAL-001-039-F02": {
+          "label": null,
+          "note": "not_in_required_aspects"
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-039-F02": "missing"
+      },
+      "support_in_context": true,
+      "truth": [
+        {
+          "fact_id": "VAL-001-039-F02",
+          "statement": "GitHub offers source code where component licenses require such an offer.",
+          "final": "RELEVANT_BUT_OPTIONAL",
+          "route": "BROAD",
+          "in_context": true
+        }
+      ]
+    },
+    {
+      "case_id": "VAL-001-001",
+      "role": "secondary_refresh",
+      "expected_action": "REFRESH_CONTEXT",
+      "target_fact_ids": [
+        "VAL-001-001-F02",
+        "VAL-001-001-F03"
+      ],
+      "route": "BROAD",
+      "draft_omits": false,
+      "a1_fixed_top5_labels": {
+        "VAL-001-001-F02": {
+          "label": "NOT_COVERED",
+          "note": ""
+        },
+        "VAL-001-001-F03": {
+          "label": "COVERED",
+          "note": ""
+        }
+      },
+      "generation_utilization_judge": {
+        "VAL-001-001-F02": "covered",
+        "VAL-001-001-F03": "covered"
+      },
+      "support_in_context": false,
+      "truth": [
+        {
+          "fact_id": "VAL-001-001-F02",
+          "statement": "The counter notice is sworn under penalty of perjury.",
+          "final": "QUERY_REQUIRED",
+          "route": "BROAD",
+          "in_context": false
+        },
+        {
+          "fact_id": "VAL-001-001-F03",
+          "statement": "Intentionally false sworn information can cause criminal and civil consequences.",
+          "final": "QUERY_REQUIRED",
+          "route": "BROAD",
+          "in_context": false
+        }
+      ]
+    }
+  ],
+  "replicate_calls": 26
+}

@@ -1,0 +1,48 @@
+{
+  "version": "final-controller-gate-v1-gate1-adjudication",
+  "status": "frozen",
+  "method": "Semantic adjudication of the non-oracle sensor outputs against frozen human truth and the canonical A1 blind judge labels, using only the query + frozen evidence + draft that the sensor saw. Unresolved/ambiguous targets do not count as hits. Runtime sensor output was never shown any gold.",
+  "rules": {
+    "hit": "action class correct AND target matches a frozen NOT_COVERED required aspect for that case AND deterministic checks valid AND stable across both replicates",
+    "miss": "primary positive not hit",
+    "harmful_false_positive": "non-RETURN action on a complete control targeting a non-genuine omission",
+    "optional_upgrade": "non-RETURN action targeting exactly the designated RELEVANT_BUT_OPTIONAL fact"
+  },
+  "cases": [
+    {"case_id": "VAL-001-011", "role": "patch_positive", "target_fact_ids": ["VAL-001-011-F01"],
+     "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "MISS",
+     "note": "Human-resolution-confirmed required omission (violence organization/promotion prohibition) not detected; sensor asserted the draft already covered both obligations."},
+    {"case_id": "VAL-001-050", "role": "patch_positive", "target_fact_ids": ["VAL-001-050-F01"],
+     "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "MISS",
+     "note": "Confirmed required omission (pre-filing commitment timing) not detected; sensor summarized provisional/permanent reinstatement instead."},
+    {"case_id": "VAL-001-009", "role": "patch_judge_disagreement", "target_fact_ids": ["VAL-001-009-F01"],
+     "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "NOT_COUNTED_SECONDARY",
+     "note": "Canonical A1 judge says COVERED (sensor agrees); generation-utilization judge says missing. Not a primary denominator case."},
+    {"case_id": "VAL-001-022", "role": "patch_judge_disagreement", "target_fact_ids": ["VAL-001-022-F02"],
+     "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "NOT_COUNTED_SECONDARY",
+     "note": "Canonical A1 judge says COVERED (sensor agrees); generation-utilization judge says missing. Not a primary denominator case."},
+    {"case_id": "VAL-001-006", "role": "refresh_positive", "target_fact_ids": ["VAL-001-006-F02"],
+     "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "MISS",
+     "note": "Required 'identify the material specifically, including a URL at minimum' not detected."},
+    {"case_id": "VAL-001-033", "role": "refresh_positive", "target_fact_ids": ["VAL-001-033-F01", "VAL-001-033-F02", "VAL-001-033-F03", "VAL-001-033-F04", "VAL-001-033-F05"],
+     "sensor_actions": ["REFRESH_CONTEXT", "RETURN_DRAFT"], "verdict": "PARTIAL_UNSTABLE",
+     "note": "r1 produced a REFRESH_CONTEXT with a target semantically matching the omitted maintainer moderation options (lock/block/limit) and a valid refresh query; r2 returned the draft, noting only that the sources reference moderation tools generically. Unstable across replicates; not a hit."},
+    {"case_id": "VAL-001-046", "role": "refresh_positive", "target_fact_ids": ["VAL-001-046-F03", "VAL-001-046-F04"],
+     "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "MISS",
+     "note": "Required pre-disclosure notice/legal-process copy and urgent-delay obligation not detected, although the sensor noted the sources do not enumerate the delay exceptions. It recognized source absence but did not choose REFRESH."},
+    {"case_id": "VAL-001-029", "role": "complete_control", "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "TRUE_NEGATIVE"},
+    {"case_id": "VAL-001-042", "role": "complete_control", "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "TRUE_NEGATIVE"},
+    {"case_id": "VAL-001-007", "role": "complete_control", "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "TRUE_NEGATIVE"},
+    {"case_id": "VAL-001-026", "role": "optional_pressure", "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "CORRECT_NO_UPGRADE"},
+    {"case_id": "VAL-001-039", "role": "optional_pressure", "sensor_actions": ["RETURN_DRAFT", "RETURN_DRAFT"], "verdict": "CORRECT_NO_UPGRADE"}
+  ],
+  "branch_verdicts": {
+    "patch": {"primary_positives": 2, "stable_hits": 0, "verdict": "FAIL",
+              "reason": "0/2 confirmed required omissions detected; both remained RETURN_DRAFT in both replicates."},
+    "refresh": {"primary_positives": 3, "stable_hits": 0, "partial_unstable": 1, "verdict": "FAIL",
+                "reason": "0/3 stable discoveries; one unstable REFRESH_CONTEXT (VAL-001-033 r1) did not survive replicate 2."},
+    "controls": {"harmful_false_positives": 0, "verdict": "CLEAN"},
+    "optional_pressure": {"upgrades_to_required": 0, "verdict": "CLEAN"}
+  },
+  "decision_input": "PATCH FAIL + REFRESH FAIL -> STOP"
+}

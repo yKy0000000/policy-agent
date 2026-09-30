@@ -33,3 +33,11 @@ Query
 - Hierarchical/parent expansion 未实现，因为没有观察到足以支持它的失败模式。
 
 详见 `research_summary.md`、`final_metrics.json`、`failure_analysis.json`、`a2_case_study.json`。
+
+## 最终 release 补记：Controller Gate = STOP
+
+上述 A1–A3 是原研究阶段的冻结配置记录。后续产品保留 MiniLM + fixed Top5 的 Fast，以及用户选择的 Adaptive/Search+，不采用 BGE production migration。
+
+最后的 [Final Controller Gate V1](../final_controller_gate_v1/README.md)检查了观察 `query + actual context + draft` 后能否提出可执行动作。24 次调用中，PATCH 0/2、REFRESH 0/3 稳定发现；两分支均 FAIL，因此 **STOP**。没有 action probes、E2E、Controller 实现或 production 变更。始终执行的 sensor 平均增加 2,775.8 provider tokens/request，尚未证明动作收益。
+
+结论只适用于冻结 BGE 研究场景及被测试的 non-oracle sensor，不推广为所有 LLM 或 Agent 架构的结论。保留原始结果、canonical judge 分歧和 optional/required 区别；不修改 A1–A3 决策或 frozen truth。Policy Agent architecture research 在此封板，不进入 V2/V3 tuning。

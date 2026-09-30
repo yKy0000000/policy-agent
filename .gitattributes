@@ -3,3 +3,6 @@ eval/results/router_v1/router_v1_failure_review.md whitespace=cr-at-eol,-blank-a
 eval/results/router_v1/router_v1_report.md whitespace=cr-at-eol,-blank-at-eof
 eval/results/router_v1_1/router_v1_1_failure_review.md whitespace=cr-at-eol,-blank-at-eof
 eval/results/router_v1_1/router_v1_1_report.md whitespace=cr-at-eol,-blank-at-eof
+
+# Preserve the original bytes used by the final gate's frozen SHA-256 identities.
+eval/reports/final_controller_gate_v1/* -text

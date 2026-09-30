@@ -1,0 +1,118 @@
+{
+  "version": "gate-manifest-v1",
+  "frozen_at": "2026-09-30",
+  "task": "final_controller_gate_v1",
+  "scope_note": "Frozen before the first sensor call. No prompt/threshold/sample/design change is permitted after this point except a recorded implementation bug fix that does not alter the semantic experiment definition.",
+  "hypothesis": "A non-oracle runtime sensor can discover a real, query-required, evidence-grounded gap from (query + actual generation context + draft answer) without any gold aspect/proposition/oracle evidence/human diagnosis, and choose a bounded action with net benefit.",
+  "sample": {
+    "eligibility_artifact": "eval/reports/final_controller_gate_v1/sample_eligibility.json",
+    "eligibility_sha256": "48865672aa2511a9868a0f74003610e902a981197df786bbd3cb518ebcf13a69",
+    "patch_positive": [
+      "VAL-001-011-F01",
+      "VAL-001-050-F01"
+    ],
+    "patch_judge_disagreement_secondary": [
+      "VAL-001-009-F01",
+      "VAL-001-022-F02"
+    ],
+    "refresh_positive": [
+      "VAL-001-006-F02",
+      "VAL-001-033-F01",
+      "VAL-001-046-F03",
+      "VAL-001-046-F04"
+    ],
+    "complete_controls": [
+      "VAL-001-029",
+      "VAL-001-042",
+      "VAL-001-007"
+    ],
+    "optional_pressure": [
+      "VAL-001-026-F02",
+      "VAL-001-039-F02"
+    ],
+    "secondary_refresh_not_run": [
+      "VAL-001-001-F02"
+    ],
+    "gate1_call_set": "primary positives + judge-disagreement + refresh positives + complete controls + optional pressure (secondary_refresh excluded from calls)"
+  },
+  "sensor": {
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "max_tokens": 700,
+    "replicates": 2,
+    "system_prompt_sha256": "801e44d066e6784fdf55915e122f6d536db820ae20fba710442a56dfa76cf597",
+    "input_fields": [
+      "user question",
+      "evidence sources S1..Sn",
+      "draft answer"
+    ],
+    "forbidden_inputs": [
+      "gold aspect ids",
+      "target propositions",
+      "target chunk ids",
+      "oracle evidence",
+      "human diagnosis",
+      "failure category",
+      "oracle action",
+      "benchmark answers",
+      "reviewer comments"
+    ],
+    "output_schema": {
+      "action": "RETURN_DRAFT|PATCH_CONTEXT|REFRESH_CONTEXT",
+      "target": "string",
+      "reason": "string",
+      "evidence_refs": [
+        {
+          "source_id": "S1",
+          "evidence_span": "verbatim span"
+        }
+      ],
+      "refresh_query": "string"
+    },
+    "no_confidence_output": true
+  },
+  "deterministic_validation": [
+    "json schema",
+    "action in allowed set",
+    "target non-empty for non-RETURN actions",
+    "PATCH evidence_refs non-empty and source_id in S1..Sn",
+    "evidence_span verbatim-locatable in its source (whitespace-normalized)",
+    "REFRESH refresh_query >= 3 tokens and no URL",
+    "no URL anywhere; no confidence field"
+  ],
+  "actions": {
+    "RETURN_DRAFT": "no reliably identifiable query-required missing obligation",
+    "PATCH_CONTEXT": "query-required obligation missing from draft and directly supported by current sources; one bounded constrained repair",
+    "REFRESH_CONTEXT": "query-required obligation missing from draft and not supported by current sources; one bounded evidence refresh"
+  },
+  "thresholds": {
+    "stability": "a hit counts only if BOTH replicates produce the correct action class AND a target matching a frozen NOT_COVERED required aspect with valid deterministic checks",
+    "patch_pass": ">=2 of 2 primary patch positives hit; 0 harmful actionable false positives on complete controls; 0 optional->required upgrades",
+    "refresh_pass": ">=2 of 3 refresh positives hit; 0 harmful actionable false positives on complete controls; 0 optional->required upgrades",
+    "harmful_false_positive": "a non-RETURN action on a complete control whose target is not a genuine required omission, or any action causing a required-aspect regression / unsupported claim / citation failure when executed",
+    "optional_upgrade": "a non-RETURN action whose target is exactly the designated RELEVANT_BUT_OPTIONAL fact",
+    "gate2_patch_pass": "recovers >=1 confirmed missing required aspect, no new required-aspect loss on the same case, output passes citation/no-URL guard",
+    "gate2_refresh_pass": "targeted refresh recovers the missing required evidence strictly better than blind expansion at matched evidence budget",
+    "economics_stop": "sensor overhead alone makes the policy dominated by a simpler baseline"
+  },
+  "budget": {
+    "actions_per_query": 1,
+    "search_rounds_max": 1,
+    "repair_calls_max": 1,
+    "hard_token_and_latency_caps": "recorded per executed action"
+  },
+  "executor": {
+    "gate2_patch_model": "deepseek-v4-flash",
+    "stronger_model_escalation": "excluded from V1 runtime"
+  },
+  "retrieval": {
+    "gate2_refresh": "existing hybrid retrieval + reranker; targeted query from sensor vs blind expansion at matched budget",
+    "config_note": "BGE research-stack frozen snapshots used for the sensor scenario; production default remains MiniLM"
+  },
+  "evaluation": {
+    "primary": "frozen human truth + canonical A1 blind judge labels",
+    "secondary": "generation-utilization judge, same-family judge",
+    "runtime_sensor_output_excluded_from_evaluator_prompt": true
+  }
+}

@@ -30,9 +30,19 @@
 
 先看[A1 失败归因](results/a1_failure_analysis_summary.md)，再看[A2 最小机制验证](results/a2_minimal_mechanism_probe_summary.md)。单个 requirement-query 案例说明 decomposition 可能补回证据，但不足以支持默认启用。
 
+## Final Controller Gate / Research Closure
+
+最后一次架构门槛已完成，决策为 **STOP**：12 个冻结 BGE context/draft 输入、每题两次，共 24 个 non-oracle sensor 调用；PATCH 0/2、REFRESH 0/3 稳定发现。没有执行后续动作、E2E 或实现 Controller，当前 Fast（MiniLM + fixed Top5）和 Search+ 保持不变。
+
+先读[归档导航及 release 澄清](reports/final_controller_gate_v1/README.md)，再看[最终报告](reports/final_controller_gate_v1/final_report.md)、[机器决策](reports/final_controller_gate_v1/decision.json)和[逐调用原始结果](reports/final_controller_gate_v1/gate1_sensor_results.json)。`009-F01`、`022-F02` 的 canonical A1 与 generation-utilization judge 分歧保留为 secondary，不进入主正例分母；`039-F02` 为 optional，不能改写成 required failure。
+
+`run_final_controller_gate_v1.py` 是原实验的归档脚本，不是新的产品入口。该 release 只进行无网络归档完整性检查与现有测试，不重新运行 sensor、不重建 eligibility、不重新生成报告。本项目架构研究已封板；下方通用 runner 说明用于理解和审计现有工具，不授权继续本项目架构实验。
+
 ## Reproducibility & Frozen Artifacts
 
 需要核对研究身份时读[复现清单](reports/research_v1/reproducibility_manifest.md)，再查[Router V1 freeze manifest](router_v1_freeze_manifest.json)及[历史材料索引](legacy/MANIFEST.md)。中文阅读版只解释原始结果，不属于 frozen identity；请以原始文件和 manifest 为审计依据。
+
+Final Controller Gate 的原始文件身份另见[归档校验和](reports/final_controller_gate_v1/archive_checksums.json)。归档检查无需 `.env`、LLM endpoint 或本地运行 cache：`python -m unittest discover -s tests -p test_final_controller_gate_v1.py`。原报告中的 planned-call 计数、latency 分位数及历史摘要勘误见[release 澄清](reports/final_controller_gate_v1/README.md)。
 
 ## 评测工作区与运行说明
 

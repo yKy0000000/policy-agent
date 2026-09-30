@@ -16,7 +16,7 @@
 
 主链路是 **Contextual Rewrite → hybrid retrieval（lexical Top20 + semantic Top20）→ 按 chunk 去重 → MiniLM cross-encoder reranking → 证据选择 → grounded generation → citation validation**。Fast 固定使用 Top5；证据不足时，回答应说明已发布政策没有给出所问细节。[主链路](src/agent.py) · [检索与重排](src/reranked_retriever.py) · [生成与引用校验](src/generator.py)
 
-Validation V1 的 50 题诊断中，原始 rubric facts 的候选覆盖达到 **235/239**；Fast 所依据的 fixed Top5 冻结答案完成 **43/50** 题、覆盖 **196/208** 个必需信息点。239 是来源事实的诊断分母，208 是裁决后的 `QUERY_REQUIRED` 信息点分母，不能把两项直接相减成准确率漏斗。[候选诊断](eval/results/evidence_geometry_summary.md) · [冻结答案评测](eval/results/a1_blind_answer_quality_frozen_summary.md) · [裁决口径](eval/human_truth_contract_v1.md)
+Validation V1 的 50 题诊断中，原始 rubric facts 的候选覆盖达到 **235/239**；用于产品取舍参考的 BGE 研究栈 fixed Top5 冻结答案完成 **43/50** 题、覆盖 **196/208** 个必需信息点。这不是当前 MiniLM 的新评测成绩。239 是来源事实的诊断分母，208 是裁决后的 `QUERY_REQUIRED` 信息点分母，不能把两项直接相减成准确率漏斗。[候选诊断](eval/results/evidence_geometry_summary.md) · [冻结答案评测](eval/results/a1_blind_answer_quality_frozen_summary.md) · [裁决口径](eval/human_truth_contract_v1.md)
 
 多轮追问先利用近期 history 改写成独立问题，再进入同一检索链路。BGE 在离线对照中改善了排序，但同输入 CPU warm rerank p95 为 **14.78 秒**，MiniLM 为 **2.55 秒**，且存在完整答案回归；因此运行默认仍采用 MiniLM。[重排运行决策](eval/reports/runtime_reranker_decision_v1.md)
 
@@ -45,7 +45,7 @@ Fast 是成本端点；Adaptive 在当前快照中提供更高的总体完整性
 
 读到这里，需要作出的不只是“哪个算法最好”的判断。用户有时只想尽快得到可靠的政策说明，有时愿意投入更多计算，争取更完整的证据和回答。即使面对同一个 query，这两种选择也可能都合理；预算选择不完全是 query 的属性，用户愿意付出的时间和计算预算不能仅凭 query wording 可靠推断。
 
-Router 应在什么条件下替用户升级预算，一直困扰着我。到目前为止，我仍没有得到一个自己认为足够可靠、又能证明额外复杂度值得的自动解法。这并不意味着自动选择没有研究空间；只是当前数据和实现还不足以支持把它放进用户主链路。继续优化 Router、decomposition 和 evidence selection 可以留给下一阶段，而当前版本选择在这里收住复杂度。
+Router 应在什么条件下替用户升级预算，一直困扰着我。Query-level routing 的结果没有给出足够可靠的自动解法，但留下了最后一个问题：如果先看到实际证据和草稿，系统能否再决定是否追加计算？项目随后用一次有停止规则的 non-oracle controller gate 检查这个问题；最终结果见下文。这不意味着自动选择没有研究空间，只是当前项目需要用可验证的收益决定在哪里收住复杂度。
 
 因此最终将预算偏好显式交还给用户：默认 Fast，需要更高预算时选择 Search+。它们是两种计算预算选择，不是“简单问题 / 困难问题”的标签。自动 Router 仍保留为研究实现与复现材料。[Router V1 报告](eval/reports/zh/router_v1_report_zh.md) · [A1 决策](eval/results/a1_final_decision_v1.md)
 
@@ -56,6 +56,18 @@ Router 应在什么条件下替用户升级预算，一直困扰着我。到目�
 另一方面，`VAL-001-046` 的离线机制验证中，针对缺失条件的 requirement query 将目标来源排到第 **2** 名，使五段上下文内的必需证据覆盖从 **0/4** 到 **4/4**。这展示了更换检索表示可能有效，但当时**没有重新生成答案**，也不能仅凭一个案例决定产品架构；最终决策依据上面的聚合对比。[失败复盘](eval/results/a1_failure_analysis_summary.md) · [A2 机制验证](eval/results/a2_minimal_mechanism_probe_summary.md)
 
 ![VAL-001-046 的离线检索机制案例；不是总体质量结论](eval/reports/research_v1/figures/decomposition_case_zh.png)
+
+## 最后一道门槛：看到证据和草稿后再决定？
+
+失败复盘把问题进一步分开：有些信息没有进入 context，有些已经进入，答案却没有利用。因此，最后的候选机制不再只问“要不要多检索”，而是观察 **query + 实际 generation context + draft**，提出一次补充回答（`PATCH_CONTEXT`）、补证据（`REFRESH_CONTEXT`），或直接返回草稿。先验证动作能否可靠发现，只有通过才允许执行；没有预先实现完整 Controller。[失败归因](eval/results/a1_failure_analysis_summary.md) · [最终 gate 记录](eval/reports/final_controller_gate_v1/README.md)
+
+旧修复实验也需要保留边界：oracle repair 的 `039-F02` 是 optional，`050-F01` 才是 required，不能称为“两项必要遗漏”。Stronger model 达到 **6/6 语义修复、3/6 完整约束通过**；H3 注入明确修复决策后，current model 也实际执行了 **6/6** 次修复、没有 overrides。这使 decision formation 成为更值得检查的解释，不能把早期模型差异简单归结为 executor 不会修复；H3 的执行服从也不等于完整答案质量已经得到独立验证。[Oracle 人工结果](eval/results/oracle_repair_v1_human_summary.md) · [H3 机制记录](eval/results/mechanism_h3_stage_summary.md)
+
+最终门槛复用冻结的 **BGE 研究栈 context + draft**，不给 sensor gold aspects、目标命题或正确动作；12 个输入各执行两次，共 **24 calls**，没有 transport/parse failures。两个 PATCH 正例均未发现；三个 REFRESH 正例均未稳定发现，其中一题只在第一次提出刷新。总体为 **23/24 返回草稿、1/24 提出刷新**。完整 controls 没有有害触发，optional 内容也没有被升级，但在这个小样本里没有误触发，并不证明 sensor 已具备可靠的动作发现能力。[结果与裁决](eval/reports/final_controller_gate_v1/gate1_sensor_summary.md)
+
+观察本身已有成本：sensor 平均 **2,775.8 provider tokens/request**，记录的 latency p50/p95 为 **0.934/1.428 秒**；历史 fixed Top5 参考为 **2,533.1 tokens/query**。按历史 blended rate 估算，sensor 约 **$0.000574/request**，而历史 baseline 约 **$0.00052381/query**；美元值是估算，不是本轮账单或当前 MiniLM 的配对成本。这些是额外检查的开销，尚未执行任何修复或刷新动作。[成本及统计口径](eval/reports/final_controller_gate_v1/README.md#成本与统计口径)
+
+**PATCH FAIL + REFRESH FAIL → STOP。** 没有 action probes、E2E 或 Controller 实现，也没有 production migration。本次结果只支持：在这个冻结项目样本与所测 non-oracle sensor 下，runtime action discovery 不足以可靠到值得增加 Controller；它不证明 LLM 无法发现缺口，也不证明 Agent architecture 普遍无效。架构研究在此封板，产品保留 **Fast + Search+**，把预算偏好继续交给用户。[最终决策](eval/reports/final_controller_gate_v1/decision.json)
 
 ## 快速开始
 
@@ -112,8 +124,10 @@ cache/                本地索引、模型与缓存（不提交）
 
 Grounding 依靠证据约束生成，citation validation 确定性地检查引用 ID 和来源元数据；结构合法不等于每个论断都得到语义支持。详细 benchmark、truth、实验记录与复现材料在 [eval/](eval/README.md)，包括 [研究架构记录](eval/reports/research_v1/architecture_decision.md) 与 [复现清单](eval/reports/research_v1/reproducibility_manifest.md)。
 
-## 限制与下一步
+## 限制与研究封板
 
 Validation V1 和 Broad V3 已作为开发数据使用，不是新外部 holdout；70 题合并快照也有跨 cohort 实现与 judge 来源差异。答案 judge 的小样本校准由单一项目作者最终裁决，不能当作全面独立人工真值。[校准报告](eval/reports/judge_calibration_v1.md)
 
 目前未验证真实用户问题分布、部署监控或在线反馈。Search+ 在本地 MiniLM 栈上的实际体验仍应独立观察；当前快照不保证逐题优于 Fast。本项目提供有来源的政策说明，不提供法律意见。
+
+Final controller gate 是已有研究数据上的有限可行性筛选，不是 production precision/recall 或新的独立 holdout。冻结结果、争议标签和负面决策保留供审计；本 release 不再增加 Agent 组件或开展下一轮架构实验。

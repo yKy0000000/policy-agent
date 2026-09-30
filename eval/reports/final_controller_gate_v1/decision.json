@@ -1,0 +1,18 @@
+{
+  "decision": "STOP",
+  "patch_gate": "FAIL (0/2 confirmed required omissions detected; both replicates RETURN_DRAFT)",
+  "refresh_gate": "FAIL (0/3 stable discoveries; 1 unstable REFRESH_CONTEXT that did not survive replicate 2)",
+  "economics_gate": "DOMINATED_BY_BASELINE (sensor ~2,775.8 tokens/request > fixed_top5 2,533.1 tokens/query, for 0 confirmed detections)",
+  "controls_gate": "CLEAN (0 harmful actionable false positives on 3 complete controls; 0 optional->required upgrades)",
+  "implemented": false,
+  "production_default_changed": false,
+  "frozen_inputs_hashes": {
+    "gate_manifest_v1.json": "5f9f1816671ce9eb",
+    "sample_eligibility.json": "48865672aa2511a9",
+    "gate1_sensor_results.json": "64ed248c47ef4aca",
+    "gate1_adjudication.json": "24f0b65150eb156c",
+    "sensor_system_prompt_sha256": "801e44d066e6784f"
+  },
+  "reason": "A non-oracle runtime sensor could not discover any confirmed query-required gap from (query + actual context + draft) and did not choose a stable bounded action. Precision was clean but recall was empty on the only confirmed positives; when it did recognize that the sources were silent it still declined to escalate. The always-on sensor is also economically dominated. Per the frozen decision matrix (PATCH FAIL + REFRESH FAIL), the architecture experiment stops and no controller is implemented.",
+  "next_action": "Keep Fixed/Fast production and Search+ unchanged. Record this as the terminal negative architecture result. Do not design V3, do not add verifier/planner/multi-round/multi-agent, do not build a new benchmark to rescue the controller. Optionally, the already-measured generation-side coverage-aware prompt remains a separate, non-agentic investigation."
+}

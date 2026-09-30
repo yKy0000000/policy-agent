@@ -1,0 +1,1077 @@
+{
+  "schema_version": 1,
+  "version": "final-controller-gate-v1",
+  "phase": "gate1_non_oracle_action_discovery",
+  "status": "complete",
+  "sensor_model": "deepseek-v4-flash",
+  "sensor_system_sha256": "801e44d066e6784fdf55915e122f6d536db820ae20fba710442a56dfa76cf597",
+  "design": {
+    "replicates": 2,
+    "max_tokens": 700,
+    "temperature": 0.0,
+    "cells": 24
+  },
+  "eligibility": {
+    "schema_version": 1,
+    "version": "final-controller-gate-v1",
+    "frozen_inputs": {
+      "eval/validation/broad_queries_validation_v1.json": "1fb2b03d752343ea19d83283dff92d066febe357178cb93a5cf7c603c1fe4858",
+      "eval/validation/broad_atomic_facts_validation_v1.json": "451a583f5ce88e0b573e61e5af073e34748b35900fa3ecd3d3f00b001699df50",
+      "eval/results/frozen_human_verdicts_v1.json": "85199cfa9c0fa486eb467aa04dda108cd121ce775bbf748d053d261e6b42c716",
+      "eval/results/reranker_transfer_results.json": "bbce7fa512bfbf9d31b719ea3983934ce4a4781ce4caae6bb5751906a59cd589",
+      "eval/results/generation_utilization_results.json": "01be9f9c3a3c26b845df83475013c12838e67e55eb7967b7c3a4fda15f5d6963",
+      "eval/results/a1_blind_answer_quality_frozen_v1.json": "96bf5fa61611b31747ca26e5b298d8b96e2b38805bd3d9c4ae2062107c256c35",
+      "eval/results/a1_blind_answer_mapping_v1.json": "62739dbcf4f4a95c81ba06280e9a31b4f4a0ee4cac3f7c81d89171bf2a3cfaee"
+    },
+    "roles": {
+      "patch_positive": "QUERY_REQUIRED aspect omitted by the draft, evidence present in context",
+      "patch_judge_disagreement": "generation-utilization judge says missing, canonical A1 judge says covered; not in the primary denominator",
+      "refresh_positive": "QUERY_REQUIRED aspect omitted by the draft, evidence absent from context",
+      "complete_control": "baseline grounded-fact-complete case (harmful-action control)",
+      "optional_pressure": "RELEVANT_BUT_OPTIONAL omitted fact (must not become a required action)",
+      "secondary_refresh": "ranking-weakness case; recorded, not in the primary denominator"
+    },
+    "counts": {
+      "patch_positive": 2,
+      "patch_judge_disagreement": 2,
+      "refresh_positive": 3,
+      "complete_control": 3,
+      "optional_pressure": 2,
+      "secondary_refresh": 1
+    },
+    "cases": [
+      {
+        "case_id": "VAL-001-011",
+        "role": "patch_positive",
+        "expected_action": "PATCH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-011-F01"
+        ],
+        "route": "SIMPLE",
+        "draft_omits": true,
+        "a1_fixed_top5_labels": {
+          "VAL-001-011-F01": {
+            "label": "NOT_COVERED",
+            "note": "human resolution correction"
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-011-F01": "missing"
+        },
+        "support_in_context": true,
+        "truth": [
+          {
+            "fact_id": "VAL-001-011-F01",
+            "statement": "GitHub prohibits using the platform to organize, promote, threaten, or incite violence.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": true
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-050",
+        "role": "patch_positive",
+        "expected_action": "PATCH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-050-F01"
+        ],
+        "route": "SIMPLE",
+        "draft_omits": true,
+        "a1_fixed_top5_labels": {
+          "VAL-001-050-F01": {
+            "label": "NOT_COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-050-F01": "missing"
+        },
+        "support_in_context": true,
+        "truth": [
+          {
+            "fact_id": "VAL-001-050-F01",
+            "statement": "The commitment applies before GitHub brings a non-defensive claim arising from termination of a Covered License.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": true
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-009",
+        "role": "patch_judge_disagreement",
+        "expected_action": "PATCH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-009-F01"
+        ],
+        "route": "SIMPLE",
+        "draft_omits": false,
+        "a1_fixed_top5_labels": {
+          "VAL-001-009-F01": {
+            "label": "COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-009-F01": "missing"
+        },
+        "support_in_context": true,
+        "truth": [
+          {
+            "fact_id": "VAL-001-009-F01",
+            "statement": "The claim concerns a technological measure that effectively controls access to a copyright-protected work.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": true
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-022",
+        "role": "patch_judge_disagreement",
+        "expected_action": "PATCH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-022-F02"
+        ],
+        "route": "BROAD",
+        "draft_omits": false,
+        "a1_fixed_top5_labels": {
+          "VAL-001-022-F02": {
+            "label": "COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-022-F02": "missing"
+        },
+        "support_in_context": true,
+        "truth": [
+          {
+            "fact_id": "VAL-001-022-F02",
+            "statement": "Disclosed data must be used consistently with the candidate privacy statement.",
+            "final": "QUERY_REQUIRED",
+            "route": "BROAD",
+            "in_context": true
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-006",
+        "role": "refresh_positive",
+        "expected_action": "REFRESH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-006-F02"
+        ],
+        "route": "BROAD",
+        "draft_omits": true,
+        "a1_fixed_top5_labels": {
+          "VAL-001-006-F02": {
+            "label": "NOT_COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-006-F02": "covered"
+        },
+        "support_in_context": false,
+        "truth": [
+          {
+            "fact_id": "VAL-001-006-F02",
+            "statement": "It must identify allegedly infringing material specifically enough for GitHub to locate it, including a URL at minimum.",
+            "final": "QUERY_REQUIRED",
+            "route": "BROAD",
+            "in_context": false
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-033",
+        "role": "refresh_positive",
+        "expected_action": "REFRESH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-033-F01",
+          "VAL-001-033-F02",
+          "VAL-001-033-F03",
+          "VAL-001-033-F04",
+          "VAL-001-033-F05"
+        ],
+        "route": "SIMPLE",
+        "draft_omits": true,
+        "a1_fixed_top5_labels": {
+          "VAL-001-033-F01": {
+            "label": "NOT_COVERED",
+            "note": ""
+          },
+          "VAL-001-033-F02": {
+            "label": "NOT_COVERED",
+            "note": ""
+          },
+          "VAL-001-033-F03": {
+            "label": "NOT_COVERED",
+            "note": ""
+          },
+          "VAL-001-033-F04": {
+            "label": "NOT_COVERED",
+            "note": ""
+          },
+          "VAL-001-033-F05": {
+            "label": "NOT_COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-033-F01": "covered",
+          "VAL-001-033-F02": "covered",
+          "VAL-001-033-F03": "covered",
+          "VAL-001-033-F04": "covered",
+          "VAL-001-033-F05": "covered"
+        },
+        "support_in_context": false,
+        "truth": [
+          {
+            "fact_id": "VAL-001-033-F01",
+            "statement": "Maintainers can publish community-specific expectations for project interaction.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": false
+          },
+          {
+            "fact_id": "VAL-001-033-F02",
+            "statement": "People with repository write access can edit, delete, or hide comments.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": false
+          },
+          {
+            "fact_id": "VAL-001-033-F03",
+            "statement": "Authorized repository members can lock disruptive conversations.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": false
+          },
+          {
+            "fact_id": "VAL-001-033-F04",
+            "statement": "An account or organization can block a user.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": false
+          },
+          {
+            "fact_id": "VAL-001-033-F05",
+            "statement": "A public project can set temporary interaction limits when facing unwanted attention.",
+            "final": "QUERY_REQUIRED",
+            "route": "SIMPLE",
+            "in_context": false
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-046",
+        "role": "refresh_positive",
+        "expected_action": "REFRESH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-046-F03",
+          "VAL-001-046-F04"
+        ],
+        "route": "BROAD",
+        "draft_omits": true,
+        "a1_fixed_top5_labels": {
+          "VAL-001-046-F03": {
+            "label": "NOT_COVERED",
+            "note": ""
+          },
+          "VAL-001-046-F04": {
+            "label": "NOT_COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-046-F03": "covered",
+          "VAL-001-046-F04": "covered"
+        },
+        "support_in_context": false,
+        "truth": [
+          {
+            "fact_id": "VAL-001-046-F03",
+            "statement": "Before disclosure, GitHub makes a reasonable effort to email affected owners a copy of the legal process so they can challenge it.",
+            "final": "QUERY_REQUIRED",
+            "route": "BROAD",
+            "in_context": false
+          },
+          {
+            "fact_id": "VAL-001-046-F04",
+            "statement": "In rare urgent circumstances, GitHub may delay notice to prevent death or serious harm or because of an ongoing investigation.",
+            "final": "QUERY_REQUIRED",
+            "route": "BROAD",
+            "in_context": false
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-029",
+        "role": "complete_control",
+        "expected_action": "RETURN_DRAFT",
+        "target_fact_ids": [],
+        "route": "BROAD",
+        "draft_omits": false,
+        "support_in_context": null,
+        "truth": [],
+        "baseline_fact_complete": true,
+        "baseline_grounded_fact_complete": true
+      },
+      {
+        "case_id": "VAL-001-042",
+        "role": "complete_control",
+        "expected_action": "RETURN_DRAFT",
+        "target_fact_ids": [],
+        "route": "BROAD",
+        "draft_omits": false,
+        "support_in_context": null,
+        "truth": [],
+        "baseline_fact_complete": true,
+        "baseline_grounded_fact_complete": true
+      },
+      {
+        "case_id": "VAL-001-007",
+        "role": "complete_control",
+        "expected_action": "RETURN_DRAFT",
+        "target_fact_ids": [],
+        "route": "BROAD",
+        "draft_omits": false,
+        "support_in_context": null,
+        "truth": [],
+        "baseline_fact_complete": true,
+        "baseline_grounded_fact_complete": true
+      },
+      {
+        "case_id": "VAL-001-026",
+        "role": "optional_pressure",
+        "expected_action": "RETURN_DRAFT",
+        "target_fact_ids": [
+          "VAL-001-026-F02"
+        ],
+        "route": "BROAD",
+        "draft_omits": false,
+        "a1_fixed_top5_labels": {
+          "VAL-001-026-F02": {
+            "label": null,
+            "note": "not_in_required_aspects"
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-026-F02": "missing"
+        },
+        "support_in_context": true,
+        "truth": [
+          {
+            "fact_id": "VAL-001-026-F02",
+            "statement": "The developer must follow GitHub's technical specifications and requirements.",
+            "final": "RELEVANT_BUT_OPTIONAL",
+            "route": "BROAD",
+            "in_context": true
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-039",
+        "role": "optional_pressure",
+        "expected_action": "RETURN_DRAFT",
+        "target_fact_ids": [
+          "VAL-001-039-F02"
+        ],
+        "route": "BROAD",
+        "draft_omits": false,
+        "a1_fixed_top5_labels": {
+          "VAL-001-039-F02": {
+            "label": null,
+            "note": "not_in_required_aspects"
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-039-F02": "missing"
+        },
+        "support_in_context": true,
+        "truth": [
+          {
+            "fact_id": "VAL-001-039-F02",
+            "statement": "GitHub offers source code where component licenses require such an offer.",
+            "final": "RELEVANT_BUT_OPTIONAL",
+            "route": "BROAD",
+            "in_context": true
+          }
+        ]
+      },
+      {
+        "case_id": "VAL-001-001",
+        "role": "secondary_refresh",
+        "expected_action": "REFRESH_CONTEXT",
+        "target_fact_ids": [
+          "VAL-001-001-F02",
+          "VAL-001-001-F03"
+        ],
+        "route": "BROAD",
+        "draft_omits": false,
+        "a1_fixed_top5_labels": {
+          "VAL-001-001-F02": {
+            "label": "NOT_COVERED",
+            "note": ""
+          },
+          "VAL-001-001-F03": {
+            "label": "COVERED",
+            "note": ""
+          }
+        },
+        "generation_utilization_judge": {
+          "VAL-001-001-F02": "covered",
+          "VAL-001-001-F03": "covered"
+        },
+        "support_in_context": false,
+        "truth": [
+          {
+            "fact_id": "VAL-001-001-F02",
+            "statement": "The counter notice is sworn under penalty of perjury.",
+            "final": "QUERY_REQUIRED",
+            "route": "BROAD",
+            "in_context": false
+          },
+          {
+            "fact_id": "VAL-001-001-F03",
+            "statement": "Intentionally false sworn information can cause criminal and civil consequences.",
+            "final": "QUERY_REQUIRED",
+            "route": "BROAD",
+            "in_context": false
+          }
+        ]
+      }
+    ],
+    "replicate_calls": 26
+  },
+  "cells": [
+    {
+      "cell_id": "VAL-001-011::patch_positive::r1",
+      "case_id": "VAL-001-011",
+      "role": "patch_positive",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "a9f30fbdddbc1d08696a038c4c8d281c218aa83ff542742f77f5defb550fc3f7",
+      "cache_key": "d66cdf4b2270c5090c5fab3e454cef5f13908fe2667074635b57ad0d82c4ff03",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both query-required obligations: it explains how GitHub distinguishes allowed context (educational/documentary purposes, creative works, historical events, with warnings/disclaimers) from prohibited violence, and it states that visibility can be limited to users who opt in. No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both query-required obligations: it explains how GitHub distinguishes allowed context (educational/documentary purposes, creative works, historical events, with warnings/disclaimers) from prohibited violence, and it states that visibility can be limited to users who opt in. No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2379,
+        "output_tokens": 85
+      },
+      "latency_seconds": 1.0409648000495508
+    },
+    {
+      "cell_id": "VAL-001-011::patch_positive::r2",
+      "case_id": "VAL-001-011",
+      "role": "patch_positive",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "a9f30fbdddbc1d08696a038c4c8d281c218aa83ff542742f77f5defb550fc3f7",
+      "cache_key": "ecef41525e4a19e387659ecde0bc004ced5438ee55e75ee8e6bfbb8e34aab0dc",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both parts of the question: it explains how GitHub distinguishes allowed context (educational, documentary, creative, historical purposes with warnings/disclaimers) from prohibited violence, and it states that visibility may be limited to users who opt in. No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both parts of the question: it explains how GitHub distinguishes allowed context (educational, documentary, creative, historical purposes with warnings/disclaimers) from prohibited violence, and it states that visibility may be limited to users who opt in. No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2379,
+        "output_tokens": 82
+      },
+      "latency_seconds": 0.8613963999086991
+    },
+    {
+      "cell_id": "VAL-001-050::patch_positive::r1",
+      "case_id": "VAL-001-050",
+      "role": "patch_positive",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "1ab2887a93f0113b9a0e36297e10690a797fe214b4713fd0930e0a034a30c646",
+      "cache_key": "737ab3589b9f0f85033c4d1c8ff716fb2585b36c0d6738531f5e7d0b46251272",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses the question's required obligations: it states when reinstatement is provisional (upon ceasing violation, unless and until explicit final termination) and when it is permanent (failure to notify within 60 days after cessation, or first-time notice plus cure within 30 days), and confirms GPLv2 is a Covered License. No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses the question's required obligations: it states when reinstatement is provisional (upon ceasing violation, unless and until explicit final termination) and when it is permanent (failure to notify within 60 days after cessation, or first-time notice plus cure within 30 days), and confirms GPLv2 is a Covered License. No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2102,
+        "output_tokens": 100
+      },
+      "latency_seconds": 0.812701900023967
+    },
+    {
+      "cell_id": "VAL-001-050::patch_positive::r2",
+      "case_id": "VAL-001-050",
+      "role": "patch_positive",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "1ab2887a93f0113b9a0e36297e10690a797fe214b4713fd0930e0a034a30c646",
+      "cache_key": "71447139dfceeee7de4f31e1f1b479ed33c307792c175eb47819eaac9355a20c",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft already addresses the query-required obligations: it states when reinstatement is provisional (upon ceasing violation, unless and until explicit final termination) and when it is permanent (failure to notify within 60 days after cessation, or first-time notice plus cure within 30 days), and confirms GPLv2 is a Covered License. No missing query-required obligation is identifiable from the current sources.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft already addresses the query-required obligations: it states when reinstatement is provisional (upon ceasing violation, unless and until explicit final termination) and when it is permanent (failure to notify within 60 days after cessation, or first-time notice plus cure within 30 days), and confirms GPLv2 is a Covered License. No missing query-required obligation is identifiable from the current sources.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2102,
+        "output_tokens": 106
+      },
+      "latency_seconds": 1.000283099943772
+    },
+    {
+      "cell_id": "VAL-001-009::patch_judge_disagreement::r1",
+      "case_id": "VAL-001-009",
+      "role": "patch_judge_disagreement",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "d460a5fe7fda83c27e6ffb0bfb2f855c146e12b5397f4a3e3b936f2314851b38",
+      "cache_key": "610635f744a161876583776a407352fe37520d5287c936957565560d99f2760f",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft fully addresses the question's required obligation: the three detailed statements a circumvention complaint must include (what the technical measures are, how they effectively control access, and how the accused project circumvents them), plus the review context. No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft fully addresses the question's required obligation: the three detailed statements a circumvention complaint must include (what the technical measures are, how they effectively control access, and how the accused project circumvents them), plus the review context. No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3122,
+        "output_tokens": 80
+      },
+      "latency_seconds": 0.8573020999319851
+    },
+    {
+      "cell_id": "VAL-001-009::patch_judge_disagreement::r2",
+      "case_id": "VAL-001-009",
+      "role": "patch_judge_disagreement",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "d460a5fe7fda83c27e6ffb0bfb2f855c146e12b5397f4a3e3b936f2314851b38",
+      "cache_key": "7c75145ed2bccb225afb876e6c205c77e493d05f0161c9d513c25db176916d0f",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft already states the three required detailed statements a circumvention complaint must include, plus the review process and the licensing-key exception. No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft already states the three required detailed statements a circumvention complaint must include, plus the review process and the licensing-key exception. No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3122,
+        "output_tokens": 59
+      },
+      "latency_seconds": 0.5910694999620318
+    },
+    {
+      "cell_id": "VAL-001-022::patch_judge_disagreement::r1",
+      "case_id": "VAL-001-022",
+      "role": "patch_judge_disagreement",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "c921ab431b87d7fac53bf5bccc71eb1b9224c02abb56c400953f64044b8940f6",
+      "cache_key": "d83a9b5a8c6a64c3ea68fdf8683bb7d92fdb5f778a7a3be60b80018d58ca0642",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both parts of the question: with whom GitHub may share candidate application data (subsidiaries/affiliates, third parties/service providers, legal-process recipients, and Canadian cross-border disclosures) and the limits on disclosure (legitimate business need, specified purposes, consistency with the notice, respect for legal limits, and consent). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both parts of the question: with whom GitHub may share candidate application data (subsidiaries/affiliates, third parties/service providers, legal-process recipients, and Canadian cross-border disclosures) and the limits on disclosure (legitimate business need, specified purposes, consistency with the notice, respect for legal limits, and consent). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3696,
+        "output_tokens": 102
+      },
+      "latency_seconds": 1.1431344000156969
+    },
+    {
+      "cell_id": "VAL-001-022::patch_judge_disagreement::r2",
+      "case_id": "VAL-001-022",
+      "role": "patch_judge_disagreement",
+      "expected_action": "PATCH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "c921ab431b87d7fac53bf5bccc71eb1b9224c02abb56c400953f64044b8940f6",
+      "cache_key": "caf475a7d3a6e67c5fcadca101eb0a71b4a002c11c0f5f63b1c5b7d3dcea4f72",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft already addresses the question's two obligations: it identifies the recipients with whom GitHub may share candidate application data (subsidiaries, affiliates, third parties, service providers, counterparties to contracts, judicial and governmental bodies, and for Canada, foreign courts/law enforcement/government authorities) and states the limits on disclosure (legitimate business need, specified legitimate purposes, consistency with the notice, respect for legal requirements limiting disclosure). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft already addresses the question's two obligations: it identifies the recipients with whom GitHub may share candidate application data (subsidiaries, affiliates, third parties, service providers, counterparties to contracts, judicial and governmental bodies, and for Canada, foreign courts/law enforcement/government authorities) and states the limits on disclosure (legitimate business need, specified legitimate purposes, consistency with the notice, respect for legal requirements limiting disclosure). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3696,
+        "output_tokens": 120
+      },
+      "latency_seconds": 1.5915152999805287
+    },
+    {
+      "cell_id": "VAL-001-006::refresh_positive::r1",
+      "case_id": "VAL-001-006",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "2d8d85a5cb483e283524f91223108f4127e03feec6069d752b4d94db0b26b75c",
+      "cache_key": "1d18e5c939bfb5bf230882b1b7f286643ed9182d6ab481404b0fb599a3e46ec7",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses the actionable complaint details (specific work, remedy instructions, contact info, statements, signature) and what the owner could do to fix it (delete/modify content within ~1 business day, notify GitHub, owner review/renew/revise, retraction). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses the actionable complaint details (specific work, remedy instructions, contact info, statements, signature) and what the owner could do to fix it (delete/modify content within ~1 business day, notify GitHub, owner review/renew/revise, retraction). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 4364,
+        "output_tokens": 88
+      },
+      "latency_seconds": 0.9343643999891356
+    },
+    {
+      "cell_id": "VAL-001-006::refresh_positive::r2",
+      "case_id": "VAL-001-006",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "2d8d85a5cb483e283524f91223108f4127e03feec6069d752b4d94db0b26b75c",
+      "cache_key": "3bf038ce745231ef2f89719ea141cd5b946bcb0b4536a22a874c1f629a6cf59a",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses the actionable complaint details (specific work, remedy instructions, contact info, statements, signature) and what the owner could do to fix it (delete/modify within ~1 business day, notify GitHub, owner renew/revise/retract). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses the actionable complaint details (specific work, remedy instructions, contact info, statements, signature) and what the owner could do to fix it (delete/modify within ~1 business day, notify GitHub, owner renew/revise/retract). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 4364,
+        "output_tokens": 85
+      },
+      "latency_seconds": 0.8568362999940291
+    },
+    {
+      "cell_id": "VAL-001-033::refresh_positive::r1",
+      "case_id": "VAL-001-033",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "95814977b65ab7b3635f18f9f0ad238bfaa37e799678ab8409976872cda202d0",
+      "cache_key": "c588615c50f1c09854158ade513c9a31189b62888904dd08d207220172aa1423",
+      "raw": "{\"action\":\"REFRESH_CONTEXT\",\"target\":\"The specific self-service moderation options a repository maintainer can use on an abusive discussion before asking GitHub for help (e.g., locking conversations, blocking users, limiting interactions, hiding or deleting comments).\",\"reason\":\"The question asks what moderation options are available before asking GitHub for help, which requires the concrete maintainer-facing moderation tools. The draft only cites the general advice to use 'moderation tools' without enumerating them, and the supplied sources do not contain the specific self-service options, so the obligation cannot be filled from the current evidence.\",\"evidence_refs\":[],\"refresh_query\":\"repository maintainer moderation tools for discussions lock conversation block user limit interactions report abuse\"}",
+      "parsed": {
+        "action": "REFRESH_CONTEXT",
+        "target": "The specific self-service moderation options a repository maintainer can use on an abusive discussion before asking GitHub for help (e.g., locking conversations, blocking users, limiting interactions, hiding or deleting comments).",
+        "reason": "The question asks what moderation options are available before asking GitHub for help, which requires the concrete maintainer-facing moderation tools. The draft only cites the general advice to use 'moderation tools' without enumerating them, and the supplied sources do not contain the specific self-service options, so the obligation cannot be filled from the current evidence.",
+        "evidence_refs": [],
+        "refresh_query": "repository maintainer moderation tools for discussions lock conversation block user limit interactions report abuse"
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3358,
+        "output_tokens": 146
+      },
+      "latency_seconds": 1.4282214998966083
+    },
+    {
+      "cell_id": "VAL-001-033::refresh_positive::r2",
+      "case_id": "VAL-001-033",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "95814977b65ab7b3635f18f9f0ad238bfaa37e799678ab8409976872cda202d0",
+      "cache_key": "4ab56ca1c06819ab6ad81e719f9bc237c61f7d06a631f5fd604036494bd60c07",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses the question's two required obligations: self-service moderation options (noting the sources only reference 'moderation tools' generically) and reporting to GitHub (listing the enforcement responses and case-by-case investigation). No query-required obligation supported by the current sources is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses the question's two required obligations: self-service moderation options (noting the sources only reference 'moderation tools' generically) and reporting to GitHub (listing the enforcement responses and case-by-case investigation). No query-required obligation supported by the current sources is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3358,
+        "output_tokens": 82
+      },
+      "latency_seconds": 0.8839971999404952
+    },
+    {
+      "cell_id": "VAL-001-046::refresh_positive::r1",
+      "case_id": "VAL-001-046",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "replicate": 1,
+      "prompt_config_hash": "bdfd7035c27ac568ee4a1409521d9443754b14163626b8cf28e89e95aedeadc8",
+      "cache_key": "5c9229247b655d3b316f71cb6528162f3162e92d2222fa94ac850d636a5c260f",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft already addresses the user's two-part question: it states GitHub's policy to notify affected users unless prohibited by law or court order, and it explains that the sources do not enumerate additional withholding/delay situations beyond that exception. No query-required obligation supported by the current sources is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft already addresses the user's two-part question: it states GitHub's policy to notify affected users unless prohibited by law or court order, and it explains that the sources do not enumerate additional withholding/delay situations beyond that exception. No query-required obligation supported by the current sources is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2439,
+        "output_tokens": 84
+      },
+      "latency_seconds": 0.9392269999952987
+    },
+    {
+      "cell_id": "VAL-001-046::refresh_positive::r2",
+      "case_id": "VAL-001-046",
+      "role": "refresh_positive",
+      "expected_action": "REFRESH_CONTEXT",
+      "replicate": 2,
+      "prompt_config_hash": "bdfd7035c27ac568ee4a1409521d9443754b14163626b8cf28e89e95aedeadc8",
+      "cache_key": "67b0b06a3646ba53f2d3ab5f380a7c93884e36c1df2b9107eef6bee5fbe56f0c",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft already addresses the user's two-part question: it states GitHub's policy of notifying affected users unless prohibited by law or court order, and it explains that the sources do not enumerate additional withholding/delay situations beyond that exception. No query-required obligation supported by the current sources is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft already addresses the user's two-part question: it states GitHub's policy of notifying affected users unless prohibited by law or court order, and it explains that the sources do not enumerate additional withholding/delay situations beyond that exception. No query-required obligation supported by the current sources is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2439,
+        "output_tokens": 85
+      },
+      "latency_seconds": 0.9539347999962047
+    },
+    {
+      "cell_id": "VAL-001-029::complete_control::r1",
+      "case_id": "VAL-001-029",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 1,
+      "prompt_config_hash": "ba8ff442c83e5c325569642787f3eccf8286e60a44716c6422e8bec128736281",
+      "cache_key": "9163bbf1340cb3a3bd0bfbbc30062399c6e38ff8f9a479dd56cf1a8ea2059bbb",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses all three query-required obligations: it states that the conduct rules cover staff and sponsors (S1), lists the entry conditions (S3), and describes the consequence of ignoring a warning, including immediate compliance and organizer discretion to warn or expel with no refund (S3). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses all three query-required obligations: it states that the conduct rules cover staff and sponsors (S1), lists the entry conditions (S3), and describes the consequence of ignoring a warning, including immediate compliance and organizer discretion to warn or expel with no refund (S3). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2156,
+        "output_tokens": 92
+      },
+      "latency_seconds": 0.9886348999571055
+    },
+    {
+      "cell_id": "VAL-001-029::complete_control::r2",
+      "case_id": "VAL-001-029",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 2,
+      "prompt_config_hash": "ba8ff442c83e5c325569642787f3eccf8286e60a44716c6422e8bec128736281",
+      "cache_key": "90012c626dbc4a0c2b18ce2e4ffdbb8e49aa364f71eb45ea61b50319671e3ee4",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses all three query-required obligations: coverage of staff and sponsors under the conduct rules, entry conditions, and consequences of ignoring a warning. No missing query-required obligation is reliably identifiable.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses all three query-required obligations: coverage of staff and sponsors under the conduct rules, entry conditions, and consequences of ignoring a warning. No missing query-required obligation is reliably identifiable.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2156,
+        "output_tokens": 65
+      },
+      "latency_seconds": 0.7540840000147
+    },
+    {
+      "cell_id": "VAL-001-042::complete_control::r1",
+      "case_id": "VAL-001-042",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 1,
+      "prompt_config_hash": "97696dca9693ff498de7fb4287b68112786d1198c8ed5f9107ebc21901b0a407",
+      "cache_key": "5a31014dbf9c7bc0cec6dccd68190eb69875685560923cbdb30b04f31abab066",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses all query-required obligations: the license rights granted over token patterns, open-source distribution terms, and survival after agreement termination. No missing query-required obligation is identifiable.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses all query-required obligations: the license rights granted over token patterns, open-source distribution terms, and survival after agreement termination. No missing query-required obligation is identifiable.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 1411,
+        "output_tokens": 62
+      },
+      "latency_seconds": 0.7319437999976799
+    },
+    {
+      "cell_id": "VAL-001-042::complete_control::r2",
+      "case_id": "VAL-001-042",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 2,
+      "prompt_config_hash": "97696dca9693ff498de7fb4287b68112786d1198c8ed5f9107ebc21901b0a407",
+      "cache_key": "645f51b7dae82518dae9dd24632b36dd42fca8df52da8c960a077e4dd97baabd",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses all query-required obligations: the license rights granted over token patterns, open-source distribution terms, and survival after the agreement ends. No missing query-required obligation is identifiable.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses all query-required obligations: the license rights granted over token patterns, open-source distribution terms, and survival after the agreement ends. No missing query-required obligation is identifiable.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 1411,
+        "output_tokens": 63
+      },
+      "latency_seconds": 0.6967850000364706
+    },
+    {
+      "cell_id": "VAL-001-007::complete_control::r1",
+      "case_id": "VAL-001-007",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 1,
+      "prompt_config_hash": "1c8bb027b16464cd2520f4457a9cb108b98e99b03b81d842cbc5c3d8da8b9b49",
+      "cache_key": "500d1ad15ec614418ed4ea93072bf1f1de5d8957b7df484111aa5dfc13adcf40",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both parts of the question: how to prepare the request (contacting the user first, trained professional review, correct request type, self-investigation and required details, specificity, plain-text submission via contact form) and what may slow review (volume, additional/multiple requests, attachments, insufficient detail, entire files/repositories, bot/bulk complaints). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both parts of the question: how to prepare the request (contacting the user first, trained professional review, correct request type, self-investigation and required details, specificity, plain-text submission via contact form) and what may slow review (volume, additional/multiple requests, attachments, insufficient detail, entire files/repositories, bot/bulk complaints). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2500,
+        "output_tokens": 107
+      },
+      "latency_seconds": 1.0988289000233635
+    },
+    {
+      "cell_id": "VAL-001-007::complete_control::r2",
+      "case_id": "VAL-001-007",
+      "role": "complete_control",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 2,
+      "prompt_config_hash": "1c8bb027b16464cd2520f4457a9cb108b98e99b03b81d842cbc5c3d8da8b9b49",
+      "cache_key": "607f422129e060516f4c0c53c41cc17ea5de6939d12bd574eac0cb5d12dada19",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both parts of the question: how to prepare the request (contacting the user first, using a trained professional, sending the correct request type, investigating and providing required details, being specific about location, submitting via the contact form in plain text) and what may slow review (volume, additional/multiple requests, attachments, insufficient detail, entire files/repositories, bot or bulk complaints). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both parts of the question: how to prepare the request (contacting the user first, using a trained professional, sending the correct request type, investigating and providing required details, being specific about location, submitting via the contact form in plain text) and what may slow review (volume, additional/multiple requests, attachments, insufficient detail, entire files/repositories, bot or bulk complaints). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 2500,
+        "output_tokens": 113
+      },
+      "latency_seconds": 0.7878368999809027
+    },
+    {
+      "cell_id": "VAL-001-026::optional_pressure::r1",
+      "case_id": "VAL-001-026",
+      "role": "optional_pressure",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 1,
+      "prompt_config_hash": "7ec922e49234dc33b33b0b53b37cb46e032e15c134345eaf920ad5af5a63e848",
+      "cache_key": "eca60ccbc69242bc8c1c985115ffbcc22199c229725c423f082516043cf04cc3",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses all three query-required obligations: the license/permission granted to use the Platform, the actions GitHub may take for violations, and the availability of appeals. Each is supported by S1, and the deprecation context from S5 is included. No missing query-required obligation can be reliably identified.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses all three query-required obligations: the license/permission granted to use the Platform, the actions GitHub may take for violations, and the availability of appeals. Each is supported by S1, and the deprecation context from S5 is included. No missing query-required obligation can be reliably identified.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3022,
+        "output_tokens": 89
+      },
+      "latency_seconds": 1.1343833999708295
+    },
+    {
+      "cell_id": "VAL-001-026::optional_pressure::r2",
+      "case_id": "VAL-001-026",
+      "role": "optional_pressure",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 2,
+      "prompt_config_hash": "7ec922e49234dc33b33b0b53b37cb46e032e15c134345eaf920ad5af5a63e848",
+      "cache_key": "ce3b2b1632ab9aa68b46583fc208ed2c568425e2fa11aef812372a781ecf363c",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses all three query-required obligations: the license/permission granted (S1), the actions GitHub may take for violations (S1), and the availability of appeals via the GitHub Appeal and Reinstatement Process (S1). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses all three query-required obligations: the license/permission granted (S1), the actions GitHub may take for violations (S1), and the availability of appeals via the GitHub Appeal and Reinstatement Process (S1). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 3022,
+        "output_tokens": 81
+      },
+      "latency_seconds": 0.891839399933815
+    },
+    {
+      "cell_id": "VAL-001-039::optional_pressure::r1",
+      "case_id": "VAL-001-039",
+      "role": "optional_pressure",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 1,
+      "prompt_config_hash": "df569bd2aad3e0ba50020f64c10733667a81d739e4e1544ce27e3822f3f5d012",
+      "cache_key": "c39a38213a27f219235dbd3e62688b7b3c795292cab08ddc0f7ceb4c8066a6ae",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both parts of the question: where licenses are documented (the Open Source Notices documentation) and when an open-source license can override the Application Terms (only to the limited extent it expressly supersedes them). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both parts of the question: where licenses are documented (the Open Source Notices documentation) and when an open-source license can override the Application Terms (only to the limited extent it expressly supersedes them). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 1678,
+        "output_tokens": 77
+      },
+      "latency_seconds": 0.7871586999390274
+    },
+    {
+      "cell_id": "VAL-001-039::optional_pressure::r2",
+      "case_id": "VAL-001-039",
+      "role": "optional_pressure",
+      "expected_action": "RETURN_DRAFT",
+      "replicate": 2,
+      "prompt_config_hash": "df569bd2aad3e0ba50020f64c10733667a81d739e4e1544ce27e3822f3f5d012",
+      "cache_key": "f82854dcdf9e4f75ae3b0550cd2deba31fa340e3e3eedc9a7e01f0deaab78c5f",
+      "raw": "{\"action\":\"RETURN_DRAFT\",\"target\":\"\",\"reason\":\"The draft addresses both parts of the question: it states where licenses are documented (the 'Open Source Notices' documentation included with the Software, which also contains copies of all applicable open-source licenses) and when an open-source license can override the Application Terms (only to the limited extent the open-source license expressly supersedes them, in which case it governs for the Software or specific included components). No query-required obligation is missing.\",\"evidence_refs\":[],\"refresh_query\":\"\"}",
+      "parsed": {
+        "action": "RETURN_DRAFT",
+        "target": "",
+        "reason": "The draft addresses both parts of the question: it states where licenses are documented (the 'Open Source Notices' documentation included with the Software, which also contains copies of all applicable open-source licenses) and when an open-source license can override the Application Terms (only to the limited extent the open-source license expressly supersedes them, in which case it governs for the Software or specific included components). No query-required obligation is missing.",
+        "evidence_refs": [],
+        "refresh_query": ""
+      },
+      "deterministic": {
+        "valid": true,
+        "issues": []
+      },
+      "provider_usage": {
+        "input_tokens": 1678,
+        "output_tokens": 112
+      },
+      "latency_seconds": 0.9444877000059932
+    }
+  ],
+  "failures": []
+}

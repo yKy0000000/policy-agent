@@ -1,0 +1,20 @@
+{
+  "version": "final-controller-gate-v1-release-archive",
+  "scope": "Original 12 gate artifacts and original runner; release navigation and validation notes are not frozen experiment outputs.",
+  "algorithm": "sha256",
+  "files": {
+    "eval/reports/final_controller_gate_v1/artifact_audit.md": "1ff144c6a0c6d1bd4ffa6cd71e2a779a3637c8256f94cbf5aded974c317f9c5a",
+    "eval/reports/final_controller_gate_v1/decision.json": "d95e8ba1ef556d613355c72d5a2d40718c3ffcce8b223ac3099d418ec1dd6207",
+    "eval/reports/final_controller_gate_v1/decision.md": "657c1982516f63b8e33900e85c94b267c3143d65a4c528fb300cd02ee47ef7be",
+    "eval/reports/final_controller_gate_v1/economics_summary.json": "1c1b58c3dcaa5d55c43871eae2c2f65d48d129a7f0707ddcc43515def712ffbc",
+    "eval/reports/final_controller_gate_v1/economics_summary.md": "aff814bef7d2dce70ecf41808dc10bd63a37151fdb70b8e2ebd4008823746251",
+    "eval/reports/final_controller_gate_v1/final_report.md": "4017e3c230be24d3a6087e7d41f35dadc7f9caac37ce2279b0ff6b32261aa9f8",
+    "eval/reports/final_controller_gate_v1/gate1_adjudication.json": "24f0b65150eb156c963acc397eb31a463361134d75ceeec4987c6a0b8f1ebdf2",
+    "eval/reports/final_controller_gate_v1/gate1_sensor_results.json": "64ed248c47ef4aca967ca5102b7060cac774ddc9b1f07e439edb139687c27d07",
+    "eval/reports/final_controller_gate_v1/gate1_sensor_summary.md": "a17c6bb6b9b6ff0bfcc9698d2509fe0514acda5bbf54ba5395c441a148d65cb7",
+    "eval/reports/final_controller_gate_v1/gate_manifest_v1.json": "5f9f1816671ce9ebe523398fe62c55098cfe9e81f33acef35397e4a04c8f7abc",
+    "eval/reports/final_controller_gate_v1/sample_eligibility.json": "48865672aa2511a9868a0f74003610e902a981197df786bbd3cb518ebcf13a69",
+    "eval/reports/final_controller_gate_v1/sample_eligibility.md": "f955327b137c9ef8b818fed0926da64863c3340becbd965aa2e1cd5d04c0d739",
+    "eval/run_final_controller_gate_v1.py": "2657ac232d6db43bdb0462dae16355a637e51eefa2debe2c92c0868ba1608d0d"
+  }
+}

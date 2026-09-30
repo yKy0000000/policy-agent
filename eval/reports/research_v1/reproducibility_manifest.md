@@ -69,3 +69,19 @@ The current README and reader-facing figures were redesigned after this frozen r
 ```
 
 Archived provenance and process evidence: `eval/legacy/archive/` (see `eval/legacy/archive/MANIFEST.md`).
+
+## Terminal release: Final Controller Gate V1
+
+The [final gate archive](../final_controller_gate_v1/README.md) closes architecture research with
+`STOP`, PATCH FAIL and REFRESH FAIL. Its 12 original artifacts and unchanged original runner are
+identified by full SHA-256 values in [archive_checksums.json](../final_controller_gate_v1/archive_checksums.json).
+The runtime sensor system-prompt identity and eligibility identity remain in the original
+[gate manifest](../final_controller_gate_v1/gate_manifest_v1.json). The reports use frozen BGE
+context/draft snapshots; production remains MiniLM/Fast plus user-selected Adaptive/Search+.
+
+Release verification reads the archive through `tests/test_final_controller_gate_v1.py` and the
+full unit suite, with no model/provider call and no output regeneration. The historical replay/report
+commands above write artifacts and were deliberately not executed during this release. No action
+probe or E2E was run. Local runtime cache, credentials, upstream corpus and model/index caches are
+not part of the release. See [release validation](../final_controller_gate_v1/release_validation.md)
+and [scope/errata](../final_controller_gate_v1/README.md) for the checks and preserved discrepancies.
